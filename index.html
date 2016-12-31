@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Eulphean's Webpage</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+    <style>
+
+      html
+      {
+        height:100%;
+        width:100%;
+      }
+
+      body
+      {
+        height:100%;
+        width:100%;
+      }
+
+      #bgvideo
+      {
+        height:auto;
+        width:auto;
+        min-height:100%;
+        min-width:100%;
+        position:fixed;
+        right:0;
+        bottom:0;
+        background-size:cover;
+        z-index=-100;
+        display:block;
+        -webkit-animation: fadein 3s;
+        -moz-animation: fadein 3s;
+        -ms-animation: fadein 3s;
+        -o-animation: fadein 3s;
+        animation: fadein 3s;
+        animation-name: fadein;
+        animation-duration: 3s;
+        animation-timing-function: initial;
+        animation-delay: initial;
+        animation-iteration-count: initial;
+        animation-direction: initial;
+        animation-fill-mode: initial;
+        animation-play-state: initial;
+      }
+
+      .transparent {
+        background-color: #FFF;
+      }
+
+      .intro-fixed
+      {
+        position:fixed;
+        height:100%;
+        width:100%;
+        text-align:center;
+        margin-top: 120px;
+      }
+
+      .contactme 
+      {
+        margin-left: 30px;
+        margin-top: 100px;
+        text-align: center;
+      }
+
+      .contactitem
+      {
+        margin-right: 40px;
+        display: inline-block;
+        opacity: 0.7;
+      }
+
+      .contactitem:hover {
+        opacity:0.5;
+      }
+
+      .intro-fixed .intro-heading
+      {
+        position:relative;
+        display:block;
+      }
+
+      .intro-heading h2
+      {
+        color:#FFF;
+        font-family: 'Amatic SC', cursive;
+        font-size:95px;
+        font-weight:200;
+      }
+
+      .intro-text h4
+      {
+        color:#FFF;
+        font-family:Impact, Charcoal, sans-serif;
+        font-size:35px;
+        font-weight:150;
+        letter-spacing:10px;
+        opacity: 0.9;
+        color: white;
+      }
+
+      .footer {
+          position:fixed;
+          bottom:0;
+          text-align: center ;
+          font-size: 16px ;
+          font-family: verdana ;
+          width: 100%;
+          color: white;
+          opacity: 0.5;
+      }
+
+
+    </style>
+
+  </head>
+  
+  <body>   
+
+    <div> 
+    
+      <video autoplay loop id="bgvideo" class="transparent">
+        <source src="video/video720.mp4" type="video/mp4">
+      </video>  
+
+      <div class="intro-fixed">
+        <div class="intro-heading">
+          <h2>Amay Kataria</h2>
+        </div>
+        <div class="intro-text">
+          <h4>engineer, creative enthusiast, seeker</h4>
+        </div>
+        <div class="contactme">
+          <a href="https://soundcloud.com/eulphean" target="_blank">
+              <img class="contactitem" src="svg/Soundcloud.svg" title="Soundcloud">
+           </a>
+          <a href="http://www.eulphean.com" target="_blank">
+            <img class="contactitem" src="svg/Blogger.svg" title="Blogger">
+          </a>
+          <a href="https://amaykataria.tumblr.com" target="_blank">
+            <img class="contactitem" src="svg/Tumblr.svg" title="Tumblr">
+          </a>
+          <a href="https://www.linkedin.com/in/amay-kataria-80301449" target="_blank">
+            <img class="contactitem" src="svg/LinkedIn.svg"  title="LinkedIn">
+          </a>
+          <a href="https://www.pinterest.com/amaykataria/" target="_blank">
+            <img class="contactitem"  src="svg/Pinterest.svg" title="Pinterest">
+          <a>
+          <a href="https://www.instagram.com/eulphean/" target="_blank">
+            <img class="contactitem" src="svg/Instagram.svg" title="Instagram">
+          <a>
+        </div>
+      </div>
+
+      <div class="footer">
+          <h5>Copyright © 2016 Amay Kataria</h5>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
