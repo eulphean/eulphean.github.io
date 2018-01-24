@@ -75,10 +75,10 @@
     callbacks: {
       beforeOpen: function() {
         startWindowScroll = $(window).scrollTop();
-        $('html').addClass('mfp-helper');
+        $('body').addClass('mfp-helper');
       },
       close: function() {
-        $('html').removeClass('mfp-helper');
+        $('body').removeClass('mfp-helper');
         $(window).scrollTop(startWindowScroll);
       }
     }

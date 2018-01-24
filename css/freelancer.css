@@ -10,12 +10,10 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translateZ(0); }
 
-html.mfp-helper {
-  height: 100%; }
-  html.mfp-helper body {
-    overflow: hidden;
-    height: 100%;
-    -webkit-transform: translateZ(0); }
+body.mfp-helper {
+  overflow: hidden;
+  height: 100%;
+  -webkit-transform: translateZ(0); }
 
 h1,
 h2,

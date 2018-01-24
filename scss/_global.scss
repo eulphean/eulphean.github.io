@@ -8,14 +8,10 @@ body {
   -webkit-transform: translateZ(0);
 }
 
-html.mfp-helper {
+body.mfp-helper {
+  overflow: hidden;
   height: 100%;
-
-  body {
-    overflow: hidden;
-    height: 100%;
-    -webkit-transform: translateZ(0);
-  }
+  -webkit-transform: translateZ(0);
 }
 
 h1,
