@@ -1,179 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Amay Kataria</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-      html
-      {
-        height:100%;
-        width:100%;
-      }
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
-      body
-      {
-        height:100%;
-        width:100%;
-        overflow: hidden;
-      }
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
 
-
-      @font-face  {
-          font-family: "AmaticSC";
-          src: url("fonts/AmaticSC-Regular.ttf");
-      }
-
-      #bgvideo
-      {
-        height:auto;
-        width:auto;
-        min-height:100%;
-        min-width:100%;
-        position:fixed;
-        right:0;
-        bottom:0;
-        background-size:cover;
-        z-index=-100;
-        display:block;
-        -webkit-animation: fadein 3s;
-        -moz-animation: fadein 3s;
-        -ms-animation: fadein 3s;
-        -o-animation: fadein 3s;
-        animation: fadein 3s;
-        animation-name: fadein;
-        animation-duration: 3s;
-        animation-timing-function: initial;
-        animation-delay: initial;
-        animation-iteration-count: initial;
-        animation-direction: initial;
-        animation-fill-mode: initial;
-        animation-play-state: initial;
-      }
-
-      .transparent {
-        background-color: #FFF;
-      }
-
-      .intro-fixed
-      {
-        position:fixed;
-        height:100%;
-        width:100%;
-        text-align:center;
-        margin-top: 120px;
-      }
-
-      .contactme 
-      {
-        margin-left: 30px;
-        margin-top: 100px;
-        text-align: center;
-      }
-
-      .contactitem
-      {
-        margin-right: 40px;
-        display: inline-block;
-        opacity: 0.7;
-      }
-
-      .contactitem:hover {
-        opacity:0.5;
-      }
-
-      .intro-fixed
-      {
-        position:relative;
-        display:block;
-      }
-
-      .intro-heading
-      {
-        color:#FFF;
-        font-family: AmaticSC, cursive;
-        font-size:95px;
-        font-weight:200;
-      }
-
-      .intro-text h4
-      {
-        color:#FFF;
-        font-family:Impact, Charcoal, sans-serif;
-        font-size:35px;
-        font-weight:150;
-        letter-spacing:10px;
-        opacity: 0.9;
-        color: white;
-      }
-
-      .footer {
-          position:fixed;
-          bottom:0;
-          text-align: center ;
-          font-size: 16px ;
-          font-family: verdana ;
-          width: 100%;
-          color: white;
-          opacity: 0.5;
-      }
-
-
-    </style>
   </head>
-  
-  <body>   
 
-    <div> 
-    
-      <video autoplay loop id="bgvideo" class="transparent">
-        <source src="video/video720.mp4" type="video/mp4">
-      </video>  
+  <body id="page-top">
 
-      <div class="intro-fixed">
-        <div class="intro-heading">
-          <div>Amay Kataria</div>
-        </div>
-        <div class="intro-text">
-          <h4>engineer, creative enthusiast, seeker</h4>
-        </div>
-        <div class="contactme">
-          <a href="https://soundcloud.com/eulphean" target="_blank">
-              <img class="contactitem" src="svg/Soundcloud.svg" title="Soundcloud">
-           </a>
-          <a href="http://www.eulphean.com" target="_blank">
-            <img class="contactitem" src="svg/Blogger.svg" title="Blogger">
-          </a>
-          <a href="https://amaykataria.tumblr.com" target="_blank">
-            <img class="contactitem" src="svg/Tumblr.svg" title="Tumblr">
-          </a>
-          <a href="https://www.linkedin.com/in/amay-kataria-80301449" target="_blank">
-            <img class="contactitem" src="svg/LinkedIn.svg"  title="LinkedIn">
-          </a>
-          <a href="https://www.pinterest.com/amaykataria/" target="_blank">
-            <img class="contactitem"  src="svg/Pinterest.svg" title="Pinterest">
-          <a>
-          <a href="https://www.instagram.com/eulphean/" target="_blank">
-            <img class="contactitem" src="svg/Instagram.svg" title="Instagram">
-          <a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Amay Kataria</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <div class="title navbar-nav ml-auto" id="navbarTitle">
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Bio</a>
+                </li>
+            </div>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a title="Github" class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="https://github.com/eulphean/" target="_blank">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-github fa-1x"></i>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+                <a title="Blog" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="http://amaykataria.blogspot.com" target="_blank">
+                  <div class="portfolio-item-caption-content my-auto text-center text-white">
+                    <i class="fa fa-feed fa-1x"></i>
+                  </div>
+                </a>
+              </li>
+            <li class="nav-item mx-0 mx-lg-1">
+                <a title="Soundcloud" class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="https://soundcloud.com/eulphean" target="_blank">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-soundcloud fa-1x"></i>
+                  </div>
+                </a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+                  <a title="Tumblr" class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="http://amaykataria.tumblr.com/" target="_blank">
+                    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                      <i class="fa fa-tumblr fa-1x"></i>
+                    </div>
+                  </a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-1">
+                  <a title="LinkedIn" class="nav-link py-3 px-lg-3 rounded text-white" href="https://www.linkedin.com/in/amay-kataria-80301449" target="_blank">
+                    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                      <i class="fa fa-linkedin fa-1x"></i>
+                    </div>
+                  </a>
+              </li>
+          </ul>
         </div>
       </div>
+    </nav>
 
-      <div class="footer">
-          <h5>Copyright © 2016 Amay Kataria</h5>
+    <!-- Landing/Intro section -->
+    <!-- <header class="masthead bg-primary text-white text-left">
+      <div class="container">
+        <p class="font-weight-light"> Hello what's up</p>
+      </div>
+    </header> -->
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
+        <hr class="line-dark mb-5">
+       
+        <!-- Portfolio grid -->
+        <div class="row">
+          <div class="mb-3 col-md-6 col-lg-3">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-10">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-1x"></i>
+                </div>
+              </div>
+              <img class="img-fluid h-100 w-100" src="img/portfolio/creative.png" alt="">
+              <div class="portfolio-title my-auto text-white w-100 text-center">
+                  CREATIVE CODING EXHIBITION
+              </div>
+            </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-9">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-1x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/parabolic.png" alt="">
+              <div class="portfolio-title text-white my-auto w-100 text-center">
+                  PARABOLIC SOUND
+              </div>
+            </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-8">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-1x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/tree.png" alt="">
+              <div class="portfolio-title text-white my-auto w-100 text-center">
+                  TREE OF LIFE
+              </div>
+            </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-7">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-1x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/sonic.png" alt="">
+                <div class="portfolio-title text-white my-auto w-100 text-center">
+                    SONIC NEGOTIATIONS
+                </div>
+              </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-1x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/github.png" alt="">
+              <div class="portfolio-title text-white my-auto w-100 text-center">
+                  GITHUB WORKSHOP
+              </div>
+            </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-1x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/recursive.png" alt="">
+              <div class="portfolio-title text-white my-auto w-100 text-center">
+                  RECURSIVE PATTERNS
+              </div>
+            </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-1x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/virtues.png" alt="">
+              <div class="portfolio-title text-white my-auto w-100 text-center">
+                  VIRTUES
+              </div>
+            </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-1x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/magicmic.png" alt="">
+                <div class="portfolio-title text-white my-auto w-100 text-center">
+                    MAGIC MIC
+                </div>
+              </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-1x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/earthlens.png" alt="">
+                <div class="portfolio-title text-white my-auto w-100 text-center">
+                    EARTHLENS
+                </div>
+              </a>
+          </div>
+          <div class="mb-3 col-md-6 col-lg-3">
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-1x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/skype.png" alt="">
+                <div class="portfolio-title text-white my-auto w-100 text-center">
+                    SKYPE
+                </div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="bg-primary text-white mb-0 py-5" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Bio</h2>
+        <hr class="circle-light mb-5">
+        <div class="row">
+          <div class="col-lg-6 ml-auto">
+            <p class="lead text-justify">Amay Kataria (b. 1990) is a global artist intersecting technology with modern art mediums for self-expression. Born and brought up in Delhi, the capitol city of India, he developed artistic tendencies at the age of 14 when he started learning instruments like guitar and harmonica. After placing 1st in Future Cities India 2020 in 2007, a competition to design futuristic road architecture for Commonwealth Games held in India in 2010, his team of 4 students represented India in Washington D.C. to present their designs. During that trip, he visited U.S. universities and decided to pursue his college education abroad. At the age of 18, he moved to Virginia Tech to pursue Computer Engineering. While studying engineering, he took classes in philosophy, music appreciation, interdisciplinary product design, robotics, hardware-software, and embedded systems. After graduating from Tech in 2012, Amay joined Windows team in Microsoft as a Software Engineer in Seattle, WA. While working, he explored his</p>
+          </div>
+          <div class="col-lg-6 mr-auto">
+            <p class="lead text-justify">passion for arts through music production, attending creative writing workshops, and painting & drawing lessons in Seattle Community College and Gage Academy of Arts. In 2014, he moved to Skype4Life project in Microsoft under the mentorship of Eric Traut. During this time, he collaborated with designers, product managers, and led the development of several high-impact features for the brand new Skype app. He also participated in creative hackathons to work with modern art mediums like Augmented Reality, Artificial Intelligence, and Sound to expand his repertoire of creative mediums. Ultimately, while attending Burning Man in Nevada in 2015, when his artistic tendencies were at peak, Amay decided to pursue graduate education in fine arts. He began collating a portfolio for a MFA and left his job at Microsoft in Summer, 2017 to start school in Fall, 2017. Currently, he is pursuing a MFA in Art & Technology Studies at SAIC and is expected to graduate in 2019. </p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light mr-3" href="./doc/artiststatement.pdf" download="AmayKataria.Statement.pdf">
+            <i class="fa fa-download mr-2"></i>
+            Artist Statement
+          </a>
+          <a class="btn btn-xl btn-outline-light" href="#">
+            <i class="fa fa-download mr-2"></i>
+            CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Copyright text -->
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Amay Kataria 2018</small>
       </div>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">Skype</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">While working at Microsoft from 2013 - 2017, I spent 2.5 years in the Skype organization after working for Windows. I joined Skype4Life's development team led by <a target="_blank" href="https://en.wikipedia.org/wiki/Eric_Traut">Eric Traut</a>, where I got to work on a myriad of projects ranging from user interface development, scalable backend services, artificial intelligence driven bots, and infrastructure/platform work. Our team had two primary goals. Firstly, it was to build a new platform on top of Facebook's React & React-Native technology called <a href="https://microsoft.github.io/reactxp/docs/getting-started.html" target="_blank">ReactXP</a>, which would allow developers to write a highly performant application that could run on web and native platforms (iOS and Android) seamlessly under a single codebase. Additionally, we wanted to rebrand Skype and make it the first large-scale application written using ReactXP from scratch. During this time, I contributed to CoreUI, Messaging, and Fundamentals squads by architecting and developing features that are utilized by millions of Skype users today. Earlier in 2017, our team open-sourced <a href="https://github.com/Microsoft/reactxp" target="_blank">ReactXP</a>, which has built a strong community of developers around it. Subsequently, we released the newly developed Skype application in June, 2017 on the app store. My experience at Skype exposed me to industry practices and experienced software engineers, who taught me the significance of collaboration to deliver a high impact product like Skype. Here's a short video in my own words about my experience at Skype and the possibilities beyond. 
+              </p>
+              <div class="mb-5">
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/198950033"w ebkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                  <p><a href="https://vimeo.com/198950033">Skype and Beyond ...</a> from <a href="https://vimeo.com/amaykataria">Amay Kataria</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+              </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">EarthLens</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">EarthLens was developed with a team of data scientists, software developers, and product managers at Microsoft’s //oneweek hackathon in 2016. It is an augmented reality application using Microsoft’s HoloLens to help scientists, students, and enthusiasts to immersively uncover and predict the health of our planet.<br />I led the software development of this project in Unity and collaborated with 2 other developers to deliver a MVP from scratch. The scenario we prototyped was a table-top experience of Great Barrier Reef, where a user interactively experienced changes in the health of corals in past years. By creating machine learning models with 50 years of data for the reef’s health, data science interns created prediction equations for calcification and density of corals in the future. I worked on visual depiction of two primary scenes and their transitions, Hololens gestures, and integrating contributions from other developers, who developed the machine learning models for the coral scene.<br />
+              To make the experience more immersive, I added spatial sound effects for gestures and surround sound commentary on how to use the application.     
+              </p>
+              <div class="mb-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/197704900"w ebkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <p><a href="https://vimeo.com/197704900">EarthLens</a> from <a href="https://vimeo.com/amaykataria">Amay Kataria</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+              </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">Magic Mic</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">After meeting Stephen and Tyler in Seattle at Startup weekend event with a music vertical in 2015, we decided to hack a PureData patch to create stutter mic effects in 48 hours. The pd patch ran on a laptop that was hooked to a mic through a sound controller. I contributed by developing the midi component for the patch, which communicated with a TouchOsc XY midipad on a mobile device to achieve portable interactivity. As soon as the user interacted with the midipad and spoke in the mic, the system got activated and recorded user’s voice sample. Once a sample was stored, user could modify the sample in real-time by scrolling in the X or Y axis on their phone. X-axis was the playback speed and Y-axis was the length of the sample. Magic mic is for people doing standups or hosting events to create stutter effects like “Che-che-che-check it out..” Magic Mic was the crowd’s most entertaining project. We also got offered to create this as a plugin for a local startup’s Android music application.<br />Later, I enhanced the patch to include incremental recording of wav files. This made it a handy sampler to collect, save, and modify ambient sounds using just my laptop. To follow up, I imported the samples into Ableton and created experimental tracks using them.
+              </p>
+              <div class="mb-5">
+                <div class="embed-responsive embed-responsive-16by9">                
+                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/197708511" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <p><a href="https://vimeo.com/197708511">Magic Mic</a> from <a href="https://vimeo.com/amaykataria">Amay Kataria</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+              </div>
+              <div class="mb-5">
+                <iframe width="80%" height="100" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/300172114&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+              </div>
+              <div class="mb-5">
+                <iframe width="80%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/300278415&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+              </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">Virtues</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">This work is inspired from Aristotle's Nicomachean Ethics philosophy. In this, Aristotle greatly explores what makes human beings happy and the reasons behind their well being. According to him, good and successful people possess distinct virtues, which one should learn to identify in themselves and honor in others. He identified 12 virtues; courage, temperance, liberality, magnificence, magnanimity, proper ambition/pride, patience/good temper, truthfulness, wittiness, friendliness, modesty, and righteous indignation.<br />This work revisits each virtue and expresses it with sound and visuals. The visual for each track is generated using an <a href="https://github.com/eulphean/Processing/blob/master/Infinism/Infinism.pde">interactive tool</a> I developed in processing and  post-processed the outputs in Gimp. Each audio track binds a virtue, it's emotional presence, the visual art for it, and the gamut of vices, which the virtue lies between.<br />Aristotle proposed that mastering a subset of these virtues can ensure well-being and happiness of humans to a great extent.
+              </p>
+              <div class="mb-5">
+                <div class="row">
+                  <img class="img-fluid col-md-3 col-lg-6 h-50 mb-3" src="img/portfolio/virtues1.png"/>
+                  <img class="img-fluid col-md-3 col-lg-6 h-50 mb-3" src="img/portfolio/virtues2.png"/>
+                </div>
+                <p class="text-justify">A tool developed in processing enables users to interactively create abstract art. Users can choose between four shapes (circle, square, rectangle, and line) and can change scale, stroke, rotate, opacity, and render rate parameters for these shapes by referring to its keyboard interface document. Compositions created in it were post-processed in Gimp to be finalized.
+                </p>
+              </div>
+              <div class="mb-5">
+                <div class="row">
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/ambition.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/friendliness.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/liberality.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/magnificence.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/magnanimity.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/modesty.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/patience.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/righteous.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/temperance.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/truthfulness.png"/>
+                      <img class="img-fluid col-md-6 col-lg-3 h-100 mb-3" src="img/portfolio/virtues/wittiness.png"/>
+                    </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <img class="img-fluid mb-3" src="img/portfolio/virtues3.png" alt="" />
+              </div>
+              <div class="mb-5">
+                  <iframe width="80%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/266092488&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+              </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="col-lg-12 mx-auto">
+            <h3 class="text-secondary text-uppercase mb-0">Recursive Patterns</h3>
+            <hr class="sin-dark mb-5">
+            <p class="mb-5 text-justify">This project is an investigation of a popular computer science technique called Recursion to devise algorithms. Here, I developed a system that renders a specific circular pattern at each depth and branches off to create a similar pattern from each circle; thus, reproducing a mandala like pattern. These sacrilegous looking patterns are identified by the input angle given to the system that determines the number of circles at each depth. The parameters like depth and angle determine the shape of the mandala. These patterns were also laser cut on MDF (wood).<a href="https://github.com/eulphean/RecursivePatterns"> Here</a> is the code for this project. 
+            </p>
+            <div class="row mb-5">
+              <div class="col-md-6 col-lg-6">
+                <img class="img-fluid" src="img/portfolio/40.png"/>
+                <p class="text-justify text-center">40</p>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <img class="img-fluid" src="img/portfolio/45.png"/>
+                <p class="text-justify text-center">45</p>
+              </div>
+            </div>
+            <div class="mb-5">
+                <img class="img-fluid" src="img/portfolio/exhibition.png"/>
+                <p class="text-justify text-center">45 & 40 exhibited at SAIC.</p>
+            </div>
+            <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">Github Workshop</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">During Fall 2017 at SAIC, I conducted a workshop on how to use Github for versioning creative coding projects. I used Daniel Shiffman's Github for Poets videos as a reference to prepare this workshop. We started by covering the difference between Git and Github and walked through the web interface to create repositories, make commits, create pull requests and observe user activity. Then we dove into the Terminal and covered Git commands and Git workflows to organize and version the projects.
+              </p>
+              <div class="row mb-5">
+                  <img class="img-fluid col-md-3 col-lg-6 h-50 mb-3" src="img/portfolio/github.png" alt="" />
+                  <img class="img-fluid col-md-3 col-lg-6 h-50 mb-3" src="img/portfolio/githubAmay.png" alt="" />
+              </div>
+              <div class="embed-responsive embed-responsive-16by9 mb-5">
+                <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vSMh-ik0A6uiJ8CAiKJUoQJgfZ_d3CeFxZVrMlM25UcuHNQultUenDZDzaGedIm7lgOrOA_tDLVlOBh/embed?start=true&loop=true&delayms=60000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-7">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">Sonic Negotiations</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">How does it feel to be in control? Sonic Negotiations is a dialog between participants and the sound around them. It questions what does it mean to be in control and how does one share this control with other humans in an interactive sonic environment. A participant is presented with a visual clue on the screen about his/her presence along with a connection to other participants in the room. Every participant entering the room enables a unique sound effect like reverb, delay, pitch or distortion on the audio track. When the moving participants are detected in the room using Computer Vision, the distance between them maps to the intensity of these effects. The audio track for this piece is an excerpt from Alan Watts' philosophical discourse called "What Do You Desire?", which argues that the primordial thing that one desires if money was not an object is to be in control. This work wishes to involve the participants in a state of negotiation of control with other participants. Below, a series of images show how the visual clues change with the number of participants in the room and a video documentation of this system at the artist's studio in SAIC. This system was developed using OpenFrameworks and here's the code for this project.  
+              </p>
+              <div class="mb-5">
+                <div class="row">
+                      <img class="img-fluid col-md-6 col-lg-6 h-100 mb-3" src="img/portfolio/sonic/1.png"/>
+                      <img class="img-fluid col-md-6 col-lg-6 h-100 mb-3" src="img/portfolio/sonic/2.png"/>
+                      <img class="img-fluid col-md-6 col-lg-6 h-100 mb-3" src="img/portfolio/sonic/3.png"/>
+                      <img class="img-fluid col-md-6 col-lg-6 h-100 mb-3" src="img/portfolio/sonic/4.png"/>
+                </div>
+              </div>
+              <div class="mb-5">
+                  <div class="embed-responsive embed-responsive-16by9">                
+                      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/252019016" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                  <p><a href="https://player.vimeo.com/video/252019016">Sonic Negotiations</a> from <a href="https://vimeo.com/amaykataria">Amay Kataria</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-8">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">Tree of Life</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">Tree of Life is an audio-visual performance of the unravelling of a tree over time. This work is inspired from philosophical parallels between the growth of a tree and the human body, where different stages of a tree's growth are represented by a visual and sonic landscape. In the initial stages of its growth, a tree receives nutrients like water and sunlight, just how a child grows and receives visual and audial stimulation from the environment. This information is responsible for forming a child's brain and influencing his/her growth. Once a child starts becoming an adult, he/she starts meeting various people and develops certain relationships. These relationships are like branches of a tree that bear fruits and flowers with time, just how human relationships flourish and reap new connections. Eventually, the tree completes its life and becomes one with the ground from where it grew. Similarly, human body completes its soujourn journey and perishes like it's destined to be.<br />This performance creates a unique soundscape by combining fabricated metal objects with technology, body gestures and audio-reactie visuals to expess this growth process from beginning to end. It wishes to explore the sonic virtuality that imagines an audio language to express the performer's stored experiences and memories of his upbringing with respect to the growth of a tree.<br />With the metal dishes acting as external tongues, the role of these body gestures is no different than the mind, which gives words to our expressions and uses vocal organs to produce sound. Here, the body gestures are converted into intellect, and metallic objects are converted into vocal organs that express this tree of life. 
+              </p>
+              <div class="mb-5">
+                <img class="img-fluid mb-3" src="img/portfolio/tree/brainstorm.png"/>
+                <p class="text-justify text-center">Flow of thoughts that led to the ideation of Tree of Life. The goal was to create an audio-visual system for self-expression.</p>
+              </div>
+              <div class="mb-5">
+                <img class="img-fluid col-md-12 col-lg-8 h-100 mb-3" src="img/portfolio/tree/tech.png"/>
+                <p class="text-justify">The technology stack for this project utilized <a href="https://github.com/openframeworks/openFrameworks">OpenFrameworks</a> for development. The audio was collected using microphones from the metallic dishes and routed to Ableton. With a custom TouchOSC interface, OSC messages for audio and visual commands were sent to an OpenFrameworks program running on a laptop. Audio commands were processed and sent to Ableton as MIDI messages to control the sound. Visual commands were forwarded to another OpenFrameworks program as OSC messages running on a machine across the room, which drove the visuals on the screen. <a href="https://github.com/eulphean/TouchInstrument" >Here's</a> the code for this project. 
+              </div>
+              <div class="mb-5">
+                <div class="row">
+                  <img class="col-md-6 col-lg-6 h-100 mb-3" src="img/portfolio/tree/audio.png"/>
+                  <img class="col-md-6 col-lg-6 h-100 mb-3" src="img/portfolio/tree/video.png"/>
+                </div>
+                <p class="text-justify text-center">Custom TouchOSC interface running on an iPad for audio (left) control and video (right) effects.</p>
+              </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+     <!-- Portfolio Modal 9 -->
+     <div class="portfolio-modal mfp-hide" id="portfolio-modal-9">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">Parabolic Sound</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">Parabolic Sound is an interactive installation that lets users manipulate sound using parabolic metal dishes and a custom TouchOSC interface. It started as an investigation to convert metal objects into capacitive touch sensors using a simple RC circuit principle and explore new gestural relationships of human skin conductivity with sound. In this system, the user can cycle through audio samples and select audio effects like delay, distortion, and pitch modulation to be manipulated through interaction with the dish. They can also choose to manipulate these effects on sin, square or triangle waves and mix them with the output of the audio samples through the TouchOSC interface. A part of this system was utilized in Tree of Life project to extract sounds from body gestures. It was also exhibited at the Creative Coding exhibition at SAIC in Fall 2017. 
+              </p>
+              <div class="mb-5">
+                <iframe src="https://player.vimeo.com/video/197704900" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/197704900">Earthlens</a> from <a href="https://vimeo.com/amaykataria">Amay Kataria</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+              </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Portfolio Modal 10 -->
+     <div class="portfolio-modal mfp-hide" id="portfolio-modal-10">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-2x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h3 class="text-secondary text-uppercase mb-0">Creative Coding Exhibition</h3>
+              <hr class="sin-dark mb-5">
+              <p class="mb-5 text-justify">During Fall 2017 at SAIC, I got an opportunity to be <a href="https://github.com/bakercp">Christopher Baker's</a> Teaching Assistant (TA) for <a href="https://github.com/SAIC-ATS/ARTTECH-3135">Intro to Creative Coding</a> class, which introduced students to OpenFrameworks and dove deep in it. At the end of semester, a total of 33 students from both the sections including me, exhibited their work in ATS Flex Space at SAIC. As a TA, I got to experience the creative capacity of students, ramp up their programming skills, and assist them in bringing their creative visions to life. Here are some highlights from the show. 
+              </p>
+              <div class="mb-5">
+                <div class="row">
+                  <img class="img-fluid col-md-6 col-lg-4 h-100 mb-3" src="img/portfolio/exhibition/1.png"/>
+                  <img class="img-fluid col-md-6 col-lg-4 h-100 mb-3" src="img/portfolio/exhibition/2.png"/>
+                  <img class="img-fluid col-md-6 col-lg-4 h-100 mb-3" src="img/portfolio/exhibition/3.png"/>
+                  <img class="img-fluid col-md-6 col-lg-4 h-100 mb-3" src="img/portfolio/exhibition/4.png"/>
+                  <img class="img-fluid col-md-6 col-lg-4 h-100 mb-3" src="img/portfolio/exhibition/5.png"/>
+                  <img class="img-fluid col-md-6 col-lg-4 h-100 mb-3" src="img/portfolio/exhibition/6.png"/>
+                </div>
+              </div>
+              <a class="btn btn-primary btn-med rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
 
   </body>
 
