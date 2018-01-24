@@ -6,10 +6,6 @@
 body {
   font-family: 'Lato'; }
 
-body.modal-open {
-  overflow: hidden;
-  position: fixed; }
-
 h1,
 h2,
 h3,
