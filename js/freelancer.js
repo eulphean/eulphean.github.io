@@ -65,32 +65,27 @@
   });
 
   // Modal popup$(function () {
+  var startWindowScroll = 0;
   $('.portfolio-item').magnificPopup({
     type: 'inline',
     preloader: false,
-    modal: true
+    modal: true,
+    closeOnBgClick: true,
+    fixedContentPos: true,
+    callbacks: {
+      beforeOpen: function() {
+        startWindowScroll = $(window).scrollTop();
+        $('html').addClass('mfp-helper');
+      },
+      close: function() {
+        $('html').removeClass('mfp-helper');
+        $(window).scrollTop(startWindowScroll);
+      }
+    }
   });
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
     $.magnificPopup.close();
-  });
-
-  // Stop scrolling the body when modal is shown. 
-  $('.portfolio-modal')
-  .on('show.bs.modal', function (){
-      scrollPos = $('body').scrollTop();
-      $('body').css({
-          overflow: 'hidden',
-          position: 'fixed',
-          top : -scrollPos
-      });
-  })
-  .on('hide.bs.modal', function (){
-      $('body').css({
-          overflow: '',
-          position: '',
-          top: ''
-      }).scrollTop(scrollPos);
   });
 
   // Floating label headings for the contact form
