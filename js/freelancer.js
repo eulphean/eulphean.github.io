@@ -70,16 +70,19 @@
     type: 'inline',
     preloader: false,
     modal: true,
-    closeOnBgClick: true,
     fixedContentPos: true,
     callbacks: {
       beforeOpen: function() {
-        startWindowScroll = $(window).scrollTop();
-        $('body').addClass('mfp-helper');
+        if ($(window).width() <= 992) {
+          startWindowScroll = $(window).scrollTop();
+          $('body').addClass('mfp-helper');
+        }
       },
       close: function() {
-        $('body').removeClass('mfp-helper');
-        $(window).scrollTop(startWindowScroll);
+        if ($(window).width() <= 992) {
+          $('body').removeClass('mfp-helper');
+          $(window).scrollTop(startWindowScroll);
+        }
       }
     }
   });
