@@ -3,6 +3,11 @@ body {
   @include body-font;
 }
 
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+
 h1,
 h2,
 h3,
