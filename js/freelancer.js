@@ -70,21 +70,7 @@
     type: 'inline',
     preloader: false,
     modal: true,
-    fixedContentPos: true,
-    callbacks: {
-      beforeOpen: function() {
-        if ($(window).width() <= 992) {
-          startWindowScroll = $(window).scrollTop();
-          $('body').addClass('mfp-helper');
-        }
-      },
-      close: function() {
-        if ($(window).width() <= 992) {
-          $('body').removeClass('mfp-helper');
-          $(window).scrollTop(startWindowScroll);
-        }
-      }
-    }
+    fixedContentPos: true
   });
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
