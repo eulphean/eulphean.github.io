@@ -58,10 +58,10 @@
     box-shadow: 0 0 3rem 1rem fade-out(black, .5);
     .close-button {
       position: absolute;
-      top: 2rem;
-      right: 2rem;
+      top: 0.75rem;
+      right: 0.75rem;
       i {
-        line-height: 38px;
+        line-height: 19px;
       }
     }
     h2 {
@@ -73,6 +73,14 @@
       min-height: 100vh;
       padding: 5rem;
       margin: 3rem calc(3rem - 8px);
+      .close-button {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        i {
+          line-height: 38px;
+        }
+      }
       h2 {
         font-size: 3rem;
       }

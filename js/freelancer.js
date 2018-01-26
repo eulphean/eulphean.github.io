@@ -8,8 +8,10 @@
       //Check Device //All Touch Devices
       if (isTouch) {
         var myNode = document.getElementById("portfolio-item-caption");
-        while (myNode.firstChild) {
+        if (myNode != null) {
+          while (myNode.firstChild) {
             myNode.removeChild(myNode.firstChild);
+          }
         }
       }
   };

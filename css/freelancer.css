@@ -273,10 +273,10 @@ header.masthead {
   box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5); }
   .portfolio-modal .portfolio-modal-dialog .close-button {
     position: absolute;
-    top: 2rem;
-    right: 2rem; }
+    top: 0.75rem;
+    right: 0.75rem; }
     .portfolio-modal .portfolio-modal-dialog .close-button i {
-      line-height: 38px; }
+      line-height: 19px; }
   .portfolio-modal .portfolio-modal-dialog h2 {
     font-size: 2rem; }
 
@@ -285,6 +285,12 @@ header.masthead {
     min-height: 100vh;
     padding: 5rem;
     margin: 3rem calc(3rem - 8px); }
+    .portfolio-modal .portfolio-modal-dialog .close-button {
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+      .portfolio-modal .portfolio-modal-dialog .close-button i {
+        line-height: 38px; }
     .portfolio-modal .portfolio-modal-dialog h2 {
       font-size: 3rem; } }
 
