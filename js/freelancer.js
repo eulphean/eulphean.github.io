@@ -1,6 +1,19 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  //Check Mobile Devices
+  var checkMobile = function(){
+      //Check Device
+      var isTouch = ('ontouchstart' in document.documentElement);
+      //Check Device //All Touch Devices
+      if (isTouch) {
+          $(".portfolio-item").remove(".portfolio-item-caption");
+      }
+  };
+  
+  //Execute Check
+  checkMobile();
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -84,8 +97,6 @@
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
     $.magnificPopup.close();
-    $('#focusElement').focus();
-    $('.portfolio-modal').focus();
   });
 
   // Floating label headings for the contact form
