@@ -49,13 +49,22 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  $( window ).resize(function() {
+  var navbarTitleSmall = function() {
+    $("#navbarTitle").removeClass("title");
+    $("#navbarTitle").removeClass("navbar-nav");
+    $("#navbarTitle").removeClass("ml-auto");
+    $("#navbarTitle").addClass("text-center");
+  }
+  
+  // Check the width of window to reset navbar title
+  // when initializing.
+  if ($(window).width() <= 992) {
+    navbarTitleSmall();
+  }
+
+  $(window).resize(function() {
     if ($(window).width() <= 992) {
-      console.log("Test");
-      $("#navbarTitle").removeClass("title");
-      $("#navbarTitle").removeClass("navbar-nav");
-      $("#navbarTitle").removeClass("ml-auto");
-      $("#navbarTitle").addClass("text-center");
+      navbarTitleSmall();
     } else {
       $("#navbarTitle").addClass("title");
       $("#navbarTitle").addClass("navbar-nav");
