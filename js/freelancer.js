@@ -75,6 +75,7 @@
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
     $.magnificPopup.close();
+    $('.portfolio-item').blur();
   });
 
   // Floating label headings for the contact form
