@@ -253,6 +253,8 @@ header.masthead {
       font-size: 0.75rem;
       font-weight: 600;
       background-color: #2C3E50; }
+  .portfolio .portfolio-item:focus {
+    outline: none; }
   @media (min-width: 992px) {
     .portfolio {
       margin-top: 25px; } }

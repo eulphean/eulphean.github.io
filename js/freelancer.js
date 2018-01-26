@@ -55,7 +55,7 @@
     $("#navbarTitle").removeClass("ml-auto");
     $("#navbarTitle").addClass("text-center");
   }
-  
+
   // Check the width of window to reset navbar title
   // when initializing.
   if ($(window).width() <= 992) {
@@ -84,7 +84,6 @@
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
     $.magnificPopup.close();
-    $('.portfolio-item').blur();
   });
 
   // Floating label headings for the contact form
