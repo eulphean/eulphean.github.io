@@ -8,11 +8,9 @@
       //Check Device //All Touch Devices
       if (isTouch) {
         var myNode = $(".portfolio-item-caption");
-        if (myNode != null) {
-          $.each(myNode, function(i, v){
-            v.remove();
-          });
-        }
+        $.each(myNode, function(i, v){
+          v.remove();
+        });
       }
   };
   
