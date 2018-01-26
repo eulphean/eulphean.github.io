@@ -7,7 +7,10 @@
       var isTouch = ('ontouchstart' in document.documentElement);
       //Check Device //All Touch Devices
       if (isTouch) {
-          $(".portfolio-item").remove(".portfolio-item-caption");
+        var myNode = document.getElementById("portfolio-item-caption");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
       }
   };
   
