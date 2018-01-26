@@ -83,6 +83,7 @@
   });
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
+    $('#focusElement').focus();
     $.magnificPopup.close();
   });
 
