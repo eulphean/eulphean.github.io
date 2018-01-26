@@ -83,8 +83,9 @@
   });
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
-    $('#focusElement').focus();
     $.magnificPopup.close();
+    $('#focusElement').focus();
+    $('.portfolio-modal').focus();
   });
 
   // Floating label headings for the contact form
