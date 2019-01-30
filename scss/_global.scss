@@ -182,3 +182,10 @@ section {
     line-height: 3.1rem;
   }
 }
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
