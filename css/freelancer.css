@@ -31,7 +31,7 @@ hr.line-dark {
   text-align: center;
   border: none;
   border-top: solid 0.25rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 2.5rem; }
 
 hr.line-light:after,
@@ -65,7 +65,7 @@ hr.circle-dark {
   text-align: center;
   border: none;
   border-top: solid 0.25rem;
-  margin-top: 2.5rem;
+  margin-top: 1.0rem;
   margin-bottom: 2.5rem; }
 
 hr.circle-light:after,
@@ -192,13 +192,14 @@ section {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s; }
     #mainNav .navbar-brand {
-      font-size: 1.75em;
+      font-size: 1.0em;
       -webkit-transition: font-size 0.3s;
       -moz-transition: font-size 0.3s;
       transition: font-size 0.3s; }
     #mainNav .navbar-nav {
       margin-top: 0; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+      font-size: 1.0rem;
       color: #fff;
       background: #18BC9C; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
@@ -208,7 +209,7 @@ section {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; }
     #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em; } }
+      font-size: 1.3em; } }
 
 header.masthead {
   padding-top: calc(6rem + 72px);
