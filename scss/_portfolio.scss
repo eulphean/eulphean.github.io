@@ -1,7 +1,7 @@
 // Styling for the portfolio section
 .portfolio {
-  margin-top: 0px;
-  margin-bottom: -60px;
+  margin-top: -8px;
+  margin-bottom: -96px;
   .portfolio-item {
     position: relative;
     display: block;
@@ -12,7 +12,7 @@
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background-color: fade-out($primary, .1);
+      background-color: fade-out($primary, .5);
       &:hover {
         opacity: 1;
       }
@@ -35,11 +35,11 @@
   }
 
   @media (min-width: 992px) {
-    margin-top: 25px;
+    margin-top: -8px;
   }
 
   @media (min-width: 576px) {
-    margin-bottom: -55px;
+    margin-bottom: -96px;
     // .portfolio-item {
     //   margin-bottom: 30px;
     // }

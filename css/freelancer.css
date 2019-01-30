@@ -26,13 +26,13 @@ h6 {
 
 hr.line-light,
 hr.line-dark {
-  max-width: 15rem;
+  max-width: 10rem;
   padding: 0;
   text-align: center;
   border: none;
   border-top: solid 0.25rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem; }
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
 
 hr.line-light:after,
 hr.line-dark:after {
@@ -236,8 +236,8 @@ header.masthead {
       font-size: 1.75em; } }
 
 .portfolio {
-  margin-top: 0px;
-  margin-bottom: -60px; }
+  margin-top: -8px;
+  margin-bottom: -96px; }
   .portfolio .portfolio-item {
     position: relative;
     display: block;
@@ -247,7 +247,7 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background-color: rgba(242, 165, 24, 0.9); }
+      background-color: rgba(242, 165, 24, 0.5); }
       .portfolio .portfolio-item .portfolio-item-caption:hover {
         opacity: 1; }
       .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
@@ -262,10 +262,10 @@ header.masthead {
     outline: none; }
   @media (min-width: 992px) {
     .portfolio {
-      margin-top: 25px; } }
+      margin-top: -8px; } }
   @media (min-width: 576px) {
     .portfolio {
-      margin-bottom: -55px; } }
+      margin-bottom: -96px; } }
 
 .portfolio-modal .portfolio-modal-dialog {
   padding: 3rem 1rem;
