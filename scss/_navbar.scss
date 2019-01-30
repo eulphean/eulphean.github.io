@@ -5,6 +5,9 @@
   @include heading-font;
   .navbar-brand {
     color: $white;
+    &:hover {
+      color: $hover;
+    }
   }
   .navbar-nav {
     margin-top: 1rem;
@@ -13,14 +16,7 @@
       a.nav-link {
         color: $white;
         &:hover {
-          color: $primary;
-        }
-        &:active,
-        &:focus {
-          color: $white;
-        }
-        &.active {
-          color: $primary;
+          color: $hover;
         }
       }
     }
@@ -51,17 +47,6 @@
     }
     .navbar-nav {
       margin-top: 0;
-    }
-    .navbar-nav > li.nav-item > a.nav-link.active {
-      font-size: 1.0rem;
-      color: $white;
-      background: $primary;
-      &:active,
-      &:focus,
-      &:hover {
-        color: $white;
-        background: $primary;
-      }
     }
   }
   #mainNav.navbar-shrink {

@@ -1,6 +1,6 @@
 // Bootstrap overrides for this template
 a {
-  color: $primary;
+  color: $hover;
   &:focus,
   &:hover,
   &:active {
@@ -34,8 +34,18 @@ a {
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($primary, 10%);
-    border-color: darken($primary, 10%);
+    background-color: darken($hover, 10%);
+    border-color: darken($hover, 10%);
+  }
+}
+
+.btn-outline-light {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($hover, 10%);
+    border-color: darken($hover, 10%);
+    opacity: 0.8;
   }
 }
 
@@ -45,7 +55,7 @@ a {
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($secondary, 10%);
-    border-color: darken($secondary, 10%);
+    background-color: darken($hover, 10%);
+    border-color: darken($hover, 10%);
   }
 }

@@ -12,7 +12,7 @@
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background-color: fade-out($primary, .5);
+      background-color: fade-out($hover, .5);
       &:hover {
         opacity: 1;
       }
