@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e4dd9a1.chunk.css",
-    "main.js": "/static/js/main.56963c85.chunk.js",
-    "main.js.map": "/static/js/main.56963c85.chunk.js.map",
+    "main.css": "/static/css/main.dd7ba1de.chunk.css",
+    "main.js": "/static/js/main.d8959a25.chunk.js",
+    "main.js.map": "/static/js/main.d8959a25.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e1daef6b.js",
     "runtime-main.js.map": "/static/js/runtime-main.e1daef6b.js.map",
-    "static/js/2.9c9c1bb1.chunk.js": "/static/js/2.9c9c1bb1.chunk.js",
-    "static/js/2.9c9c1bb1.chunk.js.map": "/static/js/2.9c9c1bb1.chunk.js.map",
+    "static/js/2.8fd4766e.chunk.js": "/static/js/2.8fd4766e.chunk.js",
+    "static/js/2.8fd4766e.chunk.js.map": "/static/js/2.8fd4766e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.599bd163cd76b4d3340ee1b8f810352e.js": "/precache-manifest.599bd163cd76b4d3340ee1b8f810352e.js",
+    "precache-manifest.b9db78a144c1e15789b018a351becbcc.js": "/precache-manifest.b9db78a144c1e15789b018a351becbcc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.9e4dd9a1.chunk.css.map": "/static/css/main.9e4dd9a1.chunk.css.map",
-    "static/js/2.9c9c1bb1.chunk.js.LICENSE.txt": "/static/js/2.9c9c1bb1.chunk.js.LICENSE.txt",
+    "static/css/main.dd7ba1de.chunk.css.map": "/static/css/main.dd7ba1de.chunk.css.map",
+    "static/js/2.8fd4766e.chunk.js.LICENSE.txt": "/static/js/2.8fd4766e.chunk.js.LICENSE.txt",
     "static/media/ambition.jpg": "/static/media/ambition.0aa17554.jpg",
     "static/media/audio.jpg": "/static/media/audio.6152de39.jpg",
     "static/media/babble.jpg": "/static/media/babble.67e91899.jpg",
     "static/media/back.5a6cf227.svg": "/static/media/back.5a6cf227.svg",
+    "static/media/stylesheet.css": "/static/media/din-webfont.e6a361ef.woff",
     "static/media/bendtherules.jpg": "/static/media/bendtherules.14ef4790.jpg",
     "static/media/bgStrange.jpg": "/static/media/bgStrange.0c122930.jpg",
     "static/media/bombaybeach.jpg": "/static/media/bombaybeach.43429787.jpg",
@@ -104,8 +105,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e1daef6b.js",
-    "static/js/2.9c9c1bb1.chunk.js",
-    "static/css/main.9e4dd9a1.chunk.css",
-    "static/js/main.56963c85.chunk.js"
+    "static/js/2.8fd4766e.chunk.js",
+    "static/css/main.dd7ba1de.chunk.css",
+    "static/js/main.d8959a25.chunk.js"
   ]
 }
