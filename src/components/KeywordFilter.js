@@ -30,7 +30,7 @@ const styles={
         border: 'inherit',
         margin: padding.extraSmall,
         opacity: '95%',
-        letterSpacing: '1.5px',
+        letterSpacing: '2.0px',
 
         '@media (min-width: 450px)': {  
             // No change. 
