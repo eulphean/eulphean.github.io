@@ -48,11 +48,11 @@ const styles={
         backgroundColor: color.bloodRed,
         color: color.featherWhite,
         border: 'none',
-        letterSpacing: '2px',
+        letterSpacing: '2.5px',
         alignSelf: 'center',
 
         '@media (min-width: 450px)': {  
-          // no change.
+          // No change.
         },
 
         '@media (min-width: 600px)': {  
@@ -60,23 +60,24 @@ const styles={
         },
 
         '@media (min-width: 750px)': {  
-          // no change
+            padding: padding.small,
+            fontSize: fontSize.extraBig,
         },
 
         '@media (min-width: 900px)': {  
-          // no change
+            fontSize: fontSize.huge,
         },
 
         '@media (min-width: 1200px)' : {
-          // no change
+            // fontSize: fontSize.extraHuge
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.huge
+            fontSize: fontSize.veryHuge
         },
 
         '@media (min-width: 1700px)' : {
-          // no change. 
+            
         }
       },
 

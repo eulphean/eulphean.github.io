@@ -34,7 +34,7 @@ const styles = {
         justifyContent: 'center',
         
         // We breath the About UI to split contacts and bio tile acrosss a vertical line. 
-        '@media (min-width: 768px)' : {
+        '@media (min-width: 750px)' : {
             justifyContent: 'space-between'
         }
     },
@@ -44,7 +44,7 @@ const styles = {
         flexDirection: 'column',
         
         // We breath the About UI to split contacts and bio tile acrosss a vertical line. 
-        '@media (min-width: 768px)' : {
+        '@media (min-width: 750px)' : {
             // No change
             maxWidth: 'calc(100%/2)',
             alignItems: 'flex-start'
@@ -58,11 +58,39 @@ const styles = {
         backgroundColor: color.deepBlue,
         color: color.featherWhite,
         border: 'inherit',
-        letterSpacing: '2px',
+        letterSpacing: '2.5px',
         alignSelf: 'center',
 
-        '@media (min-width: 768px)' : {
-            alignSelf: 'start'
+        '@media (min-width: 450px)': {  
+            // No change. 
+        },
+
+        '@media (min-width: 600px)': {  
+            // No change
+            fontSize: fontSize.big,
+            padding: padding.small
+        },
+
+        '@media (min-width: 750px)': {  
+            alignSelf: 'start',
+            fontSize: fontSize.veryBig
+        },
+
+        '@media (min-width: 900px)': {
+            fontSize: fontSize.extraBig
+        }, 
+
+        '@media (min-width: 1200px)' : {
+            // No change
+        },
+
+        '@media (min-width: 1400px)' : {
+            fontSize: fontSize.huge,
+        },
+
+        '@media (min-width: 1700px)' : {
+            // No change
+           
         }
     },
 
@@ -74,43 +102,40 @@ const styles = {
         textShadow: textShadow.slateGrey,
         color: color.deepBlue,
         border: 'inherit',
-        letterSpacing: '4px',
+        letterSpacing: '3px',
         alignSelf: 'center',
 
-        '@media (min-width: 768px)' : {
-            alignSelf: 'start'
-        }
-    },
-
-
-    // Applied similarly on both Contact Button and Email. 
-    mediaQueries: {
         '@media (min-width: 450px)': {  
             // No change. 
         },
 
         '@media (min-width: 600px)': {  
             fontSize: fontSize.big,
+            marginTop: padding.big,
+            marginBottom: padding.big
         },
 
         '@media (min-width: 750px)': {  
             // No change
+            alignSelf: 'start',
+            fontSize: fontSize.veryBig 
         },
 
         '@media (min-width: 900px)': {
-
+            fontSize: fontSize.veryBig
         }, 
 
         '@media (min-width: 1200px)' : {
-            // No change
+
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.veryBig,
+            fontSize: fontSize.huge,
+            marginTop: padding.veryBig,
+            marginBottom: padding.veryBig
         },
 
         '@media (min-width: 1700px)' : {
-            // No change
         }
     },
 
@@ -121,7 +146,7 @@ const styles = {
         alignSelf: 'center',
         justifyContent: 'center',
         marginBottom: padding.small,
-        '@media (min-width: 768px)' : {
+        '@media (min-width: 750px)' : {
             // No change
             alignSelf: 'start'
         }
@@ -181,8 +206,6 @@ class About extends React.Component {
     }
 
     render() {
-        const buttonStyle = [styles.contactButton, styles.mediaQueries]; 
-        const emailStyle = [styles.email, styles.mediaQueries];
 
         return (
             <div style={styles.container}>
@@ -191,8 +214,8 @@ class About extends React.Component {
                 </div>
                 <div style={styles.contactContainer}>
                     <div style={styles.contactTile}>
-                        <CustomButton buttonStyle={buttonStyle} isStatic={true} title={'Contact'} />
-                        <div style={emailStyle}>
+                        <CustomButton buttonStyle={styles.contactButton} isStatic={true} title={'Contact'} />
+                        <div style={styles.email}>
                             {'hello@amaykataria.com'}
                         </div>
                         <div style={styles.contactIconsContainer}>
