@@ -1,6 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './About.js'
 import ScrollToTop from './ScrollToTop.js'
 import { padding } from './CommonStyles.js'
