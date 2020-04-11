@@ -38,8 +38,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        alignItems: 'center',
-        justifyContent: 'center'
+        alignItems: 'center'
     }
 }; 
 
