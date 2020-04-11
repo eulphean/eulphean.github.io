@@ -1,6 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-import { isMobile } from 'react-device-detect'
+import { isMobile, isTablet } from 'react-device-detect'
 import { color, boxShadow } from './CommonStyles.js'
 
 const styles={
@@ -60,7 +60,7 @@ class CustomButton extends React.Component {
     }
 
     onHover() {
-        if (this.state.isActive || this.props.isActive || this.props.isStatic || isMobile) {
+        if (this.state.isActive || this.props.isActive || this.props.isStatic || isMobile || isTablet) {
             // Do nothing. 
         } else {
             this.setState({
