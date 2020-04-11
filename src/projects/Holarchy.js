@@ -17,7 +17,7 @@ const styles={
     }
 };
 
-const link=(<CustomLink to='https://www.amaykataria.com/EvolutionaryHolarchy/' inline={true}>Evolutionary Holarchy</CustomLink>);
+const link=(<CustomLink to='https://amaykataria.com/EvolutionaryHolarchy/' inline={true}>Evolutionary Holarchy</CustomLink>);
 const body=' extends the Holon series with a genetic system that is not confined within the bounds of the microscopic and the macroscopic. Previously, the Holon prints had a pre-defined start and end point. The new system is an open-ended system that can self-maintain itself between multiple states of its lifetime, just like a living organism.'
 
 class Holarchy extends React.Component {
