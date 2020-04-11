@@ -72,12 +72,11 @@ const styles = {
         },
 
         '@media (min-width: 750px)': {  
-            alignSelf: 'start',
-            fontSize: fontSize.veryBig
+            alignSelf: 'start'
         },
 
         '@media (min-width: 900px)': {
-            fontSize: fontSize.extraBig
+            fontSize: fontSize.veryBig
         }, 
 
         '@media (min-width: 1200px)' : {
@@ -85,7 +84,7 @@ const styles = {
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.huge,
+            fontSize: fontSize.extraBig,
         },
 
         '@media (min-width: 1700px)' : {
@@ -110,7 +109,7 @@ const styles = {
         },
 
         '@media (min-width: 600px)': {  
-            fontSize: fontSize.big,
+            // fontSize: fontSize.big,
             marginTop: padding.big,
             marginBottom: padding.big
         },
@@ -118,11 +117,11 @@ const styles = {
         '@media (min-width: 750px)': {  
             // No change
             alignSelf: 'start',
-            fontSize: fontSize.veryBig 
+            fontSize: fontSize.big 
         },
 
         '@media (min-width: 900px)': {
-            fontSize: fontSize.veryBig
+            // fontSize: fontSize.veryBig
         }, 
 
         '@media (min-width: 1200px)' : {
@@ -130,9 +129,9 @@ const styles = {
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.huge,
-            marginTop: padding.veryBig,
-            marginBottom: padding.veryBig
+            fontSize: fontSize.veryBig,
+            // marginTop: padding.veryBig,
+            // marginBottom: padding.veryBig
         },
 
         '@media (min-width: 1700px)' : {

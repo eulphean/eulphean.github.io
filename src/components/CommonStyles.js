@@ -80,14 +80,14 @@ const commonWorkStyles = {
         color: color.deepBlue,
         border: 'inherit',
         letterSpacing: '1px',
-        lineHeight: '1.5',
+        lineHeight: '1.6',
 
         '@media (min-width: 450px)': {  
             // no change.
         },
 
         '@media (min-width: 600px)': {  
-            fontSize: fontSize.big,
+
         },
 
         '@media (min-width: 750px)': {  
@@ -96,14 +96,15 @@ const commonWorkStyles = {
 
         '@media (min-width: 900px)': {  
             // no change.
+            fontSize: fontSize.big
         },
 
         '@media (min-width: 1200px)' : {
-            fontSize: fontSize.veryBig,
+            // fontSize: fontSize.veryBig,
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.extraBig,
+            fontSize: fontSize.veryBig,
         },
 
         '@media (min-width: 1700px)' : {
