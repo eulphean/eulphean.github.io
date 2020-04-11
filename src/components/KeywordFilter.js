@@ -21,15 +21,15 @@ const styles={
     }, 
 
     button: {
-        fontFamily: fontFamily.baskerville,
-        fontSize: fontSize.small,
+        fontFamily: fontFamily.bebas,
+        fontSize: fontSize.verySmall,
         padding: padding.verySmall,
         backgroundColor: color.darkGrey,
         color: color.featherWhite,
         boxShadow: boxShadow.deepBlue,
         border: 'inherit',
         margin: padding.extraSmall,
-        letterSpacing: '1px',
+        letterSpacing: '1.5px',
 
         '@media (min-width: 450px)': {  
             // No change. 

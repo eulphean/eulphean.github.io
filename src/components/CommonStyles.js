@@ -56,7 +56,9 @@ const padding = {
 };
 
 const fontFamily = {
-    baskerville: 'Baskerville'
+    baskerville: 'Baskerville',
+    bebas: 'bebas_neueregular',
+    din: 'd-dinregular'
 };
 
 const textShadow = {
@@ -73,11 +75,12 @@ const boxShadow = {
 // of the works. 
 const commonWorkStyles = {
     body: {
-        fontFamily: fontFamily.baskerville,
+        fontFamily: fontFamily.din,
         fontSize: fontSize.small,
         color: color.deepBlue,
         border: 'inherit',
         letterSpacing: '1px',
+        lineHeight: '1.5',
 
         '@media (min-width: 450px)': {  
             // no change.

@@ -51,24 +51,24 @@ const styles = {
     },
 
     contactButton: {
-        fontFamily: fontFamily.baskerville,
+        fontFamily: fontFamily.bebas,
         fontSize: fontSize.small,
         padding: padding.verySmall,
         backgroundColor: color.deepBlue,
         color: color.featherWhite,
         border: 'inherit',
-        letterSpacing: '1px',
+        letterSpacing: '2px',
         alignSelf: 'center',
     },
 
     email: {
-        fontFamily: fontFamily.baskerville,
+        fontFamily: fontFamily.din,
         fontSize: fontSize.small,
         margin: padding.small,
         textShadow: textShadow.slateGrey,
         color: color.deepBlue,
         border: 'inherit',
-        letterSpacing: '1px',
+        letterSpacing: '4px',
         alignSelf: 'center'
     },
 

@@ -42,13 +42,13 @@ const styles={
       },
   
       button: { 
-        fontFamily: fontFamily.baskerville,
+        fontFamily: fontFamily.bebas,
         fontSize: fontSize.big,
         padding: padding.verySmall,
         backgroundColor: color.bloodRed,
         color: color.featherWhite,
         border: 'none',
-        letterSpacing: '1px',
+        letterSpacing: '2px',
         alignSelf: 'center',
 
         '@media (min-width: 450px)': {  
