@@ -40,7 +40,7 @@ class GrooveBody extends React.Component {
                 </div>
             </div>
             <div style={commonWorkStyles.imgContainer}>
-                  <img style={oneImageStyle} alt={'Pose'} src={pose}/>
+                  <img style={commonWorkStyles.oneImage} alt={'Pose'} src={pose}/>
                   <img style={oneImageStyle} alt={'Shiva'} src={shiva}/>
                   <div style={vimeoContainer}>
                     <iframe title={'Groove Body'} style={commonWorkStyles.vimeoFrame} src="https://www.youtube.com/embed/RvZ5usN3NuY?start=87" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>

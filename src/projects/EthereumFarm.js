@@ -19,9 +19,9 @@ const styles={
 
 const link0=(<CustomLink to='https://ethlabor.net' inline={true}>Ethereum Farm</CustomLink>);
 const bodyA=' was developed as a commission for '
-const linkA=(<CustomLink to='http://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg's</CustomLink>);
+const linkA=(<CustomLink to='https://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg's</CustomLink>);
 const bodyB=' project ';
-const linkB=(<CustomLink to='http://stephanierothenberg.com/proof-of-soil/' inline={true}>Proof of Soil</CustomLink>);
+const linkB=(<CustomLink to='https://stephanierothenberg.com/proof-of-soil/' inline={true}>Proof of Soil</CustomLink>);
 const bodyC='. It is a live data visualization of the Ethereum Blockchain on a hypothetical farm. It plants pending transactions (green dots) that are broadcasted on the Ethereum network and marks them as mined (white dots) whenever a new block is created with such transactions. Over time, the farm actively keeps getting populated with pending and mined transactions that captures the dynamic operating frequency of the Ethereum Blockchain.'
 
 class EthereumFarm extends React.Component {
