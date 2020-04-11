@@ -26,7 +26,7 @@ const styles = {
     },
 
     contactContainer: {
-        marginTop: padding.small,
+        marginTop: padding.verySmall,
         marginBottom: padding.small,
         display: 'flex',
         flexDirection: 'row',
@@ -46,7 +46,8 @@ const styles = {
         // We breath the About UI to split contacts and bio tile acrosss a vertical line. 
         '@media (min-width: 768px)' : {
             // No change
-            maxWidth: 'calc(100%/2)'
+            maxWidth: 'calc(100%/2)',
+            alignItems: 'flex-start'
         }
     },
 
@@ -59,17 +60,26 @@ const styles = {
         border: 'inherit',
         letterSpacing: '2px',
         alignSelf: 'center',
+
+        '@media (min-width: 768px)' : {
+            alignSelf: 'start'
+        }
     },
 
     email: {
         fontFamily: fontFamily.din,
         fontSize: fontSize.small,
-        margin: padding.small,
+        marginTop: padding.small,
+        marginBottom: padding.small,
         textShadow: textShadow.slateGrey,
         color: color.deepBlue,
         border: 'inherit',
         letterSpacing: '4px',
-        alignSelf: 'center'
+        alignSelf: 'center',
+
+        '@media (min-width: 768px)' : {
+            alignSelf: 'start'
+        }
     },
 
 
@@ -88,7 +98,7 @@ const styles = {
         },
 
         '@media (min-width: 900px)': {
-            // fontSize: fontSize.veryBig
+
         }, 
 
         '@media (min-width: 1200px)' : {
@@ -110,14 +120,18 @@ const styles = {
         alignItems: 'center',
         alignSelf: 'center',
         justifyContent: 'center',
-        marginBottom: padding.small
+        marginBottom: padding.small,
+        '@media (min-width: 768px)' : {
+            // No change
+            alignSelf: 'start'
+        }
     },
 
     iconWrapper: {
         width: fontSize.big,
         height: fontSize.big,
         fill: color.darkGrey,
-        margin: padding.verySmall,
+        marginRight: padding.small,
 
         '@media (min-width: 450px)': {  
             // No change. 
@@ -133,11 +147,7 @@ const styles = {
         },
 
         '@media (min-width: 900px)': {
-            // height: fontSize.veryHuge,
-            // width: fontSize.veryHuge,
-            marginLeft: padding.small,
-            marginRight: padding.small
-            // fontSize: fontSize.veryBig
+            marginRight: padding.big
         }, 
 
         '@media (min-width: 1200px)' : {
