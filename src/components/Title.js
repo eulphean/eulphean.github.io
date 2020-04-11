@@ -18,7 +18,7 @@ const styles={
         textShadow: textShadow.slateGrey,
         fontFamily: fontFamily.bebas,
         letterSpacing: '2.5px',
-        padding: padding.extraSmall,
+        padding: padding.verySmall,
         backgroundColor: 'transparent',
         border: 'none',
 

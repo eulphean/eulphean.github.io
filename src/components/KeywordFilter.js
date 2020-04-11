@@ -24,11 +24,12 @@ const styles={
         fontFamily: fontFamily.bebas,
         fontSize: fontSize.small,
         padding: padding.verySmall,
-        backgroundColor: color.darkGrey,
+        backgroundColor: color.deepBlue,
         color: color.featherWhite,
         boxShadow: boxShadow.deepBlue,
         border: 'inherit',
         margin: padding.extraSmall,
+        opacity: '95%',
         letterSpacing: '1.5px',
 
         '@media (min-width: 450px)': {  
@@ -36,28 +37,29 @@ const styles={
         },
 
         '@media (min-width: 600px)': {  
-            fontSize: fontSize.big,
+            // No change.
         },
 
         '@media (min-width: 750px)': {  
-            
+            padding: padding.small,
+            fontSize: fontSize.big
         },
 
         '@media (min-width: 900px)': {
-            fontSize: fontSize.veryBig
+            // no change.
         }, 
 
         '@media (min-width: 1200px)' : {
-            // fontSize: fontSize.huge
+            fontSize: fontSize.veryBig,
+            margin: padding.verySmall
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.extraBig,
-            padding: padding.big
+           // no change. 
         },
 
         '@media (min-width: 1700px)' : {
-            margin: padding.small
+            fontSize: fontSize.extraBig
         }
     },
 };
