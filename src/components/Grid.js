@@ -169,7 +169,7 @@ class Grid extends React.Component {
                 'link': 'TwoDegreeProject',
                 'title': 'Two Degree Project',
                 'keywords': ['2020', 'Ecology', 'Interactive'],
-                'url': 'https://www.amaykataria.com/twodegreewindow/'
+                'url': 'https://amaykataria.com/twodegreewindow/'
             }, 
             {
                 'img': bendtherules,

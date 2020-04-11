@@ -37,7 +37,7 @@ class Holarchy extends React.Component {
                 {body}
               </div>
               <div style={commonWorkStyles.imgContainer}>
-                <iframe title={'Holarchy'} style={commonWorkStyles.webFrame} src={'https://www.amaykataria.com/EvolutionaryHolarchy/'}></iframe>
+                <iframe title={'Holarchy'} style={commonWorkStyles.webFrame} src={'https://amaykataria.com/EvolutionaryHolarchy/'}></iframe>
               </div>
             </div>
         </div>
