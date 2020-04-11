@@ -22,7 +22,7 @@ const styles={
 
     button: {
         fontFamily: fontFamily.bebas,
-        fontSize: fontSize.verySmall,
+        fontSize: fontSize.small,
         padding: padding.verySmall,
         backgroundColor: color.darkGrey,
         color: color.featherWhite,
