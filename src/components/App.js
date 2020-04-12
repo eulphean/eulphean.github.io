@@ -2,6 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './About.js'
+import CV from './CV.js'
 import ScrollToTop from './ScrollToTop.js'
 import { padding } from './CommonStyles.js'
 
@@ -81,6 +82,7 @@ function App() {
           <ScrollToTop /> 
           <Switch>
             <Route path="/Works"><Title /><Grid /></Route>
+            <Route path="/CV"><Title /><CV /></Route>
             <Route path="/About"><Title /><About /></Route>
             <Route path="/Holon"><Holon /></Route>
             <Route path="/Holarchy"><Holarchy/></Route>

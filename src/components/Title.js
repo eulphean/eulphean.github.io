@@ -57,6 +57,7 @@ function Title() {
     let curRoute = useLocation().pathname; 
     let aboutState = curRoute === '/About' || curRoute === '/'; 
     let workState = curRoute === '/Works'; 
+    let cvState = curRoute === '/CV'; 
 
     return (
         <div style={styles.container}>
@@ -66,12 +67,20 @@ function Title() {
             >
                 <RadiumLink to="/About">Amay Kataria</RadiumLink>
             </CustomButton>
-            <CustomButton 
-                buttonStyle={styles.button} 
-                isActive={workState}
-            >
-                <RadiumLink to="/Works">Works</RadiumLink>
-            </CustomButton>
+            <div>
+                <CustomButton 
+                    buttonStyle={styles.button} 
+                    isActive={workState}
+                >
+                    <RadiumLink to="/Works">Works</RadiumLink>
+                </CustomButton>
+                <CustomButton 
+                    buttonStyle={styles.button} 
+                    isActive={cvState}
+                >
+                    <RadiumLink to="/CV">Bio</RadiumLink>
+                </CustomButton>
+            </div>
         </div>
     );
 }
