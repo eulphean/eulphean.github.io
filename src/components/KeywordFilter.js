@@ -26,7 +26,7 @@ const styles={
         padding: padding.verySmall,
         backgroundColor: color.deepBlue,
         color: color.featherWhite,
-        boxShadow: boxShadow.deepBlue,
+        boxShadow: boxShadow.alphaDeepBlueSoft,
         border: 'inherit',
         margin: padding.extraSmall,
         opacity: '95%',

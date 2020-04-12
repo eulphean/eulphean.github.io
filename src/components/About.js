@@ -188,6 +188,13 @@ const styles = {
         }
     },
 
+    bodyMediaQuery: {
+        '@media (min-width: 900px)': {  
+            // no change.
+            fontSize: fontSize.big
+        }
+    },
+
     icon: {
         width: '100%',
         height: '100%'
@@ -205,7 +212,7 @@ class About extends React.Component {
     }
 
     render() {
-
+        let bodyStyle = [commonWorkStyles.body, styles.contactTile, styles.bodyMediaQuery]; 
         return (
             <div style={styles.container}>
                 <div style={commonWorkStyles.imgContainer}>
@@ -232,7 +239,7 @@ class About extends React.Component {
                             </CustomLink>
                         </div>
                     </div>
-                    <div style={[commonWorkStyles.body, styles.contactTile]}>
+                    <div style={bodyStyle}>
                         {bio}
                     </div>
                 </div>

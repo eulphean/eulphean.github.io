@@ -87,7 +87,7 @@ const commonWorkStyles = {
         },
 
         '@media (min-width: 600px)': {  
-
+            fontSize: fontSize.big
         },
 
         '@media (min-width: 750px)': {  
@@ -96,15 +96,16 @@ const commonWorkStyles = {
 
         '@media (min-width: 900px)': {  
             // no change.
-            fontSize: fontSize.big
+            fontSize: fontSize.veryBig,
+            
         },
 
         '@media (min-width: 1200px)' : {
-            // fontSize: fontSize.veryBig,
+            
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.veryBig,
+            fontSize: fontSize.extraBig,
         },
 
         '@media (min-width: 1700px)' : {
