@@ -56,10 +56,11 @@ const styles={
 
         '@media (min-width: 1400px)' : {
            // no change. 
+    
         },
 
         '@media (min-width: 1700px)' : {
-            fontSize: fontSize.extraBig
+            // fontSize: fontSize.extraBig
         }
     },
 };

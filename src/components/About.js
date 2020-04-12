@@ -1,7 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
 import CustomLink from './CustomLink.js'
-import { padding, textShadow, fontSize, fontFamily, color, commonWorkStyles } from './CommonStyles.js'
+import { padding, textShadow, fontSize, fontFamily, color, commonWorkStyles, boxShadow } from './CommonStyles.js'
 import CustomButton from './CustomButton.js'
 
 // Images
@@ -99,7 +99,7 @@ const styles = {
         marginTop: padding.small,
         marginBottom: padding.small,
         textShadow: textShadow.slateGrey,
-        color: color.deepBlue,
+        color: color.darkGrey,
         border: 'inherit',
         letterSpacing: '3px',
         alignSelf: 'center',
@@ -129,7 +129,7 @@ const styles = {
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.veryBig,
+            // fontSize: fontSize.veryBig,
             // marginTop: padding.veryBig,
             // marginBottom: padding.veryBig
         },
@@ -201,7 +201,9 @@ const styles = {
     }
 };
 
-const bio="This will be my artist statement. This will be my artist statement. This will be my artist statement. This will be my artist statement. This will be my artist statement. This will be my artist statement. This will be my artist statement. This will be my artist statement. This will be my artist statement. This will be my artist statement.  "; 
+const bioA="Welcome, and thank you for parking at my (web) address. I am a Chicago based artist, deriving interests from philosophy, history of control, and cybernetic theory. My art practice is a platform to think, elaborate on ideas, experiment, play and meditate on externalizing the internal affairs of my body’s interaction with our society. My creative acts create a bridge between the biotic (human) and abiotic (machine) in an attempt to pause and pay attention to how technology has transformed us and vice-versa. Every act functions like a systemic metaphor, assembled with the craft of computation, code and algorithms."; 
+
+const bioB="This website is an organized repository of my past and on-going creative inquiries. Apart from personal explorations, I deeply enjoy learning and collaborating with other artists. Please reach out to me if you’d like to build something together."; 
 
 class About extends React.Component {
     constructor(props) {
@@ -240,7 +242,9 @@ class About extends React.Component {
                         </div>
                     </div>
                     <div style={bodyStyle}>
-                        {bio}
+                        {bioA}
+                        <br /><br />
+                        {bioB}
                     </div>
                 </div>
             </div>
