@@ -69,7 +69,18 @@ class KeywordFilter extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-        }
+            is2020: false,
+            is2019: false,
+            is2018: false,
+            is2017: false,
+            isHolon: false,
+            isEcology: false,
+            isBlockchain: false,
+            isSound: false,
+            isArtificialLife: false,
+            isInteractive: false,
+            isCommissions: false
+        }; 
 
         // Maintain a list of selected keywords. 
         this.years = []; 
@@ -80,26 +91,27 @@ class KeywordFilter extends React.Component {
         return (
             <div style={styles.container}>
                 <div style={styles.innerContainer}>
-                    {/* <CustomButton title={'Archive'} onClick={this.onYearSelected.bind(this)} /> */}
-                    <CustomButton buttonStyle={styles.button} title={'2020'} onClick={this.onYearSelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'2019'} onClick={this.onYearSelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'2018'} onClick={this.onYearSelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'2017'} onClick={this.onYearSelected.bind(this)} />
+                    <CustomButton isActive={this.state.is2020} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2020'}</CustomButton>
+                    <CustomButton isActive={this.state.is2019} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2019'}</CustomButton>
+                    <CustomButton isActive={this.state.is2018} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2018'}</CustomButton>
+                    <CustomButton isActive={this.state.is2017} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2017'}</CustomButton>
                 </div>
                 <div style={styles.innerContainer}>
-                    <CustomButton buttonStyle={styles.button} title={'Holon'} onClick={this.onCategorySelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'Ecology'} onClick={this.onCategorySelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'Blockchain'} onClick={this.onCategorySelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'Sound'} onClick={this.onCategorySelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'Artificial Life'} onClick={this.onCategorySelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'Interactive'} onClick={this.onCategorySelected.bind(this)} />
-                    <CustomButton buttonStyle={styles.button} title={'Commissions'} onClick={this.onCategorySelected.bind(this)} />
+                    <CustomButton isActive={this.state.isHolon} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Holon'}</CustomButton>
+                    <CustomButton isActive={this.state.isEcology} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Ecology'}</CustomButton>
+                    <CustomButton isActive={this.state.isBlockchain} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Blockchain'}</CustomButton>
+                    <CustomButton isActive={this.state.isSound} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Sound'}</CustomButton>
+                    <CustomButton isActive={this.state.isArtificialLife} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Artificial Life'}</CustomButton>
+                    <CustomButton isActive={this.state.isInteractive} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Interactive'}</CustomButton>
+                    <CustomButton isActive={this.state.isCommissions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Commissions'}</CustomButton>
                 </div>
             </div>
         );
     }
 
     onYearSelected(year) {
+        this.setYearState(year); 
+
         var i = findIndex(this.years, k => {
             return k === year;
         }); 
@@ -115,6 +127,8 @@ class KeywordFilter extends React.Component {
     }
 
     onCategorySelected(category) {
+        this.setCategoryState(category); 
+
         var i = findIndex(this.categories, k => {
             return k === category;
         }); 
@@ -128,6 +142,91 @@ class KeywordFilter extends React.Component {
 
         // Send year and categories. 
         this.props.onKeywordSelected(this.years, this.categories); 
+    }
+
+    setYearState(year) {
+        switch(year) {
+            case '2020': {
+                this.setState({
+                    is2020: !this.state.is2020
+                }); 
+                break; 
+            }
+
+            case '2019': {
+                this.setState({
+                    is2019: !this.state.is2019
+                }); 
+                break; 
+            }
+
+            case '2018': {
+                this.setState({
+                    is2018: !this.state.is2018
+                }); 
+                break; 
+            }
+
+            case '2017': {
+                this.setState({
+                    is2017: !this.state.is2017
+                }); 
+                break; 
+            }
+        }
+    }
+
+    setCategoryState(category) {
+        switch(category) {
+            case 'Holon': {
+                this.setState({
+                    isHolon: !this.state.isHolon
+                }); 
+                break; 
+            }
+
+            case 'Ecology': {
+                this.setState({
+                    isEcology: !this.state.isEcology
+                }); 
+                break; 
+            }
+
+            case 'Blockchain': {
+                this.setState({
+                    isBlockchain: !this.state.isBlockchain
+                }); 
+                break; 
+            }
+
+            case 'Sound': {
+                this.setState({
+                    isSound: !this.state.isSound
+                }); 
+                break; 
+            }
+
+            case 'Interactive': {
+                this.setState({
+                    isInteractive: !this.state.isInteractive
+                }); 
+                break; 
+            }
+
+            case 'Artificial Life': {
+                this.setState({
+                    isArtificialLife: !this.state.isArtificialLife
+                }); 
+                break; 
+            }
+
+            case 'Commissions': {
+                this.setState({
+                    isCommissions: !this.state.isCommissions
+                }); 
+                break; 
+            }
+        }
     }
 }
 

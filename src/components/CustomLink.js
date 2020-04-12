@@ -11,7 +11,7 @@ const styles={
     },
     hover: {
         color: color.featherWhite,
-        backgroundColor: color.hover
+        backgroundColor: color.hoverRed
     }
 };
 

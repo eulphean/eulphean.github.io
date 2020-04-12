@@ -1,6 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-import { isMobile, isTablet } from 'react-device-detect'
+import { isMobile, isTablet, isMobileSafari} from 'react-device-detect'
 import { color, boxShadow } from './CommonStyles.js'
 
 const styles={
@@ -12,9 +12,11 @@ const styles={
         border: 'none'
     },
 
+    // Style for hovering. 
     hoverButton: {
-        backgroundColor: color.hover,
-        color: color.featherWhite
+        backgroundColor: color.darkGrey,
+        color: color.featherWhite,
+        opacity: '95%'
     }
 };
 
@@ -23,50 +25,40 @@ class CustomButton extends React.Component {
         super(props);
 
         this.state = {
-            isActive: false,
             isHover: false
         };
 
-        // Set the primary button style based on the styles 
-        // coming from the prop (buttonStyle). 
-        this.primaryButtonStyle = this.props.buttonStyle ? this.props.buttonStyle : styles.button; 
+        this.isHoverDisabled = isMobile || isTablet || isMobileSafari; 
     }
 
     render() {
-        // Set the right style based on the button's active state. 
-        let buttonStyle = this.props.isActive || this.state.isActive ? [this.primaryButtonStyle, styles.activeButton] : [this.primaryButtonStyle];    
-        let children = this.props.title ? this.props.title : this.props.children ;
+        let buttonStyle = this.props.buttonStyle; 
+        let isHovering = this.state.isHover && !this.props.isActive && !this.props.isStatic; 
 
-        buttonStyle = this.state.isHover ? [buttonStyle, styles.hoverButton] : buttonStyle;
-
+        // Is it the button active? 
+        buttonStyle = this.props.isActive ? [buttonStyle, styles.activeButton] : buttonStyle;   
+        buttonStyle = isHovering ? [buttonStyle, styles.hoverButton] : buttonStyle; 
+        
         return (
             <button 
                 style={buttonStyle}
                 onClick={this.props.onClick ? this.onClick.bind(this) : () => {}}
-                onMouseEnter={this.onHover.bind(this)}
-                onMouseLeave={this.onRemoveHover.bind(this)}
+                onMouseEnter={this.isHoverDisabled ? () => {} : this.onHover.bind(this)}
+                onMouseLeave={this.isHoverDisabled ? () => {} : this.onRemoveHover.bind(this)}
             >
-                {children}
+                {this.props.children}
             </button>
         );
     }
 
     onClick() {
-        this.setState({
-            isActive: !this.state.isActive
-        }); 
-
-        this.props.onClick(this.props.title); 
+        this.props.onClick(this.props.children); 
     }
 
     onHover() {
-        if (this.state.isActive || this.props.isActive || this.props.isStatic || isMobile || isTablet) {
-            // Do nothing. 
-        } else {
-            this.setState({
-                isHover: true
-            });
-        }
+        this.setState({
+            isHover: true
+        }); 
     }
 
     onRemoveHover() {

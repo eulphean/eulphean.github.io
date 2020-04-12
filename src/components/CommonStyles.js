@@ -5,8 +5,7 @@ const color = {
     deepBlue: '#44536A',
     alphaDeepBlue: 'rgb(69, 83, 106, 60)',
     featherWhite: 'rgb(255, 255, 255)',
-    hover: '#C85151',
-    alphaHover: 'rgb(210, 80, 80, 50)'
+    hoverRed: 'rgb(210, 80, 80, 50)'
 };
 
 const fontSize = {

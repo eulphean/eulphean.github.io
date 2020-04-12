@@ -123,7 +123,8 @@ const styles={
       }, 
 
       hover: {
-        fill: color.hover
+        fill: color.hoverRed,
+        opacity: '95%'
       }
 }
 class Header extends React.Component {
@@ -138,7 +139,7 @@ class Header extends React.Component {
     const iconStyle = this.state.isHover ? [styles.iconContainer, styles.hover] : styles.iconContainer; 
     return (
         <div style={styles.container}>
-            <CustomButton buttonStyle={styles.button} isStatic={true} title={this.props.title}/>
+            <CustomButton buttonStyle={styles.button} isActive={true}>{this.props.title}</CustomButton>
             <RadiumLink to='/Works'>
                 <div onMouseEnter={this.onHover.bind(this)} onMouseLeave={this.onLeaveHover.bind(this)} style={iconStyle}>
                   <Back style={styles.iconStyle}/>

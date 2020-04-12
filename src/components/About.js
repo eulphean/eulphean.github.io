@@ -222,7 +222,9 @@ class About extends React.Component {
                 </div>
                 <div style={styles.contactContainer}>
                     <div style={styles.contactTile}>
-                        <CustomButton buttonStyle={styles.contactButton} isStatic={true} title={'Contact'} />
+                        <CustomButton isStatic={true} buttonStyle={styles.contactButton}>
+                            {'Contact'}
+                        </CustomButton>
                         <div style={styles.email}>
                             {'hello@amaykataria.com'}
                         </div>

@@ -68,7 +68,7 @@ const styles={
         alignItems: 'center',
         justifyContent: 'center',
         position: 'absolute',
-        backgroundColor: color.alphaHover,
+        backgroundColor: color.hoverRed,
         opacity: '90%',
         width: '100%',
         height: '100%',
@@ -81,7 +81,7 @@ const styles={
         padding: padding.verySmall,
         alignSelf: 'center',
         color: color.featherWhite,
-        fontFamily: fontFamily.baskerville,
+        fontFamily: fontFamily.bebas,
         letterSpacing: '1px',
         textAlign: 'center',
 
@@ -140,11 +140,11 @@ class Tile extends React.Component {
         var hoverDiv = this.getHoverDiv(); 
         return url ? 
             (<CustomLink style={styles.link} to={url}>
-                {/* {hoverDiv} */}
+                {hoverDiv}
                 {img}
             </CustomLink>) : 
             (<Link style={styles.link} to={projLink}>
-                {/* {hoverDiv} */}
+                {hoverDiv}
                 {img}
             </Link>)
     }
