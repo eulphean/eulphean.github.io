@@ -1,5 +1,6 @@
 import React from 'react';
-import Radium from 'radium'
+import Radium from 'radium';
+import { isMobile, isTablet, isMobileSafari } from 'react-device-detect';
 import { color } from './CommonStyles.js' 
 
 const styles={
@@ -10,8 +11,8 @@ const styles={
         color: color.bloodRed // Default link color
     },
     hover: {
-        color: color.featherWhite,
-        backgroundColor: color.hoverRed
+        fill: color.hoverRed,
+        opacity: '95%'
     }
 };
 
@@ -21,6 +22,8 @@ class CustomLink extends React.Component {
         this.state={
             isHover: false
         }
+
+        this.isHoverDisabled = isMobile || isTablet || isMobileSafari; 
     }
 
     render() {
@@ -30,7 +33,13 @@ class CustomLink extends React.Component {
         extendedStyle = this.state.isHover ? [extendedStyle, styles.hover] : extendedStyle; 
 
         return (
-            <a onMouseEnter={this.onHover.bind(this)} onMouseLeave={this.onLeaveHover.bind(this)} style={extendedStyle} target='_blank' rel="noopener noreferrer" href={this.props.to}>
+            <a 
+                style={extendedStyle} 
+                target='_blank' 
+                rel="noopener noreferrer" 
+                onMouseEnter={this.isHoverDisabled ? () => {} : this.onHover.bind(this)} 
+                onMouseLeave={this.isHoverDisabled ? () => {} : this.onLeaveHover.bind(this)} 
+                href={this.props.to}>
                 {this.props.children}
             </a>
         );
