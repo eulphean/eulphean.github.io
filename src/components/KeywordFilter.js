@@ -173,6 +173,10 @@ class KeywordFilter extends React.Component {
                 }); 
                 break; 
             }
+
+            default: {
+                break; 
+            }
         }
     }
 
@@ -225,6 +229,10 @@ class KeywordFilter extends React.Component {
                     isCommissions: !this.state.isCommissions
                 }); 
                 break; 
+            }
+
+            default: {
+                break;
             }
         }
     }
