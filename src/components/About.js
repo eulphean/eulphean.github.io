@@ -98,7 +98,7 @@ const styles = {
         fontSize: fontSize.small,
         marginTop: padding.small,
         marginBottom: padding.small,
-        textShadow: textShadow.slateGrey,
+        // textShadow: textShadow.slateGrey,
         color: color.darkGrey,
         border: 'inherit',
         letterSpacing: '3px',

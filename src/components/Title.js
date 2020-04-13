@@ -53,7 +53,7 @@ const styles={
     },
 
     title: {
-        letterSpacing: '5px'
+        letterSpacing: '3.5px'
     }
 };
 
