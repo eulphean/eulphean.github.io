@@ -18,10 +18,12 @@ const styles={
 };
 
 const bodyA="Three Ecologies is a commission for Chicago-based artist "
-const linkA=(<CustomLink to='https://jaclynjacunski.com/home.html' inline={true}>Jaclyn Jacunski</CustomLink>);
-const bodyB=" for the 2019 "; 
-const linkB=(<CustomLink to='https://terrainexhibitions.org/' inline={true}>Terrain Biennial</CustomLink>);
-const bodyC='. Titled after the famous essay, Three Ecologies by Felix Guttari, the custom software runs a blurred video in the background, while the foreground shows every line read in the essay as subtitles, whose speed and density can be controlled by the artist. The background in this video is only temporary. A different video was used in the actual installation.'
+const linkA=(<CustomLink to='https://jaclynjacunski.com/home.html' inline={true}>Jaclyn Jacunski's</CustomLink>);
+const bodyB=" project, "
+const linkB=(<CustomLink to='https://jaclynjacunski.com/section/484980-Terrain-Biennial-The-Franklin-We-Are-Not-Really-Strangers-Oak-Park-Three-Ecologies.html' inline={true}>We Are Not Really Strangers</CustomLink>);
+const bodyC=", for the 2019 "; 
+const linkC=(<CustomLink to='https://terrainexhibitions.org/' inline={true}>Terrain Biennial</CustomLink>);
+const bodyD='. Titled after the famous essay, Three Ecologies by Felix Guttari, the custom software runs a blurred video in the background, while the foreground shows every line of the essay as subtitles, whose speed and density can be controlled by the artist. The background in this video is only temporary. A different video was used in the actual installation.'
 
 class ThreeEcologies extends React.Component {
   constructor(props) {
@@ -42,6 +44,8 @@ class ThreeEcologies extends React.Component {
                 {bodyB}
                 {linkB}
                 {bodyC}
+                {linkC}
+                {bodyD}
               </div>
             </div>
             <div style={containerStyle}>
