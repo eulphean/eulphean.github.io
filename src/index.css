@@ -4,7 +4,13 @@ html, body {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: repeating-linear-gradient(to bottom right, #E3EEFF, #E6EDFC, #EBEBF5, #EFE9EF, #F3E7E9);
+  /* background-image: repeating-linear-gradient(to bottom right, #E3EEFF, #E6EDFC, #EBEBF5, #EFE9EF, #F3E7E9); */
+  /* background-image: linear-gradient(135deg, rgba(227,238,255,1) 0%,rgba(239,233,239,1) 38%,rgba(239,233,239,1) 57%,rgba(227,238,255,1) 100%); */
+  /* background-image: repeating-linear-gradient(to bottom, rgba(227,238,255,1) 0%,rgba(239,233,239,1) 38%,rgba(239,233,239,1) 57%,rgba(227,238,255,1) 100%); */
+  background: rgb(227,238,255); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(227,238,255,1) 0%, rgba(239,233,239,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(227,238,255,1) 0%,rgba(239,233,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(227,238,255,1) 0%,rgba(239,233,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
