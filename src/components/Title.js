@@ -50,6 +50,10 @@ const styles={
         '@media (min-width: 1700px)' : {
             
         }
+    },
+
+    title: {
+        letterSpacing: '5px'
     }
 };
 
@@ -62,7 +66,7 @@ function Title() {
     return (
         <div style={styles.container}>
             <CustomButton 
-                buttonStyle={styles.button}
+                buttonStyle={[styles.button, styles.title]}
                 isActive={aboutState} 
             >
                 <RadiumLink to="/About">Amay Kataria</RadiumLink>
