@@ -32,6 +32,7 @@ import skype from '../tiles/skype.jpg'
 import sonicnegotiation from '../tiles/sonicnegotiation.jpg'
 import unnamed from '../tiles/unnamed.jpg'
 import bendtherules from '../tiles/bendtherules.jpg'
+import momimsafe from '../tiles/momimsafe.jpg'
 
 const styles = {
     gridContainer: {
@@ -127,6 +128,12 @@ class Grid extends React.Component {
     allocateProjects() {
         // Push every imported image into this array. 
         this.allProjects = [
+            {
+                'img': momimsafe,
+                'title': 'MOMIMSAFE',
+                'keywords': ['2020', 'Interactive'],
+                'url': 'https://momimsafe.live'
+            },
             {
                 'img': holarchy,
                 'link': 'Holarchy',
