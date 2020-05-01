@@ -226,7 +226,7 @@ class About extends React.Component {
                             {'Contact'}
                         </CustomButton>
                         <div style={styles.email}>
-                            {'hello@amaykataria.com'}
+                            {'studio@amaykataria.com'}
                         </div>
                         <div style={styles.contactIconsContainer}>
                             <CustomLink customStyle={styles.iconWrapper} to='https://github.com/eulphean'>

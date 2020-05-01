@@ -35,10 +35,10 @@ import Skype from '../projects/Skype'
 
 const styles = {
   container: {
-    padding: padding.big,
+    padding: padding.small,
 
     '@media (min-width: 450px)': {  
-      padding: padding.extraBig
+      padding: padding.big
     },
 
     '@media (min-width: 600px)': {  
@@ -46,28 +46,28 @@ const styles = {
     },
 
     '@media (min-width: 750px)': {  
-      paddingLeft: padding.huge,
-      paddingRight: padding.huge
+      paddingLeft: padding.extraBig,
+      paddingRight: padding.extraBig
     },
 
     '@media (min-width: 900px)': {
+      paddingLeft: padding.massive,
+      paddingRight: padding.massive
+    },
+
+    '@media (min-width: 1200px)' : {
       paddingLeft: padding.veryMassive,
       paddingRight: padding.veryMassive
     },
 
-    '@media (min-width: 1200px)' : {
+    '@media (min-width: 1400px)' : {
       paddingLeft: padding.extraMassive,
       paddingRight: padding.extraMassive
     },
 
-    '@media (min-width: 1400px)' : {
-      paddingLeft: padding.enormous,
-      paddingRight: padding.enormous
-    },
-
     '@media (min-width: 1700px)' : {
-      paddingLeft: padding.extraInsane,
-      paddingRight: padding.extraInsane
+      paddingLeft: padding.veryInsane,
+      paddingRight: padding.veryInsane
     }
   }
 };

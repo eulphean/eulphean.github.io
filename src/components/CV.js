@@ -4,7 +4,7 @@ import { padding, commonWorkStyles, fontSize } from './CommonStyles';
 
 const styles={
     container: {
-        margin: padding.small
+        margin: padding.verySmall
     },
     
     bioMediaQuery: {
