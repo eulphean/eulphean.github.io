@@ -4,7 +4,7 @@ import difference from 'lodash/difference'
 
 // Components
 import Tile from './Tile.js'
-import KeywordFilter from './KeywordFilter.js'
+import GridFilterer from './GridFilterer.js'
 
 // Grid Tiles
 import nest from '../tiles/nest.jpg'
@@ -65,7 +65,7 @@ class Grid extends React.Component {
     render() {
         return (
             <div style={styles.gridContainer}>
-                <KeywordFilter onKeywordSelected={this.onKeywordSelected.bind(this)} />
+                <GridFilterer onKeywordSelected={this.onKeywordSelected.bind(this)} />
                 {this.state.tiles}
             </div>
         );

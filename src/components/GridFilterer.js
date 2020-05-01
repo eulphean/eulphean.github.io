@@ -65,7 +65,7 @@ const styles={
     },
 };
 
-class KeywordFilter extends React.Component {
+class GridFilterer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -238,4 +238,4 @@ class KeywordFilter extends React.Component {
     }
 }
 
-export default Radium(KeywordFilter);
+export default Radium(GridFilterer);

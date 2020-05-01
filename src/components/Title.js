@@ -61,7 +61,7 @@ function Title() {
     let curRoute = useLocation().pathname; 
     let aboutState = curRoute === '/About' || curRoute === '/'; 
     let workState = curRoute === '/Works'; 
-    let cvState = curRoute === '/CV'; 
+    let cvState = curRoute === '/Bio'; 
 
     return (
         <div style={styles.container}>
@@ -82,7 +82,7 @@ function Title() {
                     buttonStyle={styles.button} 
                     isActive={cvState}
                 >
-                    <RadiumLink to="/CV">Bio</RadiumLink>
+                    <RadiumLink to="/Bio">Bio</RadiumLink>
                 </CustomButton>
             </div>
         </div>
