@@ -275,6 +275,58 @@ const commonWorkStyles = {
             marginTop: padding.big
         }
     }
-}
+};
 
-export { color, fontSize, fontFamily, textShadow, boxShadow, padding, commonWorkStyles };
+const cvStyles= {
+    heading: {
+        fontFamily: fontFamily.bebas,
+        fontSize: fontSize.big,
+        color: color.deepBlue,
+        letterSpacing: '2px',
+    },
+
+    entry: {
+        marginTop: padding.small,
+        fontFamily: fontFamily.din,
+        fontSize: fontSize.small,
+        color: color.deepBlue,
+        letterSpacing: '1px',
+
+        '@media (min-width: 450px)': {  
+            // no change.
+        },
+
+        '@media (min-width: 600px)': {  
+            fontSize: fontSize.big
+        },
+
+        '@media (min-width: 750px)': {  
+            // no change.
+        },
+
+        '@media (min-width: 900px)': {  
+            // no change.
+            fontSize: fontSize.veryBig,
+            
+        },
+
+        '@media (min-width: 1200px)' : {
+            
+        },
+
+        '@media (min-width: 1400px)' : {
+            fontSize: fontSize.extraBig,
+        },
+
+        '@media (min-width: 1700px)' : {
+            // no change.
+        }
+    },
+
+    title: {
+        fontStyle: 'italic',
+        textShadow: textShadow.slateGrey
+    }
+};
+
+export { color, fontSize, fontFamily, textShadow, boxShadow, padding, commonWorkStyles, cvStyles};

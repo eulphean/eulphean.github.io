@@ -8,11 +8,15 @@ const styles={
         display: 'flex'
     },
     color: {
-        color: color.bloodRed // Default link color
+        color: color.bloodRed, // Default link color
     },
     hover: {
         fill: color.hoverRed,
         opacity: '95%'
+    },
+
+    italics: {
+        fontStyle: 'italic'
     }
 };
 
@@ -28,7 +32,8 @@ class CustomLink extends React.Component {
 
     render() {
         // If it's an inline link, we will color the link.
-        const style = this.props.inline ? styles.color : styles.link;
+        let style = this.props.inline ? styles.color : styles.link;
+        style = this.props.italics ? [styles.italics, style] : style; 
         let extendedStyle = this.props.customStyle ? [style, this.props.customStyle] : style;
         extendedStyle = this.state.isHover ? [extendedStyle, styles.hover] : extendedStyle; 
 

@@ -82,7 +82,7 @@ class Bio extends React.Component {
             }
         });
 
-        // Set the visible components. 
+        // Set the visible components.  
         this.setState({
             visible: components
         }); 
