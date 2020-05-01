@@ -23,7 +23,7 @@ const styles={
 
     button: {
         fontFamily: fontFamily.bebas,
-        fontSize: fontSize.verySmall,
+        fontSize: fontSize.small,
         padding: padding.verySmall,
         backgroundColor: color.deepBlue,
         color: color.featherWhite,
@@ -60,12 +60,12 @@ class CVFilterer extends React.Component {
         return (
             <div style={styles.container}>
                 <div style={styles.innerContainer}>
-                    <CustomButton isActive={this.state.isEducation} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Education'}</CustomButton>
                     <CustomButton isActive={this.state.isExhibitions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Exhibitions'}</CustomButton>
                     <CustomButton isActive={this.state.isResidencies} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Residencies'}</CustomButton>
-                    <CustomButton isActive={this.state.isPublicTalks} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Public Talks'}</CustomButton>
                     <CustomButton isActive={this.state.isPress} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Press'}</CustomButton>
+                    <CustomButton isActive={this.state.isPublicTalks} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Public Talks'}</CustomButton>
                     <CustomButton isActive={this.state.isPublications} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Publications'}</CustomButton>
+                    <CustomButton isActive={this.state.isEducation} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Education'}</CustomButton>
                 </div>
             </div>
         );
