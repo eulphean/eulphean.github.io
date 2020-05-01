@@ -50,7 +50,6 @@ class CVFilterer extends React.Component {
             isPublicTalks: false,
             isPress: false,
             isPublications: false,
-
         }; 
 
         // Maintain a list of selected keywords. 
@@ -61,12 +60,12 @@ class CVFilterer extends React.Component {
         return (
             <div style={styles.container}>
                 <div style={styles.innerContainer}>
-                    <CustomButton isActive={this.state.isHolon} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Education'}</CustomButton>
-                    <CustomButton isActive={this.state.isEcology} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Exhibitions'}</CustomButton>
-                    <CustomButton isActive={this.state.isBlockchain} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Residencies'}</CustomButton>
-                    <CustomButton isActive={this.state.isSound} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Public Talks'}</CustomButton>
-                    <CustomButton isActive={this.state.isArtificialLife} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Press'}</CustomButton>
-                    <CustomButton isActive={this.state.isInteractive} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Publications'}</CustomButton>
+                    <CustomButton isActive={this.state.isEducation} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Education'}</CustomButton>
+                    <CustomButton isActive={this.state.isExhibitions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Exhibitions'}</CustomButton>
+                    <CustomButton isActive={this.state.isResidencies} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Residencies'}</CustomButton>
+                    <CustomButton isActive={this.state.isPublicTalks} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Public Talks'}</CustomButton>
+                    <CustomButton isActive={this.state.isPress} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Press'}</CustomButton>
+                    <CustomButton isActive={this.state.isPublications} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Publications'}</CustomButton>
                 </div>
             </div>
         );
@@ -87,7 +86,7 @@ class CVFilterer extends React.Component {
         }
 
         // Send year and categories. 
-        this.props.onKeywordSelected(this.years, this.categories); 
+        this.props.onKeywordSelected(this.categories); 
     }
 
     setCategoryState(category) {

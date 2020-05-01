@@ -2,6 +2,12 @@ import React from 'react'
 import Radium from 'radium'
 import { padding, commonWorkStyles, fontSize } from './CommonStyles';
 import CVFilterer from './CVFilterer.js'
+import Education from './Education.js'
+import Exhibitions from './Exhibitions.js'
+import Press from './Press.js'
+import Publications from './Publications.js'
+import Residencies from './Residencies.js'
+import PublicTalks from './PublicTalks.js'
 
 const styles={
     container: {
@@ -22,7 +28,7 @@ class Bio extends React.Component {
     constructor(props) {
         super(props);
         this.state={
-
+            visible: []
         };
     }
 
@@ -34,10 +40,54 @@ class Bio extends React.Component {
                 <div style={bioStyle}>
                     {bio}
                 </div>
-                <CVFilterer />
+                <CVFilterer onKeywordSelected={ this.onKeywordSelected.bind(this) }/>
+                {this.state.visible}
             </div>
         );
+    }
+
+    onKeywordSelected(category) {
+        let components = []; 
+        // Add all components that need to be show. Every new component selected is added 
+        // on the top of the list (unshift)
+        category.forEach(element => {
+            switch(element) {
+                case 'Education': {
+                    components.unshift(<Education />); 
+                    break; 
+                }
+                case 'Exhibitions': {
+                    components.unshift(<Exhibitions />); 
+                    break; 
+                }
+                case 'Residencies': {
+                    components.unshift(<Residencies />); 
+                    break; 
+                }
+                case 'Public Talks': {
+                    components.unshift(<PublicTalks />);
+                    break; 
+                }
+                case 'Press': {
+                    components.unshift(<Press />); 
+                    break; 
+                }
+                case 'Publications': {
+                    components.unshift(<Publications />); 
+                    break; 
+                }
+                default: {
+                    break;
+                }
+            }
+        });
+
+        // Set the visible components. 
+        this.setState({
+            visible: components
+        }); 
     }
 }
 
 export default Radium(Bio);
+
