@@ -61,7 +61,8 @@ const fontFamily = {
 };
 
 const textShadow = {
-    slateGrey: '1px 1px 2px ' + color.slateGrey
+    slateGrey: '1px 1px 2px ' + color.slateGrey,
+    slateLight: '1px 1px 1px ' + color.slateGrey
 };
 
 const boxShadow = {
@@ -290,6 +291,37 @@ const cvStyles= {
         fontSize: fontSize.big,
         color: color.deepBlue,
         letterSpacing: '2px',
+        textDecoration: 'underline',
+
+        '@media (min-width: 450px)': {  
+            // no change.
+        },
+
+        '@media (min-width: 600px)': {  
+            fontSize: fontSize.veryBig
+        },
+
+        '@media (min-width: 750px)': {  
+            // no change.
+        },
+
+        '@media (min-width: 900px)': {  
+            // no change.
+            fontSize: fontSize.extraBig,
+            
+        },
+
+        '@media (min-width: 1200px)' : {
+            
+        },
+
+        '@media (min-width: 1400px)' : {
+            fontSize: fontSize.huge,
+        },
+
+        '@media (min-width: 1700px)' : {
+            // no change.
+        }
     },
 
     entry: {
@@ -298,6 +330,7 @@ const cvStyles= {
         fontSize: fontSize.small,
         color: color.deepBlue,
         letterSpacing: '1px',
+        lineHeight: '1.5',
 
         '@media (min-width: 450px)': {  
             // no change.

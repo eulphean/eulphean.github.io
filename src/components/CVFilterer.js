@@ -33,9 +33,35 @@ const styles={
         opacity: '95%',
         letterSpacing: '2.0px',
 
+        '@media (min-width: 450px)': {  
+            // No change. 
+        },
+
+        '@media (min-width: 600px)': {  
+            // No change.
+        },
+
+        '@media (min-width: 750px)': {  
+            padding: padding.small,
+            fontSize: fontSize.big
+        },
+
+        '@media (min-width: 900px)': {
+            // no change.
+        }, 
+
         '@media (min-width: 1200px)' : {
             fontSize: fontSize.veryBig,
             margin: padding.verySmall
+        },
+
+        '@media (min-width: 1400px)' : {
+           // no change. 
+    
+        },
+
+        '@media (min-width: 1700px)' : {
+            // fontSize: fontSize.extraBig
         }
     },
 };
