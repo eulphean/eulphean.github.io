@@ -35,9 +35,34 @@ const projects = [
         info: <CustomLink to='http://electromuseum.ru/en/event/learning-machines-obuchennye-mashiny/?fbclid=IwAR13ScXtzH0Dl2TDss6MWqvwSMx-OaoTPK--rENO8SuPNeRuA9rIJrpB3O4' inline={true} >[info]</CustomLink> 
     },
     {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/EthereumFarm' inline={true}>Ethereum Farm*</CustomLink>,
+        description: <span><span>{", Re:Working Labor, Sullivan Galleries, (new work commission for "}</span><CustomLink to='https://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        info: <CustomLink to='http://sites.saic.edu/reworkinglabor/' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://encryptionarchive.net' inline={true}>Encryption Archive*</CustomLink>,
+        description: ', Boundless Encounters, HangZhou Triennial of Fiber Art, (new work commission for Dylan M. Fish), HangZhou, China, 2019, ',
+        info: <CustomLink to='http://www.fiberarthangzhou.com/Site_En/' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/ThreeEcologies' inline={true}>Three Ecologies*</CustomLink>,
+        description: <span><span>{", Terrain Exhibitions, Terrain Biennial, (new work commission for "}</span><CustomLink to='https://jaclynjacunski.com/home.html' inline={true}>Jaclyn Jacunski</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        info: <CustomLink to='https://terrainexhibitions.org/chicago-il' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/EthereumFarm' inline={true}>Ethereum Farm*</CustomLink>,
+        description: <span><span>{", Goodbye Cruel World, It's Over, Weltkunstzimmer, (new work commission for "}</span><CustomLink to='https://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg</CustomLink><span>{"), Dusseldorf, Germany, 2019, "}</span></span>,
+        info: <CustomLink to='https://weltkunstzimmer.de/en/details/article//ausstellung-4.html' inline={true}>[info]</CustomLink>
+    },
+    {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/Nest' inline={true}>Nest</CustomLink>,
         description: ', CYBERIA: New Media Playground, curated by Anokhi Shah, TIFA Studios, Pune, India, 2019, ',
         info: <CustomLink to='https://cyberiafestival.com/' inline={true} >[info]</CustomLink> 
+    },
+    {
+        title: <CustomLink italics={true} to='https://www.ayeshasingh.com/works/2019/frayed-continuum-delhi' inline={true}>Frayed Continuum, Pendulum*</CustomLink>,
+        description: <span><span>{", It Was Never Concrete, Shrine Empire, (Arduino programming for "}</span><CustomLink to='https://www.ayeshasingh.com/home' inline={true}>Ayesha Singh</CustomLink><span>{"), New Delhi, India, 2019, "}</span></span>,
+        info: <CustomLink to='https://www.mojarto.com/blogs/ayesha-singh-s-solo-show-it-was-never-concrete' inline={true}>[info]</CustomLink>
     },
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/Babble' inline={true}>Babble</CustomLink>,
@@ -51,7 +76,7 @@ const projects = [
     },
     {
         title: <CustomLink italics={true} to="https://holihollyday.github.io/fixityequalsdeath/art/2degree.html" inline={true}>Two Degree Window</CustomLink>,
-        description: ', Fixity Equals Death, curated by Francisca Rudolph, Wrong Biennale, Chicago, USA, 2020, ',
+        description: ', Fixity Equals Death, curated by Francisca Rudolph, Wrong Biennale, Chicago, USA, 2019, ',
         info: <CustomLink to='https://holihollyday.github.io/fixityequalsdeath/' inline={true} >[info]</CustomLink> 
     },
     {
@@ -60,9 +85,19 @@ const projects = [
         info: <CustomLink to='https://ars.electronica.art/outofthebox/en/already-alien/' inline={true} >[info]</CustomLink> 
     },
     {
+        title: <CustomLink italics={true} to='https://www.zivzeevcohen.com/long-memory' inline={true}>Long Memory*</CustomLink>,
+        description: <span><span>{", Remanence/Remanents, 062 Gallery, (Data & Arduino programming for "}</span><CustomLink to='https://www.zivzeevcohen.com/studio' inline={true}>Ziv Ze'ev Cohen</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        info: <CustomLink to='https://www.thevisualist.org/2019/07/ziv-zeev-cohen-remanence-remnants/' inline={true}>[info]</CustomLink>
+    },
+    {
         title: <CustomLink italics={true} to="https://amaykataria.com/#/FigmentsOfDesire" inline={true}>Figments of Desire</CustomLink>,
         description: ', MFA Thesis Show, curated by Rohan Ayinde Smith, Sullivan Galleries, Chicago, USA, 2019, ',
         info: <CustomLink to='https://sites.saic.edu/mfa2019/artist/amay-kataria/' inline={true} >[info]</CustomLink> 
+    },
+    {
+        title: <CustomLink italics={true} to='https://yaazdcontractor.com/physical/rgby.html' inline={true}>RGBY*</CustomLink>,
+        description: <span><span>{", NYCxDesign, (Arudino & Raspberry Pi programming for "}</span><CustomLink to='https://yaazdcontractor.com/' inline={true}>Yaazd Contractor</CustomLink><span>{"), New York, USA, 2019, "}</span></span>,
+        info: <CustomLink to='https://www.whatnotstudio.design/' inline={true}>[info]</CustomLink>
     },
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/Babble' inline={true}>Babble</CustomLink>,
@@ -88,6 +123,11 @@ const projects = [
         title: <CustomLink italics={true} to="https://amaykataria.com/#/PostCryptocollectible" inline={true}>Post-Cryptocollectible</CustomLink>,
         description: ', Art & Blockchain Hack Space, curated by Jessica Angel, Ethereal Summit, New York, USA, 2018, ',
         info: <CustomLink to='http://artproject.io/' inline={true} >[info]</CustomLink> 
+    },
+    {
+        title: <CustomLink italics={true} to='https://www.galenodellsmedley.com/smallpop-hypothesis' inline={true}>Small-Pop Hypothesis*</CustomLink>,
+        description: <span><span>{", MFA Thesis Show 2018, (Arudino programming & electronics for "}</span><CustomLink to='https://www.galenodellsmedley.com/' inline={true}>Galen Odell-Smedley</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        info: <CustomLink to='http://sites.saic.edu/mfa2018/artist/galen-odell-smedley/' inline={true}>[info]</CustomLink>
     },
     {
         title: <CustomLink italics={true} to="https://amaykataria.com/#/GenerativeDecay" inline={true}>Generative Decay</CustomLink>,
