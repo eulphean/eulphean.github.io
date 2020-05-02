@@ -4,11 +4,7 @@ import { padding, cvStyles } from './CommonStyles.js'
 import CustomLink from './CustomLink.js'
 
 const styles={
-    container: {
-        display: 'flex',
-        marginTop: padding.big,
-        flexDirection: 'column'
-      }
+
 }
 
 const projects = [
@@ -109,7 +105,7 @@ class Exhibitions extends React.Component {
   render() {
     let pComps = this.formatProjects(); 
     return (
-        <div style={styles.container}>
+        <div style={cvStyles.container}>
             <div style={cvStyles.heading}>
                 EXHIBITIONS
             </div>
@@ -122,7 +118,7 @@ class Exhibitions extends React.Component {
       let components = []; 
       projects.forEach(p => {
         let c = (
-            <div style={cvStyles.entry}>
+            <div key={components.length} style={cvStyles.entry}>
                 {p.title}{p.description}{p.info}
             </div>
         ); 

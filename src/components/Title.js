@@ -82,7 +82,7 @@ function Title() {
                     buttonStyle={styles.button} 
                     isActive={cvState}
                 >
-                    <RadiumLink to="/Bio">Bio</RadiumLink>
+                    <RadiumLink to="/Bio">CV</RadiumLink>
                 </CustomButton>
             </div>
         </div>

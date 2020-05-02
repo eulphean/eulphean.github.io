@@ -50,6 +50,7 @@ class CVFilterer extends React.Component {
             isPublicTalks: false,
             isPress: false,
             isPublications: false,
+            isSkills: false
         }; 
 
         // Maintain a list of selected keywords. 
@@ -66,6 +67,7 @@ class CVFilterer extends React.Component {
                     <CustomButton isActive={this.state.isPublicTalks} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Public Talks'}</CustomButton>
                     <CustomButton isActive={this.state.isPublications} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Publications'}</CustomButton>
                     <CustomButton isActive={this.state.isEducation} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Education'}</CustomButton>
+                    <CustomButton isActive={this.state.isSkills} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Skills'}</CustomButton>
                 </div>
             </div>
         );

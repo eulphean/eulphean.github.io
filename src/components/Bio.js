@@ -1,6 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-import { padding, commonWorkStyles, fontSize } from './CommonStyles';
+import { padding, commonWorkStyles, fontSize, cvStyles } from './CommonStyles';
 import CVFilterer from './CVFilterer.js'
 import Education from './Education.js'
 import Exhibitions from './Exhibitions.js'
@@ -37,10 +37,13 @@ class Bio extends React.Component {
 
         return (
             <div style={styles.container}>
+                <CVFilterer onKeywordSelected={ this.onKeywordSelected.bind(this) }/>
                 <div style={bioStyle}>
+                    <div style={cvStyles.heading}>
+                        BIO
+                    </div>
                     {bio}
                 </div>
-                <CVFilterer onKeywordSelected={ this.onKeywordSelected.bind(this) }/>
                 {this.state.visible}
             </div>
         );

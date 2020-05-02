@@ -278,6 +278,13 @@ const commonWorkStyles = {
 };
 
 const cvStyles= {
+    container: {
+        display: 'flex',
+        marginTop: padding.big,
+        marginBottom: padding.small,
+        flexDirection: 'column'
+    },
+
     heading: {
         fontFamily: fontFamily.bebas,
         fontSize: fontSize.big,

@@ -1,12 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
+import { cvStyles } from './CommonStyles';
 
-const styles={
-    container: {
-        display: 'flex',
-
-      }
-}
 class Education extends React.Component {
   constructor(props) {
     super(props);
@@ -16,9 +11,11 @@ class Education extends React.Component {
 
   render() {
     return (
-        <div style={styles.container}>
-            Education
-         </div>
+        <div style={cvStyles.container}>
+            <div style={cvStyles.heading}>
+                EDUCATION
+            </div>    
+        </div>
     );
   }
 }
