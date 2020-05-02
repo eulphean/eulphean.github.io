@@ -8,6 +8,8 @@ import Press from './Press.js'
 import Publications from './Publications.js'
 import Residencies from './Residencies.js'
 import PublicTalks from './PublicTalks.js'
+import Skills from './Skills.js'
+import WorkExperience from './WorkExperience.js'
 
 const styles={
     container: {
@@ -77,6 +79,14 @@ class Bio extends React.Component {
                 }
                 case 'Publications': {
                     components.unshift(<Publications key={5}/>); 
+                    break; 
+                }
+                case 'Skills': {
+                    components.unshift(<Skills key={6}/>); 
+                    break; 
+                }
+                case 'Experience': {
+                    components.unshift(<WorkExperience key={7} />); 
                     break; 
                 }
                 default: {

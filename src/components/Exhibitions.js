@@ -6,7 +6,7 @@ import CustomLink from './CustomLink.js'
 const projects = [
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/Babble-Wall/' inline={true}>Babble</CustomLink>,
-        description: ', (gen)erations, curated by Anastasia Salter and Ha’ani Hogan, CityArts Gallery, Orlando, Florida, 2020, ',
+        description: ', (gen)erations, curated by Anastasia Salter and Ha’ani Hogan, CityArts Gallery, Orlando, USA, 2020, ',
         info: <CustomLink  to='https://elo.cah.ucf.edu/' inline={true}>[info]</CustomLink>
     }, 
     {
@@ -16,7 +16,7 @@ const projects = [
     },
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/Babble-Wall/' inline={true}>Babble</CustomLink>,
-        description: ', <i>also</i> tubes, curated by Clint Sleeper, Unrequited Leisure, Nashville, Tennessee, 2020, ',
+        description: ', <i>also</i> tubes, curated by Clint Sleeper, Unrequited Leisure, Nashville, USA, 2020, ',
         info: <CustomLink to='http://unrequitedleisure.com/' inline={true} >[info]</CustomLink>
     },
     {

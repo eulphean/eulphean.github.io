@@ -366,6 +366,10 @@ const cvStyles= {
     title: {
         fontStyle: 'italic',
         textShadow: textShadow.slateGrey
+    }, 
+
+    tab: {
+        paddingLeft: padding.verySmall
     }
 };
 
