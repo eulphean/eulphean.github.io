@@ -1,7 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
 import CustomLink from './CustomLink.js'
-import { padding, textShadow, fontSize, fontFamily, color, commonWorkStyles } from './CommonStyles.js'
+import { padding, fontSize, fontFamily, color, commonWorkStyles } from './CommonStyles.js'
 import CustomButton from './CustomButton.js'
 
 // Images

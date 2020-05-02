@@ -56,27 +56,27 @@ class Bio extends React.Component {
         category.forEach(element => {
             switch(element) {
                 case 'Education': {
-                    components.unshift(<Education />); 
+                    components.unshift(<Education key={0} />); 
                     break; 
                 }
                 case 'Exhibitions': {
-                    components.unshift(<Exhibitions />); 
+                    components.unshift(<Exhibitions key={1} />); 
                     break; 
                 }
                 case 'Residencies': {
-                    components.unshift(<Residencies />); 
+                    components.unshift(<Residencies key={2} />); 
                     break; 
                 }
                 case 'Public Talks': {
-                    components.unshift(<PublicTalks />);
+                    components.unshift(<PublicTalks key={3}/>);
                     break; 
                 }
                 case 'Press': {
-                    components.unshift(<Press />); 
+                    components.unshift(<Press key={4} />); 
                     break; 
                 }
                 case 'Publications': {
-                    components.unshift(<Publications />); 
+                    components.unshift(<Publications key={5}/>); 
                     break; 
                 }
                 default: {

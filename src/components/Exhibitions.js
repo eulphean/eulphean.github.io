@@ -1,11 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
-import { padding, cvStyles } from './CommonStyles.js'
+import { cvStyles } from './CommonStyles.js'
 import CustomLink from './CustomLink.js'
-
-const styles={
-
-}
 
 const projects = [
     {
@@ -92,6 +88,11 @@ const projects = [
         title: <CustomLink italics={true} to="https://amaykataria.com/#/PostCryptocollectible" inline={true}>Post-Cryptocollectible</CustomLink>,
         description: ', Art & Blockchain Hack Space, curated by Jessica Angel, Ethereal Summit, New York, USA, 2018, ',
         info: <CustomLink to='http://artproject.io/' inline={true} >[info]</CustomLink> 
+    },
+    {
+        title: <CustomLink italics={true} to="https://amaykataria.com/#/GenerativeDecay" inline={true}>Generative Decay</CustomLink>,
+        description: ', Algomotion, Flex Space, School of the Art Institute of Chicago, Chicago, USA, 2018, ',
+        info: <CustomLink to='https://ats.community/t/algomotion-reception-this-friday/962' inline={true} >[info]</CustomLink> 
     }
 ]; 
 

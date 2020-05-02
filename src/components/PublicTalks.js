@@ -54,6 +54,7 @@ class PublicTalks extends React.Component {
   formatProjects() {
     let components = []; 
     projects.forEach(p => {
+      console.log(components.length);
       let c = (
           <div key={components.length} style={cvStyles.entry}>
               {p.title}{p.description}{p.info}

@@ -1,11 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
-import { padding, cvStyles } from './CommonStyles';
+import { cvStyles } from './CommonStyles';
 import CustomLink from './CustomLink.js'
-
-const styles={
-
-}
 
 const projects=[
   {
