@@ -40,13 +40,13 @@ class Bio extends React.Component {
         return (
             <div style={styles.container}>
                 <CVFilterer onKeywordSelected={ this.onKeywordSelected.bind(this) }/>
+                {this.state.visible}
                 <div style={bioStyle}>
                     <div style={cvStyles.heading}>
                         BIO
                     </div>
                     {bio}
                 </div>
-                {this.state.visible}
             </div>
         );
     }

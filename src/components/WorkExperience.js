@@ -24,7 +24,7 @@ const experience = [
     }, 
     {
         title: <span style={cvStyles.title}>Light Engineer</span>, 
-        location: ', School of the Art Institute of Chicago, Chicago, USA, May-July 2018, ',
+        location: ', School of the Art Institute of Chicago, Chicago, USA, May 2018 - July 2018, ',
         info: 'Expanded and engineered new Light Kits for Jan Tichy’s Digital Light Projection class; pcb design, fabrication samples, new Arduino library with demos and examples.', 
         link: <CustomLink to='https://github.com/eulphean/RGB_LED' inline={true}>[info]</CustomLink>
     }, 
@@ -42,7 +42,7 @@ const experience = [
     },
     {
         title: <span style={cvStyles.title}>Systems Solutions Engineering Intern</span>, 
-        location: ', Harris Corporation, Lynchburg, USA, January - August 2010',
+        location: ', Harris Corporation, Lynchburg, USA, January 2010 - August 2010',
         info: '', 
         link: ''
     }
