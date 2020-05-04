@@ -5,6 +5,11 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>{"A Brief Primer on Holons and Holarchy"}</span>,
+    description: ', Mana Contemporary Editorial, April 2020, ',
+    info: <CustomLink  to='https://www.manacontemporary.com/event/a-brief-primer-on-holons-and-holarchy/' inline={true}>[info]</CustomLink>
+  },
+  {
       title: <span style={cvStyles.title}>{"Amay Kataria, Two Degree Window"}</span>,
       description: ', 60 Wrd/Min Art Critic, March 2020, ',
       info: <CustomLink  to='https://60wrdmin.org/artwork/4694804_Amay_Kataria.html' inline={true}>[info]</CustomLink>
