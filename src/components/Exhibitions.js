@@ -5,6 +5,11 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
     {
+        title: 'New Work in Progress',
+        description: ', LOCUS IV, curated by Whitney LaMora, The Martin Gallery, Chicago, USA, 2020, ',
+        info: <CustomLink  to='https://www.themartinchicago.com/locus-ivsubmit' inline={true}>[info]</CustomLink>
+    }, 
+    {
         title: <CustomLink italics={true} to='https://amaykataria.com/Babble-Wall/' inline={true}>Babble</CustomLink>,
         description: ', (gen)erations, curated by Anastasia Salter and Ha’ani Hogan, CityArts Gallery, Orlando, USA, 2020, ',
         info: <CustomLink  to='https://elo.cah.ucf.edu/' inline={true}>[info]</CustomLink>

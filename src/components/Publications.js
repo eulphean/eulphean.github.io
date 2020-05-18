@@ -5,6 +5,16 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>{"Momimsafe"}</span>,
+    description: ', Artists At Mana, May 2020, ',
+    info: <CustomLink  to='https://www.manacontemporary.com/artist-at-mana/momimsafe/' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>{"Amay Kataria, Two Degree Window"}</span>,
+    description: ', Quarantine Times, May 2020, ',
+    info: <CustomLink  to='https://quarantinetimes.org/news/are-you-a-foreign-artist-round-two/' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>{"A Brief Primer on Holons and Holarchy"}</span>,
     description: ', Mana Contemporary Editorial, April 2020, ',
     info: <CustomLink  to='https://www.manacontemporary.com/event/a-brief-primer-on-holons-and-holarchy/' inline={true}>[info]</CustomLink>

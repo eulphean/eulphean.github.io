@@ -9,7 +9,7 @@ const skills = [
     }, 
     {
         title: <span style={cvStyles.title}>Sound</span>, 
-        description: <span style={cvStyles.tab}>Digital Signal Processing (DSP), Ableton Live, PureData</span>
+        description: <span style={cvStyles.tab}>PureData, Ableton Live, Logic</span>
     }, 
     {
         title: <span style={cvStyles.title}>Platforms</span>,
