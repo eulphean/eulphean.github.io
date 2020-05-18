@@ -17,7 +17,7 @@ import twodegreeproject from '../tiles/twodegree.jpg'
 import cryptokitty from '../tiles/cryptokitty.jpg'
 import breathfoliage from '../tiles/breathfoliage.jpg'
 import holon from '../tiles/holon.jpg'
-import holarchy from '../tiles/holarchy.jpg'
+// import holarchy from '../tiles/holarchy.jpg'
 import bombaybeach from '../tiles/bombaybeach.jpg'
 import encryptionarchive from '../tiles/encryptionarchive.jpg'
 import ethereumfarm from '../tiles/ethereumfarm.jpg'
@@ -30,7 +30,7 @@ import virtues from '../tiles/virtues.jpg'
 import earthlens from '../tiles/earthlens.jpg'
 import skype from '../tiles/skype.jpg'
 import sonicnegotiation from '../tiles/sonicnegotiation.jpg'
-import unnamed from '../tiles/unnamed.jpg'
+// import unnamed from '../tiles/unnamed.jpg'
 import bendtherules from '../tiles/bendtherules.jpg'
 import momimsafe from '../tiles/momimsafe.jpg'
 
@@ -134,16 +134,16 @@ class Grid extends React.Component {
                 'keywords': ['2020', 'Interactive'],
                 'url': 'https://momimsafe.live'
             },
-            {
-                'img': holarchy,
-                'link': 'Holarchy',
-                'title': 'Evolutionary Holarchy',
-                'keywords': ['2020', 'Holon']
-            },
+            // {
+            //     'img': holarchy,
+            //     'link': 'Holarchy',
+            //     'title': 'Evolutionary Holarchy',
+            //     'keywords': ['2020', 'Holon']
+            // },
             {
                 'img': holon,
                 'link': 'Holon',
-                'title': 'Holon', 
+                'title': 'Holons & Holarchy', 
                 'keywords': ['2020', 'Holon']
             },
             {
