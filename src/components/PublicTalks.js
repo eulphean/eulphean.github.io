@@ -6,6 +6,11 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>[Upcoming] Community Lunch with Phil Mulliken</span>,
+    description: ', Zoom Webinar, Mana Contemporary, Chicago, USA, June 2020',
+    info: ""
+  },
+  {
     title: <span style={cvStyles.title}>Cryptocurrency in 5 Minutes or Less</span>,
     description: ', Workshop, Commiserate New Media Art Festival, Chicago, USA, February 2020, ',
     info:  <CustomLink to='http://commiserate.life/cryptocurrency-in-5-minutes-or-less' inline={true}>[info]</CustomLink>
