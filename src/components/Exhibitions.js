@@ -81,12 +81,12 @@ const projects = [
     },
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/Babble' inline={true}>Babble</CustomLink>,
-        description: ', Future is Here: Art & Technology in Millennial Age, curated by Dr. Arshiya Lokhandwala, Phoenix City Mall, Channai, India, 2019, ',
+        description: ', Future is Here: Art & Technology in Millennial Age, curated by Dr. Arshiya Lokhandwala, Phoenix City Mall, Chennai, India, 2019, ',
         info: <CustomLink to='http://futureishere.in/' inline={true} >[info]</CustomLink> 
     },
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/FigmentsOfAttention/' inline={true}>Figments of Attention</CustomLink>,
-        description: ', Future is Here: Art & Technology in Millennial Age, curated by Dr. Arshiya Lokhandwala, Phoenix City Mall, Channai, India, 2019, ',
+        description: ', Future is Here: Art & Technology in Millennial Age, curated by Dr. Arshiya Lokhandwala, Phoenix City Mall, Chennai, India, 2019, ',
         info: <CustomLink to='http://futureishere.in/' inline={true} >[info]</CustomLink> 
     },
     {
@@ -101,7 +101,7 @@ const projects = [
     },
     {
         title: <CustomLink italics={true} to='https://www.zivzeevcohen.com/long-memory' inline={true}>Long Memory*</CustomLink>,
-        description: <span><span>{", Remanence/Remanents, 062 Gallery, (Data & Arduino programming for "}</span><CustomLink to='https://www.zivzeevcohen.com/studio' inline={true}>Ziv Ze'ev Cohen</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        description: <span><span>{", Remanence/Remnants, 062 Gallery, (Data & Arduino programming for "}</span><CustomLink to='https://www.zivzeevcohen.com/studio' inline={true}>Ziv Ze'ev Cohen</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
         info: <CustomLink to='https://www.thevisualist.org/2019/07/ziv-zeev-cohen-remanence-remnants/' inline={true}>[info]</CustomLink>
     },
     {

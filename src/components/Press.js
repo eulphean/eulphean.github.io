@@ -61,11 +61,6 @@ const projects = [
     info: <CustomLink  to='https://www.vogue.in/content/how-is-technology-affecting-millennials' inline={true}>[info]</CustomLink>
   }, 
   {
-    title: <span style={cvStyles.title}>{"What's Up, Blockchain?"}</span>,
-    description: ', Coindesk Korea, October 16, 2018, ',
-    info: <CustomLink  to='https://www.coindeskkorea.com/30993/' inline={true}>[info]</CustomLink>
-  }, 
-  {
     title: <span style={cvStyles.title}>{"Dreaming Of A City Of Media Art In Gwangju"}</span>,
     description: ', Gwangju Daily, October 9, 2018, ',
     info: <CustomLink  to='http://www.kwangju.co.kr/read.php3?aid=1539010800643133272' inline={true}>[info]</CustomLink>
@@ -86,12 +81,7 @@ const projects = [
     info: <CustomLink  to='https://crowngooseblog.com/2018/09/14/art-center-nabi-amay-kataria-interview/' inline={true}>[info]</CustomLink>
   }, 
   {
-    title: <span style={cvStyles.title}>{"Blockchain Art"}</span>,
-    description: ', CoinNews, September 5, 2018',
-    info: ''
-  }, 
-  {
-    title: <span style={cvStyles.title}>{"When Blockchain Meets Art; Amay Katria and Matthias Dörfelt"}</span>,
+    title: <span style={cvStyles.title}>{"When Blockchain Meets Art; Amay Kataria and Matthias Dörfelt"}</span>,
     description: ', Blockinpress, August 20, 2018, ',
     info: <CustomLink  to='https://blockinpress.com/archives/8119' inline={true}>[info]</CustomLink>
   }

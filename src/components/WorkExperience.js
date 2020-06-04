@@ -19,7 +19,7 @@ const experience = [
     {
         title: <span style={cvStyles.title}>Lab Assistant</span>, 
         location: ', School of the Art Institute of Chicago, Chicago, USA, 2017-2018, ',
-        info: 'Electronics & Kinectics Lab', 
+        info: 'Electronics & Kinetics Lab', 
         link: <CustomLink to='https://www.saic.edu/academics/departments/art-and-technology-studies/resources' inline={true}>[info]</CustomLink>
     }, 
     {

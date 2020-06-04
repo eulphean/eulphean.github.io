@@ -5,6 +5,11 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>{"MOMIMSAFE"}</span>,
+    description: <span>{", An Artist's Guide to Computation, June 2020, "}</span>,
+    info: <CustomLink  to='https://www.sciartmagazine.com/contribute.html' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>{"Holons & Holarchy"}</span>,
     description: ', Algorithmic Issue, SciArt Magazine, June 2020, ',
     info: <CustomLink  to='https://www.sciartmagazine.com/contribute.html' inline={true}>[info]</CustomLink>
