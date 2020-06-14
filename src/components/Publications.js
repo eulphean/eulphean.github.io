@@ -5,9 +5,14 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>{"A Brief Primer on Holons & Holarchy"}</span>,
+    description: <span>{", Invitation to submit to Interfaces; an inaugural academic journal at Charles Babbage Institute at University of Minnesota, 2020, "}</span>,
+    info: <CustomLink  to='https://justcode.cbi.umn.edu/interfaces' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>{"MOMIMSAFE"}</span>,
     description: <span>{", An Artist's Guide to Computation, June 2020, "}</span>,
-    info: <CustomLink  to='https://www.sciartmagazine.com/contribute.html' inline={true}>[info]</CustomLink>
+    info: <CustomLink  to='https://artistsguidetocomputation.substack.com/p/oof-so' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>{"Holons & Holarchy"}</span>,
@@ -38,6 +43,11 @@ const projects = [
     title: <span style={cvStyles.title}>{"<i> also</i> tubes"}</span>,
     description: ', Unrequited Leisure, February 2020, ',
     info: <CustomLink  to='http://unrequitedleisure.com/' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>{"Babble"}</span>,
+    description: ', NeurIPS Creativity, AI Art Online, December 2019, ',
+    info: <CustomLink  to='http://www.aiartonline.com/community-2019/amay-kataria/' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>{"Nest: Interactive Installation"}</span>,

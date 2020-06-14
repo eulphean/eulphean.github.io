@@ -10,6 +10,11 @@ const projects = [
       info: <CustomLink  to='https://burnaway.org/also-tubes-unrequited-leisure/' inline={true}>[info]</CustomLink>
   },
   {
+    title: <span style={cvStyles.title}>{"The “Wrong Biennale” Seeks to Create the Right Conditions for Digital Art"}</span>,
+    description: ', Hyperallergic, February 27, 2020, ',
+    info: <CustomLink  to='https://hyperallergic.com/545106/the-wrong-biennale-seeks-to-create-the-right-conditions-for-digital-art/' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>Cyberia: New Media Playground explored the alternate realities in the digital
     age</span>,
     description: ', Stir World, December 31, 2019, ',
@@ -40,6 +45,11 @@ const projects = [
     description: ', The Times of India, November 25, 2019, ',
     info: <CustomLink  to='https://timesofindia.indiatimes.com/city/chennai/exhibition-in-chennai-to-expose-digital-realities-through-art/articleshow/72228973.cms' inline={true}>[info]</CustomLink>
   }, 
+  {
+    title: <span style={cvStyles.title}>{"The Future Is Here: exploring the influence of technology on millennials"}</span>,
+    description: ', Stir World, August 26, 2019, ',
+    info: <CustomLink  to='https://www.stirworld.com/inspire-people-the-future-is-here-exploring-the-influence-of-technology-on-millennials' inline={true}>[info]</CustomLink>
+  },
   {
     title: <span style={cvStyles.title}>{"International Artist Residencies in Korea"}</span>,
     description: ', The ARTRO, February 21, 2019, ',
