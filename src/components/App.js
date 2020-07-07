@@ -31,7 +31,10 @@ import TreeOfLife from '../projects/TreeOfLife.js'
 import SonicNegotiation from '../projects/SonicNegotiation.js'
 import Virtues from '../projects/Virtues.js'
 import MagicMic from '../projects/MagicMic.js'
-import Skype from '../projects/Skype'
+import Skype from '../projects/Skype.js'
+import Momimsafe from '../projects/momimsafe.js'
+import CenterofVaryingGravity from '../projects/CenterofVaryingGravity.js'
+import JanusStudy from '../projects/JanusStudy.js'
 
 const styles = {
   container: {
@@ -84,6 +87,9 @@ function App() {
             <Route path="/Works"><Title /><Grid /></Route>
             <Route path="/Bio"><Title /><Bio /></Route>
             <Route path="/About"><Title /><About /></Route>
+            <Route path="/centerofvaryinggravity"><CenterofVaryingGravity /></Route>
+            <Route path="/Janus"><JanusStudy /></Route>
+            <Route path="/momimsafe"><Momimsafe /></Route>
             <Route path="/Holon"><Holon /></Route>
             <Route path="/Holarchy"><Holarchy/></Route>
             <Route path="/BombayBeach"><BombayBeach /></Route>

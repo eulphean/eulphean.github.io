@@ -33,6 +33,9 @@ import sonicnegotiation from '../tiles/sonicnegotiation.jpg'
 // import unnamed from '../tiles/unnamed.jpg'
 import bendtherules from '../tiles/bendtherules.jpg'
 import momimsafe from '../tiles/momimsafe.jpg'
+import janus from '../tiles/janus.jpg'
+import gravity from '../tiles/gravity.jpg'
+
 
 const styles = {
     gridContainer: {
@@ -129,10 +132,22 @@ class Grid extends React.Component {
         // Push every imported image into this array. 
         this.allProjects = [
             {
+                'img': gravity,
+                'title': 'Center of (Varying) Gravity',
+                'keywords': ['2020'],
+                'link': 'centerofvaryinggravity'
+            },
+            {
+                'img': janus,
+                'title': 'Janus Study (I)',
+                'keywords': ['2020', 'Holon'],
+                'link': 'Janus'
+            },
+            {
                 'img': momimsafe,
                 'title': 'MOMIMSAFE',
                 'keywords': ['2020', 'Interactive'],
-                'url': 'https://momimsafe.live'
+                'link': 'momimsafe'
             },
             // {
             //     'img': holarchy,
@@ -269,24 +284,24 @@ class Grid extends React.Component {
                 'title': 'Virtues',
                 'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
             },
-            {
-                'img': skype,
-                'link': 'Skype',
-                'title': 'Skype',
-                'keywords': ['2017', 'Archive', 'Interactive']
-            },
+            // {
+            //     'img': skype,
+            //     'link': 'Skype',
+            //     'title': 'Skype',
+            //     'keywords': ['2017', 'Archive', 'Interactive']
+            // },
             {
                 'img': magicmic,
                 'link': 'MagicMic',
                 'title': 'Magic Mic',
                 'keywords': ['2017', 'Archive', 'Interactive']
             },
-            {
-                'img': earthlens,
-                'link': 'EarthLens',
-                'title': 'Earth Lens',
-                'keywords': ['2017', 'Archive', 'Interactive']
-            }
+            // {
+            //     'img': earthlens,
+            //     'link': 'EarthLens',
+            //     'title': 'Earth Lens',
+            //     'keywords': ['2017', 'Archive', 'Interactive']
+            // }
         ];
     }
 }

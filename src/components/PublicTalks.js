@@ -6,13 +6,18 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
-    title: <span style={cvStyles.title}>Community Lunch with Phil Mulliken</span>,
-    description: ', [Upcoming] Zoom Webinar, Mana Contemporary, Chicago, USA, June 2020',
-    info: ""
+    title: <span style={cvStyles.title}>"Moment of Enigma" Virtual Walkthrough with Duncan Bass</span>,
+    description: ', CADAF Online, Chicago, USA, June 2020, ',
+    info: <CustomLink to='https://www.youtube.com/watch?v=fBUShClQokQ&feature=youtu.be' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>Community Lunch with Amay Kataria and Phil Mulliken</span>,
+    description: ', Mana Contemporary, Chicago, USA, June 2020, ',
+    info: <CustomLink to='https://www.manacontemporary.com/event/community-lunch-with-amay-kataria-and-philip-mulliken/' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>Cryptocurrency in 5 Minutes or Less</span>,
-    description: ', Workshop, Commiserate New Media Art Festival, Chicago, USA, February 2020, ',
+    description: ', Commiserate New Media Art Festival, Chicago, USA, February 2020, ',
     info:  <CustomLink to='http://commiserate.life/cryptocurrency-in-5-minutes-or-less' inline={true}>[info]</CustomLink>
   },
   {

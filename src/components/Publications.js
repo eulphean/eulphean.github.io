@@ -15,9 +15,9 @@ const projects = [
     info: <CustomLink  to='https://artistsguidetocomputation.substack.com/p/oof-so' inline={true}>[info]</CustomLink>
   },
   {
-    title: <span style={cvStyles.title}>{"Holons & Holarchy"}</span>,
-    description: ', Algorithmic Issue, SciArt Magazine, June 2020, ',
-    info: <CustomLink  to='https://www.sciartmagazine.com/contribute.html' inline={true}>[info]</CustomLink>
+    title: <span style={cvStyles.title}>{"Figments of Desire & Generative Decay"}</span>,
+    description: ', Algorithmic, SciArt Magazine, June 2020, ',
+    info: <CustomLink  to='https://www.sciartmagazine.com/algorithmic-physical.html' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>{"MOMIMSAFE"}</span>,

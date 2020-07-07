@@ -370,6 +370,10 @@ const cvStyles= {
 
     tab: {
         paddingLeft: padding.verySmall
+    },
+
+    bottomSpace: {
+        marginBottom: padding.big
     }
 };
 

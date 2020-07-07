@@ -3,25 +3,43 @@ import Radium from 'radium'
 import { cvStyles } from './CommonStyles.js'
 import CustomLink from './CustomLink.js'
 
-const projects = [
+const solo = [
+    {
+        title: <CustomLink italics={true} inline={true}>Upcoming Solo Show</CustomLink>,
+        description: ', Ground Level Platform, Chicago, USA, 2021, ',
+        info: <CustomLink  to='https://www.groundlevelplatform.org/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} inline={true}>Upcoming Solo Show</CustomLink>,
+        description: ', Mana Contemporary, Chicago, USA, 2020, ',
+        info: <CustomLink  to='https://www.manacontemporary.com/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} inline={true}>Moment of Enigma</CustomLink>,
+        description: ', CADAF Online, June 2020, ',
+        info: <CustomLink  to='https://www.youtube.com/watch?v=fBUShClQokQ&feature=youtu.be' inline={true}>[info]</CustomLink>
+    }, 
+];
+
+const group = [
+    {
+        title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
+        description: ', Vector Festival, curated by Martin Zeilinger and Katie Micak, Toronto, Canada, 2020, ',
+        info: <CustomLink  to='http://vectorfestival.org/' inline={true}>[info]</CustomLink>
+    }, 
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/Holon/' inline={true}>{"Holons & Holarchy"}</CustomLink>,
-        description: ', [Upcoming] Mana Contemporary Booth curated by Ysabel Pinyol, Cadaf Online, Chicago, USA, 2020, ',
-        info: <CustomLink  to='https://cadaf.art/' inline={true}>[info]</CustomLink>
+        description: ', Mana Contemporary ZEROONE, curated by Ysabel Pinyol, CADAF Online, 2020, ',
+        info: <CustomLink  to='https://www.manacontemporary.com/event/selects-curated-exhibitions-at-digital-open-house/' inline={true}>[info]</CustomLink>
     }, 
     {
-        title: 'Solo Booth',
-        description: ', [Upcoming] Mana Contemporary Open House, Cadaf Online, Chicago, USA, 2020, ',
-        info: <CustomLink  to='https://cadaf.art/' inline={true}>[info]</CustomLink>
-    }, 
-    {
-        title: 'New Work in Progress',
-        description: ', [Upcoming] LOCUS IV, curated by Whitney LaMora, The Martin Gallery, Chicago, USA, 2020, ',
-        info: <CustomLink  to='https://www.themartinchicago.com/locus-ivsubmit' inline={true}>[info]</CustomLink>
+        title: <CustomLink italics={true} to='https://covg.art' inline={true}>{"Center of (Varying) Gravity"}</CustomLink>,
+        description: ', LOCUS IV, curated by Whitney LaMora, The Martin Gallery, Chicago, USA, 2020, ',
+        info: <CustomLink  to='https://www.themartinchicago.com/locus-i-v' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/Babble-Wall/' inline={true}>Babble</CustomLink>,
-        description: ', [Upcoming] (gen)erations, curated by Anastasia Salter and Ha’ani Hogan, CityArts Gallery, Orlando, USA, 2020, ',
+        description: ', (gen)erations, curated by Anastasia Salter and Ha’ani Hogan, CityArts Gallery, Orlando, USA, 2020, ',
         info: <CustomLink  to='https://elo.cah.ucf.edu/' inline={true}>[info]</CustomLink>
     }, 
     {
@@ -159,18 +177,25 @@ class Exhibitions extends React.Component {
   }
 
   render() {
-    let pComps = this.formatProjects(); 
+    let gComps = this.formatProjects(group); 
+    let sComps = this.formatProjects(solo)
     return (
         <div style={cvStyles.container}>
-            <div style={cvStyles.heading}>
-                EXHIBITIONS
+            <div style={cvStyles.bottomSpace}>
+                <div style={cvStyles.heading}>
+                    SOLO EXHIBITIONS
+                </div>
+                { sComps }
             </div>
-            { pComps }
+            <div style={cvStyles.heading}>
+                GROUP EXHIBITIONS
+            </div>
+            { gComps }
         </div>
     );
   }
 
-  formatProjects() {
+  formatProjects(projects) {
       let components = []; 
       projects.forEach(p => {
         let c = (

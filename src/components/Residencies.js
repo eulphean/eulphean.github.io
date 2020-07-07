@@ -11,7 +11,7 @@ const projects=[
   },
   {
     title: <span style={cvStyles.title}>New Media Resident</span>,
-    description: ', Mana Contemporary, Chicago, USA, February-August 2020, ',
+    description: ', Mana Contemporary, Chicago, USA, February-October 2020, ',
     info:  <CustomLink to='https://www.manacontemporary.com/residencies/nmpchicago/' inline={true}>[info]</CustomLink>
   },
   {
