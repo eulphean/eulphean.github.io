@@ -3,11 +3,11 @@ import Radium from 'radium'
 import Header from '../components/Header.js'
 import CustomLink from '../components/CustomLink.js'
 import {commonWorkStyles, padding} from '../components/CommonStyles.js'
-import thewhitesmile from '../images/Holon/thewhitesmile.jpg'
-import equilibrium from '../images/Holon/equilibrium.jpg'
-import moustacheman from '../images/Holon/moustacheman.jpg'
-import invertical from '../images/Holon/invertical.jpg'
+import tendtowardsB from '../images/Holon/tendtowardsB.jpg'
+import homotypicalB from '../images/Holon/homotypicalB.jpg'
 import unityindiversity from '../images/Holon/unityindiversity.jpg'
+import tendtowardsA from '../images/Holon/tendtowardsA.jpg'
+import homotypicalA from '../images/Holon/homotypicalA.jpg'
 
 const styles={
     container: {
@@ -59,13 +59,13 @@ class Holon extends React.Component {
                 {linkC}
                 {bodyD}
               </div>
+              <img style={oneImageStyle} alt={'Tend Towards B'} src={tendtowardsB}/>
               <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.multiImageContainer}>
-                  <img style={commonWorkStyles.twoImages} alt={'The White Smile'} src={thewhitesmile}/>
-                  <img style={commonWorkStyles.twoImages} alt={'Moustache Man'} src={moustacheman}/>
+                  <img style={commonWorkStyles.twoImages} alt={'Tend Towards A'} src={tendtowardsA}/>
+                  <img style={commonWorkStyles.twoImages} alt={'Homotypical A'} src={homotypicalA}/>
                 </div>
-                  <img style={oneImageStyle} alt={'Equilibrium'} src={equilibrium}/>
-                  <img style={oneImageStyle} alt={'Invertical'} src={invertical}/>
+                  <img style={oneImageStyle} alt={'Homotypical B'} src={homotypicalB}/>
                   <img style={oneImageStyle} alt={'Unity in Diversity'} src={unityindiversity}/>
               </div>
               <div style={[commonWorkStyles.body, styles.margin]}>

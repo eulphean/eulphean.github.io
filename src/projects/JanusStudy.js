@@ -29,6 +29,7 @@ class JanusStudy extends React.Component {
   }
 
   render() {
+    const containerStyle = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgContainer];
     return (
         <div style={styles.container}>
             <Header title="Janus Study (I)" />
@@ -38,8 +39,8 @@ class JanusStudy extends React.Component {
                 {linkA}
                 {bodyB}
               </div>
-              <div style={commonWorkStyles.imgContainer}>
-                <iframe title={'Ethereum Farm'} style={commonWorkStyles.webFrame} src={'https://ethlabor.net'}></iframe>
+              <div style={containerStyle}>
+                <iframe title={'Janus Study (I)'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/436124011" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
               </div>
             </div>
         </div>
