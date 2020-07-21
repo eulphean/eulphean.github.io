@@ -19,7 +19,7 @@ const styles={
 
 const bodyA='Janus Study (I) stems from my on-going collaboration with Chicago based artist,  ';
 const linkA=(<CustomLink to='https://www.philipmulliken.com/' inline={true}>Phillip Mulliken</CustomLink>);
-const bodyB=". It's the first edition of a virtual sculpture inspired from the ancient Roman figure Janus, a two-faced god considered a guardian of doorways, transitions, and time. ";
+const bodyB=". It's the first edition of a virtual sculpture inspired from the ancient Roman figure Janus, a two-faced god considered a guardian of doorways, transitions, and time. Below is a fast-forwarded one minute clip from the original work.";
 
 class JanusStudy extends React.Component {
   constructor(props) {

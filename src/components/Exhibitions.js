@@ -5,23 +5,28 @@ import CustomLink from './CustomLink.js'
 
 const solo = [
     {
-        title: <CustomLink italics={true} inline={true}>Upcoming Solo Show</CustomLink>,
+        title: <span style={cvStyles.title} italics={true} inline={true}>Upcoming Solo Show</span>,
         description: ', Ground Level Platform, Chicago, USA, 2021, ',
         info: <CustomLink  to='https://www.groundlevelplatform.org/' inline={true}>[info]</CustomLink>
     }, 
     {
-        title: <CustomLink italics={true} inline={true}>Upcoming Solo Show</CustomLink>,
+        title: <span style={cvStyles.title} italics={true} inline={true}>Upcoming Solo Show</span>,
         description: ', Mana Contemporary, Chicago, USA, 2020, ',
         info: <CustomLink  to='https://www.manacontemporary.com/' inline={true}>[info]</CustomLink>
     }, 
     {
-        title: <CustomLink italics={true} inline={true}>Moment of Enigma</CustomLink>,
+        title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
         description: ', CADAF Online, June 2020, ',
         info: <CustomLink  to='https://www.youtube.com/watch?v=fBUShClQokQ&feature=youtu.be' inline={true}>[info]</CustomLink>
     }, 
 ];
 
 const group = [
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/FigmentsofDesire' inline={true}>{"Figments of Desire"}</CustomLink>,
+        description: ', ALIFE 2020, organized by Vermont Complex Systems Center, University of Vermont, Vermont, USA, 2020, ',
+        info: <CustomLink  to='https://vermontcomplexsystems.org/events/ALIFE-2020/' inline={true}>[info]</CustomLink>
+    }, 
     {
         title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
         description: ', Vector Festival, curated by Martin Zeilinger and Katie Micak, Toronto, Canada, 2020, ',
@@ -39,8 +44,8 @@ const group = [
     }, 
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/Babble-Wall/' inline={true}>Babble</CustomLink>,
-        description: ', (gen)erations, curated by Anastasia Salter and Ha’ani Hogan, CityArts Gallery, Orlando, USA, 2020, ',
-        info: <CustomLink  to='https://elo.cah.ucf.edu/' inline={true}>[info]</CustomLink>
+        description: ', (un)continuity, curated by Anastasia Salter and Ha’ani Hogan, CityArts Gallery, Orlando, USA, 2020, ',
+        info: <CustomLink  to='https://projects.cah.ucf.edu/mediaartsexhibits/uncontinuity/Kataria/kataria.html' inline={true}>[info]</CustomLink>
     }, 
     {
         title:  <CustomLink italics={true} to='https://amaykataria.com/#/BombayBeach/' inline={true}>Silent City</CustomLink>,
