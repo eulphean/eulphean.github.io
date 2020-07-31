@@ -134,7 +134,7 @@ class Grid extends React.Component {
             {
                 'img': momentofenigma,
                 'title': 'Moment of Enigma',
-                'keywords': ['2020'],
+                'keywords': ['2020', 'Holon', 'Interactive'],
                 'link': 'momentofenigma'
             },
             {
