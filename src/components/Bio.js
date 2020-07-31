@@ -5,6 +5,7 @@ import CVFilterer from './CVFilterer.js'
 import Education from './Education.js'
 import Exhibitions from './Exhibitions.js'
 import Press from './Press.js'
+import Awards from './Awards.js'
 import Publications from './Publications.js'
 import Residencies from './Residencies.js'
 import PublicTalks from './PublicTalks.js'
@@ -79,6 +80,10 @@ class Bio extends React.Component {
                 }
                 case 'Publications': {
                     components.unshift(<Publications key={5}/>); 
+                    break; 
+                }
+                case 'Awards': {
+                    components.unshift(<Awards key={6}/>); 
                     break; 
                 }
                 case 'Skills': {

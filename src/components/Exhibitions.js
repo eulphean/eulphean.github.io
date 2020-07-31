@@ -23,6 +23,11 @@ const solo = [
 
 const group = [
     {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/Holon/' inline={true}>{"Holons & Holarchy"}</CustomLink>,
+        description: ', (Upcoming) Rennaissance 2020, curated by Eleonora Brizi, Breezy Art Gallery, Rome, Italy, 2020, ',
+        info: <CustomLink  to='https://www.artsy.net/breezy-art/article/breezy-art-renaissance-2020-preview' inline={true}>[info]</CustomLink>
+    }, 
+    {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/FigmentsofDesire' inline={true}>{"Figments of Desire"}</CustomLink>,
         description: ', ALIFE 2020, organized by Vermont Complex Systems Center, University of Vermont, Vermont, USA, 2020, ',
         info: <CustomLink  to='https://vermontcomplexsystems.org/events/ALIFE-2020/' inline={true}>[info]</CustomLink>

@@ -12,7 +12,6 @@ import Grid from './Grid.js'
 
 // Projects
 import Holon from '../projects/Holon.js'
-import Holarchy from '../projects/Holarchy.js'
 import BombayBeach from '../projects/BombayBeach.js'
 import ThreeEcologies from '../projects/ThreeEcologies.js'
 import EthereumFarm from '../projects/EthereumFarm.js'
@@ -35,6 +34,7 @@ import Skype from '../projects/Skype.js'
 import Momimsafe from '../projects/momimsafe.js'
 import CenterofVaryingGravity from '../projects/CenterofVaryingGravity.js'
 import JanusStudy from '../projects/JanusStudy.js'
+import MomentofEnigma from '../projects/MomentofEnigma.js'
 
 const styles = {
   container: {
@@ -87,11 +87,11 @@ function App() {
             <Route path="/Works"><Title /><Grid /></Route>
             <Route path="/Bio"><Title /><Bio /></Route>
             <Route path="/About"><Title /><About /></Route>
+            <Route path="/momentofenigma"><MomentofEnigma /></Route>
             <Route path="/centerofvaryinggravity"><CenterofVaryingGravity /></Route>
             <Route path="/Janus"><JanusStudy /></Route>
             <Route path="/momimsafe"><Momimsafe /></Route>
             <Route path="/Holon"><Holon /></Route>
-            <Route path="/Holarchy"><Holarchy/></Route>
             <Route path="/BombayBeach"><BombayBeach /></Route>
             <Route path="/ThreeEcologies"><ThreeEcologies /></Route>
             <Route path="/BendTheRules"><BendTheRules /></Route>

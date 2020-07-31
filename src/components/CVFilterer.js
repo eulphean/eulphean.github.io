@@ -76,6 +76,7 @@ class CVFilterer extends React.Component {
             isPublicTalks: false,
             isPress: false,
             isPublications: false,
+            isAwards: false,
             isSkills: false,
             isWorkExperience: false
         }; 
@@ -90,6 +91,7 @@ class CVFilterer extends React.Component {
                 <div style={styles.innerContainer}>
                     <CustomButton isActive={this.state.isExhibitions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Exhibitions'}</CustomButton>
                     <CustomButton isActive={this.state.isResidencies} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Residencies'}</CustomButton>
+                    <CustomButton isActive={this.state.isAwards} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Awards'}</CustomButton>
                     <CustomButton isActive={this.state.isPress} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Press'}</CustomButton>
                     <CustomButton isActive={this.state.isPublicTalks} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Public Talks'}</CustomButton>
                     <CustomButton isActive={this.state.isPublications} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Publications'}</CustomButton>
@@ -159,6 +161,13 @@ class CVFilterer extends React.Component {
             case 'Publications': {
                 this.setState({
                     isPublications: !this.state.isPublications
+                }); 
+                break; 
+            }
+
+            case 'Awards': {
+                this.setState({
+                    isAwards: !this.state.isAwards
                 }); 
                 break; 
             }

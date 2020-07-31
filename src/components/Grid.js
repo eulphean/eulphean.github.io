@@ -17,7 +17,6 @@ import twodegreeproject from '../tiles/twodegree.jpg'
 import cryptokitty from '../tiles/cryptokitty.jpg'
 import breathfoliage from '../tiles/breathfoliage.jpg'
 import holon from '../tiles/holon.jpg'
-// import holarchy from '../tiles/holarchy.jpg'
 import bombaybeach from '../tiles/bombaybeach.jpg'
 import encryptionarchive from '../tiles/encryptionarchive.jpg'
 import ethereumfarm from '../tiles/ethereumfarm.jpg'
@@ -133,6 +132,12 @@ class Grid extends React.Component {
         this.allProjects = [
             {
                 'img': gravity,
+                'title': 'Moment of Enigma',
+                'keywords': ['2020'],
+                'link': 'momentofenigma'
+            },
+            {
+                'img': gravity,
                 'title': 'Center of (Varying) Gravity',
                 'keywords': ['2020'],
                 'link': 'centerofvaryinggravity'
@@ -149,12 +154,6 @@ class Grid extends React.Component {
                 'keywords': ['2020', 'Interactive'],
                 'link': 'momimsafe'
             },
-            // {
-            //     'img': holarchy,
-            //     'link': 'Holarchy',
-            //     'title': 'Evolutionary Holarchy',
-            //     'keywords': ['2020', 'Holon']
-            // },
             {
                 'img': holon,
                 'link': 'Holon',
