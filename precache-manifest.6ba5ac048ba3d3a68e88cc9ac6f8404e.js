@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "552ffb1e90268f71e8ed72d709fba33a",
+    "revision": "96144f1bbbce323b09a6a6ac2f96662a",
     "url": "/index.html"
   },
   {
-    "revision": "5ef0e00dc660c121c26d",
+    "revision": "ab254eb2a082c7ee77c7",
     "url": "/static/css/main.463189ab.chunk.css"
   },
   {
-    "revision": "4226a082a25f1ea73084",
-    "url": "/static/js/2.635c5933.chunk.js"
+    "revision": "824ecc1a439890cac201",
+    "url": "/static/js/2.5cadd1e9.chunk.js"
   },
   {
     "revision": "7394186c78c74bd60264b20e3b2b8afb",
-    "url": "/static/js/2.635c5933.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5cadd1e9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5ef0e00dc660c121c26d",
-    "url": "/static/js/main.6b63fd08.chunk.js"
+    "revision": "ab254eb2a082c7ee77c7",
+    "url": "/static/js/main.c67bada2.chunk.js"
   },
   {
     "revision": "3090d80686370f50b5ab",
@@ -30,6 +30,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3ce201a4419e8f994fb6222af8b3f200",
     "url": "/static/media/antidote2.3ce201a4.jpg"
+  },
+  {
+    "revision": "d4d27c918a4274e466e9cf23f50f173e",
+    "url": "/static/media/antidoteA.d4d27c91.jpg"
+  },
+  {
+    "revision": "f73481896e794a651ee0fdf43e7baeb7",
+    "url": "/static/media/antidoteB.f7348189.jpg"
   },
   {
     "revision": "6152de39f2a808c5309c64ab27f0da23",
@@ -164,6 +172,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/homotypicalA.1891d480.jpg"
   },
   {
+    "revision": "40408dbb852de293dd5ec4ddcfaa3e56",
+    "url": "/static/media/homotypicalA.40408dbb.jpg"
+  },
+  {
     "revision": "047a04d76ddff5a90fa0cd55fa46917a",
     "url": "/static/media/homotypicalB.047a04d7.jpg"
   },
@@ -232,6 +244,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/modesty.9e90be06.jpg"
   },
   {
+    "revision": "93cc55d8f31370613378f56d279052db",
+    "url": "/static/media/momentofenigma.93cc55d8.jpg"
+  },
+  {
     "revision": "a1cb31a4fb49de4f3db74f8db2879cec",
     "url": "/static/media/momimsafe.a1cb31a4.jpg"
   },
@@ -266,6 +282,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ff687f65644726bca09c66d19b66361b",
     "url": "/static/media/pose.ff687f65.jpg"
+  },
+  {
+    "revision": "a09d39d3c4c0a41cce32b877fa363306",
+    "url": "/static/media/poster1.a09d39d3.jpg"
+  },
+  {
+    "revision": "e87e9d8957fbaee34425727cb523dcb5",
+    "url": "/static/media/poster2.e87e9d89.jpg"
   },
   {
     "revision": "c193bc991e7439342e2c9e8b59688c64",
@@ -342,6 +366,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c113787a9b1b929dc9951e0cb95d02d9",
     "url": "/static/media/temperance.c113787a.jpg"
+  },
+  {
+    "revision": "855abdf82acc7c5778a62314e1299323",
+    "url": "/static/media/tendtowardsA.855abdf8.jpg"
   },
   {
     "revision": "e9bd276682e56f09ccb401e3ae322111",
