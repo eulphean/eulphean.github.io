@@ -34,6 +34,7 @@ import bendtherules from '../tiles/bendtherules.jpg'
 import momimsafe from '../tiles/momimsafe.jpg'
 import janus from '../tiles/janus.jpg'
 import gravity from '../tiles/gravity.jpg'
+import momentofenigma from '../tiles/momentofenigma.jpg'
 
 
 const styles = {
@@ -131,7 +132,7 @@ class Grid extends React.Component {
         // Push every imported image into this array. 
         this.allProjects = [
             {
-                'img': gravity,
+                'img': momentofenigma,
                 'title': 'Moment of Enigma',
                 'keywords': ['2020'],
                 'link': 'momentofenigma'
@@ -277,12 +278,12 @@ class Grid extends React.Component {
                 'title': 'Sonic Negotiations',
                 'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
             },
-            {
-                'img': virtues,
-                'link': 'Virtues',
-                'title': 'Virtues',
-                'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
-            },
+            // {
+            //     'img': virtues,
+            //     'link': 'Virtues',
+            //     'title': 'Virtues',
+            //     'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
+            // },
             // {
             //     'img': skype,
             //     'link': 'Skype',
