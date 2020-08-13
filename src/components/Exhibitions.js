@@ -10,9 +10,9 @@ const solo = [
         info: <CustomLink  to='https://www.groundlevelplatform.org/' inline={true}>[info]</CustomLink>
     }, 
     {
-        title: <span style={cvStyles.title} italics={true} inline={true}>Upcoming Solo Show</span>,
-        description: ', Mana Contemporary, Chicago, USA, 2020, ',
-        info: <CustomLink  to='https://www.manacontemporary.com/' inline={true}>[info]</CustomLink>
+        title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
+        description: ', (Upcoming) Mana Contemporary, Chicago, USA, 2020, ',
+        info: <CustomLink  to='https://amaykataria.com/#/MomentofEnigma' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
@@ -23,7 +23,7 @@ const solo = [
 
 const group = [
     {
-        title: <CustomLink italics={true} to='https://amaykataria.com/#/Holon/' inline={true}>{"Holons & Holarchy"}</CustomLink>,
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/MomentofEnigma/' inline={true}>{"Moment of Enigma"}</CustomLink>,
         description: ', (Upcoming) Rennaissance 2020, curated by Eleonora Brizi, Breezy Art Gallery, Rome, Italy, 2020, ',
         info: <CustomLink  to='https://www.artsy.net/breezy-art/article/breezy-art-renaissance-2020-preview' inline={true}>[info]</CustomLink>
     }, 
