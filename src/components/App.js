@@ -35,6 +35,7 @@ import Momimsafe from '../projects/momimsafe.js'
 import CenterofVaryingGravity from '../projects/CenterofVaryingGravity.js'
 import JanusStudy from '../projects/JanusStudy.js'
 import MomentofEnigma from '../projects/MomentofEnigma.js'
+import Timekeepers from '../projects/Timekeepers.js'
 
 const styles = {
   container: {
@@ -88,6 +89,7 @@ function App() {
             <Route path="/Bio"><Title /><Bio /></Route>
             <Route path="/About"><Title /><About /></Route>
             <Route path="/momentofenigma"><MomentofEnigma /></Route>
+            <Route path="/timekeepers"><Timekeepers /></Route>
             <Route path="/centerofvaryinggravity"><CenterofVaryingGravity /></Route>
             <Route path="/Janus"><JanusStudy /></Route>
             <Route path="/momimsafe"><Momimsafe /></Route>

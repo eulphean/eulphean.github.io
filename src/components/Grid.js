@@ -35,6 +35,7 @@ import momimsafe from '../tiles/momimsafe.jpg'
 import janus from '../tiles/janus.jpg'
 import gravity from '../tiles/gravity.jpg'
 import momentofenigma from '../tiles/momentofenigma.jpg'
+import timekeepers from '../tiles/timekeepers.jpg'
 
 
 const styles = {
@@ -136,6 +137,12 @@ class Grid extends React.Component {
                 'title': 'Moment of Enigma',
                 'keywords': ['2020', 'Holon', 'Interactive'],
                 'link': 'momentofenigma'
+            },
+            {
+                'img': timekeepers,
+                'title': 'Timekeepers',
+                'keywords': ['2020', 'Interactive'],
+                'link': 'timekeepers'
             },
             {
                 'img': gravity,
@@ -290,12 +297,12 @@ class Grid extends React.Component {
             //     'title': 'Skype',
             //     'keywords': ['2017', 'Archive', 'Interactive']
             // },
-            {
-                'img': magicmic,
-                'link': 'MagicMic',
-                'title': 'Magic Mic',
-                'keywords': ['2017', 'Archive', 'Interactive']
-            },
+            // {
+            //     'img': magicmic,
+            //     'link': 'MagicMic',
+            //     'title': 'Magic Mic',
+            //     'keywords': ['2017', 'Archive', 'Interactive']
+            // },
             // {
             //     'img': earthlens,
             //     'link': 'EarthLens',
