@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f628994a5289b6e2d580d2be70362ed7",
+    "revision": "5c4cf33b1d19eaa7ae4d607385805aaf",
     "url": "/index.html"
   },
   {
-    "revision": "6626925973342b5d24c4",
+    "revision": "90a40e8f98c5367853d7",
     "url": "/static/css/main.463189ab.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.077e539d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6626925973342b5d24c4",
-    "url": "/static/js/main.accc271c.chunk.js"
+    "revision": "90a40e8f98c5367853d7",
+    "url": "/static/js/main.423a2cb1.chunk.js"
   },
   {
     "revision": "3090d80686370f50b5ab",
@@ -62,10 +62,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "14ef4790fa254c5f44d8c6c9b4490384",
     "url": "/static/media/bendtherules.14ef4790.jpg"
-  },
-  {
-    "revision": "0c122930d1cafcea3816cfd7f96531a5",
-    "url": "/static/media/bgStrange.0c122930.jpg"
   },
   {
     "revision": "3ec4988e7fcb29419632e234fd76dab5",
@@ -430,6 +426,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8a74eaacf079578fd6ee4023e1f00fe0",
     "url": "/static/media/timekeepers.8a74eaac.jpg"
+  },
+  {
+    "revision": "237f50766d6b5bf40fd8e6a33e029aeb",
+    "url": "/static/media/title2.237f5076.jpg"
   },
   {
     "revision": "cb89ac1e890a9606b100b00305f50922",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.463189ab.chunk.css",
-    "main.js": "/static/js/main.accc271c.chunk.js",
-    "main.js.map": "/static/js/main.accc271c.chunk.js.map",
+    "main.js": "/static/js/main.423a2cb1.chunk.js",
+    "main.js.map": "/static/js/main.423a2cb1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.112c60f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.112c60f4.js.map",
     "static/js/2.077e539d.chunk.js": "/static/js/2.077e539d.chunk.js",
     "static/js/2.077e539d.chunk.js.map": "/static/js/2.077e539d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5b077636bb84ef5cb6606d8e182d6ae6.js": "/precache-manifest.5b077636bb84ef5cb6606d8e182d6ae6.js",
+    "precache-manifest.f5e01ea84b46aca13310524251f9bfcc.js": "/precache-manifest.f5e01ea84b46aca13310524251f9bfcc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.463189ab.chunk.css.map": "/static/css/main.463189ab.chunk.css.map",
     "static/js/2.077e539d.chunk.js.LICENSE.txt": "/static/js/2.077e539d.chunk.js.LICENSE.txt",
@@ -21,7 +21,6 @@
     "static/media/back.5a6cf227.svg": "/static/media/back.5a6cf227.svg",
     "static/media/stylesheet.css": "/static/media/din-webfont.e6a361ef.woff",
     "static/media/bendtherules.jpg": "/static/media/bendtherules.14ef4790.jpg",
-    "static/media/bgStrange.jpg": "/static/media/bgStrange.0c122930.jpg",
     "static/media/bombaybeach.jpg": "/static/media/bombaybeach.3ec4988e.jpg",
     "static/media/breathfoliage.jpg": "/static/media/breathfoliage.ed457f5b.jpg",
     "static/media/cacophony.jpg": "/static/media/cacophony.0744152c.jpg",
@@ -108,6 +107,7 @@
     "static/media/three.jpg": "/static/media/three.cc330496.jpg",
     "static/media/threeecologies.jpg": "/static/media/threeecologies.067c8a79.jpg",
     "static/media/timekeepers.jpg": "/static/media/timekeepers.8a74eaac.jpg",
+    "static/media/title2.jpg": "/static/media/title2.237f5076.jpg",
     "static/media/treeoflife.jpg": "/static/media/treeoflife.cb89ac1e.jpg",
     "static/media/treeone.jpg": "/static/media/treeone.52baf846.jpg",
     "static/media/treethree.jpg": "/static/media/treethree.a650c97a.jpg",
@@ -125,6 +125,6 @@
     "static/js/runtime-main.112c60f4.js",
     "static/js/2.077e539d.chunk.js",
     "static/css/main.463189ab.chunk.css",
-    "static/js/main.accc271c.chunk.js"
+    "static/js/main.423a2cb1.chunk.js"
   ]
 }
