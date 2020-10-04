@@ -135,19 +135,19 @@ class Grid extends React.Component {
             {
                 'img': momentofenigma,
                 'title': 'Moment of Enigma',
-                'keywords': ['2020', 'Holon', 'Interactive'],
+                'keywords': ['2020', 'Holon', 'Interactive', 'Exhibitions', 'Net Art'],
                 'link': 'momentofenigma'
             },
             {
                 'img': timekeepers,
                 'title': 'Timekeepers',
-                'keywords': ['2020', 'Interactive'],
+                'keywords': ['2020', 'Interactive', 'Holon', 'Virtual Reality'],
                 'link': 'timekeepers'
             },
             {
                 'img': gravity,
                 'title': 'Center of (Varying) Gravity',
-                'keywords': ['2020'],
+                'keywords': ['2020', 'Net Art'],
                 'link': 'centerofvaryinggravity'
             },
             {
@@ -159,7 +159,7 @@ class Grid extends React.Component {
             {
                 'img': momimsafe,
                 'title': 'MOMIMSAFE',
-                'keywords': ['2020', 'Interactive'],
+                'keywords': ['2020', 'Interactive', 'Net Art'],
                 'link': 'momimsafe'
             },
             {
@@ -172,20 +172,20 @@ class Grid extends React.Component {
                 'img': bombaybeach,
                 'link': 'BombayBeach',
                 'title': 'Silent City',
-                'keywords': ['2020', 'Ecology']
+                'keywords': ['2020', 'Ecology', 'Virtual Reality']
             },
             {
                 'img': encryptionarchive,
                 'link': 'EncryptionArchive',
                 'title': 'Encryption Archive',
-                'keywords': ['2019', 'Interactive', 'Commissions'],
+                'keywords': ['2019', 'Interactive', 'Commissions', 'Net Art'],
                 'url': 'https://encryptionarchive.net'
             },
             {
                 'img': ethereumfarm,
                 'title': 'Ethereum Farm',
                 'link': 'EthereumFarm',
-                'keywords': ['2019', 'Blockchain', 'Commissions']
+                'keywords': ['2019', 'Blockchain', 'Commissions', 'Net Art']
             },
             {
                 'img': threeecologies,
@@ -197,14 +197,14 @@ class Grid extends React.Component {
                 'img': twodegreeproject,
                 'link': 'TwoDegreeProject',
                 'title': 'Two Degree Project',
-                'keywords': ['2020', 'Ecology', 'Interactive'],
+                'keywords': ['2020', 'Ecology', 'Interactive', 'Net Art'],
                 'url': 'https://amaykataria.com/twodegreewindow/'
             }, 
             {
                 'img': bendtherules,
                 'title': 'Bend the Rules',
                 'link': 'BendTheRules',
-                'keywords': ['2019', 'Interactive']
+                'keywords': ['2019', 'Interactive', 'Net Art']
             },
             {
                 'img': nest,
@@ -222,7 +222,7 @@ class Grid extends React.Component {
                 'img': babble,
                 'link': 'Babble',
                 'title': 'Babble',
-                'keywords': ['2019', 'Artificial Life', 'Interactive', 'Sound'],
+                'keywords': ['2019', 'Artificial Life', 'Interactive', 'Sound', 'Net Art'],
                 'url': 'https://amaykataria.com/Babble-Wall/'
             }, 
             {
@@ -235,7 +235,7 @@ class Grid extends React.Component {
                 'img': speculativebitcoinwallet,
                 'link': 'SpeculativeBitcoinWallet',
                 'title': 'Speculative Bitcoin Wallet',
-                'keywords': ['2018', 'Blockchain'],
+                'keywords': ['2018', 'Blockchain', 'Interactive', 'Net Art'],
                 'url': 'https://www.speculativebitcoinwallet.com/'
             }, 
             {

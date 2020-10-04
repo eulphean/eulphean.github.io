@@ -97,7 +97,6 @@ const commonWorkStyles = {
         '@media (min-width: 900px)': {  
             // no change.
             fontSize: fontSize.veryBig,
-            
         },
 
         '@media (min-width: 1200px)' : {

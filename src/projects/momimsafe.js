@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium'
 import Header from '../components/Header.js'
-import { commonWorkStyles, cvStyles, padding, textShadow } from '../components/CommonStyles.js'
+import { commonWorkStyles, cvStyles, padding } from '../components/CommonStyles.js'
 import CustomLink from '../components/CustomLink.js'
 import antidoteA from '../images/momimsafe/antidote2.jpg'
 
@@ -38,7 +38,6 @@ class momimsafe extends React.Component {
 
   render() {
     const oneImgStyle = [commonWorkStyles.oneImage, commonWorkStyles.imgMediaQuery];
-    const vimeoContainer = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgMediaQuery]; 
 
     return (
         <div style={styles.container}>
