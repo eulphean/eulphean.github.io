@@ -25,7 +25,7 @@ const styles={
     }
 }; 
 
-const bio="Amay Kataria (b. 1990) is currently an artist in residence at Mana Contemporary in Chicago, USA. He graduated from the School of the Art Institute of Chicago with an MFA in Art & Technology Studies. He was invited as a visiting artist at the Ethereal Summit, ThoughtWorks and Bellas Artes Outpost. He has participated in group shows at the Electromuseum, Ars Electronica, TIFA India, Art Center Nabi, ThoughtWorks, and Experimental Sound Studio. He is an upcoming artist in residence at Sandnes Kommune in Stavanger, Norway and was awarded the media arts residency at Art Center Nabi in Seoul, South Korea. To support his work, he has received the Shapiro Level-Up Research Grant and Bajaj Art Scholarship."
+const bio="Amay Kataria is a Chicago-based media artist, repurposing technology to create systems that are influenced by the state of “being” and “time”. In his practice, he utilizes the craft of code, computation, and algorithms to create systemic metaphors about time and human empathy. He holds an MFA in Art & Technology Studies from the School of the Art Institute of Chicago and has previously exhibited at Vector Festival, CADAF, Electromuseum, Art Electronica, TIFA Studios, and Experimental Sound Studio, among others.";
 
 class Bio extends React.Component {
     constructor(props) {

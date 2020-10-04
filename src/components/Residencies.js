@@ -6,7 +6,7 @@ import CustomLink from './CustomLink.js'
 const projects=[
   {
     title: <span style={cvStyles.title}>Artist in Residence</span>,
-    description: ', Sandnes Kommune, Sandnes, Norway, November-December 2020, ',
+    description: ', Sandnes Kommune, Sandnes, Norway, July-August 2021, ',
     info:  <CustomLink to='https://www.sandnes.kommune.no/kultur-fritid/kultur/air/' inline={true}>[info]</CustomLink>
   },
   {

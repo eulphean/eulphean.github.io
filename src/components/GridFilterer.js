@@ -102,11 +102,11 @@ class GridFilterer extends React.Component {
                 <div style={styles.innerContainer}>
                     <CustomButton isActive={this.state.isExhibitions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Exhibitions'}</CustomButton>
                     <CustomButton isActive={this.state.isNetArt} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Net Art'}</CustomButton>
-                    <CustomButton isActive={this.state.isHolon} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Holon'}</CustomButton>
-                    <CustomButton isActive={this.state.isInteractive} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Interactive'}</CustomButton>
                     <CustomButton isActive={this.state.isArtificialLife} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Artificial Life'}</CustomButton>
+                    <CustomButton isActive={this.state.isInteractive} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Interactive'}</CustomButton>
                     <CustomButton isActive={this.state.isHolon} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Virtual Reality'}</CustomButton>
                     <CustomButton isActive={this.state.isSound} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Sound'}</CustomButton>
+                    <CustomButton isActive={this.state.isHolon} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Holon'}</CustomButton>
                     <CustomButton isActive={this.state.isEcology} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Ecology'}</CustomButton>
                     <CustomButton isActive={this.state.isBlockchain} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Blockchain'}</CustomButton>
                     <CustomButton isActive={this.state.isCommissions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Commissions'}</CustomButton>

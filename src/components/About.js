@@ -5,7 +5,8 @@ import { padding, fontSize, fontFamily, color, commonWorkStyles } from './Common
 import CustomButton from './CustomButton.js'
 
 // Images
-import backgroundStrange from '../images/bgStrange.jpg'
+// import backgroundStrange from '../images/bgStrange.jpg'
+import title from '../images/title2.jpg'
 
 // Font Awesome icons
 import { ReactComponent as Instagram } from '../icons/instagram.svg'
@@ -218,7 +219,7 @@ class About extends React.Component {
         return (
             <div style={styles.container}>
                 <div style={commonWorkStyles.imgContainer}>
-                    <img style={commonWorkStyles.oneImage} alt={'Title'} src={backgroundStrange}/>
+                    <img style={commonWorkStyles.oneImage} alt={'Title'} src={title}/>
                 </div>
                 <div style={styles.contactContainer}>
                     <div style={styles.contactTile}>

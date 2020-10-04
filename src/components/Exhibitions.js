@@ -11,7 +11,7 @@ const solo = [
     }, 
     {
         title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
-        description: ', (Upcoming) Mana Contemporary, Chicago, USA, 2020, ',
+        description: ', Mana Contemporary, Chicago, USA, 2020, ',
         info: <CustomLink  to='https://amaykataria.com/#/MomentofEnigma' inline={true}>[info]</CustomLink>
     }, 
     {
@@ -23,9 +23,14 @@ const solo = [
 
 const group = [
     {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/MomentofEnigma/' inline={true}>{"Center of (Varying) Gravity"}</CustomLink>,
+        description: ', (Upcoming) Generative Art Conference 2020, organized by ARGENIA Association, Rome, Italy, 2020, ',
+        info: <CustomLink  to='http://generativeart.com' inline={true}>[info]</CustomLink>
+    }, 
+    {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/MomentofEnigma/' inline={true}>{"Moment of Enigma"}</CustomLink>,
-        description: ', (Upcoming) Rennaissance 2020, curated by Eleonora Brizi, Breezy Art Gallery, Rome, Italy, 2020, ',
-        info: <CustomLink  to='https://www.artsy.net/breezy-art/article/breezy-art-renaissance-2020-preview' inline={true}>[info]</CustomLink>
+        description: ', (Upcoming) Rennaissance 20.20, curated by Eleonora Brizi, Breezy Art Gallery, Rome, Italy, 2020, ',
+        info: <CustomLink  to='http://breezyartgallery.com' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/FigmentsofDesire' inline={true}>{"Figments of Desire"}</CustomLink>,

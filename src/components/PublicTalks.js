@@ -6,13 +6,18 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>Deconstructing Time with Amay Kataria & Andreas Berlind</span>,
+    description: ', Mana Contemporary (Virtual), Chicago, USA, June 2020, ',
+    info: <CustomLink to='https://www.manacontemporary.com/event/new-media-program-deconstructing-time/' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>"Moment of Enigma" Virtual Walkthrough with Duncan Bass</span>,
-    description: ', CADAF Online, Chicago, USA, June 2020, ',
+    description: ', CADAF Online (Virtual), Chicago, USA, June 2020, ',
     info: <CustomLink to='https://www.youtube.com/watch?v=fBUShClQokQ&feature=youtu.be' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>Community Lunch with Amay Kataria and Phil Mulliken</span>,
-    description: ', Mana Contemporary, Chicago, USA, June 2020, ',
+    description: ', Mana Contemporary (Virtual), Chicago, USA, June 2020, ',
     info: <CustomLink to='https://www.manacontemporary.com/event/community-lunch-with-amay-kataria-and-philip-mulliken/' inline={true}>[info]</CustomLink>
   },
   {
