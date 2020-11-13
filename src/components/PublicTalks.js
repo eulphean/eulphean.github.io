@@ -6,23 +6,38 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>Fourth Dimension</span>,
+    description: ', Two-day seminar, <De>Confine Festival, Online, (Upcoming) 2020, ',
+    info: <CustomLink to='https://deconfine.org/amay-kataria/' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>Searching for Empathy on Digital Platforms</span>,
+    description: ', Artist Talk, <De>Confine Festival, Online, (Upcoming) 2020, ',
+    info: <CustomLink to='https://deconfine.org/amay-kataria/' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>MOMIMSAFE: A DIY Empathy Machine</span>,
+    description: ', Artist Talk, PIKSEL20 Festival, Online, (Upcoming) 2020, ',
+    info: <CustomLink to='https://pretalx.com/piksel20/talk/YEGVXX/' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>Deconstructing Time with Amay Kataria & Andreas Berlind</span>,
-    description: ', Mana Contemporary (Virtual), Chicago, USA, June 2020, ',
+    description: ', Artist Talk, Mana Contemporary Chicago, Online, 2020, ',
     info: <CustomLink to='https://www.manacontemporary.com/event/new-media-program-deconstructing-time/' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>"Moment of Enigma" Virtual Walkthrough with Duncan Bass</span>,
-    description: ', CADAF Online (Virtual), Chicago, USA, June 2020, ',
+    description: ', CADAF Online, 2020, ',
     info: <CustomLink to='https://www.youtube.com/watch?v=fBUShClQokQ&feature=youtu.be' inline={true}>[info]</CustomLink>
   },
   {
-    title: <span style={cvStyles.title}>Community Lunch with Amay Kataria and Phil Mulliken</span>,
-    description: ', Mana Contemporary (Virtual), Chicago, USA, June 2020, ',
+    title: <span style={cvStyles.title}>Demystifying Janus with Amay Kataria and Phil Mulliken</span>,
+    description: ', Artist Talk, Mana Contemporary Chicago, Online, 2020, ',
     info: <CustomLink to='https://www.manacontemporary.com/event/community-lunch-with-amay-kataria-and-philip-mulliken/' inline={true}>[info]</CustomLink>
   },
   {
-    title: <span style={cvStyles.title}>Cryptocurrency in 5 Minutes or Less</span>,
-    description: ', Commiserate New Media Art Festival, Chicago, USA, February 2020, ',
+    title: <span style={cvStyles.title}>CYOC (Create your own Crypto) with Doug Rosman</span>,
+    description: ', Workshop, Commiserate New Media Art Festival, Chicago, USA, February 2020, ',
     info:  <CustomLink to='http://commiserate.life/cryptocurrency-in-5-minutes-or-less' inline={true}>[info]</CustomLink>
   },
   {

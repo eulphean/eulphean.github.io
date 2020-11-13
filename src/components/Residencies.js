@@ -20,11 +20,6 @@ const projects=[
     info:  <CustomLink to='https://brahman.ai/' inline={true}>[info]</CustomLink>
   },
   {
-    title: <span style={cvStyles.title}>Visiting Artist</span>,
-    description: ', Bellas Artes Outpost, Manilla, Philippines, June 2019, ',
-    info:  <CustomLink to='https://www.eskwelabap.com/contextresponsive-art-practice' inline={true}>[info]</CustomLink>
-  },
-  {
     title: <span style={cvStyles.title}>New Media Resident</span>,
     description: ', Art Center Nabi, Seoul, South Korea, July-September 2018, ',
     info:  <CustomLink to='http://www.nabi.or.kr/en/page/board_view.php?brd_idx=974&brd_id=project' inline={true}>[info]</CustomLink>
@@ -33,11 +28,6 @@ const projects=[
     title: <span style={cvStyles.title}>Art-A-Hack Resident</span>,
     description: ', ThoughtWorks, New York, USA, June-July 2018, ',
     info:  <CustomLink to='https://artahack.io/alumni/' inline={true}>[info]</CustomLink>
-  },
-  {
-    title: <span style={cvStyles.title}>Visiting Artist</span>,
-    description: ', Ethereal Summit, New York, USA, May 2018, ',
-    info:  <CustomLink to='https://www.etherealsummit.com/arts' inline={true}>[info]</CustomLink>
   }
 ]; 
 

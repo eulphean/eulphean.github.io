@@ -10,9 +10,19 @@ const projects=[
     info:  <CustomLink to='https://vermontcomplexsystems.org/events/ALIFE-2020/' inline={true}>[info]</CustomLink>
   },
   {
+    title: <span style={cvStyles.title}>Visiting Artist Invitation, </span>,
+    description: ' Magma and Memory: Documents in Eruption workshop with Raqs Media Collective, Bellas Artes Outpost, Manilla, Philippines, 2019, ',
+    info:  <CustomLink to='https://bellasartesprojects.org/courses/memory-and-magma-documents-in-eruption/' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>Shapiro Research Level-Up Grant</span>,
     description: ', School of the Art Institute of Chicago, 2018, ',
     info:  <CustomLink to='https://www.saic.edu/t4/academics/shapiro-center/grants/' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>Visiting Artist Grant</span>,
+    description: ', Ethereal Summit, New York, 2018, ',
+    info:  <CustomLink to='https://www.etherealsummit.com/arts' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>{'Byron M. & Helen S. Brumback Award'}</span>,

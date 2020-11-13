@@ -13,7 +13,7 @@ const skills = [
     }, 
     {
         title: <span style={cvStyles.title}>Platforms</span>,
-        description: <span style={cvStyles.tab}>Touch Designer, OpenFrameworks, ReactJS, React-Native, P5.js, Processing, Heroku, PostgreSQL, AngularJS</span>
+        description: <span style={cvStyles.tab}>SparkAR, Unity, Touch Designer, OpenFrameworks, ReactJS, React-Native, P5.js, Processing, Heroku, PostgreSQL, AngularJS</span>
     }, 
     {
         title: <span style={cvStyles.title}>Boards</span>,

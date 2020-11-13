@@ -5,19 +5,14 @@ import CustomLink from './CustomLink.js'
 
 const solo = [
     {
-        title: <span style={cvStyles.title} italics={true} inline={true}>Upcoming Solo Show</span>,
-        description: ', Ground Level Platform, Chicago, USA, 2021, ',
-        info: <CustomLink  to='https://www.groundlevelplatform.org/' inline={true}>[info]</CustomLink>
-    }, 
-    {
         title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
         description: ', Mana Contemporary, Chicago, USA, 2020, ',
-        info: <CustomLink  to='https://amaykataria.com/#/MomentofEnigma' inline={true}>[info]</CustomLink>
+        info: <CustomLink  to='https://www.flickr.com/gp/190621346@N04/5nMwCW' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
         description: ', CADAF Online, June 2020, ',
-        info: <CustomLink  to='https://www.youtube.com/watch?v=fBUShClQokQ&feature=youtu.be' inline={true}>[info]</CustomLink>
+        info: <CustomLink  to='https://amaykataria.com/#/momentofenigma' inline={true}>[info]</CustomLink>
     }, 
 ];
 
@@ -28,8 +23,18 @@ const group = [
         info: <CustomLink  to='http://generativeart.com' inline={true}>[info]</CustomLink>
     }, 
     {
+        title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
+        description: ', PIKSEL20 Festival, Cyber Salon & IRL, Bergen, Norway, 2020, ',
+        info: <CustomLink  to='https://deconfine.org/amay-kataria/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
+        description: ', <De>Confine Festival, curated by Khayal and Proiti Seal Acharya with Alliance Francaise, Online, 2020, ',
+        info: <CustomLink  to='https://deconfine.org/amay-kataria/' inline={true}>[info]</CustomLink>
+    }, 
+    {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/MomentofEnigma/' inline={true}>{"Moment of Enigma"}</CustomLink>,
-        description: ', (Upcoming) Rennaissance 20.20, curated by Eleonora Brizi, Breezy Art Gallery, Rome, Italy, 2020, ',
+        description: ', Rennaissance 20.20, curated by Eleonora Brizi, Breezy Art Gallery, Rome, Italy, 2020, ',
         info: <CustomLink  to='http://breezyartgallery.com' inline={true}>[info]</CustomLink>
     }, 
     {
@@ -40,7 +45,7 @@ const group = [
     {
         title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
         description: ', Vector Festival, curated by Martin Zeilinger and Katie Micak, Toronto, Canada, 2020, ',
-        info: <CustomLink  to='http://vectorfestival.org/' inline={true}>[info]</CustomLink>
+        info: <CustomLink  to='https://2020.vectorfestival.org/artwork/13' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/Holon/' inline={true}>{"Holons & Holarchy"}</CustomLink>,
