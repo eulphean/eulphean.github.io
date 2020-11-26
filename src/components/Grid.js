@@ -36,7 +36,7 @@ import janus from '../tiles/janus.jpg'
 import gravity from '../tiles/gravity.jpg'
 import momentofenigma from '../tiles/momentofenigma.jpg'
 import timekeepers from '../tiles/timekeepers.jpg'
-
+import liarbirds from '../tiles/liarbirds.jpg'
 
 const styles = {
     gridContainer: {
@@ -135,13 +135,20 @@ class Grid extends React.Component {
             {
                 'img': momentofenigma,
                 'title': 'Moment of Enigma',
-                'keywords': ['2020', 'Holon', 'Interactive', 'Exhibitions', 'Net Art'],
+                'keywords': ['2020', 'Holon', 'Interactive', 'Exhibitions', 'Net Art', 'Silkcube'],
                 'link': 'momentofenigma'
             },
             {
+                'img': liarbirds,
+                'title': 'Liarbirds',
+                'keywords': ['2020', 'Interactive', 'Extended Reality', 'Net Art', 'Silkcube', 'Sound', 'Artificial Life', 'Commissions', 'Ecology'],
+                'url': 'https://liarbirds.art'
+            },
+
+            {
                 'img': timekeepers,
                 'title': 'Timekeepers',
-                'keywords': ['2020', 'Interactive', 'Holon', 'Virtual Reality'],
+                'keywords': ['2020', 'Interactive', 'Holon', 'Extended Reality', 'Silkcube'],
                 'link': 'timekeepers'
             },
             {
@@ -153,7 +160,7 @@ class Grid extends React.Component {
             {
                 'img': janus,
                 'title': 'Janus Study (I)',
-                'keywords': ['2020', 'Holon'],
+                'keywords': ['2020', 'Holon', 'Silkcube', 'Extended Reality'],
                 'link': 'Janus'
             },
             {
@@ -167,44 +174,6 @@ class Grid extends React.Component {
                 'link': 'Holon',
                 'title': 'Holons & Holarchy', 
                 'keywords': ['2020', 'Holon']
-            },
-            {
-                'img': bombaybeach,
-                'link': 'BombayBeach',
-                'title': 'Silent City',
-                'keywords': ['2020', 'Ecology', 'Virtual Reality']
-            },
-            {
-                'img': encryptionarchive,
-                'link': 'EncryptionArchive',
-                'title': 'Encryption Archive',
-                'keywords': ['2019', 'Interactive', 'Commissions', 'Net Art'],
-                'url': 'https://encryptionarchive.net'
-            },
-            {
-                'img': ethereumfarm,
-                'title': 'Ethereum Farm',
-                'link': 'EthereumFarm',
-                'keywords': ['2019', 'Blockchain', 'Commissions', 'Net Art']
-            },
-            {
-                'img': threeecologies,
-                'link': 'ThreeEcologies',
-                'title': 'Three Ecologies',
-                'keywords': ['2019', 'Ecology', 'Commissions']
-            },
-            {
-                'img': twodegreeproject,
-                'link': 'TwoDegreeProject',
-                'title': 'Two Degree Project',
-                'keywords': ['2020', 'Ecology', 'Interactive', 'Net Art'],
-                'url': 'https://amaykataria.com/twodegreewindow/'
-            }, 
-            {
-                'img': bendtherules,
-                'title': 'Bend the Rules',
-                'link': 'BendTheRules',
-                'keywords': ['2019', 'Interactive', 'Net Art']
             },
             {
                 'img': nest,
@@ -232,13 +201,6 @@ class Grid extends React.Component {
                 'keywords': ['2019', 'Artificial Life', 'Sound']
             }, 
             {
-                'img': speculativebitcoinwallet,
-                'link': 'SpeculativeBitcoinWallet',
-                'title': 'Speculative Bitcoin Wallet',
-                'keywords': ['2018', 'Blockchain', 'Interactive', 'Net Art'],
-                'url': 'https://www.speculativebitcoinwallet.com/'
-            }, 
-            {
                 'img': groove,
                 'link': 'GrooveBody',
                 'title': 'Groove Body',
@@ -262,6 +224,51 @@ class Grid extends React.Component {
                 'title': 'Generative Decay',
                 'keywords': ['2018', 'Ecology']
             },
+            {
+                'img': twodegreeproject,
+                'link': 'TwoDegreeProject',
+                'title': 'Two Degree Project',
+                'keywords': ['2020', 'Ecology', 'Interactive', 'Net Art'],
+                'url': 'https://amaykataria.com/twodegreewindow/'
+            }, 
+            {
+                'img': bombaybeach,
+                'link': 'BombayBeach',
+                'title': 'Silent City',
+                'keywords': ['2020', 'Ecology', 'Extended Reality']
+            },
+            {
+                'img': encryptionarchive,
+                'link': 'EncryptionArchive',
+                'title': 'Encryption Archive',
+                'keywords': ['2019', 'Interactive', 'Commissions', 'Net Art'],
+                'url': 'https://encryptionarchive.net'
+            },
+            {
+                'img': ethereumfarm,
+                'title': 'Ethereum Farm',
+                'link': 'EthereumFarm',
+                'keywords': ['2019', 'Blockchain', 'Commissions', 'Net Art']
+            },
+            {
+                'img': threeecologies,
+                'link': 'ThreeEcologies',
+                'title': 'Three Ecologies',
+                'keywords': ['2019', 'Ecology', 'Commissions']
+            },
+            {
+                'img': bendtherules,
+                'title': 'Bend the Rules',
+                'link': 'BendTheRules',
+                'keywords': ['2019', 'Interactive', 'Net Art']
+            },
+            {
+                'img': speculativebitcoinwallet,
+                'link': 'SpeculativeBitcoinWallet',
+                'title': 'Speculative Bitcoin Wallet',
+                'keywords': ['2018', 'Blockchain', 'Interactive', 'Net Art'],
+                'url': 'https://www.speculativebitcoinwallet.com/'
+            }, 
             // {
             //     'img': unnamed,
             //     'link': 'Unnamed',

@@ -81,8 +81,9 @@ class GridFilterer extends React.Component {
             isInteractive: false,
             isCommissions: false,
             isExhibitions: false,
-            isVirtualReality: false,
-            isNetArt: false
+            isExtendedReality: false,
+            isNetArt: false,
+            isSilkcube: false
         }; 
 
         // Maintain a list of selected keywords. 
@@ -104,7 +105,8 @@ class GridFilterer extends React.Component {
                     <CustomButton isActive={this.state.isNetArt} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Net Art'}</CustomButton>
                     <CustomButton isActive={this.state.isArtificialLife} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Artificial Life'}</CustomButton>
                     <CustomButton isActive={this.state.isInteractive} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Interactive'}</CustomButton>
-                    <CustomButton isActive={this.state.isVirtualReality} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Virtual Reality'}</CustomButton>
+                    <CustomButton isActive={this.state.isExtendedReality} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Extended Reality'}</CustomButton>
+                    <CustomButton isActive={this.state.isSilkcube} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Silkcube'}</CustomButton>
                     <CustomButton isActive={this.state.isSound} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Sound'}</CustomButton>
                     <CustomButton isActive={this.state.isHolon} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Holon'}</CustomButton>
                     <CustomButton isActive={this.state.isEcology} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Ecology'}</CustomButton>
@@ -202,9 +204,9 @@ class GridFilterer extends React.Component {
                 break; 
             }
 
-            case 'Virtual Reality': {
+            case 'Extended Reality': {
                 this.setState({
-                    isVirtualReality: !this.state.isVirtualReality
+                    isExtendedReality: !this.state.isExtendedReality
                 }); 
                 break; 
             }
@@ -254,6 +256,13 @@ class GridFilterer extends React.Component {
             case 'Commissions': {
                 this.setState({
                     isCommissions: !this.state.isCommissions
+                }); 
+                break; 
+            }
+
+            case 'Silkcube': {
+                this.setState({
+                    isSilkcube: !this.state.isSilkcube
                 }); 
                 break; 
             }
