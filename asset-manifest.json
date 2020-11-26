@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.463189ab.chunk.css",
-    "main.js": "/static/js/main.00d2af64.chunk.js",
-    "main.js.map": "/static/js/main.00d2af64.chunk.js.map",
+    "main.js": "/static/js/main.5e487147.chunk.js",
+    "main.js.map": "/static/js/main.5e487147.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.112c60f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.112c60f4.js.map",
-    "static/js/2.077e539d.chunk.js": "/static/js/2.077e539d.chunk.js",
-    "static/js/2.077e539d.chunk.js.map": "/static/js/2.077e539d.chunk.js.map",
+    "static/js/2.846d186a.chunk.js": "/static/js/2.846d186a.chunk.js",
+    "static/js/2.846d186a.chunk.js.map": "/static/js/2.846d186a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b3fec17536aa53cd3a9a6399554801d1.js": "/precache-manifest.b3fec17536aa53cd3a9a6399554801d1.js",
+    "precache-manifest.1894ebd76666d082bfed928785bb6abf.js": "/precache-manifest.1894ebd76666d082bfed928785bb6abf.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.463189ab.chunk.css.map": "/static/css/main.463189ab.chunk.css.map",
-    "static/js/2.077e539d.chunk.js.LICENSE.txt": "/static/js/2.077e539d.chunk.js.LICENSE.txt",
+    "static/js/2.846d186a.chunk.js.LICENSE.txt": "/static/js/2.846d186a.chunk.js.LICENSE.txt",
     "static/media/ambition.jpg": "/static/media/ambition.0aa17554.jpg",
     "static/media/antidote2.jpg": "/static/media/antidote2.3ce201a4.jpg",
     "static/media/antidoteA.jpg": "/static/media/antidoteA.d4d27c91.jpg",
@@ -61,6 +61,7 @@
     "static/media/landaerial.jpg": "/static/media/landaerial.320cf1ba.jpg",
     "static/media/landmake.jpg": "/static/media/landmake.e116bd63.jpg",
     "static/media/landmakeface.jpg": "/static/media/landmakeface.f17688a5.jpg",
+    "static/media/liarbirds.jpg": "/static/media/liarbirds.49f0047d.jpg",
     "static/media/liberality.jpg": "/static/media/liberality.0a979c94.jpg",
     "static/media/linkedin.229ea649.svg": "/static/media/linkedin.229ea649.svg",
     "static/media/magicmic.jpg": "/static/media/magicmic.18593562.jpg",
@@ -123,8 +124,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.112c60f4.js",
-    "static/js/2.077e539d.chunk.js",
+    "static/js/2.846d186a.chunk.js",
     "static/css/main.463189ab.chunk.css",
-    "static/js/main.00d2af64.chunk.js"
+    "static/js/main.5e487147.chunk.js"
   ]
 }
