@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.463189ab.chunk.css",
-    "main.js": "/static/js/main.5e487147.chunk.js",
-    "main.js.map": "/static/js/main.5e487147.chunk.js.map",
+    "main.js": "/static/js/main.839c9ac5.chunk.js",
+    "main.js.map": "/static/js/main.839c9ac5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.112c60f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.112c60f4.js.map",
-    "static/js/2.846d186a.chunk.js": "/static/js/2.846d186a.chunk.js",
-    "static/js/2.846d186a.chunk.js.map": "/static/js/2.846d186a.chunk.js.map",
+    "static/js/2.302d1c3e.chunk.js": "/static/js/2.302d1c3e.chunk.js",
+    "static/js/2.302d1c3e.chunk.js.map": "/static/js/2.302d1c3e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1894ebd76666d082bfed928785bb6abf.js": "/precache-manifest.1894ebd76666d082bfed928785bb6abf.js",
+    "precache-manifest.cf7e64772ea53d07e10cca49e6e255e9.js": "/precache-manifest.cf7e64772ea53d07e10cca49e6e255e9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.463189ab.chunk.css.map": "/static/css/main.463189ab.chunk.css.map",
-    "static/js/2.846d186a.chunk.js.LICENSE.txt": "/static/js/2.846d186a.chunk.js.LICENSE.txt",
+    "static/js/2.302d1c3e.chunk.js.LICENSE.txt": "/static/js/2.302d1c3e.chunk.js.LICENSE.txt",
     "static/media/ambition.jpg": "/static/media/ambition.0aa17554.jpg",
     "static/media/antidote2.jpg": "/static/media/antidote2.3ce201a4.jpg",
     "static/media/antidoteA.jpg": "/static/media/antidoteA.d4d27c91.jpg",
@@ -43,6 +43,8 @@
     "static/media/github.a182802b.svg": "/static/media/github.a182802b.svg",
     "static/media/gravity.jpg": "/static/media/gravity.12bb7891.jpg",
     "static/media/groove.jpg": "/static/media/groove.5ec15d9c.jpg",
+    "static/media/headA.jpg": "/static/media/headA.6db18b63.jpg",
+    "static/media/headB.jpg": "/static/media/headB.165a2332.jpg",
     "static/media/holon.jpg": "/static/media/holon.ecf0cbea.jpg",
     "static/media/homotypicalA.jpg": "/static/media/homotypicalA.40408dbb.jpg",
     "static/media/homotypicalB.jpg": "/static/media/homotypicalB.047a04d7.jpg",
@@ -114,7 +116,7 @@
     "static/media/treethree.jpg": "/static/media/treethree.a650c97a.jpg",
     "static/media/treetwo.jpg": "/static/media/treetwo.a7bc9f49.jpg",
     "static/media/truthfulness.jpg": "/static/media/truthfulness.5a66b107.jpg",
-    "static/media/two.jpg": "/static/media/two.06072805.jpg",
+    "static/media/two.jpg": "/static/media/two.8cdd688a.jpg",
     "static/media/twodegree.jpg": "/static/media/twodegree.77010e2e.jpg",
     "static/media/unityindiversity.jpg": "/static/media/unityindiversity.f9488a56.jpg",
     "static/media/video.jpg": "/static/media/video.ff945435.jpg",
@@ -124,8 +126,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.112c60f4.js",
-    "static/js/2.846d186a.chunk.js",
+    "static/js/2.302d1c3e.chunk.js",
     "static/css/main.463189ab.chunk.css",
-    "static/js/main.5e487147.chunk.js"
+    "static/js/main.839c9ac5.chunk.js"
   ]
 }
