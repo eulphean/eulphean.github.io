@@ -106,7 +106,7 @@ class GridFilterer extends React.Component {
                     <CustomButton isActive={this.state.isArtificialLife} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Artificial Life'}</CustomButton>
                     <CustomButton isActive={this.state.isInteractive} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Interactive'}</CustomButton>
                     <CustomButton isActive={this.state.isExtendedReality} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Extended Reality'}</CustomButton>
-                    <CustomButton isActive={this.state.isSilkcube} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Silkcube'}</CustomButton>
+                    {/* <CustomButton isActive={this.state.isSilkcube} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Silkcube'}</CustomButton> */}
                     <CustomButton isActive={this.state.isSound} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Sound'}</CustomButton>
                     <CustomButton isActive={this.state.isHolon} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Holon'}</CustomButton>
                     <CustomButton isActive={this.state.isEcology} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Ecology'}</CustomButton>

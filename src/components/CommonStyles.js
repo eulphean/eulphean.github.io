@@ -274,6 +274,10 @@ const commonWorkStyles = {
         '@media (min-width: 1200px)' : {
             marginTop: padding.big
         }
+    },
+
+    italics: {
+        fontStyle: 'italic'
     }
 };
 

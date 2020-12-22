@@ -2,7 +2,10 @@ import React from 'react';
 import Radium from 'radium'
 import Header from '../components/Header.js'
 import CustomLink from '../components/CustomLink'
-import {commonWorkStyles} from '../components/CommonStyles.js'
+import {commonWorkStyles, padding} from '../components/CommonStyles.js'
+import janus from '../images/Janus/janus.jpg'
+import headA from '../images/Janus/headA.jpg'
+import headB from '../images/Janus/headB.jpg'
 
 const styles={
     container: {
@@ -14,13 +17,16 @@ const styles={
     content: {
       display: 'flex',
       flexDirection: 'column'
-    }
+    },
+
+    bottomPadding: {
+      marginBottom: padding.small
+  },
 }
 
-const bodyA='Janus Study (I) stems from my on-going collaboration with Chicago based artist,  ';
-const linkA=(<CustomLink to='https://www.philipmulliken.com/' inline={true}>Philip Mulliken</CustomLink>);
-const bodyB=". It's the first edition of a virtual sculpture inspired from the ancient Roman figure Janus, a two-faced god considered a guardian of doorways, transitions, and time. Below is a fast-forwarded one minute clip from the original work.";
-
+const bodyA=<span>This work is an ongoing reinterpreation of Janus - a two-faced mythological figure considered a guardian of doorways, transitions, and time. It is one of the oldest symbols associated with the temporal nature of our Universe, where one head represents the past and other is the future. Traditionally, they both face away from each other. I first came across Janus in the book <span style={commonWorkStyles.italics}>Ghost in the Machine</span> by Hungarian philosopher Arthur Koestler, who described it as a metaphor of duality. In <span style={commonWorkStyles.italics}>Janus Study</span>, I recontextualize its meaning to the present moment and use it to critique the phenomenon of temporality. Time is strongly distilled as a subject of inquiry. The two heads are flipped, drawn apart, and twisted into each other. Computational gravity along with computer generated imagery is used to model the fuzzy and twisted entanglement between the two heads. It's a digital sculpture situated in an empty concrete room to provoke corporeal contemplation. Below is a fast-forwarded snippet from the actual work.</span>
+const bodyB=<span><br/>Silent Digital Film, 7 minutes, 30 seconds</span>
+const linkA=<span><br />3D Collaborator : <CustomLink to='https://www.philipmulliken.com/' inline={true}>Philip Mulliken</CustomLink></span>;
 class JanusStudy extends React.Component {
   constructor(props) {
     super(props);
@@ -30,14 +36,23 @@ class JanusStudy extends React.Component {
 
   render() {
     const containerStyle = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgContainer];
+    const oneImgStyle = [commonWorkStyles.oneImage, commonWorkStyles.imgMediaQuery];
+
     return (
         <div style={styles.container}>
-            <Header title="Janus Study (I)" />
+            <Header title="Janus Study" />
             <div style={styles.content}>
               <div style={commonWorkStyles.body}>
                 {bodyA}
-                {linkA}
                 {bodyB}
+                {linkA}
+              </div>
+              <img style={oneImgStyle} alt={'janus'} src={janus}/>
+              <div style={commonWorkStyles.imgContainer}>
+                <div style={commonWorkStyles.multiImageContainer}>
+                  <img style={commonWorkStyles.twoImages} alt={'HeadA'} src={headA}/>
+                  <img style={commonWorkStyles.twoImages} alt={'HeadB'} src={headB}/>
+                </div>
               </div>
               <div style={containerStyle}>
                 <iframe title={'Janus Study (I)'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/436124011" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>

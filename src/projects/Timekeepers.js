@@ -35,10 +35,12 @@ const styles={
     }
 };
 
-const bodyA="Timekeepers is a virtual art installation developed for Burning Man 2020, which was hosted in Altspace VR (a social Virtual Reality platform), due to the pandemic. It is inspired by the ancient Roman figure Janus - a two-faced God, where one head points to the past and the other to the future. In acient mythology, Janus is considered a guardian of time, transitions, doorways, passages and is a representation of duality. This work is an extension of my on-going collaboration with Chicago-based artist ";
-const linkA=(<CustomLink to='https://www.philipmulliken.com/' inline={true}>Philip Mulliken.</CustomLink>);
-const bodyC="The theme of this virtual world revolves around the purpose of Time; especially confronting the duality of past and future to accept the temporal becoming of the present. For the duration of Burning Man, several social events like live music night with DJ Nitzo and a healing group discussion with entrepreneur, workshop facilitator, and meditation instructor Lee Cholodenko were programmed."
-const bodyD="An hourglass is a timekeeper and also a metaphor for the duality of Janus. In Timekeepers, we created a visual experience from this dualism. On the ground, sits the mammoth Janus sculpture surrounded by architectural scaffolding to provide viewers a resting place. Below the ground exist immersive viewing rooms to experience self-evolving organic timescapes. Together, these experiences constitute Timekeepers.";
+const bodyA=<span>Timekeepers is an immersive art installation developed in response to this year's Multiverse Theme for Burning Man 2020, which was hosted in Altspace VR (a social Virtual Reality platform), due to the pandemic. The design of this world revolved around the subject of Time and the temporal phenomenon of becoming. It repurposed the ancient symbols of Timekeeping to create a site of philosophical introspection and deliberate play.</span>
+const linkA=<span><br />3D Collaborator : <CustomLink to='https://www.philipmulliken.com/' inline={true}>Philip Mulliken</CustomLink></span>;
+const bodyC=<span>On the ground, sits the mammoth Janus sculpture surrounded by architectural scaffolding to provide viewers a resting place. Below the ground exist immersive viewing rooms to experience self-evolving organic <span style={commonWorkStyles.italics}>Timescapes</span>. An hourglass is a timekeeper and also a metaphor for the duality of Janus. Several hourglasses were placed along with similar three dimensional geometry to invoke connections with the phenomenon temporality.</span>
+const bodyD=<span>
+For the duration of Burning Man, social events like live music night with DJ Nitzo, and a self-healing meditative group discussion were held to create an interactive, social, and engaging atmosphere just like the IRL Burning Man event.</span>
+
 class Timekeepers extends React.Component {
   constructor(props) {
     super(props);
@@ -81,7 +83,7 @@ class Timekeepers extends React.Component {
                     <img style={commonWorkStyles.threeImages} alt={'F'} src={imageF}/>
                     <img style={commonWorkStyles.threeImages} alt={'G'} src={imageG}/>
                     <img style={commonWorkStyles.threeImages} alt={'H'} src={imageH}/>
-                </div>
+              </div>
               <img style={oneImgStyle} alt={'E'} src={imageE}/>
             </div>
         </div>

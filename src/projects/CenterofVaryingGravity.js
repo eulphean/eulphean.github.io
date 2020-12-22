@@ -3,6 +3,9 @@ import Radium from 'radium'
 import Header from '../components/Header.js'
 import CustomLink from '../components/CustomLink'
 import {commonWorkStyles} from '../components/CommonStyles.js'
+import one from '../images/Covg/one.jpg'
+import two from '../images/Covg/two.jpg'
+import three from '../images/Covg/three.jpg'
 
 const styles={
     container: {
@@ -19,11 +22,7 @@ const styles={
 
 
 
-const link0=(<CustomLink to='https://covg.art' inline={true}>Center of (Varying) Gravity</CustomLink>);
-const bodyA=' draws from the visual language of fractal patterns to create a generative-meditative simulation of light, and is a visual response to a writing prompt by Chicago based literary artist, Brianna Santina. It takes its point of departure in the context of unpredictability and readjustment to devise a symbol of courage and motivation to face the varying uncertainty. Due to its mathematical nature, the simulation evolves with time while refracting a myriad of colors that are inspired from the writer’s description of a personal state of transformation during the covid-19 lockdown in Chicago. The work is originally conceptualized for the show ';
-const linkA=(<CustomLink to='https://www.themartinchicago.com/locus-i-v' inline={true}>LOCUS IV</CustomLink>);
-const bodyB=' at The Martin Gallery in Chicago, curated by Whitney LaMora.';
-
+const bodyA=<span><CustomLink to='https://covg.art' inline={true}>Center of (Varying) Gravity</CustomLink> is a <span style={commonWorkStyles.italics}>Timescape</span> drawing from the visual language of fractal patterns to create a generative-meditative simulation of light. The Rorschach pattern like imagery oscillates with a variable force around a central point on the screen. It takes its point of departure in the context of unpredictability and readjustment to devise a symbol of courage and motivation to face the varying uncertainty. Due to its mathematical nature, the simulation evolves with time while refracting a myriad of colors that are inspired from a Fuchsia flower. The work was originally conceptualized for the show <CustomLink to='https://www.themartinchicago.com/locus-i-v' inline={true}>LOCUS IV</CustomLink> at The Martin Gallery in Chicago, curated by Whitney LaMora.</span>
 class CenterofVaryingGravity extends React.Component {
   constructor(props) {
     super(props);
@@ -37,10 +36,14 @@ class CenterofVaryingGravity extends React.Component {
             <Header title="Center of (Varying) Gravity" />
             <div style={styles.content}>
               <div style={commonWorkStyles.body}>
-                {link0}
                 {bodyA}
-                {linkA}
-                {bodyB}
+              </div>
+              <div style={commonWorkStyles.imgContainer}>
+                <div style={commonWorkStyles.multiImageContainer}>
+                    <img style={commonWorkStyles.threeImages} alt={'One'} src={one}/>
+                    <img style={commonWorkStyles.threeImages} alt={'Two'} src={two}/>
+                    <img style={commonWorkStyles.threeImages} alt={'Three'} src={three}/>
+                </div>
               </div>
               <div style={commonWorkStyles.imgContainer}>
                 <iframe title={'Center of (Varying) Gravity'} style={commonWorkStyles.webFrame} src={'https://covg.art'}></iframe>

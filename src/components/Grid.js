@@ -159,7 +159,7 @@ class Grid extends React.Component {
             },
             {
                 'img': janus,
-                'title': 'Janus Study (I)',
+                'title': 'Janus Study',
                 'keywords': ['2020', 'Holon', 'Silkcube', 'Extended Reality'],
                 'link': 'Janus'
             },
