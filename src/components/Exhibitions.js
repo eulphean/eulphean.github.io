@@ -11,15 +11,15 @@ const solo = [
     }, 
     {
         title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
-        description: ', CADAF Online, June 2020, ',
+        description: ', CADAF Online, 2020, ',
         info: <CustomLink  to='https://amaykataria.com/#/momentofenigma' inline={true}>[info]</CustomLink>
     }, 
 ];
 
 const group = [
     {
-        title: <CustomLink italics={true} to='https://amaykataria.com/#/MomentofEnigma/' inline={true}>{"Center of (Varying) Gravity"}</CustomLink>,
-        description: ', (Upcoming) Generative Art Conference 2020, organized by ARGENIA Association, Rome, Italy, 2020, ',
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/centerofvaryinggravity/' inline={true}>{"Center of (Varying) Gravity"}</CustomLink>,
+        description: ', Generative Art Conference 2020, organized by ARGENIA Association, Rome, Italy, 2020, ',
         info: <CustomLink  to='http://generativeart.com' inline={true}>[info]</CustomLink>
     }, 
     {
