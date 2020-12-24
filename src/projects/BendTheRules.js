@@ -35,8 +35,6 @@ class BendTheRules extends React.Component {
   }
 
   render() {
-    const twoImageStyle=[commonWorkStyles.twoImages, commonWorkStyles.imgMediaQuery]; 
-
     return (
         <div style={styles.container}>
             <Header title="Bend the Rules" />
@@ -48,16 +46,16 @@ class BendTheRules extends React.Component {
               </div>
               <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.multiImageContainer}>
-                  <img style={commonWorkStyles.twoImages} alt={'Stop'} src={stop}/>
-                  <img style={commonWorkStyles.twoImages} alt={'Do Not Enter'} src={donotenter}/>
+                  <img style={commonWorkStyles.threeImages} alt={'Stop'} src={stop}/>
+                  <img style={commonWorkStyles.threeImages} alt={'Do Not Enter'} src={donotenter}/>
+                  <img style={commonWorkStyles.threeImages} alt={'Rough Road'} src={roughroad}/>
                 </div>
-                <div style={commonWorkStyles.multiImageContainer}>
-                  <img style={twoImageStyle} alt={'Rough Road'} src={roughroad}/>
-                  <img style={twoImageStyle} alt={'Slow'} src={slow}/>
-                </div>
-                <div style={commonWorkStyles.multiImageContainer}>
-                  <img style={twoImageStyle} alt={'Yield'} src={myield}/>
-                  <img style={twoImageStyle} alt={'Merge'} src={merge}/>
+                <div style={commonWorkStyles.imgContainer}>
+                  <div style={commonWorkStyles.multiImageContainer}>
+                    <img style={commonWorkStyles.threeImages} alt={'Slow'} src={slow}/>
+                    <img style={commonWorkStyles.threeImages} alt={'Yield'} src={myield}/>
+                    <img style={commonWorkStyles.threeImages} alt={'Merge'} src={merge}/>
+                  </div>
                 </div>
               </div>
             </div>

@@ -28,8 +28,7 @@ class FigmentsOfDesire extends React.Component {
   }
 
   render() {
-    const oneImgStyle = [commonWorkStyles.oneImage, commonWorkStyles.imgMediaQuery];
-    const vimeoContainer = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgMediaQuery]; 
+    const vimeoContainer = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgContainer]; 
 
     return (
         <div style={styles.container}>
@@ -39,8 +38,10 @@ class FigmentsOfDesire extends React.Component {
                 {body}
               </div>
               <div style={commonWorkStyles.imgContainer}>
-                  <img style={commonWorkStyles.oneImage} alt={'Desire Top'} src={desiretop}/>
-                  <img style={oneImgStyle} alt={'Desire Screen'} src={desirescreen}/>
+                  <div style={commonWorkStyles.multiImageContainer}>
+                      <img style={commonWorkStyles.twoImages} alt={'Desire Top'} src={desiretop}/>
+                      <img style={commonWorkStyles.twoImages} alt={'Desire Screen'} src={desirescreen}/>
+                  </div>
                   <div style={vimeoContainer}>
                     <iframe title={'Figments of Desire'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/339162844" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                   </div>

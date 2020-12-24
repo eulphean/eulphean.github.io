@@ -48,20 +48,24 @@ class Holon extends React.Component {
               <div style={commonWorkStyles.body}>
                 {bodyA}
               </div>
-              <img style={oneImageStyle} alt={'Tend Towards B'} src={tendtowardsB}/>
               <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.multiImageContainer}>
-                  <img style={commonWorkStyles.twoImages} alt={'Tend Towards A'} src={tendtowardsA}/>
-                  <img style={commonWorkStyles.twoImages} alt={'Homotypical A'} src={homotypicalA}/>
+                  <img style={commonWorkStyles.twoImages} alt={'Tend Towards B'} src={tendtowardsB}/>  
+                  <img style={commonWorkStyles.twoImages} alt={'Homotypical B'} src={homotypicalB}/>
                 </div>
-                  <img style={oneImageStyle} alt={'Homotypical B'} src={homotypicalB}/>
-                  <div style={commonWorkStyles.imgContainer}>
-                    <div style={commonWorkStyles.multiImageContainer}>
-                      <img style={commonWorkStyles.threeImages} alt={'SquareA'} src={squareA}/>
-                      <img style={commonWorkStyles.threeImages} alt={'SquareB'} src={squareB}/>
-                      <img style={commonWorkStyles.threeImages} alt={'SquareC'} src={squareC}/>
-                    </div>
+                <div style={commonWorkStyles.imgContainer}>
+                  <div style={commonWorkStyles.multiImageContainer}>
+                    <img style={commonWorkStyles.twoImages} alt={'Tend Towards A'} src={tendtowardsA}/>
+                    <img style={commonWorkStyles.twoImages} alt={'Homotypical A'} src={homotypicalA}/>
                   </div>
+                </div>
+                <div style={commonWorkStyles.imgContainer}>
+                  <div style={commonWorkStyles.multiImageContainer}>
+                    <img style={commonWorkStyles.threeImages} alt={'SquareA'} src={squareA}/>
+                    <img style={commonWorkStyles.threeImages} alt={'SquareB'} src={squareB}/>
+                    <img style={commonWorkStyles.threeImages} alt={'SquareC'} src={squareC}/>
+                  </div>
+                </div>
                   <img style={oneImageStyle} alt={'Unity in Diversity'} src={unityindiversity}/>
               </div>
               <div style={[commonWorkStyles.body, styles.margin]}>

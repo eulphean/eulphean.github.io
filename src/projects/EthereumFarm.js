@@ -17,7 +17,7 @@ const styles={
     }
 }
 
-const link0=(<CustomLink to='https://ethlabor.net' inline={true}>Ethereum Farm</CustomLink>);
+const link0=(<CustomLink to='https://amaykataria.com/Ethereum-Labor/' inline={true}>Ethereum Farm</CustomLink>);
 const bodyA=' was developed as a commission for ';
 const linkA=(<CustomLink to='https://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg's</CustomLink>);
 const bodyB=' project ';
@@ -45,7 +45,7 @@ class EthereumFarm extends React.Component {
                 {bodyC}
               </div>
               <div style={commonWorkStyles.imgContainer}>
-                <iframe title={'Ethereum Farm'} style={commonWorkStyles.webFrame} src={'https://ethlabor.net'}></iframe>
+                <iframe title={'Ethereum Farm'} style={commonWorkStyles.webFrame} src={'https://amaykataria.com/Ethereum-Labor/'}></iframe>
               </div>
             </div>
         </div>

@@ -38,8 +38,7 @@ const styles={
 const bodyA=<span>Timekeepers is an immersive art installation developed in response to this year's Multiverse Theme for Burning Man 2020, which was hosted in Altspace VR (a social Virtual Reality platform), due to the pandemic. The design of this world revolved around the subject of Time and the temporal phenomenon of becoming. It repurposed the ancient symbols of Timekeeping to create a site of philosophical introspection and deliberate play.</span>
 const linkA=<span><br />3D Collaborator : <CustomLink to='https://www.philipmulliken.com/' inline={true}>Philip Mulliken</CustomLink></span>;
 const bodyC=<span>On the ground, sits the mammoth <span style={commonWorkStyles.italics}>Janus Study</span> sculpture surrounded by architectural scaffolding to provide viewers a resting place. Below the ground exist immersive viewing rooms to experience self-evolving organic <span style={commonWorkStyles.italics}>Timescapes</span>. An hourglass is a timekeeper and also a metaphor for the duality of Janus. Several hourglasses were placed along with similar three dimensional geometry to invoke connections with the phenomenon temporality.</span>
-const bodyD=<span>
-For the duration of Burning Man, social events like live music night with DJ Nitzo, and a self-healing meditative group discussion were held to create an interactive, social, and engaging atmosphere just like the IRL Burning Man event.</span>
+const bodyD=<span>For the duration of Burning Man, social events like live music night with DJ Nitzo, and a self-healing meditative group discussion were held to create an interactive, social, and engaging atmosphere just like the IRL Burning Man event.</span>
 
 class Timekeepers extends React.Component {
   constructor(props) {
@@ -49,9 +48,6 @@ class Timekeepers extends React.Component {
   }
 
   render() {
-    const twoImageStyle=[commonWorkStyles.twoImages, commonWorkStyles.imgMediaQuery]; 
-
-    const oneImgStyle = [commonWorkStyles.oneImage, commonWorkStyles.imgMediaQuery];
 
     return (
         <div style={styles.container}>
@@ -61,7 +57,7 @@ class Timekeepers extends React.Component {
                 {bodyA}
                 {linkA}
               </div>
-              <div style={commonWorkStyles.imgContainer}>
+              <div style={[commonWorkStyles.imgContainer, commonWorkStyles.bottomPad]}>
                 <div style={commonWorkStyles.multiImageContainer}>
                     <img style={commonWorkStyles.threeImages} alt={'PosterA'} src={posterA}/>
                     <img style={commonWorkStyles.threeImages} alt={'PosterB'} src={posterB}/>
@@ -69,22 +65,27 @@ class Timekeepers extends React.Component {
                 </div>
               </div>
               <div style={[commonWorkStyles.body]}>
-                {bodyC}
+                {bodyC}{bodyD}
               </div>
-              <img style={oneImgStyle} alt={'A'} src={imageA}/>
-              <div style={[commonWorkStyles.multiImageContainer, styles.bottomPadding]}>
-                <img style={twoImageStyle} alt={'B'} src={imageB}/>
-                <img style={twoImageStyle} alt={'C'} src={imageC}/>
+              <div style={commonWorkStyles.imgContainer}>
+                <div style={commonWorkStyles.multiImageContainer}>
+                  <img style={commonWorkStyles.twoImages} alt={'A'} src={imageA}/>
+                  <img style={commonWorkStyles.twoImages} alt={'E'} src={imageE}/>
+                </div>
               </div>
-              <div style={commonWorkStyles.body}>
-                {bodyD}
+              <div style={commonWorkStyles.imgContainer}>
+                <div style={commonWorkStyles.multiImageContainer}>
+                    <img style={commonWorkStyles.twoImages} alt={'B'} src={imageB}/>
+                    <img style={commonWorkStyles.twoImages} alt={'C'} src={imageC}/>
+                </div>
               </div>
-              <div style={[commonWorkStyles.multiImageContainer, commonWorkStyles.imgMediaQuery]}>
+              <div style={commonWorkStyles.imgContainer}>
+                <div style={[commonWorkStyles.multiImageContainer]}>
                     <img style={commonWorkStyles.threeImages} alt={'F'} src={imageF}/>
                     <img style={commonWorkStyles.threeImages} alt={'G'} src={imageG}/>
                     <img style={commonWorkStyles.threeImages} alt={'H'} src={imageH}/>
+                </div>
               </div>
-              <img style={oneImgStyle} alt={'E'} src={imageE}/>
             </div>
         </div>
     );

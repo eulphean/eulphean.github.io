@@ -28,7 +28,6 @@ class GrooveBody extends React.Component {
   }
 
   render() {
-    const oneImageStyle = [commonWorkStyles.oneImage, commonWorkStyles.imgMediaQuery];
     const vimeoContainer = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgMediaQuery]; 
 
     return (
@@ -40,8 +39,11 @@ class GrooveBody extends React.Component {
                 </div>
             </div>
             <div style={commonWorkStyles.imgContainer}>
-                  <img style={commonWorkStyles.oneImage} alt={'Pose'} src={pose}/>
-                  <img style={oneImageStyle} alt={'Shiva'} src={shiva}/>
+                <div style={commonWorkStyles.multiImageContainer}>
+                  <img style={commonWorkStyles.twoImages} alt={'Pose'} src={pose}/>
+                    <img style={commonWorkStyles.twoImages} alt={'Shiva'} src={shiva}/>
+                  </div>
+                  
                   <div style={vimeoContainer}>
                     <iframe title={'Groove Body'} style={commonWorkStyles.vimeoFrame} src="https://www.youtube.com/embed/RvZ5usN3NuY?start=87" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                   </div>

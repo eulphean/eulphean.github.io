@@ -115,7 +115,6 @@ const commonWorkStyles = {
     imgContainer: {
         display: 'flex',
         flexDirection: 'column',
-        marginBottom: padding.small,
         marginTop: padding.small, 
         width: '100%',
         height: '100%',
@@ -133,10 +132,10 @@ const commonWorkStyles = {
             // no change.
         },
         '@media (min-width: 1200px)' : {
-            marginTop: padding.veryBig,
+            // marginTop: padding.veryBig,
         },
         '@media (min-width: 1400px)' : {
-            marginTop: padding.extraBig
+            // marginTop: padding.extraBig
         },
         '@media (min-width: 1700px)' : {
         }
@@ -278,6 +277,10 @@ const commonWorkStyles = {
 
     italics: {
         fontStyle: 'italic'
+    },
+
+    bottomPad: {
+        marginBottom: padding.small
     }
 };
 
@@ -380,4 +383,4 @@ const cvStyles= {
     }
 };
 
-export { color, fontSize, fontFamily, textShadow, boxShadow, padding, commonWorkStyles, cvStyles};
+export {color, fontSize, fontFamily, textShadow, boxShadow, padding, commonWorkStyles, cvStyles};

@@ -36,7 +36,6 @@ class JanusStudy extends React.Component {
 
   render() {
     const containerStyle = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgContainer];
-    const oneImgStyle = [commonWorkStyles.oneImage, commonWorkStyles.imgMediaQuery];
 
     return (
         <div style={styles.container}>
@@ -47,7 +46,9 @@ class JanusStudy extends React.Component {
                 {bodyB}
                 {linkA}
               </div>
-              <img style={oneImgStyle} alt={'janus'} src={janus}/>
+              <div style={commonWorkStyles.imgContainer}>
+                 <img style={commonWorkStyles.oneImage} alt={'janus'} src={janus}/>
+              </div>
               <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.multiImageContainer}>
                   <img style={commonWorkStyles.twoImages} alt={'HeadA'} src={headA}/>
