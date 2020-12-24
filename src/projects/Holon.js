@@ -8,6 +8,9 @@ import homotypicalB from '../images/Holon/homotypicalB.jpg'
 import unityindiversity from '../images/Holon/unityindiversity.jpg'
 import tendtowardsA from '../images/Holon/tendtowardsA.jpg'
 import homotypicalA from '../images/Holon/homotypicalA.jpg'
+import squareA from '../images/Holon/squareA.jpg'
+import squareB from '../images/Holon/squareB.jpg'
+import squareC from '../images/Holon/squareC.jpg'
 
 const styles={
     container: {
@@ -26,16 +29,8 @@ const styles={
     }
 };
 
-const bodyA="This work derives from my research in understanding the relationship between 'part' & 'whole', which was famously unified by ";
-const linkA=(<CustomLink to="https://en.wikipedia.org/wiki/Arthur_Koestler" inline={true}>Arthur Koestler</CustomLink>);
-const bodyB=", a Hungarian philosopher, as a 'Holon' in his book, ";
-const linkB=(<CustomLink to="https://en.wikipedia.org/wiki/Ghost_in_the_machine" inline={true}>Ghost in the Machine</CustomLink>);
-const bodyC=". To understand this concept, I developed custom software that could visually express this duality in a holarchy, which is a hierarchy of Holons. This led to the creation of a series of prints that express the journey from multiplicity to singularity, and vice-versa. With this system, I ambitiously wanted to flatten the duality, so I could experience the relationship of a part to a whole as a singular Holon. You can read more about my research in "
-const linkC=(<CustomLink to="https://www.manacontemporary.com/event/a-brief-primer-on-holons-and-holarchy/" inline={true}>A Brief Primer on Holons and Holarchy</CustomLink>);
-const bodyD=", which is published on Mana Contemporary's editorial website."; 
-const linkE=(<CustomLink to='https://amaykataria.com/EvolutionaryHolarchy/' inline={true}>Evolutionary Holarchy</CustomLink>);
-const bodyE=' extends the Holon series with a genetic system that is not confined within the bounds of the microscopic and the macroscopic. Previously, the Holon prints had a pre-defined start and end point. The iteration is an open-ended system that can self-maintain itself between multiple states of its lifetime, just like a living organism.'
-
+const bodyA=<span>Conceptually rooted in <CustomLink to="https://en.wikipedia.org/wiki/Arthur_Koestler" inline={true}>Arthur Koestler's</CustomLink> book <CustomLink to="https://en.wikipedia.org/wiki/Ghost_in_the_machine" inline={true}>Ghost in the Machine</CustomLink>, Holons & Holarchy print series unifies the duality between the finite and infinite, micro and the macro, or part and the whole. It's composed using a precise genetic computation algorithm that organizes the information in discrete hierarchical order, which can be looked from top (left) to bottom (right) or bottom (right) to top (left). Every direction invokes a unique sense of perception. A top-down approach is a combination of parts into a whole, whereas a bottom-up approach is a disintegration of the whole into its parts. Each unit of information (reprsented by a colored quad) behaves as a part and a hole simultaneously - a phenomenon Koestler famously described as a Holon (Whole-Part). You can read more about my research in <CustomLink to="https://www.manacontemporary.com/event/a-brief-primer-on-holons-and-holarchy/" inline={true}>A Brief Primer on Holons and Holarchy</CustomLink>, which is published by Mana Contemporary.</span>
+const bodyB=<span><CustomLink to='https://amaykataria.com/EvolutionaryHolarchy/' inline={true}>Evolutionary Holarchy</CustomLink> extends the Holon series with a genetic system that is not confined within the bounds of the microscopic and the macroscopic. Previously, the Holon prints had a pre-defined start and an end point. The evolutionary approach is an open-ended system that can self-maintain itself between multiple states of its lifetime with an infinite duration.</span>
 class Holon extends React.Component {
   constructor(props) {
     super(props);
@@ -52,12 +47,6 @@ class Holon extends React.Component {
             <div style={styles.content}>
               <div style={commonWorkStyles.body}>
                 {bodyA}
-                {linkA}
-                {bodyB}
-                {linkB}
-                {bodyC}
-                {linkC}
-                {bodyD}
               </div>
               <img style={oneImageStyle} alt={'Tend Towards B'} src={tendtowardsB}/>
               <div style={commonWorkStyles.imgContainer}>
@@ -66,11 +55,17 @@ class Holon extends React.Component {
                   <img style={commonWorkStyles.twoImages} alt={'Homotypical A'} src={homotypicalA}/>
                 </div>
                   <img style={oneImageStyle} alt={'Homotypical B'} src={homotypicalB}/>
+                  <div style={commonWorkStyles.imgContainer}>
+                    <div style={commonWorkStyles.multiImageContainer}>
+                      <img style={commonWorkStyles.threeImages} alt={'SquareA'} src={squareA}/>
+                      <img style={commonWorkStyles.threeImages} alt={'SquareB'} src={squareB}/>
+                      <img style={commonWorkStyles.threeImages} alt={'SquareC'} src={squareC}/>
+                    </div>
+                  </div>
                   <img style={oneImageStyle} alt={'Unity in Diversity'} src={unityindiversity}/>
               </div>
               <div style={[commonWorkStyles.body, styles.margin]}>
-                  {linkE}
-                  {bodyE}
+                  {bodyB}
               </div>
               <div style={commonWorkStyles.imgContainer}>
                 <iframe title={'Holarchy'} style={commonWorkStyles.webFrame} src={'https://amaykataria.com/EvolutionaryHolarchy/'}></iframe>

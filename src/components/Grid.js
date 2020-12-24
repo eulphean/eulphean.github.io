@@ -192,7 +192,6 @@ class Grid extends React.Component {
                 'link': 'Babble',
                 'title': 'Babble',
                 'keywords': ['2019', 'Artificial Life', 'Interactive', 'Sound', 'Net Art'],
-                'url': 'https://amaykataria.com/Babble-Wall/'
             }, 
             {
                 'img': figmentsofattention,

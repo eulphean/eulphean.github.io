@@ -36,6 +36,7 @@ import CenterofVaryingGravity from '../projects/CenterofVaryingGravity.js'
 import JanusStudy from '../projects/JanusStudy.js'
 import MomentofEnigma from '../projects/MomentofEnigma.js'
 import Timekeepers from '../projects/Timekeepers.js'
+import Babble from '../projects/Babble.js'
 
 const styles = {
   container: {
@@ -94,6 +95,7 @@ function App() {
             <Route path="/Janus"><JanusStudy /></Route>
             <Route path="/momimsafe"><Momimsafe /></Route>
             <Route path="/Holon"><Holon /></Route>
+            <Route path="/Babble"><Babble /></Route>
             <Route path="/BombayBeach"><BombayBeach /></Route>
             <Route path="/ThreeEcologies"><ThreeEcologies /></Route>
             <Route path="/BendTheRules"><BendTheRules /></Route>
