@@ -1,35 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ce8c2d0359f4a597c553517f443d2cf",
+    "revision": "1046ea001d21348e4ebfe0dd57df14a9",
     "url": "/index.html"
   },
   {
-    "revision": "9531b2031c9f623c06bf",
+    "revision": "ea18578f080683fbd63f",
     "url": "/static/css/main.463189ab.chunk.css"
   },
   {
-    "revision": "271a1dc99bef5d832ac2",
-    "url": "/static/js/2.302d1c3e.chunk.js"
+    "revision": "278659aa1a8e4c4e4525",
+    "url": "/static/js/2.2d3baa5d.chunk.js"
   },
   {
     "revision": "7394186c78c74bd60264b20e3b2b8afb",
-    "url": "/static/js/2.302d1c3e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2d3baa5d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9531b2031c9f623c06bf",
-    "url": "/static/js/main.2307176e.chunk.js"
+    "revision": "ea18578f080683fbd63f",
+    "url": "/static/js/main.5b3bd2dc.chunk.js"
   },
   {
     "revision": "3090d80686370f50b5ab",
     "url": "/static/js/runtime-main.112c60f4.js"
   },
   {
-    "revision": "0aa175541ebbf62f7fc1208c60ac46be",
-    "url": "/static/media/ambition.0aa17554.jpg"
+    "revision": "b3aef9514f217d3eb3f8e79dba272336",
+    "url": "/static/media/AntidoteA.b3aef951.jpg"
   },
   {
-    "revision": "3ce201a4419e8f994fb6222af8b3f200",
-    "url": "/static/media/antidote2.3ce201a4.jpg"
+    "revision": "d01a9458d68a9f20b078f7db99a342dd",
+    "url": "/static/media/AntidoteB.d01a9458.jpg"
+  },
+  {
+    "revision": "a10ad3e659b116beab0632910c659a57",
+    "url": "/static/media/AntidoteC.a10ad3e6.jpg"
+  },
+  {
+    "revision": "0aa175541ebbf62f7fc1208c60ac46be",
+    "url": "/static/media/ambition.0aa17554.jpg"
   },
   {
     "revision": "d4d27c918a4274e466e9cf23f50f173e",
@@ -46,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "67e91899208521d8a31cc9c15f2dd25b",
     "url": "/static/media/babble.67e91899.jpg"
+  },
+  {
+    "revision": "b638c53aa226b5b8417cb20775a31444",
+    "url": "/static/media/babble.b638c53a.jpg"
   },
   {
     "revision": "5a6cf227a533876d9e29151365a1ac14",
@@ -236,6 +248,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/kittylips.2ed70e84.jpg"
   },
   {
+    "revision": "29d9a000cf698776f68c6bec1931e34a",
+    "url": "/static/media/labourA.29d9a000.jpg"
+  },
+  {
+    "revision": "59b12b924bde89c3f156fa3aa3afede2",
+    "url": "/static/media/labourB.59b12b92.jpg"
+  },
+  {
     "revision": "320cf1ba0e5ad99eb0a3034f3eefed1f",
     "url": "/static/media/landaerial.320cf1ba.jpg"
   },
@@ -290,6 +310,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a1cb31a4fb49de4f3db74f8db2879cec",
     "url": "/static/media/momimsafe.a1cb31a4.jpg"
+  },
+  {
+    "revision": "bec37bbbb96bb0e74288652c51bb0a13",
+    "url": "/static/media/momimsafe.bec37bbb.jpg"
   },
   {
     "revision": "9fe5d8f55b9833ad46f0b6be0d1cab6b",
@@ -400,6 +424,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/speculativebitcoinwallet.8560f56c.jpg"
   },
   {
+    "revision": "f8ec46cb803e815b66dbb3003230d393",
+    "url": "/static/media/squareA.f8ec46cb.jpg"
+  },
+  {
+    "revision": "31a8ed75ac145846c06078ed1d574219",
+    "url": "/static/media/squareB.31a8ed75.jpg"
+  },
+  {
+    "revision": "95659fb60eb0d1d34656962d1516cb08",
+    "url": "/static/media/squareC.95659fb6.jpg"
+  },
+  {
     "revision": "568e2ac3b0cf661570863dac842d6163",
     "url": "/static/media/stagebuilt.568e2ac3.jpg"
   },
@@ -474,6 +510,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5a66b107498f4c05687141e0c8995ac4",
     "url": "/static/media/truthfulness.5a66b107.jpg"
+  },
+  {
+    "revision": "9d86fc9de7668fa2ca881cbede8b3e6e",
+    "url": "/static/media/tvA.9d86fc9d.jpg"
+  },
+  {
+    "revision": "07bc262402c5e3132ceb04d4e44a723d",
+    "url": "/static/media/tvB.07bc2624.jpg"
+  },
+  {
+    "revision": "129deaebe78f8e0c0af2fec469c13c41",
+    "url": "/static/media/tvC.129deaeb.jpg"
   },
   {
     "revision": "06072805ed0b3124991a89e11b5526c7",
