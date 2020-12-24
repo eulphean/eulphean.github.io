@@ -5,9 +5,9 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
-    title: <span style={cvStyles.title}>{"A Brief Primer on Holons & Holarchy"}</span>,
-    description: <span>{", Invitation to submit to Interfaces; an inaugural academic journal at Charles Babbage Institute at University of Minnesota, 2020, "}</span>,
-    info: <CustomLink  to='https://justcode.cbi.umn.edu/interfaces' inline={true}>[info]</CustomLink>
+    title: <span style={cvStyles.title}>{"Center of (Varying) Gravity"}</span>,
+    description: <span>{", XXIII proceedings of Generative Art Conference 2020 (page 328), "}</span>,
+    info: <CustomLink  to='https://drive.google.com/file/d/1lGiHmXVw5z4wRXwU7k4e1myCgPlzvKtj/view?usp=sharing' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>{"MOMIMSAFE"}</span>,
@@ -33,16 +33,6 @@ const projects = [
     title: <span style={cvStyles.title}>{"A Brief Primer on Holons and Holarchy"}</span>,
     description: ', Mana Contemporary Editorial, April 2020, ',
     info: <CustomLink  to='https://www.manacontemporary.com/editorial/a-brief-primer-on-holons-and-holarchy/' inline={true}>[info]</CustomLink>
-  },
-  {
-      title: <span style={cvStyles.title}>{"Amay Kataria, Two Degree Window"}</span>,
-      description: ', 60 Wrd/Min Art Critic, March 2020, ',
-      info: <CustomLink  to='https://60wrdmin.org/artwork/4694804_Amay_Kataria.html' inline={true}>[info]</CustomLink>
-  },
-  {
-    title: <span style={cvStyles.title}>{"<i> also</i> tubes"}</span>,
-    description: ', Unrequited Leisure, February 2020, ',
-    info: <CustomLink  to='http://unrequitedleisure.com/' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>{"Babble"}</span>,

@@ -5,6 +5,11 @@ import CustomLink from './CustomLink.js'
 
 const projects=[
   {
+    title: <span style={cvStyles.title}>Visiting Artist Invitation, </span>,
+    description: ' The Untranslatable: Miracle, Oblivion & Artifact, seminar, conference, and exhibition with Julieta Aranda, Ed Keller & Carla Leitao, Online, 2020-2021, ',
+    info:  <CustomLink to='https://summatechnologiae.e-flux.com/?seminar=untranslatable' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>People's Choice Award, </span>,
     description: ' ALIFE 2020 Conference, Vermont Complex Systems Center, 2020, ',
     info:  <CustomLink to='https://vermontcomplexsystems.org/events/ALIFE-2020/' inline={true}>[info]</CustomLink>

@@ -18,6 +18,26 @@ const solo = [
 
 const group = [
     {
+        title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
+        description: ', Futures of Intimacy, TIFA India, Online, (Upcoming) 2021, ',
+        info: <CustomLink  to='https://tifa.edu.in/event/futures-of-intimacies/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink>,
+        description: ', CADAF Digital Art Month Public Art, Miami, USA, 2020, ',
+        info: <CustomLink  to='https://www.digitalartmonth.com/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/janus' inline={true}>{"Janus Study"}</CustomLink>,
+        description: ', MoCA Lights Festival, Patchogue, New York, USA, 2020, ',
+        info: <CustomLink  to='https://patchoguearts.org/mocalights/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink>,
+        description: ', Hyde Park Art Center Interactive Gala, Chicago, USA, Online, 2020, ',
+        info: <CustomLink  to='http://www.thevisualist.org/2020/11/hyde-park-art-center-interactive-virtual-gala/' inline={true}>[info]</CustomLink>
+    }, 
+    {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/centerofvaryinggravity/' inline={true}>{"Center of (Varying) Gravity"}</CustomLink>,
         description: ', Generative Art Conference 2020, organized by ARGENIA Association, Rome, Italy, 2020, ',
         info: <CustomLink  to='http://generativeart.com' inline={true}>[info]</CustomLink>
@@ -25,7 +45,7 @@ const group = [
     {
         title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
         description: ', PIKSEL20 Festival, Cyber Salon & IRL, Bergen, Norway, 2020, ',
-        info: <CustomLink  to='https://deconfine.org/amay-kataria/' inline={true}>[info]</CustomLink>
+        info: <CustomLink  to='https://20.piksel.no/2020/11/19/momimsafe-a-spin-on-surveillance-technology-to-explore-human-empathy/' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,

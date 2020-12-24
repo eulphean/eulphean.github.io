@@ -5,7 +5,7 @@ import { cvStyles } from './CommonStyles';
 const skills = [
     {
         title: <span style={cvStyles.title}>Code</span>, 
-        description: <span style={cvStyles.tab}>C++, Javascript, Python, Java, C#, Solidity, C, Objective-C</span>
+        description: <span style={cvStyles.tab}>Javascript, C++, Python, Java, C#, Solidity, C, Objective-C</span>
     }, 
     {
         title: <span style={cvStyles.title}>Sound</span>, 
@@ -13,7 +13,7 @@ const skills = [
     }, 
     {
         title: <span style={cvStyles.title}>Platforms</span>,
-        description: <span style={cvStyles.tab}>SparkAR, Unity, Touch Designer, OpenFrameworks, ReactJS, React-Native, P5.js, Processing, Heroku, PostgreSQL, AngularJS</span>
+        description: <span style={cvStyles.tab}>Unity, SparkAR, Touch Designer, OpenFrameworks, ReactJS, React-Native, P5.js, Processing, Heroku, PostgreSQL, AngularJS</span>
     }, 
     {
         title: <span style={cvStyles.title}>Boards</span>,
@@ -29,7 +29,7 @@ const skills = [
     },
     {
         title: <span style={cvStyles.title}>3D</span>,
-        description: <span style={cvStyles.tab}>Rhino, Grasshopper, 3D printing, Blender, Unity, Photogrammetry</span>
+        description: <span style={cvStyles.tab}>Rhino, Grasshopper, Blender, 3D printing, Photogrammetry</span>
     }
 ]; 
 
@@ -47,9 +47,9 @@ class Skills extends React.Component {
             <div style={cvStyles.heading}>
                 SKILLS
             </div>    
-            <div style={cvStyles.entry}>
+            {/* <div style={cvStyles.entry}>
                 These appear in the order of usage and experience from left to right. 
-            </div>
+            </div> */}
             { pSkills }
         </div>
     );
