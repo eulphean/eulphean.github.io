@@ -202,10 +202,7 @@ const styles = {
     }
 };
 
-const bioA="Welcome, and thank you for parking at my (web) address. I am a Chicago based artist, deriving interests from philosophy, history of control, and cybernetic theory. My art practice is a platform to think, elaborate on ideas, experiment, play and meditate on externalizing the internal affairs of my body’s interaction with our society. My creative acts create a bridge between the biotic (human) and abiotic (machine) in an attempt to pause and pay attention to the aesthetic possibilities of systems. Every act functions like a systemic metaphor, assembled with the craft of computation, code and algorithms."; 
-
-const bioB="This website is an organized repository of my past and on-going creative inquiries. Apart from personal explorations, I deeply enjoy learning and collaborating with other artists. Please reach out to me if you’d like to build something together."; 
-
+const bio=<span>Welcome, and thank you for parking at my (web) address. This website is an up-to-date repository of my most recent creative inquiries. I'm a Chicago based artist, currently praticing out of Mana Contemporary. My artistic pursuit is a tool for inquiring, experimenting, and playing with subject matter that is concerned with the state of "being" and "time". It attempts to deconstruct the human condition by exploring themes of impermanence and unpredictability through the lens of temporality. Every creative act is like an event unfolding in space & time - an organic synthesis of philosophical research, historical excavation, and scientific exploration, in tandem with creative experimentation with technology. By utilizing the craft of code, algorithms, and computer-aided tools, my works contrive systemic metaphors, which superimpose physical and digital materialities.</span>
 class About extends React.Component {
     constructor(props) {
         super(props);
@@ -245,9 +242,7 @@ class About extends React.Component {
                         </div>
                     </div>
                     <div style={bodyStyle}>
-                        {bioA}
-                        <br /><br />
-                        {bioB}
+                        {bio}
                     </div>
                 </div>
             </div>
