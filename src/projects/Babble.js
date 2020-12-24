@@ -21,7 +21,7 @@ const styles={
     }
 }
 
-const body=<span><CustomLink to='https://amaykataria.com/Babble-Wall' inline={true}>Babble</CustomLink> is an interactive chat bot. It has a tendency to overhear conversations in a crowd or be directly provoked by one speaking into the microphone. By using technologies like NLP (natural language processing), it reinterprets the spoken words and extracts emotion and keywords from it. Babble uses these elements to emotionally, visually, and aurally respond.</span>;
+const body=<span><CustomLink to='https://amaykataria.com/Babble-Wall' inline={true}>Babble</CustomLink> is an interactive chat bot. It has a tendency to overhear conversations in a crowd or be directly provoked by someone speaking into the microphone. By using technologies like NLP (natural language processing), it reinterprets the spoken words and extracts emotion and keywords from it. Babble uses these extractions to emotionally, visually, and aurally respond to what it hears.</span>;
 
 class Babble extends React.Component {
   constructor(props) {
