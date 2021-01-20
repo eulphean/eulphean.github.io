@@ -37,6 +37,7 @@ import gravity from '../tiles/gravity.jpg'
 import momentofenigma from '../tiles/momentofenigma.jpg'
 import timekeepers from '../tiles/timekeepers.jpg'
 import liarbirds from '../tiles/liarbirds.jpg'
+import clouds from '../tiles/clouds.jpg'
 
 const styles = {
     gridContainer: {
@@ -140,11 +141,22 @@ class Grid extends React.Component {
             },
             {
                 'img': liarbirds,
+                'title': 'Kid Games',
+                'keywords': ['2021', 'Interactive', 'Extended Reality'],
+                'url': 'https://liarbirds.art'
+            },
+            {
+                'img': clouds,
+                'title': 'Biography of a Portrait',
+                'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Commissions'],
+                'link': 'biography'
+            },
+            {
+                'img': liarbirds,
                 'title': 'Liarbirds',
                 'keywords': ['2020', 'Interactive', 'Extended Reality', 'Net Art', 'Silkcube', 'Sound', 'Artificial Life', 'Commissions', 'Ecology'],
                 'url': 'https://liarbirds.art'
             },
-
             {
                 'img': timekeepers,
                 'title': 'Timekeepers',

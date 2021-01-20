@@ -69,6 +69,7 @@ class GridFilterer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            is2021: false,
             is2020: false,
             is2019: false,
             is2018: false,
@@ -95,6 +96,7 @@ class GridFilterer extends React.Component {
         return (
             <div style={styles.container}>
                 <div style={styles.innerContainer}>
+                    <CustomButton isActive={this.state.is2021} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2021'}</CustomButton>
                     <CustomButton isActive={this.state.is2020} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2020'}</CustomButton>
                     <CustomButton isActive={this.state.is2019} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2019'}</CustomButton>
                     <CustomButton isActive={this.state.is2018} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2018'}</CustomButton>
@@ -154,6 +156,13 @@ class GridFilterer extends React.Component {
 
     setYearState(year) {
         switch(year) {
+            case '2021': {
+                this.setState({
+                    is2021: !this.state.is2021
+                }); 
+                break; 
+            }
+
             case '2020': {
                 this.setState({
                     is2020: !this.state.is2020
