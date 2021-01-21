@@ -66,7 +66,7 @@ class Holon extends React.Component {
                     <img style={commonWorkStyles.threeImages} alt={'SquareC'} src={squareC}/>
                   </div>
                 </div>
-                  <img style={oneImageStyle} alt={'Unity in Diversity'} src={unityindiversity}/>
+                <img style={oneImageStyle} alt={'Unity in Diversity'} src={unityindiversity}/>
               </div>
               <div style={[commonWorkStyles.body, styles.margin]}>
                   {bodyB}

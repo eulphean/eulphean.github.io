@@ -38,6 +38,7 @@ import momentofenigma from '../tiles/momentofenigma.jpg'
 import timekeepers from '../tiles/timekeepers.jpg'
 import liarbirds from '../tiles/liarbirds.jpg'
 import clouds from '../tiles/clouds.jpg'
+import kids from '../tiles/kids.jpg'
 
 const styles = {
     gridContainer: {
@@ -140,10 +141,10 @@ class Grid extends React.Component {
                 'link': 'momentofenigma'
             },
             {
-                'img': liarbirds,
+                'img': kids,
                 'title': 'Kid Games',
                 'keywords': ['2021', 'Interactive', 'Extended Reality'],
-                'url': 'https://liarbirds.art'
+                'link': 'kidgames'
             },
             {
                 'img': clouds,

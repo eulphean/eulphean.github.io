@@ -42,16 +42,16 @@ class BiographyofaPortrait extends React.Component {
               </div>
               <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.multiImageContainer}>
-                    <img style={commonWorkStyles.threeImages} alt={'One'} src={one}/>
+                    <img style={commonWorkStyles.threeImages} alt={'One'} src={four}/>
                     <img style={commonWorkStyles.threeImages} alt={'Two'} src={two}/>
                     <img style={commonWorkStyles.threeImages} alt={'Three'} src={three}/>
                 </div>
               </div>
               <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.multiImageContainer}>
-                    <img style={commonWorkStyles.threeImages} alt={'Four'} src={four}/>
+                    <img style={commonWorkStyles.threeImages} alt={'Four'} src={six}/>
                     <img style={commonWorkStyles.threeImages} alt={'Five'} src={five}/>
-                    <img style={commonWorkStyles.threeImages} alt={'Six'} src={six}/>
+                    <img style={commonWorkStyles.threeImages} alt={'Six'} src={one}/>
                 </div>
               </div>
               <div style={commonWorkStyles.imgContainer}>
