@@ -6,6 +6,11 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>Momimsafe: Reinventing Intimacy</span>,
+    description: ', Artist Talk, SPARKS by ACMSIGGRAPH, Online, (upcoming) 2021, ',
+    info: <CustomLink to='http://siggrapharts.ning.com/page/sparks-series-2021' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>Fourth Dimension</span>,
     description: ', Two-day seminar, <De>Confine Festival, Online, 2020, ',
     info: <CustomLink to='https://deconfine.org/amay-kataria/' inline={true}>[info]</CustomLink>
