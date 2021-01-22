@@ -84,16 +84,14 @@ const styles = {
 // Save the history on the website. 
 const history = createBrowserHistory();
 history.listen(location => {
-  ReactGa.set({ page: location.has})
+  ReactGa.set({ page: location.hash})
   ReactGa.pageview(location.hash); 
 }); 
 
 function App() {
-  // Initialize analytics. 
+  // Initialize analytics with the ID. 
   useEffect(() => {
-    ReactGa.initialize('UA-187946979-1', {
-      debug: true
-    }); 
+    ReactGa.initialize('UA-187946979-1'); 
 
     ReactGa.pageview(window.location.hash); 
   });

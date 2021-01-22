@@ -1,6 +1,7 @@
-import React from 'react';
-import Radium from 'radium';
-import { isMobile, isTablet, isMobileSafari } from 'react-device-detect';
+import React from 'react'
+import ReactGA from 'react-ga'
+import Radium from 'radium'
+import { isMobile, isTablet, isMobileSafari } from 'react-device-detect'
 import { color } from './CommonStyles.js' 
 
 const styles={
@@ -9,6 +10,7 @@ const styles={
     },
     color: {
         color: color.bloodRed, // Default link color
+        display: 'inline'
     },
     hover: {
         fill: color.hoverRed,
@@ -38,15 +40,19 @@ class CustomLink extends React.Component {
         extendedStyle = this.state.isHover ? [extendedStyle, styles.hover] : extendedStyle; 
 
         return (
-            <a 
-                style={extendedStyle} 
-                target='_blank' 
-                rel="noopener noreferrer" 
+            <div 
                 onMouseEnter={this.isHoverDisabled ? () => {} : this.onHover.bind(this)} 
                 onMouseLeave={this.isHoverDisabled ? () => {} : this.onLeaveHover.bind(this)} 
-                href={this.props.to}>
+                style={extendedStyle}>
+                <ReactGA.OutboundLink
+                    eventLabel={this.props.to}
+                    target='_blank' 
+                    rel="noopener noreferrer" 
+                    to={this.props.to}
+                >
                 {this.props.children}
-            </a>
+                </ReactGA.OutboundLink>
+            </div>
         );
     }
 
