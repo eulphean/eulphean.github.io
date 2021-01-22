@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ReactGa from 'react-ga'
 import Radium from 'radium'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
 import About from './About.js'
 import Bio from './Bio.js'
 import ScrollToTop from './ScrollToTop.js'
@@ -79,10 +81,23 @@ const styles = {
   }
 };
 
+// Save the history on the website. 
+const history = createBrowserHistory();
+history.listen(location => {
+  ReactGa.set({ page: location.has})
+  ReactGa.pageview(location.hash); 
+}); 
+
 function App() {
-  // Crazy Router Paths
-  // Title Paths
-  // Work Paths
+  // Initialize analytics. 
+  useEffect(() => {
+    ReactGa.initialize('UA-187946979-1', {
+      debug: true
+    }); 
+
+    ReactGa.pageview(window.location.hash); 
+  });
+
   return (
       <div style={styles.container}>
         <Router basename={process.env.PUBLIC_URL}> 

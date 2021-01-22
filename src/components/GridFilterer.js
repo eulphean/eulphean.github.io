@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import Radium from 'radium'
+import ReactGA from 'react-ga'
 
 import { padding, fontFamily, fontSize, color, boxShadow } from './CommonStyles'
 import CustomButton from './CustomButton.js'
@@ -132,6 +133,13 @@ class GridFilterer extends React.Component {
             this.years.push(year); 
         }
 
+        // Create an event with
+        ReactGA.event({
+            category: 'Filter: Year',
+            action: 'Button click',
+            label: year
+        }); 
+
         // Send year and categories. 
         this.props.onKeywordSelected(this.years, this.categories); 
     }
@@ -149,6 +157,13 @@ class GridFilterer extends React.Component {
         } else {
             this.categories.push(category); 
         }
+
+        // Create an event with the category
+        ReactGA.event({
+            category: 'Filter: Category',
+            action: 'Button click',
+            label: category
+        }); 
 
         // Send year and categories. 
         this.props.onKeywordSelected(this.years, this.categories); 

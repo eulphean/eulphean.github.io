@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import Radium from 'radium'
+import ReactGA from 'react-ga'
 
 import { padding, fontFamily, fontSize, color, boxShadow } from './CommonStyles'
 import CustomButton from './CustomButton.js'
@@ -116,6 +117,13 @@ class CVFilterer extends React.Component {
         } else {
             this.categories.push(category); 
         }
+
+        ReactGA.event({
+            category: 'Filter: CV',
+            action: 'Button click',
+            label: category
+        }); 
+
 
         // Send year and categories. 
         this.props.onKeywordSelected(this.categories); 
