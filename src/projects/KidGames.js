@@ -8,6 +8,8 @@ import two from '../images/KidGames/kidsB.jpg'
 import three from '../images/KidGames/kidsC.jpg'
 import four from '../images/KidGames/kidsD.jpg'
 import five from '../images/KidGames/kidsE.jpg'
+import six from '../images/KidGames/kidsF.jpg'
+
 const styles={
     container: {
       display: 'flex',
@@ -44,12 +46,15 @@ class KidGames extends React.Component {
                     <img style={commonWorkStyles.threeImages} alt={'Two'} src={two}/>
                     <img style={commonWorkStyles.threeImages} alt={'Three'} src={three}/>
                 </div>
-                <div style={commonWorkStyles.imgContainer}>
-                    <img style={commonWorkStyles.oneImage} alt={'Four'} src={four}/>
+              </div>
+              <div style={commonWorkStyles.imgContainer}>
+                <div style={commonWorkStyles.multiImageContainer}>
+                    <img style={commonWorkStyles.twoImages} alt={'Four'} src={five}/>
+                    <img style={commonWorkStyles.twoImages} alt={'Five'} src={six}/>
                 </div>
-                <div style={commonWorkStyles.imgContainer}>
-                    <img style={commonWorkStyles.oneImage} alt={'Five'} src={five}/>
-                </div>
+              </div>
+              <div style={commonWorkStyles.imgContainer}>
+                  <img style={commonWorkStyles.oneImage} alt={'Four'} src={four}/>
               </div>
             </div>
         </div>

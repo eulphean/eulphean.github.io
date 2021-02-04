@@ -50,6 +50,7 @@ class Timekeepers extends React.Component {
   }
 
   render() {
+    const vimeoContainer = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgContainer]; 
 
     return (
         <div style={styles.container}>
@@ -95,6 +96,9 @@ class Timekeepers extends React.Component {
                     <img style={commonWorkStyles.threeImages} alt={'H'} src={imageH}/>
                 </div>
               </div>
+              <div style={vimeoContainer}>
+                    <iframe title={'Timekeepers'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/507311849" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                </div>
             </div>
         </div>
     );
