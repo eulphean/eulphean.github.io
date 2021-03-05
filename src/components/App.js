@@ -41,6 +41,7 @@ import Timekeepers from '../projects/Timekeepers.js'
 import Babble from '../projects/Babble.js'
 import BiographyofaPortrait from '../projects/Biographyofaportrait.js'
 import KidGames from '../projects/KidGames.js'
+import FourthDimension from '../projects/FourthDimension.js'
 
 const styles = {
   container: {
@@ -105,6 +106,7 @@ function App() {
             <Route path="/Bio"><Title /><Bio /></Route>
             <Route path="/About"><Title /><About /></Route>
             <Route path="/momentofenigma"><MomentofEnigma /></Route>
+            <Route path="/fourthdimension"><FourthDimension /></Route>
             <Route path="/kidgames"><KidGames /></Route>
             <Route path="/biography"><BiographyofaPortrait /></Route>
             <Route path="/timekeepers"><Timekeepers /></Route>

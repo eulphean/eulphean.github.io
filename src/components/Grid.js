@@ -39,6 +39,7 @@ import timekeepers from '../tiles/timekeepers.jpg'
 import liarbirds from '../tiles/liarbirds.jpg'
 import clouds from '../tiles/clouds.jpg'
 import kids from '../tiles/kids.jpg'
+import fourth from '../tiles/fourth.jpg'
 
 const styles = {
     gridContainer: {
@@ -151,6 +152,12 @@ class Grid extends React.Component {
                 'title': 'Biography of a Portrait',
                 'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Commissions'],
                 'link': 'biography'
+            },
+            {
+                'img': fourth,
+                'title': 'Fourth Dimension',
+                'keywords': ['2020', 'Interactive', 'Extended Reality'],
+                'link': 'fourthdimension'
             },
             {
                 'img': liarbirds,
