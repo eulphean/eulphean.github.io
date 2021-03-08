@@ -64,6 +64,9 @@ class KidGames extends React.Component {
               <div style={containerStyle}>
                 <iframe title={'Fourth Dimension Workshop'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/520146132" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
               </div>
+              <div style={commonWorkStyles.imgContainer}>
+                <iframe title={'Tesseract Study'} style={commonWorkStyles.webFrame} src={'https://amaykataria.com/Tesseract/'}></iframe>
+              </div>
             </div>
         </div>
     );
