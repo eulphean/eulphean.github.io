@@ -1,17 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.463189ab.chunk.css",
-    "main.js": "/static/js/main.bbb02656.chunk.js",
-    "main.js.map": "/static/js/main.bbb02656.chunk.js.map",
+    "main.js": "/static/js/main.d24ac80a.chunk.js",
+    "main.js.map": "/static/js/main.d24ac80a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.112c60f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.112c60f4.js.map",
-    "static/js/2.ececc323.chunk.js": "/static/js/2.ececc323.chunk.js",
-    "static/js/2.ececc323.chunk.js.map": "/static/js/2.ececc323.chunk.js.map",
+    "static/js/2.4cdceefc.chunk.js": "/static/js/2.4cdceefc.chunk.js",
+    "static/js/2.4cdceefc.chunk.js.map": "/static/js/2.4cdceefc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.903906467e67e3f08e17d3147b1d7c59.js": "/precache-manifest.903906467e67e3f08e17d3147b1d7c59.js",
+    "precache-manifest.2fedbfbc3c7de9291e5eefad637d80af.js": "/precache-manifest.2fedbfbc3c7de9291e5eefad637d80af.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.463189ab.chunk.css.map": "/static/css/main.463189ab.chunk.css.map",
-    "static/js/2.ececc323.chunk.js.LICENSE.txt": "/static/js/2.ececc323.chunk.js.LICENSE.txt",
+    "static/js/2.4cdceefc.chunk.js.LICENSE.txt": "/static/js/2.4cdceefc.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/static/media/1.efcef34d.jpg",
+    "static/media/2.jpg": "/static/media/2.96ae6e56.jpg",
+    "static/media/3.jpg": "/static/media/3.859838df.jpg",
+    "static/media/4.jpg": "/static/media/4.6ed7ff87.jpg",
+    "static/media/5.jpg": "/static/media/5.00be8b52.jpg",
+    "static/media/6.jpg": "/static/media/6.27eb5b4b.jpg",
+    "static/media/7.jpg": "/static/media/7.4e33dd07.jpg",
     "static/media/AntidoteA.jpg": "/static/media/AntidoteA.b3aef951.jpg",
     "static/media/AntidoteB.jpg": "/static/media/AntidoteB.d01a9458.jpg",
     "static/media/AntidoteC.jpg": "/static/media/AntidoteC.a10ad3e6.jpg",
@@ -40,6 +47,7 @@
     "static/media/figmentsofattention.jpg": "/static/media/figmentsofattention.fa2a0302.jpg",
     "static/media/figmentsofdesire.jpg": "/static/media/figmentsofdesire.d33ab9e9.jpg",
     "static/media/four.jpg": "/static/media/four.4c8148a6.jpg",
+    "static/media/fourth.jpg": "/static/media/fourth.92a7037a.jpg",
     "static/media/friendliness.jpg": "/static/media/friendliness.821bd2f9.jpg",
     "static/media/front.jpg": "/static/media/front.0d79d63d.jpg",
     "static/media/generativedecay.jpg": "/static/media/generativedecay.6e1fe64b.jpg",
@@ -160,8 +168,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.112c60f4.js",
-    "static/js/2.ececc323.chunk.js",
+    "static/js/2.4cdceefc.chunk.js",
     "static/css/main.463189ab.chunk.css",
-    "static/js/main.bbb02656.chunk.js"
+    "static/js/main.d24ac80a.chunk.js"
   ]
 }
