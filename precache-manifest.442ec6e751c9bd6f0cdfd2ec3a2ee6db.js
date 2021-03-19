@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec94203d85469ed6567a1d715d2f78e3",
+    "revision": "3c6323ca8b5cf4e404ccdac1602aaece",
     "url": "/index.html"
   },
   {
-    "revision": "2aedc947a0855a598386",
-    "url": "/static/css/main.463189ab.chunk.css"
+    "revision": "02988d306405294d76f4",
+    "url": "/static/css/main.0fb89480.chunk.css"
   },
   {
-    "revision": "2fa5e34dc319f4a5b779",
-    "url": "/static/js/2.4cdceefc.chunk.js"
+    "revision": "0bab0a2c4ca246334a85",
+    "url": "/static/js/2.6fb93123.chunk.js"
   },
   {
     "revision": "7394186c78c74bd60264b20e3b2b8afb",
-    "url": "/static/js/2.4cdceefc.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.6fb93123.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2aedc947a0855a598386",
-    "url": "/static/js/main.34a67373.chunk.js"
+    "revision": "02988d306405294d76f4",
+    "url": "/static/js/main.adafd217.chunk.js"
   },
   {
     "revision": "3090d80686370f50b5ab",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/babble.b638c53a.jpg"
   },
   {
-    "revision": "5a6cf227a533876d9e29151365a1ac14",
-    "url": "/static/media/back.5a6cf227.svg"
+    "revision": "78dcf8d394d0ffb1cd6a8a41a8b6712c",
+    "url": "/static/media/back.78dcf8d3.svg"
   },
   {
     "revision": "058e6e1968c27bc4374e364140baec23",
@@ -196,8 +196,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/generativedecay.6e1fe64b.jpg"
   },
   {
-    "revision": "a182802b29bbd4b72ca5d5631e32a43a",
-    "url": "/static/media/github.a182802b.svg"
+    "revision": "df18c8f8740d432c12d774fbe49eda41",
+    "url": "/static/media/github.df18c8f8.svg"
   },
   {
     "revision": "12bb78913ae8600ea0a59f8a16301b56",
@@ -256,8 +256,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/image_8.25179e30.jpg"
   },
   {
-    "revision": "b41fc2a2e1f1041ec231a0e13890d3d2",
-    "url": "/static/media/instagram.b41fc2a2.svg"
+    "revision": "ca5e3a33467d419c4e1d11a719c48907",
+    "url": "/static/media/instagram.ca5e3a33.svg"
   },
   {
     "revision": "1b4c4f65474f5eefab0ace93f9a179f0",
@@ -336,8 +336,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/liberality.0a979c94.jpg"
   },
   {
-    "revision": "229ea649bbc00c3b5464caba6f780e6a",
-    "url": "/static/media/linkedin.229ea649.svg"
+    "revision": "16b7913f02230cc49353a9e0126642d0",
+    "url": "/static/media/linkedin.16b7913f.svg"
   },
   {
     "revision": "18593562af0cad6cf148236b9244c9d8",
@@ -548,12 +548,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sonicnegotiation.823bbef8.jpg"
   },
   {
-    "revision": "259178b2ff21ab37e8794e363114c236",
-    "url": "/static/media/soundcloud.259178b2.svg"
-  },
-  {
     "revision": "51b10ecd9beb743bd11136910f494cd3",
     "url": "/static/media/soundcloud.51b10ecd.jpg"
+  },
+  {
+    "revision": "97c347fb3b9f7de8d4eb6060f96d622f",
+    "url": "/static/media/soundcloud.97c347fb.svg"
   },
   {
     "revision": "8560f56cacbd8fd219b5b4d22845aefe",
