@@ -33,6 +33,8 @@ class KidGames extends React.Component {
   }
 
   render() {
+    const containerStyle = [commonWorkStyles.vimeoContainer, commonWorkStyles.imgContainer];
+
     return (
         <div style={styles.container}>
             <Header title="Kid Games" />
@@ -55,6 +57,9 @@ class KidGames extends React.Component {
               </div>
               <div style={commonWorkStyles.imgContainer}>
                   <img style={commonWorkStyles.oneImage} alt={'Four'} src={four}/>
+              </div>
+              <div style={containerStyle}>
+                <iframe title={'Kid Games'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/526378457" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
               </div>
             </div>
         </div>

@@ -6,9 +6,14 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
-    title: <span style={cvStyles.title}>Momimsafe: Reinventing Intimacy</span>,
-    description: ', Artist Talk, SPARKS by ACMSIGGRAPH, Online, (upcoming) 2021, ',
-    info: <CustomLink to='http://siggrapharts.ning.com/page/sparks-series-2021' inline={true}>[info]</CustomLink>
+    title: <span style={cvStyles.title}>Yearning for Intimacy</span>,
+    description: ', Artist Talk, SPARKS by ACMSIGGRAPH, Online, 2021, ',
+    info: <CustomLink to='https://vimeo.com/511376941#t=29m05s' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>Quantum of Time</span>,
+    description: ', Interactive conversation with Andreas Berlind, BRCVr, Online, 2021, ',
+    info: <CustomLink to='https://amaykataria.com/#/timekeepers' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>Fourth Dimension</span>,
@@ -21,7 +26,7 @@ const projects = [
     info: <CustomLink to='https://deconfine.org/amay-kataria/' inline={true}>[info]</CustomLink>
   },
   {
-    title: <span style={cvStyles.title}>Deconstructing Time with Amay Kataria & Andreas Berlind</span>,
+    title: <span style={cvStyles.title}>Deconstructing Time (Amay Kataria & Andreas Berlind)</span>,
     description: ', Artist Talk, Mana Contemporary Chicago, Online, 2020, ',
     info: <CustomLink to='https://www.manacontemporary.com/event/new-media-program-deconstructing-time/' inline={true}>[info]</CustomLink>
   },
