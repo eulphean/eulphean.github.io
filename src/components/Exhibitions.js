@@ -18,6 +18,16 @@ const solo = [
 
 const group = [
     {
+        title: <span><CustomLink italics={true} to='https://amaykataria.com/#/timekeepers' inline={true}>{"Timekeepers"}</CustomLink> and <CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink></span>,
+        description: ', CURRENTS 2021, Online, (Upcoming) 2021, ',
+        info: <CustomLink  to='https://currentsnewmedia.org/currents-2021-selected-artists/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
+        description: ', Tracked & Traced, Science Gallery Detroit, USA, (Upcoming) 2021, ',
+        info: <CustomLink  to='https://sciencegallery.org/opencall/trackedandtraced' inline={true}>[info]</CustomLink>
+    }, 
+    {
         title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
         description: ', Futures of Intimacy, TIFA India, Online, (Upcoming) 2021, ',
         info: <CustomLink  to='https://tifa.edu.in/event/futures-of-intimacies/' inline={true}>[info]</CustomLink>
