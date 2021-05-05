@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.0fb89480.chunk.css",
-    "main.js": "/static/js/main.c8870550.chunk.js",
-    "main.js.map": "/static/js/main.c8870550.chunk.js.map",
+    "main.js": "/static/js/main.545a3eea.chunk.js",
+    "main.js.map": "/static/js/main.545a3eea.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.112c60f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.112c60f4.js.map",
-    "static/js/2.6fb93123.chunk.js": "/static/js/2.6fb93123.chunk.js",
-    "static/js/2.6fb93123.chunk.js.map": "/static/js/2.6fb93123.chunk.js.map",
+    "static/js/2.617dbcab.chunk.js": "/static/js/2.617dbcab.chunk.js",
+    "static/js/2.617dbcab.chunk.js.map": "/static/js/2.617dbcab.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1a1bd0937de72b5f789ec1b8426fe74b.js": "/precache-manifest.1a1bd0937de72b5f789ec1b8426fe74b.js",
+    "precache-manifest.2c97872eeb2bdf39ea63351e31dc8993.js": "/precache-manifest.2c97872eeb2bdf39ea63351e31dc8993.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.0fb89480.chunk.css.map": "/static/css/main.0fb89480.chunk.css.map",
-    "static/js/2.6fb93123.chunk.js.LICENSE.txt": "/static/js/2.6fb93123.chunk.js.LICENSE.txt",
+    "static/js/2.617dbcab.chunk.js.LICENSE.txt": "/static/js/2.617dbcab.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/static/media/1.efcef34d.jpg",
     "static/media/2.jpg": "/static/media/2.96ae6e56.jpg",
     "static/media/3.jpg": "/static/media/3.859838df.jpg",
@@ -36,6 +36,7 @@
     "static/media/chatsubo.jpg": "/static/media/chatsubo.88a88b03.jpg",
     "static/media/circuit.jpg": "/static/media/circuit.51fc418b.jpg",
     "static/media/clouds.jpg": "/static/media/clouds.7f3fb805.jpg",
+    "static/media/comatose.jpg": "/static/media/comatose.69399e45.jpg",
     "static/media/cryptokitty.jpg": "/static/media/cryptokitty.d701b9d9.jpg",
     "static/media/desirescreen.jpg": "/static/media/desirescreen.cf60b226.jpg",
     "static/media/desiretop.jpg": "/static/media/desiretop.89cc5eeb.jpg",
@@ -168,8 +169,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.112c60f4.js",
-    "static/js/2.6fb93123.chunk.js",
+    "static/js/2.617dbcab.chunk.js",
     "static/css/main.0fb89480.chunk.css",
-    "static/js/main.c8870550.chunk.js"
+    "static/js/main.545a3eea.chunk.js"
   ]
 }
