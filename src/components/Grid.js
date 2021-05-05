@@ -40,6 +40,7 @@ import liarbirds from '../tiles/liarbirds.jpg'
 import clouds from '../tiles/clouds.jpg'
 import kids from '../tiles/kids.jpg'
 import fourth from '../tiles/fourth.jpg'
+import comatose from '../tiles/comatose.jpg'
 
 const styles = {
     gridContainer: {
@@ -140,6 +141,12 @@ class Grid extends React.Component {
                 'title': 'Moment of Enigma',
                 'keywords': ['2020', 'Holon', 'Interactive', 'Exhibitions', 'Net Art', 'Silkcube'],
                 'link': 'momentofenigma'
+            },
+            {
+                'img': comatose,
+                'title': 'Project Comatose',
+                'keywords': ['2021', 'Interactive', 'Extended Reality', 'Artificial Life'],
+                'url': 'http://amay.openforum.so'
             },
             {
                 'img': kids,
