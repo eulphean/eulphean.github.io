@@ -1,22 +1,28 @@
 import React from 'react'
 import Radium from 'radium'
-import { Link } from 'react-router-dom'
-import { fontSize, padding, color } from './CommonStyles.js'
-import { ReactComponent as Back } from '../icons/back.svg'
-import { ReactComponent as Up } from '../icons/up.svg'
-const RadiumLink = Radium(Link);
+import { fontSize, padding, color, fontFamily } from './CommonStyles.js'
 
 const styles={
     container: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItem: 'center',
-        alignSelf: 'center',
-        backgroundColor: color.slateGrey,
-        width: '50px',
-        height: '50px'
-      }
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        backgroundColor: color.darkGrey,
+        marginTop: '20px'
+    },
+
+    content: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      fontSize: fontSize.verySmall,
+      fontFamily: fontFamily.din,
+      padding: padding.extraSmall,
+      color: color.featherWhite
+    }
 }
+
 class Footer extends React.Component {
   constructor(props) {
     super(props);
@@ -27,7 +33,9 @@ class Footer extends React.Component {
   render() {
     return (
         <div style={styles.container}>
-
+            <div style={styles.content}>
+             © Amay Kataria 2021 All Rights Reserved
+            </div>
          </div>
     );
   }

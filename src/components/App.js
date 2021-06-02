@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import About from './About.js'
 import Bio from './Bio.js'
+import Footer from './Footer.js'
 import ScrollToTop from './ScrollToTop.js'
 import { padding } from './CommonStyles.js'
 
@@ -46,6 +47,7 @@ import FourthDimension from '../projects/FourthDimension.js'
 const styles = {
   container: {
     padding: padding.small,
+    paddingBottom: padding.big,
 
     '@media (min-width: 450px)': {  
       padding: padding.big
@@ -79,6 +81,10 @@ const styles = {
       paddingLeft: padding.veryInsane,
       paddingRight: padding.veryInsane
     }
+  },
+
+  empty: {
+    height: padding.extraBig
   }
 };
 
@@ -137,6 +143,9 @@ function App() {
             <Route path="/"><Title /><About /></Route>
           </Switch>
         </Router>
+        <div style={styles.empty}>
+        </div>
+        <Footer />
       </div>
     );
 }
