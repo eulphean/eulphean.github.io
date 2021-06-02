@@ -18,7 +18,12 @@ const solo = [
 
 const group = [
     {
-        title: <span><CustomLink italics={true} to='https://amaykataria.com/#/timekeepers' inline={true}>{"Timekeepers"}</CustomLink> and <CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink></span>,
+        title: <span><CustomLink italics={true} to='https://amaykataria.com/#/Timekeepers' inline={true}>{"Timekeepers"}</CustomLink></span>,
+        description: ', AMAZE Berlin 10th International Games Festival, Online, (Upcoming) 2021, ',
+        info: <CustomLink  to='https://2021.award.amaze-berlin.de/games/2021/timekeepers' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <span><CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink></span>,
         description: ', CURRENTS 2021, Online, (Upcoming) 2021, ',
         info: <CustomLink  to='https://currentsnewmedia.org/currents-2021-selected-artists/' inline={true}>[info]</CustomLink>
     }, 
@@ -26,11 +31,11 @@ const group = [
         title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
         description: ', Tracked & Traced, Science Gallery Detroit, USA, (Upcoming) 2021, ',
         info: <CustomLink  to='https://sciencegallery.org/opencall/trackedandtraced' inline={true}>[info]</CustomLink>
-    }, 
+    },  
     {
-        title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
-        description: ', Futures of Intimacy, TIFA India, Online, (Upcoming) 2021, ',
-        info: <CustomLink  to='https://tifa.edu.in/event/futures-of-intimacies/' inline={true}>[info]</CustomLink>
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/centerofvaryinggravity/' inline={true}>{"Center of (Varying) Gravity"}</CustomLink>,
+        description: ', Is it a Good Time?, curated by Nicky Ni & Maryam Faridani, Mana Contemporary, Online, 2020, ',
+        info: <CustomLink  to='https://www.manacontemporary.com/event/is-it-a-good-time/' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink>,
@@ -66,6 +71,11 @@ const group = [
         title: <CustomLink italics={true} to='https://amaykataria.com/#/MomentofEnigma/' inline={true}>{"Moment of Enigma"}</CustomLink>,
         description: ', Rennaissance 20.20, curated by Eleonora Brizi, Breezy Art Gallery, Rome, Italy, 2020, ',
         info: <CustomLink  to='http://breezyartgallery.com' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/Timekeepers' inline={true}>{"Timekeepers"}</CustomLink>,
+        description: ', Burning Man 2020, organized by BRCVr, AltspaceVR, Online, 2020, ',
+        info: <CustomLink  to='https://brcvr.org/' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/FigmentsofDesire' inline={true}>{"Figments of Desire"}</CustomLink>,

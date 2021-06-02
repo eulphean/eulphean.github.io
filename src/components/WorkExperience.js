@@ -5,16 +5,16 @@ import CustomLink from './CustomLink'
 
 const experience = [
     {
-        title: <span style={cvStyles.title}>Studio Assistant for Peter Burr</span>,
-        location: ', Mana Contemporary Chicago, USA, October 2020 - Current, ', 
-        info: 'Prototyping new extended reality experiences using Unity.',
-        link: <CustomLink to='http://www.peterburr.org/' inline={true}>[info]</CustomLink>
+        title: <span style={cvStyles.title}>Freelance Creative Technologist</span>,
+        location: ', Chicago, USA, May 2019 - Current, ', 
+        info: 'Creative director for new media projects; user-experience research, design aesthetics, and creative software development.',
+        link: <CustomLink to='https://drive.google.com/file/d/1fn54t5pFyDD_Nm7kuc1biZQTiV7XaBuM/view?usp=sharing' inline={true}>[info]</CustomLink>
     },
     {
-        title: <span style={cvStyles.title}>Creative Technology Director</span>,
-        location: ', Chicago, USA, May 2019 - Current, ', 
-        info: 'Freelance creative director for new media projects; user-experience research, design aesthetics, and creative software development.',
-        link: <CustomLink to='https://drive.google.com/file/d/1fn54t5pFyDD_Nm7kuc1biZQTiV7XaBuM/view?usp=sharing' inline={true}>[info]</CustomLink>
+        title: <span style={cvStyles.title}>Studio Assistant for Peter Burr</span>,
+        location: ', Mana Contemporary Chicago, USA, October 2020 - May 2021, ', 
+        info: 'Prototyping new extended reality experiences using Unity.',
+        link: <CustomLink to='http://www.peterburr.org/' inline={true}>[info]</CustomLink>
     },
     {
         title: <span style={cvStyles.title}>Teaching Assistant</span>, 

@@ -6,13 +6,23 @@ import CustomLink from './CustomLink.js'
 const projects = [
   {
     title: <span style={cvStyles.title}>{"Tend Towards Infinity"}</span>,
-    description: <span>{", Dreams Issue, Emerge Magazine, (Upcoming) 2021, "}</span>,
-    info: <CustomLink  to='https://emergejournalsaic.squarespace.com/' inline={true}>[info]</CustomLink>
+    description: <span>{", Dreams Issue, Emerge Magazine, 2021, "}</span>,
+    info: <CustomLink  to='https://saicemerge.com/' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>{"Momimsafe"}</span>,
+    description: ', Futures of Intimacy, TIFA India Blog, Online, 2021, ',
+    info: <CustomLink  to='https://tifastudios.in/amay-kataria/' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>{"Timekeepers: A Virtual Reality Art Experience"}</span>,
     description: <span>{", Burning Man Journal, 2021, "}</span>,
     info: <CustomLink  to='https://journal.burningman.org/2021/02/burning-man-arts/brc-art/timekeepers-vr/' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>{"Artist Spotlight: Timekeepers"}</span>,
+    description: <span>{", BRCVr, 2021, "}</span>,
+    info: <CustomLink  to='https://vimeo.com/529123371' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>{"Center of (Varying) Gravity"}</span>,
