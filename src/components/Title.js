@@ -69,7 +69,7 @@ function Title() {
                 buttonStyle={[styles.button, styles.title]}
                 isActive={aboutState} 
             >
-                <RadiumLink to="/About">Amay Kataria</RadiumLink>
+                <RadiumLink to="/About">AMAY KATARIA</RadiumLink>
             </CustomButton>
             <div>
                 <CustomButton 

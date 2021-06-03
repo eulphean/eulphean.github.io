@@ -51,7 +51,18 @@ const padding = {
     insane: '160px',
     veryInsane: '200px',
     extraInsane: '240px'
+};
 
+const textInputWidth = {
+    small: '275px',
+    medium: '300px',
+    large: '375px'
+};
+
+const textInputHeight = {
+    small: '38px',
+    medium: '42px',
+    large: '375px'
 };
 
 const fontFamily = {
@@ -383,4 +394,4 @@ const cvStyles= {
     }
 };
 
-export {color, fontSize, fontFamily, textShadow, boxShadow, padding, commonWorkStyles, cvStyles};
+export {color, fontSize, fontFamily, textInputWidth, textInputHeight, textShadow, boxShadow, padding, commonWorkStyles, cvStyles};

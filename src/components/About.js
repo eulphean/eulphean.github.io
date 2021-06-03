@@ -1,7 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
 import CustomLink from './CustomLink.js'
-import { padding, fontSize, fontFamily, color, commonWorkStyles } from './CommonStyles.js'
+import { padding, fontSize, fontFamily, color, textInputWidth, textInputHeight, commonWorkStyles } from './CommonStyles.js'
 import CustomButton from './CustomButton.js'
 
 // Images
@@ -27,7 +27,7 @@ const styles = {
     },
 
     contactContainer: {
-        marginTop: padding.verySmall,
+        marginTop: padding.small,
         marginBottom: padding.small,
         display: 'flex',
         flexDirection: 'row',
@@ -90,52 +90,15 @@ const styles = {
 
         '@media (min-width: 1700px)' : {
             // No change
-           
         }
     },
 
     email: {
-        fontFamily: fontFamily.din,
-        fontSize: fontSize.small,
-        marginTop: padding.small,
-        marginBottom: padding.small,
-        // textShadow: textShadow.slateGrey,
-        color: color.darkGrey,
-        border: 'inherit',
-        letterSpacing: '3px',
         alignSelf: 'center',
-
-        '@media (min-width: 450px)': {  
-            // No change. 
-        },
-
-        '@media (min-width: 600px)': {  
-            // fontSize: fontSize.big,
-            marginTop: padding.big,
-            marginBottom: padding.big
-        },
-
-        '@media (min-width: 750px)': {  
+        marginTop: padding.verySmall,
+        '@media (min-width: 750px)' : {
             // No change
-            alignSelf: 'start',
-            fontSize: fontSize.big 
-        },
-
-        '@media (min-width: 900px)': {
-            // fontSize: fontSize.veryBig
-        }, 
-
-        '@media (min-width: 1200px)' : {
-
-        },
-
-        '@media (min-width: 1400px)' : {
-            // fontSize: fontSize.veryBig,
-            // marginTop: padding.veryBig,
-            // marginBottom: padding.veryBig
-        },
-
-        '@media (min-width: 1700px)' : {
+            alignSelf: 'start'
         }
     },
 
@@ -153,40 +116,8 @@ const styles = {
     },
 
     iconWrapper: {
-        width: fontSize.big,
-        height: fontSize.big,
         fill: color.darkGrey,
-        marginRight: padding.small,
-
-        '@media (min-width: 450px)': {  
-            // No change. 
-        },
-
-        '@media (min-width: 600px)': {  
-            width: fontSize.extraBig,
-            height: fontSize.extraBig
-        },
-
-        '@media (min-width: 750px)': {  
-            // No change
-        },
-
-        '@media (min-width: 900px)': {
-            marginRight: padding.big
-        }, 
-
-        '@media (min-width: 1200px)' : {
-            // No change
-        },
-
-        '@media (min-width: 1400px)' : {
-            height: fontSize.huge,
-            width: fontSize.huge
-        },
-
-        '@media (min-width: 1700px)' : {
-            // No change
-        }
+        marginRight: padding.big
     },
 
     bodyMediaQuery: {
@@ -197,8 +128,71 @@ const styles = {
     },
 
     icon: {
+        width: '150%',
+        height: '150%'
+    },
+
+    subscriptionContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        marginTop: padding.small,
+        alignItems: 'center',
+        
+        '@media (min-width: 768px)': {  
+            alignItems: 'flex-start'
+        },
+        
+    },
+
+    subscribeButton: {
+        fontFamily: fontFamily.bebas,
+        fontSize: fontSize.verySmall,
+        backgroundColor: color.deepBlue,
+        color: color.featherWhite,
+        border: 'inherit',
+        letterSpacing: '2.5px',
+        alignSelf: 'stretch'
+    },
+
+    subscribeInput: {
+        display: 'flex',
+        flexDirection: 'row',
+        marginTop: padding.verySmall,
+        width: textInputWidth.small,
+        height: textInputHeight.small,
+
+        '@media (min-width: 600px)': {  
+            width: textInputWidth.medium
+        },
+
+        '@media (min-width: 800px)': {  
+            height: textInputHeight.medium
+        },
+
+        '@media (min-width: 1200px)' : {
+            width: textInputWidth.large
+        }
+    },
+
+    textArea: {
+        border: 'none',
         width: '100%',
-        height: '100%'
+        fontSize: fontSize.verySmall,
+        padding: padding.small,
+        fontFamily: fontFamily.din,
+        color: color.pureTeal,
+        letterSpacing: '1px',
+
+        '@media (min-width: 800px)' : {
+            // no change.
+            fontSize: fontSize.small
+        }
+    },
+
+    thanks: {
+        marginTop: padding.small,
+        backgroundColor: color.slateGrey,
+        color: color.featherWhite
     }
 };
 
@@ -207,12 +201,19 @@ class About extends React.Component {
     constructor(props) {
         super(props);
         this.state={
-
+            value: '',
+            isVisible: true
         };
+
+        this.textArea = React.createRef(); 
+        this.maxLength = 50; // For hack prevention.
     }
 
     render() {
         let bodyStyle = [commonWorkStyles.body, styles.contactTile, styles.bodyMediaQuery]; 
+        let subscribeStyle = [commonWorkStyles.body, styles.bodyMediaQuery];
+        let emailStyle = [commonWorkStyles.body, styles.bodyMediaQuery, styles.email];
+        let textAreaContent = this.state.isVisible ? this.getTextArea() : this.getThanks(subscribeStyle); 
         return (
             <div style={styles.container}>
                 <div style={commonWorkStyles.imgContainer}>
@@ -223,7 +224,13 @@ class About extends React.Component {
                         <CustomButton isStatic={true} buttonStyle={styles.contactButton}>
                             {'Contact'}
                         </CustomButton>
-                        <div style={styles.email}>
+                        <div style={styles.subscriptionContainer}>
+                            <div style={subscribeStyle}>
+                                {'Be the first to hear from me!'}
+                            </div>
+                            {textAreaContent}
+                        </div>
+                        <div style={emailStyle}>
                             {'studio@amaykataria.com'}
                         </div>
                         <div style={styles.contactIconsContainer}>
@@ -247,6 +254,53 @@ class About extends React.Component {
                 </div>
             </div>
         );
+    }
+
+    getTextArea() {
+        return (
+            <div style={styles.subscribeInput}>
+                <textarea 
+                        ref={this.textArea}
+                        style={styles.textArea}
+                        outline='none'
+                        maxLength={this.maxLength} 
+                        value={this.state.value}
+                        onChange={this.onChange.bind(this)}
+                        placeholder={'Type your email...'}
+                />
+                <CustomButton onClick={this.onSubmit.bind(this)} buttonStyle={styles.subscribeButton}>
+                    {'Subscribe'}
+                </CustomButton>
+            </div>
+        );
+    }
+
+    getThanks(bodyStyle) {
+        let style=[bodyStyle, styles.thanks];
+        return (
+            <div style={style}>
+                ...Thanks for signing up...
+            </div>
+        )
+    }
+
+    onChange(event) {
+        this.setState({
+            value: event.target.value
+        }); 
+    }
+
+    onSubmit() {
+        let content = this.state.value; 
+        if (content.length !== 0 || content.length < this.maxLength) {
+            this.setState({
+                isVisible: false
+            });
+        }
+
+        // TAKE ACTION AND SEND THIS CONTENT
+        // TO THE MAIL CHIMP / SERVICE 
+        // TO ADD IT TO THE LIST OF EMAILS. 
     }
 }
 
