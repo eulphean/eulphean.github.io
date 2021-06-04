@@ -25,7 +25,7 @@ const styles={
     }
 }; 
 
-const bio=<span>Amay Kataria is a media artist currently practicing out of Mana Contemporary Chicago. He holds an MFA from the School of the Art Institute of Chicago and a Bachelors in Computer Engineering from Virginia Tech. He has previously held new media residencies at Art Center Nabi and Mana Contemporary and will be an artist in residence at Sandnes Kommune in Stavanger, Norway in 2021. His works have been exhibited at Vector Festival, Electromuseum, Ars Electronica, Piksel Festival, TIFA Studios, Experimental Sound Studio, amongst others.</span>
+const bio=<span>Amay Kataria is an artist currently practicing out of Mana Contemporary Chicago. He holds an MFA from the School of the Art Institute of Chicago and a Bachelors in Computer Engineering from Virginia Tech. He has previously held new media residencies at Art Center Nabi and Mana Contemporary and will be an artist in residence at Sandnes Kommune in Stavanger, Norway in 2021. His works have been exhibited at Vector Festival, Electromuseum, Ars Electronica, Piksel Festival, TIFA Studios, Experimental Sound Studio, amongst others.</span>
 class Bio extends React.Component {
     constructor(props) {
         super(props);
