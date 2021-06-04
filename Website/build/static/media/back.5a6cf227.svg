@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-alt-circle-left-solid copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout" stroke="none" stroke-width="1" fill="inherit" fill-rule="evenodd">
+        <g id="iPhone-SE-(Individual-Work)-Copy" transform="translate(-129.000000, -515.000000)" fill-rule="nonzero" fill="inherit">
+            <g id="arrow-alt-circle-left-solid-copy" transform="translate(129.000000, 515.000000)">
+                <path d="M8,16 C3.58064516,16 0,12.4193548 0,8 C0,3.58064516 3.58064516,0 8,0 C12.4193548,0 16,3.58064516 16,8 C16,12.4193548 12.4193548,16 8,16 Z M11.7419355,6.58064516 L8,6.58064516 L8,4.29354839 C8,3.9483871 7.58064516,3.77419355 7.33870968,4.01935484 L3.6516129,7.72580645 C3.5,7.87741935 3.5,8.11935484 3.6516129,8.27096774 L7.33870968,11.9774194 C7.58387097,12.2225806 8,12.0483871 8,11.7032258 L8,9.41935484 L11.7419355,9.41935484 C11.9548387,9.41935484 12.1290323,9.24516129 12.1290323,9.03225806 L12.1290323,6.96774194 C12.1290323,6.75483871 11.9548387,6.58064516 11.7419355,6.58064516 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
