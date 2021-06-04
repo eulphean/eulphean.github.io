@@ -197,6 +197,9 @@ const styles = {
 };
 
 const bio=<span>Welcome, and thank you for parking at my (web) address. This website is an up-to-date repository of my most recent creative inquiries. My artistic pursuit is a tool for inquiring, experimenting, and playing with subject matter that is concerned with the state of "being" and "time". It attempts to deconstruct the human condition by exploring themes of impermanence and unpredictability through the lens of temporality. Every creative act is like an event unfolding in space & time - an organic synthesis of philosophical research, historical excavation, and scientific exploration, in tandem with creative experimentation with technology. By utilizing the craft of code, algorithms, and computer-aided tools, my works contrive systemic metaphors, which superimpose physical and digital materialities.</span>
+const maxInputLength = 50; 
+const newsletter_subscriber_url = 'http://localhost:5000/subscribe';
+
 class About extends React.Component {
     constructor(props) {
         super(props);
@@ -206,7 +209,6 @@ class About extends React.Component {
         };
 
         this.textArea = React.createRef(); 
-        this.maxLength = 50; // For hack prevention.
     }
 
     render() {
@@ -263,7 +265,7 @@ class About extends React.Component {
                         ref={this.textArea}
                         style={styles.textArea}
                         outline='none'
-                        maxLength={this.maxLength} 
+                        maxLength={maxInputLength} 
                         value={this.state.value}
                         onChange={this.onChange.bind(this)}
                         placeholder={'Type your email...'}
@@ -292,15 +294,27 @@ class About extends React.Component {
 
     onSubmit() {
         let content = this.state.value; 
-        if (content.length !== 0 || content.length < this.maxLength) {
+        if (content.length !== 0 || content.length < maxInputLength) {
             this.setState({
                 isVisible: false
             });
         }
 
-        // TAKE ACTION AND SEND THIS CONTENT
-        // TO THE MAIL CHIMP / SERVICE 
-        // TO ADD IT TO THE LIST OF EMAILS. 
+        // Use this if sending JSON data. 
+        // const request = new Request('http://localhost:5000/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: content}) });
+        
+        const request = new Request(newsletter_subscriber_url, { method: 'POST', body: content});
+        fetch(request).then(response => {
+            if (response.status === 200) {
+                console.log('Success POST'); 
+            } else {
+                console.error('Something wrong');
+            }
+        }).then(response => {
+            console.debug(response);
+        }).catch(error => {
+        console.error(error);
+        });
     }
 }
 
