@@ -15,12 +15,15 @@ const uniqueString = 'thisisareallyreallyreallyreallyreallylongstring';
 const formData = require('form-data');
 const Mailgun = require('mailgun.js');
 const mailgun = new Mailgun(formData);
+const md5 = require('md5');
+const fs = require('fs');
 const mg = mailgun.client({
     username: 'api', 
     key: process.env.MAILGUN_API_KEY || api_key,
     public_key: process.env.MAILGUN_PUBLIC_KEY || validation_key
 });
-var md5 = require('md5');
+// URL to be replaced in the confirmation email. 
+const urlRegex = /%value%/g; 
 
 module.exports = {
     handleEmail: (email) => {
@@ -40,12 +43,15 @@ module.exports = {
 
 // TODO: Clean up the email, which is sent. 
 function sendConfirmationEmail(email, hash) {
+    const urlToEmbed = siteURL + '/confirmation?hash=' + hash + '&email=' + email;
+    let data = fs.readFileSync('./confirmation.html', 'utf8');
+    data = data.replace(urlRegex, urlToEmbed);
+
     mg.messages.create('amaykataria.com', {
         from: "Amay Kataria <studio@amaykataria.com>",
         to: [email],
-        subject: "Hello",
-        text: "Testing some Mailgun awesomness!",
-        html: '<p>Hello, please confirm you want to receive marketing emails from ' + domain + ' by clicking on the below link <p><a href=' + siteURL + '/confirmation?hash=' + hash + '&email=' + email +'>CONFIRMATION</a></p></p><p>'
+        subject: "Newsletter Confirmation",
+        html: data
       })
       .then(msg => console.log(msg))
       .catch(err => console.log(err));
