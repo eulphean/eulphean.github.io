@@ -25,6 +25,8 @@ const mg = mailgun.client({
 // URL to be replaced in the confirmation email. 
 const urlRegex = /%value%/g; 
 
+sendWelcomeEmail('amay.kataria@gmail.com');
+
 module.exports = {
     handleEmail: (email) => {
         let hash = md5(email+uniqueString); 
@@ -71,7 +73,7 @@ function addToMailingList(email, response) {
         response.send('Thank You. Your email is successfully subscribed.');
         
         // Now we can send the last email to the user. 
-        sendWelcomeEmail(); 
+        sendWelcomeEmail(email); 
     })
     .catch(e => {
         // Same email address will automatically be rejected
@@ -81,8 +83,14 @@ function addToMailingList(email, response) {
     });
 }
 
-// TODO: Clean up this email, which is sent to the user. 
-function sendWelcomeEmail() {
-    // Unsubscribe option must be there. 
-    // Analytics on who opened the email. 
+function sendWelcomeEmail(email) {
+    let data = fs.readFileSync('./introduction.html', 'utf8');
+    mg.messages.create('amaykataria.com', {
+        from: "Amay Kataria <studio@amaykataria.com>",
+        to: [email],
+        subject: "Welcome Note",
+        html: data
+      })
+      .then(msg => console.log(msg))
+      .catch(err => console.log(err));
 }
