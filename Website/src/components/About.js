@@ -190,6 +190,7 @@ const styles = {
     },
 
     thanks: {
+        padding: padding.extraSmall,
         marginTop: padding.small,
         backgroundColor: color.slateGrey,
         color: color.featherWhite
@@ -281,7 +282,7 @@ class About extends React.Component {
         let style=[bodyStyle, styles.thanks];
         return (
             <div style={style}>
-                ...Thanks for signing up...
+                Check your email for a confirmation link.
             </div>
         )
     }
