@@ -25,8 +25,6 @@ const mg = mailgun.client({
 // URL to be replaced in the confirmation email. 
 const urlRegex = /%value%/g; 
 
-sendWelcomeEmail('amay.kataria@gmail.com');
-
 module.exports = {
     handleEmail: (email) => {
         let hash = md5(email+uniqueString); 
