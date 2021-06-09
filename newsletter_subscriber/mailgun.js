@@ -88,7 +88,7 @@ function sendWelcomeEmail(email) {
     mg.messages.create('amaykataria.com', {
         from: "Amay Kataria <studio@amaykataria.com>",
         to: [email],
-        subject: "Welcome Note",
+        subject: "Welcome Note.",
         html: data
       })
       .then(msg => console.log(msg))
