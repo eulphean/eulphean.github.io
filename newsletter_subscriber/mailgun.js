@@ -50,7 +50,7 @@ function sendConfirmationEmail(email, hash) {
     mg.messages.create('amaykataria.com', {
         from: "Amay Kataria <studio@amaykataria.com>",
         to: [email],
-        subject: "Newsletter Confirmation",
+        subject: "Newsletter Confirmation.",
         html: data
       })
       .then(msg => console.log(msg))
