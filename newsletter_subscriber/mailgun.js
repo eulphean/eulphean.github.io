@@ -3,7 +3,6 @@
 // File: mailgun.js
 // Description: This component is responsible for mailgun API requests. 
 
-
 const api_key = '80e67140480b75b4a73425facf0650be-19f318b0-80c807ab';
 const validation_key = 'pubkey-741e3c7db48b09f35424e9d26aa25ac9';
 const domain = 'amaykataria.com';

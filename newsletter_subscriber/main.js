@@ -1,10 +1,9 @@
 // Author: Amay Kataria
 // Date: 06/4/2021
 // File: main.js
-// Description: Core Central server implementation for mumimsafe.live. It serves 2 routes primarily. 
-// Route 1 = client -> central -> printer
-// Route 2 = streamer -> central -> client
-// It will also have a public side, which I can use to see all the messages of the database and debug the incoming video stream. 
+// Description: Core central server implementation for subscribing a new user to the mailing list and sending them
+// the introduction email. The emails are stored as confirmation.html and introduction.html, which are parsed
+// and dispatched using this server. This sits on herokuu. 
 
 var express = require('express'); 
 var cors = require('cors');
@@ -13,7 +12,6 @@ var mailgun = require('./mailgun.js');
 // ------------------ Express webserver ------------------------ //
 var app = express(); 
 app.use(cors());
-// app.use(express.static('./Client')); 
 var server = require('http').createServer(app); 
 
 // ------------------- Configure for POST request ------------- //
