@@ -7,7 +7,9 @@ const api_key = '80e67140480b75b4a73425facf0650be-19f318b0-80c807ab';
 const validation_key = 'pubkey-741e3c7db48b09f35424e9d26aa25ac9';
 const domain = 'amaykataria.com';
 // Update this with the actual heroku URL once this is deployed. 
-const siteURL = 'http://localhost:5000';
+const siteURLLocal = 'http://localhost:5000';
+const siteURLProd = 'https://newsletter-subscriber-01.herokuapp.com';
+const siteURL = siteURLProd; 
 const mailingListName = 'subscribers@amaykataria.com';
 const uniqueString = 'thisisareallyreallyreallyreallyreallylongstring';
 
@@ -67,7 +69,7 @@ function addToMailingList(email, response) {
     mg.lists.members.createMember(mailingListName, data)
     .then(d => {
         console.log('Email subscribed successfully.');
-        response.send('Thank You. Your email is successfully subscribed.');
+        response.send('<html><h2>Thank You. Your email is successfully subscribed.</h2></html');
         
         // Now we can send the last email to the user. 
         sendWelcomeEmail(email); 
@@ -76,7 +78,7 @@ function addToMailingList(email, response) {
         // Same email address will automatically be rejected
         // by the server and an error will be throw. 
         console.warn('Email subscription failed: ' + e);
-        response.send('Sorry, this email may already exist in the database.');
+        response.send('<html><h2>Sorry, this email may already exist in the database.</h1></html>');
     });
 }
 
