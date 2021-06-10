@@ -46,3 +46,19 @@ app.post('/subscribe', (req, res) => {
     mailgun.handleEmail(email);
     res.sendStatus(200); // HTTP OK. 
 });
+
+app.get('/unsubscribe', (req, res) => {
+    console.log('Unsubscribe Get Received');
+    let data = {
+        'email' : req.query.email
+    };
+    mailgun.handleUnsubscribe(data, res);
+});
+
+app.get('/unsubconfirm', (req, res) => {
+    console.log('Unsubscribe Confirm Received');
+    let data = {
+        'email' : req.query.email
+    };
+    mailgun.unsubConfirm(data, res);
+});
