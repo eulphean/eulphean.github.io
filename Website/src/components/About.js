@@ -203,7 +203,7 @@ const maxInputLength = 50;
 const local = 'http://localhost:5000/subscribe';
 const prod = 'https://newsletter-subscriber-01.herokuapp.com/subscribe';
 // http://localhost:5000/subscribe
-const newsletter_subscriber_url = prod;
+const newsletter_subscriber_url = local;
 
 class About extends React.Component {
     constructor(props) {
@@ -299,11 +299,15 @@ class About extends React.Component {
 
     onSubmit() {
         let content = this.state.value; 
-        if (content.length !== 0 || content.length < maxInputLength) {
-            this.setState({
-                isVisible: false,
-                email: content
-            });
+        
+        if (content.length !== 0 && content.length < maxInputLength) {
+            let isValid = this.validateEmail(content); 
+            if (isValid) {
+                this.setState({
+                    isVisible: false,
+                    email: content
+                });
+            }
         }
 
         // Use this if sending JSON data. 
@@ -321,6 +325,13 @@ class About extends React.Component {
         }).catch(error => {
         console.error(error);
         });
+    }
+
+    validateEmail(email) {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)){
+           return true;
+        }
+        return false;
     }
 }
 
