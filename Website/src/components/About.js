@@ -203,7 +203,7 @@ const maxInputLength = 50;
 const local = 'http://localhost:5000/subscribe';
 const prod = 'https://newsletter-subscriber-01.herokuapp.com/subscribe';
 // http://localhost:5000/subscribe
-const newsletter_subscriber_url = local;
+const newsletter_subscriber_url = prod;
 
 class About extends React.Component {
     constructor(props) {
