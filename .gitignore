@@ -6,6 +6,9 @@
 /out-tsc
 /build
 
+# ignore newsletter folder completely
+/Newsletter
+
 # Runtime data
 pids
 *.pid
