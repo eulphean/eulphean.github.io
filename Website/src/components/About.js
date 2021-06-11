@@ -286,7 +286,7 @@ class About extends React.Component {
         let style=[bodyStyle, styles.thanks];
         return (
             <div style={style}>
-                Check your email for a confirmation link.
+                Check <span>{this.state.value}</span> for a confirmation link.
             </div>
         )
     }
@@ -301,7 +301,8 @@ class About extends React.Component {
         let content = this.state.value; 
         if (content.length !== 0 || content.length < maxInputLength) {
             this.setState({
-                isVisible: false
+                isVisible: false,
+                email: content
             });
         }
 
