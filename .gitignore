@@ -8,6 +8,8 @@
 
 # ignore newsletter folder completely
 /Newsletter
+/Design
+/Website/build
 
 # Runtime data
 pids
