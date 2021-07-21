@@ -108,16 +108,12 @@ const styles = {
         alignItems: 'center',
         alignSelf: 'center',
         justifyContent: 'center',
+        marginTop: padding.small,
         marginBottom: padding.small,
         '@media (min-width: 750px)' : {
             // No change
             alignSelf: 'start'
         }
-    },
-
-    iconWrapper: {
-        fill: color.darkGrey,
-        marginRight: padding.big
     },
 
     bodyMediaQuery: {
@@ -127,9 +123,14 @@ const styles = {
         }
     },
 
+    iconWrapper: {
+        fill: color.darkGrey,
+        marginRight: padding.big
+    },
+
     icon: {
-        width: '150%',
-        height: '150%'
+        height: '1.3em',
+        width: '1.3em'
     },
 
     subscriptionContainer: {
