@@ -18,24 +18,44 @@ const solo = [
 
 const group = [
     {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/Holon' inline={true}>{"Holons & Holarchy"}</CustomLink>,
+        description: ', Piksel Festival, Bergen, Norway, (Upcoming) 2021, ',
+        info: <CustomLink  to='https://piksel.no/' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/janus' inline={true}>{"Janus Study"}</CustomLink>,
+        description: ', Terrain Offline, Bikaner House, Delhi, India, 2021, ',
+        info: <CustomLink  to='https://www.architecturaldigest.in/story/indian-art-as-nft-a-new-exhibition-brings-exciting-names-to-the-much-hyped-format/' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
+        description: ', Tracked & Traced, Science Gallery Detroit, USA, 2021, ',
+        info: <CustomLink  to='https://detroit.sciencegallery.com/tracked-traced' inline={true}>[info]</CustomLink>
+    },  
+    {
         title: <span><CustomLink italics={true} to='https://amaykataria.com/#/Timekeepers' inline={true}>{"Timekeepers"}</CustomLink></span>,
-        description: ', AMAZE Berlin 10th International Games Festival, Online, (Upcoming) 2021, ',
+        description: ', AMAZE Berlin 10th International Games Festival, Online, 2021, ',
         info: <CustomLink  to='https://2021.award.amaze-berlin.de/games/2021/timekeepers' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <span><CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink></span>,
-        description: ', CURRENTS 2021, Online, (Upcoming) 2021, ',
-        info: <CustomLink  to='https://currentsnewmedia.org/currents-2021-selected-artists/' inline={true}>[info]</CustomLink>
+        description: ', CURRENTS 2021, Online, 2021, ',
+        info: <CustomLink  to='https://currentsnewmedia.org/work/liarbirds/' inline={true}>[info]</CustomLink>
     }, 
     {
-        title: <CustomLink italics={true} to='https://momimsafe.live' inline={true}>{"MOMIMSAFE"}</CustomLink>,
-        description: ', Tracked & Traced, Science Gallery Detroit, USA, (Upcoming) 2021, ',
-        info: <CustomLink  to='https://sciencegallery.org/opencall/trackedandtraced' inline={true}>[info]</CustomLink>
-    },  
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/momimsafe' inline={true}>{"MOMIMSAFE"}</CustomLink>,
+        description: ', Monira Foundation, curated by Ysabel Pinyol, Online, 2021, ',
+        info: <CustomLink  to='https://piksel.no/' inline={true}>[info]</CustomLink>
+    },
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/centerofvaryinggravity/' inline={true}>{"Center of (Varying) Gravity"}</CustomLink>,
-        description: ', Is it a Good Time?, curated by Nicky Ni & Maryam Faridani, Mana Contemporary, Online, 2020, ',
+        description: ', Is it a Good Time?, curated by Nicky Ni & Maryam Faridani, Mana Contemporary, Online, 2021, ',
         info: <CustomLink  to='https://www.manacontemporary.com/event/is-it-a-good-time/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/kidgames' inline={true}>{"Kid Games"}</CustomLink>,
+        description: ', Responsive Eye, Telematic Media Arts, USA, 2021, ',
+        info: <CustomLink  to='http://theshapeofempty.space/' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink>,

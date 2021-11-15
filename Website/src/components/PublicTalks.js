@@ -6,6 +6,16 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>Sincere Understandings</span>,
+    description: ', Artist Talk, OFTalk, Online, 2021, ',
+    info: <CustomLink to='https://drive.google.com/drive/folders/1ThPEacQs99fgpB9kzJLDh4Rg2vDUdkDF' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>Pictures of Nothing</span>,
+    description: ', Artist Talk, Shanti Sadan, Online, 2021, ',
+    info: <CustomLink to='https://shanti-sadan.net/pictures-of-nothing/' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>Yearning for Intimacy</span>,
     description: ', Artist Talk, SPARKS by ACMSIGGRAPH, Online, 2021, ',
     info: <CustomLink to='https://vimeo.com/511376941#t=29m05s' inline={true}>[info]</CustomLink>

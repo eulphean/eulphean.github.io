@@ -32,7 +32,7 @@ import sonicnegotiation from '../tiles/sonicnegotiation.jpg'
 // import unnamed from '../tiles/unnamed.jpg'
 import bendtherules from '../tiles/bendtherules.jpg'
 import momimsafe from '../tiles/momimsafe.jpg'
-import janus from '../tiles/janus.jpg'
+import janus from '../tiles/janus.jpeg'
 import gravity from '../tiles/gravity.jpg'
 import momentofenigma from '../tiles/momentofenigma.jpg'
 import timekeepers from '../tiles/timekeepers.jpg'
@@ -41,6 +41,8 @@ import clouds from '../tiles/clouds.jpg'
 import kids from '../tiles/kids.jpg'
 import fourth from '../tiles/fourth.jpg'
 import comatose from '../tiles/comatose.jpg'
+import passage from '../tiles/passage.jpg'
+import touch from '../tiles/touch.jpg'
 
 const styles = {
     gridContainer: {
@@ -143,10 +145,22 @@ class Grid extends React.Component {
                 'link': 'momentofenigma'
             },
             {
+                'img': passage,
+                'title': 'The Lost Passage',
+                'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Extended Reality', 'Artificial Life'],
+                'url': 'https://thelostpassage.art'
+            },
+            {
                 'img': comatose,
                 'title': 'Project Comatose',
                 'keywords': ['2021', 'Interactive', 'Extended Reality', 'Artificial Life'],
                 'url': 'http://amay.openforum.so'
+            },
+            {
+                'img': touch,
+                'title': 'Embroidered Touch',
+                'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Commissions'],
+                'link': 'touch'
             },
             {
                 'img': kids,
@@ -263,31 +277,31 @@ class Grid extends React.Component {
                 'title': 'Silent City',
                 'keywords': ['2020', 'Ecology', 'Extended Reality']
             },
-            {
-                'img': encryptionarchive,
-                'link': 'EncryptionArchive',
-                'title': 'Encryption Archive',
-                'keywords': ['2019', 'Interactive', 'Commissions', 'Net Art'],
-                'url': 'https://encryptionarchive.net'
-            },
-            {
-                'img': ethereumfarm,
-                'title': 'Ethereum Farm',
-                'link': 'EthereumFarm',
-                'keywords': ['2019', 'Blockchain', 'Commissions', 'Net Art']
-            },
+            // {
+            //     'img': encryptionarchive,
+            //     'link': 'EncryptionArchive',
+            //     'title': 'Encryption Archive',
+            //     'keywords': ['2019', 'Interactive', 'Commissions', 'Net Art'],
+            //     'url': 'https://encryptionarchive.net'
+            // },
+            // {
+            //     'img': ethereumfarm,
+            //     'title': 'Ethereum Farm',
+            //     'link': 'EthereumFarm',
+            //     'keywords': ['2019', 'Blockchain', 'Commissions', 'Net Art']
+            // },
             {
                 'img': threeecologies,
                 'link': 'ThreeEcologies',
                 'title': 'Three Ecologies',
                 'keywords': ['2019', 'Ecology', 'Commissions']
             },
-            {
-                'img': bendtherules,
-                'title': 'Bend the Rules',
-                'link': 'BendTheRules',
-                'keywords': ['2019', 'Interactive', 'Net Art']
-            },
+            // {
+            //     'img': bendtherules,
+            //     'title': 'Bend the Rules',
+            //     'link': 'BendTheRules',
+            //     'keywords': ['2019', 'Interactive', 'Net Art']
+            // },
             {
                 'img': speculativebitcoinwallet,
                 'link': 'SpeculativeBitcoinWallet',

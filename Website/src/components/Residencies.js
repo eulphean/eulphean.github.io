@@ -6,8 +6,13 @@ import CustomLink from './CustomLink.js'
 const projects=[
   {
     title: <span style={cvStyles.title}>Artist in Residence</span>,
-    description: ', Sandnes Kommune, Sandnes, Norway, (Forthcoming) 2021, ',
+    description: ', Sandnes Kommune, Sandnes, Norway, (Forthcoming) 2022, ',
     info:  <CustomLink to='https://www.sandnes.kommune.no/kultur-fritid/kultur/air/' inline={true}>[info]</CustomLink>
+  },
+  {
+    title: <span style={cvStyles.title}>Art & Technology Fellow</span>,
+    description: ', BeFantastic, Online, 2021, ',
+    info:  <CustomLink to='https://artahack.io/summer-2021/call/' inline={true}>[info]</CustomLink>
   },
   {
     title: <span style={cvStyles.title}>New Media Resident</span>,
