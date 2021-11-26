@@ -5,6 +5,11 @@ import CustomLink from './CustomLink.js'
 
 const projects = [
   {
+    title: <span style={cvStyles.title}>{"The Lost Passage"}</span>,
+    description: <span>{", CreativeApplications.Net, 2021, "}</span>,
+    info: <CustomLink  to='https://www.creativeapplications.net/member-submissions/the-lost-passage/' inline={true}>[info]</CustomLink>
+  },
+  {
     title: <span style={cvStyles.title}>{"Tend Towards Infinity"}</span>,
     description: <span>{", Dreams Issue, Emerge Magazine, 2021, "}</span>,
     info: <CustomLink  to='https://saicemerge.com/' inline={true}>[info]</CustomLink>

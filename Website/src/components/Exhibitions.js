@@ -18,9 +18,24 @@ const solo = [
 
 const group = [
     {
+        title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', Singapore Sustainabale Gallery, Singapore, (Upcoming) 2022, ',
+        info: <CustomLink  to='https://www.pub.gov.sg/marinabarrage/ssg' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', In Good Company, Mana Contemporary, Chicago, USA, (Upcoming) 2021, ',
+        info: <CustomLink  to='https://befantastic.in/together/the-lost-passage/' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', BeFantastic Showcase, Online, 2021, ',
+        info: <CustomLink  to='https://befantastic.in/together/the-lost-passage/' inline={true}>[info]</CustomLink>
+    },
+    {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/Holon' inline={true}>{"Holons & Holarchy"}</CustomLink>,
-        description: ', Piksel Festival, Bergen, Norway, (Upcoming) 2021, ',
-        info: <CustomLink  to='https://piksel.no/' inline={true}>[info]</CustomLink>
+        description: ', Reboot Me Softly, Pikel Festival, Bergen, Norway, 2021, ',
+        info: <CustomLink  to='https://21.piksel.no/2021/11/18/holons-holarchy/' inline={true}>[info]</CustomLink>
     },
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/janus' inline={true}>{"Janus Study"}</CustomLink>,
