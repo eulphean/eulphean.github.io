@@ -201,7 +201,7 @@ const styles = {
 const bio=<span>Welcome, and thank you for parking at my (web) address. This website is an up-to-date repository of my most recent creative inquiries. My artistic pursuit is a tool for inquiring, experimenting, and playing with subject matter that is concerned with the state of "being" and "time". It attempts to deconstruct the human condition by exploring themes of impermanence and unpredictability through the lens of temporality. Every creative act is like an event unfolding in space & time - an organic synthesis of philosophical research, historical excavation, and scientific exploration, in tandem with creative experimentation with technology. By utilizing the craft of code, algorithms, and computer-aided tools, my works contrive systemic metaphors, which superimpose physical and digital materialities.</span>
 const maxInputLength = 50; 
 
-const local = 'http://localhost:5000/subscribe';
+// const local = 'http://localhost:5000/subscribe';
 const prod = 'https://newsletter-subscriber-01.herokuapp.com/subscribe';
 // http://localhost:5000/subscribe
 const newsletter_subscriber_url = prod;

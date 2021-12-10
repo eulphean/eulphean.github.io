@@ -44,6 +44,8 @@ import BiographyofaPortrait from '../projects/Biographyofaportrait.js'
 import KidGames from '../projects/KidGames.js'
 import FourthDimension from '../projects/FourthDimension.js'
 import EmbroidererdTouch from '../projects/EmbroidererdTouch.js'
+import LostPassage from '../projects/LostPassage.js'
+import Liarbirds from '../projects/Liarbirds.js'
 
 const styles = {
   container: {
@@ -113,6 +115,8 @@ function App() {
             <Route path="/Bio"><Title /><Bio /></Route>
             <Route path="/About"><Title /><About /></Route>
             <Route path="/momentofenigma"><MomentofEnigma /></Route>
+            <Route path="/liarbirds"><Liarbirds /></Route>
+            <Route path="/lostpassage"><LostPassage /></Route>
             <Route path="/touch"><EmbroidererdTouch /></Route>
             <Route path="/fourthdimension"><FourthDimension /></Route>
             <Route path="/kidgames"><KidGames /></Route>

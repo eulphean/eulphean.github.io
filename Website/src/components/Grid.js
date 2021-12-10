@@ -148,13 +148,7 @@ class Grid extends React.Component {
                 'img': passage,
                 'title': 'The Lost Passage',
                 'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Extended Reality', 'Artificial Life'],
-                'url': 'https://thelostpassage.art'
-            },
-            {
-                'img': comatose,
-                'title': 'Project Comatose',
-                'keywords': ['2021', 'Interactive', 'Extended Reality', 'Artificial Life'],
-                'url': 'http://amay.openforum.so'
+                'link': 'lostpassage'
             },
             {
                 'img': touch,
@@ -168,6 +162,12 @@ class Grid extends React.Component {
                 'keywords': ['2021', 'Interactive', 'Extended Reality'],
                 'link': 'kidgames'
             },
+            // {
+            //     'img': comatose,
+            //     'title': 'Project Comatose',
+            //     'keywords': ['2021', 'Interactive', 'Extended Reality', 'Artificial Life'],
+            //     'url': 'http://amay.openforum.so'
+            // },
             {
                 'img': clouds,
                 'title': 'Biography of a Portrait',
@@ -184,7 +184,7 @@ class Grid extends React.Component {
                 'img': liarbirds,
                 'title': 'Liarbirds',
                 'keywords': ['2020', 'Interactive', 'Extended Reality', 'Net Art', 'Silkcube', 'Sound', 'Artificial Life', 'Commissions', 'Ecology'],
-                'url': 'https://liarbirds.art'
+                'link': 'liarbirds'
             },
             {
                 'img': timekeepers,
