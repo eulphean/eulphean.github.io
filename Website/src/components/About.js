@@ -129,8 +129,8 @@ const styles = {
     },
 
     icon: {
-        height: '1.3em',
-        width: '1.3em'
+        height: '2.5em',
+        width: '2.5em'
     },
 
     subscriptionContainer: {
@@ -245,13 +245,7 @@ class About extends React.Component {
                             <CustomLink customStyle={styles.iconWrapper} to='https://github.com/eulphean'>
                                 <Github style={styles.icon} key='one'/>
                             </CustomLink>
-                            <CustomLink customStyle={styles.iconWrapper} to='https://www.linkedin.com/in/amay-kataria-80301449'>
-                                <LinkedIn style={styles.icon} key='two'/>
-                            </CustomLink>
-                            <CustomLink customStyle={styles.iconWrapper} to='https://soundcloud.com/eulphean'>
-                                <Soundcloud style={styles.icon} key='three'/>
-                            </CustomLink>
-                            <CustomLink customStyle={styles.iconWrapper} to='https://www.instagram.com/eulphean/'>
+                            <CustomLink customStyle={styles.iconWrapper} to='https://www.instagram.com/amay.kataria'>
                                 <Instagram style={styles.icon} key='four'/>
                             </CustomLink>
                         </div>
