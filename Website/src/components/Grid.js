@@ -43,6 +43,7 @@ import fourth from '../tiles/fourth.jpg'
 import comatose from '../tiles/comatose.jpg'
 import passage from '../tiles/passage.jpg'
 import touch from '../tiles/touch.jpg'
+import supersynthesis from '../tiles/supersynthesis.jpg'
 
 const styles = {
     gridContainer: {
@@ -141,8 +142,14 @@ class Grid extends React.Component {
             {
                 'img': momentofenigma,
                 'title': 'Moment of Enigma',
-                'keywords': ['2020', 'Holon', 'Interactive', 'Exhibitions', 'Net Art', 'Silkcube'],
+                'keywords': ['2020', 'Holon', 'Interactive', 'Exhibitions', 'Net Art'],
                 'link': 'momentofenigma'
+            },
+            {
+                'img': supersynthesis,
+                'title': 'Supersynthesis',
+                'keywords': ['2022', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
+                'link': 'supersynthesis'
             },
             {
                 'img': passage,

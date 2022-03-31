@@ -46,6 +46,7 @@ import FourthDimension from '../projects/FourthDimension.js'
 import EmbroidererdTouch from '../projects/EmbroidererdTouch.js'
 import LostPassage from '../projects/LostPassage.js'
 import Liarbirds from '../projects/Liarbirds.js'
+import Supersynthesis from '../projects/Supersynthesis.js'
 
 const styles = {
   container: {
@@ -114,6 +115,7 @@ function App() {
             <Route path="/Works"><Title /><Grid /></Route>
             <Route path="/Bio"><Title /><Bio /></Route>
             <Route path="/About"><Title /><About /></Route>
+            <Route path="/supersynthesis"><Supersynthesis /></Route>
             <Route path="/momentofenigma"><MomentofEnigma /></Route>
             <Route path="/liarbirds"><Liarbirds /></Route>
             <Route path="/lostpassage"><LostPassage /></Route>
