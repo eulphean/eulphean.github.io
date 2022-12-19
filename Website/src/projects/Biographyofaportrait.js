@@ -23,7 +23,7 @@ const styles={
     }
 }
 
-const body=<span><CustomLink to='https://biographyofaportrait.art' inline={true}>Biography of a Portrait</CustomLink> is a net art commission for Chicago-based interdisciplinary artist <CustomLink to='https://jennifertrainadorge.com/' inline={true}>Jennifer Traina-Dorge</CustomLink> to develop an interactive web experience in response to the grief and loss she experienced due to the pandemic. The work is divided into three phases: Today - Tomorrow - Yesterday. Every day of the week is represented by a video snippet that she recorded during quarantine and is a marker in the seven stages of grief. The work culminates in a virtual aesthetic that one can experience intimately through the comfort of their devices.</span>
+const body=<span><CustomLink to='https://biographyofaportrait.art' inline={true}>Biography of a Portrait</CustomLink> is a net art commission for Chicago-based interdisciplinary artist <CustomLink to='https://sites.saic.edu/gradshow2020/artists/jennifer-traina-dorge/' inline={true}>Jennifer Traina-Dorge</CustomLink> to develop an interactive web experience in response to the grief and loss she experienced due to the pandemic. The work is divided into three phases: Today - Tomorrow - Yesterday. Every day of the week is represented by a video snippet that she recorded during quarantine and is a marker in the seven stages of grief. The work culminates in a virtual aesthetic that one can experience intimately through the comfort of their devices.</span>
 
 class BiographyofaPortrait extends React.Component {
   constructor(props) {
@@ -54,9 +54,9 @@ class BiographyofaPortrait extends React.Component {
                     <img style={commonWorkStyles.threeImages} alt={'Six'} src={one}/>
                 </div>
               </div>
-              <div style={commonWorkStyles.imgContainer}>
+              {/* <div style={commonWorkStyles.imgContainer}>
                 <iframe title={'Biography of a Portrait'} style={commonWorkStyles.webFrame} src={'https://biographyofaportrait.art'}></iframe>
-              </div>
+              </div> */}
             </div>
         </div>
     );

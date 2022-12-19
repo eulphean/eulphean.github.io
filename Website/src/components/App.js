@@ -47,6 +47,8 @@ import EmbroidererdTouch from '../projects/EmbroidererdTouch.js'
 import LostPassage from '../projects/LostPassage.js'
 import Liarbirds from '../projects/Liarbirds.js'
 import Supersynthesis from '../projects/Supersynthesis.js'
+import WorldThatAwaits from '../projects/WorldThatAwaits.js'
+import AndTheHungryWereFed from '../projects/AndTheHungryWereFed.js'
 
 const styles = {
   container: {
@@ -115,6 +117,8 @@ function App() {
             <Route path="/Works"><Title /><Grid /></Route>
             <Route path="/Bio"><Title /><Bio /></Route>
             <Route path="/About"><Title /><About /></Route>
+            <Route path="/andthehungrywerefed"><AndTheHungryWereFed /></Route>
+            <Route path="/worldthatawaits"><WorldThatAwaits /></Route>
             <Route path="/supersynthesis"><Supersynthesis /></Route>
             <Route path="/momentofenigma"><MomentofEnigma /></Route>
             <Route path="/liarbirds"><Liarbirds /></Route>
@@ -148,7 +152,7 @@ function App() {
             <Route path="/EarthLens"><Earthlens /></Route>
             <Route path="/MagicMic"><MagicMic /></Route>
             <Route path="/Skype"><Skype /></Route>
-            <Route path="/"><Title /><About /></Route>
+            <Route path="/"><Title /><Grid /></Route>
           </Switch>
         </Router>
         <div style={styles.empty}>

@@ -70,6 +70,7 @@ class GridFilterer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            is2022: false,
             is2021: false,
             is2020: false,
             is2019: false,
@@ -97,25 +98,26 @@ class GridFilterer extends React.Component {
         return (
             <div style={styles.container}>
                 <div style={styles.innerContainer}>
+                    <CustomButton isActive={this.state.is2022} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2022'}</CustomButton>
                     <CustomButton isActive={this.state.is2021} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2021'}</CustomButton>
                     <CustomButton isActive={this.state.is2020} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2020'}</CustomButton>
                     <CustomButton isActive={this.state.is2019} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2019'}</CustomButton>
                     <CustomButton isActive={this.state.is2018} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2018'}</CustomButton>
-                    <CustomButton isActive={this.state.is2017} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2017'}</CustomButton>
+                    {/* <CustomButton isActive={this.state.is2017} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2017'}</CustomButton> */}
                 </div>
-                <div style={styles.innerContainer}>
+                {/*<div style={styles.innerContainer}>
                     <CustomButton isActive={this.state.isExhibitions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Exhibitions'}</CustomButton>
                     <CustomButton isActive={this.state.isNetArt} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Net Art'}</CustomButton>
                     <CustomButton isActive={this.state.isArtificialLife} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Artificial Life'}</CustomButton>
                     <CustomButton isActive={this.state.isInteractive} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Interactive'}</CustomButton>
                     <CustomButton isActive={this.state.isExtendedReality} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Extended Reality'}</CustomButton>
                     {/* <CustomButton isActive={this.state.isSilkcube} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Silkcube'}</CustomButton> */}
-                    <CustomButton isActive={this.state.isSound} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Sound'}</CustomButton>
+                    {/*<CustomButton isActive={this.state.isSound} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Sound'}</CustomButton>
                     <CustomButton isActive={this.state.isHolon} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Holon'}</CustomButton>
                     <CustomButton isActive={this.state.isEcology} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Ecology'}</CustomButton>
                     <CustomButton isActive={this.state.isBlockchain} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Blockchain'}</CustomButton>
                     <CustomButton isActive={this.state.isCommissions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Commissions'}</CustomButton>
-                </div>
+                </div> */}
             </div>
         );
     }
@@ -171,6 +173,13 @@ class GridFilterer extends React.Component {
 
     setYearState(year) {
         switch(year) {
+            case '2022': {
+                this.setState({
+                    is2022: !this.state.is2022
+                }); 
+                break; 
+            }
+
             case '2021': {
                 this.setState({
                     is2021: !this.state.is2021

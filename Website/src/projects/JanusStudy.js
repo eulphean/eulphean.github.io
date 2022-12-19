@@ -44,7 +44,7 @@ class JanusStudy extends React.Component {
               <div style={commonWorkStyles.body}>
                 {bodyA}
                 {bodyB}
-                {linkA}
+                {/* {linkA} */}
               </div>
               <div style={commonWorkStyles.imgContainer}>
                  <img style={commonWorkStyles.oneImage} alt={'janus'} src={janus}/>

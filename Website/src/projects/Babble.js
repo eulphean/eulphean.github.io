@@ -21,7 +21,7 @@ const styles={
     }
 }
 
-const body=<span><CustomLink to='https://amaykataria.com/Babble-Wall' inline={true}>Babble</CustomLink> is an interactive chat bot. It has a tendency to overhear conversations in a crowd or be directly provoked by someone speaking into the microphone. By using technologies like NLP (natural language processing), it reinterprets the spoken words and extracts emotion and keywords from it. Babble uses these extractions to emotionally, visually, and aurally respond to what it hears.</span>;
+const body=<span><CustomLink to='https://amaykataria.com/Babble/' inline={true}>Babble</CustomLink> is an interactive chat bot. It has a tendency to overhear conversations in a crowd or be directly provoked by someone speaking into the microphone. By using technologies like NLP (natural language processing), it reinterprets the spoken words and extracts emotion and keywords from it. Babble uses these extractions to emotionally, visually, and aurally respond to what it hears.</span>;
 
 class Babble extends React.Component {
   constructor(props) {
@@ -47,9 +47,9 @@ class Babble extends React.Component {
                     <img style={commonWorkStyles.threeImages} alt={'tvB'} src={tvB}/>
                     <img style={commonWorkStyles.threeImages} alt={'tvC'} src={tvC}/>
                   </div>
-                <div style={commonWorkStyles.imgContainer}>
+                {/* <div style={commonWorkStyles.imgContainer}>
                     <iframe title={'Babble'} style={commonWorkStyles.webFrame} src={'https://amaykataria.com/Babble-Wall'}></iframe>
-                </div>
+                </div> */}
                 </div>
             </div>
         </div>

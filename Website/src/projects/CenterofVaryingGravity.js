@@ -47,9 +47,9 @@ class CenterofVaryingGravity extends React.Component {
                     <img style={commonWorkStyles.threeImages} alt={'Three'} src={three}/>
                 </div>
               </div>
-              <div style={commonWorkStyles.imgContainer}>
+              {/* <div style={commonWorkStyles.imgContainer}>
                 <iframe title={'Center of (Varying) Gravity'} style={commonWorkStyles.webFrame} src={'http://covg.art'}></iframe>
-              </div>
+              </div> */}
               <div style={containerStyle}>
                 <iframe title={'Center of (Varying) Gravity'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/523963986" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
               </div>

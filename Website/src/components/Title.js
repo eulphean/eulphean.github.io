@@ -59,8 +59,8 @@ const styles={
 
 function Title() {
     let curRoute = useLocation().pathname; 
-    let aboutState = curRoute === '/About' || curRoute === '/'; 
-    let workState = curRoute === '/Works'; 
+    let aboutState = curRoute === '/About'; 
+    let workState = curRoute === '/Works' || curRoute === '/'; 
     let cvState = curRoute === '/Bio'; 
 
     return (

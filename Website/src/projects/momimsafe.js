@@ -60,9 +60,9 @@ class momimsafe extends React.Component {
               <div style={commonWorkStyles.imgContainer}>
                 <iframe title={'momimsafe.live'} style={commonWorkStyles.webFrame} src={'https://momimsafe.live'}></iframe>
               </div>
-              <div style={commonWorkStyles.imgContainer}>
+              {/* <div style={commonWorkStyles.imgContainer}>
                 <iframe title={'virtual printer'} style={commonWorkStyles.webFrame} src={'https://momimsafe.live/#/printer'}></iframe>
-              </div>
+              </div> */}
               <div style={commonWorkStyles.imgContainer}>
                 <img style={commonWorkStyles.oneImage} alt={'momimsafe'} src={momsafe}/>
               </div>
