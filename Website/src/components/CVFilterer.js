@@ -11,7 +11,7 @@ const styles={
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        marginLeft: '-' + padding.extraSmall,
+        marginLeft: '-' + padding.verySmall,
         marginTop: padding.small,
         marginBottom: padding.verySmall
     },
@@ -25,10 +25,11 @@ const styles={
     button: {
         fontFamily: fontFamily.bebas,
         fontSize: fontSize.small,
-        padding: padding.verySmall,
-        backgroundColor: color.deepBlue,
-        color: color.featherWhite,
-        boxShadow: boxShadow.alphaDeepBlueSoft,
+        padding: padding.extraSmall,
+        background: 'none',
+        color: color.deepBlue,
+        backgroundColor: 'transparent',
+        // boxShadow: boxShadow.alphaDeepBlueSoft,
         border: 'inherit',
         margin: padding.extraSmall,
         opacity: '95%',
@@ -43,7 +44,7 @@ const styles={
         },
 
         '@media (min-width: 750px)': {  
-            padding: padding.small,
+            // padding: padding.extra,
             fontSize: fontSize.big
         },
 

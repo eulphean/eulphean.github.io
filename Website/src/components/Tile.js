@@ -8,15 +8,19 @@ const styles={
     container: {
         display: 'flex',
         position: 'relative',
-        margin: padding.extraSmall,
-        boxShadow: boxShadow.alphaDeepBlueSoft,
+        // marginBottom: padding.extraSmall,
+        // marginRight: padding.extraSmall,
+        // borderStyle: 'solid',
+        // borderWidth: '0.1px',
+        // borderColor: color.lightGrey,
+        // boxShadow: boxShadow.alphaDeepBlueSoft,
         height: '100%',
 
         // 3% is to accomodate the margins.
-        width: 'calc(100%/2 - 3%)',
+        width: 'calc(100%/2)',
 
         '@media (min-width: 450px)': {
-            width: 'calc(100%/3 - 2.5%)'
+            width: 'calc(100%/3)'
         },
 
         '@media (min-width: 600px)': {
@@ -24,8 +28,8 @@ const styles={
         },
 
         '@media (min-width: 750px)': {
-            margin: padding.verySmall,
-            width: 'calc(100%/3 - 2.5%)'
+            // margin: padding.verySmall,
+            width: 'calc(100%/3)'
         },
 
         '@media (min-width: 900px)': {
@@ -34,17 +38,19 @@ const styles={
 
         '@media (min-width: 1200px)': {
             // No changes
-            width: 'calc(100%/3 - 2.0%)'
+            width: 'calc(100%/3)'
         },
 
         '@media (min-width: 1400px)': {
             // No changes
-            width: 'calc(100%/3 - 1.5%)'
+            width: 'calc(100%/3)'
         },
         '@media (min-width: 1700px)': {
             // No changes
-            width: 'calc(100%/4 - 2.0%)',
-            margin: padding.small
+            width: 'calc(100%/4)',
+            // marginLeft: padding.small,
+            // marginBottom: padding.small,
+            // marginRight: padding.small
         }
     },
 
@@ -56,8 +62,12 @@ const styles={
         width: '100%',
         height: '100%',
         display: 'flex',
-        alignSelf: 'center'
+        alignSelf: 'center',
     }, 
+
+    imgGrayscale: {
+        filter: 'grayscale(100%)'
+    },
 
     hover: {
        visibility: 'visible'

@@ -11,8 +11,12 @@ const styles={
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        marginTop: padding.small,
-        marginBottom: padding.verySmall
+        // backgroundColor: color.deepBlue,
+        //paddingLeft: padding.extraSmall,
+        paddingTop: padding.small,
+        paddingBottom: padding.small
+        // marginTop: padding.small,
+        // marginBottom: padding.verySmall
     },
 
     innerContainer: {
@@ -22,14 +26,16 @@ const styles={
     }, 
 
     button: {
-        fontFamily: fontFamily.bebas,
-        fontSize: fontSize.small,
-        padding: padding.verySmall,
-        backgroundColor: color.deepBlue,
-        color: color.featherWhite,
-        boxShadow: boxShadow.alphaDeepBlueSoft,
+        fontFamily: fontFamily.din,
+        fontSize: fontSize.verySmall,
+        paddingLeft: padding.tinySmall,
+        paddingRight: padding.tinySmall,
+        color: color.deepBlue,
+        backgroundColor: 'transparent',
+        // boxShadow: boxShadow.alphaDeepBlueSoft,
         border: 'inherit',
-        margin: padding.extraSmall,
+        // marginLeft: padding.extraSmall,
+        marginRight: padding.small,
         opacity: '95%',
         letterSpacing: '2.0px',
 
@@ -42,8 +48,7 @@ const styles={
         },
 
         '@media (min-width: 750px)': {  
-            padding: padding.small,
-            fontSize: fontSize.big
+            fontSize: fontSize.small
         },
 
         '@media (min-width: 900px)': {
@@ -51,8 +56,7 @@ const styles={
         }, 
 
         '@media (min-width: 1200px)' : {
-            fontSize: fontSize.veryBig,
-            margin: padding.verySmall
+            fontSize: fontSize.big,
         },
 
         '@media (min-width: 1400px)' : {

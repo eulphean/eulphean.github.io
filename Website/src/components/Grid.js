@@ -46,13 +46,24 @@ import touch from '../tiles/touch.jpg'
 import supersynthesis from '../tiles/supersynthesis.jpg'
 import worldthatawaits from '../tiles/worldthatawaits.jpg'
 import andthehungrywerefed from '../tiles/andthehungrywerefed.jpg'
+import { padding } from './CommonStyles.js'
 
 const styles = {
     gridContainer: {
         display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center'
+    },
+
+    tileContainer: {
+        display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        paddingLeft: padding.tinySmall,
+        paddingRight: padding.tinySmall,
+        // backgroundColor: 'black'
     }
 }; 
 
@@ -79,7 +90,9 @@ class Grid extends React.Component {
         return (
             <div style={styles.gridContainer}>
                 <GridFilterer onKeywordSelected={this.onKeywordSelected.bind(this)} />
-                {this.state.tiles}
+                <div style={styles.tileContainer}>
+                    {this.state.tiles}
+                </div>
             </div>
         );
     }

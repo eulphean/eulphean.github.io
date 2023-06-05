@@ -5,17 +5,17 @@ import { color, boxShadow } from './CommonStyles.js'
 
 const styles={
     activeButton: {
-        backgroundColor: color.bloodRed,
+        backgroundColor: color.deepBlue,
         color: color.featherWhite,
-        boxShadow: boxShadow.alphaDeepBlue,
-        textShadow: {},
+        //boxShadow: boxShadow.alphaDeepBlue,
+        //textShadow: {},
         border: 'none'
     },
 
     // Style for hovering. 
     hoverButton: {
-        backgroundColor: color.darkGrey,
-        color: color.featherWhite,
+        //backgroundColor: color.deepBlue,
+        color: color.hoverRed,
         opacity: '95%'
     }
 };
@@ -33,7 +33,7 @@ class CustomButton extends React.Component {
 
     render() {
         let buttonStyle = this.props.buttonStyle; 
-        let isHovering = this.state.isHover && !this.props.isActive && !this.props.isStatic; 
+        let isHovering = this.state.isHover && !this.props.isStatic; 
 
         // Is it the button active? 
         buttonStyle = this.props.isActive ? [buttonStyle, styles.activeButton] : buttonStyle;   

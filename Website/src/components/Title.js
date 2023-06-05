@@ -7,18 +7,22 @@ const RadiumLink = Radium(Link);
 
 const styles={
     container: {
+        // backgroundColor: 'black',
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-start',
     },
 
     button: {
-        fontSize: fontSize.big,
+        fontSize: fontSize.small,
         color: color.deepBlue,
-        textShadow: textShadow.slateGrey,
-        fontFamily: fontFamily.bebas,
-        letterSpacing: '2.5px',
-        padding: padding.verySmall,
+        // textShadow: textShadow.slateGrey,
+        fontFamily: fontFamily.din,
+        letterSpacing: '1.0px',
+        paddingLeft: padding.tinySmall,
+        paddingRight: padding.tinySmall,
+        // marginLeft: padding.extraSmall,
+        marginRight: padding.small,
         backgroundColor: 'transparent',
         border: 'none',
 
@@ -27,16 +31,16 @@ const styles={
         },
 
         '@media (min-width: 600px)': {  
-            fontSize: fontSize.veryBig,
+            fontSize: fontSize.verySmall,
         },
 
         '@media (min-width: 750px)': {  
-            padding: padding.small,
-            fontSize: fontSize.extraBig,
+            // padding: padding.small,
+            fontSize: fontSize.small,
         },
 
         '@media (min-width: 900px)': {  
-            fontSize: fontSize.huge,
+            fontSize: fontSize.big,
         },
 
         '@media (min-width: 1200px)' : {
@@ -44,7 +48,7 @@ const styles={
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.veryHuge
+            // fontSize: fontSize.extraBig
         },
 
         '@media (min-width: 1700px)' : {
@@ -53,7 +57,7 @@ const styles={
     },
 
     title: {
-        letterSpacing: '3.0px'
+        letterSpacing: '1.5px'
     }
 };
 
@@ -66,25 +70,35 @@ function Title() {
     return (
         <div style={styles.container}>
             <CustomButton 
+                buttonStyle={styles.button} 
+                isActive={workState}
+            >
+                <RadiumLink to="/Works">WORKS</RadiumLink>
+            </CustomButton>
+            <CustomButton 
+                buttonStyle={styles.button} 
+                isActive={cvState}
+            >
+                <RadiumLink to="/Bio">COMMISSIONS</RadiumLink>
+            </CustomButton>
+            <CustomButton 
+                buttonStyle={styles.button} 
+                isActive={cvState}
+            >
+                <RadiumLink to="/Bio">ARCHIVE</RadiumLink>
+            </CustomButton>
+            <CustomButton 
+                buttonStyle={styles.button} 
+                isActive={cvState}
+            >
+                <RadiumLink to="/Bio">CV</RadiumLink>
+            </CustomButton>
+            <CustomButton 
                 buttonStyle={[styles.button, styles.title]}
                 isActive={aboutState} 
             >
-                <RadiumLink to="/About">AMAY KATARIA</RadiumLink>
+                <RadiumLink to="/About">ABOUT</RadiumLink>
             </CustomButton>
-            <div>
-                <CustomButton 
-                    buttonStyle={styles.button} 
-                    isActive={workState}
-                >
-                    <RadiumLink to="/Works">Works</RadiumLink>
-                </CustomButton>
-                <CustomButton 
-                    buttonStyle={styles.button} 
-                    isActive={cvState}
-                >
-                    <RadiumLink to="/Bio">CV</RadiumLink>
-                </CustomButton>
-            </div>
         </div>
     );
 }

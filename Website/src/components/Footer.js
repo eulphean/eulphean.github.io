@@ -5,10 +5,10 @@ import { fontSize, padding, color, fontFamily } from './CommonStyles.js'
 const styles={
     container: {
         position: 'absolute',
-        bottom: 0,
+        bottom: 5,
         left: 0,
         right: 0,
-        backgroundColor: color.darkGrey,
+        //backgroundColor: color.deepBlue,
         marginTop: '20px'
     },
 
@@ -16,10 +16,10 @@ const styles={
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'center',
-      fontSize: fontSize.verySmall,
+      fontSize: fontSize.small,
       fontFamily: fontFamily.din,
       padding: padding.extraSmall,
-      color: color.featherWhite
+      color: color.deepBlue
     }
 }
 
@@ -34,7 +34,7 @@ class Footer extends React.Component {
     return (
         <div style={styles.container}>
             <div style={styles.content}>
-             © Amay Kataria 2021 All Rights Reserved
+             © Amay Kataria 2023 All Rights Reserved
             </div>
          </div>
     );

@@ -2,7 +2,8 @@ const color = {
     slateGrey: '#939DAE',
     darkGrey: '#6C7687',
     bloodRed: '#BA3B3B',
-    deepBlue: '#44536A',
+    deepBlue: '#292b2c',
+    lightGrey: '#bbbbbb',
     alphaDeepBlue: 'rgb(69, 83, 106, 60)',
     featherWhite: 'rgb(255, 255, 255)',
     hoverRed: 'rgb(210, 80, 80, 50)'
@@ -28,6 +29,7 @@ const fontSize = {
 
 const padding = {
     // Increments of 4
+    tinySmall: '2px',
     extraSmall: '4px',
     verySmall: '8px',
     small: '12px',
