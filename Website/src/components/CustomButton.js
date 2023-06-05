@@ -7,7 +7,8 @@ const styles={
     activeButton: {
         //backgroundColor: color.deepBlue,
         color: color.hoverRed,
-        boxShadow: boxShadow.alphaDeepBlueSoft,
+        // boxShadow: boxShadow.alphaDeepBlueSoft,
+        textDecoration: 'underline',
         //textShadow: {},
         //border: 'solid',
         //borderColor: color.deepBlue

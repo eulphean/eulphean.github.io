@@ -101,6 +101,7 @@ const boxShadow = {
 const commonWorkStyles = {
     body: {
         fontFamily: fontFamily.din,
+        paddingLeft: padding.extraSmall,
         fontSize: fontSize.small,
         color: color.deepBlue,
         border: 'inherit',
@@ -312,56 +313,18 @@ const commonWorkStyles = {
 const cvStyles= {
     container: {
         display: 'flex',
-        marginTop: padding.big,
+        marginLeft: padding.extraSmall,
+        marginTop: padding.verySmall,
         marginBottom: padding.small,
         flexDirection: 'column'
     },
 
     heading: {
         fontFamily: fontFamily.bebas,
-        fontSize: fontSize.big,
+        fontSize: fontSize.small,
         color: color.deepBlue,
         letterSpacing: '2px',
         textDecoration: 'underline',
-
-        '@media (min-width: 450px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 600px)': {  
-            fontSize: fontSize.veryBig
-        },
-
-        '@media (min-width: 750px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 900px)': {  
-            // no change.
-            fontSize: fontSize.extraBig,
-            
-        },
-
-        '@media (min-width: 1200px)' : {
-            
-        },
-
-        '@media (min-width: 1400px)' : {
-            fontSize: fontSize.huge,
-        },
-
-        '@media (min-width: 1700px)' : {
-            // no change.
-        }
-    },
-
-    entry: {
-        marginTop: padding.small,
-        fontFamily: fontFamily.din,
-        fontSize: fontSize.small,
-        color: color.deepBlue,
-        letterSpacing: '1px',
-        lineHeight: '1.5',
 
         '@media (min-width: 450px)': {  
             // no change.
@@ -386,7 +349,46 @@ const cvStyles= {
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.extraBig,
+            // fontSize: fontSize.big,
+        },
+
+        '@media (min-width: 1700px)' : {
+            // no change.
+        }
+    },
+
+    entry: {
+        marginTop: padding.tinySmall,
+        fontFamily: fontFamily.din,
+        fontSize: fontSize.small,
+        color: color.deepBlue,
+        letterSpacing: '1px',
+        lineHeight: '1.5',
+
+        '@media (min-width: 450px)': {  
+            // no change.
+        },
+
+        '@media (min-width: 600px)': {  
+            fontSize: fontSize.big
+        },
+
+        '@media (min-width: 750px)': {  
+            // no change.
+        },
+
+        '@media (min-width: 900px)': {  
+            // no change.
+            fontSize: fontSize.big,
+            
+        },
+
+        '@media (min-width: 1200px)' : {
+            
+        },
+
+        '@media (min-width: 1400px)' : {
+            fontSize: fontSize.big,
         },
 
         '@media (min-width: 1700px)' : {
@@ -396,7 +398,7 @@ const cvStyles= {
 
     title: {
         fontStyle: 'italic',
-        textShadow: textShadow.slateGrey
+        // textShadow: textShadow.slateGrey
     }, 
 
     tab: {

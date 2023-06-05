@@ -29,7 +29,6 @@ import virtues from '../tiles/virtues.jpg'
 import earthlens from '../tiles/earthlens.jpg'
 import skype from '../tiles/skype.jpg'
 import sonicnegotiation from '../tiles/sonicnegotiation.jpg'
-// import unnamed from '../tiles/unnamed.jpg'
 import bendtherules from '../tiles/bendtherules.jpg'
 import momimsafe from '../tiles/momimsafe.jpg'
 import janus from '../tiles/janus.jpeg'
@@ -47,6 +46,12 @@ import supersynthesis from '../tiles/supersynthesis.jpg'
 import worldthatawaits from '../tiles/worldthatawaits.jpg'
 import andthehungrywerefed from '../tiles/andthehungrywerefed.jpg'
 import { padding } from './CommonStyles.js'
+
+export const Grid_Type = {
+    WORKS: 0,
+    COMMISSIONS: 1, 
+    ARCHIVE: 2
+}; 
 
 const styles = {
     gridContainer: {
@@ -68,6 +73,12 @@ const styles = {
 class Grid extends React.Component {
     constructor(props) {
         super(props);
+
+        // Prepare these projects.
+        this.workProjects = ''; 
+        this.commissionProjects = '';
+        this.archiveProjects = '';
+        this.newProjects = '';
         this.allocateProjects(); 
 
         // Filter projects that are not archived. 
@@ -80,8 +91,50 @@ class Grid extends React.Component {
         // }); 
 
         this.state = {
-            tiles: this.createTiles(this.allProjects)
+            tiles: ''
         }
+    }
+
+    componentDidMount() {
+        this.updateTiles();
+    }
+
+    componentDidUpdate(prevProps) {
+        // Grid Type has changed - prepare new tiles.
+        if (this.props.gridType !== prevProps.gridType) {
+            this.updateTiles();
+        }
+    }
+
+    updateTiles() {
+        // Check what props did we get?
+        switch(this.props.gridType) {
+            case Grid_Type.WORKS: {
+                this.allProjects = this.workProjects
+                break;
+            }
+
+            case Grid_Type.COMMISSIONS: {
+                this.allProjects = this.commissionProjects;
+                break;
+            }
+
+            case Grid_Type.ARCHIVE: {
+                this.allProjects = this.archiveProjects;
+                break;
+            }
+
+            default: {
+                this.allProjects = this.workProjects;
+                break;
+            }
+        }
+
+        const newTiles = this.createTiles(this.allProjects); 
+        // Update state with new tiles.
+        this.setState({
+            tiles: newTiles
+        });
     }
 
     render() {
@@ -151,7 +204,7 @@ class Grid extends React.Component {
 
     allocateProjects() {
         // Push every imported image into this array. 
-        this.allProjects = [
+        this.workProjects = [
             {
                 'img': andthehungrywerefed,
                 'title': 'And The Hungry Were Fed',
@@ -182,41 +235,11 @@ class Grid extends React.Component {
                 'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Extended Reality', 'Artificial Life'],
                 'link': 'lostpassage'
             },
-            // {
-            //     'img': touch,
-            //     'title': 'Embroidered Touch',
-            //     'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Commissions'],
-            //     'link': 'touch'
-            // },
             {
                 'img': kids,
                 'title': 'Kid Games',
                 'keywords': ['2021', 'Interactive', 'Extended Reality'],
                 'link': 'kidgames'
-            },
-            // {
-            //     'img': comatose,
-            //     'title': 'Project Comatose',
-            //     'keywords': ['2021', 'Interactive', 'Extended Reality', 'Artificial Life'],
-            //     'url': 'http://amay.openforum.so'
-            // },
-            // {
-            //     'img': clouds,
-            //     'title': 'Biography of a Portrait',
-            //     'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Commissions'],
-            //     'link': 'biography'
-            // },
-            {
-                'img': fourth,
-                'title': 'Fourth Dimension',
-                'keywords': ['2020', 'Interactive', 'Extended Reality'],
-                'link': 'fourthdimension'
-            },
-            {
-                'img': liarbirds,
-                'title': 'Liarbirds',
-                'keywords': ['2020', 'Interactive', 'Extended Reality', 'Net Art', 'Silkcube', 'Sound', 'Artificial Life', 'Commissions', 'Ecology'],
-                'link': 'liarbirds'
             },
             {
                 'img': timekeepers,
@@ -284,110 +307,142 @@ class Grid extends React.Component {
                 'link': 'PostCryptocollectible',
                 'keywords': ['2018', 'Blockchain']
             }, 
-            // {
-            //     'img': breathfoliage,
-            //     'link': 'BreathFoliage',
-            //     'title': 'Breath Foliage',
-            //     'keywords': ['2018', 'Ecology', 'Interactive']
-            // },
             {
                 'img': generativedecay,
                 'link': 'GenerativeDecay',
                 'title': 'Generative Decay',
                 'keywords': ['2018', 'Ecology']
+            }
+        ];
+
+        this.commissionProjects = [
+            {
+                'img': touch,
+                'title': 'Embroidered Touch',
+                'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Commissions'],
+                'link': 'touch'
             },
-            // {
-            //     'img': twodegreeproject,
-            //     'link': 'TwoDegreeProject',
-            //     'title': 'Two Degree Project',
-            //     'keywords': ['2020', 'Ecology', 'Interactive', 'Net Art'],
-            //     'url': 'https://amaykataria.com/Two-Degree-Window-Online/'
-            // }, 
-            // {
-            //     'img': bombaybeach,
-            //     'link': 'BombayBeach',
-            //     'title': 'Silent City',
-            //     'keywords': ['2020', 'Ecology', 'Extended Reality']
-            // },
-            // {
-            //     'img': encryptionarchive,
-            //     'link': 'EncryptionArchive',
-            //     'title': 'Encryption Archive',
-            //     'keywords': ['2019', 'Interactive', 'Commissions', 'Net Art'],
-            //     'url': 'https://encryptionarchive.net'
-            // },
-            // {
-            //     'img': ethereumfarm,
-            //     'title': 'Ethereum Farm',
-            //     'link': 'EthereumFarm',
-            //     'keywords': ['2019', 'Blockchain', 'Commissions', 'Net Art']
-            // },
-            // {
-            //     'img': threeecologies,
-            //     'link': 'ThreeEcologies',
-            //     'title': 'Three Ecologies',
-            //     'keywords': ['2019', 'Ecology', 'Commissions']
-            // },
-            // {
-            //     'img': bendtherules,
-            //     'title': 'Bend the Rules',
-            //     'link': 'BendTheRules',
-            //     'keywords': ['2019', 'Interactive', 'Net Art']
-            // },
-            // {
-            //     'img': speculativebitcoinwallet,
-            //     'link': 'SpeculativeBitcoinWallet',
-            //     'title': 'Speculative Bitcoin Wallet',
-            //     'keywords': ['2018', 'Blockchain', 'Interactive', 'Net Art'],
-            //     'url': 'https://www.speculativebitcoinwallet.com/'
-            // }, 
-            // {
-            //     'img': unnamed,
-            //     'link': 'Unnamed',
-            //     'keywords': ['2017', 'Archive', 'Interactive']
-            // },
-            // {
-            //     'img': parabolicsound,
-            //     'link': 'ParabolicSound',
-            //     'title': 'Parabolic Sound',
-            //     'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
-            // },
-            // {
-            //     'img': treeoflife,
-            //     'link': 'TreeOfLife',
-            //     'title': 'Tree of Life',
-            //     'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
-            // },
-            // {
-            //     'img': sonicnegotiation,
-            //     'link': 'SonicNegotiations',
-            //     'title': 'Sonic Negotiations',
-            //     'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
-            // },
-            // {
-            //     'img': virtues,
-            //     'link': 'Virtues',
-            //     'title': 'Virtues',
-            //     'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
-            // },
-            // {
-            //     'img': skype,
-            //     'link': 'Skype',
-            //     'title': 'Skype',
-            //     'keywords': ['2017', 'Archive', 'Interactive']
-            // },
-            // {
-            //     'img': magicmic,
-            //     'link': 'MagicMic',
-            //     'title': 'Magic Mic',
-            //     'keywords': ['2017', 'Archive', 'Interactive']
-            // },
-            // {
-            //     'img': earthlens,
-            //     'link': 'EarthLens',
-            //     'title': 'Earth Lens',
-            //     'keywords': ['2017', 'Archive', 'Interactive']
-            // }
+            {
+                'img': liarbirds,
+                'title': 'Liarbirds',
+                'keywords': ['2020', 'Interactive', 'Extended Reality', 'Net Art', 'Silkcube', 'Sound', 'Artificial Life', 'Commissions', 'Ecology'],
+                'link': 'liarbirds'
+            },
+            {
+                'img': clouds,
+                'title': 'Biography of a Portrait',
+                'keywords': ['2020', 'Interactive', 'Net Art', 'Sound', 'Commissions'],
+                'link': 'biography'
+            },
+            {
+                'img': fourth,
+                'title': 'Fourth Dimension',
+                'keywords': ['2020', 'Interactive', 'Extended Reality'],
+                'link': 'fourthdimension'
+            },
+            {
+                'img': encryptionarchive,
+                'link': 'EncryptionArchive',
+                'title': 'Encryption Archive',
+                'keywords': ['2019', 'Interactive', 'Commissions', 'Net Art'],
+                'url': 'https://encryptionarchive.net'
+            },
+            {
+                'img': ethereumfarm,
+                'title': 'Ethereum Farm',
+                'link': 'EthereumFarm',
+                'keywords': ['2019', 'Blockchain', 'Commissions', 'Net Art']
+            },
+            {
+                'img': threeecologies,
+                'link': 'ThreeEcologies',
+                'title': 'Three Ecologies',
+                'keywords': ['2019', 'Ecology', 'Commissions']
+            }
+        ];
+
+        this.archiveProjects = [
+            {
+                'img': comatose,
+                'title': 'Project Comatose',
+                'keywords': ['2021', 'Interactive', 'Extended Reality', 'Artificial Life'],
+                'url': 'http://amay.openforum.so'
+            },
+            {
+                'img': twodegreeproject,
+                'link': 'TwoDegreeProject',
+                'title': 'Two Degree Project',
+                'keywords': ['2020', 'Ecology', 'Interactive', 'Net Art'],
+                'url': 'https://amaykataria.com/Two-Degree-Window-Online/'
+            }, 
+            {
+                'img': bombaybeach,
+                'link': 'BombayBeach',
+                'title': 'Silent City',
+                'keywords': ['2020', 'Ecology', 'Extended Reality']
+            },
+            {
+                'img': bendtherules,
+                'title': 'Bend the Rules',
+                'link': 'BendTheRules',
+                'keywords': ['2019', 'Interactive', 'Net Art']
+            },
+            {
+                'img': speculativebitcoinwallet,
+                'link': 'SpeculativeBitcoinWallet',
+                'title': 'Speculative Bitcoin Wallet',
+                'keywords': ['2018', 'Blockchain', 'Interactive', 'Net Art'],
+                'url': 'https://www.speculativebitcoinwallet.com/'
+            }, 
+
+            {
+                'img': breathfoliage,
+                'link': 'BreathFoliage',
+                'title': 'Breath Foliage',
+                'keywords': ['2018', 'Ecology', 'Interactive']
+            },
+            {
+                'img': parabolicsound,
+                'link': 'ParabolicSound',
+                'title': 'Parabolic Sound',
+                'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
+            },
+            {
+                'img': treeoflife,
+                'link': 'TreeOfLife',
+                'title': 'Tree of Life',
+                'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
+            },
+            {
+                'img': sonicnegotiation,
+                'link': 'SonicNegotiations',
+                'title': 'Sonic Negotiations',
+                'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
+            },
+            {
+                'img': skype,
+                'link': 'Skype',
+                'title': 'Skype',
+                'keywords': ['2017', 'Archive', 'Interactive']
+            },
+            {
+                'img': virtues,
+                'link': 'Virtues',
+                'title': 'Virtues',
+                'keywords': ['2017', 'Archive', 'Interactive', 'Sound']
+            },
+            {
+                'img': magicmic,
+                'link': 'MagicMic',
+                'title': 'Magic Mic',
+                'keywords': ['2017', 'Archive', 'Interactive']
+            },
+            {
+                'img': earthlens,
+                'link': 'EarthLens',
+                'title': 'Earth Lens',
+                'keywords': ['2017', 'Archive', 'Interactive']
+            }
         ];
     }
 }

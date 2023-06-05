@@ -67,7 +67,7 @@ const styles={
     }, 
 
     imgGrayscale: {
-        filter: 'grayscale(100%)'
+        // filter: 'grayscale(50%)'
     },
 
     hover: {

@@ -18,12 +18,12 @@ class Education extends React.Component {
             <div style={cvStyles.entry}>
                 <span>MFA, </span>
                 <span style={cvStyles.title}>{"Art & Technology Studies"}</span>
-                <span>{", School of the Art Institute of Chicago"}</span>
+                <span>{", School of the Art Institute of Chicago, May 2019"}</span>
             </div>
             <div style={cvStyles.entry}>
                 <span>BS, </span>
                 <span style={cvStyles.title}>{"Computer Engineering"}</span>
-                <span>{", Virginia Tech (Summa Cum Laude)"}</span>
+                <span>{", Virginia Tech (Summa Cum Laude), December 2012"}</span>
             </div>
         </div>
     );

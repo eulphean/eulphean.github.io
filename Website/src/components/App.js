@@ -11,7 +11,7 @@ import { percent, padding, color } from './CommonStyles.js'
 
 // Components
 import Title from './Title.js'
-import Grid from './Grid.js'
+import Grid, {Grid_Type} from './Grid.js'
 
 // Projects
 import Holon from '../projects/Holon.js'
@@ -26,7 +26,6 @@ import GrooveBody from '../projects/GrooveBody.js'
 import OntologyOfCryptocollectibles from '../projects/OntologyOfCryptocollectibles.js'
 import BreathFoliage from '../projects/BreathFoliage.js'
 import GenerativeDecay from '../projects/GenerativeDecay.js'
-import Unnamed from '../projects/Unnamed.js'
 import ParabolicSound from '../projects/ParabolicSound.js'
 import Earthlens from '../projects/Earthlens.js'
 import TreeOfLife from '../projects/TreeOfLife.js'
@@ -90,8 +89,8 @@ const styles = {
     },
 
     '@media (min-width: 1700px)' : {
-      paddingLeft: percent.fourteen,
-      paddingRight: percent.fourteen
+      paddingLeft: '26%',
+      paddingRight: '26%'
     }
   },
 
@@ -120,8 +119,10 @@ function App() {
         <Router basename={process.env.PUBLIC_URL}> 
           <ScrollToTop /> 
           <Switch>
-            <Route path="/Works"><Title /><Grid /></Route>
+            <Route path="/Works"><Title /><Grid gridType={Grid_Type.WORKS} /></Route>
             <Route path="/Bio"><Title /><Bio /></Route>
+            <Route path="/Commissions"><Title /><Grid gridType={Grid_Type.COMMISSIONS} /></Route>
+            <Route path="/Archive"><Title /><Grid gridType={Grid_Type.ARCHIVE} /></Route>
             <Route path="/About"><Title /><About /></Route>
             <Route path="/andthehungrywerefed"><AndTheHungryWereFed /></Route>
             <Route path="/worldthatawaits"><WorldThatAwaits /></Route>
@@ -150,7 +151,6 @@ function App() {
             <Route path="/PostCryptocollectible"><OntologyOfCryptocollectibles /></Route>
             <Route path="/BreathFoliage"><BreathFoliage /></Route>
             <Route path="/GenerativeDecay"><GenerativeDecay /></Route>
-            <Route path="/Unnamed"><Unnamed /></Route>
             <Route path="/ParabolicSound"><ParabolicSound /></Route>
             <Route path="/TreeOfLife"><TreeOfLife /></Route>
             <Route path="/SonicNegotiations"><SonicNegotiation /></Route>

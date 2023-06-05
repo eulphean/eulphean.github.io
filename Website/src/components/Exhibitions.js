@@ -3,29 +3,82 @@ import Radium from 'radium'
 import { cvStyles } from './CommonStyles.js'
 import CustomLink from './CustomLink.js'
 
-const solo = [
+const solo = [ 
     {
-        title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
-        description: ', Mana Contemporary, Chicago, USA, 2020, ',
-        info: <CustomLink  to='https://www.flickr.com/gp/190621346@N04/5nMwCW' inline={true}>[info]</CustomLink>
+        title: <CustomLink to='https://amaykataria.com/#/andthehungrywerefed' italics={true} inline={true}>And The Hungry Were Fed</CustomLink>,
+        description: ', Stasjon K, Sandnes, Norway, 2022',
+        info:''
     }, 
     {
-        title: <span style={cvStyles.title} italics={true} inline={true}>Moment of Enigma</span>,
-        description: ', CADAF Online, 2020, ',
-        info: <CustomLink  to='https://amaykataria.com/#/momentofenigma' inline={true}>[info]</CustomLink>
+        title: <CustomLink to='https://amaykataria.com/#/supersynthesis' italics={true} inline={true}>Supersynthesis</CustomLink>,
+        description: ', MU Gallery, Chicago, USA, 2022',
+        info:''
     }, 
+    {
+        title: <CustomLink to="https://amaykataria.com/#/momentofenigma" italics={true} inline={true}>Moment of Enigma</CustomLink>,
+        description: ', Mana Contemporary, Chicago, USA, 2020',
+        info:''
+    }, 
+    {
+        title: <CustomLink to='https://amaykataria.com/#/momentofenigma' inline={true}>Moment of Enigma</CustomLink>,
+        description: ', CADAF Online, 2020',
+        info: ''
+    }, 
+];
+
+const curatorial = [
+    {
+        title: <CustomLink to="https://amaykataria.com/#/worldthatawaits" italics={true} inline={true}>World That Awaits</CustomLink>,
+        description: ', MU Gallery, Chicago, USA, 2022',
+        info:''
+    }
 ];
 
 const group = [
     {
-        title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
-        description: ', Singapore Sustainabale Gallery, Singapore, (Upcoming) 2022, ',
-        info: <CustomLink  to='https://www.pub.gov.sg/marinabarrage/ssg' inline={true}>[info]</CustomLink>
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/lostpassage' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', Future Fantastic Festival, Bangalore, India, 2022, ',
+        info: <CustomLink  to='https://futurefantastic.in/' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/lostpassage' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', Tech Art Teaser by BeFantastic, Bangalore, India, 2022, ',
+        info: <CustomLink  to='https://www.picuki.com/media/2983005679710733570' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/lostpassage' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', FutuRetro, Athens Digital Arts Festival, Online, 2022, ',
+        info: <CustomLink  to='https://www.adaf.gr/' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/kidgames' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', Responsive Eye, Onyx Studios, New York, 2022, ',
+        info: <CustomLink  to='https://happeningnext.com/event/peter-burrs-responsive-eye-eid4snvqgalws1' inline={true}>[info]</CustomLink>
     },
     {
         title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
-        description: ', In Good Company, Mana Contemporary, Chicago, USA, (Upcoming) 2021, ',
-        info: <CustomLink  to='https://befantastic.in/together/the-lost-passage/' inline={true}>[info]</CustomLink>
+        description: ', Can Tech Save the World and Art Heal It?, Singapore Sustainable Gallery, Singapore, 2022, ',
+        info: <CustomLink  to='https://francophonie.sg/can-tech-save-the-world-and-art-heal-it/' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/momimsafe' inline={true}>{"MOMIMSAFE"}</CustomLink>,
+        description: ', Going Home, Wilsonville Arts & Culture Council, Online, 2022, ',
+        info: <CustomLink  to='https://www.wilsonvillearts.org/going-home?pgid=kz3vdqln-3801ecc1-c24c-4abe-a6f3-d69fbe642a33' inline={true}>[info]</CustomLink>
+    },
+    {
+        title:<span><CustomLink italics={true} to='https://amaykataria.com/#/Holon' inline={true}>{"Holons & Holarchy"}</CustomLink><span>{' & '}</span><CustomLink italics={true} to='https://amaykataria.com/#/momimsafe' inline={true}>{"MOMIMSAFE"}</CustomLink></span>,
+        description: ', ARTExchange Exhibition, C33 Gallery, Columbia College, Chicago, USA, 2022, ',
+        info: <CustomLink  to='https://www.servicestoartists.com/artexchange2022' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <span><CustomLink italics={true} to='https://amaykataria.com/#/Janus' inline={true}>{"Janus Study"}</CustomLink><span>{' & '}</span><CustomLink italics={true} to='https://amaykataria.com/#/liarbirds' inline={true}>{"Liarbirds"}</CustomLink></span>,
+        description: ', MetaMeta curated by Jiaqi Li & Nicky Ni, Online, 2022, ',
+        info: <CustomLink  to='https://twitter.com/theTingDAO/status/1483962218853318656?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1483962218853318656%7Ctwgr%5E70b354b1afd4b639e7931be9881ce26c6398c190%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2FtheTingDAO2Fstatus2F1483962218853318656widget%3DTweet' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', In Good Company curated by S.Y. Lin, Mana Contemporary, Chicago, USA, 2021, ',
+        info: <CustomLink  to='https://www.manacontemporary.com/exhibition/monira-foundation-presents-in-good-company/' inline={true}>[info]</CustomLink>
     },
     {
         title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
@@ -274,16 +327,23 @@ class Exhibitions extends React.Component {
   render() {
     let gComps = this.formatProjects(group); 
     let sComps = this.formatProjects(solo)
+    let cComps = this.formatProjects(curatorial)
     return (
         <div style={cvStyles.container}>
             <div style={cvStyles.bottomSpace}>
                 <div style={cvStyles.heading}>
-                    SOLO EXHIBITIONS
+                    SOLO
                 </div>
                 { sComps }
             </div>
+            <div style={cvStyles.bottomSpace}>
+                <div style={cvStyles.heading}>
+                    CURATORIAL
+                </div>
+                { cComps }
+            </div>
             <div style={cvStyles.heading}>
-                GROUP EXHIBITIONS
+                GROUP
             </div>
             { gComps }
         </div>

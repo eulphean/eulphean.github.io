@@ -74,6 +74,7 @@ class GridFilterer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            is2023: false,
             is2022: false,
             is2021: false,
             is2020: false,
@@ -102,12 +103,13 @@ class GridFilterer extends React.Component {
         return (
             <div style={styles.container}>
                 <div style={styles.innerContainer}>
+                    <CustomButton isActive={this.state.is2023} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2023'}</CustomButton>
                     <CustomButton isActive={this.state.is2022} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2022'}</CustomButton>
                     <CustomButton isActive={this.state.is2021} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2021'}</CustomButton>
                     <CustomButton isActive={this.state.is2020} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2020'}</CustomButton>
                     <CustomButton isActive={this.state.is2019} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2019'}</CustomButton>
                     <CustomButton isActive={this.state.is2018} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2018'}</CustomButton>
-                    {/* <CustomButton isActive={this.state.is2017} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2017'}</CustomButton> */}
+                    <CustomButton isActive={this.state.is2017} buttonStyle={styles.button} onClick={this.onYearSelected.bind(this)}>{'2017'}</CustomButton>
                 </div>
                 {/*<div style={styles.innerContainer}>
                     <CustomButton isActive={this.state.isExhibitions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Exhibitions'}</CustomButton>
@@ -177,6 +179,13 @@ class GridFilterer extends React.Component {
 
     setYearState(year) {
         switch(year) {
+            case '2023': {
+                this.setState({
+                    is2023: !this.state.is2023
+                }); 
+                break; 
+            }
+
             case '2022': {
                 this.setState({
                     is2022: !this.state.is2022

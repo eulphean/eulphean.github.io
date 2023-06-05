@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Radium from 'radium'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { ReactComponent as Back } from '../icons/back.svg'
 import CustomButton from './CustomButton.js'
 import { fontSize, fontFamily, padding, color } from './CommonStyles.js'
@@ -127,39 +127,34 @@ const styles={
         opacity: '95%'
       }
 }
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isHover: false
-    };
+
+function Header (props) {
+  const [isHover, setHover] = useState(false);
+
+  const iconStyle = isHover ? [styles.iconContainer, styles.hover] : styles.iconContainer; 
+  const newRoute = useHistory()
+  console.log(newRoute);
+
+  const onHover = () => {
+    setHover(true);
   }
 
-  render() {
-    const iconStyle = this.state.isHover ? [styles.iconContainer, styles.hover] : styles.iconContainer; 
-    return (
-        <div style={styles.container}>
-            <CustomButton buttonStyle={styles.button} isActive={true}>{this.props.title}</CustomButton>
-            <RadiumLink to='/Works'>
-                <div onMouseEnter={this.onHover.bind(this)} onMouseLeave={this.onLeaveHover.bind(this)} style={iconStyle}>
-                  <Back style={styles.iconStyle}/>
-                </div>
-            </RadiumLink>
-        </div>
-    );
+  const onLeaveHover = () => {
+    setHover(false);
   }
 
-  onHover() {
-    this.setState({
-      isHover: true
-    });
+  const onMouseClick = () => {
+    newRoute.goBack();
   }
 
-  onLeaveHover() {
-    this.setState({
-      isHover: false
-    });
-  }
+  return (
+      <div style={styles.container}>
+          <CustomButton buttonStyle={styles.button} isStatic={true}>{props.title}</CustomButton>
+          <div onClick={onMouseClick} onMouseEnter={onHover} onMouseLeave={onLeaveHover} style={iconStyle}>
+            <Back style={styles.iconStyle}/>
+          </div>          
+      </div>
+  );
 }
 
 export default Radium(Header);

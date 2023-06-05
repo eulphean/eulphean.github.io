@@ -11,9 +11,12 @@ const styles={
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        marginLeft: '-' + padding.verySmall,
-        marginTop: padding.small,
-        marginBottom: padding.verySmall
+        // backgroundColor: color.deepBlue,
+        //paddingLeft: padding.extraSmall,
+        paddingTop: padding.small,
+        paddingBottom: padding.small
+        // marginTop: padding.small,
+        // marginBottom: padding.verySmall
     },
 
     innerContainer: {
@@ -23,15 +26,16 @@ const styles={
     }, 
 
     button: {
-        fontFamily: fontFamily.bebas,
-        fontSize: fontSize.small,
-        padding: padding.extraSmall,
-        background: 'none',
+        fontFamily: fontFamily.din,
+        fontSize: fontSize.verySmall,
+        paddingLeft: padding.tinySmall,
+        paddingRight: padding.tinySmall,
         color: color.deepBlue,
         backgroundColor: 'transparent',
         // boxShadow: boxShadow.alphaDeepBlueSoft,
         border: 'inherit',
-        margin: padding.extraSmall,
+        // marginLeft: padding.extraSmall,
+        marginRight: padding.small,
         opacity: '95%',
         letterSpacing: '2.0px',
 
@@ -44,8 +48,7 @@ const styles={
         },
 
         '@media (min-width: 750px)': {  
-            // padding: padding.extra,
-            fontSize: fontSize.big
+            fontSize: fontSize.small
         },
 
         '@media (min-width: 900px)': {
@@ -53,8 +56,7 @@ const styles={
         }, 
 
         '@media (min-width: 1200px)' : {
-            fontSize: fontSize.veryBig,
-            margin: padding.verySmall
+            fontSize: fontSize.big,
         },
 
         '@media (min-width: 1400px)' : {
@@ -85,21 +87,22 @@ class CVFilterer extends React.Component {
 
         // Maintain a list of selected keywords. 
         this.categories = [];  
+        this.onCategorySelected('Exhibitions');
     }
 
     render() {
         return (
             <div style={styles.container}>
                 <div style={styles.innerContainer}>
+                <CustomButton isActive={this.state.isEducation} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Education'}</CustomButton>
+                    {/* <CustomButton isActive={this.state.isWorkExperience} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Experience'}</CustomButton> */}
+                    {/* <CustomButton isActive={this.state.isSkills} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Skills'}</CustomButton> */}
                     <CustomButton isActive={this.state.isExhibitions} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Exhibitions'}</CustomButton>
                     <CustomButton isActive={this.state.isResidencies} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Residencies'}</CustomButton>
                     <CustomButton isActive={this.state.isAwards} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Awards'}</CustomButton>
-                    <CustomButton isActive={this.state.isPress} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Press'}</CustomButton>
                     <CustomButton isActive={this.state.isPublicTalks} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Public Talks'}</CustomButton>
                     <CustomButton isActive={this.state.isPublications} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Publications'}</CustomButton>
-                    <CustomButton isActive={this.state.isEducation} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Education'}</CustomButton>
-                    <CustomButton isActive={this.state.isSkills} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Skills'}</CustomButton>
-                    <CustomButton isActive={this.state.isWorkExperience} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Experience'}</CustomButton>
+                    <CustomButton isActive={this.state.isPress} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Press'}</CustomButton>
                 </div>
             </div>
         );

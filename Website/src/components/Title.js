@@ -66,6 +66,8 @@ function Title() {
     let aboutState = curRoute === '/About'; 
     let workState = curRoute === '/Works' || curRoute === '/'; 
     let cvState = curRoute === '/Bio'; 
+    let commissionState = curRoute === '/Commissions';
+    let archiveState = curRoute === '/Archive';
 
     return (
         <div style={styles.container}>
@@ -77,15 +79,15 @@ function Title() {
             </CustomButton>
             <CustomButton 
                 buttonStyle={styles.button} 
-                isActive={cvState}
+                isActive={commissionState}
             >
-                <RadiumLink to="/Bio">COMMISSIONS</RadiumLink>
+                <RadiumLink to="/Commissions">COMMISSIONS</RadiumLink>
             </CustomButton>
             <CustomButton 
                 buttonStyle={styles.button} 
-                isActive={cvState}
+                isActive={archiveState}
             >
-                <RadiumLink to="/Bio">ARCHIVE</RadiumLink>
+                <RadiumLink to="/Archive">ARCHIVE</RadiumLink>
             </CustomButton>
             <CustomButton 
                 buttonStyle={styles.button} 

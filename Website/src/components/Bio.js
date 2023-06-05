@@ -14,7 +14,7 @@ import WorkExperience from './WorkExperience.js'
 
 const styles={
     container: {
-        margin: padding.verySmall
+        // margin: padding.verySmall
     },
     
     bioMediaQuery: {

@@ -5,52 +5,29 @@ import CustomLink from './CustomLink'
 
 const experience = [
     {
-        title: <span style={cvStyles.title}>Freelance Creative Technologist</span>,
-        location: ', Chicago, USA, May 2019 - Current, ', 
-        info: 'Creative director for new media projects; user-experience research, design aesthetics, and creative software development.',
+        title: <span style={cvStyles.title}>New-Media Artist</span>,
+        location: ', Extended Art Studio, Chicago, USA, May 2019 - Current, ', 
         link: <CustomLink to='https://drive.google.com/file/d/1fn54t5pFyDD_Nm7kuc1biZQTiV7XaBuM/view?usp=sharing' inline={true}>[info]</CustomLink>
     },
     {
-        title: <span style={cvStyles.title}>Studio Assistant for Peter Burr</span>,
-        location: ', Mana Contemporary Chicago, USA, October 2020 - May 2021, ', 
-        info: 'Prototyping new extended reality experiences using Unity.',
-        link: <CustomLink to='http://www.peterburr.org/' inline={true}>[info]</CustomLink>
+        title: <span style={cvStyles.title}>Creative Technologist</span>,
+        location: ', Vibe Inc., Remote, May 2022 - July 2022, ', 
+        link: <CustomLink to='https://www.vibe.xyz/' inline={true}>[info]</CustomLink>
     },
     {
-        title: <span style={cvStyles.title}>Teaching Assistant</span>, 
-        location: ', School of the Art Institute of Chicago, Chicago, USA, 2017-2018, ',
-        info: 'Interactive Art & Intro to Computer Vision and Machine Learning with Christopher Baker, Kinetics and Computer Control with Jacob Tonski, Digital Light Projection with Jan Tichy.', 
-        link: <CustomLink to='https://github.com/SAIC-ATS/ARTTECH-3039' inline={true}>[info]</CustomLink>
+        title: <span style={cvStyles.title}>Full-Stack Software Engineer</span>, 
+        location: ', Anke Loh, Chicago, USA, June 2021 - September 2021, ',
+        link: <CustomLink to='http://ankeloh.net/2021/10/re-fream-embroidered-touch-life-space/#1' inline={true}>[info]</CustomLink>
     }, 
     {
-        title: <span style={cvStyles.title}>Lab Assistant</span>, 
-        location: ', School of the Art Institute of Chicago, Chicago, USA, 2017-2018, ',
-        info: 'Electronics & Kinetics Lab', 
-        link: <CustomLink to='https://www.saic.edu/academics/departments/art-and-technology-studies/resources' inline={true}>[info]</CustomLink>
+        title: <span style={cvStyles.title}>Technical Assistant</span>, 
+        location: ', Peter Burr, Chicago, USA, October 2020 - May 2021, ',
+        link: <CustomLink to='https://peterburr.org/kid.php' inline={true}>[info]</CustomLink>
     }, 
     {
-        title: <span style={cvStyles.title}>Light Engineer</span>, 
-        location: ', School of the Art Institute of Chicago, Chicago, USA, May 2018 - July 2018, ',
-        info: 'Expanded and engineered new Light Kits for Jan Tichy’s Digital Light Projection class; pcb design, fabrication samples, new Arduino library with demos and examples.', 
-        link: <CustomLink to='https://github.com/eulphean/RGB_LED' inline={true}>[info]</CustomLink>
-    }, 
-    {
-        title: <span style={cvStyles.title}>Software Engineer</span>, 
+        title: <span style={cvStyles.title}>Full-Stack Software Engineer</span>, 
         location: ', Microsoft Corporation, Seattle, USA, May 2013 - June 2017, ',
-        info: 'Skype for Consumers, Skype for Business, Windows Hyper-V', 
         link: <CustomLink to='https://amaykataria.com/#/Skype' inline={true}>[info]</CustomLink>
-    },
-    {
-        title: <span style={cvStyles.title}>Software Engineering Intern</span>, 
-        location: ', Qualcomm, San Diego, USA, May 2012 - August 2012',
-        info: '', 
-        link: ''
-    },
-    {
-        title: <span style={cvStyles.title}>Systems Solutions Engineering Intern</span>, 
-        location: ', Harris Corporation, Lynchburg, USA, January 2010 - August 2010',
-        info: '', 
-        link: ''
     }
 ];
 
@@ -79,9 +56,6 @@ class WorkExperience extends React.Component {
       let c = (
           <div key={components.length} style={cvStyles.entry}>
               {s.title}{s.location}{s.link}
-              <div>
-                  {s.info}
-              </div>
           </div>
       ); 
       components.push(c); 
