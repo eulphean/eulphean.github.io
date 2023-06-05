@@ -7,7 +7,7 @@ import About from './About.js'
 import Bio from './Bio.js'
 import Footer from './Footer.js'
 import ScrollToTop from './ScrollToTop.js'
-import { padding } from './CommonStyles.js'
+import { percent, padding, color } from './CommonStyles.js'
 
 // Components
 import Title from './Title.js'
@@ -52,40 +52,46 @@ import AndTheHungryWereFed from '../projects/AndTheHungryWereFed.js'
 
 const styles = {
   container: {
-    padding: padding.small,
+    // background: color.deepBlue,
+    paddingTop: padding.big,
     paddingBottom: padding.big,
+    paddingLeft: percent.two,
+    paddingRight: percent.two,
+    // padding: padding.small,
+    // paddingBottom: padding.big,
 
     '@media (min-width: 450px)': {  
-      padding: padding.big
+      // padding: percent.two
     },
 
     '@media (min-width: 600px)': {  
       // no change
+      // padding: percent.two
     },
 
     '@media (min-width: 750px)': {  
-      paddingLeft: padding.extraBig,
-      paddingRight: padding.extraBig
+      paddingLeft: percent.six,
+      paddingRight: percent.six
     },
 
     '@media (min-width: 900px)': {
-      paddingLeft: padding.massive,
-      paddingRight: padding.massive
+      paddingLeft: percent.eight,
+      paddingRight: percent.eight
     },
 
     '@media (min-width: 1200px)' : {
-      paddingLeft: padding.veryMassive,
-      paddingRight: padding.veryMassive
+      paddingLeft: percent.ten,
+      paddingRight: percent.ten
     },
 
     '@media (min-width: 1400px)' : {
-      paddingLeft: padding.extraMassive,
-      paddingRight: padding.extraMassive
+      paddingLeft: percent.twelve,
+      paddingRight: percent.twelve
     },
 
     '@media (min-width: 1700px)' : {
-      paddingLeft: padding.veryInsane,
-      paddingRight: padding.veryInsane
+      paddingLeft: percent.fourteen,
+      paddingRight: percent.fourteen
     }
   },
 

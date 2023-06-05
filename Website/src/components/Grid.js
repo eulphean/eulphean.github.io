@@ -52,16 +52,15 @@ const styles = {
     gridContainer: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
 
     tileContainer: {
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        alignItems: 'center',
         justifyContent: 'flex-start',
-        marginTop: '-' + padding.extraSmall,
+        marginTop: '-' + padding.tinySmall
         // backgroundColor: 'black'
     }
 }; 

@@ -55,6 +55,18 @@ const padding = {
     extraInsane: '240px'
 };
 
+const percent = {
+    two : '2%',
+    three: '3%',
+    four: '4%',
+    six: '6%',
+    eight: '8%',
+    ten: '10%',
+    twelve: '12%',
+    fourteen: '14%',
+    sixteen: '16%'
+}
+
 const textInputWidth = {
     small: '275px',
     medium: '300px',
@@ -396,4 +408,4 @@ const cvStyles= {
     }
 };
 
-export {color, fontSize, fontFamily, textInputWidth, textInputHeight, textShadow, boxShadow, padding, commonWorkStyles, cvStyles};
+export {percent, color, fontSize, fontFamily, textInputWidth, textInputHeight, textShadow, boxShadow, padding, commonWorkStyles, cvStyles};

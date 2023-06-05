@@ -9,52 +9,50 @@ const styles={
     container: {
         display: 'flex',
         position: 'relative',
-        // marginBottom: padding.verySmall,
-        // marginRight: padding.verySmall,
+        // marginBottom: padding.extraSmall,
+        // marginLeft: padding.extraSmall,
+        // marginRight: padding.extraSmall,
         // borderStyle: 'solid',
         // borderWidth: '0.1px',
         // borderColor: color.lightGrey,
         // boxShadow: boxShadow.alphaDeepBlueSoft,
-        marginRight: padding.extraSmall,
-        marginLeft: padding.extraSmall,
-        marginTop: padding.extraSmall,
-        marginBottom: padding.extraSmall,
+        margin: padding.extraSmall,
         height: '100%',
 
-        // 3% is to accomodate the margins.
-        width: 'calc(100%/2 - 2.3%)',
+        // To have space between images.
+         // 3% is to accomodate the margins.
+         width: 'calc(100%/2 - 2.3%)',
 
-        '@media (min-width: 450px)': {
-            width: 'calc(100%/3 - 2%)'
-        },
+         '@media (min-width: 450px)': {
+             width: 'calc(100%/3 - 1.9%)'
+         },
 
-        '@media (min-width: 600px)': {
-            width: 'calc(100%/3 - 1.5%)'
-        },
+         '@media (min-width: 600px)': {
+             width: 'calc(100%/3 - 1.4%)'
+         },
 
-        '@media (min-width: 750px)': {
-            margin: padding.extraSmall,
-            width: 'calc(100%/3 - 1.2%)'
-        },
+         '@media (min-width: 750px)': {
+             width: 'calc(100%/3 - 1.22%)'
+         },
 
-        '@media (min-width: 900px)': {
-            // No changes
-            width: 'calc(100%/3 - 1.1%)'
-        },
+         '@media (min-width: 900px)': {
+             // No changes
+             width: 'calc(100%/3 - 1.1%)'
+         },
 
-        '@media (min-width: 1200px)': {
-            // No changes
-            width: 'calc(100%/3 - 0.8%)'
-        },
+         '@media (min-width: 1200px)': {
+             // No changes
+             width: 'calc(100%/3 - 0.84%)'
+         },
 
-        '@media (min-width: 1400px)': {
-            // No changes
-            width: 'calc(100%/3 - 0.7%)'
-        },
-        '@media (min-width: 1700px)': {
-            // No changes
-            width: 'calc(100%/4 - 0.6%)'
-        }
+         '@media (min-width: 1400px)': {
+             // No changes
+             width: 'calc(100%/3 - 0.77%)'
+         },
+         '@media (min-width: 1700px)': {
+             // No changes
+             width: 'calc(100%/4 - 0.66%)'
+         }
     },
 
     link: {
@@ -180,3 +178,38 @@ class Tile extends React.Component {
 }
 
 export default Radium(Tile);
+
+// To have space between images.
+//  // 3% is to accomodate the margins.
+//  width: 'calc(100%/2 - 2.3%)',
+
+//  '@media (min-width: 450px)': {
+//      width: 'calc(100%/3 - 2%)'
+//  },
+
+//  '@media (min-width: 600px)': {
+//      width: 'calc(100%/3 - 1.5%)'
+//  },
+
+//  '@media (min-width: 750px)': {
+//      width: 'calc(100%/3 - 1.2%)'
+//  },
+
+//  '@media (min-width: 900px)': {
+//      // No changes
+//      width: 'calc(100%/3 - 1.1%)'
+//  },
+
+//  '@media (min-width: 1200px)': {
+//      // No changes
+//      width: 'calc(100%/3 - 0.8%)'
+//  },
+
+//  '@media (min-width: 1400px)': {
+//      // No changes
+//      width: 'calc(100%/3 - 0.7%)'
+//  },
+//  '@media (min-width: 1700px)': {
+//      // No changes
+//      width: 'calc(100%/4 - 0.45%)'
+//  }
