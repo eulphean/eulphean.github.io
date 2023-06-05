@@ -52,7 +52,7 @@ const styles = {
     gridContainer: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
 
     tileContainer: {
@@ -61,8 +61,7 @@ const styles = {
         flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        paddingLeft: padding.tinySmall,
-        paddingRight: padding.tinySmall,
+        marginTop: '-' + padding.extraSmall,
         // backgroundColor: 'black'
     }
 }; 

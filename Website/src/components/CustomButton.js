@@ -5,11 +5,12 @@ import { color, boxShadow } from './CommonStyles.js'
 
 const styles={
     activeButton: {
-        backgroundColor: color.deepBlue,
-        color: color.featherWhite,
-        //boxShadow: boxShadow.alphaDeepBlue,
+        //backgroundColor: color.deepBlue,
+        color: color.hoverRed,
+        boxShadow: boxShadow.alphaDeepBlueSoft,
         //textShadow: {},
-        border: 'none'
+        //border: 'solid',
+        //borderColor: color.deepBlue
     },
 
     // Style for hovering. 

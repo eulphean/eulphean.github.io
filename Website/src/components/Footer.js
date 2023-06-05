@@ -17,7 +17,8 @@ const styles={
       flexDirection: 'row',
       justifyContent: 'center',
       fontSize: fontSize.small,
-      fontFamily: fontFamily.din,
+      fontFamily: fontFamily.bebas,
+      letterSpacing: '2.0px',
       padding: padding.extraSmall,
       color: color.deepBlue
     }
@@ -34,7 +35,7 @@ class Footer extends React.Component {
     return (
         <div style={styles.container}>
             <div style={styles.content}>
-             © Amay Kataria 2023 All Rights Reserved
+             © 2023 Amay Kataria, All Rights Reserved
             </div>
          </div>
     );

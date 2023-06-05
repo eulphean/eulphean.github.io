@@ -3,54 +3,57 @@ import Radium from 'radium'
 import { Link } from 'react-router-dom'
 import CustomLink from './CustomLink.js'
 import { padding, boxShadow, color, fontSize, fontFamily } from './CommonStyles.js'
+import { isMobile } from 'react-device-detect'
 
 const styles={
     container: {
         display: 'flex',
         position: 'relative',
-        // marginBottom: padding.extraSmall,
-        // marginRight: padding.extraSmall,
+        // marginBottom: padding.verySmall,
+        // marginRight: padding.verySmall,
         // borderStyle: 'solid',
         // borderWidth: '0.1px',
         // borderColor: color.lightGrey,
         // boxShadow: boxShadow.alphaDeepBlueSoft,
+        marginRight: padding.extraSmall,
+        marginLeft: padding.extraSmall,
+        marginTop: padding.extraSmall,
+        marginBottom: padding.extraSmall,
         height: '100%',
 
         // 3% is to accomodate the margins.
-        width: 'calc(100%/2)',
+        width: 'calc(100%/2 - 2.3%)',
 
         '@media (min-width: 450px)': {
-            width: 'calc(100%/3)'
+            width: 'calc(100%/3 - 2%)'
         },
 
         '@media (min-width: 600px)': {
-            // No changes
+            width: 'calc(100%/3 - 1.5%)'
         },
 
         '@media (min-width: 750px)': {
-            // margin: padding.verySmall,
-            width: 'calc(100%/3)'
+            margin: padding.extraSmall,
+            width: 'calc(100%/3 - 1.2%)'
         },
 
         '@media (min-width: 900px)': {
             // No changes
+            width: 'calc(100%/3 - 1.1%)'
         },
 
         '@media (min-width: 1200px)': {
             // No changes
-            width: 'calc(100%/3)'
+            width: 'calc(100%/3 - 0.8%)'
         },
 
         '@media (min-width: 1400px)': {
             // No changes
-            width: 'calc(100%/3)'
+            width: 'calc(100%/3 - 0.7%)'
         },
         '@media (min-width: 1700px)': {
             // No changes
-            width: 'calc(100%/4)',
-            // marginLeft: padding.small,
-            // marginBottom: padding.small,
-            // marginRight: padding.small
+            width: 'calc(100%/4 - 0.6%)'
         }
     },
 
@@ -78,7 +81,7 @@ const styles={
         alignItems: 'center',
         justifyContent: 'center',
         position: 'absolute',
-        backgroundColor: color.hoverRed,
+        // backgroundColor: color.hoverRed,
         opacity: '90%',
         width: '100%',
         height: '100%',
@@ -90,6 +93,7 @@ const styles={
         fontSize: fontSize.small,
         padding: padding.verySmall,
         alignSelf: 'center',
+        backgroundColor: color.hoverRed,
         color: color.featherWhite,
         fontFamily: fontFamily.bebas,
         letterSpacing: '1px',
@@ -146,7 +150,9 @@ class Tile extends React.Component {
         var url = this.props.project['url']; 
         var projLink = '/' + this.props.project['link'];
 
-        var img = (<img style={styles.img} alt={this.props.project['link']} src={imgSrc}/>);
+        const imgStyles = (this.state.isHover || isMobile) ? [styles.img] : [styles.img, styles.imgGrayscale];
+
+        var img = (<img style={imgStyles} alt={this.props.project['link']} src={imgSrc}/>);
         var hoverDiv = this.getHoverDiv(); 
         return url ? 
             (<CustomLink style={styles.link} to={url}>
