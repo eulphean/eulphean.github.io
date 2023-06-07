@@ -23,8 +23,8 @@ const styles={
     }
 }
 
-const body=<span>Kid Games is an augmented reality project developed in collaboration with Brooklyn-based artist, <CustomLink to='http://peterburr.org' inline={true}>Peter Burr</CustomLink>. It reconstructs Pieter Bruegel's sixteenth century painting “Kinderspiele”, where hundreds of adult-looking children absorb themselves in foolish games. The digital work is superpositioned on a real-world sculptural space prepared as an intersection of three custom planar grids, through the lens of a portable tablet. On the outskirts of this static arrangement, a solitary figure restlessly explores.</span>
-
+const body=<span>Kid Games is an augmented reality project that reconstructs Pieter Bruegel's sixteenth century painting “Kinderspiele”, where hundreds of adult-looking children absorb themselves in foolish games. The digital work is superpositioned on a real-world sculptural space prepared as an intersection of three custom planar grids, through the lens of a portable tablet. On the outskirts of this static arrangement, a solitary figure restlessly explores.</span>
+const linkA=<span><br />Collaborator : <CustomLink to='http://peterburr.org' inline={true}>Peter Burr</CustomLink></span>;
 class KidGames extends React.Component {
   constructor(props) {
     super(props);
@@ -41,6 +41,7 @@ class KidGames extends React.Component {
             <div style={styles.content}>
               <div style={commonWorkStyles.body}>
                 {body}
+                {linkA}
               </div>
               <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.multiImageContainer}>

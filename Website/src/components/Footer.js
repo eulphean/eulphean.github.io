@@ -9,7 +9,6 @@ const styles={
         left: 0,
         right: 0,
         //backgroundColor: color.deepBlue,
-        marginTop: '20px'
     },
 
     content: {
@@ -18,9 +17,39 @@ const styles={
       justifyContent: 'center',
       fontSize: fontSize.verySmall,
       fontFamily: fontFamily.din,
-      letterSpacing: '2.0px',
+      letterSpacing: '1.0px',
       padding: padding.extraSmall,
-      color: color.deepBlue
+      color: color.deepBlue,
+
+      '@media (min-width: 450px)': {  
+        // No change. 
+      },
+
+      '@media (min-width: 600px)': {  
+          // No change.
+      },
+
+      '@media (min-width: 750px)': {  
+          //fontSize: fontSize.small
+      },
+
+      '@media (min-width: 900px)': {
+          // no change.
+          fontSize: fontSize.littleSmall
+      }, 
+
+      '@media (min-width: 1200px)' : {
+          // fontSize: fontSize.big,
+      },
+
+      '@media (min-width: 1400px)' : {
+        // no change. 
+
+      },
+
+      '@media (min-width: 1700px)' : {
+          // fontSize: fontSize.extraBig
+      }
     }
 }
 

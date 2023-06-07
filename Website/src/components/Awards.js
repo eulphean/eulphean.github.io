@@ -29,31 +29,31 @@ const projects=[
     description: ', Ethereal Summit, New York, 2018, ',
     info:  <CustomLink to='https://www.etherealsummit.com/arts' inline={true}>[info]</CustomLink>
   },
-  {
-    title: <span style={cvStyles.title}>{'Byron M. & Helen S. Brumback Award'}</span>,
-    description: ', College of Engineering, Virginia Tech, 2012, ',
-    info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
-  },
-  {
-    title: <span style={cvStyles.title}>{'Gilbert L. and Lucille C. Seay Award'}</span>,
-    description: ', College of Engineering, Virginia Tech, 2011, ',
-    info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
-  },
-  {
-    title: <span style={cvStyles.title}>{'MR. and CP. Staley Memorial Scholarship'}</span>,
-    description: ', College of Engineering, Virginia Tech, 2010, ',
-    info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
-  },
-  {
-    title: <span style={cvStyles.title}>{'Litton Industries Grant'}</span>,
-    description: ', College of Engineering, Virginia Tech, 2010, ',
-    info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
-  },
-  {
-    title: <span style={cvStyles.title}>{'Benjamin F. Bock & James Milton Beattie Jr. Grant'}</span>,
-    description: ', College of Engineering, Virginia Tech, 2009, ',
-    info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
-  }
+  // {
+  //   title: <span style={cvStyles.title}>{'Byron M. & Helen S. Brumback Award'}</span>,
+  //   description: ', College of Engineering, Virginia Tech, 2012, ',
+  //   info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
+  // },
+  // {
+  //   title: <span style={cvStyles.title}>{'Gilbert L. and Lucille C. Seay Award'}</span>,
+  //   description: ', College of Engineering, Virginia Tech, 2011, ',
+  //   info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
+  // },
+  // {
+  //   title: <span style={cvStyles.title}>{'MR. and CP. Staley Memorial Scholarship'}</span>,
+  //   description: ', College of Engineering, Virginia Tech, 2010, ',
+  //   info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
+  // },
+  // {
+  //   title: <span style={cvStyles.title}>{'Litton Industries Grant'}</span>,
+  //   description: ', College of Engineering, Virginia Tech, 2010, ',
+  //   info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
+  // },
+  // {
+  //   title: <span style={cvStyles.title}>{'Benjamin F. Bock & James Milton Beattie Jr. Grant'}</span>,
+  //   description: ', College of Engineering, Virginia Tech, 2009, ',
+  //   info:  <CustomLink to='https://eng.vt.edu/' inline={true}>[info]</CustomLink>
+  // }
 ]; 
 
 class Awards extends React.Component {

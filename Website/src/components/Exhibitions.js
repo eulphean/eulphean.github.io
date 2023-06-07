@@ -51,8 +51,8 @@ const group = [
         info: <CustomLink  to='https://www.adaf.gr/' inline={true}>[info]</CustomLink>
     },
     {
-        title: <CustomLink italics={true} to='https://amaykataria.com/#/kidgames' inline={true}>{"The Lost Passage"}</CustomLink>,
-        description: ', Responsive Eye, Onyx Studios, New York, 2022, ',
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/kidgames' inline={true}>{"Kid Games"}</CustomLink>,
+        description: <span><span>{", Responsive Eye, with "}</span><CustomLink to='https://peterburr.org/' inline={true}>Peter Burr</CustomLink><span>{", Onyx Studios, New York, 2022, "}</span></span>,
         info: <CustomLink  to='https://happeningnext.com/event/peter-burrs-responsive-eye-eid4snvqgalws1' inline={true}>[info]</CustomLink>
     },
     {
@@ -74,6 +74,11 @@ const group = [
         title: <span><CustomLink italics={true} to='https://amaykataria.com/#/Janus' inline={true}>{"Janus Study"}</CustomLink><span>{' & '}</span><CustomLink italics={true} to='https://amaykataria.com/#/liarbirds' inline={true}>{"Liarbirds"}</CustomLink></span>,
         description: ', MetaMeta curated by Jiaqi Li & Nicky Ni, Online, 2022, ',
         info: <CustomLink  to='https://twitter.com/theTingDAO/status/1483962218853318656?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1483962218853318656%7Ctwgr%5E70b354b1afd4b639e7931be9881ce26c6398c190%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2FtheTingDAO2Fstatus2F1483962218853318656widget%3DTweet' inline={true}>[info]</CustomLink>
+    },
+    {
+        title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
+        description: ', VR Climate Change Memorial, Online, 2022, ',
+        info: <CustomLink  to='https://vr-climate-change-memorial.glitch.me/' inline={true}>[info]</CustomLink>
     },
     {
         title: <CustomLink italics={true} to='https://thelostpassage.art' inline={true}>{"The Lost Passage"}</CustomLink>,
@@ -121,9 +126,29 @@ const group = [
         info: <CustomLink  to='https://www.manacontemporary.com/event/is-it-a-good-time/' inline={true}>[info]</CustomLink>
     }, 
     {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/centerofvaryinggravity/' inline={true}>{"Center of (Varying) Gravity"}</CustomLink>,
+        description: ', Streetlight, Roman Susan, Chicago, USA, 2021, ',
+        info: <CustomLink  to='https://romansusan.org/streetlight' inline={true}>[info]</CustomLink>
+    }, 
+    {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/kidgames' inline={true}>{"Kid Games"}</CustomLink>,
-        description: ', Responsive Eye, Telematic Media Arts, USA, 2021, ',
+        description: <span><span>{", Responsive Eye, with "}</span><CustomLink to='https://peterburr.org/' inline={true}>Peter Burr</CustomLink><span>{", Telematic Arts, USA, 202, "}</span></span>,
         info: <CustomLink  to='http://theshapeofempty.space/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/Timekeepers' inline={true}>{"Timekeepers"}</CustomLink>,
+        description: ', Burning Man: Walking Dreams, organized by BRCVr, AltspaceVR, Online, 2021, ',
+        info: <CustomLink  to='https://brcvr.org/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/Timekeepers' inline={true}>{"Timekeepers"}</CustomLink>,
+        description: ', Burning Man: New Year Special Edition, organized by BRCVr, AltspaceVR, Online, 2021, ',
+        info: <CustomLink  to='https://brcvr.org/' inline={true}>[info]</CustomLink>
+    }, 
+    {
+        title: <span style={cvStyles.title}>{"Sincere Understandings"}</span>,
+        description: ', Open House, Mana Contemporary, Chicago, USA, 2021, ',
+        info: <CustomLink  to='https://www.manacontemporary.com' inline={true}>[info]</CustomLink>
     }, 
     {
         title: <CustomLink italics={true} to='https://liarbirds.art' inline={true}>{"Liarbirds"}</CustomLink>,
@@ -162,7 +187,7 @@ const group = [
     }, 
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/Timekeepers' inline={true}>{"Timekeepers"}</CustomLink>,
-        description: ', Burning Man 2020, organized by BRCVr, AltspaceVR, Online, 2020, ',
+        description: ', Burning Man: Metaverse, organized by BRCVr, AltspaceVR, Online, 2020, ',
         info: <CustomLink  to='https://brcvr.org/' inline={true}>[info]</CustomLink>
     }, 
     {
@@ -177,7 +202,7 @@ const group = [
     }, 
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/Holon/' inline={true}>{"Holons & Holarchy"}</CustomLink>,
-        description: ', Mana Contemporary ZEROONE, curated by Ysabel Pinyol, CADAF Online, 2020, ',
+        description: ', ZEROONE, curated by Ysabel Pinyol, CADAF Online, 2020, ',
         info: <CustomLink  to='https://www.manacontemporary.com/event/selects-curated-exhibitions-at-digital-open-house/' inline={true}>[info]</CustomLink>
     }, 
     {
@@ -211,13 +236,13 @@ const group = [
         info: <CustomLink to='https://www.nyartbeat.com/event/2020/4A9E' inline={true} >[info]</CustomLink> 
     },
     {
-        title: <CustomLink italics={true} to='https://amaykataria.com/Babble-Wall/' inline={true}>Babble</CustomLink>,
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/babble' inline={true}>Babble</CustomLink>,
         description: ', Learning Machines, curated by Helena Nikonole and Alexei Shulgin, Electromuseum, Moscow, Russia, 2020,  ',
         info: <CustomLink to='http://electromuseum.ru/en/event/learning-machines-obuchennye-mashiny/?fbclid=IwAR13ScXtzH0Dl2TDss6MWqvwSMx-OaoTPK--rENO8SuPNeRuA9rIJrpB3O4' inline={true} >[info]</CustomLink> 
     },
     {
-        title: <CustomLink italics={true} to='https://amaykataria.com/#/EthereumFarm' inline={true}>Ethereum Farm*</CustomLink>,
-        description: <span><span>{", Re:Working Labor, Sullivan Galleries, (new work commission for "}</span><CustomLink to='https://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/EthereumFarm' inline={true}>Ethereum Farm</CustomLink>,
+        description: <span><span>{", Re:Working Labor, Sullivan Galleries, with "}</span><CustomLink to='https://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
         info: <CustomLink to='http://sites.saic.edu/reworkinglabor/' inline={true}>[info]</CustomLink>
     },
     {
@@ -226,13 +251,13 @@ const group = [
         info: <CustomLink to='http://www.fiberarthangzhou.com/Site_En/' inline={true}>[info]</CustomLink>
     },
     {
-        title: <CustomLink italics={true} to='https://amaykataria.com/#/ThreeEcologies' inline={true}>Three Ecologies*</CustomLink>,
-        description: <span><span>{", Terrain Exhibitions, Terrain Biennial, (new work commission for "}</span><CustomLink to='https://jaclynjacunski.com/home.html' inline={true}>Jaclyn Jacunski</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        title: <CustomLink italics={true} to='https://amaykataria.com/#/ThreeEcologies' inline={true}>Three Ecologies</CustomLink>,
+        description: <span><span>{", Terrain Exhibitions, Terrain Biennial, with "}</span><CustomLink to='https://jaclynjacunski.com/home.html' inline={true}>Jaclyn Jacunski</CustomLink><span>{", Chicago, USA, 2019, "}</span></span>,
         info: <CustomLink to='https://terrainexhibitions.org/chicago-il' inline={true}>[info]</CustomLink>
     },
     {
         title: <CustomLink italics={true} to='https://amaykataria.com/#/EthereumFarm' inline={true}>Ethereum Farm*</CustomLink>,
-        description: <span><span>{", Goodbye Cruel World, It's Over, Weltkunstzimmer, (new work commission for "}</span><CustomLink to='https://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg</CustomLink><span>{"), Dusseldorf, Germany, 2019, "}</span></span>,
+        description: <span><span>{", Goodbye Cruel World, It's Over, Weltkunstzimmer, with "}</span><CustomLink to='https://stephanierothenberg.com/' inline={true}>Stephanie Rothenberg</CustomLink><span>{", Dusseldorf, Germany, 2019, "}</span></span>,
         info: <CustomLink to='https://weltkunstzimmer.de/en/details/article//ausstellung-4.html' inline={true}>[info]</CustomLink>
     },
     {
@@ -241,17 +266,12 @@ const group = [
         info: <CustomLink to='https://cyberiafestival.com/' inline={true} >[info]</CustomLink> 
     },
     {
-        title: <CustomLink italics={true} to='https://www.ayeshasingh.com/works/2019/frayed-continuum-delhi' inline={true}>Frayed Continuum, Pendulum*</CustomLink>,
-        description: <span><span>{", It Was Never Concrete, Shrine Empire, (Arduino programming for "}</span><CustomLink to='https://www.ayeshasingh.com/home' inline={true}>Ayesha Singh</CustomLink><span>{"), New Delhi, India, 2019, "}</span></span>,
+        title: <CustomLink italics={true} to='https://www.ayeshasingh.com/works/2019/frayed-continuum-delhi' inline={true}>Frayed Continuum, Pendulum</CustomLink>,
+        description: <span><span>{", It Was Never Concrete, Shrine Empire, with "}</span><CustomLink to='https://www.ayeshasingh.com/home' inline={true}>Ayesha Singh</CustomLink><span>{", New Delhi, India, 2019, "}</span></span>,
         info: <CustomLink to='https://www.mojarto.com/blogs/ayesha-singh-s-solo-show-it-was-never-concrete' inline={true}>[info]</CustomLink>
     },
     {
-        title: <CustomLink italics={true} to='https://amaykataria.com/Babble' inline={true}>Babble</CustomLink>,
-        description: ', Future is Here: Art & Technology in Millennial Age, curated by Dr. Arshiya Lokhandwala, Phoenix City Mall, Chennai, India, 2019, ',
-        info: <CustomLink to='http://futureishere.in/' inline={true} >[info]</CustomLink> 
-    },
-    {
-        title: <CustomLink italics={true} to='https://amaykataria.com/#/FigmentsOfAttention/' inline={true}>Figments of Attention</CustomLink>,
+        title: <span><CustomLink italics={true} to='https://amaykataria.com/#/FigmentsOfAttention/' inline={true}>Figments of Attention</CustomLink><span>{' & '}</span><CustomLink italics={true} to='https://amaykataria.com/Babble' inline={true}>Babble</CustomLink></span>,
         description: ', Future is Here: Art & Technology in Millennial Age, curated by Dr. Arshiya Lokhandwala, Phoenix City Mall, Chennai, India, 2019, ',
         info: <CustomLink to='http://futureishere.in/' inline={true} >[info]</CustomLink> 
     },
@@ -261,13 +281,18 @@ const group = [
         info: <CustomLink to='https://holihollyday.github.io/fixityequalsdeath/' inline={true} >[info]</CustomLink> 
     },
     {
+        title: <CustomLink italics={true} to="https://amaykataria.com/#/Babble" inline={true}>Babble</CustomLink>,
+        description: ', NeurIPS Creativity, AI Art Online, 2019, ',
+        info: <CustomLink  to='http://www.aiartonline.com/community-2019/amay-kataria/' inline={true}>[info]</CustomLink>
+      },
+    {
         title: <CustomLink italics={true} to="https://amaykataria.com/#/Nest" inline={true}>Nest</CustomLink>,
         description: ', Always Already Alien, curated by Duncan Bass, Ars Electronica, Linz, Austria, 2019, ',
         info: <CustomLink to='https://ars.electronica.art/outofthebox/en/already-alien/' inline={true} >[info]</CustomLink> 
     },
     {
-        title: <CustomLink italics={true} to='https://www.zivzeevcohen.com/long-memory' inline={true}>Long Memory*</CustomLink>,
-        description: <span><span>{", Remanence/Remnants, 062 Gallery, (Data & Arduino programming for "}</span><CustomLink to='https://www.zivzeevcohen.com/studio' inline={true}>Ziv Ze'ev Cohen</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        title: <CustomLink italics={true} to='https://www.zivzeevcohen.com/long-memory' inline={true}>Long Memory</CustomLink>,
+        description: <span><span>{", Remanence/Remnants, 062 Gallery, with "}</span><CustomLink to='https://www.zivzeevcohen.com/studio' inline={true}>Ziv Ze'ev Cohen</CustomLink><span>{", Chicago, USA, 2019, "}</span></span>,
         info: <CustomLink to='https://www.thevisualist.org/2019/07/ziv-zeev-cohen-remanence-remnants/' inline={true}>[info]</CustomLink>
     },
     {
@@ -276,17 +301,12 @@ const group = [
         info: <CustomLink to='https://sites.saic.edu/mfa2019/artist/amay-kataria/' inline={true} >[info]</CustomLink> 
     },
     {
-        title: <CustomLink italics={true} to='https://yaazdcontractor.com/physical/rgby.html' inline={true}>RGBY*</CustomLink>,
-        description: <span><span>{", NYCxDesign, (Arudino & Raspberry Pi programming for "}</span><CustomLink to='https://yaazdcontractor.com/' inline={true}>Yaazd Contractor</CustomLink><span>{"), New York, USA, 2019, "}</span></span>,
+        title: <CustomLink italics={true} to='https://yaazdcontractor.com/physical/rgby.html' inline={true}>RGBY</CustomLink>,
+        description: <span><span>{", NYCxDesign, with "}</span><CustomLink to='https://yaazdcontractor.com/' inline={true}>Yaazd Contractor</CustomLink><span>{", New York, USA, 2019, "}</span></span>,
         info: <CustomLink to='https://www.whatnotstudio.design/' inline={true}>[info]</CustomLink>
     },
     {
-        title: <CustomLink italics={true} to='https://amaykataria.com/Babble' inline={true}>Babble</CustomLink>,
-        description: ', Future is Here: Art & Technology in Millennial Age, curated by Dr. Arshiya Lokhandwala, Bajaj Bhawan, Mumbai, India, 2019, ',
-        info: <CustomLink to='http://futureishere.in/' inline={true} >[info]</CustomLink> 
-    },
-    {
-        title: <CustomLink italics={true} to='https://amaykataria.com/#/FigmentsOfAttention/' inline={true}>Figments of Attention</CustomLink>,
+        title: <span><CustomLink italics={true} to='https://amaykataria.com/#/FigmentsOfAttention/' inline={true}>Figments of Attention</CustomLink><span>{' & '}</span><CustomLink italics={true} to='https://amaykataria.com/Babble' inline={true}>Babble</CustomLink></span>,
         description: ', Future is Here: Art & Technology in Millennial Age, curated by Dr. Arshiya Lokhandwala, Bajaj Bhawan, Mumbai, India, 2019, ',
         info: <CustomLink to='http://futureishere.in/' inline={true} >[info]</CustomLink> 
     },
@@ -306,8 +326,8 @@ const group = [
         info: <CustomLink to='http://artproject.io/' inline={true} >[info]</CustomLink> 
     },
     {
-        title: <CustomLink italics={true} to='https://www.galenodellsmedley.com/smallpop-hypothesis' inline={true}>Small-Pop Hypothesis*</CustomLink>,
-        description: <span><span>{", MFA Thesis Show 2018, (Arudino programming & electronics for "}</span><CustomLink to='https://www.galenodellsmedley.com/' inline={true}>Galen Odell-Smedley</CustomLink><span>{"), Chicago, USA, 2019, "}</span></span>,
+        title: <CustomLink italics={true} to='https://www.galenodellsmedley.com/smallpop-hypothesis' inline={true}>Small-Pop Hypothesis</CustomLink>,
+        description: <span><span>{", MFA Thesis Show 2018, with "}</span><CustomLink to='https://www.galenodellsmedley.com/' inline={true}>Galen Odell-Smedley</CustomLink><span>{", Chicago, USA, 2019, "}</span></span>,
         info: <CustomLink to='http://sites.saic.edu/mfa2018/artist/galen-odell-smedley/' inline={true}>[info]</CustomLink>
     },
     {

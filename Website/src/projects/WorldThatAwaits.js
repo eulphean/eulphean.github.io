@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium'
 import Header from '../components/Header.js'
-import CustomLink from '../components/CustomLink.js'
+// import CustomLink from '../components/CustomLink.js'
 import {commonWorkStyles, padding} from '../components/CommonStyles.js'
 import brochureA from '../images/WorldThatAwaits/1.jpg'
 import brochureB from '../images/WorldThatAwaits/2.jpg'

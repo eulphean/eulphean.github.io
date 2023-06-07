@@ -2,7 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 import ReactGA from 'react-ga'
 
-import { padding, fontFamily, fontSize, color, boxShadow } from './CommonStyles'
+import { padding, fontFamily, fontSize, color } from './CommonStyles'
 import CustomButton from './CustomButton.js'
 import findIndex from 'lodash/findIndex'
 
@@ -27,7 +27,7 @@ const styles={
 
     button: {
         fontFamily: fontFamily.din,
-        fontSize: fontSize.verySmall,
+        fontSize: fontSize.littleSmall,
         paddingLeft: padding.tinySmall,
         paddingRight: padding.tinySmall,
         color: color.deepBlue,
@@ -35,7 +35,7 @@ const styles={
         // boxShadow: boxShadow.alphaDeepBlueSoft,
         border: 'inherit',
         // marginLeft: padding.extraSmall,
-        marginRight: padding.small,
+        marginRight: padding.verySmall,
         opacity: '95%',
         letterSpacing: '2.0px',
 
@@ -48,15 +48,16 @@ const styles={
         },
 
         '@media (min-width: 750px)': {  
-            fontSize: fontSize.small
+            //fontSize: fontSize.small
         },
 
         '@media (min-width: 900px)': {
             // no change.
+            fontSize: fontSize.small
         }, 
 
         '@media (min-width: 1200px)' : {
-            fontSize: fontSize.big,
+            // fontSize: fontSize.big,
         },
 
         '@media (min-width: 1400px)' : {

@@ -7,7 +7,7 @@ import About from './About.js'
 import Bio from './Bio.js'
 import Footer from './Footer.js'
 import ScrollToTop from './ScrollToTop.js'
-import { percent, padding, color } from './CommonStyles.js'
+import { percent, padding } from './CommonStyles.js'
 
 // Components
 import Title from './Title.js'
@@ -79,23 +79,23 @@ const styles = {
     },
 
     '@media (min-width: 1200px)' : {
-      paddingLeft: percent.ten,
-      paddingRight: percent.ten
+      paddingLeft: '14%',
+      paddingRight: '14%'
     },
 
     '@media (min-width: 1400px)' : {
-      paddingLeft: percent.twelve,
-      paddingRight: percent.twelve
+      paddingLeft: '20%',
+      paddingRight: '20%'
     },
 
     '@media (min-width: 1700px)' : {
-      paddingLeft: '26%',
-      paddingRight: '26%'
+      paddingLeft: '25%',
+      paddingRight: '25%'
     }
   },
 
   empty: {
-    height: padding.extraBig
+    height: padding.small
   }
 };
 

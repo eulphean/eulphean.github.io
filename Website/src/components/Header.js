@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import Radium from 'radium'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { ReactComponent as Back } from '../icons/back.svg'
 import CustomButton from './CustomButton.js'
 import { fontSize, fontFamily, padding, color } from './CommonStyles.js'
-const RadiumLink = Radium(Link);
+// const RadiumLink = Radium(Link);
 
 const styles={
     container: {
@@ -56,16 +56,16 @@ const styles={
         },
 
         '@media (min-width: 600px)': {  
-            fontSize: fontSize.veryBig,
+            // fontSize: fontSize.veryBig,
         },
 
         '@media (min-width: 750px)': {  
-            padding: padding.small,
+            // padding: padding.small,
             fontSize: fontSize.extraBig,
         },
 
         '@media (min-width: 900px)': {  
-            fontSize: fontSize.huge,
+            // fontSize: fontSize.huge,
         },
 
         '@media (min-width: 1200px)' : {
@@ -73,7 +73,7 @@ const styles={
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.veryHuge
+            // fontSize: fontSize.veryHuge
         },
 
         '@media (min-width: 1700px)' : {

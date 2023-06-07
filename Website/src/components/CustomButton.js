@@ -1,7 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
 import { isMobile, isTablet, isMobileSafari} from 'react-device-detect'
-import { color, boxShadow } from './CommonStyles.js'
+import { color } from './CommonStyles.js'
 
 const styles={
     activeButton: {

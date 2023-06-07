@@ -1,6 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-import { padding, commonWorkStyles, fontSize, cvStyles } from './CommonStyles';
+import { commonWorkStyles, cvStyles } from './CommonStyles';
 import CVFilterer from './CVFilterer.js'
 import Education from './Education.js'
 import Exhibitions from './Exhibitions.js'
@@ -20,7 +20,7 @@ const styles={
     bioMediaQuery: {
         '@media (min-width: 900px)': {  
             // no change.
-            fontSize: fontSize.big
+            //fontSize: fontSize.big
         }
     }
 }; 

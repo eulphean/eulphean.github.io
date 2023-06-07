@@ -32,6 +32,7 @@ const padding = {
     tinySmall: '2px',
     extraSmall: '4px',
     verySmall: '8px',
+    littleSmall: '8px',
     small: '12px',
     // Incremenets of 8
     big : '20px',
@@ -113,16 +114,16 @@ const commonWorkStyles = {
         },
 
         '@media (min-width: 600px)': {  
-            fontSize: fontSize.big
+            // no change
         },
 
         '@media (min-width: 750px)': {  
-            // no change.
+            fontSize: fontSize.big
         },
 
         '@media (min-width: 900px)': {  
             // no change.
-            fontSize: fontSize.veryBig,
+            // fontSize: fontSize.veryBig,
         },
 
         '@media (min-width: 1200px)' : {
@@ -130,7 +131,7 @@ const commonWorkStyles = {
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.extraBig,
+            // fontSize: fontSize.extraBig,
         },
 
         '@media (min-width: 1700px)' : {
@@ -320,11 +321,11 @@ const cvStyles= {
     },
 
     heading: {
-        fontFamily: fontFamily.bebas,
+        fontFamily: fontFamily.din,
         fontSize: fontSize.small,
         color: color.deepBlue,
-        letterSpacing: '2px',
-        textDecoration: 'underline',
+        letterSpacing: '1.5px',
+        fontStyle: 'italic',
 
         '@media (min-width: 450px)': {  
             // no change.
@@ -340,7 +341,7 @@ const cvStyles= {
 
         '@media (min-width: 900px)': {  
             // no change.
-            fontSize: fontSize.veryBig,
+            // fontSize: fontSize.veryBig,
             
         },
 
@@ -406,7 +407,7 @@ const cvStyles= {
     },
 
     bottomSpace: {
-        marginBottom: padding.big
+        marginBottom: padding.small
     }
 };
 

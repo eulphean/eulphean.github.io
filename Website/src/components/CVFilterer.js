@@ -2,7 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 import ReactGA from 'react-ga'
 
-import { padding, fontFamily, fontSize, color, boxShadow } from './CommonStyles'
+import { padding, fontFamily, fontSize, color } from './CommonStyles'
 import CustomButton from './CustomButton.js'
 import findIndex from 'lodash/findIndex'
 
@@ -27,15 +27,17 @@ const styles={
 
     button: {
         fontFamily: fontFamily.din,
-        fontSize: fontSize.verySmall,
+        fontSize: fontSize.littleSmall,
+        textTransform: 'uppercase',
         paddingLeft: padding.tinySmall,
         paddingRight: padding.tinySmall,
+        paddingBottom: padding.extraSmall,
         color: color.deepBlue,
         backgroundColor: 'transparent',
         // boxShadow: boxShadow.alphaDeepBlueSoft,
         border: 'inherit',
         // marginLeft: padding.extraSmall,
-        marginRight: padding.small,
+        marginRight: padding.verySmall,
         opacity: '95%',
         letterSpacing: '2.0px',
 
@@ -48,15 +50,16 @@ const styles={
         },
 
         '@media (min-width: 750px)': {  
-            fontSize: fontSize.small
+            //fontSize: fontSize.small
         },
 
         '@media (min-width: 900px)': {
             // no change.
+            fontSize: fontSize.small
         }, 
 
         '@media (min-width: 1200px)' : {
-            fontSize: fontSize.big,
+            // fontSize: fontSize.big,
         },
 
         '@media (min-width: 1400px)' : {
@@ -87,7 +90,6 @@ class CVFilterer extends React.Component {
 
         // Maintain a list of selected keywords. 
         this.categories = [];  
-        this.onCategorySelected('Exhibitions');
     }
 
     render() {
@@ -102,7 +104,7 @@ class CVFilterer extends React.Component {
                     <CustomButton isActive={this.state.isAwards} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Awards'}</CustomButton>
                     <CustomButton isActive={this.state.isPublicTalks} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Public Talks'}</CustomButton>
                     <CustomButton isActive={this.state.isPublications} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Publications'}</CustomButton>
-                    <CustomButton isActive={this.state.isPress} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Press'}</CustomButton>
+                    {/* <CustomButton isActive={this.state.isPress} buttonStyle={styles.button} onClick={this.onCategorySelected.bind(this)}>{'Press'}</CustomButton> */}
                 </div>
             </div>
         );

@@ -2,7 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 import { Link } from 'react-router-dom'
 import CustomLink from './CustomLink.js'
-import { padding, boxShadow, color, fontSize, fontFamily } from './CommonStyles.js'
+import { padding, color, fontSize, fontFamily } from './CommonStyles.js'
 import { isMobile } from 'react-device-detect'
 
 const styles={
@@ -42,16 +42,16 @@ const styles={
 
          '@media (min-width: 1200px)': {
              // No changes
-             width: 'calc(100%/3 - 0.84%)'
+             width: 'calc(100%/3 - 0.92%)'
          },
 
          '@media (min-width: 1400px)': {
              // No changes
-             width: 'calc(100%/3 - 0.77%)'
+             width: 'calc(100%/3 - 0.94%)'
          },
          '@media (min-width: 1700px)': {
              // No changes
-             width: 'calc(100%/4 - 0.66%)'
+             width: 'calc(100%/4 - 0.98%)'
          }
     },
 

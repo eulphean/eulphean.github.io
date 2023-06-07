@@ -26,7 +26,7 @@ const styles={
 
 const bodyA=<span>This work is an ongoing reinterpreation of Janus - a two-faced mythological figure considered a guardian of doorways, transitions, and time. It is one of the oldest symbols associated with the temporal nature of our Universe, where one head represents the past and other is the future. Traditionally, they both face away from each other. I first came across Janus in the book <span style={commonWorkStyles.italics}>Ghost in the Machine</span> by Hungarian philosopher Arthur Koestler, who described it as a metaphor of duality. In <span style={commonWorkStyles.italics}>Janus Study</span>, I recontextualize its meaning to the present moment and use it to critique the phenomenon of temporality. Time is strongly distilled as a subject of inquiry. The two heads are flipped, drawn apart, and twisted into each other. Computational gravity along with computer generated imagery is used to model the fuzzy and twisted entanglement between the two heads. It's a digital sculpture situated in an empty concrete room to provoke corporeal contemplation. Below is a fast-forwarded snippet from the actual work.</span>
 const bodyB=<span><br/>Silent Digital Film, 7 minutes, 30 seconds</span>
-const linkA=<span><br />3D Collaborator : <CustomLink to='https://www.philipmulliken.com/' inline={true}>Philip Mulliken</CustomLink></span>;
+const linkA=<span><br />Collaborator : <CustomLink to='https://www.philipmulliken.com/' inline={true}>Philip Mulliken</CustomLink></span>;
 class JanusStudy extends React.Component {
   constructor(props) {
     super(props);
@@ -44,7 +44,7 @@ class JanusStudy extends React.Component {
               <div style={commonWorkStyles.body}>
                 {bodyA}
                 {bodyB}
-                {/* {linkA} */}
+                {linkA}
               </div>
               <div style={commonWorkStyles.imgContainer}>
                  <img style={commonWorkStyles.oneImage} alt={'janus'} src={janus}/>

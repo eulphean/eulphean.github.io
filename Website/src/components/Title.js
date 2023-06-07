@@ -2,7 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 import { Link, useLocation } from 'react-router-dom'
 import CustomButton from './CustomButton.js'
-import { color, fontSize, fontFamily, padding, textShadow } from './CommonStyles.js'
+import { color, fontSize, fontFamily, padding } from './CommonStyles.js'
 const RadiumLink = Radium(Link); 
 
 const styles={
@@ -31,12 +31,12 @@ const styles={
         },
 
         '@media (min-width: 600px)': {  
-            fontSize: fontSize.verySmall,
+            //fontSize: fontSize.verySmall,
         },
 
         '@media (min-width: 750px)': {  
             // padding: padding.small,
-            fontSize: fontSize.small,
+            // fontSize: fontSize.small,
         },
 
         '@media (min-width: 900px)': {  
@@ -66,8 +66,8 @@ function Title() {
     let aboutState = curRoute === '/About'; 
     let workState = curRoute === '/Works' || curRoute === '/'; 
     let cvState = curRoute === '/Bio'; 
-    let commissionState = curRoute === '/Commissions';
-    let archiveState = curRoute === '/Archive';
+    // let commissionState = curRoute === '/Commissions';
+    // let archiveState = curRoute === '/Archive';
 
     return (
         <div style={styles.container}>
@@ -77,7 +77,7 @@ function Title() {
             >
                 <RadiumLink to="/Works">WORKS</RadiumLink>
             </CustomButton>
-            <CustomButton 
+            {/* <CustomButton 
                 buttonStyle={styles.button} 
                 isActive={commissionState}
             >
@@ -88,7 +88,7 @@ function Title() {
                 isActive={archiveState}
             >
                 <RadiumLink to="/Archive">ARCHIVE</RadiumLink>
-            </CustomButton>
+            </CustomButton> */}
             <CustomButton 
                 buttonStyle={styles.button} 
                 isActive={cvState}

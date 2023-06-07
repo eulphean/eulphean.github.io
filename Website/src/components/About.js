@@ -10,9 +10,9 @@ import title from '../images/title2.jpg'
 
 // Font Awesome icons
 import { ReactComponent as Instagram } from '../icons/instagram.svg'
-import { ReactComponent as LinkedIn } from '../icons/linkedin.svg'
+// import { ReactComponent as LinkedIn } from '../icons/linkedin.svg'
 import { ReactComponent as Github } from '../icons/github.svg'
-import { ReactComponent as Soundcloud } from '../icons/soundcloud.svg'
+// import { ReactComponent as Soundcloud } from '../icons/soundcloud.svg'
 
 const styles = {
     container: {
@@ -53,7 +53,7 @@ const styles = {
     },
 
     contactButton: {
-        fontFamily: fontFamily.bebas,
+        fontFamily: fontFamily.din,
         fontSize: fontSize.small,
         padding: padding.verySmall,
         backgroundColor: color.deepBlue,
@@ -68,16 +68,17 @@ const styles = {
 
         '@media (min-width: 600px)': {  
             // No change
-            fontSize: fontSize.big,
-            padding: padding.small
+            // fontSize: fontSize.big,
+            // padding: padding.small
         },
 
         '@media (min-width: 750px)': {  
+            fontSize: fontSize.big,
             alignSelf: 'start'
         },
 
         '@media (min-width: 900px)': {
-            fontSize: fontSize.veryBig
+            // fontSize: fontSize.veryBig
         }, 
 
         '@media (min-width: 1200px)' : {
@@ -85,7 +86,7 @@ const styles = {
         },
 
         '@media (min-width: 1400px)' : {
-            fontSize: fontSize.extraBig,
+            // fontSize: fontSize.extraBig,
         },
 
         '@media (min-width: 1700px)' : {
@@ -119,7 +120,7 @@ const styles = {
     bodyMediaQuery: {
         '@media (min-width: 900px)': {  
             // no change.
-            fontSize: fontSize.big
+            //fontSize: fontSize.small
         }
     },
 
@@ -146,7 +147,7 @@ const styles = {
     },
 
     subscribeButton: {
-        fontFamily: fontFamily.bebas,
+        fontFamily: fontFamily.din,
         fontSize: fontSize.verySmall,
         backgroundColor: color.deepBlue,
         color: color.featherWhite,
@@ -176,13 +177,15 @@ const styles = {
     },
 
     textArea: {
-        border: 'none',
+        // border: 'none',
         width: '100%',
+        resize: 'none',
         fontSize: fontSize.verySmall,
         padding: padding.small,
         fontFamily: fontFamily.din,
         color: color.pureTeal,
         letterSpacing: '1px',
+        overflow: 'hidden',
 
         '@media (min-width: 800px)' : {
             // no change.
@@ -230,7 +233,7 @@ class About extends React.Component {
                 <div style={styles.contactContainer}>
                     <div style={styles.contactTile}>
                         <CustomButton isStatic={true} buttonStyle={styles.contactButton}>
-                            {'Contact'}
+                            {'CONTACT'}
                         </CustomButton>
                         <div style={styles.subscriptionContainer}>
                             <div style={subscribeStyle}>
@@ -264,7 +267,7 @@ class About extends React.Component {
                 <textarea 
                         ref={this.textArea}
                         style={styles.textArea}
-                        outline='none'
+                        variant="outline"
                         maxLength={maxInputLength} 
                         value={this.state.value}
                         onChange={this.onChange.bind(this)}
