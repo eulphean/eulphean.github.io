@@ -27,7 +27,7 @@ const styles={
 
     button: {
         fontFamily: fontFamily.din,
-        fontSize: fontSize.littleSmall,
+        fontSize: fontSize.small,
         paddingLeft: padding.tinySmall,
         paddingRight: padding.tinySmall,
         color: color.deepBlue,
@@ -53,7 +53,7 @@ const styles={
 
         '@media (min-width: 900px)': {
             // no change.
-            fontSize: fontSize.small
+            fontSize: fontSize.big
         }, 
 
         '@media (min-width: 1200px)' : {

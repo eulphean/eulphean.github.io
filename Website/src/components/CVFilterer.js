@@ -27,7 +27,7 @@ const styles={
 
     button: {
         fontFamily: fontFamily.din,
-        fontSize: fontSize.littleSmall,
+        fontSize: fontSize.small,
         textTransform: 'uppercase',
         paddingLeft: padding.tinySmall,
         paddingRight: padding.tinySmall,
@@ -55,7 +55,7 @@ const styles={
 
         '@media (min-width: 900px)': {
             // no change.
-            fontSize: fontSize.small
+            fontSize: fontSize.big
         }, 
 
         '@media (min-width: 1200px)' : {

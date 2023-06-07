@@ -65,7 +65,7 @@ const styles = {
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'flex-start',
-        marginTop: '-' + padding.tinySmall,
+        marginTop: '-' + padding.tinySmall
         // backgroundColor: 'black'
     }
 }; 

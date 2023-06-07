@@ -22,7 +22,7 @@ const styles={
         paddingLeft: padding.tinySmall,
         paddingRight: padding.tinySmall,
         // marginLeft: padding.extraSmall,
-        marginRight: padding.small,
+        marginRight: padding.big,
         backgroundColor: 'transparent',
         border: 'none',
 
@@ -40,7 +40,7 @@ const styles={
         },
 
         '@media (min-width: 900px)': {  
-            fontSize: fontSize.big,
+            fontSize: fontSize.veryBig,
         },
 
         '@media (min-width: 1200px)' : {
