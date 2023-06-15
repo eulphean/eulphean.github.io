@@ -48,6 +48,8 @@ import Liarbirds from '../projects/Liarbirds.js'
 import Supersynthesis from '../projects/Supersynthesis.js'
 import WorldThatAwaits from '../projects/WorldThatAwaits.js'
 import AndTheHungryWereFed from '../projects/AndTheHungryWereFed.js'
+import BlobMaker from '../projects/BlobMaker.js'
+import Supersynthesis2 from '../projects/Supersynthesis2.js'
 
 const styles = {
   container: {
@@ -124,6 +126,8 @@ function App() {
             <Route path="/Commissions"><Title /><Grid gridType={Grid_Type.COMMISSIONS} /></Route>
             <Route path="/Archive"><Title /><Grid gridType={Grid_Type.ARCHIVE} /></Route>
             <Route path="/About"><Title /><About /></Route>
+            <Route path="/blob"><BlobMaker /></Route>
+            <Route path="/supersynthesis2"><Supersynthesis2 /></Route>
             <Route path="/andthehungrywerefed"><AndTheHungryWereFed /></Route>
             <Route path="/worldthatawaits"><WorldThatAwaits /></Route>
             <Route path="/supersynthesis"><Supersynthesis /></Route>

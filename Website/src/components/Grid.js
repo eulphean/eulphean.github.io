@@ -45,6 +45,8 @@ import touch from '../tiles/touch.jpg'
 import supersynthesis from '../tiles/supersynthesis.jpg'
 import worldthatawaits from '../tiles/worldthatawaits.jpg'
 import andthehungrywerefed from '../tiles/andthehungrywerefed.jpg'
+import blob from '../tiles/blob.jpg'
+import ss2 from '../tiles/ss2.jpg'
 import { padding } from './CommonStyles.js'
 
 export const Grid_Type = {
@@ -206,6 +208,12 @@ class Grid extends React.Component {
         // Push every imported image into this array. 
         this.workProjects = [
             {
+                'img': ss2,
+                'title': 'Supersynthesis',
+                'keywords': ['2023', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
+                'link': 'supersynthesis2'
+            },
+            {
                 'img': andthehungrywerefed,
                 'title': 'And The Hungry Were Fed',
                 'keywords': ['2022', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
@@ -222,6 +230,12 @@ class Grid extends React.Component {
                 'title': 'Supersynthesis',
                 'keywords': ['2022', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
                 'link': 'supersynthesis'
+            },
+            {
+                'img': blob,
+                'title': 'Blob Maker',
+                'keywords': ['2022', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
+                'link': 'blob'
             },
             {
                 'img': momentofenigma,
@@ -242,22 +256,28 @@ class Grid extends React.Component {
                 'link': 'kidgames'
             },
             {
+                'img': liarbirds,
+                'title': 'Liarbirds',
+                'keywords': ['2020', 'Interactive', 'Extended Reality', 'Net Art', 'Silkcube', 'Sound', 'Artificial Life', 'Commissions', 'Ecology'],
+                'link': 'liarbirds'
+            },
+            {
                 'img': timekeepers,
                 'title': 'Timekeepers',
                 'keywords': ['2020', 'Interactive', 'Holon', 'Extended Reality', 'Silkcube'],
                 'link': 'timekeepers'
             },
             {
-                'img': gravity,
-                'title': 'Center of (Varying) Gravity',
-                'keywords': ['2020', 'Net Art'],
-                'link': 'centerofvaryinggravity'
-            },
-            {
                 'img': janus,
                 'title': 'Janus Study',
                 'keywords': ['2020', 'Holon', 'Silkcube', 'Extended Reality'],
                 'link': 'Janus'
+            },
+            {
+                'img': gravity,
+                'title': 'Center of (Varying) Gravity',
+                'keywords': ['2020', 'Net Art'],
+                'link': 'centerofvaryinggravity'
             },
             {
                 'img': momimsafe,
@@ -321,12 +341,6 @@ class Grid extends React.Component {
                 'title': 'Embroidered Touch',
                 'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Commissions'],
                 'link': 'touch'
-            },
-            {
-                'img': liarbirds,
-                'title': 'Liarbirds',
-                'keywords': ['2020', 'Interactive', 'Extended Reality', 'Net Art', 'Silkcube', 'Sound', 'Artificial Life', 'Commissions', 'Ecology'],
-                'link': 'liarbirds'
             },
             {
                 'img': clouds,
