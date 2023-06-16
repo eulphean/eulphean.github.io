@@ -13,8 +13,8 @@ const styles={
         display: 'inline'
     },
     hover: {
-        fill: color.hoverRed,
-        opacity: '95%'
+        color: color.hoverRed,
+        opacity: '100%'
     },
 
     italics: {
@@ -29,14 +29,14 @@ class CustomLink extends React.Component {
             isHover: false
         }
 
-        this.isHoverDisabled = isMobile || isTablet || isMobileSafari; 
+       this.isHoverDisabled = isMobile || isTablet || isMobileSafari; 
     }
 
     render() {
         // If it's an inline link, we will color the link.
         let style = this.props.inline ? styles.color : styles.link;
         style = this.props.italics ? [styles.italics, style] : style; 
-        let extendedStyle = this.props.customStyle ? [style, this.props.customStyle] : style;
+        let extendedStyle = this.props.customStyle ? [this.props.customStyle, style] : style;
         extendedStyle = this.state.isHover ? [extendedStyle, styles.hover] : extendedStyle; 
 
         return (

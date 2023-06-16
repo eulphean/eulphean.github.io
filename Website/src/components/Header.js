@@ -144,15 +144,21 @@ function Header (props) {
   }
 
   const onMouseClick = () => {
-    newRoute.goBack();
+    newRoute.push('/Works');
+  }
+
+  const getBack = () => {
+    return (
+      <div onClick={onMouseClick} onMouseEnter={onHover} onMouseLeave={onLeaveHover} style={iconStyle}>
+        <Back style={styles.iconStyle}/>
+      </div> 
+    );
   }
 
   return (
       <div style={styles.container}>
           <CustomButton buttonStyle={styles.button} isStatic={true}>{props.title}</CustomButton>
-          <div onClick={onMouseClick} onMouseEnter={onHover} onMouseLeave={onLeaveHover} style={iconStyle}>
-            <Back style={styles.iconStyle}/>
-          </div>          
+         {getBack()}
       </div>
   );
 }
