@@ -51,6 +51,7 @@ import AndTheHungryWereFed from '../projects/AndTheHungryWereFed.js'
 import BlobMaker from '../projects/BlobMaker.js'
 import Supersynthesis2 from '../projects/Supersynthesis2.js'
 import CreativeTechnologist from '../portfolios/CreativeTechnologist.js'
+import Portfolio from '../portfolios/Portfolio.js'
 
 const styles = {
   container: {
@@ -163,7 +164,8 @@ function App() {
             <Route path="/EarthLens"><Earthlens /></Route>
             <Route path="/MagicMic"><MagicMic /></Route>
             <Route path="/Skype"><Skype /></Route>
-          <Route path="/creativetechnologist"><CreativeTechnologist /></Route>
+            <Route path="/creativetechnologist"><CreativeTechnologist /></Route>
+            <Route path="/portfolio"><Portfolio /></Route>
             <Route path="/"><Title /><Grid /></Route>
           </Switch>
         </Router>

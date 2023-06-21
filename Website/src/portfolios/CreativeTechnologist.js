@@ -1,4 +1,4 @@
-// File: ct-portfolio.js
+// File: CreativeTechnologist.js
 // Author: Amay Kataria
 // Date: 06/15/2023
 // Description: Portfolio drop-in for a creative technologist.
@@ -89,12 +89,12 @@ class CreativeTechnologist extends React.Component {
             <div style={styles.content}></div>
             <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.vimeoContainer}>
-                  <iframe title={'Skype'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/836968850" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                  <iframe title={'Creative Technologist'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/836968850" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                 </div>
               </div>
             <div style={commonWorkStyles.body}>
               <div style={styles.buttonContainer}>
-              <CustomLink customStyle={styles.button} to={"https://online.fliphtml5.com/gijaf/iowy/#p=1"}>{'Portfolio (flip book)'}</CustomLink>
+              <CustomLink customStyle={styles.button} to={"https://online.fliphtml5.com/gijaf/fvvk/#p=1"}>{'Portfolio (flip book)'}</CustomLink>
               <CustomButton onClick={this.onClick.bind(this)} buttonStyle={styles.button}>{'Portfolio (pdf)'}</CustomButton>
               </div>
             </div>
