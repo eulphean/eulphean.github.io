@@ -26,7 +26,8 @@ const styles={
 }
 
 
-const body=<span><CustomLink to='http://supersynthesis.art' inline={true}>Supersynthesis</CustomLink> is an interactive audio-visual art installation that invites people to create a space for collective expression and participation. Accompanied with a physical installation, it utilizes the medium of light and sound to craft a communal experience where the audience activates the piece and the space around it by interacting with it through an online interface. In an increasingly fragmented society, this project aspires to create an inclusive space, where anybody can leave a trace of their thought with freedom. By participating in Supersynthesis, one becomes part of a communal wave that’ll anonymously accumulate until the forthcoming eternity.</span>
+const bodyA=<span>This second iteration of <CustomLink to='https://amaykataria.com/#/Supersynthesis' inline={true}>Supersynthesis</CustomLink> was developed as part of the <CustomLink to='https://www.hydeparkart.org/get-involved/artist-opportunities/bridge-program/' inline={true}>Bridge program</CustomLink> at Hyde Park Art Center. For this site-specific version, the piece activated the street-facing windows in the Hyde Park Art Center library. With a major software and hardware upgrade, this interactive artwork became accessible to the Hyde Park community through a QR code placed on the window. This allowed people to modify the installation from outside the art center.</span>
+const bodyB=<span>The upgraded version of Supersynthesis engaged the community and showcased the potential of interactive public art. Visitors could experiment with the installation's audio and visual elements while gaining a deeper appreciation for the experience. This iteration was also a testament to the power of community-driven projects, as it was developed in collaboration with the Hyde Park Art Center and the Bridge program.</span>
 
 class Supersynthesis2 extends React.Component {
   constructor(props) {
@@ -43,7 +44,9 @@ class Supersynthesis2 extends React.Component {
             <Header title="Supersynthesis" />
             <div style={styles.content}>
               <div style={commonWorkStyles.body}>
-                {body}
+                {bodyA}
+                <br />
+                {bodyB}
               </div>
               <div style={commonWorkStyles.imgContainer}>
                 <div style={commonWorkStyles.multiImageContainer}>

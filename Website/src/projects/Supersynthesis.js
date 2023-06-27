@@ -24,7 +24,7 @@ const styles={
 }
 
 
-const body=<span><CustomLink to='http://supersynthesis.art' inline={true}>Supersynthesis</CustomLink> is an interactive audio-visual art installation that invites people to create a space for collective expression and participation. Accompanied with a physical installation, it utilizes the medium of light and sound to craft a communal experience where the audience activates the piece and the space around it by interacting with it through an online interface. In an increasingly fragmented society, this project aspires to create an inclusive space, where anybody can leave a trace of their thought with freedom. By participating in Supersynthesis, one becomes part of a communal wave that’ll anonymously accumulate until the forthcoming eternity.</span>
+const body=<span><CustomLink to='https://supersynthesis.art' inline={true}>Supersynthesis</CustomLink> is an interactive audio-visual art installation that invites people to create a space for collective expression and participation. Accompanied with a physical installation, it utilizes the medium of light and sound to craft a communal experience where the audience activates the piece and the space around it by interacting with it through an online interface. In an increasingly fragmented society, this project aspires to create an inclusive space, where anybody can leave a trace of their thought with freedom. By participating in Supersynthesis, one becomes part of a communal wave that’ll anonymously accumulate until the forthcoming eternity.</span>
 
 class Supersynthesis extends React.Component {
   constructor(props) {

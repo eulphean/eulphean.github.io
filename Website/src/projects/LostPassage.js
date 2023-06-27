@@ -59,7 +59,7 @@ class LostPassage extends React.Component {
               </div>
               {info}
               <div style={containerStyle}>
-                <iframe title={'The Lost Passage'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/648817630?h=b61d82ba81&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                <iframe title={'The Lost Passage'} style={commonWorkStyles.vimeoFrame} src="https://player.vimeo.com/video/840253349?h=b61d82ba81&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
               </div>
             </div>
         </div>
