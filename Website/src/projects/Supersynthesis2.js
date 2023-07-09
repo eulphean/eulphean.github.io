@@ -41,7 +41,7 @@ class Supersynthesis2 extends React.Component {
 
     return (
         <div style={styles.container}>
-            <Header title="Supersynthesis" />
+            <Header title="Supersynthesis II" />
             <div style={styles.content}>
               <div style={commonWorkStyles.body}>
                 {bodyA}
