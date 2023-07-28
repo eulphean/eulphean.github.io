@@ -52,6 +52,8 @@ import BlobMaker from '../projects/BlobMaker.js'
 import Supersynthesis2 from '../projects/Supersynthesis2.js'
 import CreativeTechnologist from '../portfolios/CreativeTechnologist.js'
 import Portfolio from '../portfolios/Portfolio.js'
+import Threedone from '../portfolios/Threedone.js'
+import Threedtwo from '../portfolios/Threedtwo.js'
 
 const styles = {
   container: {
@@ -166,6 +168,8 @@ function App() {
             <Route path="/Skype"><Skype /></Route>
             <Route path="/creativetechnologist"><CreativeTechnologist /></Route>
             <Route path="/portfolio"><Portfolio /></Route>
+            <Route path="/threedone"><Threedone /></Route>
+            <Route path="/threedtwo"><Threedtwo /></Route>
             <Route path="/"><Title /><Grid /></Route>
           </Switch>
         </Router>

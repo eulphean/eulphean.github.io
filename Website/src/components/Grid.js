@@ -209,7 +209,7 @@ class Grid extends React.Component {
         this.workProjects = [
             {
                 'img': ss2,
-                'title': 'Supersynthesis',
+                'title': 'Supersynthesis II',
                 'keywords': ['2023', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
                 'link': 'supersynthesis2'
             },
