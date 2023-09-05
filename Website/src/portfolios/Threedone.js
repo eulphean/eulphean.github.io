@@ -95,6 +95,7 @@ class Threedone extends React.Component {
             <div style={commonWorkStyles.body}>
               <div style={styles.buttonContainer}>
               <CustomLink customStyle={styles.button} to={"https://online.fliphtml5.com/gijaf/atid/#p=1"}>{'Portfolio (flip book)'}</CustomLink>
+              <CustomLink customStyle={styles.button} to={"https://vimeo.com/853821526/babd55d483?share=copy"}>{'Portfolio (Video Reel)'}</CustomLink>
               <CustomButton onClick={this.onClick.bind(this)} buttonStyle={styles.button}>{'Portfolio (pdf)'}</CustomButton>
               </div>
             </div>
