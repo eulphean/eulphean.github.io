@@ -45,6 +45,7 @@ import touch from '../tiles/touch.jpg'
 import supersynthesis from '../tiles/supersynthesis.jpg'
 import worldthatawaits from '../tiles/worldthatawaits.jpg'
 import andthehungrywerefed from '../tiles/andthehungrywerefed.jpg'
+import whalewatcher from '../tiles/whalewatcher.jpg'
 import blob from '../tiles/blob.jpg'
 import ss2 from '../tiles/ss2.jpg'
 import { padding } from './CommonStyles.js'
@@ -207,6 +208,12 @@ class Grid extends React.Component {
     allocateProjects() {
         // Push every imported image into this array. 
         this.workProjects = [
+            {
+                'img': whalewatcher,
+                'title': 'Whale Wacher',
+                'keywords': ['2023', 'Interactive', 'Net Art'],
+                'link': 'whalewatcher'
+            },
             {
                 'img': ss2,
                 'title': 'Supersynthesis II',
