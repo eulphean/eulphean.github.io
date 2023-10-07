@@ -210,7 +210,7 @@ class Grid extends React.Component {
         this.workProjects = [
             {
                 'img': whalewatcher,
-                'title': 'Whale Wacher',
+                'title': 'Whale Watcher',
                 'keywords': ['2023', 'Interactive', 'Net Art'],
                 'link': 'whalewatcher'
             },
