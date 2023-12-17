@@ -51,6 +51,7 @@ import AndTheHungryWereFed from '../projects/AndTheHungryWereFed.js'
 import BlobMaker from '../projects/BlobMaker.js'
 import Supersynthesis2 from '../projects/Supersynthesis2.js'
 import WhaleWatcher from '../projects/WhaleWatcher.js'
+import Metagems from '../projects/Metagems.js'
 import CreativeTechnologist from '../portfolios/CreativeTechnologist.js'
 import Portfolio from '../portfolios/Portfolio.js'
 import Threedone from '../portfolios/Threedone.js'
@@ -131,6 +132,7 @@ function App() {
             <Route path="/Commissions"><Title /><Grid gridType={Grid_Type.COMMISSIONS} /></Route>
             <Route path="/Archive"><Title /><Grid gridType={Grid_Type.ARCHIVE} /></Route>
             <Route path="/About"><Title /><About /></Route>
+            <Route path="/metagems"><Metagems /></Route>
             <Route path="/whalewatcher"><WhaleWatcher /></Route>
             <Route path="/blob"><BlobMaker /></Route>
             <Route path="/supersynthesis2"><Supersynthesis2 /></Route>

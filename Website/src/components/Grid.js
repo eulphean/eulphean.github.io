@@ -46,6 +46,7 @@ import supersynthesis from '../tiles/supersynthesis.jpg'
 import worldthatawaits from '../tiles/worldthatawaits.jpg'
 import andthehungrywerefed from '../tiles/andthehungrywerefed.jpg'
 import whalewatcher from '../tiles/whalewatcher.jpg'
+import metagems from '../tiles/metagems.jpg'
 import blob from '../tiles/blob.jpg'
 import ss2 from '../tiles/ss2.jpg'
 import { padding } from './CommonStyles.js'
@@ -208,6 +209,12 @@ class Grid extends React.Component {
     allocateProjects() {
         // Push every imported image into this array. 
         this.workProjects = [
+            {
+                'img': metagems,
+                'title': 'Metagems',
+                'keywords': ['2023', 'Interactive', 'Net Art'],
+                'link': 'metagems'
+            },
             {
                 'img': whalewatcher,
                 'title': 'Whale Watcher',
