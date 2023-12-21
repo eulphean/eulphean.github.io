@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3c79f745.css",
-    "main.js": "/static/js/main.152567d7.js",
+    "main.js": "/static/js/main.e917bac7.js",
     "static/media/3d-one-2023.pdf": "/static/media/3d-one-2023.82044d47c1c0c8f9fc38.pdf",
     "static/media/3d-two-2023.pdf": "/static/media/3d-two-2023.e5841a2b4d49e584f0cc.pdf",
     "static/media/ct-2023.pdf": "/static/media/ct-2023.513fed82b1f3bd8fdbff.pdf",
@@ -10,6 +10,8 @@
     "static/media/lost.gif": "/static/media/lost.2b1940456556a448c91c.gif",
     "static/media/5.mp4": "/static/media/5.d79e3ff826a9da0c8ffd.mp4",
     "static/media/pigeon.mp4": "/static/media/pigeon.fbcc625c1f369431dd76.mp4",
+    "static/media/11.jpg": "/static/media/11.ee27f90e44b10cfd5943.jpg",
+    "static/media/10.jpg": "/static/media/10.7affae72fdb3b0fe4d55.jpg",
     "static/media/3.jpg": "/static/media/3.c1387674ebf77dc50b09.jpg",
     "static/media/4.jpg": "/static/media/4.13b85dfce29fd68b9a7f.jpg",
     "static/media/5.jpg": "/static/media/5.18299258b8c669eac027.jpg",
@@ -17,26 +19,24 @@
     "static/media/2.jpg": "/static/media/2.cbe6d512a03c9ecce8ad.jpg",
     "static/media/9.jpg": "/static/media/9.03361e4b8381c1fd7ed1.jpg",
     "static/media/7.jpg": "/static/media/7.04964d1e01444e816711.jpg",
+    "static/media/6.jpg": "/static/media/6.03b1ccc3bda38271e2bc.jpg",
     "static/media/three.jpg": "/static/media/three.150a464260c314d3742e.jpg",
-    "static/media/11.jpg": "/static/media/11.ee27f90e44b10cfd5943.jpg",
     "static/media/momimsafe.jpg": "/static/media/momimsafe.646c7fb3ce22583592c4.jpg",
     "static/media/one.jpg": "/static/media/one.bb2fd20b70475d6ae886.jpg",
     "static/media/8.jpg": "/static/media/8.cfa1ac3462d0c17a116c.jpg",
     "static/media/labourA.jpg": "/static/media/labourA.ddd0d210090c4623ffbd.jpg",
+    "static/media/14.jpg": "/static/media/14.263f333853961ab5feab.jpg",
+    "static/media/12.jpg": "/static/media/12.1d39174ec90c7783a73d.jpg",
     "static/media/shooting.jpg": "/static/media/shooting.22777e12acfff4374771.jpg",
     "static/media/13.jpg": "/static/media/13.0544c3ae64ec31008063.jpg",
     "static/media/labourB.jpg": "/static/media/labourB.dbaa0a84146b3acf4a29.jpg",
-    "static/media/14.jpg": "/static/media/14.263f333853961ab5feab.jpg",
     "static/media/two.jpg": "/static/media/two.84d10288951ed7969055.jpg",
-    "static/media/10.jpg": "/static/media/10.7affae72fdb3b0fe4d55.jpg",
     "static/media/tvC.jpg": "/static/media/tvC.65ded32e65e8143a05d4.jpg",
     "static/media/brochureA.jpg": "/static/media/brochureA.b42bea6462a81321ed94.jpg",
-    "static/media/6.jpg": "/static/media/6.03b1ccc3bda38271e2bc.jpg",
     "static/media/flock.jpg": "/static/media/flock.1549451fd92b45c3cccf.jpg",
     "static/media/babble.jpg": "/static/media/babble.5b65b8f36349d97e803a.jpg",
     "static/media/AntidoteA.jpg": "/static/media/AntidoteA.87ff8f3d540871c26827.jpg",
     "static/media/tvB.jpg": "/static/media/tvB.534d4c482f73557966ab.jpg",
-    "static/media/12.jpg": "/static/media/12.1d39174ec90c7783a73d.jpg",
     "static/media/tvA.jpg": "/static/media/tvA.2ecc0c27c4a6960ddea0.jpg",
     "static/media/AntidoteB.jpg": "/static/media/AntidoteB.ad358e696779805c5ccb.jpg",
     "static/media/posterB.jpg": "/static/media/posterB.e8aec75184d8ae6e749a.jpg",
@@ -104,6 +104,7 @@
     "static/media/temperance.jpg": "/static/media/temperance.5e5dbea5c85b3c9be1d4.jpg",
     "static/media/supersynthesis.jpg": "/static/media/supersynthesis.0caa925dba5e3b429283.jpg",
     "static/media/roughroad.jpg": "/static/media/roughroad.d10d2fa68a937465d681.jpg",
+    "static/media/metagems.jpg": "/static/media/metagems.432421a0594a35ba927e.jpg",
     "static/media/shiva.jpg": "/static/media/shiva.0cde5caa0d78a640365c.jpg",
     "static/media/Flow.jpg": "/static/media/Flow.6fe97902f210816e1f5b.jpg",
     "static/media/tendtowardsB.jpg": "/static/media/tendtowardsB.cb934406773754dc2c11.jpg",
@@ -190,10 +191,10 @@
     "static/media/back.svg": "/static/media/back.fa8a25870788fde9a972906ec69e526d.svg",
     "index.html": "/index.html",
     "main.3c79f745.css.map": "/static/css/main.3c79f745.css.map",
-    "main.152567d7.js.map": "/static/js/main.152567d7.js.map"
+    "main.e917bac7.js.map": "/static/js/main.e917bac7.js.map"
   },
   "entrypoints": [
     "static/css/main.3c79f745.css",
-    "static/js/main.152567d7.js"
+    "static/js/main.e917bac7.js"
   ]
 }
