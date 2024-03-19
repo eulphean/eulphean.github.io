@@ -7,6 +7,10 @@ module.exports = {
       extend: {
         fontFamily: {
           'istok': ['Istok Web', 'serif'],
+        },
+        colors: {
+          'bgPrimary': '#45111D',
+          'bgSecondary': '#AB2B48'
         }
       },
     },

@@ -67,6 +67,3 @@ export default function Navbar() {
     )
 }
 
-// `${open ? "grid" : "hidden"} items-center font-istok`
-// className={`${open ? "hidden" : "block"}`}
-// 

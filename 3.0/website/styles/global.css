@@ -33,6 +33,6 @@
   /* Update base styles for the HTML component */
   @layer base {
     html {
-      @apply bg-black text-white
+      @apply w-full h-full bg-gradient-to-br from-bgPrimary to-bgSecondary text-white
     }
   }
