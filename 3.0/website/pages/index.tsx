@@ -11,14 +11,19 @@ export default function Home(props: HomeProps) {
   return (
     <Layout>
       <Navbar />
-        <div className="flex flex-row">
-            <div className='flex flex-col'>
-                <Building />
-                <Signup />
-            </div>
-            <Spline />
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+          {/* <div className='flex flex-col order-last md:order-first'>
+            <Building />
+            <Signup />
+          </div>
+          <Spline /> */}
         </div>
-        <Footer />
+        {/* <Footer /> */}
     </Layout>
   );
 }
+
+// <div className="flex flex-row">
+
+// <Spline />
+// </div>

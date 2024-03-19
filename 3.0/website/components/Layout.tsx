@@ -26,7 +26,7 @@ export default function Layout({children,home}: LayoutProps) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main className='p-8'>{children}</main>
+      <main className='m-8 relative'>{children}</main>
     </div>
   );
 }

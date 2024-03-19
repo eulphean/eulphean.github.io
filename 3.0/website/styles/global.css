@@ -30,7 +30,9 @@
       @apply py-2 px-5 bg-violet-500 text-white
     }
   }
-  html {
-    background-color: black;
-    color: white
+  /* Update base styles for the HTML component */
+  @layer base {
+    html {
+      @apply bg-black text-white
+    }
   }
