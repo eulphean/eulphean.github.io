@@ -31,6 +31,6 @@ type CustomButtonProps = {
 }
 function CustomButton (props: CustomButtonProps) {
     return (
-        <button className="rounded-lg p-1 text-white w-20 mt-2 bg-bgSecondary">{props.title}</button>
+        <button className="rounded-lg p-1 text-white w-20 mt-3 bg-bgSecondary">{props.title}</button>
     )
 }

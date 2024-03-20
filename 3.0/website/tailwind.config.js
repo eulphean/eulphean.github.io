@@ -9,12 +9,11 @@ module.exports = {
           'istok': ['Istok Web', 'serif'],
         },
         colors: {
+          'primary': '#45111D',
           'primaryLight': 'rgb(14, 1, 4, 0.25)',
-          'textPrimary': '#D2B1B8',
-          'brightPrimary': '#FF365D',
-          'bgPrimary': '#45111D',
-          'bgSecondary': '#AB2B48',
-          'bgSecondaryLight': 'rgb(146, 50, 72, 0.1)'
+          'primaryBright': '#FF365D',
+          'secondary': '#AB2B48',
+          'secondaryLight': 'rgb(146, 50, 72, 0.1)'
         }
       },
     },

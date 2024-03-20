@@ -33,7 +33,7 @@ export default function Navbar() {
         <>
             <div className="flex w-full absolute font-istok justify-between font-normal text-lg">
                 {!open ? hamburgerIcon : <></>}
-                <div className={`${open ? "flex justify-between p-1.5 w-56 absolute top-0 left-0 z-20 flex-row bg-bgPrimary" : "hidden"} sm:block sm:bg-transparent`}>
+                <div className={`${open ? "flex justify-between p-1.5 w-56 absolute border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary" : "hidden"} sm:block sm:bg-transparent`}>
                     {open ? closeIcon : <></>}
                     <div className="grid-cols-1 sm:grid sm:grid-cols-3">
                         <div className='mr-4'>Amay Kataria 3.0</div>
