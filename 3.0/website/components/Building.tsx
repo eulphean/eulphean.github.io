@@ -12,7 +12,7 @@ export default function Building () {
     )
     return (
         <>
-            <div className="flex flex-col font-istok mt-4 md:mt-0">
+            <div className="flex flex-col font-istok mt-4 text-secondaryBright md:mt-0">
                 <div className="text-3xl font-bold">BUILDING</div>
                 <div className="text-base md:text-lg">Currently <span>{hammerIcon}</span> my next website.</div>
                 <div className="flex mt-1 items-center w-full h-5 relative rounded-lg border border-bgSecondary bg-bgSecondaryLight">

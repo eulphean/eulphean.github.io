@@ -1,4 +1,4 @@
-export default function Spline() {
+export default function Room() {
     return (
         <div className="width-screen h-52 bg-slate-300">
             

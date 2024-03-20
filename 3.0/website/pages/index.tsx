@@ -1,4 +1,4 @@
-import Spline from '../components/Spline';
+import Room from '../components/Room';
 import Building from '../components/Building';
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
@@ -18,7 +18,7 @@ export default function Home(props: HomeProps) {
           <Building />
           <Signup />
         </div>
-        <Spline />
+        <Room />
       </div>
       <Footer />
     </Layout>
