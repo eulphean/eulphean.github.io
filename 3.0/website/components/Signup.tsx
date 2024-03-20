@@ -21,7 +21,7 @@ type CustomInputProps = {
 function CustomInput (props: CustomInputProps) {
     return(
         <input 
-            className="w-full mt-2 p-1 text-white border-bgSecondary bg-bgSecondaryLight rounded-2xl border text-center" placeholder={props.placeholder} 
+            className="w-full mt-2 p-1 text-white border-secondary bg-secondaryLight rounded-2xl border text-center" placeholder={props.placeholder} 
         />
     )
 }
@@ -31,6 +31,6 @@ type CustomButtonProps = {
 }
 function CustomButton (props: CustomButtonProps) {
     return (
-        <button className="rounded-lg p-1 text-white w-20 mt-3 bg-bgSecondary">{props.title}</button>
+        <button className="rounded-lg p-1 text-white w-20 mt-3 bg-secondary">{props.title}</button>
     )
 }
