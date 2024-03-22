@@ -1,6 +1,5 @@
 import React, { useState, Suspense } from "react"
 import CustomButton from "./CustomButton";
-
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function Intro() {

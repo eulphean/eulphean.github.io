@@ -5,12 +5,14 @@ import Navbar from '../components/Navbar';
 import Signup from '../components/Signup';
 import Footer from '../components/Footer';
 import Intro from '../components/Intro'
+import CursorFollower from '../components/CursorFollower';
 
 // These props can be filled using staticProps on the server.
 type HomeProps = {}
 export default function Home(props: HomeProps) {
   return (
     <Layout>
+      <CursorFollower />
       <Intro />
       <Navbar />
       <div className='grid absolute w-full grid-cols-1 md:grid-cols-2 mt-12'>
