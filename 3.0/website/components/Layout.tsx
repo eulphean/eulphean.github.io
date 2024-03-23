@@ -11,7 +11,7 @@ export default function Layout({children,home}: LayoutProps) {
     <div>
       <Head>
         <title>{siteTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
 
         <meta
           name="description"
