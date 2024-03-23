@@ -17,7 +17,8 @@ export default function Intro(props: IntroProps) {
         props.onEnter();
         setShow(!show);
     }
-
+    
+    const intro = <SplineScene sceneType={SceneType.Intro} onLoadComplete={onLoadComplete} />;
     return(
         <div className={`${show ? "visible" : "collapse"} z-40 fixed flex justify-center left-0 right-0 top-0 bottom-0 w-screen h-screen bg-primary`}>
             {spinning ? <Loader /> :
@@ -26,9 +27,8 @@ export default function Intro(props: IntroProps) {
                     title="Enter" 
                     customStyles="text-1xl fixed bottom-20" 
                 />
-            }
-                            
-            <SplineScene sceneType={SceneType.Intro} onLoadComplete={onLoadComplete} />
+            }            
+            {intro}
         </div>
     );
 }

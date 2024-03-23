@@ -13,18 +13,11 @@ type SplineSceneProps = {
 }
 
 export default function SplineScene(props: SplineSceneProps) {
-    const canvas = useRef<HTMLCanvasElement>(null);
-    const [loaded, setLoaded] = useState({
-        intro: false,
-        room: false
-    });
-
     const onLoadComplete = () => {
         console.log('Load complete');
         props.onLoadComplete();
     }
 
-    console.log('SceneType: ' + props.sceneType);
     return (
         <>
             {props.sceneType === SceneType.Intro ?

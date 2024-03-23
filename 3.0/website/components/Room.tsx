@@ -11,12 +11,12 @@ export default function Room(props: RoomProps) {
     const onLoadComplete = () => {
         setSpinning(false);
     }
+
+    const room = (<SplineScene sceneType={SceneType.Room} onLoadComplete={onLoadComplete}/>);
     return (
         <div className="width-screen">
             { spinning ?<Loader /> : <></> }
-            
-            {props.showRoom ? <SplineScene sceneType={SceneType.Room} onLoadComplete={onLoadComplete}/> :
-                <></>}
+            {props.showRoom ? room :<></>}
         </div>
     );
 }
