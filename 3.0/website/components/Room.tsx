@@ -1,11 +1,30 @@
-import React, { Suspense } from 'react';
-//const Spline = React.lazy(() => import('@splinetool/react-spline'));
-export default function Room() {
+import React, { useState } from 'react';
+import SplineScene, {SceneType} from './SplineScene';
+
+type RoomProps = {
+    showRoom: boolean
+}
+
+export default function Room(props: RoomProps) {
+    const [spinning, setSpinning] = useState(true);
+
+    const onLoadComplete = () => {
+        setSpinning(false);
+    }
     return (
         <div className="width-screen">
-            {/* <Suspense>
-                <Spline scene="https://prod.spline.design/cVX19QaRpag1IL1y/scene.splinecode"/>
-            </Suspense> */}
+            { spinning ?<Loader /> : <></> }
+            
+            {props.showRoom ? <SplineScene sceneType={SceneType.Room} onLoadComplete={onLoadComplete}/> :
+                <></>}
         </div>
     );
+}
+
+function Loader() {
+    return (
+        <div className="flex justify-center items-center text-green text-lg absolute w-full top-0 left-0 bottom-0 right-0">
+            Loading...
+        </div>
+    )
 }

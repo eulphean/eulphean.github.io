@@ -1,60 +1,43 @@
-import React, { useState, Suspense, ReactElement, JSXElementConstructor, ComponentType } from "react"
-import Image from "next/image";
-import dynamic from "next/dynamic";
-import CustomButton from "./CustomButton";
-
-// const Lion = React.lazy(() => delayForDemo(import('./TestImage')));
+import React, { useRef, useEffect, useState, Suspense, ComponentType } from "react"
+import {Application} from '@splinetool/runtime'
 const Spline = React.lazy(() => delayForDemo(import('@splinetool/react-spline')));
 
-export default function SplineScene() {
-    const [spinning, setSpinning] = useState(true);
-    const [show, setShow] = useState(true);    
+export enum SceneType {
+    Intro = 0,
+    Room = 1
+}
 
-    // Callback called when 
-    const onLoad = () => {
-        setSpinning(false);
+type SplineSceneProps = {
+    sceneType: SceneType,
+    onLoadComplete: () => void
+}
+
+export default function SplineScene(props: SplineSceneProps) {
+    const canvas = useRef<HTMLCanvasElement>(null);
+    const [loaded, setLoaded] = useState({
+        intro: false,
+        room: false
+    });
+
+    const onLoadComplete = () => {
+        console.log('Load complete');
+        props.onLoadComplete();
     }
 
-    return(
-        <div className={`${show ? "visible" : "collapse"} z-40 fixed flex justify-center left-0 right-0 top-0 bottom-0 w-screen h-screen bg-primary`}>
-            {spinning ? <Loader /> :
-                <CustomButton 
-                    onClick={()=>setShow(!show)} 
-                    title="Enter" 
-                    customStyles="text-1xl fixed bottom-20" 
-                />
+    console.log('SceneType: ' + props.sceneType);
+    return (
+        <>
+            {props.sceneType === SceneType.Intro ?
+                <Suspense><Spline scene="https://prod.spline.design/yGk2E1zv7eJLo0aO/scene.splinecode" onLoad={onLoadComplete} /></Suspense> :
+                <Suspense><Spline scene="https://prod.spline.design/cVX19QaRpag1IL1y/scene.splinecode" onLoad={onLoadComplete} /></Suspense>
             }
-            <Suspense >
-                <Spline scene="https://prod.spline.design/yGk2E1zv7eJLo0aO/scene.splinecode" onLoad={onLoad} />
-            </Suspense>
-        </div>
+        </>
     );
 }
 
-function Loader() {
-    return (
-        <div className="flex justify-center items-center text-green text-lg absolute w-full top-0 left-0 bottom-0 right-0">
-            Loading...
-        </div>
-    )
-}
-
+// Intro animation for the beginning.
 function delayForDemo(promise: Promise<{default: ComponentType<any>}>) {
     return new Promise(resolve => {
-      setTimeout(resolve, 5000);
+      setTimeout(resolve, 0);
     }).then(() => promise);
-  }
-
-// {/* {spinning ? <Loader /> :
-//     <CustomButton 
-//         onClick={()=>setShow(!show)} 
-//         title="Enter" 
-//         customStyles="text-1xl fixed bottom-20" 
-//     />
-// } */}
-// {/* <Suspense>
-//     <Spline scene="https://prod.spline.design/ByOBhH99niqRacQz/scene.splinecode" onLoad={onLoadIntro} />
-// </Suspense> */}
-// {/* <Suspense>
-//     <Spline scene="https://prod.spline.design/cVX19QaRpag1IL1y/scene.splinecode" onLoad={onLoadIntro}/>
-// </Suspense> */}
+}
