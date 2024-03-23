@@ -5,7 +5,7 @@ type CustomButtonProps = {
 }
 
 export default function CustomButton (props: CustomButtonProps) { 
-    const defaultStyles = "rounded-lg font-istok p-1 text-secondaryBright font-bold w-20 mt-3 bg-secondary"
+    const defaultStyles = "rounded-lg font-istok p-1 text-secondaryBright mt-3 bg-secondary"
     const newStyles = defaultStyles + " " + props.customStyles;
 
     return (

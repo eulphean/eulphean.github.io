@@ -14,7 +14,7 @@ export default function Room(props: RoomProps) {
 
     const room = (<SplineScene sceneType={SceneType.Room} onLoadComplete={onLoadComplete}/>);
     return (
-        <div className="width-screen">
+        <div className="w-full h-72 bg-slate-100">
             { spinning ?<Loader /> : <></> }
             {props.showRoom ? room :<></>}
         </div>
@@ -23,7 +23,7 @@ export default function Room(props: RoomProps) {
 
 function Loader() {
     return (
-        <div className="flex justify-center items-center text-green text-lg absolute w-full top-0 left-0 bottom-0 right-0">
+        <div className="flex justify-center items-center text-green text-lg w-full top-0 left-0 bottom-0 right-0">
             Loading...
         </div>
     )
