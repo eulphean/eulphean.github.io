@@ -11,7 +11,7 @@ export default function Building () {
         />
     )
 
-    const container="flex flex-col text-secondaryBright font-istok mt-0 md:mt-0 md:w-2/3"
+    const container="flex flex-col text-secondaryBright font-istok xs:mt-4 md:mt-0 md:w-2/3"
     const title="font-bold text-3xl text-center md:text-7xl";
     const subtitle="text-center text-base md:text-xl";
     return (

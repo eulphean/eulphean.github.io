@@ -19,7 +19,7 @@ module.exports = {
           'secondaryBright': '#F0D6CF'
         },
         screens: {
-          'xs': '375px',
+          'xs': '380px',
           ...defaultTheme.screens,
         },
       },
