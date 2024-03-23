@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
     content: [
         "./pages/**/*.{ts,tsx}",
@@ -15,7 +17,11 @@ module.exports = {
           'secondary': '#AB2B48',
           'secondaryLight': 'rgb(146, 50, 72, 0.1)',
           'secondaryBright': '#F0D6CF'
-        }
+        },
+        screens: {
+          'xs': '375px',
+          ...defaultTheme.screens,
+        },
       },
     },
     plugins: [],

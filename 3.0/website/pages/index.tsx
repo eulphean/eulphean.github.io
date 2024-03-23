@@ -26,7 +26,7 @@ export default function Home(props: HomeProps) {
         </div>
         <Room showRoom={showRoom} />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </Layout>
   );
 }

@@ -10,13 +10,17 @@ export default function Building () {
             alt={"building"}
         />
     )
+
+    const container="flex flex-col text-secondaryBright font-istok mt-0 md:mt-0 md:w-2/3"
+    const title="font-bold text-3xl text-center md:text-7xl";
+    const subtitle="text-center text-base md:text-xl";
     return (
         <>
-            <div className="flex flex-col font-istok mt-4 text-secondaryBright md:mt-0 md:w-2/3">
-                <div className="text-3xl font-bold md:text-7xl">BUILDING</div>
-                <div className="text-base md:text-xl">Currently <span>{hammerIcon}</span> the next iteration of my next website.</div>
+            <div className={container}>
+                <div className={title}>BUILDING</div>
+                <div className={subtitle}>Currently <span>{hammerIcon}</span> the next iteration of my website.</div>
                 <div className="flex mt-1 items-center w-full h-5 relative rounded-lg border border-bgSecondary bg-bgSecondaryLight md:w-3/4">
-                    <div className="absolute left-0.5 w-1/5 h-3.5 rounded-lg bg-brightPrimary"/>
+                    <div className="absolute left-0.5 w-1/3 h-3.5 rounded-lg bg-primaryBright"/>
                 </div>
             </div>
         </>

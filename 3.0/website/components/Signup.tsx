@@ -2,13 +2,17 @@ import CustomButton from "./CustomButton";
 
 const title = "Meanwhile, stay upto date with my newsletter.";
 export default function Signup () {
+    const container= "font-istok flex flex-col mt-3 text-center text-secondaryBright md:w-2/3 md:mt-12";
+    const subtitle= "text-base md:text-xl w-full";
+    const detailsContainer= "bg-primaryLight rounded-2xl p-2 mt-2 w-full flex flex-col items-center md:w-4/5";
+    const button = "font-bold text-base p-1 w-24 md:text-xl ";
     return (
-        <div className="flex flex-col mt-6 font-istok text-secondaryBright md:w-2/3 md:mt-12">
-            <div className="text-base md:text-xl w-full">{title}</div>
-            <div className="bg-primaryLight rounded-2xl p-4 mt-4 w-full flex flex-col items-center md:w-4/5">
+        <div className={container}>
+            <div className={subtitle}>{title}</div>
+            <div className={detailsContainer}>
                 <CustomInput placeholder="Name" />
                 <CustomInput placeholder="Email" />
-                <CustomButton title="Sign Up" customStyles="font-bold text-xl p-2 w-32" />
+                <CustomButton customStyles={button} title="Sign Up"/>
             </div>
         </div>
 
@@ -20,10 +24,11 @@ type CustomInputProps = {
 }
 
 function CustomInput (props: CustomInputProps) {
+    const inputStyle = "w-full mt-2 p-1 text-white border-secondary bg-secondaryLight rounded-2xl border text-center h-6 md:w-2/3";
     return(
         <input 
-            className="w-full mt-3 p-1 text-white border-secondary bg-secondaryLight rounded-2xl border text-center h-12 md:w-2/3 " 
+            className={inputStyle} 
             placeholder={props.placeholder} 
         />
-    )
+    );
 }
