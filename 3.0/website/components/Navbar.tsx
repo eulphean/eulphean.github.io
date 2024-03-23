@@ -44,13 +44,22 @@ export default function Navbar() {
         />
     );
 
+    const navbarContainer = "flex w-full absolute font-istok justify-between font-normal text-secondaryBright text-base md:text-xl";
+    
+    // Titles
+    const titleContainerOpen = "flex rounded-lg justify-between p-1.5 w-56 absolute border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary"
+    const titleContainer = `${open ? `${titleContainerOpen}` : "hidden"} sm:block sm:bg-transparent`;
+    const titles = 'grid-cols-1 sm:grid sm:grid-cols-3 ';
+    
+    // Icones
+    const iconsContainer = "flex justify-between absolute right-0 -top-0.5 lg:w-32";
     return (
         <>
-            <div ref={container} className="flex w-full absolute font-istok justify-between font-normal text-lg text-secondaryBright">
+            <div ref={container} className={navbarContainer}>
                 {!open ? hamburgerIcon : <></>}
-                <div className={`${open ? "flex rounded-lg justify-between p-1.5 w-56 absolute border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary" : "hidden"} sm:block sm:bg-transparent`}>
+                <div className={titleContainer}>
                     {open ? closeIcon : <></>}
-                    <div className="grid-cols-1 text-base sm:grid sm:grid-cols-3">
+                    <div className={titles}>
                         <div 
                             ref={name} 
                             onMouseEnter={contextSafe(() => t1.current[0]?.play())}
@@ -72,22 +81,22 @@ export default function Navbar() {
                             className='mr-4'>Media Arts Portfolio</div>
                     </div>
                 </div>
-                <div className="flex absolute right-0 -top-0.5">
+                <div className={iconsContainer}>
                     <Image
                         priority
-                        className="w-8 h-8"
+                        className="w-8 h-8 md:w-9 md:h-9"
                         src={linkedin}
                         alt="Check out my LinkedIn profile"
                     />
                     <Image
                         priority
-                        className='w-8 h-8'
+                        className='w-8 h-8 md:w-9 md:h-9'
                         src={github}
                         alt="Check out my Github profile"
                     />
                     <Image
                         priority
-                        className='w-8 h-8'
+                        className='w-8 h-8 md:w-9 md:h-9'
                         src={ig}
                         alt="Check out my Instagram profile"
                     />
