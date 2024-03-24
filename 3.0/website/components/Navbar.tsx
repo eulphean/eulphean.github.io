@@ -44,7 +44,7 @@ export default function Navbar() {
         />
     );
 
-    const navbarContainer = "flex w-full absolute font-istok justify-between font-normal text-secondaryBright text-base md:text-xl";
+    const navbarContainer = "flex h-top font-istok justify-between font-normal text-secondaryBright text-base md:text-xl";
     
     // Titles
     const titleContainerOpen = "flex rounded-lg justify-between p-1.5 w-56 absolute border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary"

@@ -22,6 +22,11 @@ module.exports = {
           'xs': '380px',
           ...defaultTheme.screens,
         },
+        height: {
+          'top': '10%',
+          'middle': '85.0%',
+          'bottom': '5.0%'
+        }
       },
     },
     plugins: [],
