@@ -37,69 +37,71 @@ export default function Navbar() {
     const hamburgerIcon = (
         <Image 
             priority
-            className='block sm:hidden'
+            className={`${open ? "collapse sm:hidden" : "visible sm:hidden"}`}
             src={hamburger}
             alt={"Open Menu"}
             onClick={() => setOpen(!open)}
         />
     );
 
-    const navbarContainer = "flex h-top font-istok justify-between font-normal text-secondaryBright text-base md:text-xl";
+    const navbarContainer = "flex items-center w-full h-top font-istok text-secondaryBright text-base p-4";
     
     // Titles
-    const titleContainerOpen = "flex rounded-lg justify-between p-1.5 w-56 absolute border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary"
+    const titleContainerOpen = "flex absolute rounded-lg justify-between p-1.5 w-56  border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary"
     const titleContainer = `${open ? `${titleContainerOpen}` : "hidden"} sm:block sm:bg-transparent`;
-    const titles = 'grid-cols-1 sm:grid sm:grid-cols-3 ';
+    const titles = 'grid-cols-1 sm:grid sm:grid-cols-3';
     
     // Icones
-    const iconsContainer = "flex justify-between absolute right-0 -top-0.5 lg:w-32";
+    const iconsContainer = "flex flex-row";
     return (
         <>
             <div ref={container} className={navbarContainer}>
-                {!open ? hamburgerIcon : <></>}
-                <div className={titleContainer}>
-                    {open ? closeIcon : <></>}
-                    <div className={titles}>
-                        <div 
-                            ref={name} 
-                            onMouseEnter={contextSafe(() => t1.current[0]?.play())}
-                            onMouseLeave={contextSafe(() => t1.current[0]?.reverse())}
-                            className='mr-4'
-                        >
-                        Amay Kataria 3.0</div>
-                        <div 
-                            ref={industry} 
-                            className='mr-4'
-                            onMouseEnter={contextSafe(() => t1.current[1]?.play())}
-                            onMouseLeave={contextSafe(() => t1.current[1]?.reverse())}
-                        >
-                            Industry Portfolio
+                <div className='flex relative w-full justify-between'>
+                    {hamburgerIcon}
+                    <div className={titleContainer}>
+                        {open ? closeIcon : <></>}
+                        <div className={titles}>
+                            <div 
+                                ref={name} 
+                                onMouseEnter={contextSafe(() => t1.current[0]?.play())}
+                                onMouseLeave={contextSafe(() => t1.current[0]?.reverse())}
+                                className='mr-4'
+                            >
+                            Amay Kataria 3.0</div>
+                            <div 
+                                ref={industry} 
+                                className='mr-4'
+                                onMouseEnter={contextSafe(() => t1.current[1]?.play())}
+                                onMouseLeave={contextSafe(() => t1.current[1]?.reverse())}
+                            >
+                                Industry Portfolio
+                            </div>
+                            <div ref={media} 
+                                onMouseEnter={contextSafe(() => t1.current[2]?.play())}
+                                onMouseLeave={contextSafe(() => t1.current[2]?.reverse())}
+                                className='mr-4'>Media Arts Portfolio</div>
                         </div>
-                        <div ref={media} 
-                            onMouseEnter={contextSafe(() => t1.current[2]?.play())}
-                            onMouseLeave={contextSafe(() => t1.current[2]?.reverse())}
-                            className='mr-4'>Media Arts Portfolio</div>
                     </div>
-                </div>
-                <div className={iconsContainer}>
-                    <Image
-                        priority
-                        className="w-8 h-8 md:w-9 md:h-9"
-                        src={linkedin}
-                        alt="Check out my LinkedIn profile"
-                    />
-                    <Image
-                        priority
-                        className='w-8 h-8 md:w-9 md:h-9'
-                        src={github}
-                        alt="Check out my Github profile"
-                    />
-                    <Image
-                        priority
-                        className='w-8 h-8 md:w-9 md:h-9'
-                        src={ig}
-                        alt="Check out my Instagram profile"
-                    />
+                    <div className={iconsContainer}>
+                        <Image
+                            priority
+                            className="w-8 h-8 md:w-9 md:h-9"
+                            src={linkedin}
+                            alt="Check out my LinkedIn profile"
+                        />
+                        <Image
+                            priority
+                            className='w-8 h-8 md:w-9 md:h-9'
+                            src={github}
+                            alt="Check out my Github profile"
+                        />
+                        <Image
+                            priority
+                            className='w-8 h-8 md:w-9 md:h-9'
+                            src={ig}
+                            alt="Check out my Instagram profile"
+                        />
+                    </div>
                 </div>
             </div>
         </>
