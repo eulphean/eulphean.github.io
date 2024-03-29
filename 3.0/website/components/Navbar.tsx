@@ -44,19 +44,20 @@ export default function Navbar() {
         />
     );
 
-    const navbarContainer = "flex items-center w-full text-secondaryBright text-base p-4 lg:text-lg xl:text-xl 2xl:text-2xl";
+    const navbarContainer = "flex items-center w-full text-secondaryBright text-base p-4 lg:text-lg xl:p-8 xl:text-xl 2xl:p-12 2xl:text-2xl";
     
     // Titles
     const titleContainerOpen = "flex absolute rounded-lg justify-between p-1.5 w-56  border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary"
     const titleContainer = `${open ? `${titleContainerOpen}` : "hidden"} sm:block sm:bg-transparent`;
-    const titles = 'grid-cols-1 sm:grid sm:grid-cols-3';
+    const titles = 'grid-cols-1 sm:grid sm:grid-cols-3 items-center';
     
-    // Icones
-    const iconsContainer = "flex flex-row";
+    // Icons
+    const iconsContainer = "flex flex-row w-32 justify-between lg:w-40";
+    const icon = "w-8 h-8 md:w-9 md:h-9 lg:w-11 lg:h-11";
     return (
         <>
             <div ref={container} className={navbarContainer}>
-                <div className='flex relative w-full justify-between'>
+                <div className='flex relative w-full justify-between items-center'>
                     {hamburgerIcon}
                     <div className={titleContainer}>
                         {open ? closeIcon : <></>}
@@ -85,19 +86,19 @@ export default function Navbar() {
                     <div className={iconsContainer}>
                         <Image
                             priority
-                            className="w-8 h-8 md:w-9 md:h-9"
+                            className={icon}
                             src={linkedin}
                             alt="Check out my LinkedIn profile"
                         />
                         <Image
                             priority
-                            className='w-8 h-8 md:w-9 md:h-9'
+                            className={icon}
                             src={github}
                             alt="Check out my Github profile"
                         />
                         <Image
                             priority
-                            className='w-8 h-8 md:w-9 md:h-9'
+                            className={icon}
                             src={ig}
                             alt="Check out my Instagram profile"
                         />
