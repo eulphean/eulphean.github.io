@@ -19,13 +19,14 @@ module.exports = {
           'secondaryBright': '#F0D6CF'
         },
         screens: {
-          'xs': '380px',
+          'xs': '440px',
           ...defaultTheme.screens,
         },
         height: {
           'top': '10%',
           'middle': '85.0%',
-          'bottom': '5.0%'
+          'bottom': '5.0%',
+          '88': '22rem'
         }
       },
     },

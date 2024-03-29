@@ -21,7 +21,7 @@ export default function Home(props: HomeProps) {
       <div className='flex items-center w-full h-top'>
         <Navbar />
       </div>
-      <div className="flex flex-col justify-evenly h-middle px-8">
+      <div className="flex items-center flex-col px-8 justify-evenly h-middle">
         <Room showRoom={showRoom} />
         <Building />
         <Signup />
