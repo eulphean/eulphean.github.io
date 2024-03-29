@@ -18,13 +18,17 @@ export default function Home(props: HomeProps) {
     <Layout>
       {/* <CursorFollower /> */}
       <Intro onEnter={() => setShowRoom(true)} />
-      <Navbar />
+      <div className='flex items-center w-full h-top'>
+        <Navbar />
+      </div>
       <div className="flex flex-col justify-evenly h-middle px-8">
         <Room showRoom={showRoom} />
         <Building />
         <Signup />
       </div>
-      <Footer />
+      <div className="h-bottom flex items-center justify-center">
+        <Footer />
+      </div>
     </Layout>
   );
 }
