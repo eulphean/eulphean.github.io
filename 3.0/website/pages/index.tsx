@@ -18,17 +18,19 @@ export default function Home(props: HomeProps) {
     <Layout>
       {/* <CursorFollower /> */}
       <Intro onEnter={() => setShowRoom(true)} />
-      <div className='flex items-center w-full h-top'>
-        <Navbar />
-      </div>
-      <div className="flex items-center flex-col px-8 justify-evenly h-middle">
-        <Room showRoom={showRoom} />
-        <Building />
-        <Signup />
-      </div>
-      <div className="h-bottom flex items-center justify-center">
-        <Footer />
-      </div>
+        <div className='flex items-center w-full h-top'>
+          <Navbar />
+        </div>
+        <div className="flex flex-col w-full items-center justify-evenly h-middle lg:flex-row">
+            <Room showRoom={showRoom} />
+            <div className='flex flex-col items-center px-4 grow content-evenly justify-evenly lg:justify-center lg:gap-12 lg:order-first lg:w-1/2'>
+              <Building />
+              <Signup />
+            </div>
+        </div>
+        <div className="h-bottom flex items-center justify-center">
+          <Footer />
+        </div>
     </Layout>
   );
 }

@@ -26,7 +26,11 @@ module.exports = {
           'top': '10%',
           'middle': '85.0%',
           'bottom': '5.0%',
-          '88': '22rem'
+          '88': '22rem',
+          'mediumRoom': '36rem'
+        },
+        minHeight: {
+          'medium': '32rem',
         }
       },
     },

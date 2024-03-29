@@ -11,9 +11,9 @@ export default function Building () {
         />
     )
 
-    const container="flex flex-col items-center text-secondaryBright font-istok"
-    const title="font-bold text-3xl text-center md:text-7xl";
-    const subtitle="text-center text-base md:text-xl";
+    const container="flex flex-col items-center text-secondaryBright"
+    const title="font-bold text-3xl text-center";
+    const subtitle="text-center text-base";
     return (
         <>
             <div className={container}>
