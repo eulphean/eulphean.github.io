@@ -26,12 +26,11 @@ module.exports = {
           'top': '10%',
           'middle': '85.0%',
           'bottom': '5.0%',
-          '88': '22rem',
-          'mediumRoom': '36rem'
+          'large': '36rem',
+          'xLarge': '42rem',
+          'xxLarge': '48rem'
+
         },
-        minHeight: {
-          'medium': '32rem',
-        }
       },
     },
     plugins: [],
