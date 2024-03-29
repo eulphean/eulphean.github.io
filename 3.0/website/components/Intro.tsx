@@ -25,7 +25,7 @@ export default function Intro(props: IntroProps) {
                 <CustomButton 
                     onClick={onClickEnter} 
                     title="Enter" 
-                    customStyles="text-xl p-2 font-bold fixed bottom-20 xs:p-2 lg:text-lg lg:mt-4 lg:w-32 xl:text-xl xl:36 2xl:text-2xl" 
+                    customStyles="text-xl p-2 font-bold fixed bottom-20 xs:p-2 lg:text-lg lg:mt-4 lg:w-32 xl:text-xl" 
                 />
             }            
             {intro}
