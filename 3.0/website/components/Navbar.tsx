@@ -44,7 +44,7 @@ export default function Navbar() {
         />
     );
 
-    const navbarContainer = "flex items-center w-full text-secondaryBright text-base p-4";
+    const navbarContainer = "flex items-center w-full text-secondaryBright text-base p-4 lg:text-lg xl:text-xl 2xl:text-2xl";
     
     // Titles
     const titleContainerOpen = "flex absolute rounded-lg justify-between p-1.5 w-56  border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary"

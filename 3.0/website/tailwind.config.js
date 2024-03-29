@@ -29,8 +29,13 @@ module.exports = {
           'large': '36rem',
           'xLarge': '42rem',
           'xxLarge': '48rem'
-
         },
+        width: {
+          '88': '22rem',
+          '102': '28rem',
+          '110': '30rem',
+          '118': '32rem'
+        }
       },
     },
     plugins: [],

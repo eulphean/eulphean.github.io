@@ -23,7 +23,7 @@ export default function Home(props: HomeProps) {
         </div>
         <div className="flex flex-col w-full items-center justify-evenly h-middle lg:flex-row">
             <Room showRoom={showRoom} />
-            <div className='flex flex-col items-center px-4 grow content-evenly justify-evenly lg:justify-center lg:gap-12 lg:order-first lg:w-1/2'>
+            <div className='flex flex-col items-center px-4 grow content-evenly justify-evenly lg:justify-center lg:gap-16 lg:order-first lg:w-1/2 xl:gap-32 xl:w-2/3'>
               <Building />
               <Signup />
             </div>
