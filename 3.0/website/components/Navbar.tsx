@@ -31,7 +31,7 @@ export default function Navbar() {
         });
 
         [lin.current, git.current, insta.current].forEach(c => {
-            let t = gsap.to(c, {rotationZ: -5, scale: 1.24, duration: 0.5}).pause();
+            let t = gsap.to(c, {rotationZ: -5, scale: 1.5, duration: 0.5}).pause();
             t2.current.push(t);
         });
     }, []);
@@ -83,7 +83,7 @@ export default function Navbar() {
                                 onMouseLeave={contextSafe(() => t1.current[0]?.reverse())}
                                 className='mr-4'
                             >
-                            Amay Kataria 3.0</a>
+                            Amay Kataria 2.0</a>
                             <div 
                                 ref={industry} 
                                 className='mr-4'

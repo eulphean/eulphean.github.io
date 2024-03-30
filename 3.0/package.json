@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@splinetool/runtime": "^1.0.78"
+    "@splinetool/runtime": "^1.0.78",
+    "axios": "^1.6.8"
   }
 }

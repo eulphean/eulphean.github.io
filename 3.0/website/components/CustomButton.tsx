@@ -1,17 +1,26 @@
+import React, { forwardRef } from "react";
 type CustomButtonProps = {
     title: string,
     customStyles?: string,
-    onClick(event: React.MouseEvent): void
+    onClick(event: React.MouseEvent): void,
+    onMouseEnter?: React.MouseEventHandler,
+    onMouseLeave?: React.MouseEventHandler
 }
 
-export default function CustomButton (props: CustomButtonProps) { 
+const CustomButton = React.forwardRef <HTMLButtonElement, CustomButtonProps>((props, ref) => { 
     const defaultStyles = "rounded-lg font-istok p-1 text-secondaryBright mt-3 bg-secondary"
     const newStyles = defaultStyles + " " + props.customStyles;
 
     return (
-        <button className={newStyles}
+        <button 
+            ref={ref}
+            onMouseEnter={props.onMouseEnter}
+            onMouseLeave={props.onMouseLeave}
+            className={newStyles}
             onClick={props.onClick}>
             {props.title}
         </button>
     )
-}
+});
+
+export default CustomButton;

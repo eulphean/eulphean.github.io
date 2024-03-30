@@ -30,6 +30,6 @@ export default function SplineScene(props: SplineSceneProps) {
 // Intro animation for the beginning.
 function delayForDemo(promise: Promise<{default: ComponentType<any>}>) {
     return new Promise(resolve => {
-      setTimeout(resolve, 2000);
+      setTimeout(resolve, 0);
     }).then(() => promise);
 }
