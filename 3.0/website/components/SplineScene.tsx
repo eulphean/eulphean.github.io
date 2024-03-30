@@ -1,5 +1,4 @@
-import React, { useRef, useEffect, useState, Suspense, ComponentType } from "react"
-import {Application} from '@splinetool/runtime'
+import React, { Suspense, ComponentType } from "react"
 const Spline = React.lazy(() => delayForDemo(import('@splinetool/react-spline')));
 
 export enum SceneType {
@@ -31,6 +30,6 @@ export default function SplineScene(props: SplineSceneProps) {
 // Intro animation for the beginning.
 function delayForDemo(promise: Promise<{default: ComponentType<any>}>) {
     return new Promise(resolve => {
-      setTimeout(resolve, 0);
+      setTimeout(resolve, 2000);
     }).then(() => promise);
 }
