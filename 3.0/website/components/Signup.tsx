@@ -12,11 +12,12 @@ enum Status {
     ERROR = 2
 }
 export default function Signup () {
-    const container= "flex justify-center flex-col mt-3 text-center text-secondaryBright xs:w-96 xl:w-102 2xl:w-118";
+    const container= "flex w-full items-center justify-center flex-col mt-3 text-center text-secondaryBright";
     const subtitleStyle= "text-base w-full lg:text-lg xl:text-2xl";
-    const detailsContainer= "bg-primaryLight rounded-2xl p-2 mt-2 w-full flex flex-col items-center lg:p-3";
+    const detailsContainer= "flex flex-col mt-1 gap:1.5 w-full xs:w-96 lg:p-3 xl:w-102 2xl:w-118"
+    const signupContainer= "bg-primaryLight rounded-2xl p-2 w-full flex flex-col items-center";
     const button = "font-bold text-base p-1 w-24 xs:p-2 lg:text-lg lg:mt-4 lg:w-32 xl:text-xl xl:36";
-    const titleStyle = "font-bold text-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl";
+    const titleStyle = "font-bold text-center text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl";
 
     const [email, setEmail] = useState("");
     const [valid, setValid] = useState(true);
@@ -61,21 +62,24 @@ export default function Signup () {
     return (
         <div className={container}>
             <div className={titleStyle}>{title}</div>
-            <div className={subtitleStyle}>{subtitle}</div>
-            {   status === Status.SUCCESS ?   
-                    <div className="text-base bg-green-300 p-2 m-2 text-black">Success! Please check your email to confirm your subscription.</div> :
-                status === Status.ERROR ?
-                    <div className="text-base bg-red-300 p-2 m-2 text-black">Error! Sorry, I couldn't subscribe you.</div> :
-                status === Status.NONE ? 
-                    <div className={detailsContainer}>
-                        {!valid ? 
-                        <div className="text-base bg-red-300 p-2 m-2 text-black">Invalid Email. Please try Again!</div>: 
-                        <></>
-                        }
-                        <CustomInput value={email} placeholder="Email Address" onChange={onTextInput} />
-                        <CustomButton onClick={onSubmit} customStyles={button} title="Sign Up"/>
-                    </div> : <></>
-            }
+            <div className={detailsContainer}>
+                <div className={subtitleStyle}>{subtitle}</div>
+                {   
+                    status === Status.SUCCESS ?   
+                        <div className="text-base bg-green-300 p-2 m-2 text-black">Success! Please check your email to confirm your subscription.</div> :
+                    status === Status.ERROR ?
+                        <div className="text-base bg-red-300 p-2 m-2 text-black">Error! Sorry, I couldn't subscribe you.</div> :
+                    status === Status.NONE ? 
+                        <div className={signupContainer}>
+                            {!valid ? 
+                            <div className="text-base bg-red-300 p-2 m-2 text-black">Invalid Email. Please try Again!</div>: 
+                            <></>
+                            }
+                            <CustomInput value={email} placeholder="Email Address" onChange={onTextInput} />
+                            <CustomButton onClick={onSubmit} customStyles={button} title="Sign Up"/>
+                        </div> : <></>
+                }
+            </div>
         </div>
 
     );
