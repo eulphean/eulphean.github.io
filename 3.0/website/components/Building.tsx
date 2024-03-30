@@ -59,7 +59,7 @@ export default function Building (props: BuildingProps) {
                     </div>
                     <div ref={nameRef} className={titleB}>Amay Kataria 3.0</div>
                 </div>
-                <div className='flex flex-col justify-center items-center gap-0 mt-1 xs:gap-1 md:mt-3 lg:mt-5 xl:mt-7 2xl:mt-9'>
+                <div className='flex flex-col justify-center items-center gap-0.5 mt-1 xs:gap-1 md:mt-3 lg:mt-5 xl:mt-7 2xl:mt-9'>
                     <div className={subtitle}>Currently <span>{hammerIcon("inline w-4 h-4 mb-1 mx-1 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7", hammerInnerRef)}</span> the next iteration of my website.</div>
                     <div className="flex rounded-lg border border-bgSecondary bg-bgSecondaryLight items-center relative h-4 w-full xs:w-80 lg:w-88 lg:mt-2 lg:h-7 lg:rounded-xl 2xl:w-110">
                         <div ref={progressRef} className="absolute left-0.5 h-3 rounded-lg bg-primaryBright lg:h-5"/>

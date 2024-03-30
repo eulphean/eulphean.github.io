@@ -14,7 +14,7 @@ enum Status {
 export default function Signup () {
     const container= "flex w-full items-center justify-center flex-col mt-3 text-center text-secondaryBright";
     const subtitleStyle= "text-base w-full lg:text-lg xl:text-xl 2xl:text-2xl";
-    const detailsContainer= "flex flex-col mt-1 gap:1.5 w-full xs:gap-2 xs:w-96 lg:mt-2 xl:w-102 2xl:w-118"
+    const detailsContainer= "flex flex-col mt-1 gap:2.0 w-full xs:gap-2 xs:w-96 lg:mt-2 xl:w-102 2xl:w-118"
     const signupContainer= "bg-primaryLight rounded-2xl p-2 w-full flex flex-col items-center xl:p-4";
     const button = "font-bold text-base p-1 w-24 xs:p-2 lg:text-lg lg:mt-4 lg:w-32 xl:text-xl xl:36";
     const titleStyle = "font-bold text-center text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl";
@@ -66,13 +66,13 @@ export default function Signup () {
                 <div className={subtitleStyle}>{subtitle}</div>
                 {   
                     status === Status.SUCCESS ?   
-                        <div className="text-base bg-green-300 p-2 m-2 text-black">Success! Please check your email to confirm your subscription.</div> :
+                        <div className="text-base rounded-xl bg-green-300 p-2 m-2 text-black lg:text-sm xl:text-lg">Success! Please check your email to confirm your subscription.</div> :
                     status === Status.ERROR ?
-                        <div className="text-base bg-red-300 p-2 m-2 text-black">Error! Sorry, I couldn't subscribe you.</div> :
+                        <div className="text-base rounded-xl bg-red-300 p-2 m-2 text-black lg:text-sm xl:text-lg">Error! Sorry, I couldn't subscribe you.</div> :
                     status === Status.NONE ? 
                         <div className={signupContainer}>
                             {!valid ? 
-                            <div className="text-base bg-red-300 p-2 m-2 text-black">Invalid Email. Please try Again!</div>: 
+                            <div className="text-base rounded-xl bg-red-300 p-2 m-2 text-black lg:text-sm xl:text-lg">Invalid Email. Please try again!</div>: 
                             <></>
                             }
                             <CustomInput value={email} placeholder="Email Address" onChange={onTextInput} />
