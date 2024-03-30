@@ -13,14 +13,14 @@ export default function Navbar() {
 
     // Refs (Titles)
     const name = useRef<HTMLAnchorElement>(null);
-    const industry= useRef<HTMLDivElement>(null);
-    const media = useRef<HTMLDivElement>(null);
+    const industry= useRef<HTMLAnchorElement>(null);
+    const media = useRef<HTMLAnchorElement>(null);
     const t1 = useRef<GSAPTween[]>([]);
 
     // Refs (Icons)
-    const lin = useRef<HTMLImageElement>(null);
-    const insta = useRef<HTMLImageElement>(null);
-    const git = useRef<HTMLImageElement>(null);
+    const lin = useRef<HTMLAnchorElement>(null);
+    const insta = useRef<HTMLAnchorElement>(null);
+    const git = useRef<HTMLAnchorElement>(null);
     const t2 = useRef<GSAPTween[]>([]);
 
     // Store the animation in a context.
@@ -84,48 +84,72 @@ export default function Navbar() {
                                 className='mr-4'
                             >
                             Amay Kataria 2.0</a>
-                            <div 
+                            <a 
                                 ref={industry} 
-                                className='mr-4'
+                                href="https://heyzine.com/flip-book/fa5164ac35.html"
+                                target="_blank"
+                                rel="noreferer"
                                 onMouseEnter={contextSafe(() => t1.current[1]?.play())}
                                 onMouseLeave={contextSafe(() => t1.current[1]?.reverse())}
-                            >
-                                Industry Portfolio
-                            </div>
-                            <div ref={media} 
+                                className='mr-4'
+                            >Industry Portfolio</a>                        
+                            <a 
+                                ref={media} 
+                                href="https://heyzine.com/flip-book/cdcf1de56c.html"
+                                target="_blank"
+                                rel="noreferer"
                                 onMouseEnter={contextSafe(() => t1.current[2]?.play())}
                                 onMouseLeave={contextSafe(() => t1.current[2]?.reverse())}
-                                className='mr-4'>Media Arts Portfolio</div>
+                                className='mr-4'
+                            >Media Arts Portfolio</a>
                         </div>
                     </div>
                     <div className={iconsContainer}>
-                        <Image
+                        <a
                             ref={lin}
-                            priority
-                            className={icon}
+                            href="https://linkedin.com/in/amaykataria"
+                            target="_blank"
+                            rel="noreferer"
                             onMouseEnter={contextSafe(() => t2.current[0]?.play())}
                             onMouseLeave={contextSafe(() => t2.current[0]?.reverse())}
-                            src={linkedin}
-                            alt="Check out my LinkedIn profile"
-                        />
-                        <Image
+                        >
+                            <Image
+                                priority
+                                className={icon}
+                                src={linkedin}
+                                alt="Check out my LinkedIn profile"
+                            />
+                        </a>
+                        <a
                             ref={git}
-                            priority
-                            className={icon}
+                            href="https://github.com/eulphean"
+                            target="_blank"
+                            rel="noreferer"
                             onMouseEnter={contextSafe(() => t2.current[1]?.play())}
                             onMouseLeave={contextSafe(() => t2.current[1]?.reverse())}
-                            src={github}
-                            alt="Check out my Github profile"
-                        />
-                        <Image
+                        >
+                            <Image
+                                priority
+                                className={icon}
+                                src={github}
+                                alt="Check out my Github profile"
+                            />
+                        </a>
+                        <a
                             ref={insta}
-                            priority
-                            className={icon}
+                            href="https://instagram.com/amay.kataria"
+                            target="_blank"
+                            rel="noreferer"
                             onMouseEnter={contextSafe(() => t2.current[2]?.play())}
                             onMouseLeave={contextSafe(() => t2.current[2]?.reverse())}
-                            src={ig}
-                            alt="Check out my Instagram profile"
-                        />
+                        >
+                            <Image
+                                priority
+                                className={icon}
+                                src={ig}
+                                alt="Check out my Instagram profile"
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
