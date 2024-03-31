@@ -37,6 +37,6 @@
     }
 
     body {
-      @apply w-full h-full font-istok 
+      @apply w-full h-full font-istok overflow-y-scroll
     }
   }

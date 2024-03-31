@@ -40,7 +40,7 @@ export default function Intro(props: IntroProps) {
                 onMouseLeave={contextSafe(() => t.current?.reverse())}
                 onClick={onClickEnter} 
                 title="Enter" 
-                customStyles={`${spinning ? "hidden" :  "visible"} text-xl p-2 font-bold fixed bottom-20 xs:p-2 lg:text-lg lg:mt-4 lg:w-32 xl:text-xl"`}
+                customStyles={`${spinning ? "hidden" :  "visible"} text-base px-2 font-bold fixed bottom-20 md:text-lg lg:text-xl"`}
             />
             {intro}
         </div>
