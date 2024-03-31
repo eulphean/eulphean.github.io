@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3c79f745.css",
-    "main.js": "/static/js/main.565b00ce.js",
+    "main.js": "/static/js/main.e917bac7.js",
     "static/media/3d-one-2023.pdf": "/static/media/3d-one-2023.82044d47c1c0c8f9fc38.pdf",
     "static/media/3d-two-2023.pdf": "/static/media/3d-two-2023.e5841a2b4d49e584f0cc.pdf",
     "static/media/ct-2023.pdf": "/static/media/ct-2023.513fed82b1f3bd8fdbff.pdf",
@@ -10,12 +10,13 @@
     "static/media/lost.gif": "/static/media/lost.2b1940456556a448c91c.gif",
     "static/media/5.mp4": "/static/media/5.d79e3ff826a9da0c8ffd.mp4",
     "static/media/pigeon.mp4": "/static/media/pigeon.fbcc625c1f369431dd76.mp4",
+    "static/media/11.jpg": "/static/media/11.ee27f90e44b10cfd5943.jpg",
+    "static/media/10.jpg": "/static/media/10.7affae72fdb3b0fe4d55.jpg",
     "static/media/3.jpg": "/static/media/3.c1387674ebf77dc50b09.jpg",
     "static/media/4.jpg": "/static/media/4.13b85dfce29fd68b9a7f.jpg",
     "static/media/5.jpg": "/static/media/5.18299258b8c669eac027.jpg",
     "static/media/1.jpg": "/static/media/1.b5be8d8b4e90ce6284b7.jpg",
     "static/media/2.jpg": "/static/media/2.cbe6d512a03c9ecce8ad.jpg",
-    "static/media/11.jpg": "/static/media/11.ee27f90e44b10cfd5943.jpg",
     "static/media/9.jpg": "/static/media/9.03361e4b8381c1fd7ed1.jpg",
     "static/media/7.jpg": "/static/media/7.04964d1e01444e816711.jpg",
     "static/media/6.jpg": "/static/media/6.03b1ccc3bda38271e2bc.jpg",
@@ -23,7 +24,6 @@
     "static/media/momimsafe.jpg": "/static/media/momimsafe.646c7fb3ce22583592c4.jpg",
     "static/media/one.jpg": "/static/media/one.bb2fd20b70475d6ae886.jpg",
     "static/media/8.jpg": "/static/media/8.cfa1ac3462d0c17a116c.jpg",
-    "static/media/10.jpg": "/static/media/10.7affae72fdb3b0fe4d55.jpg",
     "static/media/labourA.jpg": "/static/media/labourA.ddd0d210090c4623ffbd.jpg",
     "static/media/14.jpg": "/static/media/14.263f333853961ab5feab.jpg",
     "static/media/12.jpg": "/static/media/12.1d39174ec90c7783a73d.jpg",
@@ -191,10 +191,10 @@
     "static/media/back.svg": "/static/media/back.fa8a25870788fde9a972906ec69e526d.svg",
     "index.html": "/index.html",
     "main.3c79f745.css.map": "/static/css/main.3c79f745.css.map",
-    "main.565b00ce.js.map": "/static/js/main.565b00ce.js.map"
+    "main.e917bac7.js.map": "/static/js/main.e917bac7.js.map"
   },
   "entrypoints": [
     "static/css/main.3c79f745.css",
-    "static/js/main.565b00ce.js"
+    "static/js/main.e917bac7.js"
   ]
 }
