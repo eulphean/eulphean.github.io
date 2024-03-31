@@ -13,7 +13,7 @@ export default function Room(props: RoomProps) {
         setSpinning(false);
     }
 
-    const roomContainer = "block w-full min-h-80 lg:h-3/6 2xl:h-4/5"
+    const roomContainer = "block w-full min-h-80 md:h-2/3 lg:h-4/5 xl:h-5/6"
     const room = (<SplineScene sceneType={SceneType.Room} onLoadComplete={onLoadComplete}/>);
     return (
         <div className={roomContainer}>

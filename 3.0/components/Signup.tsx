@@ -13,11 +13,11 @@ enum Status {
 }
 export default function Signup () {
     const container= "flex w-full items-center justify-center flex-col mt-3 text-center text-secondaryBright";
-    const subtitleStyle= "text-base w-full lg:text-lg xl:text-xl 2xl:text-2xl";
-    const detailsContainer= "flex flex-col mt-1 gap:2.0 w-full xs:gap-2 xs:w-96 lg:mt-2 xl:w-102 2xl:w-118"
-    const signupContainer= "bg-primaryLight rounded-2xl p-2 w-full flex flex-col items-center xl:p-4";
-    const button = "font-bold text-base p-1 w-24 xs:p-2 lg:text-lg lg:mt-4 lg:w-32 xl:text-xl xl:36";
-    const titleStyle = "font-bold text-center text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl";
+    const subtitleStyle= "text-base w-full lg:text-lg xl:text-xl";
+    const detailsContainer= "flex flex-col mt-0 gap:2.0 w-full xs:gap-2 xs:w-96 lg:mt-2 xl:w-102"
+    const signupContainer= "bg-primaryLight rounded-2xl p-1 w-full flex flex-col items-center xs:p-2 md:p-3 xl:p-3";
+    const button = "font-bold text-base mt-2 p-1 w-24 xs:p-2 xs:mt-3 lg:text-lg lg:mt-4 lg:w-32";
+    const titleStyle = "font-bold text-center text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl";
 
     const [email, setEmail] = useState("");
     const [valid, setValid] = useState(true);
@@ -92,7 +92,7 @@ type CustomInputProps = {
 }
 
 function CustomInput (props: CustomInputProps) {
-    const inputStyle = "mt-2 p-1 text-white border-secondary bg-secondaryLight rounded-2xl border text-center h-10 w-full lg:text-lg lg:h-12 xl:text-xl 2xl:text-2xl";
+    const inputStyle = "p-1 text-white border-secondary bg-secondaryLight rounded-2xl border text-center h-10 w-full lg:text-lg lg:h-12";
 
     return(
         <input 

@@ -8,7 +8,7 @@ type CustomButtonProps = {
 }
 
 const CustomButton = React.forwardRef <HTMLButtonElement, CustomButtonProps>((props, ref) => { 
-    const defaultStyles = "rounded-lg font-istok p-1 text-secondaryBright mt-3 bg-secondary"
+    const defaultStyles = "rounded-lg font-istok p-1 text-secondaryBright bg-secondary"
     const newStyles = defaultStyles + " " + props.customStyles;
 
     return (

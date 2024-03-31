@@ -22,7 +22,7 @@ export default function Building (props: BuildingProps) {
         // // Once it completes, start the building animation.
         t1.eventCallback('onComplete', () => {
             // Hammer animation
-            gsap.to([hammerOuterRef.current, hammerInnerRef.current], {rotationZ: 35, stagger: 1, ease: 'bounce.out', repeat: -1, yoyoEase: true, duration: 1.5});
+            gsap.to([hammerOuterRef.current], {rotationZ: 35, stagger: 1, ease: 'bounce.out', repeat: -1, yoyoEase: true, duration: 1.5});
 
             // Building animation
             const tl = gsap.timeline({yoyoEase: true, repeat: -1, delay: 0});        
@@ -33,10 +33,10 @@ export default function Building (props: BuildingProps) {
     }, [props.startAnimation]);
 
     const container="flex flex-col items-center text-secondaryBright w-full -mt-2 md:mt-0"
-    const commonTitleStyles = "font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
+    const commonTitleStyles = "font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
     const titleA=commonTitleStyles + " absolute flex flex-row";
     const titleB=commonTitleStyles + " absolute opacity-0";
-    const subtitle="text-base lg:text-lg xl:text-xl 2xl:text-2xl";
+    const subtitle="text-base lg:text-lg xl:text-xl";
     const hammerIcon = (styles: string, refObj: RefObject<HTMLImageElement>) => {
         return (
             <Image 
@@ -59,9 +59,9 @@ export default function Building (props: BuildingProps) {
                     </div>
                     <div ref={nameRef} className={titleB}>Amay Kataria 3.0</div>
                 </div>
-                <div className='flex flex-col justify-center items-center gap-0.5 mt-1 xs:gap-1 md:mt-3 lg:mt-5 xl:mt-7 2xl:mt-9'>
-                    <div className={subtitle}>Currently <span>{hammerIcon("inline w-4 h-4 mb-1 mx-1 lg:w-5 lg:h-5 xl:w-6 xl:h-6 2xl:w-7 2xl:h-7", hammerInnerRef)}</span> the next iteration of my website.</div>
-                    <div className="flex rounded-lg border border-bgSecondary bg-bgSecondaryLight items-center relative h-4 w-full xs:w-80 lg:w-88 lg:mt-2 lg:h-7 lg:rounded-xl 2xl:w-110">
+                <div className='flex flex-col justify-center items-center gap-0.5 mt-0 xs:gap-1 md:mt-3 lg:mt-5 xl:mt-7'>
+                    <div className={subtitle}>Currently <span>{hammerIcon("inline w-4 h-4 mb-1 mx-1 lg:w-5 lg:h-5 xl:w-6 xl:h-6", hammerInnerRef)}</span> the next iteration of my website.</div>
+                    <div className="flex rounded-lg border border-bgSecondary bg-bgSecondaryLight items-center relative h-4 w-full xs:w-80 lg:w-88 lg:mt-2 lg:h-6 lg:rounded-xl xl:w-102">
                         <div ref={progressRef} className="absolute left-0.5 h-3 rounded-lg bg-primaryBright lg:h-5"/>
                     </div>
                 </div>

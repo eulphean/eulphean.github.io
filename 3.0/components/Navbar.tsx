@@ -56,7 +56,7 @@ export default function Navbar() {
         />
     );
 
-    const navbarContainer = "flex items-center w-full text-secondaryBright text-base p-4 lg:text-lg xl:p-8 xl:text-xl 2xl:p-12 2xl:text-2xl";
+    const navbarContainer = "flex items-center w-full text-secondaryBright text-base p-4 lg:text-lg xl:p-8 xl:text-xl 2xl:p-12";
     
     // Titles
     const titleContainerOpen = "flex absolute rounded-lg justify-between p-1.5 w-56  border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary"
@@ -65,7 +65,7 @@ export default function Navbar() {
     
     // Icons
     const iconsContainer = "flex flex-row w-32 justify-between lg:w-40";
-    const icon = "w-8 h-8 md:w-9 md:h-9 lg:w-11 lg:h-11";
+    const icon = "w-8 h-8 md:w-9 md:h-9";
     return (
         <>
             <div className={navbarContainer}>
