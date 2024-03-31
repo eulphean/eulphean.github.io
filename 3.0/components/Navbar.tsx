@@ -61,7 +61,7 @@ export default function Navbar() {
     // Titles
     const titleContainerOpen = "flex absolute rounded-lg justify-between p-1.5 w-56  border-2 top-0 left-0 z-20 flex-row bg-primary border-secondary"
     const titleContainer = `${open ? `${titleContainerOpen}` : "hidden"} sm:block sm:bg-transparent`;
-    const titles = 'grid-cols-1 sm:grid sm:grid-cols-3 items-center';
+    const titles = 'flex w-full flex-col sm:flex-row';
     
     // Icons
     const iconsContainer = "flex flex-row w-32 justify-between lg:w-40";
@@ -76,7 +76,7 @@ export default function Navbar() {
                         <div className={titles}>
                             <a 
                                 ref={name} 
-                                href="https://amaykataria.com"
+                                href="https://archive.amaykataria.com"
                                 target="_blank"
                                 rel="noreferer"
                                 onMouseEnter={contextSafe(() => t1.current[0]?.play())}

@@ -17,7 +17,7 @@ export default function Signup () {
     const detailsContainer= "flex flex-col mt-0 gap:2.0 w-full xs:gap-2 xs:w-96 lg:mt-2 xl:w-102"
     const signupContainer= "bg-primaryLight rounded-2xl p-1 w-full flex flex-col items-center xs:p-2 md:p-3 xl:p-3";
     const button = "font-bold text-base mt-2 p-1 w-24 xs:p-2 xs:mt-3 lg:text-lg lg:mt-4 lg:w-32";
-    const titleStyle = "font-bold text-center text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl";
+    const titleStyle = "hidden tall:visible tall:block font-bold text-center text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl";
 
     const [email, setEmail] = useState("");
     const [valid, setValid] = useState(true);

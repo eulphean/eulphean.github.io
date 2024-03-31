@@ -20,6 +20,8 @@ module.exports = {
         },
         screens: {
           'xs': '440px',
+          'tall': { 'raw': '(min-height: 800px)' },
+          // => @media (min-height: 800px) { ... }
           ...defaultTheme.screens,
         },
         height: {
