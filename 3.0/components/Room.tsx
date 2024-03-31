@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SplineScene, {SceneType} from './SplineScene';
 import Loader from './Loader';
 
@@ -8,7 +8,7 @@ type RoomProps = {
 
 export default function Room(props: RoomProps) {
     const [spinning, setSpinning] = useState(true);
-
+    
     const onLoadComplete = () => {
         setSpinning(false);
     }

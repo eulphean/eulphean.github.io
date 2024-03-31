@@ -5,8 +5,6 @@ import Loader from './Loader'
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap'
 
-// gsap.registerPlugin(useGSAP);
-
 type IntroProps = {
     onEnter: () => void
 }
@@ -19,6 +17,7 @@ export default function Intro(props: IntroProps) {
     // Store the animation in a context.
     const { contextSafe } = useGSAP(() => {
         t.current = gsap.to(buttonRef.current, {rotationZ: -5, scale: 1.25, duration: 0.5}).pause();
+        gsap.fromTo(buttonRef.current, {opacity: 0}, {opacity: 1, duration: 0.5, delay:4});
     }, []);
     
     const onLoadComplete = () => {
@@ -32,17 +31,18 @@ export default function Intro(props: IntroProps) {
     
     const intro = <SplineScene sceneType={SceneType.Intro} onLoadComplete={onLoadComplete} />;
     return(
-        <div className={`${show ? "visible" : "hidden"} z-40 fixed flex justify-center left-0 right-0 top-0 bottom-0 w-screen h-screen bg-primary`}>
+        <div className={`${show ? "visible" : "collapse"} z-40 fixed flex justify-center left-0 right-0 top-0 bottom-0 w-screen h-screen bg-primary`}>
             {spinning ? <Loader customStyles="absolute w-full top-0 left-0 bottom-0 right-0"/> : <></> }
             <CustomButton 
                 ref={buttonRef}
                 onMouseEnter={contextSafe(() => t.current?.play())}
-                onMouseLeave={contextSafe(() => t.current?.reverse())}
+                // onMouseLeave={contextSafe(() => t.current?.reverse())}
                 onClick={onClickEnter} 
                 title="Enter" 
-                customStyles={`${spinning ? "hidden" :  "visible"} text-base px-2 font-bold fixed bottom-20 md:text-lg lg:text-xl"`}
+                customStyles={`${(spinning || !show) ? "invisible" :  "visible"} fixed bottom-20 font-bold text-base p-1 w-24 xs:p-2 xs:mt-3 lg:text-lg lg:mt-4 lg:w-32"`}
             />
             {intro}
         </div>
     );
 }
+

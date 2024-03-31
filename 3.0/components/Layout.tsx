@@ -11,9 +11,7 @@ export default function Layout({children,home}: LayoutProps) {
     <div>
       <Head>
         <title>{siteTitle}</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-        {/* <link rel="preload" as="fetch" href="https://prod.spline.design/cVX19QaRpag1IL1y/scene.splinecode" />
-        <link rel="preload" as="fetch" href="https://prod.spline.design/yGk2E1zv7eJLo0aO/scene.splinecode" /> */}
+        <link rel="icon" href="/favicon.png" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
