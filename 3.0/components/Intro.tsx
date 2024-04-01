@@ -27,6 +27,7 @@ export default function Intro(props: IntroProps) {
     const onClickEnter = () => {
         props.onEnter();
         setShow(!show);
+        contextSafe(() => t.current?.reverse())
     }
     
     const intro = <SplineScene sceneType={SceneType.Intro} onLoadComplete={onLoadComplete} />;
@@ -36,7 +37,7 @@ export default function Intro(props: IntroProps) {
             <CustomButton 
                 ref={buttonRef}
                 onMouseEnter={contextSafe(() => t.current?.play())}
-                // onMouseLeave={contextSafe(() => t.current?.reverse())}
+                onMouseLeave={contextSafe(() => t.current?.reverse())}
                 onClick={onClickEnter} 
                 title="Enter" 
                 customStyles={`${(spinning || !show) ? "invisible" :  "visible"} fixed bottom-20 font-bold text-base p-1 w-24 xs:p-2 xs:mt-3 lg:text-lg lg:mt-4 lg:w-32"`}

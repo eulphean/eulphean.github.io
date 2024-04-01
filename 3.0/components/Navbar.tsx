@@ -81,6 +81,7 @@ export default function Navbar() {
                                 rel="noreferer"
                                 onMouseEnter={contextSafe(() => t1.current[0]?.play())}
                                 onMouseLeave={contextSafe(() => t1.current[0]?.reverse())}
+                                onClick={contextSafe(() => t1.current[0]?.reverse())}
                                 className='mr-4'
                             >
                             Amay Kataria 2.0</a>
@@ -91,6 +92,7 @@ export default function Navbar() {
                                 rel="noreferer"
                                 onMouseEnter={contextSafe(() => t1.current[1]?.play())}
                                 onMouseLeave={contextSafe(() => t1.current[1]?.reverse())}
+                                onClick={contextSafe(() => t1.current[1]?.reverse())}
                                 className='mr-4'
                             >Industry Portfolio</a>                        
                             <a 
@@ -100,6 +102,7 @@ export default function Navbar() {
                                 rel="noreferer"
                                 onMouseEnter={contextSafe(() => t1.current[2]?.play())}
                                 onMouseLeave={contextSafe(() => t1.current[2]?.reverse())}
+                                onClick={contextSafe(() => t1.current[2]?.reverse())}
                                 className='mr-4'
                             >Media Arts Portfolio</a>
                         </div>
@@ -112,6 +115,7 @@ export default function Navbar() {
                             rel="noreferer"
                             onMouseEnter={contextSafe(() => t2.current[0]?.play())}
                             onMouseLeave={contextSafe(() => t2.current[0]?.reverse())}
+                            onClick={contextSafe(() => t2.current[0]?.reverse())}
                         >
                             <Image
                                 priority
@@ -127,6 +131,7 @@ export default function Navbar() {
                             rel="noreferer"
                             onMouseEnter={contextSafe(() => t2.current[1]?.play())}
                             onMouseLeave={contextSafe(() => t2.current[1]?.reverse())}
+                            onClick={contextSafe(() => t2.current[1]?.reverse())}
                         >
                             <Image
                                 priority
@@ -142,6 +147,7 @@ export default function Navbar() {
                             rel="noreferer"
                             onMouseEnter={contextSafe(() => t2.current[2]?.play())}
                             onMouseLeave={contextSafe(() => t2.current[2]?.reverse())}
+                            onClick={contextSafe(() => t2.current[2]?.reverse())}
                         >
                             <Image
                                 priority
