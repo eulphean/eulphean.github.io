@@ -11,11 +11,8 @@ export default function Layout({children,home}: LayoutProps) {
     <div>
       <Head>
         <title>{siteTitle}</title>
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta property="og:image" content="../public/og.jpg" />
+        <link rel="shortcut icon" type="image/png" href ="./favicon.png"/> 
+        <meta property="og:image" content="./og.jpg" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
