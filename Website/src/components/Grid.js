@@ -49,6 +49,7 @@ import whalewatcher from '../tiles/whalewatcher.jpg'
 import metagems from '../tiles/metagems.jpg'
 import blob from '../tiles/blob.jpg'
 import ss2 from '../tiles/ss2.jpg'
+import tug from '../tiles/tug.jpg'
 import { padding } from './CommonStyles.js'
 
 export const Grid_Type = {
@@ -209,6 +210,12 @@ class Grid extends React.Component {
     allocateProjects() {
         // Push every imported image into this array. 
         this.workProjects = [
+            {
+                'img': tug,
+                'title': 'The Tug',
+                'keywords': ['2024', 'Sculpture', 'Net Art'],
+                'link': 'tug'
+            },
             {
                 'img': metagems,
                 'title': 'Metagems',
