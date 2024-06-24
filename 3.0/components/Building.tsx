@@ -55,9 +55,9 @@ export default function Building (props: BuildingProps) {
                 <div className="flex flex-row relative justify-center w-full mb-8">
                     <div ref={buildingRef} className={titleA}>
                         {hammerIcon("inline w-6 h-6 mt-0.5 mx-2 lg:w-10 lg:h-10 2xl:w-12 h-12 2xl:mt-2", hammerOuterRef)}
-                        <div>BUILDING</div>
+                        <div>UPDATING</div>
                     </div>
-                    <div ref={nameRef} className={titleB}>AMAY KATARIA 3.0</div>
+                    <div ref={nameRef} className={titleB}>AMAY KATARIA</div>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-0.5 mt-0 xs:gap-1 md:mt-3 lg:mt-5 xl:mt-7'>
                     <div className={subtitle}>Currently <span>{hammerIcon("inline w-4 h-4 mb-1 mx-1 lg:w-5 lg:h-5 xl:w-6 xl:h-6", hammerInnerRef)}</span> the next iteration of my website.</div>
