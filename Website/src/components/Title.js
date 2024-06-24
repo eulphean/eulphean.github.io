@@ -71,12 +71,12 @@ function Title() {
 
     return (
         <div style={styles.container}>
-            <CustomButton 
+            {/* <CustomButton 
                 buttonStyle={styles.button} 
                 isActive={workState}
             >
                 <RadiumLink to="/Works">WORKS</RadiumLink>
-            </CustomButton>
+            </CustomButton> */}
             {/* <CustomButton 
                 buttonStyle={styles.button} 
                 isActive={commissionState}
@@ -89,7 +89,7 @@ function Title() {
             >
                 <RadiumLink to="/Archive">ARCHIVE</RadiumLink>
             </CustomButton> */}
-            <CustomButton 
+            {/* <CustomButton 
                 buttonStyle={styles.button} 
                 isActive={cvState}
             >
@@ -100,7 +100,7 @@ function Title() {
                 isActive={aboutState} 
             >
                 <RadiumLink to="/About">ABOUT</RadiumLink>
-            </CustomButton>
+            </CustomButton> */}
         </div>
     );
 }

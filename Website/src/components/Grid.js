@@ -145,7 +145,7 @@ class Grid extends React.Component {
     render() {
         return (
             <div style={styles.gridContainer}>
-                <GridFilterer onKeywordSelected={this.onKeywordSelected.bind(this)} />
+                {/* <GridFilterer onKeywordSelected={this.onKeywordSelected.bind(this)} /> */}
                 <div style={styles.tileContainer}>
                     {this.state.tiles}
                 </div>

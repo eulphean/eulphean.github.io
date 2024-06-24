@@ -64,7 +64,7 @@ class Footer extends React.Component {
     return (
         <div style={styles.container}>
             <div style={styles.content}>
-             © 2023 AMAY KATARIA, ALL RIGHTS RESERVED
+             © 2024 AMAY KATARIA, ALL RIGHTS RESERVED
             </div>
          </div>
     );
