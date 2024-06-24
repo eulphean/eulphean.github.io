@@ -76,7 +76,7 @@ export default function Navbar() {
                         <div className={titles}>
                             <a 
                                 ref={name} 
-                                href="https://archive.amaykataria.com"
+                                href="https://works.amaykataria.com"
                                 target="_blank"
                                 rel="noreferer"
                                 onMouseEnter={contextSafe(() => t1.current[0]?.play())}
@@ -84,7 +84,7 @@ export default function Navbar() {
                                 onClick={contextSafe(() => t1.current[0]?.reverse())}
                                 className='mr-4'
                             >
-                            Amay Kataria 2.0</a>
+                            Projects</a>
                             <a 
                                 ref={industry} 
                                 href="https://heyzine.com/flip-book/fa5164ac35.html"
