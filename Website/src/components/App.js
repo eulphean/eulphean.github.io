@@ -53,6 +53,9 @@ import Supersynthesis2 from '../projects/Supersynthesis2.js'
 import WhaleWatcher from '../projects/WhaleWatcher.js'
 import Metagems from '../projects/Metagems.js'
 import Tug from '../projects/Tug.js'
+import AreShadowBodiesElectric from '../projects/AreShadowBodiesElectric.js'
+import ShadowsOfTime from '../projects/ShadowsOfTime.js'
+import Timegrapher from '../projects/Timegrapher.js'
 import CreativeTechnologist from '../portfolios/CreativeTechnologist.js'
 import Portfolio from '../portfolios/Portfolio.js'
 import Threedone from '../portfolios/Threedone.js'
@@ -133,6 +136,9 @@ function App() {
             <Route path="/Commissions"><Title /><Grid gridType={Grid_Type.COMMISSIONS} /></Route>
             <Route path="/Archive"><Title /><Grid gridType={Grid_Type.ARCHIVE} /></Route>
             <Route path="/About"><Title /><About /></Route>
+            <Route path="/areshadowbodieselectric"><AreShadowBodiesElectric /></Route>
+            <Route path="/timegrapher"><Timegrapher /></Route>
+            <Route path="/shadowsoftime"><ShadowsOfTime /></Route>
             <Route path="/tug"><Tug /></Route>
             <Route path="/metagems"><Metagems /></Route>
             <Route path="/whalewatcher"><WhaleWatcher /></Route>

@@ -51,6 +51,9 @@ import blob from '../tiles/blob.jpg'
 import ss2 from '../tiles/ss2.jpg'
 import tug from '../tiles/tug.jpg'
 import { padding } from './CommonStyles.js'
+import shadows from '../tiles/shadowsoftime.jpg'
+import timegrapher from '../tiles/timegrapher.jpg'
+import shadowbodies from '../tiles/shadowbodies.jpg'
 
 export const Grid_Type = {
     WORKS: 0,
@@ -210,6 +213,24 @@ class Grid extends React.Component {
     allocateProjects() {
         // Push every imported image into this array. 
         this.workProjects = [
+            {
+                'img': shadowbodies,
+                'title': 'Are Shadow Bodies Electric?',
+                'keywords': ['2024', 'Exhibition'],
+                'link': 'areshadowbodieselectric'
+            },
+            {
+                'img': shadows,
+                'title': 'Shadows of Time',
+                'keywords': ['2024', 'Extended Reality'],
+                'link': 'shadowsoftime'
+            },
+            {
+                'img': timegrapher,
+                'title': 'Timegrapher',
+                'keywords': ['2024', 'Sculpture'],
+                'link': 'timegrapher'
+            },
             {
                 'img': tug,
                 'title': 'The Tug',
