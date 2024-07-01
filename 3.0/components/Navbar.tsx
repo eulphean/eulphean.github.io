@@ -85,7 +85,7 @@ export default function Navbar() {
                                 className='mr-4'
                             >
                             Projects</a>
-                            <a 
+                            {/* <a 
                                 ref={industry} 
                                 href="https://heyzine.com/flip-book/fa5164ac35.html"
                                 target="_blank"
@@ -94,7 +94,7 @@ export default function Navbar() {
                                 onMouseLeave={contextSafe(() => t1.current[1]?.reverse())}
                                 onClick={contextSafe(() => t1.current[1]?.reverse())}
                                 className='mr-4'
-                            >Industry Portfolio</a>                        
+                            >Industry Portfolio</a>                         */}
                             <a 
                                 ref={media} 
                                 href="https://heyzine.com/flip-book/cdcf1de56c.html"
