@@ -25,7 +25,7 @@ const styles={
     }
 }
 
-const body=<span><CustomLink to='https://amaykataria.com/Liarbirds/' inline={true}>Liarbirds</CustomLink> is an augmented encounter developed within the ecosystem of Instagram to respond to online communities manifested around fringe ideas like conspiracy theories that permeate our everyday culture. It's a play on this cultural phenomenon that makes fake birds real again by superimposing a swarm of digital creatures on one’s physical space through the mediation of Augmented Reality.</span>
+const body=<span><CustomLink to='https://works.amaykataria.com/Liarbirds/' inline={true}>Liarbirds</CustomLink> is an augmented encounter developed within the ecosystem of Instagram to respond to online communities manifested around fringe ideas like conspiracy theories that permeate our everyday culture. It's a play on this cultural phenomenon that makes fake birds real again by superimposing a swarm of digital creatures on one’s physical space through the mediation of Augmented Reality.</span>
 class Liarbirds extends React.Component {
   constructor(props) {
     super(props);
