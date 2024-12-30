@@ -32,8 +32,8 @@ export default function Intro(props: IntroProps) {
     
     const intro = <SplineScene sceneType={SceneType.Intro} onLoadComplete={onLoadComplete} />;
     return(
-        <div className={`${show ? "visible" : "collapse"} z-40 fixed flex justify-center left-0 right-0 top-0 bottom-0 w-screen h-[100dvh] bg-primary`}>
-            {spinning ? <Loader customStyles="absolute w-full top-0 left-0 bottom-0 right-0"/> : <></> }
+        <div className={`${show ? "visible" : "collapse"} z-40 fixed flex justify-center left-0 right-0 top-0 bottom-0 w-[100dvw] h-[100dvh] bg-primary`}>
+            {spinning ? <Loader customStyles="absolute w-[100dvw] top-0 left-0 bottom-0 right-0"/> : <></> }
             <CustomButton 
                 ref={buttonRef}
                 onMouseEnter={contextSafe(() => t.current?.play())}

@@ -33,10 +33,10 @@
   /* Update base styles for the HTML component */
   @layer base {
     html {
-      @apply w-full h-full bg-gradient-to-br from-primary to-secondary text-white
+      @apply w-[100dvw] h-[100dvh] bg-gradient-to-br from-primary to-secondary text-white
     }
 
     body {
-      @apply w-full h-full font-istok overflow-y-auto
+      @apply w-[100dvw] h-[100dvh] font-istok overflow-y-auto
     }
   }
