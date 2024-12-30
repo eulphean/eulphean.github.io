@@ -25,7 +25,7 @@ export default function VideoPlayer (props: PopupProps) {
           {/* Popup Content */}
           <div className="relative flex flex-col items-center h-auto bg-gray-900 bg-opacity-95 rounded-lg shadow-xl max-w-4xl w-[100dvw] mx-4 z-50 max-h-[90vh] overflow-y-auto my-4">
             {/* Header */}
-            <div className="flex flex-row items-baseline w-[100dvw] justify-between p-4 border-b border-red-200 text-white">
+            <div className="flex flex-row items-baseline w-full justify-between p-4 border-b border-red-200 text-white">
               {<h2 className="text-xl font-semibold">{props.title}</h2>}
               <button
                 onClick={props.onClose}
