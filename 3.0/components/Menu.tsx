@@ -16,7 +16,7 @@ export default function Menu(props: MenuProps) {
     const bio = useRef<HTMLDivElement>(null);
     const statement= useRef<HTMLDivElement>(null);
     const works = useRef<HTMLAnchorElement>(null);
-    const cv = useRef<HTMLDivElement>(null);
+    const cv = useRef<HTMLAnchorElement>(null);
     const t1 = useRef<GSAPTween[]>([]);
 
     // Refs (Icons)
@@ -39,8 +39,8 @@ export default function Menu(props: MenuProps) {
     }, []);
 
 
-    const navbarContainer = "flex flex-col items-center justify-between h-60 w-full";
-    const navbarText = "text-secondaryBright text-lg xl:text-2xl font-semibold cursor-pointer"
+    const navbarContainer = "overflow-none flex flex-col items-center justify-between h-60 w-full";
+    const navbarText = "text-secondaryBright text-xl xl:text-2xl font-semibold cursor-pointer"
     const navbarStyles = navbarContainer + navbarText
     
     // Titles
@@ -49,16 +49,6 @@ export default function Menu(props: MenuProps) {
     // Icons
     const iconsContainer = "flex flex-row w-32 justify-between lg:w-40";
     const icon = "w-8 h-8 md:w-9 md:h-9";
-
-    const fileDownload = async () => {
-        try {
-            // Replace with your PDF file URL
-            const fileUrl = 'Amay_Kataria_CV_December_2024.pdf';
-            window.open(fileUrl, '_blank');
-        } catch (error) {
-            console.error('Error downloading file:', error);
-        }
-    };
     
     return (
         <div className={navbarStyles}>
@@ -97,7 +87,18 @@ export default function Menu(props: MenuProps) {
             >
                 WORKS
             </a>
-            <div
+            <a 
+                ref={cv} 
+                href="Amay_Kataria_CV_December_2024.pdf"
+                target="_blank"
+                rel="noreferer"
+                onMouseEnter={contextSafe(() => t1.current[3]?.play())}
+                onMouseLeave={contextSafe(() => t1.current[3]?.reverse())}
+                onClick={contextSafe(() => t1.current[3]?.reverse())}
+            >
+                CV
+            </a>
+            {/* <div
                 ref={cv}
                 onMouseEnter={contextSafe(() => t1.current[3]?.play())}
                 onMouseLeave={contextSafe(() => t1.current[3]?.reverse())}
@@ -108,7 +109,7 @@ export default function Menu(props: MenuProps) {
                 }
             >
                 CV
-            </div>
+            </div> */}
             <div className={iconsContainer}>
                 <a
                     ref={lin}

@@ -39,7 +39,7 @@ export default function VideoPlayer (props: PopupProps) {
             </div>
             
             {/* Body */}
-            <div className="p-6 md:p-4 text-white text-md xl:text-lg font-medium cursor-pointer">
+            <div className="p-6 md:p-4 text-white text-lg xl:text-xl font-medium cursor-pointer">
               {props.children}
             </div>
 
