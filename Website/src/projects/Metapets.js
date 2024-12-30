@@ -28,7 +28,7 @@ const styles={
 
 
 const bodyA=<span>Do you have a pet? Perhaps, you need a <span style={commonWorkStyles.italics}>Metapet</span> to immortalize its eternal love. </span>
-const bodyB=<span>This ongoing investigation began with Bella, a majestic Persian cat whose flowing fur and regal demeanor sparked the imagination. Her elegant presence and distinctive features like the copper eyes and silvery coat inspired a deeper exploration into how digital art could capture not just the physical form, but the essence of our beloved companions. </span>
+const bodyB=<span>This ongoing investigation began with Bella, a majestic Persian cat whose flowing fur and regal demeanor sparked the imagination. Could digital art capture not just the physical form, but the essence of our beloved companions? </span>
 const bodyC=<span>Using the faceted design language of <span style={commonWorkStyles.italics}><CustomLink to='https://works.amaykataria.com/#/metagems' inline={true}>Metagems</CustomLink></span>, this journey into Metapets transforms our furry friends into timeless digital beings, starting with Bella's graceful transformation from a physical Persian cat into a digital guardian. </span>
 const bodyD=<span>Collaborator: <CustomLink to='https://www.behance.net/braxtonchassag?locale=en_US&' inline={true}>Braxton Myles</CustomLink></span>
 
