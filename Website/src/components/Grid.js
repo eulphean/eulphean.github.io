@@ -54,6 +54,7 @@ import { padding } from './CommonStyles.js'
 import shadows from '../tiles/shadowsoftime.jpg'
 import timegrapher from '../tiles/timegrapher.jpg'
 import shadowbodies from '../tiles/shadowbodies.jpg'
+import metapets from '../tiles/metapets.jpg'
 
 export const Grid_Type = {
     WORKS: 0,
@@ -213,6 +214,12 @@ class Grid extends React.Component {
     allocateProjects() {
         // Push every imported image into this array. 
         this.workProjects = [
+            {
+                'img': metapets,
+                'title': 'Metapets',
+                'keywords': ['2024', 'Exhibition'],
+                'link': 'metapets'
+            },
             {
                 'img': shadowbodies,
                 'title': 'Are Shadow Bodies Electric?',

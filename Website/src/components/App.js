@@ -56,6 +56,7 @@ import Tug from '../projects/Tug.js'
 import AreShadowBodiesElectric from '../projects/AreShadowBodiesElectric.js'
 import ShadowsOfTime from '../projects/ShadowsOfTime.js'
 import Timegrapher from '../projects/Timegrapher.js'
+import Metapets from '../projects/Metapets.js'
 import CreativeTechnologist from '../portfolios/CreativeTechnologist.js'
 import Portfolio from '../portfolios/Portfolio.js'
 import Threedone from '../portfolios/Threedone.js'
@@ -136,6 +137,7 @@ function App() {
             <Route path="/Commissions"><Title /><Grid gridType={Grid_Type.COMMISSIONS} /></Route>
             <Route path="/Archive"><Title /><Grid gridType={Grid_Type.ARCHIVE} /></Route>
             <Route path="/About"><Title /><About /></Route>
+            <Route path="/metapets"><Metapets /></Route>
             <Route path="/areshadowbodieselectric"><AreShadowBodiesElectric /></Route>
             <Route path="/timegrapher"><Timegrapher /></Route>
             <Route path="/shadowsoftime"><ShadowsOfTime /></Route>
