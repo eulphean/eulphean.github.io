@@ -39,7 +39,7 @@ export default function Menu(props: MenuProps) {
     }, []);
 
 
-    const navbarContainer = "overflow-hidden fixed inset-0 flex flex-col items-center justify-center h-screen w-screen";
+    const navbarContainer = "overflow-hidden fixed inset-0 flex flex-col items-center justify-center h-[100dvh] w-screen";
     const navbarText = "text-secondaryBright text-xl xl:text-2xl font-semibold"
     const navbarStyles = navbarContainer + navbarText
     

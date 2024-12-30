@@ -30,9 +30,9 @@ export default function Home() {
       <Intro onEnter={() => setShowRoom(true)} />
       <VideoPlayer 
         src='/videos/teaser.mp4' 
-        style="fixed top-0 left-0 w-screen h-screen object-cover -z-10"
+        style="fixed inset-0 w-screen h-[100dvh] object-cover -z-10"
       />
-      <div className='flex items-center justify-center w-full h-full z-10'>
+      <div className='flex items-center justify-center w-full h-[100dvh] z-10'>
         <Menu 
           onAboutClick={resolveAboutClick} 
           onStatementClick={resolveStatementClick}
