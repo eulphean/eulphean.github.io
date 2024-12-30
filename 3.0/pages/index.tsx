@@ -1,36 +1,54 @@
 'use client'
 
 import { useState } from 'react';
-import Room from '../components/Room';
-import Building from '../components/Building';
 import Layout from '../components/Layout';
-import Navbar from '../components/Navbar';
-import Signup from '../components/Signup';
+import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import Intro from '../components/Intro'
-import CursorFollower from '../components/CursorFollower';
+import VideoPlayer from '../components/VideoPlayer';
+import Popup, {PopupContentType} from '../components/Popup';
+import About from '../components/About';
+import Statement from '../components/Statement';
 
-// These props can be filled using staticProps on the server.
-type HomeProps = {}
-export default function Home(props: HomeProps) {
+export default function Home() {
   const [showRoom, setShowRoom] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [popupContentType, setPopupContentType] = useState<PopupContentType>(PopupContentType.About);
+
+  const resolveAboutClick = () => {
+    setPopupContentType(PopupContentType.About);
+    setIsPopupOpen(true);
+  }
+
+  const resolveStatementClick = () => {  
+    setPopupContentType(PopupContentType.Statement);
+    setIsPopupOpen(true);
+  }
+
   return (
     <Layout>
-      {/* <CursorFollower /> */}
       <Intro onEnter={() => setShowRoom(true)} />
-      <div className='flex items-center w-full h-top'>
-        <Navbar />
+      <VideoPlayer 
+        src='/videos/teaser.mp4' 
+        style="fixed top-0 left-0 w-screen h-screen object-cover -z-10"
+      />
+      <div className='flex items-center justify-center w-full h-full z-10'>
+        <Menu 
+          onAboutClick={resolveAboutClick} 
+          onStatementClick={resolveStatementClick}
+        />
       </div>
-      <div className="flex flex-col w-full items-center justify-evenly h-middle overflow-y-auto lg:flex-row">
-          <Room showRoom={showRoom} />
-          <div className='flex flex-col items-center px-4 grow content-evenly justify-evenly lg:justify-center lg:gap-16 lg:order-first lg:w-1/2 xl:w-2/3'>
-            <Building startAnimation={showRoom} />
-            <Signup />
-          </div>
-      </div>
-      <div className="h-bottom flex items-center justify-center">
+      <Popup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+        title={popupContentType === PopupContentType.About ? "BIO" : "STATEMENT"} 
+      >
+        {popupContentType === PopupContentType.About && <About />}
+        {popupContentType === PopupContentType.Statement && <Statement />}
+      </Popup>
+      {/* <div className="h-bottom flex items-center justify-center">
         <Footer />
-      </div>
+      </div> */}
     </Layout>
   );
 }
