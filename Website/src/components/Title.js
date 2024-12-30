@@ -2,8 +2,10 @@ import React from 'react'
 import Radium from 'radium'
 import { Link, useLocation } from 'react-router-dom'
 import CustomButton from './CustomButton.js'
-import { color, fontSize, fontFamily, padding } from './CommonStyles.js'
+import { color, fontSize, fontFamily, padding, commonWorkStyles } from './CommonStyles.js'
+import CustomLink from './CustomLink.js'
 const RadiumLink = Radium(Link); 
+
 
 const styles={
     container: {
@@ -11,6 +13,8 @@ const styles={
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'flex-start',
+        marginLeft: padding.extraSmall,
+        marginBottom: padding.extraSmall
     },
 
     button: {
@@ -75,8 +79,9 @@ function Title() {
                 buttonStyle={styles.button} 
                 isActive={workState}
             >
-                <RadiumLink to="/Works">WORKS</RadiumLink>
+                <RadiumLink to="https://amaykataria.com">AMAY KATARIA</RadiumLink>
             </CustomButton> */}
+            <CustomLink inline={true} to='https://amaykataria.com/'>HOME</CustomLink>
             {/* <CustomButton 
                 buttonStyle={styles.button} 
                 isActive={commissionState}
@@ -100,7 +105,7 @@ function Title() {
                 isActive={aboutState} 
             >
                 <RadiumLink to="/About">ABOUT</RadiumLink>
-            </CustomButton> */}
+            </CustomButton>*/}
         </div>
     );
 }

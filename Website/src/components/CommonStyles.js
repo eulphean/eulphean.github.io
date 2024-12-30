@@ -6,7 +6,8 @@ const color = {
     lightGrey: '#bbbbbb',
     alphaDeepBlue: 'rgb(69, 83, 106, 60)',
     featherWhite: 'rgb(255, 255, 255)',
-    hoverRed: '#01A2FF'
+    hoverRed: '#01A2FF',
+    specialRed: '#FF0000'
 };
 
 const fontSize = {

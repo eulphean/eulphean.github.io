@@ -13,7 +13,7 @@ const styles={
         display: 'inline'
     },
     hover: {
-        color: color.hoverRed,
+        color: color.specialRed,
         opacity: '100%'
     },
 
@@ -29,7 +29,7 @@ class CustomLink extends React.Component {
             isHover: false
         }
 
-       this.isHoverDisabled = isMobile || isTablet || isMobileSafari; 
+        this.isHoverDisabled = isMobile || isTablet || isMobileSafari; 
     }
 
     render() {
