@@ -18,7 +18,7 @@ export default function VideoPlayer (props: PopupProps) {
         <div className="overflow-hidden fixed inset-0 z-50 flex flex-col items-center justify-center">
           {/* Overlay */}
           <div 
-            className="fixed inset-0 bg-black bg-opacity-25 transition-opacity"
+            className="fixed overflow-hidden inset-0 bg-black bg-opacity-85 transition-opacity"
             onClick={props.onClose}
           />
           

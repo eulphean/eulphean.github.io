@@ -39,7 +39,7 @@ export default function Menu(props: MenuProps) {
     }, []);
 
 
-    const navbarContainer = "overflow-none flex flex-col items-center justify-between h-60 w-full";
+    const navbarContainer = "overflow-hidden flex flex-col items-center justify-between h-60 w-full";
     const navbarText = "text-secondaryBright text-xl xl:text-2xl font-semibold cursor-pointer"
     const navbarStyles = navbarContainer + navbarText
     
