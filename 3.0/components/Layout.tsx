@@ -16,7 +16,7 @@ export default function Layout({children,home}: LayoutProps) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main className='h-screen'>{children}</main>
+      <main className='h-screen overflow-hidden'>{children}</main>
     </div>
   );
 }
