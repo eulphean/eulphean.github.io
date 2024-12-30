@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3c79f745.css",
-    "main.js": "/static/js/main.583df9dd.js",
+    "main.js": "/static/js/main.8544728c.js",
     "static/media/3d-one-2023.pdf": "/static/media/3d-one-2023.82044d47c1c0c8f9fc38.pdf",
     "static/media/3d-two-2023.pdf": "/static/media/3d-two-2023.e5841a2b4d49e584f0cc.pdf",
     "static/media/ct-2023.pdf": "/static/media/ct-2023.513fed82b1f3bd8fdbff.pdf",
@@ -12,11 +12,12 @@
     "static/media/janus.gif": "/static/media/janus.b052560e4daa2beff45e.gif",
     "static/media/5.mp4": "/static/media/5.d79e3ff826a9da0c8ffd.mp4",
     "static/media/pigeon.mp4": "/static/media/pigeon.fbcc625c1f369431dd76.mp4",
-    "static/media/11.jpg": "/static/media/11.ee27f90e44b10cfd5943.jpg",
     "static/media/8.jpg": "/static/media/8.cfa1ac3462d0c17a116c.jpg",
+    "static/media/11.jpg": "/static/media/11.ee27f90e44b10cfd5943.jpg",
+    "static/media/4.jpg": "/static/media/4.13b85dfce29fd68b9a7f.jpg",
     "static/media/10.jpg": "/static/media/10.7affae72fdb3b0fe4d55.jpg",
     "static/media/3.jpg": "/static/media/3.c1387674ebf77dc50b09.jpg",
-    "static/media/4.jpg": "/static/media/4.13b85dfce29fd68b9a7f.jpg",
+    "static/media/0.jpg": "/static/media/0.7e2a75dc1db35f11411f.jpg",
     "static/media/5.jpg": "/static/media/5.18299258b8c669eac027.jpg",
     "static/media/1.jpg": "/static/media/1.b5be8d8b4e90ce6284b7.jpg",
     "static/media/6.jpg": "/static/media/6.03b1ccc3bda38271e2bc.jpg",
@@ -89,6 +90,7 @@
     "static/media/installation.jpg": "/static/media/installation.5001385ca231126021f5.jpg",
     "static/media/kidsB.jpg": "/static/media/kidsB.35ee9f08ac775ec5a5a9.jpg",
     "static/media/janus.jpg": "/static/media/janus.90f929c056dd04fb44b6.jpg",
+    "static/media/metapets.jpg": "/static/media/metapets.d458e89ee0b4b11fc8c1.jpg",
     "static/media/yield.jpg": "/static/media/yield.74b0ff3b53b835ee6cbc.jpg",
     "static/media/momentF.jpg": "/static/media/momentF.d0bb1356c696c7406c54.jpg",
     "static/media/homotypicalB.jpg": "/static/media/homotypicalB.35fdc4251536364b70d7.jpg",
@@ -204,10 +206,10 @@
     "static/media/back.svg": "/static/media/back.fa8a25870788fde9a972906ec69e526d.svg",
     "index.html": "/index.html",
     "main.3c79f745.css.map": "/static/css/main.3c79f745.css.map",
-    "main.583df9dd.js.map": "/static/js/main.583df9dd.js.map"
+    "main.8544728c.js.map": "/static/js/main.8544728c.js.map"
   },
   "entrypoints": [
     "static/css/main.3c79f745.css",
-    "static/js/main.583df9dd.js"
+    "static/js/main.8544728c.js"
   ]
 }
