@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { ReactNode } from 'react'
 
 type HeadshotProps = {
-    children: ReactNode,
+    children?: ReactNode,
     style: string,
     src: string,
     width: number,

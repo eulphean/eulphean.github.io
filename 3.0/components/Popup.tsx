@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 type PopupProps = {
     isOpen: boolean;
     onClose: () => void;

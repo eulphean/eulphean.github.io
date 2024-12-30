@@ -13,10 +13,10 @@ type MenuProps = {
 
 export default function Menu(props: MenuProps) {
     // Refs (Titles)
-    const bio = useRef<HTMLAnchorElement>(null);
-    const statement= useRef<HTMLAnchorElement>(null);
+    const bio = useRef<HTMLDivElement>(null);
+    const statement= useRef<HTMLDivElement>(null);
     const works = useRef<HTMLAnchorElement>(null);
-    const cv = useRef<HTMLAnchorElement>(null);
+    const cv = useRef<HTMLDivElement>(null);
     const t1 = useRef<GSAPTween[]>([]);
 
     // Refs (Icons)
