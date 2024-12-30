@@ -39,12 +39,12 @@ export default function Menu(props: MenuProps) {
     }, []);
 
 
-    const navbarContainer = "overflow-hidden flex flex-col items-center justify-between h-60 w-full";
-    const navbarText = "text-secondaryBright text-xl xl:text-2xl font-semibold cursor-pointer"
+    const navbarContainer = "overflow-hidden fixed inset-0 flex flex-col items-center justify-center h-screen w-screen";
+    const navbarText = "text-secondaryBright text-xl xl:text-2xl font-semibold"
     const navbarStyles = navbarContainer + navbarText
     
     // Titles
-    const titles = 'flex w-full flex-col sm:flex-row';
+    const titleStyle = 'mb-4 cursor-pointer';
     
     // Icons
     const iconsContainer = "flex flex-row w-32 justify-between lg:w-40";
@@ -61,6 +61,7 @@ export default function Menu(props: MenuProps) {
                         props.onAboutClick()
                     }
                 }
+                className={titleStyle}
             >
                 BIO
             </div>
@@ -73,6 +74,7 @@ export default function Menu(props: MenuProps) {
                         props.onStatementClick()
                     }
                 }
+                className={titleStyle}
             >
                 STATEMENT
             </div>
@@ -84,6 +86,8 @@ export default function Menu(props: MenuProps) {
                 onMouseEnter={contextSafe(() => t1.current[2]?.play())}
                 onMouseLeave={contextSafe(() => t1.current[2]?.reverse())}
                 onClick={contextSafe(() => t1.current[2]?.reverse())}
+                className={titleStyle}
+                
             >
                 WORKS
             </a>
@@ -95,6 +99,7 @@ export default function Menu(props: MenuProps) {
                 onMouseEnter={contextSafe(() => t1.current[3]?.play())}
                 onMouseLeave={contextSafe(() => t1.current[3]?.reverse())}
                 onClick={contextSafe(() => t1.current[3]?.reverse())}
+                className={titleStyle}
             >
                 CV
             </a>
