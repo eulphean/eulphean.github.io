@@ -9,6 +9,9 @@ module.exports = {
       extend: {
         fontFamily: {
           'istok': ['Istok Web', 'serif'],
+          'abril': ['var(--font-abril-fatface)', 'serif'],
+          'inter': ['var(--font-inter)', 'sans-serif'],
+          'helvetica': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
         },
         colors: {
           'primary': '#45111D',

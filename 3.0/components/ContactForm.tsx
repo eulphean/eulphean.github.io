@@ -50,7 +50,7 @@ export default function ContactForm() {
 
   return (
     <div className="max-w-2xl mx-auto px-8">
-      <h2 className="text-4xl font-bold mb-8 text-center">Discuss Your Next Project</h2>
+      <h2 className="text-4xl mb-8 text-center font-abril">Discuss Your Next Project</h2>
       
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -104,7 +104,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-3 px-6 bg-red-600 hover:bg-red-700 disabled:bg-gray-600 text-white font-semibold rounded-lg transition-colors duration-200"
+          className="w-full py-3 px-6 bg-white hover:bg-gray-200 disabled:bg-gray-600 text-black font-semibold rounded-lg transition-colors duration-200"
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>

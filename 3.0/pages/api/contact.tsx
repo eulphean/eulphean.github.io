@@ -21,7 +21,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     const emailData = {
-      from: `Contact Form <noreply@${process.env.MAILGUN_DOMAIN}>`,
+      from: `Commercial Contact Form <noreply@${process.env.MAILGUN_DOMAIN}>`,
       to: 'studio@amaykataria.com',
       subject: `New Project Inquiry from ${name}`,
       html: `
