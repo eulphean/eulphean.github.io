@@ -16,6 +16,7 @@ export default function Menu(props: MenuProps) {
     const bio = useRef<HTMLDivElement>(null);
     const statement= useRef<HTMLDivElement>(null);
     const works = useRef<HTMLAnchorElement>(null);
+    const commercial = useRef<HTMLAnchorElement>(null);
     const cv = useRef<HTMLAnchorElement>(null);
     const t1 = useRef<GSAPTween[]>([]);
 
@@ -27,7 +28,7 @@ export default function Menu(props: MenuProps) {
 
     // Store the animation in a context.
     const { contextSafe } = useGSAP(() => {
-        [bio.current, statement.current, works.current, cv.current].forEach(c => {
+        [bio.current, statement.current, works.current, commercial.current, cv.current].forEach(c => {
             let t = gsap.to(c, {color: "red", rotationZ: -5, scale: 1.25, duration: 0.5}).pause();
             t1.current.push(t);            
         });
@@ -91,30 +92,31 @@ export default function Menu(props: MenuProps) {
             >
                 WORKS
             </a>
-            <a 
-                ref={cv} 
-                href="Amay_Kataria_CV_December_2024.pdf"
+               <a 
+                ref={commercial} 
+                href="https://works.amaykataria.com"
                 target="_blank"
                 rel="noreferer"
                 onMouseEnter={contextSafe(() => t1.current[3]?.play())}
                 onMouseLeave={contextSafe(() => t1.current[3]?.reverse())}
                 onClick={contextSafe(() => t1.current[3]?.reverse())}
                 className={titleStyle}
+                
+            >
+                COMMERCIAL
+            </a>
+            <a 
+                ref={cv} 
+                href="Amay_Kataria_CV_December_2024.pdf"
+                target="_blank"
+                rel="noreferer"
+                onMouseEnter={contextSafe(() => t1.current[4]?.play())}
+                onMouseLeave={contextSafe(() => t1.current[4]?.reverse())}
+                onClick={contextSafe(() => t1.current[4]?.reverse())}
+                className={titleStyle}
             >
                 CV
             </a>
-            {/* <div
-                ref={cv}
-                onMouseEnter={contextSafe(() => t1.current[3]?.play())}
-                onMouseLeave={contextSafe(() => t1.current[3]?.reverse())}
-                onClick={() => {
-                        contextSafe(() => t1.current[3]?.reverse())
-                        fileDownload();
-                    }
-                }
-            >
-                CV
-            </div> */}
             <div className={iconsContainer}>
                 <a
                     ref={lin}
