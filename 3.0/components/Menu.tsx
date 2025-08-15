@@ -94,9 +94,7 @@ export default function Menu(props: MenuProps) {
             </a>
                <a 
                 ref={commercial} 
-                href="https://works.amaykataria.com"
-                target="_blank"
-                rel="noreferer"
+                href="/commercial"
                 onMouseEnter={contextSafe(() => t1.current[3]?.play())}
                 onMouseLeave={contextSafe(() => t1.current[3]?.reverse())}
                 onClick={contextSafe(() => t1.current[3]?.reverse())}

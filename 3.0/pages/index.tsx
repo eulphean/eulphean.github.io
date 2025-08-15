@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Amay Kataria 3.0</title>
         <link rel="shortcut icon" type="image/png" href ="./favicon.png"/> 
         <meta property="og:image" content="./og.jpg" />
         <meta name="og:title" content={siteTitle} />
