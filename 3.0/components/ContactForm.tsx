@@ -68,12 +68,12 @@ export default function ContactForm() {
     }
   };
 
-  const inputStyle = "w-full px-6 py-4 text-lg bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-500 transition-colors";
-  const labelStyle = "block text-base font-semibold text-gray-300 mb-3";
+  const inputStyle = "w-full px-4 py-3 text-base sm:px-6 sm:py-4 sm:text-lg bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-500 transition-colors";
+  const labelStyle = "block text-sm sm:text-base font-semibold text-gray-300 mb-2 sm:mb-3";
 
   return (
     <div ref={formRef} className="max-w-sm md:max-w-xl lg:max-w-2xl max-mx-auto px-4 sm:px-8 w-full">
-      <h2 className="text-4xl md:text-5xl lg:text-6xl mb-12 text-center font-inter font-black tracking-wide">
+      <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl mb-8 sm:mb-12 text-center font-inter font-black tracking-wide min-h-[60px] sm:min-h-[80px] md:min-h-[120px] lg:min-h-[144px] flex items-center justify-center">
         <Typewriter 
           text="How Can I Help?"
           speed={200}

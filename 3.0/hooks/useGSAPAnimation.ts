@@ -9,7 +9,7 @@ export function useGSAPTextAnimation() {
   const animationRef = useRef<GSAPTween | null>(null);
 
   const { contextSafe } = useGSAP(() => {
-    if (elementRef.current) {
+    if (typeof window !== 'undefined' && elementRef.current) {
       animationRef.current = gsap.to(elementRef.current, {
         color: "red", 
         rotationZ: -5, 
@@ -34,7 +34,7 @@ export function useGSAPIconAnimation() {
   const animationRef = useRef<GSAPTween | null>(null);
 
   const { contextSafe } = useGSAP(() => {
-    if (elementRef.current) {
+    if (typeof window !== 'undefined' && elementRef.current) {
       animationRef.current = gsap.to(elementRef.current, {
         backgroundColor: "red", 
         rotationZ: -5, 

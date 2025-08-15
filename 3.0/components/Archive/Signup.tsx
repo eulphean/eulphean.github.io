@@ -1,6 +1,6 @@
 "use client" 
 
-import CustomButton from "./CustomButton";
+import CustomButton from "../CustomButton";
 import { ChangeEvent, useState } from "react";
 
 const title = "Join the Newsletter";

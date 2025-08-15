@@ -56,34 +56,33 @@ export default function Commercial() {
         <meta name="og:title" content="Amay Kataria - Commercial" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <style jsx global>{`
-          html, body {
-            overflow-x: hidden;
-          }
-        `}</style>
       </Head>
       
       <CommercialNavbar />
       
-      <main className="bg-black text-white overflow-x-hidden">
+      <main className='h-[100dvh] w-[100dvw]overflow-hidden select-none overscroll-none bg-black'>
         {/* Section 1 */}
         <section ref={section1Ref} className="h-screen flex items-center justify-center border-b border-gray-800 relative overflow-hidden">
           <div className="text-center max-w-screen-lg lg:max-w-screen-lg px-4 sm:px-8 relative z-10 w-full">
             <div className="flex justify-center mb-8">
-                <Headshot 
-                    src="/commercial.png"
-                    style="rounded-full"
-                    width={200}
-                    height={200}
-                />
+                <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-52 md:h-52">
+                  <Headshot 
+                      src="/commercial.png"
+                      style="rounded-full w-full h-full object-cover"
+                      width={200}
+                      height={200}
+                  />
+                </div>
             </div>
-            <h1 className="text-3xl sm:text-2xl md:text-6xl lg:text-7xl xl:text-6xl mb-6 tracking-wide font-inter font-black leading-tight">
-              <Typewriter 
-                text="Custom Interactive Experiences for Corporate and Cultural Spaces"
-                speed={250}
-                trigger={animationTrigger}
-                highlightWords={['Interactive', 'Corporate', 'Cultural']}
-              />
+            <h1 className="text-3xl sm:text-2xl md:text-6xl lg:text-7xl xl:text-6xl mb-6 tracking-wide font-inter font-black leading-tight min-h-[180px] sm:min-h-[200px] md:min-h-[320px] lg:min-h-[400px] xl:min-h-[320px] flex items-center justify-center">
+              <span className="text-center">
+                <Typewriter 
+                  text="Custom Interactive Experiences for Corporate and Cultural Spaces"
+                  speed={250}
+                  trigger={animationTrigger}
+                  highlightWords={['Interactive', 'Corporate', 'Cultural']}
+                />
+              </span>
             </h1>
             <FadeIn delay={600} duration={1200} trigger={animationTrigger}>
               <p className="text-lg sm:text-xl text-gray-400 italic font-helvetica">
@@ -98,14 +97,14 @@ export default function Commercial() {
         </section>
 
         {/* Section 2 */}
-        <section ref={section2Ref} className="h-screen relative flex items-center justify-center border-b border-gray-800 overflow-hidden">
+        <section ref={section2Ref} className="h-screen relative flex items-center justify-center border-b border-gray-800">
           <VideoPlayer 
             src='/videos/demo.mp4' 
             style="absolute inset-0 w-full h-full object-cover"
           />
         </section>
         {/* Section 3 */}
-        <section className="min-h-screen flex items-center justify-center py-8 sm:py-16 px-4 overflow-hidden">
+        <section className="min-h-screen flex items-center justify-center py-8 sm:py-16 px-4 bg-black">
           <ContactForm />
         </section>
       </main>

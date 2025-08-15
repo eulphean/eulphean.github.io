@@ -8,8 +8,8 @@ import AnimatedSocialIcon from './AnimatedSocialIcon';
 
 export default function CommercialNavbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-6 py-12">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black-80">
+      <div className="max-w-7xl mx-auto px-6 py-4 sm:px-8 sm:py-6 md:py-12">
         <div className="flex items-center justify-between">
           {/* Left side - Navigation Links */}
           <div className="flex items-center space-x-8 font-semibold">
