@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import Typewriter from './Typewriter';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -10,6 +11,28 @@ export default function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [titleAnimationTrigger, setTitleAnimationTrigger] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setTitleAnimationTrigger(false);
+            setTimeout(() => setTitleAnimationTrigger(true), 100);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (formRef.current) {
+      observer.observe(formRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -45,12 +68,19 @@ export default function ContactForm() {
     }
   };
 
-  const inputStyle = "w-full px-4 py-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-500 transition-colors";
-  const labelStyle = "block text-sm font-medium text-gray-300 mb-2";
+  const inputStyle = "w-full px-6 py-4 text-lg bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-500 transition-colors";
+  const labelStyle = "block text-base font-semibold text-gray-300 mb-3";
 
   return (
-    <div className="max-w-2xl mx-auto px-8">
-      <h2 className="text-4xl mb-8 text-center font-abril">Discuss Your Next Project</h2>
+    <div ref={formRef} className="max-w-sm md:max-w-xl lg:max-w-2xl max-mx-auto px-4 sm:px-8 w-full">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl mb-12 text-center font-inter font-black tracking-wide">
+        <Typewriter 
+          text="How Can I Help?"
+          speed={200}
+          trigger={titleAnimationTrigger}
+          highlightWords={['Help']}
+        />
+      </h2>
       
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -104,17 +134,17 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-3 px-6 bg-white hover:bg-gray-200 disabled:bg-gray-600 text-black font-semibold rounded-lg transition-colors duration-200"
+          className="w-full py-4 px-8 text-lg bg-white hover:bg-gray-200 disabled:bg-gray-600 text-black font-semibold rounded-lg transition-colors duration-200"
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>
 
         {submitStatus === 'success' && (
-          <p className="text-green-400 text-center">Thanks! I'll get back to you soon.</p>
+          <p className="text-green-400 text-center text-lg">Thanks! I'll get back to you soon.</p>
         )}
         
         {submitStatus === 'error' && (
-          <p className="text-red-400 text-center">Something went wrong. Please try again.</p>
+          <p className="text-red-400 text-center text-lg">Something went wrong. Please try again.</p>
         )}
       </form>
     </div>

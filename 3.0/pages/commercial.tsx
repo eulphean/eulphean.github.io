@@ -28,6 +28,7 @@ export default function Commercial() {
           if (entry.target === section2Ref.current && entry.isIntersecting) {
             const video = entry.target.querySelector('video');
             if (video) {
+              video.currentTime = 0; // Reset video to beginning
               video.play();
             }
           }
@@ -47,7 +48,7 @@ export default function Commercial() {
   }, []);
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Head>
         <title>Amay Kataria - Commercial</title>
         <link rel="shortcut icon" type="image/png" href="./favicon.png" />
@@ -55,14 +56,19 @@ export default function Commercial() {
         <meta name="og:title" content="Amay Kataria - Commercial" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <style jsx global>{`
+          html, body {
+            overflow-x: hidden;
+          }
+        `}</style>
       </Head>
       
       <CommercialNavbar />
       
-      <main className="bg-black text-white">
+      <main className="bg-black text-white overflow-x-hidden">
         {/* Section 1 */}
-        <section ref={section1Ref} className="h-screen flex items-center justify-center border-b border-gray-800 relative">
-          <div className="text-center max-w-screen-lg lg:max-w-screen-lg px-8 relative z-10">
+        <section ref={section1Ref} className="h-screen flex items-center justify-center border-b border-gray-800 relative overflow-hidden">
+          <div className="text-center max-w-screen-lg lg:max-w-screen-lg px-4 sm:px-8 relative z-10 w-full">
             <div className="flex justify-center mb-8">
                 <Headshot 
                     src="/commercial.png"
@@ -74,16 +80,17 @@ export default function Commercial() {
             <h1 className="text-3xl sm:text-2xl md:text-6xl lg:text-7xl xl:text-6xl mb-6 tracking-wide font-inter font-black leading-tight">
               <Typewriter 
                 text="Custom Interactive Experiences for Corporate and Cultural Spaces"
-                speed={150}
+                speed={250}
                 trigger={animationTrigger}
                 highlightWords={['Interactive', 'Corporate', 'Cultural']}
               />
             </h1>
             <FadeIn delay={600} duration={1200} trigger={animationTrigger}>
-              <p className="text-lg sm:text-xl text-red-500 italic font-helvetica">
+              <p className="text-lg sm:text-xl text-gray-400 italic font-helvetica">
                 <HighlightableText 
                   text="I create installations where digital interactions control physical environments."
                   highlightWords={[]}
+                  animationDelay={1000}
                 />
               </p>
             </FadeIn>
@@ -91,19 +98,14 @@ export default function Commercial() {
         </section>
 
         {/* Section 2 */}
-        <section ref={section2Ref} className="h-screen relative flex items-center justify-center border-b border-gray-800">
+        <section ref={section2Ref} className="h-screen relative flex items-center justify-center border-b border-gray-800 overflow-hidden">
           <VideoPlayer 
             src='/videos/demo.mp4' 
             style="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="relative z-10 text-center">
-            <h1 className="text-6xl mb-8 font-abril tracking-wide">Section 2</h1>
-            <p className="text-xl text-gray-300">Commercial Section Two Content</p>
-          </div>
         </section>
-
         {/* Section 3 */}
-        <section className="min-h-screen flex items-center justify-center py-16">
+        <section className="min-h-screen flex items-center justify-center py-8 sm:py-16 px-4 overflow-hidden">
           <ContactForm />
         </section>
       </main>

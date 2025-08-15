@@ -1,19 +1,20 @@
 'use client'
 
-import { useIsMobile } from '../hooks/useIsMobile';
+import AnimatedHighlightWord from './AnimatedHighlightWord';
 
 type HighlightableTextProps = {
   text: string;
   highlightWords: string[];
   className?: string;
+  animationDelay?: number;
 }
 
 export default function HighlightableText({ 
   text, 
   highlightWords, 
-  className = '' 
+  className = '',
+  animationDelay = 0
 }: HighlightableTextProps) {
-  const isMobile = useIsMobile();
   const words = text.split(' ');
 
   const renderWords = () => {
@@ -23,16 +24,15 @@ export default function HighlightableText({
       );
       
       if (isHighlightable) {
+        const wordDelay = animationDelay + (index * 100); // Stagger each word slightly
+        
         return (
-          <span 
+          <AnimatedHighlightWord
             key={index}
-            className={isMobile 
-              ? "text-red-500" 
-              : "hover:text-red-500 transition-colors duration-300 ease-in-out cursor-pointer"
-            }
-          >
-            {word}
-          </span>
+            word={word}
+            delay={wordDelay}
+            speed={80}
+          />
         );
       }
       

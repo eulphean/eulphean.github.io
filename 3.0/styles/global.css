@@ -37,6 +37,6 @@
     }
 
     body {
-      @apply w-[100dvw] h-[100dvh] font-istok overflow-y-auto
+      @apply w-[100dvw] h-[100dvh] font-istok overflow-y-auto overflow-x-hidden
     }
   }

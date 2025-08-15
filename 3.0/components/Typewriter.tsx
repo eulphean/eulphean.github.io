@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { useIsMobile } from '../hooks/useIsMobile';
+import AnimatedHighlightWord from './AnimatedHighlightWord';
 
 type TypewriterProps = {
   text: string;
@@ -22,7 +22,6 @@ export default function Typewriter({
 }: TypewriterProps) {
   const [displayedWords, setDisplayedWords] = useState<string[]>([]);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const isMobile = useIsMobile();
   
   const words = text.split(' ');
 
@@ -56,16 +55,15 @@ export default function Typewriter({
       );
       
       if (isHighlightable) {
+        const wordDelay = index * speed; // Calculate delay based on when this word appeared
+        
         return (
-          <span 
+          <AnimatedHighlightWord
             key={index}
-            className={isMobile 
-              ? "text-red-500" 
-              : "hover:text-red-500 transition-colors duration-300 ease-in-out cursor-pointer"
-            }
-          >
-            {word}
-          </span>
+            word={word}
+            delay={wordDelay + 250} // Small additional delay after word appears
+            speed={75}
+          />
         );
       }
       
