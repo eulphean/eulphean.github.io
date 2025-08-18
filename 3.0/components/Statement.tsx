@@ -19,7 +19,6 @@ export default function Statement () {
                 />
                 <div className="flex flex-col ml-4 italic">
                     <div>Amay Kataria</div>
-                    <div>December, 2024</div>
                 </div>
             </div>
         </div>

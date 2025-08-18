@@ -9,6 +9,7 @@ import VideoPlayer from '../components/VideoPlayer';
 import Popup, {PopupContentType} from '../components/Popup';
 import About from '../components/About';
 import Statement from '../components/Statement';
+import Loader from '../components/Loader';
 
 export const siteTitle = 'Amay Kataria 3.0';
 
@@ -16,6 +17,7 @@ export default function Home() {
   // const [showRoom, setShowRoom] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [popupContentType, setPopupContentType] = useState<PopupContentType>(PopupContentType.About);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   const resolveAboutClick = () => {
     setPopupContentType(PopupContentType.About);
@@ -38,10 +40,15 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
       <main className='h-[100dvh] w-[100dvw]overflow-hidden fixed inset-0 touch-none select-none overscroll-none'>
+        {/* {!videoLoaded && <Loader customStyles="absolute w-[100dvw] top-0 left-0 bottom-0 right-0 z-50" />} */}
         {/* <Intro onEnter={() => setShowRoom(true)} /> */}
         <VideoPlayer 
           src='/videos/teaser.mp4' 
           style="fixed inset-0 w-[100dvw] h-[100dvh] object-cover -z-10"
+          onLoadedData={() => {
+            setVideoLoaded(true)
+            console.log("Video loaded")
+          }}
         />
         <div className='flex items-center justify-center w-[100dvw] h-[100dvh] z-10'>
           <Menu 
