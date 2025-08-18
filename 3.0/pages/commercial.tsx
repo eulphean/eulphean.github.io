@@ -60,11 +60,11 @@ export default function Commercial() {
       
       <CommercialNavbar />
       
-      <main className='h-[100dvh] w-[100dvw]overflow-hidden select-none overscroll-none bg-black'>
+      <main className='h-[100dvh] w-[100dvw]overflow-hidden select-none touch-none overscroll-none bg-black'>
         {/* Section 1 */}
         <section ref={section1Ref} className="h-screen flex items-center justify-center border-b border-gray-800 relative overflow-hidden">
           <div className="text-center max-w-screen-lg lg:max-w-screen-lg px-4 sm:px-8 relative z-10 w-full">
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-4 sm:mb-8">
                 <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-52 md:h-52">
                   <Headshot 
                       src="/commercial.png"
@@ -74,7 +74,7 @@ export default function Commercial() {
                   />
                 </div>
             </div>
-            <h1 className="text-3xl sm:text-2xl md:text-6xl lg:text-7xl xl:text-6xl mb-6 tracking-wide font-inter font-black leading-tight min-h-[180px] sm:min-h-[200px] md:min-h-[320px] lg:min-h-[400px] xl:min-h-[320px] flex items-center justify-center">
+            <h1 className="text-3xl sm:text-2xl md:text-6xl lg:text-7xl xl:text-6xl mb-3 sm:mb-6 tracking-wide font-inter font-black leading-tight min-h-[180px] sm:min-h-[200px] md:min-h-[320px] lg:min-h-[400px] xl:min-h-[320px] flex items-center justify-center">
               <span className="text-center">
                 <Typewriter 
                   text="Custom Interactive Experiences for Corporate and Cultural Spaces"
@@ -85,7 +85,7 @@ export default function Commercial() {
               </span>
             </h1>
             <FadeIn delay={600} duration={1200} trigger={animationTrigger}>
-              <p className="text-lg sm:text-xl text-gray-400 italic font-helvetica">
+              <p className="text-base sm:text-xl text-gray-400 italic font-helvetica">
                 <HighlightableText 
                   text="I create installations where digital interactions control physical environments."
                   highlightWords={[]}
