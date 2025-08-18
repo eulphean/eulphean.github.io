@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react"
-import CustomButton from "./CustomButton";
+import CustomButton from "../CustomButton";
 import SplineScene, { SceneType } from "./SplineScene";
 import Loader from './Loader'
 import { useGSAP } from "@gsap/react";
