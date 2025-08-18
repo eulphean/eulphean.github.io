@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Menu from '../components/Menu';
-import Footer from '../components/Archive/Footer';
+import Footer from '../components/Footer';
 import Intro from '../components/Intro'
 import VideoPlayer from '../components/VideoPlayer';
 import Popup, {PopupContentType} from '../components/Popup';

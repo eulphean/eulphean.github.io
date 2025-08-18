@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SplineScene, {SceneType} from '../SplineScene';
+import SplineScene, {SceneType} from './SplineScene';
 import Loader from './Loader';
 
 type RoomProps = {

@@ -9,6 +9,7 @@ import FadeIn from '../components/FadeIn';
 import HighlightableText from '../components/HighlightableText';
 import Headshot from '../components/Headshot';
 import CommercialNavbar from '../components/CommercialNavbar';
+import Footer from '../components/Footer';
 
 export default function Commercial() {
   const section1Ref = useRef<HTMLElement>(null);
@@ -60,7 +61,7 @@ export default function Commercial() {
       
       <CommercialNavbar />
       
-      <main className='h-[100dvh] w-[100dvw]overflow-x-hidden select-none overflow-y-scroll inset-0 overscroll-none bg-black'>
+      <main className='w-[100dvw] overflow-x-hidden select-none overscroll-none bg-black'>
         {/* Section 1 */}
         <section ref={section1Ref} className="h-screen flex items-center justify-center border-b border-gray-800 relative overflow-hidden">
           <div className="text-center max-w-screen-lg lg:max-w-screen-lg px-4 sm:px-8 relative z-10 w-full">
@@ -108,6 +109,11 @@ export default function Commercial() {
           <ContactForm />
         </section>
       </main>
+      
+      {/* Footer */}
+      <div className="w-full bg-black py-4 px-4 text-center">
+        <Footer />
+      </div>
     </div>
   );
 }
