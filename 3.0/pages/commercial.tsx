@@ -60,7 +60,7 @@ export default function Commercial() {
       
       <CommercialNavbar />
       
-      <main className='h-[100dvh] w-[100dvw]overflow-hidden select-none touch-none overscroll-none bg-black'>
+      <main className='h-[100dvh] w-[100dvw]overflow-x-hidden select-none overflow-y-scroll inset-0 overscroll-none bg-black'>
         {/* Section 1 */}
         <section ref={section1Ref} className="h-screen flex items-center justify-center border-b border-gray-800 relative overflow-hidden">
           <div className="text-center max-w-screen-lg lg:max-w-screen-lg px-4 sm:px-8 relative z-10 w-full">
