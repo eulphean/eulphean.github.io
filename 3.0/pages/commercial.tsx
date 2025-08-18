@@ -99,7 +99,7 @@ export default function Commercial() {
         {/* Section 2 */}
         <section ref={section2Ref} className="h-screen relative flex items-center justify-center border-b border-gray-800">
           <VideoPlayer 
-            src='/videos/demo.mp4' 
+            src='/videos/commercial.mp4' 
             style="absolute inset-0 w-full h-full object-cover"
           />
         </section>
