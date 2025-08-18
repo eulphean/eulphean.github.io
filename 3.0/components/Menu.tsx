@@ -1,10 +1,11 @@
 import Image from 'next/image'
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import linkedin from '../public/svg/in.svg'
 import github from '../public/svg/github.svg'
 import ig from '../public/svg/ig.svg'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import Typewriter from './Typewriter'
 
 type MenuProps = {
     onAboutClick: () => void;
@@ -26,6 +27,15 @@ export default function Menu(props: MenuProps) {
     const git = useRef<HTMLAnchorElement>(null);
     const t2 = useRef<GSAPTween[]>([]);
 
+    // Typewriter animation states
+    const [animationTriggers, setAnimationTriggers] = useState({
+        bio: false,
+        statement: false,
+        works: false,
+        commercial: false,
+        cv: false
+    });
+
     // Store the animation in a context.
     const { contextSafe } = useGSAP(() => {
         [bio.current, statement.current, works.current, commercial.current, cv.current].forEach(c => {
@@ -37,6 +47,23 @@ export default function Menu(props: MenuProps) {
             let t = gsap.to(c, {backgroundColor: "red", rotationZ: -5, scale: 1.5, duration: 0.5}).pause();
             t2.current.push(t);
         });
+    }, []);
+
+    // Trigger animations sequentially when component mounts
+    useEffect(() => {
+        const triggerSequentially = async () => {
+            const items = ['bio', 'statement', 'works', 'commercial', 'cv'];
+            for (let i = 0; i < items.length; i++) {
+                setTimeout(() => {
+                    setAnimationTriggers(prev => ({
+                        ...prev,
+                        [items[i]]: true
+                    }));
+                }, i * 300); // 300ms delay between each item
+            }
+        };
+
+        triggerSequentially();
     }, []);
 
 
@@ -64,7 +91,12 @@ export default function Menu(props: MenuProps) {
                 }
                 className={titleStyle}
             >
-                BIO
+                <Typewriter 
+                    text="BIO" 
+                    speed={100} 
+                    trigger={animationTriggers.bio} 
+                    highlightWords={[]}
+                />
             </div>
             <div
                 ref={statement}
@@ -77,7 +109,12 @@ export default function Menu(props: MenuProps) {
                 }
                 className={titleStyle}
             >
-                STATEMENT
+                <Typewriter 
+                    text="STATEMENT" 
+                    speed={100} 
+                    trigger={animationTriggers.statement} 
+                    highlightWords={[]}
+                />
             </div>
             <a 
                 ref={works} 
@@ -90,7 +127,12 @@ export default function Menu(props: MenuProps) {
                 className={titleStyle}
                 
             >
-                WORKS
+                <Typewriter 
+                    text="WORKS" 
+                    speed={100} 
+                    trigger={animationTriggers.works} 
+                    highlightWords={[]}
+                />
             </a>
                <a 
                 ref={commercial} 
@@ -101,7 +143,12 @@ export default function Menu(props: MenuProps) {
                 className={titleStyle}
                 
             >
-                COMMERCIAL
+                <Typewriter 
+                    text="COMMERCIAL" 
+                    speed={100} 
+                    trigger={animationTriggers.commercial} 
+                    highlightWords={[]}
+                />
             </a>
             <a 
                 ref={cv} 
@@ -113,7 +160,12 @@ export default function Menu(props: MenuProps) {
                 onClick={contextSafe(() => t1.current[4]?.reverse())}
                 className={titleStyle}
             >
-                CV
+                <Typewriter 
+                    text="CV" 
+                    speed={100} 
+                    trigger={animationTriggers.cv} 
+                    highlightWords={[]}
+                />
             </a>
             <div className={iconsContainer}>
                 <a

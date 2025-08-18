@@ -9,7 +9,7 @@ import VideoPlayer from '../components/VideoPlayer';
 import Popup, {PopupContentType} from '../components/Popup';
 import About from '../components/About';
 import Statement from '../components/Statement';
-import Loader from '../components/Loader';
+import Loader from '../components/Archive/Loader';
 
 export const siteTitle = 'Amay Kataria 3.0';
 

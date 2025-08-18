@@ -73,7 +73,7 @@ export default function ContactForm() {
 
   return (
     <div ref={formRef} className="max-w-sm md:max-w-xl lg:max-w-2xl max-mx-auto px-4 sm:px-8 w-full">
-      <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl mb-8 sm:mb-12 text-center font-inter font-black tracking-wide min-h-[60px] sm:min-h-[80px] md:min-h-[120px] lg:min-h-[144px] flex items-center justify-center">
+      <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl mb-4 sm:mb-12 text-center font-inter font-black tracking-wide min-h-[60px] sm:min-h-[50px] md:min-h-[80px] flex items-center justify-center">
         <Typewriter 
           text="How Can I Help?"
           speed={200}

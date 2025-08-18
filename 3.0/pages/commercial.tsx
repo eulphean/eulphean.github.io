@@ -74,7 +74,7 @@ export default function Commercial() {
                   />
                 </div>
             </div>
-            <h1 className="text-3xl sm:text-2xl md:text-6xl lg:text-7xl xl:text-6xl mb-3 sm:mb-6 tracking-wide font-inter font-black leading-tight min-h-[180px] sm:min-h-[200px] md:min-h-[320px] lg:min-h-[400px] xl:min-h-[320px] flex items-center justify-center">
+            <h1 className="text-3xl sm:text-2xl md:text-6xl lg:text-7xl xl:text-6xl mb-1 sm:mb-6 tracking-wide font-inter font-black leading-tight min-h-[180px] sm:min-h-[200px] md:min-h-[320px] lg:min-h-[200px] flex items-center justify-center">
               <span className="text-center">
                 <Typewriter 
                   text="Custom Interactive Experiences for Corporate and Cultural Spaces"
