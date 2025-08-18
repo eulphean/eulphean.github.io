@@ -61,7 +61,7 @@ export default function Commercial() {
       
       <CommercialNavbar />
       
-      <main className='w-[100dvw] overflow-x-hidden select-none overscroll-none bg-black'>
+      <main className='w-[100dvw] h-[100dvh] overflow-x-hidden overflow-y-scroll select-none overscroll-none bg-black'>
         {/* Section 1 */}
         <section ref={section1Ref} className="h-screen flex items-center justify-center border-b border-gray-800 relative overflow-hidden">
           <div className="text-center max-w-screen-lg lg:max-w-screen-lg px-4 sm:px-8 relative z-10 w-full">
@@ -105,15 +105,15 @@ export default function Commercial() {
           />
         </section>
         {/* Section 3 */}
-        <section className="min-h-screen flex items-center justify-center py-8 sm:py-16 px-4 bg-black">
+        <section id="how-can-i-help" className="min-h-screen flex items-center justify-center py-8 sm:py-16 px-4 bg-black">
           <ContactForm />
         </section>
+        
+        {/* Section 4 - Footer */}
+        <section className="flex text-center items-center justify-center py-4 px-4 bg-black border-t border-gray-800">
+          <Footer />
+        </section>
       </main>
-      
-      {/* Footer */}
-      <div className="w-full bg-black py-4 px-4 text-center">
-        <Footer />
-      </div>
     </div>
   );
 }
