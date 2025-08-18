@@ -13,7 +13,7 @@ import Statement from '../components/Statement';
 export const siteTitle = 'Amay Kataria 3.0';
 
 export default function Home() {
-  const [showRoom, setShowRoom] = useState(false);
+  // const [showRoom, setShowRoom] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [popupContentType, setPopupContentType] = useState<PopupContentType>(PopupContentType.About);
 
@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
       <main className='h-[100dvh] w-[100dvw]overflow-hidden fixed inset-0 touch-none select-none overscroll-none'>
-        <Intro onEnter={() => setShowRoom(true)} />
+        {/* <Intro onEnter={() => setShowRoom(true)} /> */}
         <VideoPlayer 
           src='/videos/teaser.mp4' 
           style="fixed inset-0 w-[100dvw] h-[100dvh] object-cover -z-10"
