@@ -65,7 +65,7 @@ import Threedtwo from '../portfolios/Threedtwo.js'
 const styles = {
   container: {
     // background: color.deepBlue,
-    paddingTop: padding.big,
+    // paddingTop: padding.big,
     paddingBottom: padding.big,
     paddingLeft: percent.two,
     paddingRight: percent.two,

@@ -15,11 +15,11 @@ const styles={
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'center',
-      fontSize: fontSize.verySmall,
+      fontSize: "10px",
       fontFamily: fontFamily.din,
       letterSpacing: '1.0px',
       padding: padding.extraSmall,
-      color: color.deepBlue,
+      color: "white",
 
       '@media (min-width: 450px)': {  
         // No change. 
@@ -64,7 +64,7 @@ class Footer extends React.Component {
     return (
         <div style={styles.container}>
             <div style={styles.content}>
-             © 2024 AMAY KATARIA, ALL RIGHTS RESERVED
+             © 2025 AMAY KATARIA, ALL RIGHTS RESERVED
             </div>
          </div>
     );

@@ -9,50 +9,7 @@ const styles={
     container: {
         display: 'flex',
         position: 'relative',
-        // marginBottom: padding.extraSmall,
-        // marginLeft: padding.extraSmall,
-        // marginRight: padding.extraSmall,
-        // borderStyle: 'solid',
-        // borderWidth: '0.1px',
-        // borderColor: color.lightGrey,
-        // boxShadow: boxShadow.alphaDeepBlueSoft,
-        margin: padding.extraSmall,
-        height: '100%',
-
-        // To have space between images.
-         // 3% is to accomodate the margins.
-         width: 'calc(100%/2 - 2.3%)',
-
-         '@media (min-width: 450px)': {
-             width: 'calc(100%/3 - 1.9%)'
-         },
-
-         '@media (min-width: 600px)': {
-             width: 'calc(100%/3 - 1.4%)'
-         },
-
-         '@media (min-width: 750px)': {
-             width: 'calc(100%/3 - 1.22%)'
-         },
-
-         '@media (min-width: 900px)': {
-             // No changes
-             width: 'calc(100%/3 - 1.1%)'
-         },
-
-         '@media (min-width: 1200px)': {
-             // No changes
-             width: 'calc(100%/3 - 0.92%)'
-         },
-
-         '@media (min-width: 1400px)': {
-             // No changes
-             width: 'calc(100%/3 - 0.94%)'
-         },
-         '@media (min-width: 1700px)': {
-             // No changes
-             width: 'calc(100%/4 - 0.98%)'
-         }
+        height: '100%'
     },
 
     link: {

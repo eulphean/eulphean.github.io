@@ -70,12 +70,18 @@ const styles = {
     },
 
     tileContainer: {
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'flex-start',
-        marginTop: '-' + padding.tinySmall
-        // backgroundColor: 'black'
+        display: 'grid',
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gap: padding.extraSmall,
+        marginTop: padding.littleSmall,
+        
+        '@media (min-width: 750px)': {
+            gridTemplateColumns: 'repeat(3, 1fr)'
+        },
+        
+        '@media (min-width: 1200px)': {
+            gridTemplateColumns: 'repeat(4, 1fr)'
+        }
     }
 }; 
 

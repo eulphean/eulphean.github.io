@@ -12,14 +12,40 @@ const RadiumLink = Radium(Link);
 
 const styles={
     container: {
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingLeft: padding.medium,
-        paddingRight: padding.medium,
         paddingTop: padding.small,
-        paddingBottom: padding.small
+        paddingBottom: padding.small,
+        // paddingLeft: '2%',
+        // paddingRight: '2%',
+
+        // '@media (min-width: 750px)': {
+        //     paddingLeft: '6%',
+        //     paddingRight: '6%'
+        // },
+
+        // '@media (min-width: 900px)': {
+        //     paddingLeft: '8%',
+        //     paddingRight: '8%'
+        // },
+
+        // '@media (min-width: 1200px)': {
+        //     paddingLeft: '14%',
+        //     paddingRight: '14%'
+        // },
+
+        // '@media (min-width: 1400px)': {
+        //     paddingLeft: '20%',
+        //     paddingRight: '20%'
+        // },
+
+        // '@media (min-width: 1700px)': {
+        //     paddingLeft: '25%',
+        //     paddingRight: '25%'
+        // }
     },
 
     socialContainer: {
