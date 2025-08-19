@@ -76,11 +76,13 @@ const styles = {
         marginTop: padding.littleSmall,
         
         '@media (min-width: 750px)': {
-            gridTemplateColumns: 'repeat(3, 1fr)'
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: padding.small
         },
         
         '@media (min-width: 1200px)': {
-            gridTemplateColumns: 'repeat(4, 1fr)'
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            gap: padding.small
         }
     }
 }; 
