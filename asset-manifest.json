@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4da65acf.css",
-    "main.js": "/static/js/main.2d176d70.js",
+    "main.js": "/static/js/main.d386a409.js",
     "static/media/3d-one-2023.pdf": "/static/media/3d-one-2023.82044d47c1c0c8f9fc38.pdf",
     "static/media/3d-two-2023.pdf": "/static/media/3d-two-2023.e5841a2b4d49e584f0cc.pdf",
     "static/media/ct-2023.pdf": "/static/media/ct-2023.513fed82b1f3bd8fdbff.pdf",
@@ -103,6 +103,7 @@
     "static/media/poster_1.jpg": "/static/media/poster_1.363e82c772b686818f86.jpg",
     "static/media/desiretop.jpg": "/static/media/desiretop.6f636976ba5b4ff0e2ee.jpg",
     "static/media/wittiness.jpg": "/static/media/wittiness.20972a98b35b723d1676.jpg",
+    "static/media/metagems.jpg": "/static/media/metagems.c27aa3ac667f215897f7.jpg",
     "static/media/image_7.jpg": "/static/media/image_7.437fd79f01415bb4bd09.jpg",
     "static/media/figmentsofdesire.jpg": "/static/media/figmentsofdesire.aa80a5fd8a3b79fe09bc.jpg",
     "static/media/processing.jpg": "/static/media/processing.62bc65c1a4e702a011cc.jpg",
@@ -119,7 +120,6 @@
     "static/media/temperance.jpg": "/static/media/temperance.5e5dbea5c85b3c9be1d4.jpg",
     "static/media/supersynthesis.jpg": "/static/media/supersynthesis.0caa925dba5e3b429283.jpg",
     "static/media/roughroad.jpg": "/static/media/roughroad.d10d2fa68a937465d681.jpg",
-    "static/media/metagems.jpg": "/static/media/metagems.432421a0594a35ba927e.jpg",
     "static/media/shiva.jpg": "/static/media/shiva.0cde5caa0d78a640365c.jpg",
     "static/media/Flow.jpg": "/static/media/Flow.6fe97902f210816e1f5b.jpg",
     "static/media/tendtowardsB.jpg": "/static/media/tendtowardsB.cb934406773754dc2c11.jpg",
@@ -207,10 +207,10 @@
     "static/media/back.svg": "/static/media/back.fa8a25870788fde9a972906ec69e526d.svg",
     "index.html": "/index.html",
     "main.4da65acf.css.map": "/static/css/main.4da65acf.css.map",
-    "main.2d176d70.js.map": "/static/js/main.2d176d70.js.map"
+    "main.d386a409.js.map": "/static/js/main.d386a409.js.map"
   },
   "entrypoints": [
     "static/css/main.4da65acf.css",
-    "static/js/main.2d176d70.js"
+    "static/js/main.d386a409.js"
   ]
 }
