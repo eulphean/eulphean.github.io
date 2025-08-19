@@ -10,6 +10,8 @@ import HighlightableText from '../components/HighlightableText';
 import Headshot from '../components/Headshot';
 import CommercialNavbar from '../components/CommercialNavbar';
 import Footer from '../components/Footer';
+import GoogleAnalytics from '../components/GoogleAnalytics';
+import { GA_TRACKING_ID, trackCommercialPageView } from '../utils/gtag';
 
 export default function Commercial() {
   const section1Ref = useRef<HTMLElement>(null);
@@ -48,6 +50,11 @@ export default function Commercial() {
     return () => observer.disconnect();
   }, []);
 
+  // Track commercial page visit
+  useEffect(() => {
+    trackCommercialPageView();
+  }, []);
+
   return (
     <div className="overflow-x-hidden">
       <Head>
@@ -58,6 +65,8 @@ export default function Commercial() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
+      
+      <GoogleAnalytics ga_id={GA_TRACKING_ID} />
       
       <CommercialNavbar />
       

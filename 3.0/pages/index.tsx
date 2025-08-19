@@ -10,6 +10,8 @@ import Popup, {PopupContentType} from '../components/Popup';
 import About from '../components/About';
 import Statement from '../components/Statement';
 import Loader from '../components/Archive/Loader';
+import GoogleAnalytics from '../components/GoogleAnalytics';
+import { GA_TRACKING_ID } from '../utils/gtag';
 
 export const siteTitle = 'Amay Kataria 3.0';
 
@@ -39,6 +41,8 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
+      
+      <GoogleAnalytics ga_id={GA_TRACKING_ID} />
       <main className='h-[100dvh] w-[100dvw]overflow-hidden fixed inset-0 touch-none select-none overscroll-none'>
         {/* {!videoLoaded && <Loader customStyles="absolute w-[100dvw] top-0 left-0 bottom-0 right-0 z-50" />} */}
         {/* <Intro onEnter={() => setShowRoom(true)} /> */}

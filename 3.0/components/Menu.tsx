@@ -6,6 +6,7 @@ import ig from '../public/svg/ig.svg'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import Typewriter from './Typewriter'
+import { trackMenuClick } from '../utils/gtag'
 
 type MenuProps = {
     onAboutClick: () => void;
@@ -86,6 +87,7 @@ export default function Menu(props: MenuProps) {
                 onMouseLeave={contextSafe(() => t1.current[0]?.reverse())}
                 onClick={() => {
                         contextSafe(() => t1.current[0]?.reverse())
+                        trackMenuClick('BIO')
                         props.onAboutClick()
                     }
                 }
@@ -104,6 +106,7 @@ export default function Menu(props: MenuProps) {
                 onMouseLeave={contextSafe(() => t1.current[1]?.reverse())}
                 onClick={() => {
                         contextSafe(() => t1.current[1]?.reverse())
+                        trackMenuClick('STATEMENT')
                         props.onStatementClick()
                     }
                 }
@@ -123,7 +126,10 @@ export default function Menu(props: MenuProps) {
                 rel="noreferer"
                 onMouseEnter={contextSafe(() => t1.current[2]?.play())}
                 onMouseLeave={contextSafe(() => t1.current[2]?.reverse())}
-                onClick={contextSafe(() => t1.current[2]?.reverse())}
+                onClick={contextSafe(() => {
+                    t1.current[2]?.reverse()
+                    trackMenuClick('WORKS')
+                })}
                 className={titleStyle}
                 
             >
@@ -139,7 +145,10 @@ export default function Menu(props: MenuProps) {
                 href="/commercial"
                 onMouseEnter={contextSafe(() => t1.current[3]?.play())}
                 onMouseLeave={contextSafe(() => t1.current[3]?.reverse())}
-                onClick={contextSafe(() => t1.current[3]?.reverse())}
+                onClick={contextSafe(() => {
+                    t1.current[3]?.reverse()
+                    trackMenuClick('COMMERCIAL')
+                })}
                 className={titleStyle}
                 
             >
@@ -157,7 +166,10 @@ export default function Menu(props: MenuProps) {
                 rel="noreferer"
                 onMouseEnter={contextSafe(() => t1.current[4]?.play())}
                 onMouseLeave={contextSafe(() => t1.current[4]?.reverse())}
-                onClick={contextSafe(() => t1.current[4]?.reverse())}
+                onClick={contextSafe(() => {
+                    t1.current[4]?.reverse()
+                    trackMenuClick('CV')
+                })}
                 className={titleStyle}
             >
                 <Typewriter 
