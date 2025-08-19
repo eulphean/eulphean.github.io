@@ -4,11 +4,13 @@ import { fontSize, padding, color, fontFamily } from './CommonStyles.js'
 
 const styles={
     container: {
-        position: 'absolute',
-        bottom: 5,
-        left: 0,
-        right: 0,
+        // position: 'absolute',
+        // bottom: 5,
+        // left: 0,
+        // right: 0,
         //backgroundColor: color.deepBlue,
+        marginTop: padding.veryBig,
+        padding: padding.small
     },
 
     content: {

@@ -65,8 +65,12 @@ import Threedtwo from '../portfolios/Threedtwo.js'
 const styles = {
   container: {
     // background: color.deepBlue,
+    maxHeight: '100vh',
+    display: 'flex',
+    flex: 1,
+    flexDirection: 'column',
     // paddingTop: padding.big,
-    paddingBottom: padding.big,
+    // paddingBottom: padding.big,
     paddingLeft: percent.two,
     paddingRight: percent.two,
     // padding: padding.small,
@@ -109,7 +113,7 @@ const styles = {
 
   empty: {
     height: padding.small
-  }
+  },
 };
 
 // Save the history on the website. 
@@ -132,63 +136,63 @@ function App() {
         <Router basename={process.env.PUBLIC_URL}> 
           <ScrollToTop /> 
           <Switch>
-            <Route path="/Works"><Title /><Grid gridType={Grid_Type.WORKS} /></Route>
-            <Route path="/Bio"><Title /><Bio /></Route>
-            <Route path="/Commissions"><Title /><Grid gridType={Grid_Type.COMMISSIONS} /></Route>
-            <Route path="/Archive"><Title /><Grid gridType={Grid_Type.ARCHIVE} /></Route>
-            <Route path="/About"><Title /><About /></Route>
-            <Route path="/metapets"><Metapets /></Route>
-            <Route path="/areshadowbodieselectric"><AreShadowBodiesElectric /></Route>
-            <Route path="/timegrapher"><Timegrapher /></Route>
-            <Route path="/shadowsoftime"><ShadowsOfTime /></Route>
-            <Route path="/tug"><Tug /></Route>
-            <Route path="/metagems"><Metagems /></Route>
-            <Route path="/whalewatcher"><WhaleWatcher /></Route>
-            <Route path="/blob"><BlobMaker /></Route>
-            <Route path="/supersynthesis2"><Supersynthesis2 /></Route>
-            <Route path="/andthehungrywerefed"><AndTheHungryWereFed /></Route>
-            <Route path="/worldthatawaits"><WorldThatAwaits /></Route>
-            <Route path="/supersynthesis"><Supersynthesis /></Route>
-            <Route path="/momentofenigma"><MomentofEnigma /></Route>
-            <Route path="/liarbirds"><Liarbirds /></Route>
-            <Route path="/lostpassage"><LostPassage /></Route>
-            <Route path="/touch"><EmbroidererdTouch /></Route>
-            <Route path="/fourthdimension"><FourthDimension /></Route>
-            <Route path="/kidgames"><KidGames /></Route>
-            <Route path="/biography"><BiographyofaPortrait /></Route>
-            <Route path="/timekeepers"><Timekeepers /></Route>
-            <Route path="/centerofvaryinggravity"><CenterofVaryingGravity /></Route>
-            <Route path="/Janus"><JanusStudy /></Route>
-            <Route path="/momimsafe"><Momimsafe /></Route>
-            <Route path="/Holon"><Holon /></Route>
-            <Route path="/Babble"><Babble /></Route>
-            <Route path="/BombayBeach"><BombayBeach /></Route>
-            <Route path="/ThreeEcologies"><ThreeEcologies /></Route>
-            <Route path="/BendTheRules"><BendTheRules /></Route>
-            <Route path="/EthereumFarm"><EthereumFarm /></Route>
-            <Route path="/Nest"><Nest /></Route>
-            <Route path="/FigmentsOfDesire"><FigmentsOfDesire /></Route>
-            <Route path="/FigmentsOfAttention"><FigmentsOfAttention /></Route>
-            <Route path="/GrooveBody"><GrooveBody /></Route>
-            <Route path="/PostCryptocollectible"><OntologyOfCryptocollectibles /></Route>
-            <Route path="/BreathFoliage"><BreathFoliage /></Route>
-            <Route path="/GenerativeDecay"><GenerativeDecay /></Route>
-            <Route path="/ParabolicSound"><ParabolicSound /></Route>
-            <Route path="/TreeOfLife"><TreeOfLife /></Route>
-            <Route path="/SonicNegotiations"><SonicNegotiation /></Route>
-            <Route path="/Virtues"><Virtues /></Route>
-            <Route path="/EarthLens"><Earthlens /></Route>
-            <Route path="/MagicMic"><MagicMic /></Route>
-            <Route path="/Skype"><Skype /></Route>
-            <Route path="/creativetechnologist"><CreativeTechnologist /></Route>
-            <Route path="/portfolio"><Portfolio /></Route>
-            <Route path="/threedone"><Threedone /></Route>
-            <Route path="/threedtwo"><Threedtwo /></Route>
-            <Route path="/"><Title /><Grid /></Route>
+          <Route path="/Works"><Title /><Grid gridType={Grid_Type.WORKS} /></Route>
+          <Route path="/Bio"><Title /><Bio /></Route>
+          <Route path="/Commissions"><Title /><Grid gridType={Grid_Type.COMMISSIONS} /></Route>
+          <Route path="/Archive"><Title /><Grid gridType={Grid_Type.ARCHIVE} /></Route>
+          <Route path="/About"><Title /><About /></Route>
+          <Route path="/metapets"><Metapets /></Route>
+          <Route path="/areshadowbodieselectric"><AreShadowBodiesElectric /></Route>
+          <Route path="/timegrapher"><Timegrapher /></Route>
+          <Route path="/shadowsoftime"><ShadowsOfTime /></Route>
+          <Route path="/tug"><Tug /></Route>
+          <Route path="/metagems"><Metagems /></Route>
+          <Route path="/whalewatcher"><WhaleWatcher /></Route>
+          <Route path="/blob"><BlobMaker /></Route>
+          <Route path="/supersynthesis2"><Supersynthesis2 /></Route>
+          <Route path="/andthehungrywerefed"><AndTheHungryWereFed /></Route>
+          <Route path="/worldthatawaits"><WorldThatAwaits /></Route>
+          <Route path="/supersynthesis"><Supersynthesis /></Route>
+          <Route path="/momentofenigma"><MomentofEnigma /></Route>
+          <Route path="/liarbirds"><Liarbirds /></Route>
+          <Route path="/lostpassage"><LostPassage /></Route>
+          <Route path="/touch"><EmbroidererdTouch /></Route>
+          <Route path="/fourthdimension"><FourthDimension /></Route>
+          <Route path="/kidgames"><KidGames /></Route>
+          <Route path="/biography"><BiographyofaPortrait /></Route>
+          <Route path="/timekeepers"><Timekeepers /></Route>
+          <Route path="/centerofvaryinggravity"><CenterofVaryingGravity /></Route>
+          <Route path="/Janus"><JanusStudy /></Route>
+          <Route path="/momimsafe"><Momimsafe /></Route>
+          <Route path="/Holon"><Holon /></Route>
+          <Route path="/Babble"><Babble /></Route>
+          <Route path="/BombayBeach"><BombayBeach /></Route>
+          <Route path="/ThreeEcologies"><ThreeEcologies /></Route>
+          <Route path="/BendTheRules"><BendTheRules /></Route>
+          <Route path="/EthereumFarm"><EthereumFarm /></Route>
+          <Route path="/Nest"><Nest /></Route>
+          <Route path="/FigmentsOfDesire"><FigmentsOfDesire /></Route>
+          <Route path="/FigmentsOfAttention"><FigmentsOfAttention /></Route>
+          <Route path="/GrooveBody"><GrooveBody /></Route>
+          <Route path="/PostCryptocollectible"><OntologyOfCryptocollectibles /></Route>
+          <Route path="/BreathFoliage"><BreathFoliage /></Route>
+          <Route path="/GenerativeDecay"><GenerativeDecay /></Route>
+          <Route path="/ParabolicSound"><ParabolicSound /></Route>
+          <Route path="/TreeOfLife"><TreeOfLife /></Route>
+          <Route path="/SonicNegotiations"><SonicNegotiation /></Route>
+          <Route path="/Virtues"><Virtues /></Route>
+          <Route path="/EarthLens"><Earthlens /></Route>
+          <Route path="/MagicMic"><MagicMic /></Route>
+          <Route path="/Skype"><Skype /></Route>
+          <Route path="/creativetechnologist"><CreativeTechnologist /></Route>
+          <Route path="/portfolio"><Portfolio /></Route>
+          <Route path="/threedone"><Threedone /></Route>
+          <Route path="/threedtwo"><Threedtwo /></Route>
+          <Route path="/"><Title /><Grid /></Route>
           </Switch>
         </Router>
-        <div style={styles.empty}>
-        </div>
+        {/* <div style={styles.empty}>
+        </div> */}
         <Footer />
       </div>
     );

@@ -80,7 +80,7 @@ const styles = {
             gap: padding.small
         },
         
-        '@media (min-width: 1200px)': {
+        '@media (min-width: 1800px)': {
             gridTemplateColumns: 'repeat(4, 1fr)',
             gap: padding.small
         }

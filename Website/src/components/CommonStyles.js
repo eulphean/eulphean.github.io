@@ -13,6 +13,7 @@ const color = {
 const fontSize = {
     extraSmall: '8px',
     verySmall: '12px',
+    littleSmall: '14px',
     small: '16px',
     big: '20px',
     veryBig: '24px',
