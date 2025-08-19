@@ -4,17 +4,45 @@ import { Link, useLocation } from 'react-router-dom'
 import CustomButton from './CustomButton.js'
 import { color, fontSize, fontFamily, padding, commonWorkStyles } from './CommonStyles.js'
 import CustomLink from './CustomLink.js'
+import { ReactComponent as LinkedIn } from '../icons/linkedin.svg'
+import { ReactComponent as Github } from '../icons/github.svg'
+import { ReactComponent as Instagram } from '../icons/instagram.svg'
 const RadiumLink = Radium(Link); 
 
 
 const styles={
     container: {
-        // backgroundColor: 'black',
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'flex-start',
-        marginLeft: padding.extraSmall,
-        marginBottom: padding.extraSmall
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingLeft: padding.medium,
+        paddingRight: padding.medium,
+        paddingTop: padding.small,
+        paddingBottom: padding.small
+    },
+
+    socialContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: padding.small
+    },
+
+    iconWrapper: {
+        cursor: 'pointer',
+        transition: 'all 0.3s ease',
+        fill: 'white',
+        
+        ':hover': {
+            transform: 'rotate(-5deg) scale(1.5)',
+            backgroundColor: 'red'
+        }
+    },
+    
+    icon: {
+        height: '20px',
+        width: '20px'
     },
 
     button: {
@@ -62,6 +90,20 @@ const styles={
 
     title: {
         letterSpacing: '1.5px'
+    },
+
+    homeLink: {
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: fontSize.small,
+        
+        '@media (min-width: 640px)': {
+            fontSize: fontSize.verySmall
+        },
+        
+        '@media (min-width: 900px)': {
+            fontSize: fontSize.small
+        }
     }
 };
 
@@ -75,37 +117,22 @@ function Title() {
 
     return (
         <div style={styles.container}>
-            {/* <CustomButton 
-                buttonStyle={styles.button} 
-                isActive={workState}
-            >
-                <RadiumLink to="https://amaykataria.com">AMAY KATARIA</RadiumLink>
-            </CustomButton> */}
-            <CustomLink inline={true} to='https://amaykataria.com/'>HOME</CustomLink>
-            {/* <CustomButton 
-                buttonStyle={styles.button} 
-                isActive={commissionState}
-            >
-                <RadiumLink to="/Commissions">COMMISSIONS</RadiumLink>
-            </CustomButton>
-            <CustomButton 
-                buttonStyle={styles.button} 
-                isActive={archiveState}
-            >
-                <RadiumLink to="/Archive">ARCHIVE</RadiumLink>
-            </CustomButton> */}
-            {/* <CustomButton 
-                buttonStyle={styles.button} 
-                isActive={cvState}
-            >
-                <RadiumLink to="/Bio">CV</RadiumLink>
-            </CustomButton>
-            <CustomButton 
-                buttonStyle={[styles.button, styles.title]}
-                isActive={aboutState} 
-            >
-                <RadiumLink to="/About">ABOUT</RadiumLink>
-            </CustomButton>*/}
+            <div style={styles.socialContainer}>
+                <CustomLink inline={true} to='https://amaykataria.com/' customStyle={styles.homeLink}>HOME</CustomLink>
+                <CustomLink inline={true} to='https://amaykataria.com/commercial' customStyle={styles.homeLink}>COMMERCIAL</CustomLink>
+            </div>
+            
+            <div style={styles.socialContainer}>
+                <CustomLink customStyle={styles.iconWrapper} to='https://linkedin.com/in/amaykataria'>
+                    <LinkedIn style={styles.icon} />
+                </CustomLink>
+                <CustomLink customStyle={styles.iconWrapper} to='https://instagram.com/amay.kataria'>
+                    <Instagram style={styles.icon} />
+                </CustomLink>
+                <CustomLink customStyle={styles.iconWrapper} to='https://github.com/eulphean'>
+                    <Github style={styles.icon} />
+                </CustomLink>
+            </div>
         </div>
     );
 }
