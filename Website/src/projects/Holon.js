@@ -72,7 +72,7 @@ class Holon extends React.Component {
                   {bodyB}
               </div>
               <div style={commonWorkStyles.imgContainer}>
-                <iframe title={'Holarchy'} style={commonWorkStyles.webFrame} src={'https://amaykataria.com/EvolutionaryHolarchy/'}></iframe>
+                <iframe title={'Holarchy'} style={commonWorkStyles.webFrame} src={'https://works.amaykataria.com/EvolutionaryHolarchy/'}></iframe>
               </div>
             </div>
         </div>
