@@ -161,7 +161,7 @@ export default function Menu(props: MenuProps) {
             </a>
             <a 
                 ref={cv} 
-                href="Amay_Kataria_CV_December_2024.pdf"
+                href="Amay_Kataria_CV_August_19_2025.pdf"
                 target="_blank"
                 rel="noreferer"
                 onMouseEnter={contextSafe(() => t1.current[4]?.play())}
