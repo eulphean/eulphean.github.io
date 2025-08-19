@@ -280,12 +280,12 @@ class Grid extends React.Component {
                 'keywords': ['2022', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
                 'link': 'supersynthesis'
             },
-            {
-                'img': blob,
-                'title': 'Blob Maker',
-                'keywords': ['2022', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
-                'link': 'blob'
-            },
+            // {
+            //     'img': blob,
+            //     'title': 'Blob Maker',
+            //     'keywords': ['2022', 'Interactive', 'Net Art', 'Sound', 'Exhibitions'],
+            //     'link': 'blob'
+            // },
             {
                 'img': momentofenigma,
                 'title': 'Moment of Enigma',
@@ -298,12 +298,12 @@ class Grid extends React.Component {
                 'keywords': ['2021', 'Interactive', 'Net Art', 'Sound', 'Extended Reality', 'Artificial Life'],
                 'link': 'lostpassage'
             },
-            {
-                'img': kids,
-                'title': 'Kid Games',
-                'keywords': ['2021', 'Interactive', 'Extended Reality'],
-                'link': 'kidgames'
-            },
+            // {
+            //     'img': kids,
+            //     'title': 'Kid Games',
+            //     'keywords': ['2021', 'Interactive', 'Extended Reality'],
+            //     'link': 'kidgames'
+            // },
             {
                 'img': liarbirds,
                 'title': 'Liarbirds',
@@ -352,12 +352,12 @@ class Grid extends React.Component {
                 'title': 'Figments of Desire',
                 'keywords': ['2019', 'Artificial Life', 'Sound']
             }, 
-            {
-                'img': babble,
-                'link': 'Babble',
-                'title': 'Babble',
-                'keywords': ['2019', 'Artificial Life', 'Interactive', 'Sound', 'Net Art'],
-            }, 
+            // {
+            //     'img': babble,
+            //     'link': 'Babble',
+            //     'title': 'Babble',
+            //     'keywords': ['2019', 'Artificial Life', 'Interactive', 'Sound', 'Net Art'],
+            // }, 
             {
                 'img': figmentsofattention,
                 'title': 'Figments of Attention',
@@ -367,15 +367,15 @@ class Grid extends React.Component {
             {
                 'img': groove,
                 'link': 'GrooveBody',
-                'title': 'Groove Body',
+                'title': 'Groove',
                 'keywords': ['2018', 'Blockchain']
             }, 
-            {
-                'img': cryptokitty,
-                'title': 'Post-Crptocollectible',
-                'link': 'PostCryptocollectible',
-                'keywords': ['2018', 'Blockchain']
-            }, 
+            // {
+            //     'img': cryptokitty,
+            //     'title': 'Post-Crptocollectible',
+            //     'link': 'PostCryptocollectible',
+            //     'keywords': ['2018', 'Blockchain']
+            // }, 
             {
                 'img': generativedecay,
                 'link': 'GenerativeDecay',
