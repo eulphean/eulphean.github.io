@@ -2,7 +2,7 @@ const color = {
     slateGrey: '#939DAE',
     darkGrey: '#6C7687',
     bloodRed: '#01A2FF',
-    deepBlue: '#292b2c',
+    deepBlue: 'white',
     lightGrey: '#bbbbbb',
     alphaDeepBlue: 'rgb(69, 83, 106, 60)',
     featherWhite: 'rgb(255, 255, 255)',

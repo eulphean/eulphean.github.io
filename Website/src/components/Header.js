@@ -84,7 +84,7 @@ const styles={
       iconContainer: {
         width: fontSize.veryBig,
         height: fontSize.veryBig,
-        fill: color.darkGrey,
+        fill: color.deepBlue,
 
         '@media (min-width: 450px)': {  
           // no change. 
