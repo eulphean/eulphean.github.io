@@ -105,7 +105,9 @@ class Samsara extends React.Component {
 
     const squareVideo = (videoID, style) => {
       const videoSrc =
-        "https://player.vimeo.com/video/" + videoID + "?background=false";
+        "https://player.vimeo.com/video/" +
+        videoID +
+        "?background=true&autopause=0";
       return (
         <iframe
           title="video"
