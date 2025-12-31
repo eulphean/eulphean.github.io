@@ -1,416 +1,423 @@
 const color = {
-    slateGrey: '#939DAE',
-    darkGrey: '#6C7687',
-    bloodRed: '#01A2FF',
-    deepBlue: 'white',
-    lightGrey: '#bbbbbb',
-    alphaDeepBlue: 'rgb(69, 83, 106, 60)',
-    featherWhite: 'rgb(255, 255, 255)',
-    hoverRed: '#01A2FF',
-    specialRed: '#FF0000'
+  slateGrey: "#939DAE",
+  darkGrey: "#6C7687",
+  bloodRed: "#01A2FF",
+  deepBlue: "white",
+  lightGrey: "#bbbbbb",
+  alphaDeepBlue: "rgb(69, 83, 106, 60)",
+  featherWhite: "rgb(255, 255, 255)",
+  hoverRed: "#01A2FF",
+  specialRed: "#FF0000",
 };
 
 const fontSize = {
-    extraSmall: '8px',
-    verySmall: '12px',
-    littleSmall: '14px',
-    small: '16px',
-    big: '20px',
-    veryBig: '24px',
-    extraBig: '28px',
-    huge: '32px',
-    veryHuge: '36px',
-    extraHuge: '40px',
-    massive: '44px',
-    veryMassive: '48px',
-    extraMassive: '52px',
-    enormous: '56px',
-    veryEnormous: '60px',
-    extraEnormous: '64px'
+  extraSmall: "8px",
+  verySmall: "12px",
+  littleSmall: "14px",
+  small: "16px",
+  big: "20px",
+  veryBig: "24px",
+  extraBig: "28px",
+  huge: "32px",
+  veryHuge: "36px",
+  extraHuge: "40px",
+  massive: "44px",
+  veryMassive: "48px",
+  extraMassive: "52px",
+  enormous: "56px",
+  veryEnormous: "60px",
+  extraEnormous: "64px",
 };
 
 const padding = {
-    // Increments of 4
-    tinySmall: '2px',
-    extraSmall: '4px',
-    verySmall: '8px',
-    littleSmall: '8px',
-    small: '12px',
-    // Incremenets of 8
-    big : '20px',
-    veryBig : '28px',
-    extraBig : '36px',
-    // Increments of 12
-    huge: '52px',
-    veryHuge: '64px',
-    extraHuge: '76px',
-    // Incremenets of 16
-    massive: '92px',
-    veryMassive: '108px',
-    extraMassive: '124px',
-    // Increment of 20
-    enourmous: '100px',
-    veryEnormous: '120px',
-    extraEnormous: '140px',
-    // Increment of 40
-    insane: '160px',
-    veryInsane: '200px',
-    extraInsane: '240px'
+  // Increments of 4
+  tinySmall: "2px",
+  extraSmall: "4px",
+  verySmall: "8px",
+  littleSmall: "8px",
+  small: "12px",
+  // Incremenets of 8
+  big: "20px",
+  veryBig: "28px",
+  extraBig: "36px",
+  // Increments of 12
+  huge: "52px",
+  veryHuge: "64px",
+  extraHuge: "76px",
+  // Incremenets of 16
+  massive: "92px",
+  veryMassive: "108px",
+  extraMassive: "124px",
+  // Increment of 20
+  enourmous: "100px",
+  veryEnormous: "120px",
+  extraEnormous: "140px",
+  // Increment of 40
+  insane: "160px",
+  veryInsane: "200px",
+  extraInsane: "240px",
 };
 
 const percent = {
-    two : '2%',
-    three: '3%',
-    four: '4%',
-    six: '6%',
-    eight: '8%',
-    ten: '10%',
-    twelve: '12%',
-    fourteen: '14%',
-    sixteen: '16%'
-}
+  two: "2%",
+  three: "3%",
+  four: "4%",
+  six: "6%",
+  eight: "8%",
+  ten: "10%",
+  twelve: "12%",
+  fourteen: "14%",
+  sixteen: "16%",
+};
 
 const textInputWidth = {
-    small: '275px',
-    medium: '300px',
-    large: '375px'
+  small: "275px",
+  medium: "300px",
+  large: "375px",
 };
 
 const textInputHeight = {
-    small: '38px',
-    medium: '42px',
-    large: '375px'
+  small: "38px",
+  medium: "42px",
+  large: "375px",
 };
 
 const fontFamily = {
-    baskerville: 'Baskerville',
-    bebas: 'bebas_neueregular',
-    din: 'd-dinregular'
+  baskerville: "Baskerville",
+  bebas: "bebas_neueregular",
+  din: "d-dinregular",
 };
 
 const textShadow = {
-    slateGrey: '1px 1px 2px ' + color.slateGrey,
-    slateLight: '1px 1px 1px ' + color.slateGrey
+  slateGrey: "1px 1px 2px " + color.slateGrey,
+  slateLight: "1px 1px 1px " + color.slateGrey,
 };
 
 const boxShadow = {
-    alphaDeepBlue: '1px 2px 4px ' + color.alphaDeepBlue,
-    deepBlue: '1px 1px 2px ' + color.deepBlue,
-    alphaDeepBlueSoft: '2px 2px 5px ' + color.alphaDeepBlue 
+  alphaDeepBlue: "1px 2px 4px " + color.alphaDeepBlue,
+  deepBlue: "1px 1px 2px " + color.deepBlue,
+  alphaDeepBlueSoft: "2px 2px 5px " + color.alphaDeepBlue,
 };
 
 // These are styles that are common across all the description
-// of the works. 
+// of the works.
 const commonWorkStyles = {
-    body: {
-        fontFamily: fontFamily.din,
-        paddingLeft: padding.extraSmall,
-        fontSize: fontSize.small,
-        color: color.deepBlue,
-        border: 'inherit',
-        letterSpacing: '1px',
-        lineHeight: '1.6',
+  body: {
+    fontFamily: fontFamily.din,
+    paddingLeft: padding.extraSmall,
+    fontSize: fontSize.small,
+    color: color.deepBlue,
+    border: "inherit",
+    letterSpacing: "1px",
+    lineHeight: "1.6",
 
-        '@media (min-width: 450px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 600px)': {  
-            // no change
-        },
-
-        '@media (min-width: 750px)': {  
-            fontSize: fontSize.big
-        },
-
-        '@media (min-width: 900px)': {  
-            // no change.
-            // fontSize: fontSize.veryBig,
-        },
-
-        '@media (min-width: 1200px)' : {
-            
-        },
-
-        '@media (min-width: 1400px)' : {
-            // fontSize: fontSize.extraBig,
-        },
-
-        '@media (min-width: 1700px)' : {
-            // no change.
-        }
+    "@media (min-width: 450px)": {
+      // no change.
     },
 
-    imgContainer: {
-        display: 'flex',
-        flexDirection: 'column',
-        marginTop: padding.small, 
-        width: '100%',
-        height: '100%',
-
-        '@media (min-width: 450px)': {  
-            // no change.
-        },
-        '@media (min-width: 600px)': {      
-            // no change.
-        },
-        '@media (min-width: 750px)': {  
-            marginTop: padding.big
-        },
-        '@media (min-width: 900px)': {  
-            // no change.
-        },
-        '@media (min-width: 1200px)' : {
-            // marginTop: padding.veryBig,
-        },
-        '@media (min-width: 1400px)' : {
-            // marginTop: padding.extraBig
-        },
-        '@media (min-width: 1700px)' : {
-        }
+    "@media (min-width: 600px)": {
+      // no change
     },
 
-    multiImageContainer: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        width: '100%',
-        height: '100%'
+    "@media (min-width: 750px)": {
+      fontSize: fontSize.big,
     },
 
-    // None of the images will have marginTop properties. 
-    // It will be held in individual components with media queries.
-    oneImage: {
-        width: '100%',
-        boxShadow: boxShadow.alphaDeepBlueSoft,
+    "@media (min-width: 900px)": {
+      // no change.
+      // fontSize: fontSize.veryBig,
     },
 
-    twoImages: {
-        width: 'calc(100%/2 - 1.5%)',
-        boxShadow: boxShadow.alphaDeepBlueSoft,
-        alignSelf: 'center',
-        height: '100%',
+    "@media (min-width: 1200px)": {},
 
-        '@media (min-width: 450px)': {  
-            width: 'calc(100%/2 - 1.3%)'
-        },
-        '@media (min-width: 600px)': {  
-        },
-        '@media (min-width: 750px)': {  
-            width: 'calc(100%/2 - 1.2%)',
-        },
-        '@media (min-width: 900px)': {  
-            width: 'calc(100%/2 - 1.0%)'
-        },
-        '@media (min-width: 1200px)' : {
-        },
-        '@media (min-width: 1400px)' : {
-            width: 'calc(100%/2 - 0.9%)'
-        },
-        '@media (min-width: 1700px)' : {
-        }
+    "@media (min-width: 1400px)": {
+      // fontSize: fontSize.extraBig,
     },
 
-    threeImages: {
-        display: 'flex',
-        width: '32.5%',
-        boxShadow: boxShadow.alphaDeepBlueSoft,
+    "@media (min-width: 1700px)": {
+      // no change.
+    },
+  },
+
+  imgContainer: {
+    display: "flex",
+    flexDirection: "column",
+    marginTop: padding.small,
+    width: "100%",
+    height: "100%",
+
+    "@media (min-width: 450px)": {
+      // no change.
+    },
+    "@media (min-width: 600px)": {
+      // no change.
+    },
+    "@media (min-width: 750px)": {
+      marginTop: padding.big,
+    },
+    "@media (min-width: 900px)": {
+      // no change.
+    },
+    "@media (min-width: 1200px)": {
+      // marginTop: padding.veryBig,
+    },
+    "@media (min-width: 1400px)": {
+      // marginTop: padding.extraBig
+    },
+    "@media (min-width: 1700px)": {},
+  },
+
+  multiImageContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    width: "100%",
+    height: "100%",
+  },
+
+  // None of the images will have marginTop properties.
+  // It will be held in individual components with media queries.
+  oneImage: {
+    width: "100%",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+  },
+
+  twoImages: {
+    width: "calc(100%/2 - 1.5%)",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+    alignSelf: "center",
+    height: "100%",
+
+    "@media (min-width: 450px)": {
+      width: "calc(100%/2 - 1.3%)",
+    },
+    "@media (min-width: 600px)": {},
+    "@media (min-width: 750px)": {
+      width: "calc(100%/2 - 1.2%)",
+    },
+    "@media (min-width: 900px)": {
+      width: "calc(100%/2 - 1.0%)",
+    },
+    "@media (min-width: 1200px)": {},
+    "@media (min-width: 1400px)": {
+      width: "calc(100%/2 - 0.9%)",
+    },
+    "@media (min-width: 1700px)": {},
+  },
+
+  threeImages: {
+    display: "flex",
+    width: "32.5%",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+  },
+
+  image60: {
+    width: "60%",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+  },
+
+  // Use with image60
+  image38: {
+    width: "38%",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+  },
+
+  webFrame: {
+    display: "flex",
+    width: "100%",
+    height: "500px",
+    border: "none",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+
+    "@media (min-width: 450px)": {
+      // no change.
     },
 
-    image60: {
-        width: '60%',
-        boxShadow: boxShadow.alphaDeepBlueSoft,
-    },
-  
-    // Use with image60
-    image38: {
-        width: '38%',
-        boxShadow: boxShadow.alphaDeepBlueSoft,
+    "@media (min-width: 600px)": {
+      // No change.
     },
 
-    webFrame: {
-        display: 'flex',
-        width: '100%',
-        height: '500px',
-        border: 'none',
-        boxShadow: boxShadow.alphaDeepBlueSoft,
-
-        '@media (min-width: 450px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 600px)': {      
-            // No change. 
-        },
-
-        '@media (min-width: 750px)': {  
-            height: '700px'
-        },
-
-        '@media (min-width: 900px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 1200px)' : {
-            height: '900px'
-        },
-
-        '@media (min-width: 1400px)' : {
-         
-        },
-
-        '@media (min-width: 1700px)' : {
-            // No change
-        }
+    "@media (min-width: 750px)": {
+      height: "700px",
     },
 
-    vimeoContainer: {
-        position: 'relative',
-        paddingBottom: '56.25%',
-        boxShadow: boxShadow.alphaDeepBlueSoft,
-        height: '0px',
-        overflow: 'hidden'
+    "@media (min-width: 900px)": {
+      // no change.
     },
 
-    vimeoFrame: {
-        position: 'absolute',
-        top: '0px',
-        left: '0px',
-        width: '100%',
-        height: '100%'
+    "@media (min-width: 1200px)": {
+      height: "900px",
     },
 
-    soundcloudFrame: {
-        width: '100%',
-        boxShadow: boxShadow.alphaDeepBlueSoft,
-        '@media (min-width: 750px)': {  
-            height: '100px'
-        }
+    "@media (min-width: 1400px)": {},
+
+    "@media (min-width: 1700px)": {
+      // No change
+    },
+  },
+
+  vimeoContainer: {
+    position: "relative",
+    paddingBottom: "56.25%",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+    height: "0px",
+    overflow: "hidden",
+  },
+
+  // NOTE: 32.5% bottom padding is added since this style
+  // is used with threeImages, which has a width of 32.5%
+  vimeoContainerThreeSquare: {
+    position: "relative",
+    padding: "0 0 32.5% 0",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+    overflow: "hidden",
+  },
+
+  vimeoFrame: {
+    position: "absolute",
+    top: "0px",
+    left: "0px",
+    width: "100%",
+    height: "100%",
+  },
+
+  soundcloudFrame: {
+    width: "100%",
+    boxShadow: boxShadow.alphaDeepBlueSoft,
+    "@media (min-width: 750px)": {
+      height: "100px",
+    },
+  },
+
+  // This is used on all the image assets that need margins.
+  // It is seperated out because not all image assets need this.
+  // Every component uses this as per required.
+  imgMediaQuery: {
+    marginTop: padding.verySmall,
+
+    "@media (min-width: 600px)": {
+      marginTop: padding.small,
     },
 
-    // This is used on all the image assets that need margins.
-    // It is seperated out because not all image assets need this. 
-    // Every component uses this as per required. 
-    imgMediaQuery: {
-        marginTop: padding.verySmall, 
-        
-        '@media (min-width: 600px)': {  
-            marginTop: padding.small
-        },
-    
-        '@media (min-width: 1200px)' : {
-            marginTop: padding.big
-        }
+    "@media (min-width: 1200px)": {
+      marginTop: padding.big,
     },
+  },
 
-    italics: {
-        fontStyle: 'italic'
-    },
+  italics: {
+    fontStyle: "italic",
+  },
 
-    bottomPad: {
-        marginBottom: padding.small
-    }
+  bottomPad: {
+    marginBottom: padding.small,
+  },
 };
 
-const cvStyles= {
-    container: {
-        display: 'flex',
-        marginLeft: padding.extraSmall,
-        marginTop: padding.verySmall,
-        marginBottom: padding.small,
-        flexDirection: 'column'
+const cvStyles = {
+  container: {
+    display: "flex",
+    marginLeft: padding.extraSmall,
+    marginTop: padding.verySmall,
+    marginBottom: padding.small,
+    flexDirection: "column",
+  },
+
+  heading: {
+    fontFamily: fontFamily.din,
+    fontSize: fontSize.small,
+    color: color.deepBlue,
+    letterSpacing: "1.5px",
+    fontStyle: "italic",
+
+    "@media (min-width: 450px)": {
+      // no change.
     },
 
-    heading: {
-        fontFamily: fontFamily.din,
-        fontSize: fontSize.small,
-        color: color.deepBlue,
-        letterSpacing: '1.5px',
-        fontStyle: 'italic',
-
-        '@media (min-width: 450px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 600px)': {  
-            fontSize: fontSize.big
-        },
-
-        '@media (min-width: 750px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 900px)': {  
-            // no change.
-            // fontSize: fontSize.veryBig,
-            
-        },
-
-        '@media (min-width: 1200px)' : {
-            
-        },
-
-        '@media (min-width: 1400px)' : {
-            // fontSize: fontSize.big,
-        },
-
-        '@media (min-width: 1700px)' : {
-            // no change.
-        }
+    "@media (min-width: 600px)": {
+      fontSize: fontSize.big,
     },
 
-    entry: {
-        marginTop: padding.tinySmall,
-        fontFamily: fontFamily.din,
-        fontSize: fontSize.small,
-        color: color.deepBlue,
-        letterSpacing: '1px',
-        lineHeight: '1.5',
-
-        '@media (min-width: 450px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 600px)': {  
-            fontSize: fontSize.big
-        },
-
-        '@media (min-width: 750px)': {  
-            // no change.
-        },
-
-        '@media (min-width: 900px)': {  
-            // no change.
-            fontSize: fontSize.big,
-            
-        },
-
-        '@media (min-width: 1200px)' : {
-            
-        },
-
-        '@media (min-width: 1400px)' : {
-            fontSize: fontSize.big,
-        },
-
-        '@media (min-width: 1700px)' : {
-            // no change.
-        }
+    "@media (min-width: 750px)": {
+      // no change.
     },
 
-    title: {
-        fontStyle: 'italic',
-        // textShadow: textShadow.slateGrey
-    }, 
-
-    tab: {
-        paddingLeft: padding.verySmall
+    "@media (min-width: 900px)": {
+      // no change.
+      // fontSize: fontSize.veryBig,
     },
 
-    bottomSpace: {
-        marginBottom: padding.small
-    }
+    "@media (min-width: 1200px)": {},
+
+    "@media (min-width: 1400px)": {
+      // fontSize: fontSize.big,
+    },
+
+    "@media (min-width: 1700px)": {
+      // no change.
+    },
+  },
+
+  entry: {
+    marginTop: padding.tinySmall,
+    fontFamily: fontFamily.din,
+    fontSize: fontSize.small,
+    color: color.deepBlue,
+    letterSpacing: "1px",
+    lineHeight: "1.5",
+
+    "@media (min-width: 450px)": {
+      // no change.
+    },
+
+    "@media (min-width: 600px)": {
+      fontSize: fontSize.big,
+    },
+
+    "@media (min-width: 750px)": {
+      // no change.
+    },
+
+    "@media (min-width: 900px)": {
+      // no change.
+      fontSize: fontSize.big,
+    },
+
+    "@media (min-width: 1200px)": {},
+
+    "@media (min-width: 1400px)": {
+      fontSize: fontSize.big,
+    },
+
+    "@media (min-width: 1700px)": {
+      // no change.
+    },
+  },
+
+  title: {
+    fontStyle: "italic",
+    // textShadow: textShadow.slateGrey
+  },
+
+  tab: {
+    paddingLeft: padding.verySmall,
+  },
+
+  bottomSpace: {
+    marginBottom: padding.small,
+  },
 };
 
-export {percent, color, fontSize, fontFamily, textInputWidth, textInputHeight, textShadow, boxShadow, padding, commonWorkStyles, cvStyles};
+export {
+  percent,
+  color,
+  fontSize,
+  fontFamily,
+  textInputWidth,
+  textInputHeight,
+  textShadow,
+  boxShadow,
+  padding,
+  commonWorkStyles,
+  cvStyles,
+};
