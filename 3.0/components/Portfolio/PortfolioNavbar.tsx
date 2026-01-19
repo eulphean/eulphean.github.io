@@ -16,7 +16,7 @@ export default function PortfolioNavbar({ onNavigate }: PortfolioNavbarProps) {
           {/* Left side - Name and Title */}
           <button
             onClick={() => handleClick("hero")}
-            className="text-black text-sm sm:text-base tracking-wide hover:text-gray-600 transition-colors"
+            className="text-black text-xs tracking-wide hover:text-gray-600 transition-colors"
           >
             <span className="font-normal">AMAY KATARIA</span>
             <span className="font-light text-gray-400">
@@ -29,13 +29,13 @@ export default function PortfolioNavbar({ onNavigate }: PortfolioNavbarProps) {
           <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
             <button
               onClick={() => handleClick("techstack")}
-              className="text-gray-400 text-sm hover:text-gray-600 tracking-wide transition-colors"
+              className="text-gray-400 text-xs hover:text-gray-600 tracking-wide transition-colors"
             >
               <span>02 TECH STACK</span>
             </button>
             <button
               onClick={() => handleClick("works")}
-              className="text-gray-400 text-sm hover:text-gray-600 tracking-wide transition-colors"
+              className="text-gray-400 text-xs hover:text-gray-600 tracking-wide transition-colors"
             >
               <span>03 WORKS</span>
             </button>
@@ -44,7 +44,7 @@ export default function PortfolioNavbar({ onNavigate }: PortfolioNavbarProps) {
           {/* Right side - Contact Button */}
           <button
             onClick={() => handleClick("contact")}
-            className="text-black text-sm tracking-wide px-5 py-2 border border-black rounded-full hover:bg-black hover:text-white transition-colors"
+            className="text-gray-500 text-xs tracking-wide px-6 py-1 border border-gray-400 rounded-full hover:bg-black hover:text-white transition-colors"
           >
             CONTACT
           </button>
