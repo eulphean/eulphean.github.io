@@ -50,7 +50,7 @@ export default function CreativeTech() {
       <main className="w-[100dvw] h-[100dvh] overflow-x-hidden overflow-y-scroll select-none overscroll-none bg-black">
         {/* Hero Section */}
         <div ref={heroRef}>
-          <HeroSection id="hero" />
+          <HeroSection id="hero" onNavigate={handleNavigate} />
         </div>
 
         {/* Tech Stack Section */}

@@ -4,9 +4,10 @@ import Image from "next/image";
 
 interface HeroSectionProps {
   id: string;
+  onNavigate: (sectionId: string) => void;
 }
 
-export default function HeroSection({ id }: HeroSectionProps) {
+export default function HeroSection({ id, onNavigate }: HeroSectionProps) {
   return (
     <section
       id={id}
@@ -105,8 +106,8 @@ export default function HeroSection({ id }: HeroSectionProps) {
                 />
               </svg>
             </a>
-            <a
-              href="#tech-stack"
+            <button
+              onClick={() => onNavigate("techstack")}
               className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
             >
               <span className="text-gray-600 text-xs font-medium tracking-wide">
@@ -126,9 +127,9 @@ export default function HeroSection({ id }: HeroSectionProps) {
                   d="M19 14l-7 7m0 0l-7-7m7 7V3"
                 />
               </svg>
-            </a>
-            <a
-              href="#portfolio"
+            </button>
+            <button
+              onClick={() => onNavigate("works")}
               className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
             >
               <span className="text-gray-600 text-xs font-medium tracking-wide">
@@ -148,7 +149,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
                   d="M19 14l-7 7m0 0l-7-7m7 7V3"
                 />
               </svg>
-            </a>
+            </button>
             <a
               href="https://github.com/eulphean"
               target="_blank"
