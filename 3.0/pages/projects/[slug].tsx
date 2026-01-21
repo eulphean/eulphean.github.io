@@ -1,24 +1,24 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
-import Head from 'next/head';
-import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
-import { serialize } from 'next-mdx-remote/serialize';
+import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 
 // Import custom MDX components
-import ProjectHero from '../../components/Projects/ProjectHero';
-import ProjectMeta from '../../components/Projects/ProjectMeta';
-import Challenge from '../../components/Projects/Challenge';
-import Build from '../../components/Projects/Build';
-import Result from '../../components/Projects/Result';
-import TechStack from '../../components/Projects/TechStack';
-import ImageGrid from '../../components/Projects/ImageGrid';
-import ImageCard from '../../components/Projects/ImageCard';
-import ButtonGroup from '../../components/Projects/ButtonGroup';
-import Button from '../../components/Projects/Button';
-import NextProject from '../../components/Projects/NextProject';
+import ProjectHero from "../../components/Projects/ProjectHero";
+import ProjectMeta from "../../components/Projects/ProjectMeta";
+import Challenge from "../../components/Projects/Challenge";
+import Build from "../../components/Projects/Build";
+import Result from "../../components/Projects/Result";
+import TechStack from "../../components/Projects/TechStack";
+import ImageGrid from "../../components/Projects/ImageGrid";
+import ImageCard from "../../components/Projects/ImageCard";
+import ButtonGroup from "../../components/Projects/ButtonGroup";
+import Button from "../../components/Projects/Button";
+import NextProject from "../../components/Projects/NextProject";
 
 // Map of components available in MDX
 const components = {
@@ -39,6 +39,7 @@ interface ProjectFrontmatter {
   heroImage: string;
   client: string;
   role: string;
+  location: string;
   date: string;
   duration: string;
   tags: string[];
@@ -54,7 +55,11 @@ interface ProjectPageProps {
   slug: string;
 }
 
-export default function ProjectPage({ frontmatter, mdxSource, slug }: ProjectPageProps) {
+export default function ProjectPage({
+  frontmatter,
+  mdxSource,
+  slug,
+}: ProjectPageProps) {
   return (
     <div className="min-h-screen bg-white font-space-grotesk">
       <Head>
@@ -70,7 +75,10 @@ export default function ProjectPage({ frontmatter, mdxSource, slug }: ProjectPag
             className="text-black text-xs tracking-wide hover:text-gray-600 transition-colors"
           >
             <span className="font-normal">AMAY KATARIA</span>
-            <span className="font-light text-gray-400"> / CREATIVE TECHNOLOGIST</span>
+            <span className="font-light text-gray-400">
+              {" "}
+              / CREATIVE TECHNOLOGIST
+            </span>
           </Link>
           <Link
             href="/creativetech#works"
@@ -92,6 +100,7 @@ export default function ProjectPage({ frontmatter, mdxSource, slug }: ProjectPag
       <ProjectMeta
         client={frontmatter.client}
         role={frontmatter.role}
+        location={frontmatter.location}
         date={frontmatter.date}
         duration={frontmatter.duration}
       />
@@ -129,13 +138,13 @@ export default function ProjectPage({ frontmatter, mdxSource, slug }: ProjectPag
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const projectsDirectory = path.join(process.cwd(), 'content/projects');
+  const projectsDirectory = path.join(process.cwd(), "content/projects");
 
   // Get all project directories
   const entries = fs.readdirSync(projectsDirectory, { withFileTypes: true });
   const projectSlugs = entries
-    .filter(entry => entry.isDirectory())
-    .map(entry => entry.name);
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
 
   const paths = projectSlugs.map((slug) => ({
     params: { slug },
@@ -149,9 +158,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.slug as string;
-  const projectPath = path.join(process.cwd(), 'content/projects', slug, 'index.mdx');
+  const projectPath = path.join(
+    process.cwd(),
+    "content/projects",
+    slug,
+    "index.mdx",
+  );
 
-  const fileContents = fs.readFileSync(projectPath, 'utf8');
+  const fileContents = fs.readFileSync(projectPath, "utf8");
   const { data, content } = matter(fileContents);
 
   const mdxSource = await serialize(content);
