@@ -37,7 +37,7 @@ export default function PortfolioNavbar({ onNavigate }: PortfolioNavbarProps) {
               onClick={() => handleClick("works")}
               className="text-gray-400 text-xs hover:text-gray-600 tracking-wide transition-colors"
             >
-              <span>03 WORKS</span>
+              <span>03 PROJECTS</span>
             </button>
           </div>
 

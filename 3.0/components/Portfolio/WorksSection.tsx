@@ -2,6 +2,7 @@
 
 interface WorksSectionProps {
   id: string;
+  onNavigate: (sectionId: string) => void;
 }
 
 const works = [
@@ -10,7 +11,7 @@ const works = [
   { id: "003", name: "METAHUMAN", tags: "ARKIT / REAL-TIME / 2025" },
 ];
 
-export default function WorksSection({ id }: WorksSectionProps) {
+export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
   return (
     <section
       id={id}
@@ -19,7 +20,7 @@ export default function WorksSection({ id }: WorksSectionProps) {
       {/* Header */}
       <div className="max-w-7xl w-full mx-auto mb-12">
         <span className="text-blue-500 text-xs tracking-widest font-light">
-          [ 03. SELECTED WORKS ]
+          [ 03. SELECTED PROJECTS ]
         </span>
       </div>
 
@@ -43,6 +44,54 @@ export default function WorksSection({ id }: WorksSectionProps) {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Bottom Buttons */}
+      <div className="max-w-7xl w-full mx-auto mt-16 grid grid-cols-2 gap-4 max-w-md">
+        <a
+          href="https://works.amaykataria.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
+        >
+          <span className="text-gray-600 text-xs font-medium tracking-wide">
+            VIEW OTHER WORKS
+          </span>
+          <svg
+            className="w-4 h-4 text-gray-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M7 17L17 7M17 7H7M17 7V17"
+            />
+          </svg>
+        </a>
+        <button
+          onClick={() => onNavigate("hero")}
+          className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
+        >
+          <span className="text-gray-600 text-xs font-medium tracking-wide">
+            HOME
+          </span>
+          <svg
+            className="w-4 h-4 text-gray-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+          </svg>
+        </button>
       </div>
     </section>
   );

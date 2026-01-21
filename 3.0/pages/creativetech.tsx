@@ -60,7 +60,7 @@ export default function CreativeTech() {
 
         {/* Works Section */}
         <div ref={worksRef}>
-          <WorksSection id="works" />
+          <WorksSection id="works" onNavigate={handleNavigate} />
         </div>
 
         {/* Contact Section */}
