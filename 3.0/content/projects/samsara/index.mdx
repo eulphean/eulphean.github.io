@@ -1,0 +1,89 @@
+---
+title: "Samsara"
+subtitle: "A monumental LED installation exploring the cycle of creation and dissolution through generative visuals and spatial audio."
+heroImage: "/headshot.jpg"
+client: "Personal Project"
+role: "Lead Creative Technologist"
+date: "2025"
+duration: "8 Months"
+tags: ["LED", "Installation", "Generative Art", "Spatial Audio"]
+nextProject:
+  slug: "paik"
+  title: "Paik"
+---
+
+<Challenge>
+
+The vision was to create an immersive installation that would translate the ancient concept of Samsara—the cyclical nature of existence—into a tangible, multisensory experience. The challenge lay in synchronizing large-scale LED panels with spatial audio to create a cohesive narrative that audiences could physically walk through.
+
+We needed to develop a system capable of rendering complex particle simulations in real-time while maintaining perfect synchronization with a 12-channel audio system across a 50-foot installation space.
+
+<TechStack items={[
+  { name: "Three.js", icon: "threejs" },
+  { name: "TypeScript", icon: "typescript" },
+  { name: "GLSL Shaders", icon: "glsl" },
+  { name: "WebSocket", icon: "websocket" }
+]} />
+
+</Challenge>
+
+<Build>
+
+To achieve the required performance, I implemented a custom GPGPU particle simulation running entirely on the GPU. This allowed us to render over 500,000 particles at 60fps while leaving CPU headroom for audio processing and network communication.
+
+The architecture consisted of three main components: a central control server, distributed rendering nodes for each LED panel, and a dedicated audio processing unit. All components communicated via WebSocket for sub-millisecond synchronization.
+
+<ImageGrid columns={2}>
+  <ImageCard 
+    src="/projects/samsara/architecture.jpg" 
+    title="System Architecture" 
+    subtitle="TECHNICAL OVERVIEW"
+    href="/projects/samsara/architecture"
+  />
+  <ImageCard 
+    src="/projects/samsara/particles.jpg" 
+    title="Particle System" 
+    subtitle="GPU SIMULATION"
+    href="/projects/samsara/particles"
+  />
+  <ImageCard 
+    src="/projects/samsara/audio.jpg" 
+    title="Audio Integration" 
+    subtitle="SPATIAL SOUND DESIGN"
+    href="/projects/samsara/audio"
+  />
+  <ImageCard 
+    src="/projects/samsara/installation.jpg" 
+    title="Installation Setup" 
+    subtitle="PHYSICAL BUILD"
+    href="/projects/samsara/installation"
+  />
+</ImageGrid>
+
+</Build>
+
+<Result>
+
+The installation was successfully deployed at the Chicago Digital Arts Festival 2025, where it ran continuously for three weeks. We achieved stable 60fps performance across all eight LED panels while maintaining perfect audio synchronization.
+
+The piece received critical acclaim and was featured in several digital art publications. Over 15,000 visitors experienced the installation during its run.
+
+<ImageGrid columns={2}>
+  <ImageCard 
+    src="/projects/samsara/result-1.jpg" 
+    title="Opening Night" 
+    subtitle="CHICAGO DIGITAL ARTS FESTIVAL"
+  />
+  <ImageCard 
+    src="/projects/samsara/result-2.jpg" 
+    title="Audience Experience" 
+    subtitle="IMMERSIVE ENVIRONMENT"
+  />
+</ImageGrid>
+
+<ButtonGroup>
+  <Button href="https://samsara.amaykataria.com" icon="external">View Documentation</Button>
+  <Button href="https://github.com/eulphean/samsara" icon="github">GitHub Repo</Button>
+</ButtonGroup>
+
+</Result>

@@ -1,14 +1,31 @@
 "use client";
 
+import Link from "next/link";
+
 interface WorksSectionProps {
   id: string;
   onNavigate: (sectionId: string) => void;
 }
 
 const works = [
-  { id: "001", name: "SAMSARA", tags: "MONUMENTAL INSTALLATION / VIDEO /2025" },
-  { id: "002", name: "PAIK", tags: "CHATBOT / INTERACTIVE / 2025" },
-  { id: "003", name: "METAHUMAN", tags: "ARKIT / REAL-TIME / 2025" },
+  {
+    id: "001",
+    name: "SAMSARA",
+    tags: "MONUMENTAL INSTALLATION / VIDEO /2025",
+    slug: "samsara",
+  },
+  {
+    id: "002",
+    name: "PAIK",
+    tags: "CHATBOT / INTERACTIVE / 2025",
+    slug: "paik",
+  },
+  {
+    id: "003",
+    name: "METAHUMAN",
+    tags: "ARKIT / REAL-TIME / 2025",
+    slug: "metahuman",
+  },
 ];
 
 export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
@@ -27,9 +44,10 @@ export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
       {/* Works List */}
       <div className="max-w-7xl w-full mx-auto flex-1">
         <div className="border-t border-gray-200">
-          {works.map((work, index) => (
-            <div
+          {works.map((work) => (
+            <Link
               key={work.id}
+              href={`/projects/${work.slug}`}
               className="flex items-center py-12 border-b border-gray-200 cursor-pointer hover:bg-blue-50 transition-colors px-4 -mx-4"
             >
               <span className="text-gray-400 text-xs tracking-wide w-16">
@@ -41,7 +59,7 @@ export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
               <span className="text-gray-500 text-xs tracking-widest hidden sm:block">
                 {work.tags}
               </span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
