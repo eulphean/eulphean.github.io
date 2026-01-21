@@ -4,10 +4,9 @@ import Image from "next/image";
 
 interface HeroSectionProps {
   id: string;
-  onNavigate: (sectionId: string) => void;
 }
 
-export default function HeroSection({ id, onNavigate }: HeroSectionProps) {
+export default function HeroSection({ id }: HeroSectionProps) {
   return (
     <section
       id={id}
@@ -62,8 +61,8 @@ export default function HeroSection({ id, onNavigate }: HeroSectionProps) {
           </div>
 
           {/* Info Grid */}
-          <div className="border-t border-gray-200 py-4">
-            <div className="flex justify-between items-center py-2">
+          <div className="border-t border-gray-200 pt-4 mt-auto">
+            <div className="flex justify-between items-center pt-2">
               <span className="text-gray-400 text-xs tracking-widest">
                 PRIMARY FOCUS
               </span>
@@ -71,7 +70,7 @@ export default function HeroSection({ id, onNavigate }: HeroSectionProps) {
                 REAL-TIME RENDERING / ML
               </span>
             </div>
-            <div className="flex justify-between items-center py-2">
+            <div className="flex justify-between items-center pt-2">
               <span className="text-gray-400 text-xs tracking-widest">
                 CURRENT RESEARCH
               </span>
@@ -79,101 +78,6 @@ export default function HeroSection({ id, onNavigate }: HeroSectionProps) {
                 LATENT SPACE NAVIGATION
               </span>
             </div>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="grid grid-cols-2 gap-4">
-            <a
-              href="/resume.pdf"
-              download
-              className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
-            >
-              <span className="text-gray-600 text-xs font-medium tracking-wide">
-                RESUME
-              </span>
-              {/* Download icon */}
-              <svg
-                className="w-4 h-4 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                />
-              </svg>
-            </a>
-            <button
-              onClick={() => onNavigate("techstack")}
-              className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
-            >
-              <span className="text-gray-600 text-xs font-medium tracking-wide">
-                TECH STACK
-              </span>
-              {/* Arrow down icon */}
-              <svg
-                className="w-4 h-4 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </button>
-            <button
-              onClick={() => onNavigate("works")}
-              className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
-            >
-              <span className="text-gray-600 text-xs font-medium tracking-wide">
-                PORTFOLIO
-              </span>
-              {/* Arrow down icon */}
-              <svg
-                className="w-4 h-4 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </button>
-            <a
-              href="https://github.com/eulphean"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
-            >
-              <span className="text-gray-600 text-xs font-medium tracking-wide">
-                GITHUB
-              </span>
-              {/* Arrow top-right icon */}
-              <svg
-                className="w-4 h-4 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M7 17L17 7M17 7H7M17 7V17"
-                />
-              </svg>
-            </a>
           </div>
         </div>
       </div>
