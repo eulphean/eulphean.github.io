@@ -1,23 +1,24 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
-import Head from 'next/head';
-import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
-import { serialize } from 'next-mdx-remote/serialize';
+import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 
 // Import custom MDX components
-import ImageGrid from '../../../../components/Projects/ImageGrid';
-import ImageCard from '../../../../components/Projects/ImageCard';
-import TechStack from '../../../../components/Projects/TechStack';
-import ButtonGroup from '../../../../components/Projects/ButtonGroup';
-import Button from '../../../../components/Projects/Button';
+import ImageGrid from "../../../../components/Projects/ImageGrid";
+import ImageCard from "../../../../components/Projects/ImageCard";
+import TechStack from "../../../../components/Projects/TechStack";
+import ButtonGroup from "../../../../components/Projects/ButtonGroup";
+import Button from "../../../../components/Projects/Button";
 
 // Components for sub-pages
-import SubPageNavbar from '../../../../components/Projects/SubPageNavbar';
-import SubPageTitle from '../../../../components/Projects/SubPageTitle';
-import SubPageFooter from '../../../../components/Projects/SubPageFooter';
+import SubPageNavbar from "../../../../components/Projects/SubPageNavbar";
+import SubPageTitle from "../../../../components/Projects/SubPageTitle";
+import SubPageFooter from "../../../../components/Projects/SubPageFooter";
+import ContactSection from "../../../../components/Portfolio/ContactSection";
 
 // Map of components available in MDX
 const components = {
@@ -59,10 +60,16 @@ export default function SubPage({
   allSubpages,
   nextSubpage,
 }: SubPageProps) {
+  // Find previous subpage
+  const currentIndex = allSubpages.findIndex((s) => s.slug === currentSubpage);
+  const prevSubpage = currentIndex > 0 ? allSubpages[currentIndex - 1] : null;
+
   return (
-    <div className="min-h-screen bg-white font-space-grotesk">
+    <div className="min-h-screen bg-white font-space-grotesk flex flex-col">
       <Head>
-        <title>{frontmatter.title} - {projectTitle} - Amay Kataria</title>
+        <title>
+          {frontmatter.title} - {projectTitle} - Amay Kataria
+        </title>
         <meta name="description" content={frontmatter.subtitle} />
       </Head>
 
@@ -71,65 +78,55 @@ export default function SubPage({
         subpages={allSubpages}
         currentSubpage={currentSubpage}
         projectSlug={projectSlug}
-      />
-
-      {/* Title Section */}
-      <SubPageTitle
-        title={frontmatter.title}
-        subtitle={frontmatter.subtitle}
         projectTitle={projectTitle}
       />
 
+      {/* Title Section */}
+      <SubPageTitle title={frontmatter.title} subtitle={frontmatter.subtitle} />
+
       {/* MDX Content */}
-      <main className="max-w-4xl mx-auto px-6 py-16">
+      <main className="max-w-4xl mx-auto px-6 py-16 flex-grow">
         <MDXRemote {...mdxSource} components={components} />
       </main>
 
       {/* Footer Navigation */}
       <SubPageFooter
+        prevSubpage={prevSubpage}
         nextSubpage={nextSubpage}
         projectSlug={projectSlug}
+        projectTitle={projectTitle}
       />
 
-      {/* Simple Footer */}
-      <footer className="bg-white border-t border-gray-200 py-8 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-gray-400 text-xs tracking-widest">
-            <span>AMAY KATARIA</span>
-            <span className="mx-2">*</span>
-            <span>CREATIVE TECHNOLOGIST</span>
-            <span className="mx-2">*</span>
-            <span>COPYRIGHT 2026</span>
-          </div>
-          <div className="text-gray-400 text-xs tracking-widest">
-            CHICAGO, USA
-          </div>
-        </div>
-      </footer>
+      {/* Footer */}
+      <ContactSection id="contact" />
     </div>
   );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const projectsDirectory = path.join(process.cwd(), 'content/projects');
+  const projectsDirectory = path.join(process.cwd(), "content/projects");
   const paths: { params: { slug: string; subpage: string } }[] = [];
 
   // Get all project directories
-  const projectEntries = fs.readdirSync(projectsDirectory, { withFileTypes: true });
+  const projectEntries = fs.readdirSync(projectsDirectory, {
+    withFileTypes: true,
+  });
 
   for (const projectEntry of projectEntries) {
     if (projectEntry.isDirectory()) {
-      const buildDir = path.join(projectsDirectory, projectEntry.name, 'build');
+      const buildDir = path.join(projectsDirectory, projectEntry.name, "build");
 
       // Check if build directory exists
       if (fs.existsSync(buildDir)) {
-        const subpageFiles = fs.readdirSync(buildDir).filter(f => f.endsWith('.mdx'));
+        const subpageFiles = fs
+          .readdirSync(buildDir)
+          .filter((f) => f.endsWith(".mdx"));
 
         for (const file of subpageFiles) {
           paths.push({
             params: {
               slug: projectEntry.name,
-              subpage: file.replace('.mdx', ''),
+              subpage: file.replace(".mdx", ""),
             },
           });
         }
@@ -148,33 +145,56 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const subpage = params?.subpage as string;
 
   // Get project title from main index.mdx
-  const projectIndexPath = path.join(process.cwd(), 'content/projects', projectSlug, 'index.mdx');
-  const projectIndexContents = fs.readFileSync(projectIndexPath, 'utf8');
+  const projectIndexPath = path.join(
+    process.cwd(),
+    "content/projects",
+    projectSlug,
+    "index.mdx",
+  );
+  const projectIndexContents = fs.readFileSync(projectIndexPath, "utf8");
   const { data: projectData } = matter(projectIndexContents);
 
   // Get current subpage content
-  const subpagePath = path.join(process.cwd(), 'content/projects', projectSlug, 'build', `${subpage}.mdx`);
-  const subpageContents = fs.readFileSync(subpagePath, 'utf8');
+  const subpagePath = path.join(
+    process.cwd(),
+    "content/projects",
+    projectSlug,
+    "build",
+    `${subpage}.mdx`,
+  );
+  const subpageContents = fs.readFileSync(subpagePath, "utf8");
   const { data, content } = matter(subpageContents);
 
   // Get all subpages for navigation
-  const buildDir = path.join(process.cwd(), 'content/projects', projectSlug, 'build');
-  const subpageFiles = fs.readdirSync(buildDir).filter(f => f.endsWith('.mdx'));
+  const buildDir = path.join(
+    process.cwd(),
+    "content/projects",
+    projectSlug,
+    "build",
+  );
+  const subpageFiles = fs
+    .readdirSync(buildDir)
+    .filter((f) => f.endsWith(".mdx"));
 
-  const allSubpages: SubPageInfo[] = subpageFiles.map(file => {
-    const filePath = path.join(buildDir, file);
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const { data: fileData } = matter(fileContents);
-    return {
-      slug: file.replace('.mdx', ''),
-      title: fileData.title,
-      order: fileData.order || 0,
-    };
-  }).sort((a, b) => a.order - b.order);
+  const allSubpages: SubPageInfo[] = subpageFiles
+    .map((file) => {
+      const filePath = path.join(buildDir, file);
+      const fileContents = fs.readFileSync(filePath, "utf8");
+      const { data: fileData } = matter(fileContents);
+      return {
+        slug: file.replace(".mdx", ""),
+        title: fileData.title,
+        order: fileData.order || 0,
+      };
+    })
+    .sort((a, b) => a.order - b.order);
 
   // Find next subpage
-  const currentIndex = allSubpages.findIndex(s => s.slug === subpage);
-  const nextSubpage = currentIndex < allSubpages.length - 1 ? allSubpages[currentIndex + 1] : null;
+  const currentIndex = allSubpages.findIndex((s) => s.slug === subpage);
+  const nextSubpage =
+    currentIndex < allSubpages.length - 1
+      ? allSubpages[currentIndex + 1]
+      : null;
 
   const mdxSource = await serialize(content);
 

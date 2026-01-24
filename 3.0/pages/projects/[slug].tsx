@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -19,6 +18,8 @@ import ImageCard from "../../components/Projects/ImageCard";
 import ButtonGroup from "../../components/Projects/ButtonGroup";
 import Button from "../../components/Projects/Button";
 import NextProject from "../../components/Projects/NextProject";
+import ContactSection from "../../components/Portfolio/ContactSection";
+import PortfolioNavbar from "../../components/Portfolio/PortfolioNavbar";
 
 // Map of components available in MDX
 const components = {
@@ -68,26 +69,7 @@ export default function ProjectPage({
       </Head>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href="/creativetech"
-            className="text-black text-xs tracking-wide hover:text-gray-600 transition-colors"
-          >
-            <span className="font-normal">AMAY KATARIA</span>
-            <span className="font-light text-gray-400">
-              {" "}
-              / CREATIVE TECHNOLOGIST
-            </span>
-          </Link>
-          <Link
-            href="/creativetech#works"
-            className="text-gray-500 text-xs tracking-wide px-6 py-1 border border-gray-400 rounded-full hover:bg-black hover:text-white transition-colors"
-          >
-            BACK TO WORKS
-          </Link>
-        </div>
-      </nav>
+      <PortfolioNavbar mode="project" />
 
       {/* Hero Section */}
       <ProjectHero
@@ -119,20 +101,7 @@ export default function ProjectPage({
       )}
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 py-8 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-gray-400 text-xs tracking-widest">
-            <span>AMAY KATARIA</span>
-            <span className="mx-2">*</span>
-            <span>CREATIVE TECHNOLOGIST</span>
-            <span className="mx-2">*</span>
-            <span>COPYRIGHT 2026</span>
-          </div>
-          <div className="text-gray-400 text-xs tracking-widest">
-            CHICAGO, USA
-          </div>
-        </div>
-      </footer>
+      <ContactSection id="contact" />
     </div>
   );
 }
