@@ -1,0 +1,96 @@
+---
+title: "CineFives"
+subtitle: "An AI-powered movie recommendation engine that curates personalized top-five lists through conversational interaction."
+heroImage: "/headshot.jpg"
+client: "Personal Project"
+role: "Full-Stack Developer"
+location: "Chicago"
+date: "2026"
+duration: "3 Months"
+tags: ["AI", "Recommendation Engine", "Web App", "LLM"]
+nextProject:
+  slug: "samsara"
+  title: "Samsara"
+---
+
+<Overview>
+
+CineFives is an AI-powered movie recommendation engine that moves beyond traditional collaborative filtering to deliver deeply personalized top-five movie lists. Through natural conversation, users describe their mood, preferences, and context, and the system responds with curated selections accompanied by meaningful explanations for each pick.
+
+</Overview>
+
+<Challenge>
+
+The goal was to build a movie recommendation experience that goes beyond generic algorithms. Most recommendation systems rely on collaborative filtering, which often produces predictable, popularity-biased results. The challenge was to create a conversational AI system that truly understands individual taste, mood, and context to generate highly curated top-five movie lists.
+
+We needed to design an architecture that could process natural language preferences, cross-reference a comprehensive film database, and deliver recommendations with meaningful explanations—all in real-time through a polished web interface.
+
+<TechStack items={[
+  { name: "Next.js", icon: "nextjs" },
+  { name: "TypeScript", icon: "typescript" },
+  { name: "OpenAI", icon: "openai" },
+  { name: "PostgreSQL", icon: "postgresql" }
+]} />
+
+</Challenge>
+
+<Build>
+
+The system was architected around a conversational AI pipeline that combines LLM reasoning with structured film metadata. The backend processes user prompts through a multi-stage pipeline: intent classification, preference extraction, candidate retrieval from the film database, and final ranking with explanation generation.
+
+The frontend was built as a responsive Next.js application with real-time streaming responses, allowing users to see their recommendations materialize as the AI reasons through its selections.
+
+<ImageGrid columns={2}>
+  <ImageCard 
+    src="/projects/cinefives/architecture.jpg" 
+    title="System Architecture" 
+    subtitle="TECHNICAL OVERVIEW"
+    href="/projects/cinefives/build/architecture"
+  />
+  <ImageCard 
+    src="/projects/cinefives/pipeline.jpg" 
+    title="AI Pipeline" 
+    subtitle="LLM REASONING"
+    href="/projects/cinefives/build/pipeline"
+  />
+  <ImageCard 
+    src="/projects/cinefives/database.jpg" 
+    title="Film Database" 
+    subtitle="DATA LAYER"
+    href="/projects/cinefives/build/database"
+  />
+  <ImageCard 
+    src="/projects/cinefives/interface.jpg" 
+    title="Interface Design" 
+    subtitle="USER EXPERIENCE"
+    href="/projects/cinefives/build/interface"
+  />
+</ImageGrid>
+
+</Build>
+
+<Result>
+
+CineFives launched as a public web app in 2026, quickly gaining traction among film enthusiasts. The conversational approach to recommendations proved far more engaging than traditional list-based interfaces, with users averaging over 5 sessions per visit.
+
+The AI pipeline consistently generates nuanced, surprising recommendations that go beyond mainstream picks, earning positive reception from both casual viewers and cinephiles.
+
+<ImageGrid columns={2}>
+  <ImageCard 
+    src="/projects/cinefives/result-1.jpg" 
+    title="Live Application" 
+    subtitle="PRODUCTION DEPLOYMENT"
+  />
+  <ImageCard 
+    src="/projects/cinefives/result-2.jpg" 
+    title="User Experience" 
+    subtitle="CONVERSATIONAL INTERFACE"
+  />
+</ImageGrid>
+
+<ButtonGroup>
+  <Button href="https://cinefives.amaykataria.com" icon="external">View Live App</Button>
+  <Button href="https://github.com/eulphean/cinefives" icon="github">GitHub Repo</Button>
+</ButtonGroup>
+
+</Result>

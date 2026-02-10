@@ -9,6 +9,7 @@ import { serialize } from "next-mdx-remote/serialize";
 // Import custom MDX components
 import ProjectHero from "../../components/Projects/ProjectHero";
 import ProjectMeta from "../../components/Projects/ProjectMeta";
+import Overview from "../../components/Projects/Overview";
 import Challenge from "../../components/Projects/Challenge";
 import Build from "../../components/Projects/Build";
 import Result from "../../components/Projects/Result";
@@ -23,6 +24,7 @@ import PortfolioNavbar from "../../components/Portfolio/PortfolioNavbar";
 
 // Map of components available in MDX
 const components = {
+  Overview,
   Challenge,
   Build,
   Result,

@@ -1,15 +1,15 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
-interface ResultProps {
+interface OverviewProps {
   children: ReactNode;
 }
 
-export default function Result({ children }: ResultProps) {
+export default function Overview({ children }: OverviewProps) {
   return (
     <section className="mb-16">
       <div className="flex items-baseline gap-4 mb-6">
-        <span className="text-blue-500 text-lg font-bold">04.</span>
-        <h2 className="text-2xl font-bold text-gray-900">The Result</h2>
+        <span className="text-blue-500 text-lg font-bold">01.</span>
+        <h2 className="text-2xl font-bold text-gray-900">The Overview</h2>
       </div>
       <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed">
         {children}
