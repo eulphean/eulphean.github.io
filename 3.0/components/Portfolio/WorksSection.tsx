@@ -10,21 +10,21 @@ interface WorksSectionProps {
 const works = [
   {
     id: "001",
-    name: "SAMSARA",
-    tags: "MONUMENTAL INSTALLATION / VIDEO /2025",
-    slug: "samsara",
+    name: "CINE FIVES",
+    tags: "AI Recommendation Engine / Web App / 2026",
+    slug: "cinefives",
   },
   {
     id: "002",
-    name: "PAIK",
-    tags: "CHATBOT / INTERACTIVE / 2025",
-    slug: "paik",
+    name: "SAMSARA",
+    tags: "Monumental AI Installation / Video / 2025",
+    slug: "samsara",
   },
   {
     id: "003",
-    name: "METAHUMAN",
-    tags: "ARKIT / REAL-TIME / 2025",
-    slug: "metahuman",
+    name: "PAIK",
+    tags: "AI Avatar / 3D Web App / 2025",
+    slug: "paik",
   },
 ];
 
