@@ -18,6 +18,7 @@ import ImageGrid from "../../components/Projects/ImageGrid";
 import ImageCard from "../../components/Projects/ImageCard";
 import ButtonGroup from "../../components/Projects/ButtonGroup";
 import Button from "../../components/Projects/Button";
+import VimeoPlayer from "../../components/Projects/VimeoPlayer";
 import NextProject from "../../components/Projects/NextProject";
 import ContactSection from "../../components/Portfolio/ContactSection";
 import PortfolioNavbar from "../../components/Portfolio/PortfolioNavbar";
@@ -33,6 +34,7 @@ const components = {
   ImageCard,
   ButtonGroup,
   Button,
+  VimeoPlayer,
   NextProject,
 };
 
