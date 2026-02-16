@@ -34,7 +34,7 @@ export default function ProjectMeta({
           </span>
           <span className="text-sm font-medium">
             <span className="text-gray-900">{date}</span>
-            <span className="text-gray-400"> / {duration}</span>
+            {duration && <span className="text-gray-400"> / {duration}</span>}
           </span>
         </div>
         <div className="text-right">

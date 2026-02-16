@@ -6,7 +6,6 @@ client: "Personal Project"
 role: "Full-Stack Developer"
 location: "Chicago"
 date: "2026"
-duration: "3 Months"
 tags: ["AI", "Recommendation Engine", "Web App", "LLM"]
 nextProject:
   slug: "samsara"
@@ -15,11 +14,17 @@ nextProject:
 
 <Overview>
 
-<VimeoPlayer src="https://player.vimeo.com/video/1163403449?h=128be37c54" />
+<VimeoPlayer 
+  autoplay={true}
+  loop={true}
+  controls={false}
+  src="https://player.vimeo.com/video/1165415767" 
+/>
+
+The system was architected around a conversational AI pipeline that combines LLM reasoning with structured film metadata. The backend processes user prompts through a multi-stage pipeline: intent classification, preference extraction, candidate retrieval from the film database, and final ranking with explanation generation.
 
 <ButtonGroup>
-  <Button href="https://cinefives.amaykataria.com" icon="external">View Live App</Button>
-  <Button href="https://github.com/eulphean/cinefives" icon="github">GitHub Repo</Button>
+  <Button href="https://cinefives.com" icon="external">View Live App</Button>
 </ButtonGroup>
 
 </Overview>
@@ -50,10 +55,6 @@ nextProject:
   { name: "Tailwind", icon: "tailwindcss" },
   { name: "Figma", icon: "figma" }
 ]} />
-
-The system was architected around a conversational AI pipeline that combines LLM reasoning with structured film metadata. The backend processes user prompts through a multi-stage pipeline: intent classification, preference extraction, candidate retrieval from the film database, and final ranking with explanation generation.
-
-The frontend was built as a responsive Next.js application with real-time streaming responses, allowing users to see their recommendations materialize as the AI reasons through its selections.
 
 <ImageGrid columns={3}>
   <ImageCard 
