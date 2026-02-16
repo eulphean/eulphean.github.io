@@ -97,7 +97,7 @@ export default function SubPage({
         {/* Left Column: Scrollable Content + Footer */}
         <div className="overflow-auto flex flex-col justify-between h-full">
           {/* Scrollable MDX Content */}
-          <main className="overflow-y-auto p-12 w-full no-scrollbar">
+          <main className="overflow-y-auto p-12 w-full no-scrollbar [&>*:first-child]:mt-0 [&>*:last-child]:mb-0">
             <MDXRemote {...mdxSource} components={components} />
           </main>
 
