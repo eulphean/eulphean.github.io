@@ -4,6 +4,9 @@ interface VimeoPlayerProps {
   controls?: boolean;
   loop?: boolean;
   muted?: boolean;
+  title?: string;
+  subtitle?: string;
+  centered?: boolean;
 }
 
 export default function VimeoPlayer({
@@ -12,6 +15,9 @@ export default function VimeoPlayer({
   controls = true,
   loop = false,
   muted = false,
+  title,
+  subtitle,
+  centered = false,
 }: VimeoPlayerProps) {
   // Add Vimeo parameters to the URL
   const urlParams = new URLSearchParams();
@@ -24,16 +30,34 @@ export default function VimeoPlayer({
   const videoSrc = `${src}${src.includes("?") ? "&" : "?"}${urlParams.toString()}`;
 
   return (
-    <div className="relative w-full my-8" style={{ paddingBottom: "56.25%" }}>
-      <iframe
-        className="absolute top-0 left-0 w-full h-full"
-        src={videoSrc}
-        title="vimeo-player"
-        frameBorder="0"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-        allowFullScreen
-      />
+    <div className="my-8">
+      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src={videoSrc}
+          title={title || "vimeo-player"}
+          frameBorder="0"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allowFullScreen
+        />
+      </div>
+      {(title || subtitle) && (
+        <div
+          className={`flex items-start ${centered ? "justify-center text-center" : "justify-between"} mt-3`}
+        >
+          <div>
+            {title && (
+              <h4 className="text-sm font-semibold text-gray-900">{title}</h4>
+            )}
+            {subtitle && (
+              <p className="text-xs text-gray-400 tracking-wide mt-1">
+                {subtitle}
+              </p>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

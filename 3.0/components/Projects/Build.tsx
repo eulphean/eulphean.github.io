@@ -9,7 +9,7 @@ export default function Build({ children }: BuildProps) {
     <section className="mb-16">
       <div className="flex items-baseline gap-4 mb-6">
         <span className="text-blue-500 text-lg font-bold">03.</span>
-        <h2 className="text-2xl font-bold text-gray-900">The Build</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Build</h2>
       </div>
       <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed">
         {children}
