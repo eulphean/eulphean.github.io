@@ -97,10 +97,8 @@ export default function SubPage({
         {/* Left Column: Scrollable Content + Footer */}
         <div className="overflow-auto flex flex-col justify-between h-full">
           {/* Scrollable MDX Content */}
-          <main className="overflow-y-auto px-6 py-16">
-            <div className="max-w-4xl mx-auto">
-              <MDXRemote {...mdxSource} components={components} />
-            </div>
+          <main className="overflow-y-auto p-12 w-full no-scrollbar">
+            <MDXRemote {...mdxSource} components={components} />
           </main>
 
           {/* Footer Navigation - Stays at bottom */}

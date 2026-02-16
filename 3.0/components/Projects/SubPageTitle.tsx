@@ -5,8 +5,8 @@ export interface SubPageTitleProps {
 
 export default function SubPageTitle({ title, subtitle }: SubPageTitleProps) {
   return (
-    <div className="pt-24 pb-6 px-6 border-b border-gray-200">
-      <div className="max-w-4xl mx-auto">
+    <div className="pt-20 pb-4 px-12 border-b border-gray-200">
+      <div className="w-full">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
           {title}
         </h1>

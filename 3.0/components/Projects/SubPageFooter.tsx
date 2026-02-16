@@ -20,8 +20,8 @@ export default function SubPageFooter({
   projectTitle,
 }: SubPageFooterProps) {
   return (
-    <div className="bg-white border-t border-gray-200">
-      <div className="max-w-4xl mx-auto px-6 py-6">
+    <div className="bg-transparent border-t border-gray-200">
+      <div className="w-full px-12 py-3">
         <div className="flex justify-between items-center">
           {/* Previous Button - Left side */}
           {prevSubpage ? (
