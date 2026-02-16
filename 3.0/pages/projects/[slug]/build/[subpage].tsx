@@ -19,6 +19,7 @@ import SubPageNavbar from "../../../../components/Projects/SubPageNavbar";
 import SubPageTitle from "../../../../components/Projects/SubPageTitle";
 import SubPageFooter from "../../../../components/Projects/SubPageFooter";
 import ContactSection from "../../../../components/Portfolio/ContactSection";
+import SubpageDetailsPanel from "../../../../components/Projects/SubpageDetailsPanel";
 
 // Map of components available in MDX
 const components = {
@@ -33,6 +34,11 @@ interface SubPageFrontmatter {
   title: string;
   subtitle: string;
   order: number;
+  objective?: string;
+  technicalDecisions?: string;
+  keyInnovation?: string;
+  outcome?: string;
+  technologies?: string[];
 }
 
 interface SubPageInfo {
@@ -65,7 +71,7 @@ export default function SubPage({
   const prevSubpage = currentIndex > 0 ? allSubpages[currentIndex - 1] : null;
 
   return (
-    <div className="min-h-screen bg-white font-space-grotesk flex flex-col">
+    <div className="h-screen bg-white font-space-grotesk flex flex-col overflow-hidden">
       <Head>
         <title>
           {frontmatter.title} - {projectTitle} - Amay Kataria
@@ -84,9 +90,25 @@ export default function SubPage({
       {/* Title Section */}
       <SubPageTitle title={frontmatter.title} subtitle={frontmatter.subtitle} />
 
-      {/* MDX Content */}
-      <main className="max-w-4xl mx-auto px-6 py-16 flex-grow">
-        <MDXRemote {...mdxSource} components={components} />
+      {/* Scrollable MDX Content with Details Panel */}
+      <main className="flex-grow overflow-y-auto">
+        <div className="max-w-7xl mx-auto px-6 py-16 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12">
+            {/* Left: MDX Content */}
+            <div className="max-w-4xl">
+              <MDXRemote {...mdxSource} components={components} />
+            </div>
+
+            {/* Right: Details Panel */}
+            <SubpageDetailsPanel
+              objective={frontmatter.objective}
+              technicalDecisions={frontmatter.technicalDecisions}
+              keyInnovation={frontmatter.keyInnovation}
+              outcome={frontmatter.outcome}
+              technologies={frontmatter.technologies}
+            />
+          </div>
+        </div>
       </main>
 
       {/* Footer Navigation */}
