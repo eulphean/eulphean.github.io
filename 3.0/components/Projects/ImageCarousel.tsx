@@ -14,13 +14,13 @@ export default function ImageCarousel({
   return (
     <div className="my-8">
       <div
-        className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar"
+        className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-4"
         style={{
           scrollbarWidth: "none",
           msOverflowStyle: "none",
         }}
       >
-        {children}
+        <div className="flex gap-6 flex-nowrap">{children}</div>
       </div>
       {(title || subtitle) && (
         <div className="flex items-start justify-center text-center">
@@ -36,9 +36,13 @@ export default function ImageCarousel({
           </div>
         </div>
       )}
-      <style jsx>{`
+      <style jsx global>{`
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
+        }
+        .hide-scrollbar > div > * {
+          flex: 0 0 auto;
+          scroll-snap-align: start;
         }
       `}</style>
     </div>
