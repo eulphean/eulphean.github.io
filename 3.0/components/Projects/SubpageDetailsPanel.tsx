@@ -26,8 +26,31 @@ export default function SubpageDetailsPanel({
   }
 
   return (
-    <aside className="hidden lg:block">
+    <aside className="overflow-y-scroll overflow-x-hidden hidden lg:block bg-gray-50 p-8">
       <div className="w-64 space-y-8">
+        {/* Technologies Section - Moved to top */}
+        {technologies && technologies.length > 0 && (
+          <>
+            <div>
+              <h3 className="text-gray-400 text-xs tracking-widest mb-3">
+                TECHNOLOGIES
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-white text-gray-700 text-xs border border-gray-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            {/* Divider line */}
+            <div className="border-t border-gray-200"></div>
+          </>
+        )}
+
         {objective && (
           <div>
             <h3 className="text-gray-400 text-xs tracking-widest mb-3">
@@ -65,24 +88,6 @@ export default function SubpageDetailsPanel({
               OUTCOME
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed">{outcome}</p>
-          </div>
-        )}
-
-        {technologies && technologies.length > 0 && (
-          <div>
-            <h3 className="text-gray-400 text-xs tracking-widest mb-3">
-              TECHNOLOGIES
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
           </div>
         )}
       </div>

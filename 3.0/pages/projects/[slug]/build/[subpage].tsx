@@ -90,36 +90,39 @@ export default function SubPage({
       {/* Title Section */}
       <SubPageTitle title={frontmatter.title} subtitle={frontmatter.subtitle} />
 
-      {/* Scrollable MDX Content with Details Panel */}
-      <main className="flex-grow overflow-y-auto">
-        <div className="max-w-7xl mx-auto px-6 py-16 pb-32 w-full min-h-full">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12">
-            {/* Left: MDX Content */}
-            <div className="max-w-4xl">
+      {/* Main Content Area with Two Columns */}
+      <div className="overflow-hidden grid grid-cols-1 lg:grid-cols-[1fr_auto]">
+        {/* Left Column: Scrollable Content + Footer */}
+        <div className="overflow-auto flex flex-col justify-between h-full">
+          {/* Scrollable MDX Content */}
+          <main className="overflow-y-auto px-6 py-16">
+            <div className="max-w-4xl mx-auto">
               <MDXRemote {...mdxSource} components={components} />
             </div>
+          </main>
 
-            {/* Right: Details Panel */}
-            <SubpageDetailsPanel
-              objective={frontmatter.objective}
-              technicalDecisions={frontmatter.technicalDecisions}
-              keyInnovation={frontmatter.keyInnovation}
-              outcome={frontmatter.outcome}
-              technologies={frontmatter.technologies}
+          {/* Footer Navigation - Stays at bottom */}
+          <div className="">
+            <SubPageFooter
+              prevSubpage={prevSubpage}
+              nextSubpage={nextSubpage}
+              projectSlug={projectSlug}
+              projectTitle={projectTitle}
             />
           </div>
         </div>
-      </main>
 
-      {/* Footer Navigation */}
-      <SubPageFooter
-        prevSubpage={prevSubpage}
-        nextSubpage={nextSubpage}
-        projectSlug={projectSlug}
-        projectTitle={projectTitle}
-      />
+        {/* Right Column: Details Panel */}
+        <SubpageDetailsPanel
+          objective={frontmatter.objective}
+          technicalDecisions={frontmatter.technicalDecisions}
+          keyInnovation={frontmatter.keyInnovation}
+          outcome={frontmatter.outcome}
+          technologies={frontmatter.technologies}
+        />
+      </div>
 
-      {/* Footer */}
+      {/* Contact Footer - Below the grid */}
       <ContactSection id="contact" />
     </div>
   );
