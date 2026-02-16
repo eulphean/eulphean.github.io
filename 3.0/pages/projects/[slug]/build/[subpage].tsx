@@ -10,6 +10,7 @@ import { serialize } from "next-mdx-remote/serialize";
 // Import custom MDX components
 import ImageGrid from "../../../../components/Projects/ImageGrid";
 import ImageCard from "../../../../components/Projects/ImageCard";
+import ImageCarousel from "../../../../components/Projects/ImageCarousel";
 import TechStack from "../../../../components/Projects/TechStack";
 import ButtonGroup from "../../../../components/Projects/ButtonGroup";
 import Button from "../../../../components/Projects/Button";
@@ -26,6 +27,7 @@ import VimeoPlayer from "../../../../components/Projects/VimeoPlayer";
 const components = {
   ImageGrid,
   ImageCard,
+  ImageCarousel,
   TechStack,
   ButtonGroup,
   Button,
