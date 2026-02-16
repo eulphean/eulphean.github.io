@@ -20,6 +20,7 @@ import SubPageTitle from "../../../../components/Projects/SubPageTitle";
 import SubPageFooter from "../../../../components/Projects/SubPageFooter";
 import ContactSection from "../../../../components/Portfolio/ContactSection";
 import SubpageDetailsPanel from "../../../../components/Projects/SubpageDetailsPanel";
+import VimeoPlayer from "../../../../components/Projects/VimeoPlayer";
 
 // Map of components available in MDX
 const components = {
@@ -28,6 +29,7 @@ const components = {
   TechStack,
   ButtonGroup,
   Button,
+  VimeoPlayer,
 };
 
 interface SubPageFrontmatter {
