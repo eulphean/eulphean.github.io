@@ -26,9 +26,20 @@ nextProject:
 
 <Challenge>
 
-The goal was to build a movie recommendation experience that goes beyond generic algorithms. Most recommendation systems rely on collaborative filtering, which often produces predictable, popularity-biased results. The challenge was to create a conversational AI system that truly understands individual taste, mood, and context to generate highly curated top-five movie lists.
+<ImageGrid columns={1}>
+  <ImageCard 
+    src="/projects/cinefives/challenge.png" 
+    title="CineFives Pipeline" 
+    subtitle="FROM PREFERENCES TO CURATED TOP-5"
+    aspect="wide"
+    fit="contain"
+    centered
+  />
+</ImageGrid>
 
-We needed to design an architecture that could process natural language preferences, cross-reference a comprehensive film database, and deliver recommendations with meaningful explanations—all in real-time through a polished web interface.
+</Challenge>
+
+<Build>
 
 <TechStack items={[
   { name: "Next.js", icon: "nextjs" },
@@ -36,10 +47,6 @@ We needed to design an architecture that could process natural language preferen
   { name: "OpenAI", icon: "openai" },
   { name: "PostgreSQL", icon: "postgresql" }
 ]} />
-
-</Challenge>
-
-<Build>
 
 The system was architected around a conversational AI pipeline that combines LLM reasoning with structured film metadata. The backend processes user prompts through a multi-stage pipeline: intent classification, preference extraction, candidate retrieval from the film database, and final ranking with explanation generation.
 
