@@ -8,7 +8,7 @@ export default function ContactSection({ id }: ContactSectionProps) {
   return (
     <section
       id={id}
-      className="bg-white border-t border-gray-200 py-8 px-8 lg:px-16 font-space-grotesk"
+      className="bg-white border-t border-gray-200 py-4 px-8 lg:px-16 font-space-grotesk"
     >
       <div className="max-w-7xl w-full mx-auto">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">

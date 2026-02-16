@@ -92,7 +92,7 @@ export default function SubPage({
 
       {/* Scrollable MDX Content with Details Panel */}
       <main className="flex-grow overflow-y-auto">
-        <div className="max-w-7xl mx-auto px-6 py-16 w-full">
+        <div className="max-w-7xl mx-auto px-6 py-16 pb-32 w-full min-h-full">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12">
             {/* Left: MDX Content */}
             <div className="max-w-4xl">
