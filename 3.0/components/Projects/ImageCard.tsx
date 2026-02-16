@@ -6,16 +6,17 @@ interface ImageCardProps {
   title: string;
   subtitle?: string;
   href?: string;
-  aspect?: "landscape" | "portrait" | "wide" | "square";
+  aspect?: "landscape" | "portrait" | "wide" | "square" | "auto" | string;
   fit?: "cover" | "contain";
   centered?: boolean;
 }
 
-const aspectRatios = {
+const aspectRatios: Record<string, string> = {
   landscape: "4/3",
   portrait: "3/4",
   wide: "16/9",
   square: "1/1",
+  auto: "auto",
 };
 
 export default function ImageCard({
@@ -27,17 +28,27 @@ export default function ImageCard({
   fit = "cover",
   centered = false,
 }: ImageCardProps) {
+  // Get aspect ratio: use predefined if exists, otherwise use custom value or aspect itself
+  const getAspectRatio = () => {
+    if (aspect === "auto") {
+      return "auto";
+    }
+    return aspectRatios[aspect] || aspect;
+  };
+
   const content = (
     <div className="group cursor-pointer">
       <div
-        className={`relative overflow-hidden rounded-lg bg-gray-100 mb-3 border border-gray-200`}
-        style={{ aspectRatio: aspectRatios[aspect] }}
+        className={`relative overflow-hidden rounded-lg bg-gray-100 mb-3 border border-gray-200 ${aspect === "auto" ? "" : ""}`}
+        style={{ aspectRatio: getAspectRatio() }}
       >
         <Image
           src={src}
           alt={title}
-          fill
-          className={`${fit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-300 group-hover:scale-105`}
+          fill={aspect !== "auto"}
+          width={aspect === "auto" ? 1200 : undefined}
+          height={aspect === "auto" ? 800 : undefined}
+          className={`${aspect === "auto" ? "w-full h-auto" : fit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-300 group-hover:scale-105`}
         />
       </div>
       <div
