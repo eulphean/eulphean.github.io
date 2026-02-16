@@ -26,7 +26,7 @@ export default function SubpageDetailsPanel({
   }
 
   return (
-    <aside className="overflow-y-scroll overflow-x-hidden hidden lg:block bg-gray-50 p-8 no-scrollbar">
+    <aside className="overflow-y-scroll overflow-x-hidden hidden lg:block bg-gray-50 p-6 no-scrollbar">
       <div className="w-64 space-y-8">
         {/* Technologies Section - Moved to top */}
         {technologies && technologies.length > 0 && (

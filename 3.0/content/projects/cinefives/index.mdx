@@ -42,10 +42,13 @@ nextProject:
 <Build>
 
 <TechStack items={[
+  { name: "Claude Code", icon: "claudecode" },
+  { name: "Gemini", icon: "gemini" },
   { name: "Next.js", icon: "nextjs" },
-  { name: "TypeScript", icon: "typescript" },
   { name: "OpenAI", icon: "openai" },
-  { name: "PostgreSQL", icon: "postgresql" }
+  { name: "Vercel", icon: "vercel" },
+  { name: "Tailwind", icon: "tailwindcss" },
+  { name: "Figma", icon: "figma" }
 ]} />
 
 The system was architected around a conversational AI pipeline that combines LLM reasoning with structured film metadata. The backend processes user prompts through a multi-stage pipeline: intent classification, preference extraction, candidate retrieval from the film database, and final ranking with explanation generation.
