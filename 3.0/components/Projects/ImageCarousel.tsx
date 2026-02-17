@@ -13,13 +13,7 @@ export default function ImageCarousel({
 }: ImageCarouselProps) {
   return (
     <div className="my-8">
-      <div
-        className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar"
-        style={{
-          scrollbarWidth: "none",
-          msOverflowStyle: "none",
-        }}
-      >
+      <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory carousel-scroll">
         <div className="flex gap-6 flex-nowrap">{children}</div>
       </div>
       {(title || subtitle) && (
@@ -37,10 +31,27 @@ export default function ImageCarousel({
         </div>
       )}
       <style jsx global>{`
-        .hide-scrollbar::-webkit-scrollbar {
+        .carousel-scroll {
+          scrollbar-width: none;
+        }
+        .carousel-scroll::-webkit-scrollbar {
           display: none;
         }
-        .hide-scrollbar > div > * {
+        .carousel-scroll:hover {
+          scrollbar-width: thin;
+        }
+        .carousel-scroll:hover::-webkit-scrollbar {
+          display: block;
+          height: 6px;
+        }
+        .carousel-scroll:hover::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .carousel-scroll:hover::-webkit-scrollbar-thumb {
+          background: #d1d5db;
+          border-radius: 3px;
+        }
+        .carousel-scroll > div > * {
           flex: 0 0 auto;
           scroll-snap-align: start;
         }
