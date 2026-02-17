@@ -14,7 +14,7 @@ export default function ImageCarousel({
   return (
     <div className="my-8">
       <div
-        className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-4"
+        className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar"
         style={{
           scrollbarWidth: "none",
           msOverflowStyle: "none",
@@ -23,7 +23,7 @@ export default function ImageCarousel({
         <div className="flex gap-6 flex-nowrap">{children}</div>
       </div>
       {(title || subtitle) && (
-        <div className="flex items-start justify-center text-center">
+        <div className="flex items-start mt-3 justify-center text-center">
           <div>
             {title && (
               <h4 className="text-sm font-semibold text-gray-900">{title}</h4>

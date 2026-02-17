@@ -7,6 +7,8 @@ interface VimeoPlayerProps {
   title?: string;
   subtitle?: string;
   centered?: boolean;
+  inline?: boolean;
+  aspect?: "wide" | "auto";
 }
 
 export default function VimeoPlayer({
@@ -18,6 +20,8 @@ export default function VimeoPlayer({
   title,
   subtitle,
   centered = false,
+  inline = false,
+  aspect = "wide",
 }: VimeoPlayerProps) {
   // Add Vimeo parameters to the URL
   const urlParams = new URLSearchParams();
@@ -29,11 +33,21 @@ export default function VimeoPlayer({
 
   const videoSrc = `${src}${src.includes("?") ? "&" : "?"}${urlParams.toString()}`;
 
-  return (
-    <div className="my-8">
+  const player =
+    aspect === "auto" ? (
+      <iframe
+        className={`block ${inline ? "" : "rounded-lg"}`}
+        src={videoSrc}
+        title={title || "vimeo-player"}
+        frameBorder="0"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+        allowFullScreen
+      />
+    ) : (
       <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
         <iframe
-          className="absolute top-0 left-0 w-full h-full"
+          className={`absolute top-0 left-0 w-full h-full ${inline ? "" : "rounded-lg"}`}
           src={videoSrc}
           title={title || "vimeo-player"}
           frameBorder="0"
@@ -42,6 +56,15 @@ export default function VimeoPlayer({
           allowFullScreen
         />
       </div>
+    );
+
+  if (inline) {
+    return player;
+  }
+
+  return (
+    <div className="my-8">
+      {player}
       {(title || subtitle) && (
         <div
           className={`flex items-start ${centered ? "justify-center text-center" : "justify-between"} mt-3`}

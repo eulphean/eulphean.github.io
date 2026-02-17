@@ -39,7 +39,7 @@ export default function ImageCard({
   const content = (
     <div className="group cursor-pointer">
       <div
-        className={`relative overflow-hidden rounded-lg bg-gray-100 mb-3 border border-gray-200 ${aspect === "auto" ? "" : ""}`}
+        className={`relative overflow-hidden rounded-lg bg-gray-100 border border-gray-200 ${aspect === "auto" ? "" : ""}`}
         style={{ aspectRatio: getAspectRatio() }}
       >
         <Image
@@ -51,35 +51,37 @@ export default function ImageCard({
           className={`${aspect === "auto" ? "w-full h-auto" : fit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-300 group-hover:scale-105`}
         />
       </div>
-      <div
-        className={`flex items-start ${centered ? "justify-center text-center" : "justify-between"}`}
-      >
-        <div>
-          <h4 className="text-sm font-semibold text-gray-900 group-hover:text-blue-500 transition-colors">
-            {title}
-          </h4>
-          {subtitle && (
-            <p className="text-xs text-gray-400 tracking-wide mt-1">
-              {subtitle}
-            </p>
+      {title && (
+        <div
+          className={`flex items-start mt-3 ${centered ? "justify-center text-center" : "justify-between"}`}
+        >
+          <div>
+            <h4 className="text-sm font-semibold text-gray-900 group-hover:text-blue-500 transition-colors">
+              {title}
+            </h4>
+            {subtitle && (
+              <p className="text-xs text-gray-400 tracking-wide mt-1">
+                {subtitle}
+              </p>
+            )}
+          </div>
+          {href && !centered && (
+            <svg
+              className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors mt-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
           )}
         </div>
-        {href && !centered && (
-          <svg
-            className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors mt-1"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        )}
-      </div>
+      )}
     </div>
   );
 
