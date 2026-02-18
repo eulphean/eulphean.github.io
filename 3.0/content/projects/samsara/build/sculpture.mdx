@@ -9,14 +9,53 @@ outcome: "Achieved a stable 60fps on consumer-grade hardware with zero dropped f
 technologies: ["Three.js", "TypeScript", "GLSL", "WebGL", "WebSocket"]
 ---
 
-<VimeoPlayer src="https://player.vimeo.com/video/1163403449?h=128be37c54" />
-<ImageGrid columns={1}>
-  <ImageCard 
-    src="/projects/cinefives/challenge.png" 
-    title="CineFives Pipeline" 
-    subtitle="FROM PREFERENCES TO CURATED TOP-5"
-    aspect="wide"
-    fit="contain"
-    centered
+<VimeoPlayer 
+  src="https://player.vimeo.com/video/1166067279"
+  autoplay={true}
+  loop={true}
+  controls={false}
+/>
+
+<ImageCarousel
+  title="Pick your Vibe (moodConstants.ts)" 
+  subtitle="MOOD CONFIGURATION"
+>
+  <VimeoPlayer 
+    autoplay={true}
+    loop={true}
+    controls={false}
+    src="https://player.vimeo.com/video/1166069117" 
+    inline
+    aspect="manual"
+    width={1920}
+    height={700}
   />
-</ImageGrid>
+  
+  <ImageCard 
+    src="/projects/samsara/build/sculpture/m_fresnel_body.png"
+    aspect="auto"
+    fit="contain"
+  />
+  
+   <VimeoPlayer 
+    autoplay={true}
+    loop={true}
+    controls={false}
+    src="https://player.vimeo.com/video/1166068622" 
+    inline
+    aspect="manual"
+    width={1920}
+    height={700}
+  />
+  
+  <VimeoPlayer 
+    autoplay={true}
+    loop={true}
+    controls={false}
+    src="https://player.vimeo.com/video/1166068733" 
+    inline
+    aspect="manual"
+    width={1920}
+    height={700}
+  />
+</ImageCarousel>

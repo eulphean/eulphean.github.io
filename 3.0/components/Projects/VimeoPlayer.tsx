@@ -8,7 +8,9 @@ interface VimeoPlayerProps {
   subtitle?: string;
   centered?: boolean;
   inline?: boolean;
-  aspect?: "wide" | "auto";
+  aspect?: "wide" | "manual";
+  width?: number;
+  height?: number;
 }
 
 export default function VimeoPlayer({
@@ -22,6 +24,8 @@ export default function VimeoPlayer({
   centered = false,
   inline = false,
   aspect = "wide",
+  width,
+  height,
 }: VimeoPlayerProps) {
   // Add Vimeo parameters to the URL
   const urlParams = new URLSearchParams();
@@ -34,16 +38,21 @@ export default function VimeoPlayer({
   const videoSrc = `${src}${src.includes("?") ? "&" : "?"}${urlParams.toString()}`;
 
   const player =
-    aspect === "auto" ? (
-      <iframe
-        className={`block ${inline ? "" : "rounded-lg"}`}
-        src={videoSrc}
-        title={title || "vimeo-player"}
-        frameBorder="0"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-        allowFullScreen
-      />
+    aspect === "manual" && width && height ? (
+      <div
+        className="relative h-full"
+        style={{ aspectRatio: `${width}/${height}` }}
+      >
+        <iframe
+          className={`absolute top-0 left-0 w-full h-full ${inline ? "" : "rounded-lg"}`}
+          src={videoSrc}
+          title={title || "vimeo-player"}
+          frameBorder="0"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allowFullScreen
+        />
+      </div>
     ) : (
       <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
         <iframe
