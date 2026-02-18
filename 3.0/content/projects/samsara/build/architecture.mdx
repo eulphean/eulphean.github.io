@@ -2,6 +2,62 @@
 title: "PROCEDURAL ARCHITECTURE"
 subtitle: "Blueprint-driven Camera & Environment Systems"
 order: 2
+objective: "Model and paint five core architectural assets for the installation's environment"
+technicalDecisions: "Blender for 3D modeling; Unreal Engine 5.5 for procedural materials using custom shaders; single mesh with face-painted materials for efficient instantiation."
+keyInnovation: "Aesthetic fusion of Rococo architecture with industrial computer hardware"
+outcome: "Reusable asset library ready to import into Unreal Engine"
+technologies: ["Blender", "Unreal Engine 5.5"]
 ---
 
-Content coming soon.
+<VimeoPlayer 
+  autoplay={true}
+  loop={true}
+  controls={false}
+  src="https://player.vimeo.com/video/1166145274?h=add92360b0" 
+  inline
+  aspect="manual"
+  width={1920}
+  height={750}
+  title="Instance based procedural system using a spline (demo)"
+  subtitle="BP_ARCH_LAYOUT_MANAGER (UNREAL)"
+  centered
+/>
+
+
+<ImageCarousel
+  title="Procedural Materials" 
+  subtitle="COLUMN MATERIALS (UNREAL)"
+  captions={["Blueprint Architecture Overview", "Construction Script Schematic: Lays out all the instanced meshes along the spline", "getTransformAlongSpline() schematic: Gets a transform (translation, rotation, and scale), given a point on the spline", "createRepeatedInstancesByNum() schematic: Instantiates multiples instances based on number of points along the spline", "createRepeatedInstances() schematic: Instantiates multiples instances within the constraints of the spline, keeping the original width of the instance into account"]}
+  centered
+>
+  
+  <ImageCard 
+    src="/projects/samsara/build/blueprints/architecture/1.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
+   <ImageCard 
+    src="/projects/samsara/build/blueprints/architecture/2.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
+  <ImageCard 
+    src="/projects/samsara/build/blueprints/architecture/3.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
+  <ImageCard 
+    src="/projects/samsara/build/blueprints/architecture/4.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
+  <ImageCard 
+    src="/projects/samsara/build/blueprints/architecture/5.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+</ImageCarousel>
