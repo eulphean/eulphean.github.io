@@ -12,9 +12,12 @@ import {
   SiVite,
   SiClaude,
   SiGooglegemini,
+  SiUnrealengine,
+  SiAdobeaftereffects,
+  SiBlender,
 } from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaCopy, FaCopyright } from "react-icons/fa";
 
 interface TechItem {
   name: string;
@@ -52,6 +55,10 @@ const iconComponents: Record<
   "tmdb api": FaCode,
   claudecode: SiClaude,
   gemini: SiGooglegemini,
+  unreal: SiUnrealengine,
+  blender: SiBlender,
+  comfyui: FaCopyright,
+  aftereffects: SiAdobeaftereffects,
   default: FaCode,
 };
 

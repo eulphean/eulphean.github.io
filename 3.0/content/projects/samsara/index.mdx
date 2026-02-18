@@ -1,7 +1,7 @@
 ---
-title: "Samsara"
+title: "Saṃsāra"
 subtitle: "A monumental LED installation exploring the cycle of creation and dissolution through generative visuals and spatial audio."
-heroImage: "/headshot.jpg"
+heroImage: "/projects/samsara/overview/cover_all.jpg"
 client: "Hyde Park Art Center"
 role: "Lead Creative Technologist"
 location: "Chicago"
@@ -15,52 +15,77 @@ nextProject:
 
 <Overview>
 
-Samsara is a monumental LED installation that translates the ancient concept of cyclical existence into a multisensory experience. Spanning a 50-foot space with large-scale LED panels and a 12-channel spatial audio system, the piece immerses audiences in generative visuals of creation and dissolution powered by a custom GPU particle simulation.
+<VimeoPlayer 
+  autoplay={true}
+  loop={true}
+  controls={false}
+  title="Saṃsāra"
+  subtitle="PANORAMIC SCROLL"
+  centered
+  src="https://player.vimeo.com/video/1150568543" 
+/>
+
+Saṃsāra is a monumental video installation inspired by the nine Genesis paintings in the Sistine Chapel, featuring nine AI generated videos embedded inside a meticulously crafted architecture of sever machines disguised as Corinthian Columns. Developed with Unreal Engine, Blender, Stable Diffusion, and After Effects, the work introduces new pipelines and workflows at the intersection of Generative AI and real-time 3D rendering.
+
+<ButtonGroup>
+  <Button href="https://www.artstation.com/artwork/V2Ov4R" icon="external">View ArtStation</Button>
+  <Button href="https://github.com/eulphean/samsara" icon="github">GitHub Repo</Button>
+</ButtonGroup>
 
 </Overview>
 
 <Challenge>
 
-Create an intelligent movie recommendation system that goes beyond basic algorithmic suggestions
+<ImageGrid columns={1}>
+  <ImageCard 
+    src="/projects/samsara/challenge/challenge.jpg" 
+    title="Saṃsāra Pipeline" 
+    subtitle="FROM CHALLENGE TO RESULT"
+    aspect="auto"
+    fit="contain"
+    centered
+  />
+</ImageGrid>
 
-<TechStack items={[
-  { name: "Three.js", icon: "threejs" },
-  { name: "TypeScript", icon: "typescript" },
-  { name: "GLSL Shaders", icon: "glsl" },
-  { name: "WebSocket", icon: "websocket" }
-]} />
 
 </Challenge>
 
 <Build>
 
-To achieve the required performance, I implemented a custom GPGPU particle simulation running entirely on the GPU. This allowed us to render over 500,000 particles at 60fps while leaving CPU headroom for audio processing and network communication.
-
-The architecture consisted of three main components: a central control server, distributed rendering nodes for each LED panel, and a dedicated audio processing unit. All components communicated via WebSocket for sub-millisecond synchronization.
+<TechStack items={[
+  { name: "Unreal Engine", icon: "unreal" },
+  { name: "Blender", icon: "blender" },
+  { name: "ComfyUI", icon: "comfyui" },
+  { name: "After Effects" , icon: "aftereffects" }
+]} />
 
 <ImageGrid columns={2}>
   <ImageCard 
-    src="/projects/samsara/architecture.jpg" 
-    title="System Architecture" 
-    subtitle="TECHNICAL OVERVIEW"
-    href="/projects/samsara/build/schematic"
+    src="/projects/samsara/build/tiles/3d.jpg" 
+    title="3D Modelling & Procedural Materials" 
+    subtitle="SCULPTURAL FOUNDATION"
+    aspect="square"
+    href="/projects/samsara/build/sculpture"
   />
   <ImageCard 
-    src="/projects/samsara/particles.jpg" 
-    title="Particle System" 
-    subtitle="GPU SIMULATION"
+    src="/projects/samsara/build/tiles/blueprints.jpg" 
+    title="Blueprint-Driven Camera & Environment Systems" 
+    subtitle="PROCEDURAL ARCHITECTURE"
+    aspect="square"
     href="/projects/samsara/build/particles"
   />
   <ImageCard 
-    src="/projects/samsara/audio.jpg" 
-    title="Audio Integration" 
-    subtitle="SPATIAL SOUND DESIGN"
-    href="/projects/samsara/build/audio"
+    src="/projects/samsara/build/tiles/comfyui.jpg" 
+    title="Image & Video Synthesis with ComfyUI" 
+    subtitle="AI-GENERATED IMAGERY"
+    aspect="square"
+    href="/projects/samsara/build/procedural"
   />
   <ImageCard 
-    src="/projects/samsara/installation.jpg" 
-    title="Installation Setup" 
-    subtitle="PHYSICAL BUILD"
+    src="/projects/samsara/build/tiles/ae.jpg" 
+    title="Post-Production in After Effects" 
+    subtitle="FINAL COMPOSITION"
+    aspect="square"
     href="/projects/samsara/build/installation"
   />
 </ImageGrid>
@@ -69,26 +94,14 @@ The architecture consisted of three main components: a central control server, d
 
 <Result>
 
-The installation was successfully deployed at the Chicago Digital Arts Festival 2025, where it ran continuously for three weeks. We achieved stable 60fps performance across all eight LED panels while maintaining perfect audio synchronization.
-
-The piece received critical acclaim and was featured in several digital art publications. Over 15,000 visitors experienced the installation during its run.
-
-<ImageGrid columns={2}>
-  <ImageCard 
-    src="/projects/samsara/result-1.jpg" 
-    title="Opening Night" 
-    subtitle="CHICAGO DIGITAL ARTS FESTIVAL"
-  />
-  <ImageCard 
-    src="/projects/samsara/result-2.jpg" 
-    title="Audience Experience" 
-    subtitle="IMMERSIVE ENVIRONMENT"
-  />
-</ImageGrid>
-
-<ButtonGroup>
-  <Button href="https://samsara.amaykataria.com" icon="external">View Documentation</Button>
-  <Button href="https://github.com/eulphean/samsara" icon="github">GitHub Repo</Button>
-</ButtonGroup>
+<VimeoPlayer 
+  autoplay={true}
+  loop={true}
+  controls={true}
+  title="Saṃsāra"
+  subtitle="DRONE FOOTAGE"
+  centered
+  src="https://player.vimeo.com/video/1163403449" 
+/>
 
 </Result>
