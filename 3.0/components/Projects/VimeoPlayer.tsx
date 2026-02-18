@@ -68,7 +68,27 @@ export default function VimeoPlayer({
     );
 
   if (inline) {
-    return player;
+    return (
+      <div>
+        {player}
+        {(title || subtitle) && (
+          <div
+            className={`flex items-start ${centered ? "justify-center text-center" : "justify-between"} mt-3`}
+          >
+            <div>
+              {title && (
+                <h4 className="text-sm font-semibold text-gray-900">{title}</h4>
+              )}
+              {subtitle && (
+                <p className="text-xs text-gray-400 tracking-wide mt-1">
+                  {subtitle}
+                </p>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    );
   }
 
   return (

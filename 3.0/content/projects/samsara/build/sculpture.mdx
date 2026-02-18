@@ -14,12 +14,28 @@ technologies: ["Three.js", "TypeScript", "GLSL", "WebGL", "WebSocket"]
   autoplay={true}
   loop={true}
   controls={false}
+  title="A single combined mesh with face-selected materials to paint in Unreal Engine."
+  subtitle="COLUMN (BLENDER)"
+  centered
 />
 
 <ImageCarousel
-  title="Pick your Vibe (moodConstants.ts)" 
-  subtitle="MOOD CONFIGURATION"
+  title="Procedural Materials" 
+  subtitle="COLUMN MATERIALS (UNREAL)"
+  captions={["Column Preview", "LED Rotate Material: Shader to control the LED movements on the column", "Fresnel Body Material: Custom fresnel material using vector dot products to control fresnel on column objects", "Fan Material: Vertex shader to rotate fan vertices using world position offset", "Flicker Grid Material: Fragment shader to uniquely animate a visual grid for each column instance"]}
 >
+
+  <VimeoPlayer 
+    autoplay={true}
+    loop={true}
+    controls={true}
+    src="https://player.vimeo.com/video/1166108354?h=6c351b08d2" 
+    inline
+    aspect="manual"
+    width={1200}
+    height={2400}
+  />
+  
   <VimeoPlayer 
     autoplay={true}
     loop={true}
