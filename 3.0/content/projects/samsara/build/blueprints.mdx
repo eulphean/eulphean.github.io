@@ -2,11 +2,11 @@
 title: "PROCEDURAL ARCHITECTURE"
 subtitle: "Blueprint-driven Camera & Environment Systems"
 order: 2
-objective: "Model and paint five core architectural assets for the installation's environment"
-technicalDecisions: "Blender for 3D modeling; Unreal Engine 5.5 for procedural materials using custom shaders; single mesh with face-painted materials for efficient instantiation."
-keyInnovation: "Aesthetic fusion of Rococo architecture with industrial computer hardware"
-outcome: "Reusable asset library ready to import into Unreal Engine"
-technologies: ["Blender", "Unreal Engine 5.5"]
+objective: "Create a customizable architecture and panoramic rendering pipeline"
+technicalDecisions: "Spline-based procedural Blueprint for asset instantiation enabling an aligned architecture; dynamic multi-camera placement along a spline to capture a continuous panoramic shot"
+keyInnovation: "Blueprint-driven camera array generating perspectivally correct outputs for all nine panels without manual repositioning"
+outcome: "Procedural architecture placement enabling faster iterations, with an automated multi-camera pipeline capturing overlapping areas for compositing"
+technologies: ["Unreal Engine 5.5"]
 ---
 
 <VimeoPlayer 
@@ -18,7 +18,7 @@ technologies: ["Blender", "Unreal Engine 5.5"]
   aspect="manual"
   width={1920}
   height={750}
-  title="Interactively arrange 10 cameras along a spline using a dynamic camera config (demo)"
+  title="Instance based procudural system using a spline (demo)"
   subtitle="BP_ARCH_LAYOUT_MANAGER (UNREAL)"
   centered
 />
@@ -67,7 +67,7 @@ technologies: ["Blender", "Unreal Engine 5.5"]
   loop={true}
   controls={false}
   src="https://player.vimeo.com/video/1166164180?h=00b6849c0a" 
-  title="Interactively arranging 10 cameras along a spline using a dynamic camera config (demo)"
+  title="Interactively arrange 10 cameras along a spline using a dynamic camera config (demo)"
   subtitle="BP_CAMERACONFIG (UNREAL)"
   centered
   aspect="manual"

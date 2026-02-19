@@ -2,6 +2,120 @@
 title: "AI-Generated Imagery"
 subtitle: "Image & Video Synthesis"
 order: 3
+objective: "Generate painterly AI video for each of the nine narrative panels by using 4 images per panel"
+technicalDecisions: "JuggernautXL checkpoint, oil painting + world-of-light LoRAs, Wan2.2 for video generation, SageAttention & GGUF models for faster local generations"
+keyInnovation: "Stitching multiple segments with padded frames for upscaling, \"made of light\" prompting with diorama framing for tight, multi-subject compositions with unified visual language"
+outcome: "Nine cyclical, stylistically consistent AI-generated videos adhering to a narrative of Samsara"
+technologies: ["ComfyUI", "Stable Diffusion", "Wan2.2", "After Effects"]
 ---
 
-Content coming soon.
+<VimeoPlayer
+  autoplay={true}
+  loop={true}
+  controls={false}
+  src="https://player.vimeo.com/video/1166374967?h=1990d9faf1"
+  title="Each video panel is composed of four images (sub-plots), with total 36 generated images"
+  subtitle="VIDEO PANELS OVERVIEW (COMFYUI)"
+  centered
+/>
+
+<ImageCarousel
+  title="Procedural Materials"
+  subtitle="IMAGE GENERATION WORKFLOW (COMFYUI)"
+  captions={["Four Step Image Generation Process: Composition, Styling, Detailing, and Upscaling", "Composition (Step 1): Prompt based composition workflow using a stack of Loras", "Styling (Step 2): Prompt based styling workflow to control light, colors, and small composition details", "Detailing (Step 3): Add slight noise in the image to improve blurry areas", "Upscaling (Step 4): Tiled upscaler to upscaled the image by deconstructing it into smaller tiles"]}
+>
+
+  <VimeoPlayer
+    autoplay={true}
+    loop={true}
+    controls={false}
+    src="https://player.vimeo.com/video/1166375121?h=4337508b40"
+    inline
+    aspect="manual"
+    width={1920}
+    height={850}
+  />
+
+  <ImageCard
+    src="/projects/samsara/build/comfyui/image/composition.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+
+   <VimeoPlayer
+    autoplay={true}
+    loop={true}
+    controls={false}
+    src="https://player.vimeo.com/video/1166389303?h=ad22442ae7"
+    inline
+    aspect="manual"
+    width={1600}
+    height={850}
+  />
+
+  <ImageCard
+    src="/projects/samsara/build/comfyui/image/detailing.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+
+  <ImageCard
+    src="/projects/samsara/build/comfyui/image/upscaling.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+
+</ImageCarousel>
+
+<VimeoPlayer
+  autoplay={true}
+  loop={true}
+  controls={false}
+  src="https://player.vimeo.com/video/1166391277?h=92fb602fbb"
+  title="Four generated images lead to four unique segements that are upscaled, composited, and interpolated to create the final video"
+  subtitle="VIDEO GENERATION WORKFLOW (COMFYUI)"
+  centered
+  centered
+  inline
+  aspect="manual"
+  width={1920}
+  height={1200}
+/>
+
+<ImageCarousel
+  title="Procedural Materials"
+  subtitle="VIDEO GENERATION WORKFLOW (COMFYUI)"
+  captions={["Animation Breakdown: First frame morphs into second, second into third, third, into fourth, and fourth back into the first for a cyclical animation", "Composition: Wan2.2 First-Frame, Last-Frame workflow to create four unique segments", "Upscaling: Tiled upscaling workflow that upscales each video frame", "Interpolation: Workflow to convert the final composited 16fps video to 30fps"]}
+>
+
+  <VimeoPlayer
+    autoplay={true}
+    loop={true}
+    controls={false}
+    src="https://player.vimeo.com/video/1166391465?h=5cff7e9432"
+    centered
+    inline
+    aspect="manual"
+    width={1450}
+    height={850}
+  />
+
+  <ImageCard
+    src="/projects/samsara/build/comfyui/video/composition.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+
+  <ImageCard
+    src="/projects/samsara/build/comfyui/video/upscale.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+
+  <ImageCard
+    src="/projects/samsara/build/comfyui/video/interpolation.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+
+</ImageCarousel>
