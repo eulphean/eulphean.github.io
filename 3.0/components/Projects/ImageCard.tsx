@@ -89,5 +89,9 @@ export default function ImageCard({
     return <Link href={href}>{content}</Link>;
   }
 
-  return content;
+  return (
+    <a href={src} target="_blank" rel="noopener noreferrer">
+      {content}
+    </a>
+  );
 }

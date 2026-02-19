@@ -1,3 +1,8 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+import Player from "@vimeo/player";
+
 interface VimeoPlayerProps {
   src: string;
   autoplay?: boolean;
@@ -37,13 +42,41 @@ export default function VimeoPlayer({
 
   const videoSrc = `${src}${src.includes("?") ? "&" : "?"}${urlParams.toString()}`;
 
+  const [isLoading, setIsLoading] = useState(true);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  useEffect(() => {
+    if (!iframeRef.current) return;
+
+    const player = new Player(iframeRef.current);
+
+    player.ready().then(() => {
+      setIsLoading(false);
+    });
+
+    return () => {
+      player.destroy();
+    };
+  }, [videoSrc]);
+
+  const loadingOverlay = isLoading && (
+    <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-100 rounded-lg z-10">
+      <div className="w-6 h-6 border-2 border-gray-300 border-t-gray-900 rounded-full animate-spin" />
+      <p className="text-xs text-gray-400 mt-3 tracking-wide">
+        Loading Some Amazing Stuff
+      </p>
+    </div>
+  );
+
   const player =
     aspect === "manual" && width && height ? (
       <div
         className="relative h-full"
         style={{ aspectRatio: `${width}/${height}` }}
       >
+        {loadingOverlay}
         <iframe
+          ref={iframeRef}
           className={`absolute top-0 left-0 w-full h-full ${inline ? "" : "rounded-lg"}`}
           src={videoSrc}
           title={title || "vimeo-player"}
@@ -52,10 +85,19 @@ export default function VimeoPlayer({
           allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
           allowFullScreen
         />
+        <a
+          href={videoSrc}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 z-20"
+          aria-label="Open on Vimeo"
+        />
       </div>
     ) : (
       <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        {loadingOverlay}
         <iframe
+          ref={iframeRef}
           className={`absolute top-0 left-0 w-full h-full ${inline ? "" : "rounded-lg"}`}
           src={videoSrc}
           title={title || "vimeo-player"}
@@ -63,6 +105,13 @@ export default function VimeoPlayer({
           referrerPolicy="strict-origin-when-cross-origin"
           allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
           allowFullScreen
+        />
+        <a
+          href={videoSrc}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 z-20"
+          aria-label="Open on Vimeo"
         />
       </div>
     );

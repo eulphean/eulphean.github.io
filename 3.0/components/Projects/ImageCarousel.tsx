@@ -98,22 +98,16 @@ export default function ImageCarousel({
       )}
       <style jsx global>{`
         .carousel-scroll {
-          scrollbar-width: none;
-        }
-        .carousel-scroll::-webkit-scrollbar {
-          display: none;
-        }
-        .carousel-scroll:hover {
           scrollbar-width: thin;
         }
-        .carousel-scroll:hover::-webkit-scrollbar {
+        .carousel-scroll::-webkit-scrollbar {
           display: block;
           height: 6px;
         }
-        .carousel-scroll:hover::-webkit-scrollbar-track {
+        .carousel-scroll::-webkit-scrollbar-track {
           background: transparent;
         }
-        .carousel-scroll:hover::-webkit-scrollbar-thumb {
+        .carousel-scroll::-webkit-scrollbar-thumb {
           background: #d1d5db;
           border-radius: 3px;
         }
