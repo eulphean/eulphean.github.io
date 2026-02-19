@@ -18,7 +18,7 @@ technologies: ["Blender", "Unreal Engine 5.5"]
   aspect="manual"
   width={1920}
   height={750}
-  title="Instance based procedural system using a spline (demo)"
+  title="Interactively arrange 10 cameras along a spline using a dynamic camera config (demo)"
   subtitle="BP_ARCH_LAYOUT_MANAGER (UNREAL)"
   centered
 />
@@ -26,8 +26,8 @@ technologies: ["Blender", "Unreal Engine 5.5"]
 
 <ImageCarousel
   title="Procedural Materials" 
-  subtitle="COLUMN MATERIALS (UNREAL)"
-  captions={["Blueprint Architecture Overview", "Construction Script Schematic: Lays out all the instanced meshes along the spline", "getTransformAlongSpline() schematic: Gets a transform (translation, rotation, and scale), given a point on the spline", "createRepeatedInstancesByNum() schematic: Instantiates multiples instances based on number of points along the spline", "createRepeatedInstances() schematic: Instantiates multiples instances within the constraints of the spline, keeping the original width of the instance into account"]}
+  subtitle="BP_CAMERACONFIG (UNREAL)"
+  captions={["Blueprint Architecture Overview", "Construction Script : Lays out all the instanced meshes along the spline", "getTransformAlongSpline() schematic: Gets a transform (translation, rotation, and scale), given a point on the spline", "createRepeatedInstancesByNum() schematic: Instantiates multiples instances based on number of points along the spline", "createRepeatedInstances() schematic: Instantiates multiples instances within the constraints of the spline, keeping the original width of the instance"]}
   centered
 >
   
@@ -60,4 +60,87 @@ technologies: ["Blender", "Unreal Engine 5.5"]
     aspect="auto"
     fit="contain"
   />
+</ImageCarousel>
+
+<VimeoPlayer 
+  autoplay={true}
+  loop={true}
+  controls={false}
+  src="https://player.vimeo.com/video/1166164180?h=00b6849c0a" 
+  title="Interactively arranging 10 cameras along a spline using a dynamic camera config (demo)"
+  subtitle="BP_CAMERACONFIG (UNREAL)"
+  centered
+  aspect="manual"
+  width={1920}
+  height={1000}
+/>
+
+<ImageCarousel
+  title="Procedural Materials" 
+  subtitle="BP_CAMERACONFIG (UNREAL)"
+  captions={["Blueprint Architecture Overview", "Each camera renders an image that overlaps with the image on its left and on its right to composite a panoramic image", "Construction Script schematic: Sets up the spline and the cameras", "setupCameras() schematic: Reads the cameraConfig, dynamically creates all the cameras and places them along the spline"]}
+>
+  <ImageCard 
+    src="/projects/samsara/build/blueprints/camera/architecture/1.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
+  <VimeoPlayer 
+  autoplay={true}
+  loop={true}
+  controls={false}
+  src="https://player.vimeo.com/video/1166164085?h=6db162051c" 
+  inline
+  aspect="manual"
+  width={1920}
+  height={1000}
+/>
+    <ImageCard 
+    src="/projects/samsara/build/blueprints/camera/architecture/2.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
+    <ImageCard 
+    src="/projects/samsara/build/blueprints/camera/architecture/3.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
+</ImageCarousel>
+
+<ImageCarousel
+  title="Procedural Materials" 
+  subtitle="BP_CAMERACONFIG (UNREAL)"
+  captions={["Custom MRQ rendering system to automate rendering multiple cameras using a single predefined sequence", "eventGraph schematic: Automates Movie Render Queue (MRQ)", "updateOutputNames() schematic: Updates directories, jobs, and rendered file names for each camera sequence that is about to get rendered", "enableMediaTracks() schematic: Enable/disable specific media tracks in the sequence based on the current camera that is being rendered"]}
+>
+
+<VimeoPlayer 
+  autoplay={true}
+  loop={true}
+  controls={false}
+  src="https://player.vimeo.com/video/1166175970?h=49f2d29c87" 
+  inline
+  aspect="manual"
+  width={1920}
+  height={600}
+/>
+  <ImageCard 
+    src="/projects/samsara/build/blueprints/camera/mrq/1.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+    <ImageCard 
+    src="/projects/samsara/build/blueprints/camera/mrq/2.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
+    <ImageCard 
+    src="/projects/samsara/build/blueprints/camera/mrq/3.jpg"
+    aspect="auto"
+    fit="contain"
+  />
+  
 </ImageCarousel>
