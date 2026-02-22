@@ -32,7 +32,7 @@ interface TechStackProps {
 // Icon mapping using React Icons
 const iconComponents: Record<
   string,
-  React.ComponentType<{ className?: string }>
+  React.ComponentType<{ className?: string }> | any
 > = {
   nextjs: SiNextdotjs,
   "next.js": SiNextdotjs,
