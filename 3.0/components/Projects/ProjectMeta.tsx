@@ -15,7 +15,7 @@ export default function ProjectMeta({
 }: ProjectMetaProps) {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 border-b border-gray-200">
-      <div className="flex flex-wrap justify-between gap-8">
+      <div className="flex flex-col md:flex-row md:flex-wrap md:justify-between gap-8">
         <div>
           <span className="text-gray-400 text-xs tracking-widest block mb-2">
             CLIENT
@@ -37,7 +37,7 @@ export default function ProjectMeta({
             {duration && <span className="text-gray-400"> / {duration}</span>}
           </span>
         </div>
-        <div className="text-right">
+        <div className="md:text-right">
           <span className="text-gray-400 text-xs tracking-widest block mb-2">
             ROLE
           </span>

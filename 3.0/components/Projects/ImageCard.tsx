@@ -52,33 +52,31 @@ export default function ImageCard({
         />
       </div>
       {title && (
-        <div
-          className={`flex items-start mt-3 ${centered ? "justify-center text-center" : "justify-between"}`}
-        >
-          <div>
+        <div className="mt-3">
+          <div className="flex items-center justify-center sm:justify-start gap-2">
             <h4 className="text-sm font-semibold text-gray-900 group-hover:text-blue-500 transition-colors">
               {title}
             </h4>
-            {subtitle && (
-              <p className="text-xs text-gray-400 tracking-wide mt-1">
-                {subtitle}
-              </p>
+            {href && (
+              <svg
+                className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             )}
           </div>
-          {href && !centered && (
-            <svg
-              className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors mt-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+          {subtitle && (
+            <p className="text-xs text-gray-400 tracking-wide mt-1 text-center sm:text-left">
+              {subtitle}
+            </p>
           )}
         </div>
       )}
