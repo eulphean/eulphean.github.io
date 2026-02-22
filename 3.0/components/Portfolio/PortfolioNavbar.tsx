@@ -29,22 +29,32 @@ export default function PortfolioNavbar({
               onClick={() => handleClick("hero")}
               className="text-black text-xs tracking-wide hover:text-gray-600 transition-colors"
             >
-              <span className="font-normal">AMAY KATARIA</span>
-              <span className="font-light text-gray-400">
-                {" "}
-                / CREATIVE TECHNOLOGIST
-              </span>
+              <div className="flex sm:flex-row flex-col sm:items-baseline items-start">
+                <span className="font-normal">AMAY KATARIA</span>
+                <span className="font-light text-gray-400 hidden sm:inline">
+                  {" "}
+                  / CREATIVE TECHNOLOGIST
+                </span>
+                <span className="font-light text-gray-400 sm:hidden">
+                  CREATIVE TECHNOLOGIST
+                </span>
+              </div>
             </button>
           ) : (
             <Link
               href="/creativetech"
               className="text-black text-xs tracking-wide hover:text-gray-600 transition-colors"
             >
-              <span className="font-normal">AMAY KATARIA</span>
-              <span className="font-light text-gray-400">
-                {" "}
-                / CREATIVE TECHNOLOGIST
-              </span>
+              <div className="flex sm:flex-row flex-col sm:items-baseline items-start">
+                <span className="font-normal">AMAY KATARIA</span>
+                <span className="font-light text-gray-400 hidden sm:inline">
+                  {" "}
+                  / CREATIVE TECHNOLOGIST
+                </span>
+                <span className="font-light text-gray-400 sm:hidden">
+                  TECHNOLOGIST
+                </span>
+              </div>
             </Link>
           )}
 
