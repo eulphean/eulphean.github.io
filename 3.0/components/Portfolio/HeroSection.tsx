@@ -39,9 +39,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
           {/* Quote */}
           <div className="mb-4">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight">
-              Creating custom tools for
-              <br />
-              <span className="text-blue-500 italic">novel</span> workflows.
+              Creating custom tools for <span className="text-blue-500 italic">novel</span> workflows.
             </h1>
           </div>
 
