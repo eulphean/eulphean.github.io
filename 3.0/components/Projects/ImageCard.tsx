@@ -53,7 +53,7 @@ export default function ImageCard({
       </div>
       {title && (
         <div className="mt-3">
-          <div className="flex items-center justify-center sm:justify-start gap-2">
+          <div className={`flex items-center justify-center ${centered ? "sm:justify-center" : "sm:justify-between"} gap-2`}>
             <h4 className="text-sm font-semibold text-gray-900 group-hover:text-blue-500 transition-colors">
               {title}
             </h4>
@@ -74,7 +74,7 @@ export default function ImageCard({
             )}
           </div>
           {subtitle && (
-            <p className="text-xs text-gray-400 tracking-wide mt-1 text-center sm:text-left">
+            <p className={`text-xs text-gray-400 tracking-wide mt-1 text-center ${centered ? "sm:text-center" : "sm:text-left"}`}>
               {subtitle}
             </p>
           )}
