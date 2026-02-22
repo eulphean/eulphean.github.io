@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 interface ImageGridProps {
   children: ReactNode;
-  columns?: 2 | 3 | 4;
+  columns: 2 | 3 | 4;
 }
 
 export default function ImageGrid({ children, columns = 2 }: ImageGridProps) {
