@@ -20,7 +20,7 @@ export default function ContactSection({ id }: ContactSectionProps) {
           {/* Center - Social Links */}
           <div className="flex items-center gap-8">
             <a
-              href="https://instagram.com/amaykataria"
+              href="https://instagram.com/amay.kataria"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 text-xs tracking-widest hover:text-gray-600 transition-colors"
@@ -36,7 +36,7 @@ export default function ContactSection({ id }: ContactSectionProps) {
               LINKEDIN
             </a>
             <a
-              href="mailto:amay@amaykataria.com"
+              href="mailto:studio@amaykataria.com"
               className="text-gray-400 text-xs tracking-widest hover:text-gray-600 transition-colors"
             >
               EMAIL

@@ -39,24 +39,35 @@ export default function HeroSection({ id }: HeroSectionProps) {
           {/* Quote */}
           <div className="mb-4">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight">
-              You cannot drift to the
+              Creating custom tools for
               <br />
-              <span className="text-blue-500 italic">top</span> of the mountain.
+              <span className="text-blue-500 italic">novel</span> workflows.
             </h1>
           </div>
 
           {/* Bio Description */}
           <div className="space-y-6 mb-8 text-gray-600 leading-relaxed text-justify">
             <p>
-              Amay Kataria is a new media artist and creative technologist based
-              in Chicago. His work investigates the emergent properties of
-              complex systems, translating algorithms into immersive visual
-              experiences.
+              Amay Kataria is a Creative Technologist, building AI-integrated
+              production pipelines for real-time 2D/3D environments. With 5
+              years of software engineering experience at Microsoft and an MFA
+              in Art & Technology, he specializes in developing custom workflows
+              that bridge AI tools with Unreal Engine, web platforms, and
+              interactive experiences.
             </p>
+
             <p>
-              With a background in computational architecture, Amay creates
-              digital sculptures that exist on the boundary of the physical and
-              the virtual, often utilizing VR, AR, and projection mapping.
+              His technical focus includes ComfyUI integration, LLM-driven
+              applications, and Blueprint development for production automation.
+              Recent projects demonstrate end-to-end pipeline development, from
+              AI workflow architecture to interactive deployment.
+            </p>
+
+            <p>
+              Kataria's work has been exhibited internationally at Ars
+              Electronica, Vector Festival, and other venues. He holds an MFA
+              from the School of the Art Institute of Chicago and a Bachelor's
+              in Computer Engineering from Virginia Tech.
             </p>
           </div>
 
@@ -67,7 +78,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
                 PRIMARY FOCUS
               </span>
               <span className="text-gray-400 text-xs tracking-wide">
-                REAL-TIME RENDERING / ML
+                REAL-TIME 2D/3D/ML
               </span>
             </div>
             <div className="flex justify-between items-center pt-2">
@@ -75,7 +86,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
                 CURRENT RESEARCH
               </span>
               <span className="text-gray-400 text-xs tracking-wide">
-                LATENT SPACE NAVIGATION
+                CUSTOM AI WORKFLOWS
               </span>
             </div>
           </div>
