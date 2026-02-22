@@ -141,7 +141,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const fileContents = fs.readFileSync(projectPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const mdxSource = await serialize(content);
+  const mdxSource = await serialize(content, {
+    parseFrontmatter: false,
+  });
 
   return {
     props: {
