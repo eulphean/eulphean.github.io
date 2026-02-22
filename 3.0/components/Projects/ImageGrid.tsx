@@ -6,6 +6,7 @@ interface ImageGridProps {
 }
 
 export default function ImageGrid({ children, columns }: ImageGridProps) {
+  console.log("COLUMNS are:", columns);
   return (
     <>
       {columns === 3 && (
