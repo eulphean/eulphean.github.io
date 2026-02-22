@@ -141,6 +141,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const fileContents = fs.readFileSync(projectPath, "utf8");
   const { data, content } = matter(fileContents);
 
+  // blockJS should be false so we can use JS in MDX
   const mdxSource = await serialize(content, {
     parseFrontmatter: false,
     blockJS: false,
