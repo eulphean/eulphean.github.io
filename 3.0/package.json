@@ -4,7 +4,7 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "vercel-build": "npm run prepare && next build"
+    "vercel-build": "next build"
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
