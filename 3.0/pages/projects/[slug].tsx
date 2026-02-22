@@ -143,6 +143,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const mdxSource = await serialize(content, {
     parseFrontmatter: false,
+    blockJS: false,
   });
 
   return {

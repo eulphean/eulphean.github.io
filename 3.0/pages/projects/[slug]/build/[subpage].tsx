@@ -223,7 +223,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       ? allSubpages[currentIndex + 1]
       : null;
 
-  const mdxSource = await serialize(content);
+  const mdxSource = await serialize(content, {
+    parseFrontmatter: false,
+    blockJS: false,
+  });
 
   return {
     props: {
