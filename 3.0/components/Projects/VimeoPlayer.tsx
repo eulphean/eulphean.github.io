@@ -35,7 +35,7 @@ export default function VimeoPlayer({
   // Add Vimeo parameters to the URL
   const urlParams = new URLSearchParams();
   if (autoplay) urlParams.append("autoplay", "1");
-  if (!controls) urlParams.append("controls", "0");
+  urlParams.append("controls", controls ? "1" : "0");
   if (loop) urlParams.append("loop", "1");
   if (muted) urlParams.append("muted", "1");
   if (autoplay) urlParams.append("autopause", "0"); // Don't pause when out of view

@@ -37,9 +37,9 @@ export default function ImageCard({
   };
 
   const content = (
-    <div className="group cursor-pointer">
+    <div className="group cursor-pointer w-full">
       <div
-        className={`relative overflow-hidden rounded-lg bg-gray-100 border border-gray-200 ${aspect === "auto" ? "" : ""}`}
+        className={`relative overflow-hidden rounded-lg bg-gray-100 border border-gray-200 w-full ${aspect === "auto" ? "" : ""}`}
         style={{ aspectRatio: getAspectRatio() }}
       >
         <Image
