@@ -75,7 +75,7 @@ export default function SubPage({
   const prevSubpage = currentIndex > 0 ? allSubpages[currentIndex - 1] : null;
 
   return (
-    <div className="h-screen bg-white font-space-grotesk flex flex-col overflow-hidden">
+    <div className="lg:h-screen bg-white font-space-grotesk flex flex-col overflow-x-hidden">
       <Head>
         <title>
           {frontmatter.title} - {projectTitle} - Amay Kataria
@@ -95,15 +95,15 @@ export default function SubPage({
       <SubPageTitle title={frontmatter.title} subtitle={frontmatter.subtitle} />
 
       {/* Main Content Area with Two Columns */}
-      <div className="overflow-hidden grid grid-cols-1 lg:grid-cols-[1fr_auto]">
+      <div className="overflow-hidden grid grid-cols-1 lg:grid-cols-[1fr_auto] lg:overflow-hidden lg:h-full">
         {/* Left Column: Scrollable Content + Footer */}
-        <div className="overflow-auto flex flex-col justify-between h-full">
+        <div className="flex flex-col lg:overflow-auto lg:h-full">
           {/* Scrollable MDX Content */}
-          <main className="overflow-y-auto p-12 w-full no-scrollbar [&>*:first-child]:mt-0 [&>*:last-child]:mb-0">
+          <main className="overflow-y-auto lg:overflow-y-auto p-12 w-full no-scrollbar [&>*:first-child]:mt-0 [&>*:last-child]:mb-0">
             <MDXRemote {...mdxSource} components={components} />
           </main>
 
-          {/* Footer Navigation - Stays at bottom */}
+          {/* Footer Navigation */}
           <div className="">
             <SubPageFooter
               prevSubpage={prevSubpage}

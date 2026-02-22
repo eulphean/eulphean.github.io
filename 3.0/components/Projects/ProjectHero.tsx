@@ -29,10 +29,13 @@ export default function ProjectHero({
       {/* Title Content */}
       <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-16">
         <div className="max-w-4xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-            {title}
-          </h1>
-          <p className="text-lg text-gray-300 max-w-2xl">{subtitle}</p>
+          <div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
+              {title}
+            </h1>
+            <div className="sm:hidden text-lg text-gray-300">BUILD</div>
+          </div>
+          <p className="text-lg text-gray-300 max-w-2xl mt-4">{subtitle}</p>
         </div>
       </div>
     </div>

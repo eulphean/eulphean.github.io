@@ -11,7 +11,7 @@ export default function ContactSection({ id }: ContactSectionProps) {
       className="bg-white border-t border-gray-200 py-4 px-8 lg:px-16 font-space-grotesk"
     >
       <div className="max-w-7xl w-full mx-auto">
-        <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between gap-6">
+        <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between gap-2 sm:gap-6">
           {/* Left - Name and Info */}
           <div className="text-gray-400 text-xs tracking-widest">
             <span>© AMAY KATARIA 2026</span>

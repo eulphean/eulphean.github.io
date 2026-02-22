@@ -21,16 +21,16 @@ export default function SubPageFooter({
 }: SubPageFooterProps) {
   return (
     <div className="bg-transparent border-t border-gray-200">
-      <div className="w-full px-12 py-3">
-        <div className="flex justify-between items-center">
+      <div className="w-full px-6 py-2">
+        <div className="flex justify-between items-center gap-4">
           {/* Previous Button - Left side */}
           {prevSubpage ? (
             <Link
               href={`/projects/${projectSlug}/build/${prevSubpage.slug}`}
-              className="flex items-center gap-2 px-6 py-3 text-xs font-medium tracking-wide border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors"
+              className="flex items-center gap-2 px-4 py-2 text-xs font-medium tracking-wide border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors"
             >
               <svg
-                className="w-4 h-4"
+                className="w-3 h-3"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -42,7 +42,8 @@ export default function SubPageFooter({
                   d="M10 19l-7-7m0 0l7-7m-7 7h18"
                 />
               </svg>
-              PREVIOUS: {prevSubpage.title.toUpperCase()}
+              <span className="hidden sm:inline">PREVIOUS: {prevSubpage.title.toUpperCase()}</span>
+              <span className="sm:hidden">PREVIOUS</span>
             </Link>
           ) : (
             <div />
@@ -52,11 +53,12 @@ export default function SubPageFooter({
           {nextSubpage ? (
             <Link
               href={`/projects/${projectSlug}/build/${nextSubpage.slug}`}
-              className="flex items-center gap-2 px-6 py-3 text-xs font-medium tracking-wide border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors"
+              className="flex items-center gap-2 px-4 py-2 text-xs font-medium tracking-wide border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors"
             >
-              NEXT: {nextSubpage.title.toUpperCase()}
+              <span className="hidden sm:inline">NEXT: {nextSubpage.title.toUpperCase()}</span>
+              <span className="sm:hidden">NEXT</span>
               <svg
-                className="w-4 h-4"
+                className="w-3 h-3"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -72,11 +74,12 @@ export default function SubPageFooter({
           ) : (
             <Link
               href={`/projects/${projectSlug}`}
-              className="flex items-center gap-2 px-6 py-3 text-xs font-medium tracking-wide border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors"
+              className="flex items-center gap-2 px-4 py-2 text-xs font-medium tracking-wide border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors"
             >
-              BACK TO {projectTitle.toUpperCase()}
+              <span className="hidden sm:inline">BACK TO {projectTitle.toUpperCase()}</span>
+              <span className="sm:hidden">BACK</span>
               <svg
-                className="w-4 h-4"
+                className="w-3 h-3"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
