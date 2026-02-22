@@ -27,10 +27,10 @@ export default function TechStackSection({ id }: TechStackSectionProps) {
   return (
     <section
       id={id}
-      className="min-h-screen flex flex-col bg-gray-100 pt-32 pb-16 px-8 lg:px-16 font-space-grotesk"
+      className="min-h-screen flex flex-col bg-gray-100 pt-16 pb-16 px-8 lg:px-16 font-space-grotesk"
     >
       {/* Header */}
-      <div className="max-w-7xl w-full mx-auto mb-12 flex justify-between items-center">
+      <div className="max-w-7xl w-full mx-auto mb-8 flex justify-between items-center">
         <span className="text-blue-500 text-xs tracking-widest font-light">
           [ 02. TECH STACK ]
         </span>

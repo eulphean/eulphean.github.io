@@ -20,29 +20,29 @@ const works = [
     tags: "Monumental AI Installation / Video / 2025",
     slug: "samsara",
   },
-  {
-    id: "003",
-    name: "PAIK",
-    tags: "AI Avatar / 3D Web App / 2025",
-    slug: "paik",
-  },
+  // {
+  //   id: "003",
+  //   name: "PAIK",
+  //   tags: "AI Avatar / 3D Web App / 2025",
+  //   slug: "paik",
+  // },
 ];
 
 export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
   return (
     <section
       id={id}
-      className="min-h-screen flex flex-col bg-white pt-32 pb-16 px-8 lg:px-16 font-space-grotesk"
+      className="flex flex-col bg-white pt-16 pb-8 px-8 lg:px-16 font-space-grotesk"
     >
       {/* Header */}
-      <div className="max-w-7xl w-full mx-auto mb-12">
+      <div className="max-w-7xl w-full mx-auto mb-8">
         <span className="text-blue-500 text-xs tracking-widest font-light">
           [ 03. SELECTED PROJECTS ]
         </span>
       </div>
 
       {/* Works List */}
-      <div className="max-w-7xl w-full mx-auto flex-1">
+      <div className="max-w-7xl w-full mx-auto">
         <div className="border-t border-gray-200">
           {works.map((work) => (
             <Link
