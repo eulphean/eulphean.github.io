@@ -13,6 +13,7 @@ import HeroSection from "../components/Portfolio/HeroSection";
 import TechStackSection from "../components/Portfolio/TechStackSection";
 import WorksSection from "../components/Portfolio/WorksSection";
 import ContactSection from "../components/Portfolio/ContactSection";
+import MobileWarningModal from "../components/Portfolio/MobileWarningModal";
 
 export default function CreativeTech() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -44,6 +45,8 @@ export default function CreativeTech() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
+
+      <MobileWarningModal />
 
       <PortfolioNavbar onNavigate={handleNavigate} />
 

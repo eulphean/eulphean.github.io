@@ -78,7 +78,7 @@ export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
           className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
         >
           <span className="text-gray-600 text-xs font-medium tracking-wide">
-            VIEW OTHER WORKS
+            MORE WORKS
           </span>
           <svg
             className="w-4 h-4 text-gray-600"
