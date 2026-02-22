@@ -5,7 +5,7 @@ interface ImageGridProps {
   columns: 2 | 3 | 4;
 }
 
-export default function ImageGrid({ children, columns = 2 }: ImageGridProps) {
+export default function ImageGrid({ children, columns }: ImageGridProps) {
   return (
     <>
       {columns === 3 && (
