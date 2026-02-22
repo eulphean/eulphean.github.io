@@ -42,7 +42,7 @@ export default function TechStackSection({ id }: TechStackSectionProps) {
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className="border-r border-b border-gray-300 p-6 lg:p-8 flex flex-col justify-between min-h-[180px]"
+              className="border-r border-b border-gray-300 p-6 lg:p-8 flex flex-col justify-between min-h-[140px]"
             >
               <span className="text-gray-400 text-xs tracking-wide mb-4">
                 {skill.id}
