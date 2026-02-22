@@ -48,14 +48,19 @@ export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
             <Link
               key={work.id}
               href={`/projects/${work.slug}`}
-              className="flex items-center py-12 border-b border-gray-200 cursor-pointer hover:bg-blue-50 transition-colors px-4 -mx-4"
+              className="flex flex-col sm:flex-row sm:items-center py-12 border-b border-gray-200 cursor-pointer hover:bg-blue-50 transition-colors px-4 -mx-4"
             >
-              <span className="text-gray-400 text-xs tracking-wide w-16">
+              <span className="text-gray-400 text-xs tracking-wide w-16 sm:w-16">
                 {work.id}
               </span>
-              <h3 className="text-gray-900 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight flex-1">
-                {work.name}
-              </h3>
+              <div className="flex-1">
+                <h3 className="text-gray-900 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+                  {work.name}
+                </h3>
+                <span className="text-gray-500 text-xs tracking-widest sm:hidden block mt-2">
+                  {work.tags}
+                </span>
+              </div>
               <span className="text-gray-500 text-xs tracking-widest hidden sm:block">
                 {work.tags}
               </span>
