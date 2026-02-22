@@ -26,7 +26,7 @@ interface TechItem {
 
 interface TechStackProps {
   title?: string;
-  items: TechItem[];
+  items?: TechItem[];
 }
 
 // Icon mapping using React Icons
@@ -64,8 +64,12 @@ const iconComponents: Record<
 
 export default function TechStack({
   title = "Engineered With",
-  items,
+  items = [],
 }: TechStackProps) {
+  if (!items || items.length === 0) {
+    return null;
+  }
+
   return (
     <div className="bg-gray-50 rounded-lg p-8 my-8">
       <h3 className="text-center text-gray-900 font-semibold mb-8">{title}</h3>
