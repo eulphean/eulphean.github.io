@@ -41,6 +41,14 @@ export default function ContactSection({ id }: ContactSectionProps) {
             >
               EMAIL
             </a>
+            <a
+              href="https://amaykataria.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 text-xs tracking-widest hover:text-gray-600 transition-colors"
+            >
+              WEBSITE
+            </a>
           </div>
 
           {/* Right - Location */}

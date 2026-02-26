@@ -72,7 +72,7 @@ export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
       {/* Bottom Buttons */}
       <div className="max-w-7xl w-full mx-auto mt-16 grid grid-cols-2 gap-4 max-w-md">
         <a
-          href="https://works.amaykataria.com"
+          href="https://heyzine.com/flip-book/b79946ce9f.html"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"

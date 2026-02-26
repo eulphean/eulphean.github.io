@@ -83,14 +83,14 @@ export default function TechStackSection({ id }: TechStackSectionProps) {
       </div>
 
       {/* Bottom Buttons */}
-      <div className="max-w-7xl w-full mx-auto mt-16 grid grid-cols-2 gap-4 max-w-md">
+      <div className="max-w-7xl w-full mx-auto mt-16 grid grid-cols-3 gap-4 max-w-md">
         <a
           href="/Amay Kataria CT (Feb 2026).pdf"
           download="Amay Kataria CT (Feb 2026).pdf"
           className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-gray-100 hover:bg-gray-50 transition-colors group"
         >
           <span className="text-gray-600 text-xs font-medium tracking-wide">
-            DOWNLOAD RESUME
+            RESUME
           </span>
           <svg
             className="w-4 h-4 text-gray-600"
@@ -113,7 +113,7 @@ export default function TechStackSection({ id }: TechStackSectionProps) {
           className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-gray-100 hover:bg-gray-50 transition-colors group"
         >
           <span className="text-gray-600 text-xs font-medium tracking-wide">
-            VISIT GITHUB
+            GITHUB
           </span>
           <svg
             className="w-4 h-4 text-gray-600"
