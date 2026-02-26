@@ -5,22 +5,44 @@ interface TechStackSectionProps {
 }
 
 const skills = [
-  { id: "001", name: "REACT / REACT-NATIVE", category: "WEB & MOBILE" },
-  { id: "002", name: "NODE.JS", category: "BACKEND / API" },
-  { id: "003", name: "THREE.JS / WEBGL", category: "CREATIVE CODING / WEB" },
-  { id: "004", name: "GLSL", category: "SHADER PROGRAMMING" },
-  { id: "005", name: "COMFYUI / STABLE DIFFUSION", category: "GENERATIVE AI" },
-  { id: "006", name: "LLM / FINE-TUNING", category: "MACHINE LEARNING" },
-  { id: "007", name: "C++ / OPENFRAMEWORKS", category: "GENERATIVE SYSTEMS" },
-  { id: "008", name: "ARDUINO / RASPBERRY PI", category: "PHYSICAL COMPUTING" },
+  // 3D & Real-Time
   {
-    id: "009",
+    id: "001",
     name: "UNREAL ENGINE",
     category: "VIRTUAL PRODUCTION / REAL-TIME",
   },
-  { id: "010", name: "BLENDER", category: "3D MODELING / SCULPTING" },
-  { id: "011", name: "PUREDATA / VCVRACK", category: "SOUND SYNTHESIS" },
-  { id: "012", name: "FREECAD", category: "CAD / FABRICATION" },
+  { id: "002", name: "BLENDER", category: "3D MODELING / SCULPTING" },
+  { id: "003", name: "R3F / THREE.JS", category: "3D WEB / CREATIVE CODING" },
+  { id: "004", name: "SPLINE", category: "3D DESIGN / WEB" },
+  // Web & Backend
+  { id: "005", name: "REACT / REACT-NATIVE", category: "WEB & MOBILE" },
+  { id: "006", name: "NODE.JS", category: "BACKEND / API" },
+  { id: "007", name: "PYTHON", category: "SCRIPTING / ML" },
+  { id: "008", name: "POSTGRESQL", category: "DATABASE" },
+  // AI / ML
+  { id: "009", name: "OPENAI SDK", category: "AI / LLM INTEGRATION" },
+  { id: "010", name: "LLM / FINE-TUNING", category: "MACHINE LEARNING" },
+  { id: "011", name: "COMFYUI", category: "GENERATIVE AI" },
+  { id: "012", name: "STABLE DIFFUSION", category: "GENERATIVE AI" },
+  // Design & Motion
+  { id: "013", name: "AFTER EFFECTS", category: "MOTION DESIGN" },
+  { id: "014", name: "FIGMA", category: "UI / PRODUCT DESIGN" },
+  {
+    id: "015",
+    name: "PHOTOSHOP / ILLUSTRATOR",
+    category: "DESIGN & ILLUSTRATION",
+  },
+  { id: "016", name: "VISUAL STORYTELLING", category: "DESIGN & MOTION" },
+  // Creative Coding
+  { id: "017", name: "GLSL", category: "SHADER PROGRAMMING" },
+  { id: "018", name: "OPENFRAMEWORKS / C++", category: "GENERATIVE SYSTEMS" },
+  { id: "019", name: "P5.JS", category: "CREATIVE CODING" },
+  { id: "020", name: "TOUCH DESIGNER", category: "REAL-TIME VISUALS" },
+  // Hardware
+  { id: "021", name: "ARDUINO", category: "PHYSICAL COMPUTING" },
+  { id: "022", name: "RASPBERRY PI", category: "PHYSICAL COMPUTING" },
+  { id: "023", name: "SENSORS", category: "PHYSICAL COMPUTING" },
+  { id: "024", name: "CUSTOM PCB DESIGN", category: "ELECTRONICS" },
 ];
 
 export default function TechStackSection({ id }: TechStackSectionProps) {
