@@ -32,7 +32,6 @@ const skills = buildSkillsList([
   "claude-code",
   "python",
   "react-react-native",
-  "nodejs",
   "openai-sdk",
   "stable-diffusion",
   "comfyui",
@@ -42,6 +41,7 @@ const skills = buildSkillsList([
   "v0",
   "ai-designer",
   "figma",
+  "nodejs",
   "after-effects",
   "unreal-engine",
   "blender",
@@ -112,7 +112,11 @@ export default function CreativeTech() {
 
         {/* Tech Stack Section */}
         <div ref={techStackRef}>
-          <TechStackSection id="techstack" skills={skills} onNavigate={handleNavigate} />
+          <TechStackSection
+            id="techstack"
+            skills={skills}
+            onNavigate={handleNavigate}
+          />
         </div>
 
         {/* Contact Section */}

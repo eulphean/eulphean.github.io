@@ -30,19 +30,21 @@ const supportiveWorks = [
 ];
 
 const skills = buildSkillsList([
+  "claude-code",
   "r3f-threejs",
   "react-react-native",
-  "nodejs",
   "python",
-  "blender",
   "glsl",
   "spline",
-  "postgresql",
-  "comfyui",
   "unreal-engine",
+  "blender",
   "figma",
-  "adobe-firefly",
-  "claude-code",
+  "v0",
+  "google-ai-studio",
+  "google-stitch",
+  "nodejs",
+  "supabase",
+  "postgresql",
 ]);
 
 export default function WebEngineering3D() {
@@ -93,23 +95,32 @@ export default function WebEngineering3D() {
             quoteHighlight="3D web"
             quoteAfter="experiences in the browser."
             bioParagraphs={[
-              "Amay Kataria is a Web Engineer specializing in interactive 3D web experiences. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he creates browser-based applications that push the boundaries of what's possible with modern web technologies, WebGL, and real-time rendering.",
-              "His expertise spans Three.js, React Three Fiber, and WebGL development, building performant 3D experiences that run seamlessly in the browser. From interactive visualizations to immersive web applications, he architects scalable solutions that combine cutting-edge graphics programming with solid web engineering fundamentals.",
-              "Kataria's work demonstrates how web technologies can deliver compelling 3D experiences without plugins or downloads. His projects have been exhibited at Ars Electronica, Vector Festival, and other international venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor's in Computer Engineering from Virginia Tech.",
+              "Amay Kataria is a 3D Web Engineer specializing in real-time interactive experiences and procedural environments. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he builds browser-based applications that combine performance optimization, shader programming, and compelling visual storytelling.",
+              "His expertise spans Three.js, React Three Fiber, and WebGL development, from architecting pipelines that bring Blender assets to the web to building procedural 3D systems that generate dynamic environments at runtime. He optimizes for performance without sacrificing visual quality, creating immersive experiences that run seamlessly across devices.",
+              "Kataria's work has been exhibited at Ars Electronica, Vector Festival, and other international venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor's in Computer Engineering from Virginia Tech.",
             ]}
-            primaryFocus="WEBGL/THREE.JS"
-            secondaryValue="INTERACTIVE 3D WEB"
+            primaryFocus="WEBGL / THREE.JS"
+            secondaryValue="PROCEDURAL WORLDBUILDING"
           />
         </div>
 
         {/* Works Section */}
         <div ref={worksRef}>
-          <WorksSection id="works" onNavigate={handleNavigate} works={works} supportiveWorks={supportiveWorks} />
+          <WorksSection
+            id="works"
+            onNavigate={handleNavigate}
+            works={works}
+            supportiveWorks={supportiveWorks}
+          />
         </div>
 
         {/* Tech Stack Section */}
         <div ref={techStackRef}>
-          <TechStackSection id="techstack" skills={skills} onNavigate={handleNavigate} />
+          <TechStackSection
+            id="techstack"
+            skills={skills}
+            onNavigate={handleNavigate}
+          />
         </div>
 
         {/* Contact Section */}
