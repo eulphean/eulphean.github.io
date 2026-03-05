@@ -96,7 +96,7 @@ export default function TechnicalArtist() {
               "He specializes in shader development, performance profiling, and automating complex tasks via Python and Blueprints. Kataria excels at integrating AI/ML models into creative pipelines, leveraging machine learning to streamline asset generation and automate labor-intensive processes without sacrificing visual quality.",
               "Kataria's projects have been exhibited at Ars Electronica and Vector Festival, and other venues. He holds an MFA from the School of the Art Institute of Chicago and a BS in Computer Engineering from Virginia Tech.",
             ]}
-            primaryFocus="PIPELINE & TOOLING"
+            primaryFocus="PIPELINE & SHADERS"
             secondaryValue="AI / ML INTEGRATION"
           />
         </div>
