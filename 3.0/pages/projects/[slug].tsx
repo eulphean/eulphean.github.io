@@ -1,10 +1,18 @@
 import { GetStaticPaths, GetStaticProps } from "next";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
+
+const PORTFOLIO_MAP: Record<string, { title: string; backHref: string }> = {
+  creativetech: { title: "CREATIVE TECHNOLOGIST", backHref: "/creativetech" },
+  frontend: { title: "FRONTEND ENGINEER", backHref: "/frontend" },
+  web3d: { title: "WEB 3D ENGINEER", backHref: "/web3D" },
+  technicalart: { title: "TECHNICAL ARTIST", backHref: "/technicalart" },
+};
 
 // Import custom MDX components
 import ProjectHero from "../../components/Projects/ProjectHero";
@@ -63,8 +71,11 @@ interface ProjectPageProps {
 export default function ProjectPage({
   frontmatter,
   mdxSource,
-  slug,
 }: ProjectPageProps) {
+  const router = useRouter();
+  const from = router.query.from as string | undefined;
+  const portfolio = PORTFOLIO_MAP[from ?? ""] ?? PORTFOLIO_MAP["creativetech"];
+
   return (
     <div className="min-h-screen bg-white font-space-grotesk">
       <Head>
@@ -73,7 +84,7 @@ export default function ProjectPage({
       </Head>
 
       {/* Navigation */}
-      <PortfolioNavbar mode="project" />
+      <PortfolioNavbar mode="project" title={portfolio.title} backHref={portfolio.backHref} />
 
       {/* Hero Section */}
       <ProjectHero

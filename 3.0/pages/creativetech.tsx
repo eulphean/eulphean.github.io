@@ -80,7 +80,10 @@ export default function CreativeTech() {
 
       <MobileWarningModal />
 
-      <PortfolioNavbar onNavigate={handleNavigate} />
+      <PortfolioNavbar
+        onNavigate={handleNavigate}
+        title={"CREATIVE TECHNOLOGIST"}
+      />
 
       <main className="w-[100dvw] h-[100dvh] overflow-x-hidden overflow-y-scroll select-none overscroll-none bg-black">
         {/* Hero Section */}
@@ -104,6 +107,7 @@ export default function CreativeTech() {
         <div ref={worksRef}>
           <WorksSection
             id="works"
+            portfolioId="creativetech"
             onNavigate={handleNavigate}
             works={works}
             supportiveWorks={supportiveWorks}

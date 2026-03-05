@@ -85,7 +85,7 @@ export default function WebEngineering3D() {
 
       <MobileWarningModal />
 
-      <PortfolioNavbar onNavigate={handleNavigate} />
+      <PortfolioNavbar onNavigate={handleNavigate} title={"WEB 3D ENGINEER"} />
 
       <main className="w-[100dvw] h-[100dvh] overflow-x-hidden overflow-y-scroll select-none overscroll-none bg-black">
         {/* Hero Section */}
@@ -96,12 +96,12 @@ export default function WebEngineering3D() {
             quoteHighlight="3D web"
             quoteAfter="experiences in the browser."
             bioParagraphs={[
-              "Amay Kataria is a 3D Web Engineer specializing in real-time interactive experiences and procedural environments. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he builds browser-based applications that combine performance optimization, shader programming, and compelling visual storytelling.",
-              "His expertise spans Three.js, React Three Fiber, and WebGL development, from architecting pipelines that bring Blender assets to the web to building procedural 3D systems that generate dynamic environments at runtime. He optimizes for performance without sacrificing visual quality, creating immersive experiences that run seamlessly across devices.",
-              "Kataria's work has been exhibited at Ars Electronica, Vector Festival, and other international venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor's in Computer Engineering from Virginia Tech.",
+              "Amay Kataria is a 3D Web Engineer specializing in aesthetic browser experiences that merge GLSL shader programming with complex procedural worldbuilding. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he builds scalable applications that prioritize real-time performance and sophisticated visual storytelling.",
+              "His expertise spans Three.js, React Three Fiber, and WebGL development, orchestrating Claude Code agents to accelerate the development of complex 3D systems and procedural environments.",
+              "Kataria’s work has been exhibited at Ars Electronica, Vector Festival, and other international venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor’s in Computer Engineering from Virginia Tech.",
             ]}
-            primaryFocus="WEBGL / THREE.JS"
-            secondaryValue="PROCEDURAL WORLDBUILDING"
+            primaryFocus="THREE.JS / GLSL / PROCEDURAL"
+            secondaryValue="AGENTIC WORKFLOWS / AI DESIGN"
           />
         </div>
 
@@ -109,6 +109,7 @@ export default function WebEngineering3D() {
         <div ref={worksRef}>
           <WorksSection
             id="works"
+            portfolioId="web3d"
             onNavigate={handleNavigate}
             works={works}
             supportiveWorks={supportiveWorks}

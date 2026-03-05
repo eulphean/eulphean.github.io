@@ -21,9 +21,10 @@ function parseTagsAndYear(tags: string): { category: string; year: string } {
   return { year, category };
 }
 
-function FeaturedCard({ work }: { work: FeaturedWork }) {
-  const href = getHref(work);
+function FeaturedCard({ work, portfolioId }: { work: FeaturedWork; portfolioId: string }) {
+  const baseHref = getHref(work);
   const external = isExternal(work);
+  const href = external ? baseHref : `${baseHref}?from=${portfolioId}`;
 
   const inner = (
     <div className="group relative bg-white border border-gray-200 p-8 hover:border-blue-300 hover:shadow-sm transition-all cursor-pointer h-full flex flex-col">
@@ -97,6 +98,7 @@ function SupportiveRow({ work, isLast }: { work: Project; isLast: boolean }) {
 
 interface WorksSectionProps {
   id: string;
+  portfolioId: string;
   onNavigate: (sectionId: string) => void;
   works: FeaturedWork[];
   supportiveWorks?: Project[];
@@ -104,6 +106,7 @@ interface WorksSectionProps {
 
 export default function WorksSection({
   id,
+  portfolioId,
   onNavigate,
   works,
   supportiveWorks,
@@ -136,7 +139,7 @@ export default function WorksSection({
         {/* Left — Featured cards */}
         <div className="flex flex-col gap-4">
           {works.map((work) => (
-            <FeaturedCard key={work.key} work={work} />
+            <FeaturedCard key={work.key} work={work} portfolioId={portfolioId} />
           ))}
         </div>
 

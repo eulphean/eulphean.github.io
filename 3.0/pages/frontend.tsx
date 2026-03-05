@@ -1,7 +1,7 @@
 /*
  * Author: Amay Kataria
  * Date: 03/05/2026
- * Description: This page refers to the technical artist portfolio
+ * Description: This page refers to the frontend engineer portfolio
  */
 
 "use client";
@@ -18,37 +18,37 @@ import { PROJECTS } from "../lib/projects";
 import { buildSkillsList } from "../lib/skills";
 
 const works = [
-  { ...PROJECTS["samsara"], id: "001" },
-  { ...PROJECTS["shadows-of-time"], id: "002" },
+  { ...PROJECTS["cinefives"], id: "001" },
+  { ...PROJECTS["momimsafe"], id: "002" },
   { ...PROJECTS["thought-box"], id: "003" },
 ];
 
 const supportiveWorks = [
-  PROJECTS["lost-passage"],
   PROJECTS["supersynthesis"],
-  PROJECTS["timekeepers"],
+  PROJECTS["liarbirds"],
+  PROJECTS["lost-passage"],
 ];
 
 const skills = buildSkillsList([
-  "unreal-blueprints",
-  "blender",
-  "unity",
-  "python",
-  "meshy",
-  "comfyui",
-  "stable-diffusion",
-  "adobe-firefly",
-  "niagara-system",
-  "environment-dev",
-  "after-effects",
-  "photoshop-illustrator",
+  "claude-code",
+  "nextjs",
+  "react-react-native",
   "r3f-threejs",
-  "openframeworks",
-  "touch-designer",
+  "openai-sdk",
+  "figma",
+  "google-stitch",
+  "v0",
+  "nodejs",
+  "supabase",
+  "postgresql",
+  "aws-azure",
   "glsl",
+  "google-ai-studio",
+  "python",
+  "photoshop-illustrator",
 ]);
 
-export default function TechnicalArtist() {
+export default function FrontendEngineer() {
   const heroRef = useRef<HTMLDivElement>(null);
   const techStackRef = useRef<HTMLDivElement>(null);
   const worksRef = useRef<HTMLDivElement>(null);
@@ -71,33 +71,40 @@ export default function TechnicalArtist() {
   return (
     <div className="overflow-x-hidden">
       <Head>
-        <title>Amay Kataria - Technical Artist</title>
+        <title>Amay Kataria - Frontend Engineer</title>
         <link rel="shortcut icon" type="image/png" href="./favicon.png" />
         <meta property="og:image" content="./og.jpg" />
-        <meta name="og:title" content="Amay Kataria - Technical Artist" />
+        <meta name="og:title" content="Amay Kataria - Frontend Engineer" />
+        <meta
+          name="og:description"
+          content="Building performant, scalable web applications with React, Next.js, and TypeScript. 5 years of software engineering experience at Microsoft."
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
 
       <MobileWarningModal />
 
-      <PortfolioNavbar onNavigate={handleNavigate} />
+      <PortfolioNavbar
+        onNavigate={handleNavigate}
+        title={"FRONTEND ENGINEER"}
+      />
 
       <main className="w-[100dvw] h-[100dvh] overflow-x-hidden overflow-y-scroll select-none overscroll-none bg-black">
         {/* Hero Section */}
         <div ref={heroRef}>
           <HeroSection
             id="hero"
-            quoteBefore="Bridging"
-            quoteHighlight="3D art"
-            quoteAfter="with technology."
+            quoteBefore="Crafting"
+            quoteHighlight="novel"
+            quoteAfter="web experiences with engineering precision."
             bioParagraphs={[
-              "Amay Kataria is a Technical Artist building optimized production pipelines for real-time 3D environments. With 5 years of software engineering at Microsoft and an MFA in Art & Technology, he bridges artistic vision and technical execution through efficient, artist-friendly workflows that maximize speed.",
-              "He specializes in shader development, performance profiling, and automating complex tasks via Python and Blueprints. Kataria excels at integrating AI/ML models into creative pipelines, leveraging machine learning to streamline asset generation and automate labor-intensive processes without sacrificing visual quality.",
-              "Kataria's projects have been exhibited at Ars Electronica and Vector Festival, and other venues. He holds an MFA from the School of the Art Institute of Chicago and a BS in Computer Engineering from Virginia Tech.",
+              "Amay Kataria is a Frontend Engineer focused on the intersection of design and accessibility. With 5 years of engineering experience at Microsoft and an MFA in Art & Technology, he builds scalable web applications using React, Next.js, and TypeScript, prioritizing high-performance code.",
+              "He specializes in creating responsive design systems and accessible interfaces, orchestrating Claude Code agents to accelerate the protoyping of web applications with aesthetic precision.",
+              "His work has been exhibited at Ars Electronica and Vector Festival. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor’s in Computer Engineering from Virginia Tech.",
             ]}
-            primaryFocus="PIPELINE & TOOLING"
-            secondaryValue="AI / ML INTEGRATION"
+            primaryFocus="REACT / NEXT.JS / PROTOTYPING"
+            secondaryValue="AGENTIC WORKFLOWS"
           />
         </div>
 
@@ -105,6 +112,7 @@ export default function TechnicalArtist() {
         <div ref={worksRef}>
           <WorksSection
             id="works"
+            portfolioId="frontend"
             onNavigate={handleNavigate}
             works={works}
             supportiveWorks={supportiveWorks}

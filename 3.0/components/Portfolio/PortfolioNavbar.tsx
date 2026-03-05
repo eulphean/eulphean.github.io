@@ -7,11 +7,15 @@ type NavbarMode = "portfolio" | "project";
 interface PortfolioNavbarProps {
   mode?: NavbarMode;
   onNavigate?: (sectionId: string) => void;
+  title: string;
+  backHref?: string;
 }
 
 export default function PortfolioNavbar({
   mode = "portfolio",
   onNavigate,
+  title,
+  backHref = "/creativetech",
 }: PortfolioNavbarProps) {
   const handleClick = (sectionId: string) => {
     if (onNavigate) {
@@ -33,26 +37,26 @@ export default function PortfolioNavbar({
                 <span className="font-normal">AMAY KATARIA</span>
                 <span className="font-light text-gray-400 hidden sm:inline">
                   {" "}
-                  / CREATIVE TECHNOLOGIST
+                  / {title}
                 </span>
                 <span className="font-light text-gray-400 sm:hidden">
-                  CREATIVE TECHNOLOGIST
+                  {title}
                 </span>
               </div>
             </button>
           ) : (
             <Link
-              href="/creativetech"
+              href={backHref}
               className="text-black text-xs tracking-wide hover:text-gray-600 transition-colors"
             >
               <div className="flex sm:flex-row flex-col sm:items-baseline items-start">
                 <span className="font-normal">AMAY KATARIA</span>
                 <span className="font-light text-gray-400 hidden sm:inline">
                   {" "}
-                  / CREATIVE TECHNOLOGIST
+                  / {title}
                 </span>
                 <span className="font-light text-gray-400 sm:hidden">
-                  TECHNOLOGIST
+                  {title}
                 </span>
               </div>
             </Link>
@@ -86,7 +90,7 @@ export default function PortfolioNavbar({
             </button>
           ) : (
             <Link
-              href="/creativetech#works"
+              href={`${backHref}#works`}
               className="text-gray-500 text-xs tracking-wide px-6 py-1 border border-gray-400 rounded-full hover:bg-black hover:text-white transition-colors"
             >
               BACK TO WORKS
