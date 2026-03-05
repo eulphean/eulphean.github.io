@@ -118,6 +118,8 @@ export default function TechnicalArtist() {
             id="techstack"
             skills={skills}
             onNavigate={handleNavigate}
+            resumeHref="/portfolios/Amay Kataria TechnicalArt (March 2026).pdf"
+            resumeFilename="Amay Kataria TechnicalArt (March 2026).pdf"
           />
         </div>
 

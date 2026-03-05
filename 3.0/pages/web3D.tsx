@@ -122,6 +122,8 @@ export default function WebEngineering3D() {
             id="techstack"
             skills={skills}
             onNavigate={handleNavigate}
+            resumeHref="/portfolios/Amay Kataria Web 3D (March 2026).pdf"
+            resumeFilename="Amay Kataria Web 3D Developer (2026).pdf"
           />
         </div>
 

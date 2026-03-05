@@ -125,6 +125,8 @@ export default function FrontendEngineer() {
             id="techstack"
             skills={skills}
             onNavigate={handleNavigate}
+            resumeHref="/portfolios/Amay Kataria Frontend (March 2026).pdf"
+            resumeFilename="Amay Kataria Frontend (March 2026).pdf"
           />
         </div>
 

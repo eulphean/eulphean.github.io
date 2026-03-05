@@ -120,6 +120,8 @@ export default function CreativeTech() {
             id="techstack"
             skills={skills}
             onNavigate={handleNavigate}
+            resumeHref="/portfolios/Amay Kataria CT (March 2026).pdf"
+            resumeFilename="Amay Kataria CT (March 2026).pdf"
           />
         </div>
 
