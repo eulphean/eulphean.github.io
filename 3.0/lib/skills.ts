@@ -34,6 +34,7 @@ const SKILLS_REGISTRY: Record<string, Omit<Skill, "id">> = {
     name: "PHOTOSHOP / ILLUSTRATOR",
     category: "DESIGN & ILLUSTRATION",
   },
+  meshy: { name: "MESHY", category: "AI 3D MODELS & TEXTURE" },
   figma: { name: "FIGMA", category: "UI / PRODUCT DESIGN" },
   glsl: { name: "GLSL", category: "SHADER PROGRAMMING" },
   spline: { name: "SPLINE", category: "3D DESIGN / WEB" },
@@ -50,7 +51,7 @@ const SKILLS_REGISTRY: Record<string, Omit<Skill, "id">> = {
   },
   "stable-diffusion": { name: "STABLE DIFFUSION", category: "GENERATIVE AI" },
   "unreal-blueprints": {
-    name: "UNREAL ENGINE BLUEPRINTS",
+    name: "UNREAL ENGINE",
     category: "SCRIPTING / AUTOMATION",
   },
   "niagara-system": {
@@ -58,7 +59,7 @@ const SKILLS_REGISTRY: Record<string, Omit<Skill, "id">> = {
     category: "VFX / PARTICLE SYSTEMS",
   },
   "environment-dev": {
-    name: "ENVIRONMENT DEVELOPMENT",
+    name: "ENVIRONMENTS",
     category: "3D / WORLD BUILDING",
   },
 };

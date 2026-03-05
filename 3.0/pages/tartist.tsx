@@ -20,28 +20,32 @@ import { buildSkillsList } from "../lib/skills";
 const works = [
   { ...PROJECTS["samsara"], id: "001" },
   { ...PROJECTS["shadows-of-time"], id: "002" },
+  { ...PROJECTS["thought-box"], id: "003" },
 ];
 
 const supportiveWorks = [
   PROJECTS["lost-passage"],
+  PROJECTS["supersynthesis"],
   PROJECTS["timekeepers"],
 ];
 
 const skills = buildSkillsList([
   "unreal-blueprints",
+  "blender",
+  "unity",
+  "python",
+  "meshy",
+  "comfyui",
+  "stable-diffusion",
+  "adobe-firefly",
   "niagara-system",
   "environment-dev",
-  "blender",
-  "python",
-  "comfyui",
   "after-effects",
-  "glsl",
   "photoshop-illustrator",
+  "r3f-threejs",
   "openframeworks",
   "touch-designer",
-  "unity",
-  "visual-storytelling",
-  "stable-diffusion",
+  "glsl",
 ]);
 
 export default function TechnicalArtist() {
@@ -85,27 +89,35 @@ export default function TechnicalArtist() {
           <HeroSection
             id="hero"
             quoteBefore="Bridging"
-            quoteHighlight="art"
-            quoteAfter="and technology through intelligent workflows."
+            quoteHighlight="3D art"
+            quoteAfter="with technology."
             bioParagraphs={[
-              "Amay Kataria is a Technical Artist specializing in production pipeline development for real-time 3D environments. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he bridges the gap between artistic vision and technical execution, creating efficient, artist-friendly workflows that empower creative teams.",
-              "His expertise spans shader development in HLSL and MaterialX, procedural generation systems in Houdini, and tool creation using Python and Blueprint scripting. He excels at optimizing real-time rendering pipelines in Unreal Engine, developing custom plugins, and automating repetitive tasks to maximize artistic iteration speed.",
-              "Kataria's work demonstrates a deep understanding of both the artistic process and technical constraints, enabling him to design solutions that enhance creativity rather than restrict it. His projects have been exhibited at Ars Electronica, Vector Festival, and other international venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor's in Computer Engineering from Virginia Tech.",
+              "Amay Kataria is a Technical Artist building optimized production pipelines for real-time 3D environments. With 5 years of software engineering at Microsoft and an MFA in Art & Technology, he bridges artistic vision and technical execution through efficient, artist-friendly workflows that maximize speed.",
+              "He specializes in shader development, performance profiling, and automating complex tasks via Python and Blueprints. Kataria excels at integrating AI/ML models into creative pipelines, leveraging machine learning to streamline asset generation and automate labor-intensive processes without sacrificing visual quality.",
+              "Kataria's projects have been exhibited at Ars Electronica and Vector Festival, and other venues. He holds an MFA from the School of the Art Institute of Chicago and a BS in Computer Engineering from Virginia Tech.",
             ]}
             primaryFocus="PIPELINE & TOOLING"
-            secondaryLabel="CORE EXPERTISE"
-            secondaryValue="SHADERS/PROCEDURAL/UNREAL"
+            secondaryValue="AI / ML INTEGRATION"
           />
         </div>
 
         {/* Works Section */}
         <div ref={worksRef}>
-          <WorksSection id="works" onNavigate={handleNavigate} works={works} supportiveWorks={supportiveWorks} />
+          <WorksSection
+            id="works"
+            onNavigate={handleNavigate}
+            works={works}
+            supportiveWorks={supportiveWorks}
+          />
         </div>
 
         {/* Tech Stack Section */}
         <div ref={techStackRef}>
-          <TechStackSection id="techstack" skills={skills} onNavigate={handleNavigate} />
+          <TechStackSection
+            id="techstack"
+            skills={skills}
+            onNavigate={handleNavigate}
+          />
         </div>
 
         {/* Contact Section */}
