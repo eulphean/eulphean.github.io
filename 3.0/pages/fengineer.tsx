@@ -14,6 +14,34 @@ import TechStackSection from "../components/Portfolio/TechStackSection";
 import WorksSection from "../components/Portfolio/WorksSection";
 import ContactSection from "../components/Portfolio/ContactSection";
 import MobileWarningModal from "../components/Portfolio/MobileWarningModal";
+import { PROJECTS } from "../lib/projects";
+import { buildSkillsList } from "../lib/skills";
+
+const works = [
+  { ...PROJECTS["cinefives"], id: "001" },
+  { ...PROJECTS["thought-box"], id: "002" },
+  { ...PROJECTS["momimsafe"], id: "003" },
+];
+
+const supportiveWorks = [
+  PROJECTS["supersynthesis"],
+  PROJECTS["liarbirds"],
+  PROJECTS["lost-passage"],
+];
+
+const skills = buildSkillsList([
+  "react-react-native",
+  "nodejs",
+  "r3f-threejs",
+  "figma",
+  "postgresql",
+  "blender",
+  "python",
+  "photoshop-illustrator",
+  "openai-sdk",
+  "claude-code",
+  "adobe-firefly",
+]);
 
 export default function FrontendEngineer() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -75,12 +103,12 @@ export default function FrontendEngineer() {
 
         {/* Works Section */}
         <div ref={worksRef}>
-          <WorksSection id="works" onNavigate={handleNavigate} />
+          <WorksSection id="works" onNavigate={handleNavigate} works={works} supportiveWorks={supportiveWorks} />
         </div>
 
         {/* Tech Stack Section */}
         <div ref={techStackRef}>
-          <TechStackSection id="techstack" />
+          <TechStackSection id="techstack" skills={skills} />
         </div>
 
         {/* Contact Section */}

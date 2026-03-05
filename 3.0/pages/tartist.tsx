@@ -14,6 +14,35 @@ import TechStackSection from "../components/Portfolio/TechStackSection";
 import WorksSection from "../components/Portfolio/WorksSection";
 import ContactSection from "../components/Portfolio/ContactSection";
 import MobileWarningModal from "../components/Portfolio/MobileWarningModal";
+import { PROJECTS } from "../lib/projects";
+import { buildSkillsList } from "../lib/skills";
+
+const works = [
+  { ...PROJECTS["samsara"], id: "001" },
+  { ...PROJECTS["shadows-of-time"], id: "002" },
+];
+
+const supportiveWorks = [
+  PROJECTS["lost-passage"],
+  PROJECTS["timekeepers"],
+];
+
+const skills = buildSkillsList([
+  "unreal-blueprints",
+  "niagara-system",
+  "environment-dev",
+  "blender",
+  "python",
+  "comfyui",
+  "after-effects",
+  "glsl",
+  "photoshop-illustrator",
+  "openframeworks",
+  "touch-designer",
+  "unity",
+  "visual-storytelling",
+  "stable-diffusion",
+]);
 
 export default function TechnicalArtist() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -71,12 +100,12 @@ export default function TechnicalArtist() {
 
         {/* Works Section */}
         <div ref={worksRef}>
-          <WorksSection id="works" onNavigate={handleNavigate} />
+          <WorksSection id="works" onNavigate={handleNavigate} works={works} supportiveWorks={supportiveWorks} />
         </div>
 
         {/* Tech Stack Section */}
         <div ref={techStackRef}>
-          <TechStackSection id="techstack" />
+          <TechStackSection id="techstack" skills={skills} />
         </div>
 
         {/* Contact Section */}
