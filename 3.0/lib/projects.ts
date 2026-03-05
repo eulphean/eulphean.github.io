@@ -67,4 +67,10 @@ export const PROJECTS: Record<string, Project> = {
     name: "TIMEKEEPERS",
     tags: "Interactive Virtual Reality / Unity Social VR / 2020-2022",
   },
+  vibeblobs: {
+    key: "vibeblobs",
+    url: "https://heyzine.com/flip-book/5fcb57d1a7.html",
+    name: "VIBE BLOBS",
+    tags: "Procedural 3D Shapes / Audio-Reactive / 2022",
+  },
 };

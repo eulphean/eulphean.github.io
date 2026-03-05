@@ -27,6 +27,7 @@ const supportiveWorks = [
   PROJECTS["samsara"],
   PROJECTS["supersynthesis"],
   PROJECTS["liarbirds"],
+  PROJECTS["vibeblobs"],
 ];
 
 const skills = buildSkillsList([
