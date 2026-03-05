@@ -53,7 +53,7 @@ export const PROJECTS: Record<string, Project> = {
     key: "momimsafe",
     url: "https://heyzine.com/flip-book/33cfe8bb83.html",
     name: "MOMIMSAFE",
-    tags: "Interactive Web / React / 2020-Present",
+    tags: "Interactive Web / React / 2020 - Present",
   },
   "shadows-of-time": {
     key: "shadows-of-time",

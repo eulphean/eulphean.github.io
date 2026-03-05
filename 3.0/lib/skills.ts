@@ -25,11 +25,11 @@ const SKILLS_REGISTRY: Record<string, Omit<Skill, "id">> = {
     category: "3D WEB / CREATIVE CODING",
   },
   "after-effects": { name: "AFTER EFFECTS", category: "MOTION DESIGN" },
-  "google-stitch": { name: "GOOGLE STITCH", category: "DESIGN PROTOTYPIN" },
+  "google-stitch": { name: "GOOGLE STITCH", category: "DESIGN PROTOTYPING" },
   "google-ai-studio": { name: "GOOGLE AI STUDIO", category: "WEB PROTOTYPING" },
   "ai-designer": { name: "AI DESIGNER", category: "DESIGN PROTOTYPING" },
   v0: { name: "V0", category: "WEBGL PROTOTYPING" },
-  "adobe-firefly": { name: "ADOBE FIREFLY", category: "GENERATIVE AI" },
+  "adobe-firefly": { name: "ADOBE FIREFLY", category: "GENERAT  IVE AI" },
   "photoshop-illustrator": {
     name: "PHOTOSHOP / ILLUSTRATOR",
     category: "DESIGN & ILLUSTRATION",
@@ -61,6 +61,14 @@ const SKILLS_REGISTRY: Record<string, Omit<Skill, "id">> = {
   "environment-dev": {
     name: "ENVIRONMENTS",
     category: "3D / WORLD BUILDING",
+  },
+  nextjs: {
+    name: "NEXTJS",
+    category: "FULL-STACK PROGRAMMING",
+  },
+  "aws-azure": {
+    name: "AWS / AZURE",
+    category: "CLOUD DEVELOPMENT",
   },
 };
 
