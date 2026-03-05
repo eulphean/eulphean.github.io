@@ -25,7 +25,7 @@ const works = [
 
 const supportiveWorks = [
   PROJECTS["supersynthesis"],
-  PROJECTS["liarbirds"],
+  PROJECTS["whale-watchers"],
   PROJECTS["lost-passage"],
 ];
 
