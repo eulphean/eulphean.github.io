@@ -5,7 +5,7 @@ export interface Skill {
 }
 
 const SKILLS_REGISTRY: Record<string, Omit<Skill, "id">> = {
-  "claude-code": { name: "CLAUDE CODE", category: "AI DEVELOPMENT" },
+  "claude-code": { name: "CLAUDE CODE", category: "SOFTWARE ENGINEERING" },
   python: { name: "PYTHON", category: "SCRIPTING / ML" },
   "openai-sdk": { name: "OPENAI SDK / LLM", category: "AI / MACHINE LEARNING" },
   comfyui: { name: "COMFYUI", category: "GENERATIVE AI" },
@@ -25,7 +25,7 @@ const SKILLS_REGISTRY: Record<string, Omit<Skill, "id">> = {
     category: "3D WEB / CREATIVE CODING",
   },
   "after-effects": { name: "AFTER EFFECTS", category: "MOTION DESIGN" },
-  "google-stitch": { name: "GOOGLE STITCH", category: "DESIGN PROTOTYPING" },
+  "google-stitch": { name: "GOOGLE STITCH", category: "DESIGN PROTOTYPIN" },
   "google-ai-studio": { name: "GOOGLE AI STUDIO", category: "WEB PROTOTYPING" },
   "ai-designer": { name: "AI DESIGNER", category: "DESIGN PROTOTYPING" },
   v0: { name: "V0", category: "WEBGL PROTOTYPING" },

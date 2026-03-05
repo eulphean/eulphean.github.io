@@ -109,7 +109,7 @@ export default function WebEngineering3D() {
 
         {/* Tech Stack Section */}
         <div ref={techStackRef}>
-          <TechStackSection id="techstack" skills={skills} />
+          <TechStackSection id="techstack" skills={skills} onNavigate={handleNavigate} />
         </div>
 
         {/* Contact Section */}

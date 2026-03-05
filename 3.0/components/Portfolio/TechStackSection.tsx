@@ -9,9 +9,14 @@ interface Skill {
 interface TechStackSectionProps {
   id: string;
   skills: Skill[];
+  onNavigate: (sectionId: string) => void;
 }
 
-export default function TechStackSection({ id, skills }: TechStackSectionProps) {
+export default function TechStackSection({
+  id,
+  skills,
+  onNavigate,
+}: TechStackSectionProps) {
   return (
     <section
       id={id}
@@ -49,11 +54,11 @@ export default function TechStackSection({ id, skills }: TechStackSectionProps) 
       </div>
 
       {/* Bottom Buttons */}
-      <div className="max-w-7xl w-full mx-auto mt-16 grid grid-cols-3 gap-4 max-w-md">
+      <div className="max-w-7xl w-full mx-auto mt-16 flex gap-3 justify-center">
         <a
           href="/Amay Kataria CT (Feb 2026).pdf"
           download="Amay Kataria CT (Feb 2026).pdf"
-          className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
+          className="flex items-center gap-6 px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors"
         >
           <span className="text-gray-600 text-xs font-medium tracking-wide">
             RESUME
@@ -72,14 +77,12 @@ export default function TechStackSection({ id, skills }: TechStackSectionProps) 
             />
           </svg>
         </a>
-        <a
-          href="https://github.com/eulphean"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors group"
+        <button
+          onClick={() => onNavigate("hero")}
+          className="flex items-center gap-6 px-4 py-2 border border-gray-200 bg-white hover:bg-gray-50 transition-colors"
         >
           <span className="text-gray-600 text-xs font-medium tracking-wide">
-            GITHUB
+            HOME
           </span>
           <svg
             className="w-4 h-4 text-gray-600"
@@ -91,10 +94,10 @@ export default function TechStackSection({ id, skills }: TechStackSectionProps) 
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M7 17L17 7M17 7H7M17 7V17"
+              d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"
             />
           </svg>
-        </a>
+        </button>
       </div>
     </section>
   );

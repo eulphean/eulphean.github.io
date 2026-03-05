@@ -5,49 +5,91 @@ import { Project } from "../../lib/projects";
 
 type FeaturedWork = Project & { id?: string };
 
-const rowClass = "flex flex-col sm:flex-row sm:items-center border-b border-gray-200 cursor-pointer hover:bg-blue-50 transition-colors px-4 -mx-4";
+function getHref(work: Project): string {
+  return work.slug ? `/projects/${work.slug}` : (work.url ?? "#");
+}
 
-function ProjectRow({ work, featured }: { work: FeaturedWork | Project; featured?: boolean }) {
-  const href = (work as FeaturedWork).slug
-    ? `/projects/${(work as FeaturedWork).slug}`
-    : (work.url ?? "#");
-  const isExternal = !((work as FeaturedWork).slug);
-  const id = (work as FeaturedWork).id;
+function isExternal(work: Project): boolean {
+  return !work.slug;
+}
+
+function parseTagsAndYear(tags: string): { category: string; year: string } {
+  const parts = tags.split(" / ");
+  if (parts.length <= 1) return { category: tags, year: "" };
+  const year = parts[parts.length - 1];
+  const category = parts.slice(0, -1).join(" / ");
+  return { year, category };
+}
+
+function FeaturedCard({ work }: { work: FeaturedWork }) {
+  const href = getHref(work);
+  const external = isExternal(work);
 
   const inner = (
-    <>
-      <span className="text-gray-400 text-xs tracking-wide w-16 sm:w-16 shrink-0">
-        {id ?? ""}
-      </span>
-      <div className="flex-1">
-        <h3 className={`${featured ? "text-gray-900 text-3xl sm:text-4xl lg:text-5xl" : "text-gray-700 text-xl sm:text-2xl lg:text-3xl"} font-bold tracking-tight`}>
-          {work.name}
-        </h3>
-        <span className="text-gray-500 text-xs tracking-widest sm:hidden block mt-2">
-          {work.tags}
-        </span>
-      </div>
-      <span className="text-gray-500 text-xs tracking-widest hidden sm:block">
-        {work.tags}
-      </span>
-    </>
+    <div className="group relative bg-white border border-gray-200 p-8 hover:border-blue-300 hover:shadow-sm transition-all cursor-pointer h-full flex flex-col">
+      <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight leading-tight">
+        {work.name}
+      </h3>
+      <p className="text-xs text-gray-500 tracking-widest mt-3">{work.tags}</p>
+    </div>
   );
 
-  if (isExternal) {
+  if (external) {
     return (
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${rowClass} ${featured ? "py-12" : "py-8"}`}
+        className="block"
       >
         {inner}
       </a>
     );
   }
-
   return (
-    <Link href={href} className={`${rowClass} ${featured ? "py-12" : "py-8"}`}>
+    <Link href={href} className="block">
+      {inner}
+    </Link>
+  );
+}
+
+function SupportiveRow({ work, isLast }: { work: Project; isLast: boolean }) {
+  const href = getHref(work);
+  const external = isExternal(work);
+  const { category, year } = parseTagsAndYear(work.tags);
+
+  const inner = (
+    <div
+      className={`group py-6 ${!isLast ? "border-b border-gray-200" : ""} cursor-pointer`}
+    >
+      <div className="border-l-2 border-gray-300 group-hover:border-blue-400 transition-colors pl-4">
+        <div className="flex items-start justify-between gap-4">
+          <h3 className="text-lg font-bold text-gray-800 tracking-tight leading-tight">
+            {work.name}
+          </h3>
+          {year && (
+            <span className="text-xs text-gray-400 shrink-0 mt-1">{year}</span>
+          )}
+        </div>
+        <p className="text-xs text-gray-400 tracking-widest mt-1">{category}</p>
+      </div>
+    </div>
+  );
+
+  if (external) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        {inner}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className="block">
       {inner}
     </Link>
   );
@@ -60,70 +102,110 @@ interface WorksSectionProps {
   supportiveWorks?: Project[];
 }
 
-export default function WorksSection({ id, onNavigate, works, supportiveWorks }: WorksSectionProps) {
+export default function WorksSection({
+  id,
+  onNavigate,
+  works,
+  supportiveWorks,
+}: WorksSectionProps) {
+  const hasSupportive = supportiveWorks && supportiveWorks.length > 0;
+
   return (
     <section
       id={id}
       className="flex flex-col bg-gray-100 pt-16 pb-8 px-8 lg:px-16 font-space-grotesk"
     >
-      {/* Header */}
-      <div className="max-w-7xl w-full mx-auto mb-8">
+      {/* Column headers */}
+      <div
+        className={`max-w-7xl w-full mx-auto mb-8 grid grid-cols-1 ${hasSupportive ? "lg:grid-cols-[3fr_2fr]" : ""} gap-8`}
+      >
         <span className="text-blue-500 text-xs tracking-widest font-light">
           [ 03. FEATURED PROJECTS ]
         </span>
+        {hasSupportive && (
+          <span className="text-blue-500 text-xs tracking-widest font-light hidden lg:block">
+            [ ALSO SEE ]
+          </span>
+        )}
       </div>
 
-      {/* Featured Works List */}
-      <div className="max-w-7xl w-full mx-auto">
-        <div className="border-t border-gray-200">
+      {/* Two-column content grid */}
+      <div
+        className={`max-w-7xl w-full mx-auto grid grid-cols-1 ${hasSupportive ? "lg:grid-cols-[3fr_2fr]" : ""} gap-8`}
+      >
+        {/* Left — Featured cards */}
+        <div className="flex flex-col gap-4">
           {works.map((work) => (
-            <ProjectRow key={work.key} work={work} featured />
+            <FeaturedCard key={work.key} work={work} />
           ))}
         </div>
-      </div>
 
-      {/* Supportive Works */}
-      {supportiveWorks && supportiveWorks.length > 0 && (
-        <div className="max-w-7xl w-full mx-auto mt-16">
-          <div className="mb-8">
-            <span className="text-blue-500 text-xs tracking-widest font-light">
-              [ SUPPORTIVE PROJECTS ]
+        {/* Right — Supportive list */}
+        {hasSupportive && (
+          <div className="flex flex-col">
+            {/* Mobile label */}
+            <span className="text-blue-500 text-xs tracking-widest font-light mb-6 lg:hidden">
+              [ ALSO SEE ]
             </span>
-          </div>
-          <div className="border-t border-gray-200">
-            {supportiveWorks.map((work) => (
-              <ProjectRow key={work.key} work={work} />
+            {supportiveWorks.map((work, i) => (
+              <SupportiveRow
+                key={work.key}
+                work={work}
+                isLast={i === supportiveWorks.length - 1}
+              />
             ))}
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Bottom Buttons */}
-      <div className="max-w-7xl w-full mx-auto mt-16 grid grid-cols-2 gap-4 max-w-md">
+      <div className="max-w-7xl w-full mx-auto mt-16 flex gap-3 justify-center">
         <a
-          href="https://heyzine.com/flip-book/b79946ce9f.html"
+          href="https://amaykataria.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-gray-100 hover:bg-gray-50 transition-colors group"
+          className="flex items-center gap-6 px-4 py-2 border border-gray-200 bg-gray-100 hover:bg-gray-50 transition-colors"
         >
           <span className="text-gray-600 text-xs font-medium tracking-wide">
-            MORE WORKS
+            ART
           </span>
-          <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7V17" />
+          <svg
+            className="w-4 h-4 text-gray-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M7 17L17 7M17 7H7M17 7V17"
+            />
           </svg>
         </a>
-        <button
-          onClick={() => onNavigate("hero")}
-          className="flex items-center justify-between px-4 py-2 border border-gray-200 bg-gray-100 hover:bg-gray-50 transition-colors group"
+        <a
+          href="https://github.com/eulphean"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-6 px-4 py-2 border border-gray-200 bg-gray-100 hover:bg-gray-50 transition-colors"
         >
           <span className="text-gray-600 text-xs font-medium tracking-wide">
-            HOME
+            GITHUB
           </span>
-          <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          <svg
+            className="w-4 h-4 text-gray-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M7 17L17 7M17 7H7M17 7V17"
+            />
           </svg>
-        </button>
+        </a>
       </div>
     </section>
   );
