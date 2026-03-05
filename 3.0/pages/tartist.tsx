@@ -1,7 +1,7 @@
 /*
  * Author: Amay Kataria
- * Date: 01/18/2026
- * Description: This page refers to the creative technologist portfolio
+ * Date: 03/05/2026
+ * Description: This page refers to the technical artist portfolio
  */
 
 "use client";
@@ -15,7 +15,7 @@ import WorksSection from "../components/Portfolio/WorksSection";
 import ContactSection from "../components/Portfolio/ContactSection";
 import MobileWarningModal from "../components/Portfolio/MobileWarningModal";
 
-export default function CreativeTech() {
+export default function TechnicalArtist() {
   const heroRef = useRef<HTMLDivElement>(null);
   const techStackRef = useRef<HTMLDivElement>(null);
   const worksRef = useRef<HTMLDivElement>(null);
@@ -38,10 +38,10 @@ export default function CreativeTech() {
   return (
     <div className="overflow-x-hidden">
       <Head>
-        <title>Amay Kataria - Creative Technologist</title>
+        <title>Amay Kataria - Technical Artist</title>
         <link rel="shortcut icon" type="image/png" href="./favicon.png" />
         <meta property="og:image" content="./og.jpg" />
-        <meta name="og:title" content="Amay Kataria - Creative Technologist" />
+        <meta name="og:title" content="Amay Kataria - Technical Artist" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
@@ -55,16 +55,17 @@ export default function CreativeTech() {
         <div ref={heroRef}>
           <HeroSection
             id="hero"
-            quoteBefore="Creating custom tools for"
-            quoteHighlight="novel"
-            quoteAfter="workflows."
+            quoteBefore="Bridging"
+            quoteHighlight="art"
+            quoteAfter="and technology through intelligent workflows."
             bioParagraphs={[
-              "Amay Kataria is a Creative Technologist, building AI-integrated production pipelines for real-time 3D environments. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he specializes in developing custom workflows that bridge AI tools with Unreal Engine, web platforms, and interactive experiences.",
-              "His technical focus includes ComfyUI integration, LLM-driven applications, and Blueprint development for production automation. Recent projects demonstrate end-to-end pipeline development, from AI workflow architecture to interactive deployment.",
-              "Kataria's work has been exhibited internationally at Ars Electronica, Vector Festival, and other venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor's in Computer Engineering from Virginia Tech.",
+              "Amay Kataria is a Technical Artist specializing in production pipeline development for real-time 3D environments. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he bridges the gap between artistic vision and technical execution, creating efficient, artist-friendly workflows that empower creative teams.",
+              "His expertise spans shader development in HLSL and MaterialX, procedural generation systems in Houdini, and tool creation using Python and Blueprint scripting. He excels at optimizing real-time rendering pipelines in Unreal Engine, developing custom plugins, and automating repetitive tasks to maximize artistic iteration speed.",
+              "Kataria's work demonstrates a deep understanding of both the artistic process and technical constraints, enabling him to design solutions that enhance creativity rather than restrict it. His projects have been exhibited at Ars Electronica, Vector Festival, and other international venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor's in Computer Engineering from Virginia Tech.",
             ]}
-            primaryFocus="REAL-TIME 3D/ML"
-            secondaryValue="CUSTOM AI WORKFLOWS"
+            primaryFocus="PIPELINE & TOOLING"
+            secondaryLabel="CORE EXPERTISE"
+            secondaryValue="SHADERS/PROCEDURAL/UNREAL"
           />
         </div>
 

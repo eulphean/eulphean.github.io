@@ -1,7 +1,7 @@
 /*
  * Author: Amay Kataria
- * Date: 01/18/2026
- * Description: This page refers to the creative technologist portfolio
+ * Date: 03/05/2026
+ * Description: This page refers to the web engineering portfolio with focus on 3D and interactive experiences
  */
 
 "use client";
@@ -15,7 +15,7 @@ import WorksSection from "../components/Portfolio/WorksSection";
 import ContactSection from "../components/Portfolio/ContactSection";
 import MobileWarningModal from "../components/Portfolio/MobileWarningModal";
 
-export default function CreativeTech() {
+export default function WebEngineering3D() {
   const heroRef = useRef<HTMLDivElement>(null);
   const techStackRef = useRef<HTMLDivElement>(null);
   const worksRef = useRef<HTMLDivElement>(null);
@@ -38,10 +38,14 @@ export default function CreativeTech() {
   return (
     <div className="overflow-x-hidden">
       <Head>
-        <title>Amay Kataria - Creative Technologist</title>
+        <title>Amay Kataria - Web Engineering 3D</title>
         <link rel="shortcut icon" type="image/png" href="./favicon.png" />
         <meta property="og:image" content="./og.jpg" />
-        <meta name="og:title" content="Amay Kataria - Creative Technologist" />
+        <meta name="og:title" content="Amay Kataria - Web Engineering 3D" />
+        <meta
+          name="description"
+          content="Web Engineer specializing in interactive 3D web experiences with WebGL, Three.js, and modern web technologies. Building immersive browser-based applications."
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
@@ -55,16 +59,16 @@ export default function CreativeTech() {
         <div ref={heroRef}>
           <HeroSection
             id="hero"
-            quoteBefore="Creating custom tools for"
-            quoteHighlight="novel"
-            quoteAfter="workflows."
+            quoteBefore="Building immersive"
+            quoteHighlight="3D web"
+            quoteAfter="experiences in the browser."
             bioParagraphs={[
-              "Amay Kataria is a Creative Technologist, building AI-integrated production pipelines for real-time 3D environments. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he specializes in developing custom workflows that bridge AI tools with Unreal Engine, web platforms, and interactive experiences.",
-              "His technical focus includes ComfyUI integration, LLM-driven applications, and Blueprint development for production automation. Recent projects demonstrate end-to-end pipeline development, from AI workflow architecture to interactive deployment.",
-              "Kataria's work has been exhibited internationally at Ars Electronica, Vector Festival, and other venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor's in Computer Engineering from Virginia Tech.",
+              "Amay Kataria is a Web Engineer specializing in interactive 3D web experiences. With 5 years of software engineering experience at Microsoft and an MFA in Art & Technology, he creates browser-based applications that push the boundaries of what's possible with modern web technologies, WebGL, and real-time rendering.",
+              "His expertise spans Three.js, React Three Fiber, and WebGL development, building performant 3D experiences that run seamlessly in the browser. From interactive visualizations to immersive web applications, he architects scalable solutions that combine cutting-edge graphics programming with solid web engineering fundamentals.",
+              "Kataria's work demonstrates how web technologies can deliver compelling 3D experiences without plugins or downloads. His projects have been exhibited at Ars Electronica, Vector Festival, and other international venues. He holds an MFA from the School of the Art Institute of Chicago and a Bachelor's in Computer Engineering from Virginia Tech.",
             ]}
-            primaryFocus="REAL-TIME 3D/ML"
-            secondaryValue="CUSTOM AI WORKFLOWS"
+            primaryFocus="WEBGL/THREE.JS"
+            secondaryValue="INTERACTIVE 3D WEB"
           />
         </div>
 

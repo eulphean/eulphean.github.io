@@ -37,7 +37,7 @@ export default function WorksSection({ id, onNavigate }: WorksSectionProps) {
       {/* Header */}
       <div className="max-w-7xl w-full mx-auto mb-8">
         <span className="text-blue-500 text-xs tracking-widest font-light">
-          [ 03. SELECTED PROJECTS ]
+          [ 03. FEATURED PROJECTS ]
         </span>
       </div>
 

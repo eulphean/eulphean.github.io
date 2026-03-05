@@ -4,9 +4,25 @@ import Image from "next/image";
 
 interface HeroSectionProps {
   id: string;
+  quoteBefore: string;
+  quoteHighlight: string;
+  quoteAfter?: string;
+  bioParagraphs: string[];
+  primaryFocus: string;
+  secondaryLabel?: string;
+  secondaryValue: string;
 }
 
-export default function HeroSection({ id }: HeroSectionProps) {
+export default function HeroSection({
+  id,
+  quoteBefore,
+  quoteHighlight,
+  quoteAfter,
+  bioParagraphs,
+  primaryFocus,
+  secondaryLabel = "CURRENT RESEARCH",
+  secondaryValue
+}: HeroSectionProps) {
   return (
     <section
       id={id}
@@ -39,35 +55,17 @@ export default function HeroSection({ id }: HeroSectionProps) {
           {/* Quote */}
           <div className="mb-4">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight">
-              Creating custom tools for{" "}
-              <span className="text-blue-500 italic">novel</span> workflows.
+              {quoteBefore}{" "}
+              <span className="text-blue-500 italic">{quoteHighlight}</span>
+              {quoteAfter && ` ${quoteAfter}`}
             </h1>
           </div>
 
           {/* Bio Description */}
           <div className="space-y-6 mb-8 text-gray-600 leading-relaxed text-justify">
-            <p>
-              Amay Kataria is a Creative Technologist, building AI-integrated
-              production pipelines for real-time 3D environments. With 5 years
-              of software engineering experience at Microsoft and an MFA in Art
-              & Technology, he specializes in developing custom workflows that
-              bridge AI tools with Unreal Engine, web platforms, and interactive
-              experiences.
-            </p>
-
-            <p>
-              His technical focus includes ComfyUI integration, LLM-driven
-              applications, and Blueprint development for production automation.
-              Recent projects demonstrate end-to-end pipeline development, from
-              AI workflow architecture to interactive deployment.
-            </p>
-
-            <p>
-              Kataria's work has been exhibited internationally at Ars
-              Electronica, Vector Festival, and other venues. He holds an MFA
-              from the School of the Art Institute of Chicago and a Bachelor's
-              in Computer Engineering from Virginia Tech.
-            </p>
+            {bioParagraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
           </div>
 
           {/* Info Grid */}
@@ -77,15 +75,15 @@ export default function HeroSection({ id }: HeroSectionProps) {
                 PRIMARY FOCUS
               </span>
               <span className="text-gray-400 text-xs tracking-wide">
-                REAL-TIME 3D/ML
+                {primaryFocus}
               </span>
             </div>
             <div className="flex justify-between items-center pt-2">
               <span className="text-gray-400 text-xs tracking-widest">
-                CURRENT RESEARCH
+                {secondaryLabel}
               </span>
               <span className="text-gray-400 text-xs tracking-wide">
-                CUSTOM AI WORKFLOWS
+                {secondaryValue}
               </span>
             </div>
           </div>
