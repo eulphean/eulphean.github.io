@@ -146,6 +146,9 @@ class Samsara extends React.Component {
           <div style={containerStyle}>
             {mainVideo("1150568543", commonWorkStyles.vimeoFrame)}
           </div>
+          <div style={containerStyle}>
+            {mainVideo("1163403449", commonWorkStyles.vimeoFrame)}
+          </div>
           <div style={[commonWorkStyles.imgContainer]}>
             <div style={commonWorkStyles.body}>{bodyB}</div>
           </div>
